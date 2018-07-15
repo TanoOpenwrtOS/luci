@@ -1437,6 +1437,7 @@ function interface.ports(self)
 		for _, iface in ipairs(members) do
 			ifaces[#ifaces+1] = interface(iface)
 		end
+		return ifaces
 	end
 end
 
