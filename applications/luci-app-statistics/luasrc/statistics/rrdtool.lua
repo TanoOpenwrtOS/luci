@@ -28,6 +28,7 @@ function Graph.__init__( self, timespan, opts )
 	opts.rramax    = opts.rramax    or ( sections.collectd_rrdtool.RRAMax == "1" )
 	opts.host      = opts.host      or sections.collectd.Hostname        or luci.sys.hostname()
 	opts.width     = opts.width     or sections.rrdtool.image_width      or 400
+	opts.height    = opts.height    or sections.rrdtool.image_height     or 200
 	opts.rrdpath   = opts.rrdpath   or sections.collectd_rrdtool.DataDir or "/tmp/rrd"
 	opts.imgpath   = opts.imgpath   or sections.rrdtool.image_path       or "/tmp/rrdimg"
 	opts.rrdpath   = opts.rrdpath:gsub("/$","")
@@ -42,7 +43,8 @@ function Graph.__init__( self, timespan, opts )
 	self.args = {
 		"-a", "PNG",
 		"-s", "NOW-" .. opts.timespan,
-		"-w", opts.width
+		"-w", opts.width,
+		"-h", opts.height
 	}
 
 	-- store options
