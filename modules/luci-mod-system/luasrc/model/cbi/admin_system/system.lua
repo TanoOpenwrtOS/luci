@@ -45,7 +45,10 @@ o = s:taboption("general", ListValue, "zonename", translate("Timezone"))
 o:value("UTC")
 
 for i, zone in ipairs(zones.TZ) do
-	o:value(zone[1])
+	local zone_exists = fs.access("/usr/share/zoneinfo/" .. zone[1])
+	if (zone_exists) then
+		o:value(zone[1])
+	end
 end
 
 function o.write(self, section, value)
