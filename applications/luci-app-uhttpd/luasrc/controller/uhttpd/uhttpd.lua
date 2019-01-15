@@ -10,7 +10,7 @@ function index()
 
 	local page
 
-	page = entry({"admin", "services", "uhttpd"}, cbi("uhttpd/uhttpd"), _("uHTTPd"))
+	page = entry({"admin", "services", "uhttpd"}, cbi("uhttpd/uhttpd"), _("HTTP/HTTPS"))
 	page.leaf = true
 
 end
