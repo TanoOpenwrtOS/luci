@@ -18,6 +18,15 @@ msgstr ""
 msgid "%.1f dB"
 msgstr ""
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/iface_status.js:16
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/iface_status.js:17
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:36
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:37
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:87
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:88
+msgid "%.2mB (%d %s)"
+msgstr ""
+
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:109
 msgid "%d Bit"
 msgstr ""
@@ -25,6 +34,14 @@ msgstr ""
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:307
 msgid "%d invalid field(s)"
 msgstr "%d nieprawidłowe pole(pola)"
+
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1328
+msgid "%dd %dh %dm %ds"
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1329
+msgid "%dh %dm %ds"
+msgstr ""
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:256
 msgid "%s is untagged in multiple VLANs!"
@@ -58,16 +75,16 @@ msgstr "(brak podłączonych interfejsów)"
 msgid "-- Additional Field --"
 msgstr "-- Dodatkowe pole --"
 
-#: modules/luci-base/htdocs/luci-static/resources/cbi.js:841
-#: modules/luci-base/htdocs/luci-static/resources/cbi.js:850
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:840
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:849
 #: modules/luci-base/luasrc/view/cbi/header.htm:5
 #: protocols/luci-proto-3g/luasrc/model/cbi/admin_network/proto_3g.lua:26
 #: protocols/luci-proto-qmi/luasrc/model/cbi/admin_network/proto_qmi.lua:36
 msgid "-- Please choose --"
 msgstr "-- Proszę wybrać --"
 
-#: modules/luci-base/htdocs/luci-static/resources/cbi.js:866
-#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1030
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:865
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1025
 #: modules/luci-base/luasrc/view/cbi/header.htm:6
 msgid "-- custom --"
 msgstr "-- własne --"
@@ -424,11 +441,11 @@ msgstr "Ustawienia zaawansowane"
 msgid "Aggregate Transmit Power(ACTATP)"
 msgstr "Agregacja siły transmisji (ACTATP)"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:99
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:106
 msgid "Alert"
 msgstr "Alarm"
 
-#: modules/luci-base/luasrc/model/network.lua:1406
+#: modules/luci-base/luasrc/model/network.lua:1407
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:78
 msgid "Alias Interface"
 msgstr "Alias Interfejsu"
@@ -694,8 +711,8 @@ msgstr "Wymagana autoryzacja"
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:214
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:215
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:223
-#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:246
-#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:249
+#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:247
+#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:250
 msgid "Auto Refresh"
 msgstr "Automatyczne odświeżanie"
 
@@ -751,6 +768,10 @@ msgstr "Dostępne"
 #: modules/luci-mod-status/luasrc/view/admin_status/wireless.htm:362
 msgid "Average:"
 msgstr "Średnia:"
+
+#: modules/luci-base/luasrc/tools/webadmin.lua:14
+msgid "B"
+msgstr ""
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/network.lua:116
 msgid "B43 + B43C"
@@ -852,7 +873,7 @@ msgstr "Szybkość transmisji"
 msgid "Bogus NX Domain Override"
 msgstr "Podrób statystyki NXDOMAIN"
 
-#: modules/luci-base/luasrc/model/network.lua:1410
+#: modules/luci-base/luasrc/model/network.lua:1411
 msgid "Bridge"
 msgstr "Most"
 
@@ -1034,6 +1055,8 @@ msgstr "Klient"
 msgid "Client ID to send when requesting DHCP"
 msgstr "Nazwa (ID) klienta do wysłania podczas negocjacji DHCP"
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:17
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:28
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:145
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:151
 msgid "Close"
@@ -1187,11 +1210,11 @@ msgstr "Utwórz interfejs"
 msgid "Create a bridge over multiple interfaces"
 msgstr "Utwórz most pomiędzy wieloma interfejsami"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:98
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:105
 msgid "Critical"
 msgstr "Krytyczne"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:102
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:109
 msgid "Cron Log Level"
 msgstr "Poziom logowania Cron`a"
 
@@ -1248,7 +1271,7 @@ msgstr "Serwer DHCP"
 msgid "DHCP and DNS"
 msgstr "DHCP i DNS"
 
-#: modules/luci-base/luasrc/model/network.lua:962
+#: modules/luci-base/luasrc/model/network.lua:963
 msgid "DHCP client"
 msgstr "Klient DHCP"
 
@@ -1330,8 +1353,8 @@ msgstr "DUID"
 msgid "Data Rate"
 msgstr "Szybkość przesyłania danych"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:93
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:104
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:100
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:111
 msgid "Debug"
 msgstr "Debug"
 
@@ -1502,8 +1525,6 @@ msgid "Disconnection attempt failed"
 msgstr "Próba rozłączenia nie powiodła się"
 
 #: modules/luci-base/luasrc/view/cbi/apply_widget.htm:46
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:17
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:28
 msgid "Dismiss"
 msgstr ""
 
@@ -1621,6 +1642,10 @@ msgstr ""
 "Dynamicznie rezerwuje adresy DHCP dla klientów. Jeśli jest wyłączone tylko "
 "klienci posiadający stałe dzierżawy będą obsłużeni."
 
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1339
+msgid "E"
+msgstr ""
+
 #: protocols/luci-proto-ipv6/luasrc/model/cbi/admin_network/proto_map.lua:53
 msgid "EA-bits length"
 msgstr ""
@@ -1650,7 +1675,7 @@ msgstr "Edytuj ten interfejs"
 msgid "Edit this network"
 msgstr "Edytuj tą sieć"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:100
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:107
 msgid "Emergency"
 msgstr "Zagrożenie"
 
@@ -1691,7 +1716,7 @@ msgstr "Włącz negocjację IPv6 na łączu PPP"
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Włącz przechodzenie ramek Jumbo"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:215
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:222
 msgid "Enable NTP client"
 msgstr "Włącz klienta NTP"
 
@@ -1809,7 +1834,7 @@ msgstr "Usuwanie..."
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:107
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:108
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:109
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:97
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:104
 msgid "Error"
 msgstr "Błąd"
 
@@ -1817,11 +1842,11 @@ msgstr "Błąd"
 msgid "Errored seconds (ES)"
 msgstr "Ilość błędów (ES)"
 
-#: modules/luci-base/luasrc/model/network.lua:1422
+#: modules/luci-base/luasrc/model/network.lua:1423
 msgid "Ethernet Adapter"
 msgstr "Karta Ethernet"
 
-#: modules/luci-base/luasrc/model/network.lua:1412
+#: modules/luci-base/luasrc/model/network.lua:1413
 msgid "Ethernet Switch"
 msgstr "Switch Ethernet"
 
@@ -1860,15 +1885,15 @@ msgstr ""
 msgid "External R1 Key Holder List"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:74
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:81
 msgid "External system log server"
 msgstr "Serwer zewnętrzny dla logów systemowych"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:79
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:86
 msgid "External system log server port"
 msgstr "Port zewnętrznego serwera logów systemowych"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:84
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:91
 msgid "External system log server protocol"
 msgstr "Protokół zewnętrznego serwera logów systemowych"
 
@@ -2067,6 +2092,14 @@ msgid ""
 "wireguard.com\">wireguard.com</a>."
 msgstr ""
 
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1339
+msgid "G"
+msgstr ""
+
+#: modules/luci-base/luasrc/tools/webadmin.lua:17
+msgid "GB"
+msgstr ""
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:45
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:87
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:167
@@ -2139,7 +2172,7 @@ msgstr "Globalne opcje sieciowe"
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:198
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:235
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:262
-#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:288
+#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:289
 msgid "Go to password configuration..."
 msgstr "Przejdź do konfiguracji hasła..."
 
@@ -2563,7 +2596,7 @@ msgstr "Czas bezczynności"
 msgid "Inbound:"
 msgstr "Przychodzący:"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:94
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:101
 msgid "Info"
 msgstr "Info"
 
@@ -2675,7 +2708,7 @@ msgstr ""
 #: themes/luci-theme-freifunk-generic/luasrc/view/themes/freifunk-generic/header.htm:220
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:242
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:252
-#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:295
+#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:296
 msgid "JavaScript required!"
 msgstr "JavaScript jest wymagany!"
 
@@ -2690,6 +2723,14 @@ msgstr "Przyłącz do sieci: Skanuj sieci Wi-Fi"
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi_add.lua:19
 msgid "Joining Network: %q"
 msgstr "Przyłączanie do sieci: %q"
+
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1339
+msgid "K"
+msgstr ""
+
+#: modules/luci-base/luasrc/tools/webadmin.lua:15
+msgid "KB"
+msgstr ""
 
 #: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:106
 msgid "Keep settings"
@@ -2715,6 +2756,10 @@ msgstr "Klucz"
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:829
 msgid "Key #%d"
 msgstr "Klucz #%d"
+
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:76
+msgid "KiB"
+msgstr ""
 
 #: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:28
 msgid "Kill"
@@ -2755,7 +2800,7 @@ msgstr "LLC"
 msgid "Label"
 msgstr "Oznaczenie"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:136
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:143
 msgid "Language"
 msgstr "Język"
 
@@ -2982,7 +3027,7 @@ msgstr "Zapytania lokalizujące"
 msgid "Locked to channel %s used by: %s"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:92
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:99
 msgid "Log output level"
 msgstr "Poziom logowania"
 
@@ -3009,6 +3054,10 @@ msgstr "Utrata sygnału (LOSS)"
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:476
 msgid "Lowest leased address as offset from the network address."
 msgstr "Najniższy wydzierżawiony adres jako offset dla adresu sieci."
+
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1339
+msgid "M"
+msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/iface_status.js:15
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:35
@@ -3046,6 +3095,10 @@ msgstr ""
 #: protocols/luci-proto-ipv6/luasrc/model/network/proto_4x6.lua:62
 msgid "MAP rule is invalid"
 msgstr "Reguła MAP jest nieprawidłowa"
+
+#: modules/luci-base/luasrc/tools/webadmin.lua:16
+msgid "MB"
+msgstr ""
 
 #: modules/luci-mod-status/luasrc/view/admin_status/bandwidth.htm:70
 msgid "MB/s"
@@ -3285,7 +3338,7 @@ msgstr "Proxy NDP"
 msgid "NT Domain"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:238
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:245
 msgid "NTP server candidates"
 msgstr "Lista serwerów NTP"
 
@@ -3388,7 +3441,7 @@ msgstr "Nie podano nazwy sieci"
 #: themes/luci-theme-freifunk-generic/luasrc/view/themes/freifunk-generic/header.htm:103
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:232
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:259
-#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:283
+#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:284
 msgid "No password set!"
 msgstr "Nie ustawiono hasła!"
 
@@ -3437,7 +3490,7 @@ msgstr "Bez symboli wieloznacznych"
 msgid "None"
 msgstr "Brak"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:105
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:112
 msgid "Normal"
 msgstr "Normalny"
 
@@ -3459,7 +3512,7 @@ msgstr "Nie podłączony"
 msgid "Note: interface name length"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:95
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:102
 msgid "Notice"
 msgstr "Spostrzeżenie"
 
@@ -3473,7 +3526,7 @@ msgstr ""
 "Liczba buforowanych wpisów DNS (max wynosi 10000, 0 oznacza brak pamięci "
 "podręcznej)"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:125
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:132
 msgid "Number of parallel threads used for compression"
 msgstr ""
 
@@ -3692,6 +3745,10 @@ msgstr "Przegląd"
 #: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:11
 msgid "Owner"
 msgstr "Właściciel"
+
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1339
+msgid "P"
+msgstr ""
 
 #: protocols/luci-proto-3g/luasrc/model/cbi/admin_network/proto_3g.lua:42
 #: protocols/luci-proto-ncm/luasrc/model/cbi/admin_network/proto_ncm.lua:56
@@ -3998,7 +4055,7 @@ msgstr "Protokół nowego interfejsu"
 msgid "Protocol support is not installed"
 msgstr "Wsparcie dla protokołu nie jest zainstalowane"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:234
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:241
 msgid "Provide NTP server"
 msgstr "Włącz serwer NTP"
 
@@ -4021,10 +4078,10 @@ msgid ""
 "device, paste an OpenSSH compatible public key line or drag a <code>.pub</"
 "code> file into the input field."
 msgstr ""
-"Klucze publiczne pozwalają na logowanie bez haseł SSH z wyższymi zabezpieczeniami "
-"w porównaniu do użycia zwykłych haseł. Aby przesłać nowy klucz do urządzenia, "
-"wklej klucz publiczny zgodny z OpenSSH lub przeciągnij plik <code>.pub</code> "
-"do pola wejściowego."
+"Klucze publiczne pozwalają na logowanie bez haseł SSH z wyższymi "
+"zabezpieczeniami w porównaniu do użycia zwykłych haseł. Aby przesłać nowy "
+"klucz do urządzenia, wklej klucz publiczny zgodny z OpenSSH lub przeciągnij "
+"plik <code>.pub</code> do pola wejściowego."
 
 #: modules/luci-base/luasrc/model/cbi/admin_network/proto_static.lua:139
 msgid "Public prefix routed to this device for distribution to clients."
@@ -4562,7 +4619,7 @@ msgstr ""
 "Ustaw właściwości interfejsu, niezależnie od operatora łącza (nie wpływa na "
 "programy operatora które ustanawiają połączenie)."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:206
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:213
 #, fuzzy
 msgid "Set up Time Synchronization"
 msgstr "Ustawienia synchronizacji czasu"
@@ -4630,7 +4687,7 @@ msgstr "Rozmiar"
 msgid "Size of DNS query cache"
 msgstr "Rozmiar pamięci podręcznej zapytań DNS"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:113
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:120
 msgid "Size of the ZRam device in megabytes"
 msgstr ""
 
@@ -4653,7 +4710,7 @@ msgstr "Pomiń do nawigacji"
 msgid "Slot time"
 msgstr "Szczelina czasowa"
 
-#: modules/luci-base/luasrc/model/network.lua:1417
+#: modules/luci-base/luasrc/model/network.lua:1418
 msgid "Software VLAN"
 msgstr "Programowy VLAN"
 
@@ -4766,7 +4823,7 @@ msgstr "Dzierżawy statyczne"
 msgid "Static Routes"
 msgstr "Statyczne ścieżki routingu"
 
-#: modules/luci-base/luasrc/model/network.lua:960
+#: modules/luci-base/luasrc/model/network.lua:961
 msgid "Static address"
 msgstr "Stały adres"
 
@@ -4843,7 +4900,7 @@ msgstr ""
 msgid "Switch Port Mask"
 msgstr ""
 
-#: modules/luci-base/luasrc/model/network.lua:1415
+#: modules/luci-base/luasrc/model/network.lua:1416
 msgid "Switch VLAN"
 msgstr ""
 
@@ -4886,9 +4943,17 @@ msgid "System Properties"
 msgstr "Właściwości systemu"
 
 # Wszędzie używane jest "loga" z małej litery.
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:69
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:76
 msgid "System log buffer size"
 msgstr "Rozmiar bufora loga systemu"
+
+#: modules/luci-base/htdocs/luci-static/resources/cbi.js:1339
+msgid "T"
+msgstr ""
+
+#: modules/luci-base/luasrc/tools/webadmin.lua:18
+msgid "TB"
+msgstr ""
 
 #: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:333
 msgid "TCP:"
@@ -5005,9 +5070,9 @@ msgstr ""
 "Nie można uzyskać dostępu do urządzenia w ciągu %d sekund po zastosowaniu "
 "oczekujących zmian, które spowodowały wycofanie konfiguracji ze względów "
 "bezpieczeństwa. Jeśli jednak uważasz, że zmiany konfiguracji są poprawne, "
-"kontynuuj, stosując je mimo to. Możesz też odrzucić to ostrzeżenie i edytować "
-"zmiany przed ponownym zastosowaniem lub odrzucić wszystkie oczekujące zmiany, "
-"aby zachować aktualnie działający stan konfiguracji."
+"kontynuuj, stosując je mimo to. Możesz też odrzucić to ostrzeżenie i "
+"edytować zmiany przed ponownym zastosowaniem lub odrzucić wszystkie "
+"oczekujące zmiany, aby zachować aktualnie działający stan konfiguracji."
 
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:87
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:41
@@ -5056,8 +5121,8 @@ msgid ""
 "The given SSH public key is invalid. Please supply proper public RSA or "
 "ECDSA keys."
 msgstr ""
-"Podany klucz publiczny SSH jest nieprawidłowy. Podaj odpowiedni publiczny RSA "
-"lub klucze ECDSA."
+"Podany klucz publiczny SSH jest nieprawidłowy. Podaj odpowiedni publiczny "
+"RSA lub klucze ECDSA."
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/iface_add.lua:67
 msgid "The given network name is not unique"
@@ -5147,7 +5212,7 @@ msgstr ""
 "Przesłany plik obrazu nie zawiera obsługiwanego formatu. Upewnij się, że "
 "wybrałeś odpowiedni format obrazu dla danej platformy."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:156
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:163
 msgid "Theme"
 msgstr "Motyw"
 
@@ -5180,7 +5245,7 @@ msgstr ""
 #: themes/luci-theme-freifunk-generic/luasrc/view/themes/freifunk-generic/header.htm:104
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:233
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:260
-#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:286
+#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:287
 msgid ""
 "There is no password set on this router. Please configure a root password to "
 "protect the web interface and enable SSH."
@@ -5281,12 +5346,12 @@ msgstr "Poniższa strona przedstawia aktualnie aktywne połączenia sieciowe."
 msgid "This section contains no values yet"
 msgstr "Ta sekcja nie zawiera jeszcze żadnych wartości"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:200
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:211
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:207
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:218
 msgid "Time Synchronization"
 msgstr "Synchronizacja czasu"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:205
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:212
 msgid "Time Synchronization is not configured yet."
 msgstr "Synchronizacja czasu nie jest jeszcze skonfigurowana."
 
@@ -5367,7 +5432,7 @@ msgstr "Rodzaj Triggeru"
 msgid "Tunnel ID"
 msgstr "Numer identyfikacyjny tunelu"
 
-#: modules/luci-base/luasrc/model/network.lua:1420
+#: modules/luci-base/luasrc/model/network.lua:1421
 msgid "Tunnel Interface"
 msgstr "Interfejs tunelu"
 
@@ -5445,15 +5510,15 @@ msgstr "Nie można rozpoznać nazwy peera"
 msgid "Unavailable Seconds (UAS)"
 msgstr "Czas niedostępnośći (UAS)"
 
-#: modules/luci-base/luasrc/model/network.lua:964
+#: modules/luci-base/luasrc/model/network.lua:965
 msgid "Unknown"
 msgstr "Nieznany"
 
-#: modules/luci-base/luasrc/model/network.lua:1131
+#: modules/luci-base/luasrc/model/network.lua:1132
 msgid "Unknown error (%s)"
 msgstr "Nieznany błąd (%s)"
 
-#: modules/luci-base/luasrc/model/network.lua:958
+#: modules/luci-base/luasrc/model/network.lua:959
 msgid "Unmanaged"
 msgstr "Niezarządzalny"
 
@@ -5781,8 +5846,8 @@ msgstr "Oczekiwanie na zastosowanie konfiguracji… %ds"
 msgid "Waiting for device..."
 msgstr "Oczekiwanie na urządzenie..."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:96
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:106
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:103
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:113
 msgid "Warning"
 msgstr "Ostrzeżenie"
 
@@ -5833,12 +5898,12 @@ msgstr "WireGuard VPN"
 msgid "Wireless"
 msgstr "Sieć bezprzewodowa"
 
-#: modules/luci-base/luasrc/model/network.lua:1408
+#: modules/luci-base/luasrc/model/network.lua:1409
 msgid "Wireless Adapter"
 msgstr "Adapter bezprzewodowy"
 
-#: modules/luci-base/luasrc/model/network.lua:1394
-#: modules/luci-base/luasrc/model/network.lua:1855
+#: modules/luci-base/luasrc/model/network.lua:1395
+#: modules/luci-base/luasrc/model/network.lua:1858
 msgid "Wireless Network"
 msgstr "Sieć bezprzewodowa"
 
@@ -5879,7 +5944,7 @@ msgstr "Sieć bezprzewodowa jest włączona"
 msgid "Write received DNS requests to syslog"
 msgstr "Zapisz otrzymane żądania DNS do syslog'a"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:88
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:95
 msgid "Write system log to file"
 msgstr "Zapisz log systemowy do pliku"
 
@@ -5902,7 +5967,7 @@ msgstr ""
 #: themes/luci-theme-freifunk-generic/luasrc/view/themes/freifunk-generic/header.htm:221
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:243
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:253
-#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:298
+#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:299
 msgid ""
 "You must enable JavaScript in your browser or LuCI will not work properly."
 msgstr ""
@@ -5919,11 +5984,11 @@ msgstr ""
 "zaktualizuj go do wersji co najmniej 7 lub użyj innej przeglądarki, takiej "
 "jak Firefox, Opera czy Safari."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:118
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:125
 msgid "ZRam Compression Algorithm"
 msgstr "Alogrytm kompresji ZRam"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:125
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:132
 msgid "ZRam Compression Streams"
 msgstr "Strumienie kompresji ZRam"
 
@@ -5931,7 +5996,7 @@ msgstr "Strumienie kompresji ZRam"
 msgid "ZRam Settings"
 msgstr "Ustawienia ZRam"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:113
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:120
 msgid "ZRam Size"
 msgstr "Rozmiar ZRam"
 
@@ -6138,7 +6203,7 @@ msgstr "nieobecny"
 #: themes/luci-theme-freifunk-generic/luasrc/view/themes/freifunk-generic/header.htm:133
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:215
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:225
-#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:250
+#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:251
 msgid "off"
 msgstr "wyłączone"
 
@@ -6146,7 +6211,7 @@ msgstr "wyłączone"
 #: themes/luci-theme-freifunk-generic/luasrc/view/themes/freifunk-generic/header.htm:132
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:214
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:224
-#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:247
+#: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:248
 msgid "on"
 msgstr "włączone"
 
