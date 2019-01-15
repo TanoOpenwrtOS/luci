@@ -49,7 +49,7 @@ function index()
 	if commit then uci:commit("ddns") end
 	uci:unload("ddns")
 
-	entry( {"admin", "services", "ddns"}, cbi("ddns/overview"), _("Dynamic DNS"), 59)
+	entry( {"admin", "services", "ddns"}, cbi("ddns/overview"), _("DDNS"), 59)
 	entry( {"admin", "services", "ddns", "detail"}, cbi("ddns/detail"), nil ).leaf = true
 	entry( {"admin", "services", "ddns", "hints"}, cbi("ddns/hints",
 		{hideapplybtn=true, hidesavebtn=true, hideresetbtn=true}), nil ).leaf = true
