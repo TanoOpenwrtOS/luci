@@ -38,6 +38,10 @@ msgstr "Permitir IPs não-públicos"
 msgid "Applying changes"
 msgstr "Aplicar mudanças"
 
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:34
+msgid "Autostart DDNS service on system startup"
+msgstr ""
+
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:45
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:50
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:263
@@ -52,7 +56,7 @@ msgstr ""
 "Abaixo uma lista de dicas de configurações para seu sistema para rodar "
 "atualizações de DNS Dinâmico sem limitações"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:95
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:102
 msgid ""
 "Below is a list of configured DDNS configurations and their current state."
 msgstr ""
@@ -64,11 +68,11 @@ msgstr "Limitar Rede"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1114
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1124
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:82
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:71
 msgid "Binding to a specific network not supported"
 msgstr "Não suportado limitar a uma rede específica"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:113
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:102
 msgid ""
 "BusyBox's nslookup and Wget do not support to specify the IP version to use "
 "for communication with DDNS Provider!"
@@ -76,7 +80,7 @@ msgstr ""
 "nslookup e Wget do BusyBox não suportam que especifique a versão de IP a ser "
 "usada para comunicação com o provedor DDNS!"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:133
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:122
 msgid ""
 "BusyBox's nslookup and hostip do not support to specify to use TCP instead "
 "of default UDP when requesting DNS server!"
@@ -84,7 +88,7 @@ msgstr ""
 "nslookup e hostip do BusyBox não suportam que especifique para usar TCP em "
 "vez do padrão UDP quando requisitando servidor DNS!"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:146
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:135
 msgid ""
 "BusyBox's nslookup in the current compiled version does not handle given DNS "
 "Servers correctly!"
@@ -108,7 +112,7 @@ msgstr "Checar Intervalo"
 msgid "Collecting data..."
 msgstr "Coletando dados…"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:102
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:109
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:48
 msgid "Configuration"
 msgstr "Configuração"
@@ -130,25 +134,6 @@ msgstr "Configure aqui os detalhes para o serviço DNS Dinâmico selecionado."
 msgid "Current setting"
 msgstr "Configuração atual"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:46
-msgid ""
-"Currently DDNS updates are not started at boot or on interface events.<br /"
-">This is the default if you run DDNS scripts by yourself (i.e. via cron with "
-"force_interval set to '0')"
-msgstr ""
-"Atualizações DDNS atuais não são iniciadas no boot ou nos eventos da "
-"interface.<br />Isso é o normal se você roda scripts DDNS por conta própria "
-"(ex. via cron com force_interval setado para ‘0’)"
-
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:76
-msgid ""
-"Currently DDNS updates are not started at boot or on interface events.<br /"
-">You can start/stop each configuration here. It will run until next reboot."
-msgstr ""
-"Atualizações DDNS atuais não são iniciadas no boot ou nos eventos da "
-"interface.<br />Você pode iniciar/parar cada configuração aqui. Ela irá "
-"rodar até o próximo reboto."
-
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:452
 msgid "Custom update script to be used for updating your DDNS Provider."
 msgstr ""
@@ -163,8 +148,10 @@ msgstr "URL para atualização personalizada"
 msgid "Custom update-script"
 msgstr "Script para atualização personalizado"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:45
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:75
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:52
+msgid "DDNS"
+msgstr ""
+
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:19
 msgid "DDNS Autostart disabled"
 msgstr "Auto-inicialização de DDNS desabilitada"
@@ -184,7 +171,7 @@ msgstr "Provedor de serviço DDNS"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1211
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1222
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:132
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:121
 msgid "DNS requests via TCP not supported"
 msgstr "Requisição de DNS via TCP não suportada"
 
@@ -251,8 +238,8 @@ msgstr ""
 "Diretório contendo PID e outras informações de status para cada sessão em "
 "execução"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:193
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:217
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:189
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:224
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:68
 msgid "Disabled"
 msgstr "Desabilitado"
@@ -261,7 +248,6 @@ msgstr "Desabilitado"
 msgid "Domain"
 msgstr "Domínio"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:52
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:44
 msgid "Dynamic DNS"
 msgstr "DNS Dinâmico"
@@ -274,12 +260,16 @@ msgstr ""
 "O DNS dinâmico permite que o seu roteador possa ser encontrado a partir de "
 "um nome fixo, mesmo usando um Endereço IP dinâmico."
 
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:33
+msgid "Enable DDNS autostart"
+msgstr ""
+
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:609
 msgid "Enable secure communication with DDNS provider"
 msgstr "Habilitar comunicação segura com o provedor DDNS"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:271
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:153
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:160
 msgid "Enabled"
 msgstr "Habilitado"
 
@@ -313,7 +303,7 @@ msgstr "Arquivo não encontrado"
 msgid "File not found or empty"
 msgstr "Arquivo não encontrado ou vazio"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:87
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:94
 msgid ""
 "Follow this link<br />You will find more hints to optimize your system to "
 "run DDNS scripts with all options"
@@ -337,7 +327,7 @@ msgstr "Forçar versão de IP"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1145
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1154
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:112
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:101
 msgid "Force IP Version not supported"
 msgstr "Forçar versão de IP não suportado"
 
@@ -362,24 +352,25 @@ msgstr "Formato"
 msgid "Format: IP or FQDN"
 msgstr "Formato: IP ou FQDN"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:87
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:76
 msgid ""
 "GNU Wget will use the IP of given network, cURL will use the physical "
 "interface."
 msgstr "GNU Wget usará o IP da rede informada, cURL usará a interface física"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/global.lua:26
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:32
 msgid "Global Settings"
 msgstr "Configurações Globais"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:606
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:615
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:68
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:57
 msgid "HTTPS not supported"
 msgstr "HTTPS não suportado"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:24
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:55
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:73
 msgid "Hints"
 msgstr "Dicas"
 
@@ -406,7 +397,7 @@ msgstr "Endereço IPv4"
 msgid "IPv6 address must be given in square brackets"
 msgstr "Endereço IPv6 deve estar entre colchetes"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:57
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:46
 msgid ""
 "IPv6 is currently not (fully) supported by this system<br />Please follow "
 "the instructions on OpenWrt's homepage to enable IPv6 support<br />or update "
@@ -419,7 +410,7 @@ msgstr ""
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:28
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:32
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:38
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:56
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:45
 msgid "IPv6 not supported"
 msgstr "IPv6 não suportado"
 
@@ -439,13 +430,13 @@ msgstr ""
 "Se esta sessão do serviço está desabilidade, ele não pôde ser iniciado.<br /"
 ">nem da interface LuCI nem do console"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:160
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:149
 msgid "If using secure communication you should verify server certificates!"
 msgstr ""
 "Você deve verificar os certificados do servidor caso estiver utilizando "
 "comunicação segura"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:97
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:104
 msgid ""
 "If you want to send updates for IPv4 and IPv6 you need to define two "
 "separate Configurations i.e. 'myddns_ipv4' and 'myddns_ipv6'"
@@ -453,9 +444,9 @@ msgstr ""
 "Se deseja enviar atualizações para IPv4 e IPv6 você deve definir duas "
 "configurações separadas. Ex.: ‘myddns_ipv4’ e ‘myddns_ipv6’"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:73
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:89
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:103
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:62
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:78
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:92
 msgid ""
 "In some versions cURL/libcurl in OpenWrt is compiled without proxy support."
 msgstr ""
@@ -465,7 +456,7 @@ msgstr ""
 msgid "Info"
 msgstr "Informações"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:162
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:151
 msgid ""
 "Install 'ca-certificates' package or needed certificates by hand into /etc/"
 "ssl/certs default directory"
@@ -502,7 +493,7 @@ msgid "It is NOT recommended for casual users to change settings on this page."
 msgstr ""
 "Não é recomendado que usuários iniciantes alterem configurações nessa página"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:159
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:166
 msgid "Last Update"
 msgstr "Última atualização"
 
@@ -531,7 +522,7 @@ msgid "Log to syslog"
 msgstr "Log para log do sistema"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:278
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:113
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:120
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:50
 msgid "Lookup Hostname"
 msgstr "Verificar nome de host"
@@ -540,7 +531,7 @@ msgstr "Verificar nome de host"
 msgid "NOT installed"
 msgstr "NÃO instalado"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:83
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:72
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to select a network to use for "
 "communication."
@@ -548,7 +539,7 @@ msgstr ""
 "Nem GNU Wget com SSL nem cURL instalado para selecionar uma rede para usar "
 "para comunicação"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:69
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:58
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to support secure updates via "
 "HTTPS protocol."
@@ -573,12 +564,12 @@ msgstr "Rede na qual os scripts de atualização DDNS serão iniciados"
 msgid "Never"
 msgstr "Nunca"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:159
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:166
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:49
 msgid "Next Update"
 msgstr "Próxima atualização"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:159
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:148
 msgid "No certificates found"
 msgstr "Nenhum certificado encontrado"
 
@@ -652,7 +643,7 @@ msgstr "Opcional: Substitui [PARAMEND] na URL de atualização"
 msgid "Optional: Replaces [PARAMOPT] in Update-URL (NOT URL-encoded)"
 msgstr "Opcional: Substitui [PARAMOPT] na URL de atualização"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:94
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:101
 msgid "Overview"
 msgstr "Visão Geral"
 
@@ -682,11 +673,11 @@ msgid "Please press [Read] button"
 msgstr "Por favor pressione o botão [Ler]"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:36
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:66
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:84
 msgid "Please update to the current version!"
 msgstr "Por favor atualize para a versão atual"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:229
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:236
 msgid "Process ID"
 msgstr "ID do processo"
 
@@ -698,7 +689,7 @@ msgstr "Ler / Ler novamente o arquivo de log"
 msgid "Really change DDNS provider?"
 msgstr "Mudar servidor DDNS?"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:113
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:120
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:51
 msgid "Registered IP"
 msgstr "IP registrado"
@@ -715,8 +706,8 @@ msgstr "Substitui [PASSWORD] na URL de atualização"
 msgid "Replaces [USERNAME] in Update-URL (URL-encoded)"
 msgstr "Substitui [USERNAME] na URL de atualização"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:188
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:213
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:184
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:220
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:64
 msgid "Run once"
 msgstr "Rodar apenas uma vez"
@@ -727,12 +718,12 @@ msgstr "Rodar apenas uma vez"
 msgid "Script"
 msgstr "Script"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:86
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:93
 msgid "Show more"
 msgstr "Mostrar mais"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:33
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:63
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:81
 msgid "Software update required"
 msgstr "Atualização de software necessária"
 
@@ -740,13 +731,13 @@ msgstr "Atualização de software necessária"
 msgid "Specifying a DNS-Server is not supported"
 msgstr "Não é suportado especificar um servidor DNS"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:238
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:245
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:34
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:115
 msgid "Start"
 msgstr "Iniciar"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:229
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:236
 msgid "Start / Stop"
 msgstr "Iniciar / Parar"
 
@@ -754,14 +745,14 @@ msgstr "Iniciar / Parar"
 msgid "Status directory"
 msgstr "Diretório de status"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:198
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:221
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:194
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:228
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:66
 msgid "Stopped"
 msgstr "Parado"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:34
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:64
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:82
 msgid ""
 "The currently installed 'ddns-scripts' package did not support all available "
 "settings."
@@ -782,7 +773,7 @@ msgstr "Não há serviço configurado"
 msgid "Timer Settings"
 msgstr "Configurações do Controlador de Tempo"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:101
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:108
 msgid "To change global settings click here"
 msgstr "Clique aqui para mudar configurações globais"
 
@@ -829,12 +820,12 @@ msgstr "Script definido pelo usuário para ler endereço IP do sistema"
 msgid "Username"
 msgstr "Usuário"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:145
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:134
 msgid "Using specific DNS Server not supported"
 msgstr "Usar servidor DNS específico não é suportado"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:183
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:209
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:179
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:216
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:58
 msgid "Verify"
 msgstr "Verificar"
@@ -872,7 +863,7 @@ msgstr ""
 "Escreve mensagens de log no log do sistema. Erros críticos sempre serão "
 "escritos no log do sistema."
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:149
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:138
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' "
 "package, if you need to specify a DNS server to detect your registered IP."
@@ -881,8 +872,8 @@ msgstr ""
 "'hostip' caso precise especificar um servidor DNS para detectar seu IP "
 "registrado."
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:121
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:136
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:110
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:125
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' package for DNS "
 "requests."
@@ -890,11 +881,11 @@ msgstr ""
 "Você deve instalar o pacote 'bind-host' ou 'knot-host' ou 'drill' para "
 "requisições DNS."
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:117
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:106
 msgid "You should install 'wget' or 'curl' or 'uclient-fetch' package."
 msgstr "Você deve instalar o pacote 'wget' ou 'curl' ou 'uclient-fetch'."
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:71
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:60
 msgid ""
 "You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-"
 "*ssl' package."
@@ -902,21 +893,21 @@ msgstr ""
 "Você deve instalar o pacote 'wget' ou 'curl' ou 'uclient-fetch' com "
 "'libustream-*ssl'."
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:85
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:74
 msgid "You should install 'wget' or 'curl' package."
 msgstr "Você deve instalar o pacote ‘wget’ ou ‘curl’."
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:101
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:90
 msgid ""
 "You should install 'wget' or 'uclient-fetch' package or replace libcurl."
 msgstr ""
 "Você deve instalar o pacote ‘wget’ ou ‘uclient-fetch’ ou substituir libcurl."
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:99
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:88
 msgid "cURL is installed, but libcurl was compiled without proxy support."
 msgstr "cURL está instalado, mas libcurl foi compilada sem suporte a proxy"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:98
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:87
 msgid "cURL without Proxy Support"
 msgstr "cURL sem suporte a proxy"
 
@@ -933,7 +924,7 @@ msgstr ""
 msgid "can not resolve host:"
 msgstr "não pôde resolver host:"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:120
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:127
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:29
 msgid "config error"
 msgstr "erro de configuração"
@@ -1027,11 +1018,11 @@ msgstr "deve iniciar com ‘http://'"
 msgid "nc (netcat) can not connect"
 msgstr "nc (netcat) não pôde conectar"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:171
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:178
 msgid "never"
 msgstr "nunca"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:147
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:154
 msgid "no data"
 msgstr "sem dados"
 
@@ -1094,7 +1085,7 @@ msgid "to run HTTPS without verification of server certificates (insecure)"
 msgstr ""
 "para rodar HTTPS sem verificação dos certificados do servidor (não seguro)"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:185
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:192
 msgid "unknown error"
 msgstr "erro desconhecido"
 
@@ -1106,6 +1097,24 @@ msgstr "erro não específico"
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1176
 msgid "use hostname, FQDN, IPv4- or IPv6-Address"
 msgstr "use hostname, FQDN, endereço IPv4 ou IPv6"
+
+#~ msgid ""
+#~ "Currently DDNS updates are not started at boot or on interface events."
+#~ "<br />You can start/stop each configuration here. It will run until next "
+#~ "reboot."
+#~ msgstr ""
+#~ "Atualizações DDNS atuais não são iniciadas no boot ou nos eventos da "
+#~ "interface.<br />Você pode iniciar/parar cada configuração aqui. Ela irá "
+#~ "rodar até o próximo reboto."
+
+#~ msgid ""
+#~ "Currently DDNS updates are not started at boot or on interface events."
+#~ "<br />This is the default if you run DDNS scripts by yourself (i.e. via "
+#~ "cron with force_interval set to '0')"
+#~ msgstr ""
+#~ "Atualizações DDNS atuais não são iniciadas no boot ou nos eventos da "
+#~ "interface.<br />Isso é o normal se você roda scripts DDNS por conta "
+#~ "própria (ex. via cron com force_interval setado para ‘0’)"
 
 #~ msgid "Config error"
 #~ msgstr "Erro de configuração"

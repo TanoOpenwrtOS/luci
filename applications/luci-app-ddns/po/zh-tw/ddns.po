@@ -41,6 +41,10 @@ msgstr "允許非公網 IP"
 msgid "Applying changes"
 msgstr "正在應用更改"
 
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:34
+msgid "Autostart DDNS service on system startup"
+msgstr ""
+
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:45
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:50
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:263
@@ -53,7 +57,7 @@ msgid ""
 "updates without limitations"
 msgstr "以下是一個能夠讓您的系統不受限制地進行動態 DNS 更新設定的提示列表"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:95
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:102
 msgid ""
 "Below is a list of configured DDNS configurations and their current state."
 msgstr "以下是當前已經配置好的 DDNS 設定項列表以及它們的當前狀態。"
@@ -64,11 +68,11 @@ msgstr "使用的介面"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1114
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1124
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:82
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:71
 msgid "Binding to a specific network not supported"
 msgstr "不支援繫結到一個指定的網路"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:113
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:102
 msgid ""
 "BusyBox's nslookup and Wget do not support to specify the IP version to use "
 "for communication with DDNS Provider!"
@@ -76,7 +80,7 @@ msgstr ""
 "與 DDNS 供應商通訊時，BusyBox 的 nslookup 和 Wget 不支援設定特定的 IP 協議版"
 "本。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:133
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:122
 msgid ""
 "BusyBox's nslookup and hostip do not support to specify to use TCP instead "
 "of default UDP when requesting DNS server!"
@@ -84,7 +88,7 @@ msgstr ""
 "向 DNS 伺服器查詢時，BusyBox 的 nslookup 和 hostip 不支援使用 TCP 而不是預設"
 "的 UDP！"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:146
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:135
 msgid ""
 "BusyBox's nslookup in the current compiled version does not handle given DNS "
 "Servers correctly!"
@@ -106,7 +110,7 @@ msgstr "檢查時間週期"
 msgid "Collecting data..."
 msgstr "正在收集資料…"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:102
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:109
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:48
 msgid "Configuration"
 msgstr "設定"
@@ -126,23 +130,6 @@ msgstr "在這裡修改選擇的 DDNS 服務的詳細配置。"
 msgid "Current setting"
 msgstr "當前設定"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:46
-msgid ""
-"Currently DDNS updates are not started at boot or on interface events.<br /"
-">This is the default if you run DDNS scripts by yourself (i.e. via cron with "
-"force_interval set to '0')"
-msgstr ""
-"現在，DDNS 更新在開機或者介面動作時不會被觸發。<br />如果您手工執行 DDNS 指令"
-"碼的話（例如使用 cron 時把 force_interval 設定為 0），這是預設設定。"
-
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:76
-msgid ""
-"Currently DDNS updates are not started at boot or on interface events.<br /"
-">You can start/stop each configuration here. It will run until next reboot."
-msgstr ""
-"現在，DDNS 更新在開機或者介面動作時不會被觸發。<br />您可以在這裡開始/停止每"
-"一個設定的條目。它在下次重啟之前一直有效。"
-
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:452
 msgid "Custom update script to be used for updating your DDNS Provider."
 msgstr "用來更新動態 DNS 的自訂指令碼。"
@@ -155,8 +142,10 @@ msgstr "自訂更新 URL"
 msgid "Custom update-script"
 msgstr "自訂更新指令碼"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:45
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:75
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:52
+msgid "DDNS"
+msgstr ""
+
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:19
 msgid "DDNS Autostart disabled"
 msgstr "DDNS 自動啟動已禁用。"
@@ -176,7 +165,7 @@ msgstr "DDNS 服務提供商"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1211
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1222
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:132
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:121
 msgid "DNS requests via TCP not supported"
 msgstr "不支援使用 TCP 進行 DNS 解析"
 
@@ -237,8 +226,8 @@ msgid ""
 "Directory contains PID and other status information for each running section"
 msgstr "儲存每個執行中的設定的PID以及其它狀態資訊的目錄"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:193
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:217
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:189
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:224
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:68
 msgid "Disabled"
 msgstr "已禁用"
@@ -247,7 +236,6 @@ msgstr "已禁用"
 msgid "Domain"
 msgstr "域名"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:52
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:44
 msgid "Dynamic DNS"
 msgstr "動態 DNS"
@@ -258,12 +246,16 @@ msgid ""
 "while having a dynamically changing IP address."
 msgstr "動態 DNS 允許為擁有動態 IP 的主機配置一個固定的可訪問域名。"
 
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:33
+msgid "Enable DDNS autostart"
+msgstr ""
+
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:609
 msgid "Enable secure communication with DDNS provider"
 msgstr "啟用安全連線與 DDNS 提供商聯絡"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:271
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:153
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:160
 msgid "Enabled"
 msgstr "已啟用"
 
@@ -297,7 +289,7 @@ msgstr "檔案未找到"
 msgid "File not found or empty"
 msgstr "檔案未找到或為空"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:87
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:94
 msgid ""
 "Follow this link<br />You will find more hints to optimize your system to "
 "run DDNS scripts with all options"
@@ -319,7 +311,7 @@ msgstr "強制設定 IP 版本"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1145
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1154
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:112
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:101
 msgid "Force IP Version not supported"
 msgstr "不支援強制設定 IP 版本"
 
@@ -344,24 +336,25 @@ msgstr "格式"
 msgid "Format: IP or FQDN"
 msgstr "格式：IP 或者 FQDN"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:87
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:76
 msgid ""
 "GNU Wget will use the IP of given network, cURL will use the physical "
 "interface."
 msgstr "GNU Wget 將會使用給定的網路的 IP 位址，而 cURL 將會使用物理介面。"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/global.lua:26
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:32
 msgid "Global Settings"
 msgstr "全域性設定"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:606
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:615
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:68
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:57
 msgid "HTTPS not supported"
 msgstr "不支援 HTTPS"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:24
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:55
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:73
 msgid "Hints"
 msgstr "提示"
 
@@ -386,7 +379,7 @@ msgstr "IPv4 位址"
 msgid "IPv6 address must be given in square brackets"
 msgstr "IPv6 位址必須填寫在中括號（\"[  ]\"）內"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:57
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:46
 msgid ""
 "IPv6 is currently not (fully) supported by this system<br />Please follow "
 "the instructions on OpenWrt's homepage to enable IPv6 support<br />or update "
@@ -398,7 +391,7 @@ msgstr ""
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:28
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:32
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:38
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:56
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:45
 msgid "IPv6 not supported"
 msgstr "IPv6 不被支援"
 
@@ -418,11 +411,11 @@ msgstr ""
 "如果服務配置被禁用，那麼它將不能被啟動。<br />無論是通過 LuCI 頁面或者是通過"
 "終端。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:160
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:149
 msgid "If using secure communication you should verify server certificates!"
 msgstr "如果使用安全通訊，您應該驗證伺服器證書！"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:97
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:104
 msgid ""
 "If you want to send updates for IPv4 and IPv6 you need to define two "
 "separate Configurations i.e. 'myddns_ipv4' and 'myddns_ipv6'"
@@ -430,9 +423,9 @@ msgstr ""
 "如果您需要同時更新 IPv4 和 IPv6 位址，您需要單獨新增兩個配置項（例"
 "如'myddns_ipv4'和'myddns_ipv6'）"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:73
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:89
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:103
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:62
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:78
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:92
 msgid ""
 "In some versions cURL/libcurl in OpenWrt is compiled without proxy support."
 msgstr "OpenWrt 中，cURL/libcurl 的某些版本編譯時沒有啟用代理伺服器支援"
@@ -441,7 +434,7 @@ msgstr "OpenWrt 中，cURL/libcurl 的某些版本編譯時沒有啟用代理伺
 msgid "Info"
 msgstr "資訊"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:162
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:151
 msgid ""
 "Install 'ca-certificates' package or needed certificates by hand into /etc/"
 "ssl/certs default directory"
@@ -473,7 +466,7 @@ msgstr ""
 msgid "It is NOT recommended for casual users to change settings on this page."
 msgstr "強烈不建議初次使用的使用者修改本頁設定。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:159
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:166
 msgid "Last Update"
 msgstr "上次更新"
 
@@ -502,7 +495,7 @@ msgid "Log to syslog"
 msgstr "把日誌記錄到系統日誌"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:278
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:113
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:120
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:50
 msgid "Lookup Hostname"
 msgstr "查詢主機名"
@@ -511,13 +504,13 @@ msgstr "查詢主機名"
 msgid "NOT installed"
 msgstr "未安裝"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:83
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:72
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to select a network to use for "
 "communication."
 msgstr "包含 SSL 支援的 GNU Wget 或者 cURL 均未安裝，無法選擇網路用於通訊。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:69
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:58
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to support secure updates via "
 "HTTPS protocol."
@@ -542,12 +535,12 @@ msgstr "DDNS 更新指令碼將會運行於該網路"
 msgid "Never"
 msgstr "從不"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:159
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:166
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:49
 msgid "Next Update"
 msgstr "下次更新"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:159
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:148
 msgid "No certificates found"
 msgstr "找不到證書"
 
@@ -620,7 +613,7 @@ msgstr "可選：替換更新 URL（已編碼 URL）中的 [PARAMENC]"
 msgid "Optional: Replaces [PARAMOPT] in Update-URL (NOT URL-encoded)"
 msgstr "可選：替換更新 URL（未編碼 URL）中的 [PARAMENC]"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:94
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:101
 msgid "Overview"
 msgstr "總覽"
 
@@ -650,11 +643,11 @@ msgid "Please press [Read] button"
 msgstr "請按下\"讀取\"按鈕"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:36
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:66
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:84
 msgid "Please update to the current version!"
 msgstr "請更新到最新版本!"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:229
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:236
 msgid "Process ID"
 msgstr "程序 ID"
 
@@ -666,7 +659,7 @@ msgstr "讀取/重新讀取日誌檔案"
 msgid "Really change DDNS provider?"
 msgstr "確定更改 DDNS 提供商嗎？"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:113
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:120
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:51
 msgid "Registered IP"
 msgstr "已註冊的 IP 位址"
@@ -683,8 +676,8 @@ msgstr "替換更新 URL（已編碼 URL）中的 [PASSWORD]"
 msgid "Replaces [USERNAME] in Update-URL (URL-encoded)"
 msgstr "替換更新 URL（已編碼 URL）中的 [USERNAME]"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:188
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:213
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:184
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:220
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:64
 msgid "Run once"
 msgstr "執行一次"
@@ -695,12 +688,12 @@ msgstr "執行一次"
 msgid "Script"
 msgstr "指令碼"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:86
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:93
 msgid "Show more"
 msgstr "檢視更多"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:33
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:63
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:81
 msgid "Software update required"
 msgstr "需要進行軟體更新"
 
@@ -708,13 +701,13 @@ msgstr "需要進行軟體更新"
 msgid "Specifying a DNS-Server is not supported"
 msgstr "不支援指定 DNS 伺服器"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:238
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:245
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:34
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:115
 msgid "Start"
 msgstr "啟動"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:229
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:236
 msgid "Start / Stop"
 msgstr "啟動 / 停止"
 
@@ -722,14 +715,14 @@ msgstr "啟動 / 停止"
 msgid "Status directory"
 msgstr "狀態目錄"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:198
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:221
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:194
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:228
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:66
 msgid "Stopped"
 msgstr "已停止"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:34
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:64
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:82
 msgid ""
 "The currently installed 'ddns-scripts' package did not support all available "
 "settings."
@@ -748,7 +741,7 @@ msgstr "沒有已經配置好的服務項"
 msgid "Timer Settings"
 msgstr "計時器設定"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:101
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:108
 msgid "To change global settings click here"
 msgstr "點選這裡更改全域性設定"
 
@@ -795,12 +788,12 @@ msgstr "使用設定的指令碼來讀取系統 IP 位址"
 msgid "Username"
 msgstr "使用者名稱"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:145
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:134
 msgid "Using specific DNS Server not supported"
 msgstr "不支援使用特定的 DNS 伺服器"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:183
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:209
+#: applications/luci-app-ddns/luasrc/controller/ddns.lua:179
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:216
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:58
 msgid "Verify"
 msgstr "驗證"
@@ -834,7 +827,7 @@ msgid ""
 "syslog."
 msgstr "把日誌寫入系統日誌。無論是否啟用這項，錯誤資訊總是會被寫入系統日誌。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:149
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:138
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' "
 "package, if you need to specify a DNS server to detect your registered IP."
@@ -842,37 +835,37 @@ msgstr ""
 "如果您需要指定 DNS 伺服器來檢測您註冊的 IP，您應該安裝“bind-host”或“knot-"
 "host”或“drill”或“hostip”軟體包。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:121
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:136
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:110
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:125
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' package for DNS "
 "requests."
 msgstr "您應該為 DNS 請求安裝“bind-host”或“knot-host”或“drill”軟體包。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:117
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:106
 msgid "You should install 'wget' or 'curl' or 'uclient-fetch' package."
 msgstr "您應該安裝“wget”或“curl”或“uclient-fetch”軟體包。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:71
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:60
 msgid ""
 "You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-"
 "*ssl' package."
 msgstr "您應該安裝“wget”或“curl”或“uclient-fetch”，及“libustream-*ssl”軟體包。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:85
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:74
 msgid "You should install 'wget' or 'curl' package."
 msgstr "您應該安裝“wget”或“curl”軟體包。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:101
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:90
 msgid ""
 "You should install 'wget' or 'uclient-fetch' package or replace libcurl."
 msgstr "您應該安裝“wget”或“uclient-fetch”軟體包，或替換 libcurl。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:99
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:88
 msgid "cURL is installed, but libcurl was compiled without proxy support."
 msgstr "cURL 已經安裝，但是 libcurl 編譯時沒有啟用代理支援。"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:98
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/hints.lua:87
 msgid "cURL without Proxy Support"
 msgstr "cURL 沒有包含代理支援"
 
@@ -887,7 +880,7 @@ msgstr "無法確定本地 IP。請更換 IP 來源。"
 msgid "can not resolve host:"
 msgstr "無法解析主機："
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:120
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:127
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:29
 msgid "config error"
 msgstr "配置錯誤"
@@ -981,11 +974,11 @@ msgstr "必須以'http://'開頭"
 msgid "nc (netcat) can not connect"
 msgstr "nc（netcat）不可連線"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:171
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:178
 msgid "never"
 msgstr "從不"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:147
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:154
 msgid "no data"
 msgstr "無資料"
 
@@ -1047,7 +1040,7 @@ msgstr "秒"
 msgid "to run HTTPS without verification of server certificates (insecure)"
 msgstr "使用 HTTPS 但不檢查伺服器證書（不安全）"
 
-#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:185
+#: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:192
 msgid "unknown error"
 msgstr "未知錯誤"
 
@@ -1059,6 +1052,22 @@ msgstr "未指定的錯誤"
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1176
 msgid "use hostname, FQDN, IPv4- or IPv6-Address"
 msgstr "使用主機名或 IPv4/IPv6 位址"
+
+#~ msgid ""
+#~ "Currently DDNS updates are not started at boot or on interface events."
+#~ "<br />You can start/stop each configuration here. It will run until next "
+#~ "reboot."
+#~ msgstr ""
+#~ "現在，DDNS 更新在開機或者介面動作時不會被觸發。<br />您可以在這裡開始/停止"
+#~ "每一個設定的條目。它在下次重啟之前一直有效。"
+
+#~ msgid ""
+#~ "Currently DDNS updates are not started at boot or on interface events."
+#~ "<br />This is the default if you run DDNS scripts by yourself (i.e. via "
+#~ "cron with force_interval set to '0')"
+#~ msgstr ""
+#~ "現在，DDNS 更新在開機或者介面動作時不會被觸發。<br />如果您手工執行 DDNS "
+#~ "指令碼的話（例如使用 cron 時把 force_interval 設定為 0），這是預設設定。"
 
 #~ msgid "Config error"
 #~ msgstr "配置錯誤"
