@@ -14,7 +14,7 @@ function submitPassword(ev) {
 				showModal(_('Change login password'), [
 					E('div', _('The system password has been successfully changed.')),
 					E('div', { 'class': 'right' },
-						E('div', { class: 'btn', click: L.hideModal }, _('Dismiss')))
+						E('div', { class: 'btn', click: L.hideModal }, _('Close')))
 				]);
 
 				pw1.value = pw2.value = '';
@@ -25,7 +25,7 @@ function submitPassword(ev) {
 			E('div', { class: 'alert-message warning' },
 				_('Given password confirmation did not match, password not changed!')),
 			E('div', { 'class': 'right' },
-				E('div', { class: 'btn', click: L.hideModal }, _('Dismiss')))
+				E('div', { class: 'btn', click: L.hideModal }, _('Close')))
 		]);
 	}
 }
