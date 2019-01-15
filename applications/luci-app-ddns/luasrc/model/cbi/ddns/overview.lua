@@ -16,7 +16,6 @@ local show_hints = not (DDNS.env_info("has_ipv6")		-- IPv6 support
 				   and  DDNS.env_info("has_bindnet")	-- Bind to network/interface
 				   and  DDNS.env_info("has_cacerts")	-- certificates installed at /etc/ssl/certs
 		)
-local not_enabled = not SYS.init.enabled("ddns")
 local need_update = not CTRL.service_ok()
 
 -- html constants
@@ -30,6 +29,19 @@ m = Map("ddns")
 m.title		= CTRL.app_title_main()
 m.description	= CTRL.app_description()
 
+s = m:section( NamedSection, "global", "ddns", translate("Global Settings"))
+local ena = s:option(Flag, "enabled", translate("Enable DDNS autostart"),
+	translate("Autostart DDNS service on system startup"))
+ena.forcewrite = true
+
+function ena.cfgvalue()
+	if SYS.init.enabled("ddns") then
+		return "1"
+	else
+		return "0"
+	end
+end
+
 m.on_after_commit = function(self)
 	if self.changed then	-- changes ?
 		local command = CTRL.luci_helper
@@ -41,6 +53,12 @@ m.on_after_commit = function(self)
 			os.execute(command)
 		end
 	end
+
+	if ena:formvalue("global")  == "1" then
+		SYS.init.enable("ddns")
+	else
+		SYS.init.disable("ddns")
+	end
 end
 
 -- SimpleSection definition -- ##################################################
@@ -50,7 +68,7 @@ a.template = "ddns/overview_status"
 
 -- SimpleSection definition -- #################################################
 -- show Hints to optimize installation and script usage
-if show_hints or need_update or not_enabled then
+if show_hints or need_update then
 
 	s = m:section( SimpleSection, translate("Hints") )
 
@@ -64,17 +82,6 @@ if show_hints or need_update or not_enabled then
 		dv.value = translate("The currently installed 'ddns-scripts' package did not support all available settings.") ..
 				"<br />" ..
 				translate("Please update to the current version!")
-	end
-
-	-- DDNS Service disabled
-	if not_enabled then
-		local dv = s:option(DummyValue, "_not_enabled")
-		dv.titleref = DISP.build_url("admin", "system", "startup")
-		dv.rawhtml  = true
-		dv.title = bold_on ..
-			translate("DDNS Autostart disabled") .. bold_off
-		dv.value = translate("Currently DDNS updates are not started at boot or on interface events." .. "<br />" ..
-				"You can start/stop each configuration here. It will run until next reboot.")
 	end
 
 	-- Show more hints on a separate page

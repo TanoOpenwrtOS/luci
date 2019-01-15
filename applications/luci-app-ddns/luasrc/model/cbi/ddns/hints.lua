@@ -36,17 +36,6 @@ if not CTRL.service_ok() then
 			translate("Please update to the current version!")
 end
 
--- DDNS Service disabled
-if not SYS.init.enabled("ddns") then
-	local se = s:option(DummyValue, "_not_enabled")
-	se.titleref = DISP.build_url("admin", "system", "startup")
-	se.rawhtml  = true
-	se.title = bold_on ..
-		translate("DDNS Autostart disabled") .. bold_off
-	se.value = translate("Currently DDNS updates are not started at boot or on interface events." .. "<br />" ..
-			"This is the default if you run DDNS scripts by yourself (i.e. via cron with force_interval set to '0')" )
-end
-
 -- No IPv6 support
 if not DDNS.env_info("has_ipv6") then
 	local v6 = s:option(DummyValue, "_no_ipv6")
