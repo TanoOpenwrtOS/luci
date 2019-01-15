@@ -151,6 +151,10 @@ msgstr "通过 HTTP 代理连接到远程主机"
 msgid "Connection retry interval"
 msgstr "连接重试时间间隔"
 
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:564
+msgid "Cryptography"
+msgstr ""
+
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:47
 msgid "Daemonize after initialization"
 msgstr "初始化后进入后台运行"
@@ -331,6 +335,11 @@ msgstr "如果主机名解析错误，重试"
 msgid "Instance \"%s\""
 msgstr "实例 \"%s\""
 
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:81
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:98
+msgid "Instance name"
+msgstr ""
+
 #: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:18
 #: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:46
 msgid "Instance with that name already exists!"
@@ -377,6 +386,10 @@ msgstr "主要模式"
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:451
 msgid "Maximum number of queued TCP output packets"
 msgstr "TCP队列中输出包的最大数量"
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:167
+msgid "Networking"
+msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:446
 msgid "Number of allocated broadcast buffers"
@@ -585,6 +598,10 @@ msgstr ""
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:495
 msgid "Send notification to peer on disconnect"
 msgstr "断开连接时向客户端发送通知"
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:14
+msgid "Service"
+msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:35
 msgid "Set GID to group"
@@ -798,6 +815,10 @@ msgstr "使用 tun/tap 设备节点"
 msgid "Use username as common name"
 msgstr "把用户名作为通用名称"
 
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:367
+msgid "VPN"
+msgstr ""
+
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:63
 msgid "Write log to file"
 msgstr "保存日志至文件"
@@ -814,6 +835,14 @@ msgstr "每 n 秒后写入状态至文件"
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:114
 msgid "no"
 msgstr "否"
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:129
+msgid "start"
+msgstr ""
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:129
+msgid "stop"
+msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:200
 msgid "tun/tap device"

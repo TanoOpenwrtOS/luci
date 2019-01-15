@@ -149,6 +149,10 @@ msgstr "Połącz ze zdalnym hostem poprzez HTTP proxy"
 msgid "Connection retry interval"
 msgstr "Interwał powtarzania połączeń"
 
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:564
+msgid "Cryptography"
+msgstr ""
+
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:47
 msgid "Daemonize after initialization"
 msgstr "Przejdź w tryb demona po inicjalizacji"
@@ -334,6 +338,11 @@ msgstr "Jeżeli ustanowienie nazwy hosta nie powiedzie się, spróbuj ponownie"
 msgid "Instance \"%s\""
 msgstr "Instancja \"%s\""
 
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:81
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:98
+msgid "Instance name"
+msgstr ""
+
 #: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:18
 #: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:46
 msgid "Instance with that name already exists!"
@@ -380,6 +389,10 @@ msgstr "Tryb główny"
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:451
 msgid "Maximum number of queued TCP output packets"
 msgstr "Maksymalna liczba wychodzących pakietów TCP w kolejce"
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:167
+msgid "Networking"
+msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:446
 msgid "Number of allocated broadcast buffers"
@@ -590,6 +603,10 @@ msgstr ""
 #, fuzzy
 msgid "Send notification to peer on disconnect"
 msgstr "Wyślij zgłoszenie o rozłączeniu do peer"
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:14
+msgid "Service"
+msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:35
 msgid "Set GID to group"
@@ -809,6 +826,10 @@ msgstr "Użyj węzła urządzenia tun/tap"
 msgid "Use username as common name"
 msgstr "Użyj nazwy użytkownika jako nazwy wspólnej"
 
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:367
+msgid "VPN"
+msgstr ""
+
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:63
 msgid "Write log to file"
 msgstr "Zapisz log do pliku"
@@ -825,6 +846,14 @@ msgstr "Zapisz status do pliku co n sekund"
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:114
 msgid "no"
 msgstr "nie"
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:129
+msgid "start"
+msgstr ""
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:129
+msgid "stop"
+msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:200
 msgid "tun/tap device"

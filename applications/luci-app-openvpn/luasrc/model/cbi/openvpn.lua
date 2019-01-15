@@ -126,7 +126,7 @@ function updown.cbid(self, section)
 	return AbstractValue.cbid(self, section)
 end
 function updown.cfgvalue(self, section)
-	self.title = self._state and "stop" or "start"
+	self.title = self._state and translate("stop") or translate("start")
 	self.inputstyle = self._state and "reset" or "reload"
 end
 function updown.write(self, section, value)
