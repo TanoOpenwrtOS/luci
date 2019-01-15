@@ -4,16 +4,16 @@
 require("luci.sys")
 
 
-m = Map("luci_statistics",
-	translate("Collectd Settings"),
+m = Map("luci_statistics", translate("Statistics Settings"))
+
+-- general config section
+s = m:section( NamedSection, "collectd", "luci_statistics", translate("Collectd Settings"),
 	translate(
 		"Collectd is a small daemon for collecting data from " ..
 		"various sources through different plugins. On this page " ..
 		"you can change general settings for the collectd daemon."
-	))
-
--- general config section
-s = m:section( NamedSection, "collectd", "luci_statistics" )
+	)
+)
 
 -- general.hostname (Hostname)
 hostname = s:option( Value, "Hostname", translate("Hostname") )
@@ -58,5 +58,17 @@ fqdnlookup.default  = "false"
 fqdnlookup.optional = true
 fqdnlookup:depends( "Hostname", "" )
 
+-- RRDtool config section
+s = m:section( NamedSection, "rrdtool", "luci_statistics", translate("RRDtool Settings"))
+
+-- image width
+imagewidth = s:option( Value, "image_width", translate("Plots width"), translate("Pixels") )
+imagewidth.default = 700
+imagewidth.isnumber = true
+
+-- image width
+imageheight = s:option( Value, "image_height", translate("Plots height"), translate("Pixels") )
+imageheight.default = 200
+imageheight.isnumber = true
 
 return m
