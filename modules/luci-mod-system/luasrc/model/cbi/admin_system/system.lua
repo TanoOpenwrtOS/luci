@@ -58,7 +58,11 @@ function o.write(self, section, value)
 	AbstractValue.write(self, section, value)
 	local timezone = lookup_zone(value) or "GMT0"
 	self.map.uci:set("system", section, "timezone", timezone)
-	fs.writefile("/etc/TZ", timezone .. "\n")
+
+	if fs.access("/usr/share/zoneinfo/" .. value) then
+		fs.unlink("/tmp/localtime")
+		fs.symlink("/usr/share/zoneinfo/" .. value, "/tmp/localtime")
+	end
 end
 
 
