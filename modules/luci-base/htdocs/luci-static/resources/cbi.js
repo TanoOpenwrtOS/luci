@@ -1325,8 +1325,8 @@ String.prototype.format = function()
 						}
 
 						subst = (td > 0)
-							? String.format('%dd %dh %dm %ds', td, th, tm, ts)
-							: String.format('%dh %dm %ds', th, tm, ts);
+							? String.format(_('%dd %dh %dm %ds'), td, th, tm, ts)
+							: String.format(_('%dh %dm %ds'), th, tm, ts);
 
 						break;
 
@@ -1336,7 +1336,7 @@ String.prototype.format = function()
 
 						var i = 0;
 						var val = (+param || 0);
-						var units = [ ' ', ' K', ' M', ' G', ' T', ' P', ' E' ];
+						var units = [ ' ', _(' K'), _(' M'), _(' G'), _(' T'), _(' P'), _(' E') ];
 
 						for (i = 0; (i < units.length) && (val > mf); i++)
 							val /= mf;
