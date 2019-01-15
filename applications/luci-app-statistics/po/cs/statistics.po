@@ -100,11 +100,11 @@ msgstr "CollectRoutes"
 msgid "CollectTopology"
 msgstr "CollectTopology"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:8
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:10
 msgid "Collectd Settings"
 msgstr "Nastavení Collectd"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:9
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:11
 msgid ""
 "Collectd is a small daemon for collecting data from various sources through "
 "different plugins. On this page you can change general settings for the "
@@ -197,8 +197,8 @@ msgstr ""
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/apcups.lua:14
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/conntrack.lua:18
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/contextswitch.lua:11
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:12
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpufreq.lua:11
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:12
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/csv.lua:15
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/curl.lua:8
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/df.lua:15
@@ -549,6 +549,19 @@ msgstr "Ping"
 msgid "Ping Plugin Configuration"
 msgstr "Nastavení pluginu Ping"
 
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
+msgid "Pixels"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
+msgid "Plots height"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
+msgid "Plots width"
+msgstr ""
+
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:18
 msgid "Port"
 msgstr "Port"
@@ -597,6 +610,10 @@ msgstr "RRDTool"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:5
 msgid "RRDTool Plugin Configuration"
 msgstr "Nastavení pluginu RRDTool"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:62
+msgid "RRDtool Settings"
+msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:74
 msgid "Rows per RRA"
@@ -690,6 +707,10 @@ msgstr ""
 #: applications/luci-app-statistics/luasrc/view/public_statistics/graph.htm:9
 msgid "Statistics"
 msgstr "Statistiky"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:7
+msgid "Statistics Settings"
+msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:23
 msgid "Storage directory"

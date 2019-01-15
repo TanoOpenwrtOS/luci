@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: LuCI: statistics\n"
 "POT-Creation-Date: 2017-10-17 22:00+0300\n"
-"PO-Revision-Date: 2018-11-21 22:44+0300\n"
+"PO-Revision-Date: 2019-01-15 06:07+0300\n"
 "Language-Team: http://cyber-place.ru\n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -104,11 +104,11 @@ msgstr "Сбор информации о маршрутах (CollectRoutes)"
 msgid "CollectTopology"
 msgstr "Сбор информации о топологии (CollectTopology)"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:8
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:10
 msgid "Collectd Settings"
 msgstr "Настройки сollectd"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:9
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:11
 msgid ""
 "Collectd is a small daemon for collecting data from various sources through "
 "different plugins. On this page you can change general settings for the "
@@ -200,8 +200,8 @@ msgstr "Включить"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/apcups.lua:14
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/conntrack.lua:18
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/contextswitch.lua:11
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:12
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpufreq.lua:11
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:12
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/csv.lua:15
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/curl.lua:8
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/df.lua:15
@@ -561,6 +561,19 @@ msgstr "Пинг-запрос"
 msgid "Ping Plugin Configuration"
 msgstr "Настройка плагина «Пинг-запрос»"
 
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
+msgid "Pixels"
+msgstr "Пиксели"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
+msgid "Plots height"
+msgstr "Высота графиков"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
+msgid "Plots width"
+msgstr "Ширина графиков"
+
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:18
 msgid "Port"
 msgstr "Порт"
@@ -611,6 +624,10 @@ msgstr "RRDTool"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:5
 msgid "RRDTool Plugin Configuration"
 msgstr "Настройка плагина «RRDTool»"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:62
+msgid "RRDtool Settings"
+msgstr "Настройки RRDtool"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:74
 msgid "Rows per RRA"
@@ -704,6 +721,10 @@ msgstr "Настройка плагина «Splash Leases»"
 #: applications/luci-app-statistics/luasrc/view/public_statistics/graph.htm:9
 msgid "Statistics"
 msgstr "Статистика"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:7
+msgid "Statistics Settings"
+msgstr "Настройки статистики"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:23
 msgid "Storage directory"
