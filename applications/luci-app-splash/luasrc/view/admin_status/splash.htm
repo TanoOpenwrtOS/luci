@@ -199,7 +199,7 @@ end
 		<legend><%:Active Clients%></legend>
 		<div class="cbi-section-node">
 			<% if is_admin then %><form action="<%=REQUEST_URI%>" method="post"><input type="hidden" name="token" value="<%=token%>" /><% end %>
-			<div class="table cbi-section-table">
+			<div class="table-wrapper"><div class="table cbi-section-table">
 				<div class="thead">
 					<div class="tr cbi-section-table-titles">
 						<div class="th cbi-section-table-cell"><%:Hostname%></div>
@@ -263,7 +263,7 @@ end
 						</div>
 				<%- end -%>
 				</div>
-			</div>
+			</div></div>
 			<% if is_admin then %></form><% end %>
 		</div>
 	</fieldset>

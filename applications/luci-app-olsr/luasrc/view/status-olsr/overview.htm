@@ -159,7 +159,7 @@ XHR.poll(10, '<%=REQUEST_URI%>/json', { },
 <fieldset class="cbi-section">
         <legend><%:Network%></legend>
 
-        <div class="table" width="100%" cellspacing="10">
+        <div class="table-wrapper"><div class="table" width="100%" cellspacing="10">
                 <div class="tr"><div class="td" width="33%"><%:Interfaces%></div><div class="td">
 			<a href="<%=REQUEST_URI%>/interfaces">
 				<span id="nr_ifaces">-<span>
@@ -190,13 +190,13 @@ XHR.poll(10, '<%=REQUEST_URI%>/json', { },
 		</div></div>
 
 
-        </div>
+        </div></div>
 </fieldset>
 
 
 <fieldset class="cbi-section">
         <legend>OLSR <%:Configuration%></legend>
-        <div class="table" width="100%" cellspacing="10">
+        <div class="table-wrapper"><div class="table" width="100%" cellspacing="10">
                 <div class="tr"><div class="td" width="33%"><%:Version%></div><div class="td">
 			<span id="version">-<span>
 		</div></div>
@@ -214,7 +214,7 @@ XHR.poll(10, '<%=REQUEST_URI%>/json', { },
 			    <a href="<%=REQUEST_URI%>?conf_v6">OLSRD (IPv6)</a>
 			<% end %>
 		</div></div>
-	</div>
+	</div></div>
 </fieldset>
 
 <%+footer%>

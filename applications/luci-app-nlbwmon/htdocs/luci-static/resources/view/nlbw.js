@@ -294,7 +294,7 @@ function renderHostDetail(tooltip)
 				])
 			])
 		]),
-		E('div', { 'class': 'table' }, [
+		E('div', { 'class': 'table-wrapper' }, [ E('div', { 'class': 'table' }, [
 			E('div', { 'class': 'tr table-titles' }, [
 				E('div', { 'class': 'th' }, label || col),
 				E('div', { 'class': 'th' }, _('Conn.')),
@@ -303,7 +303,7 @@ function renderHostDetail(tooltip)
 				E('div', { 'class': 'th' }, _('Up. (Bytes)')),
 				E('div', { 'class': 'th' }, _('Up. (Pkts.)')),
 			])
-		])
+		]) ])
 	]);
 
 	var rows = [];

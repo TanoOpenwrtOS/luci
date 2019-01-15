@@ -20,7 +20,7 @@
 -%>
 
 <h4><%:New port forward%></h4>
-<div class="table">
+<div class="table-wrapper"><div class="table">
 	<div class="tr table-titles">
 		<div class="th"><%:Name%></div>
 		<div class="th"><%:Protocol%></div>
@@ -68,7 +68,7 @@
 			<input type="submit" class="cbi-button cbi-button-add" name="cbi.cts.<%=self.config%>.<%=self.sectiontype%>.<%=section%>" value="<%:Add%>" />
 		</div>
 	</div>
-</div>
+</div></div>
 
 <script type="text/javascript">//<![CDATA[
 	document.getElementById('_newfwd.extport').addEventListener('blur',

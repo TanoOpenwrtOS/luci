@@ -18,7 +18,7 @@ XHR.poll(-1, '<%=url('admin/telephony/status')%>', null,
 
 <fieldset class="cbi-section">
 	<legend><%:Current Telephony State%></legend>
-	<div class="table cbi-section-table" id="telephony_status_table">
+	<div class="table-wrapper"><div class="table cbi-section-table" id="telephony_status_table">
 		<div class="tr cbi-section-table-titles">
 			<div class="th cbi-section-table-cell"><%:Uplink%></div>
 			<div class="th cbi-section-table-cell"><%:Port1%></div>
@@ -27,5 +27,5 @@ XHR.poll(-1, '<%=url('admin/telephony/status')%>', null,
 		<div class="tr cbi-section-table-row">
 			<div class="td" colspan="5"><em><br /><%:Collecting data...%></em></div>
 		</div>
-	</div>
+	</div></div>
 </fieldset>

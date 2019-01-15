@@ -116,6 +116,7 @@ end
 		<input type="hidden" id="cbi.sts.<%=self.config%>.<%=self.sectiontype%>" name="cbi.sts.<%=self.config%>.<%=self.sectiontype%>" value="" />
 	<%- end -%>
 	<div class="cbi-section-descr"><%=self.description%></div>
+	<div class="table-wrapper">
 	<div class="table cbi-section-table">
 		<%-
 			render_titles()
@@ -172,6 +173,7 @@ end
 			<div class="td"><em><%:This section contains no values yet%></em></div>
 		</div>
 		<%- end -%>
+	</div>
 	</div>
 
 	<% if self.error then %>

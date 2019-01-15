@@ -21,7 +21,7 @@
 <%- if device_name then -%>
 <fieldset class="cbi-section">
   <legend><%=device_name%><%: Partitions%></legend>
-  <div class="table cbi-section-table" id="partitions">
+  <div class="table-wrapper"><div class="table cbi-section-table" id="partitions">
     <div class="tr cbi-section-table-titles">
       <div class="th cbi-section-table-cell"><%:Partition%></div>
       <div class="th cbi-section-table-cell"><%:Status%></div>
@@ -76,7 +76,7 @@
         <%- end -%>
       </div>
     </div>
-  </div>
+  </div></div>
 </fieldset>
 <%- else -%>
   <%- if rom_board_name then -%>

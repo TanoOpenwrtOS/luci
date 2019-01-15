@@ -44,7 +44,7 @@ This is free software, licensed under the Apache License, Version 2.0
 	<div class="cbi-section">
 		<div class="cbi-section-descr"><%:Check the current available IPSets.%></div>
 		<div class="cbi-section-node">
-			<div class="table cbi-section-table">
+			<div class="table-wrapper"><div class="table cbi-section-table">
 				<div class="tr cbi-section-table-row">
 					<div class="td left">
 						<input class="cbi-input-checkbox" data-update="click change" type="checkbox" id="checkbox_filter" name="checkbox_filter" value="1" checked="checked" />
@@ -59,7 +59,7 @@ This is free software, licensed under the Apache License, Version 2.0
 						<input type="button" id="bt_load" value="<%:Load%>" onclick="ipset_view()" class="cbi-button cbi-button-add" />
 					</div>
 				</div>
-			</div>
+			</div></div>
 		</div>
 		<textarea id="view_id" readonly="readonly" wrap="off" value=""></textarea>
 	</div>

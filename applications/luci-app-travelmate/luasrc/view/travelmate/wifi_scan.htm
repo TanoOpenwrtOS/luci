@@ -42,7 +42,7 @@ This is free software, licensed under the Apache License, Version 2.0
 <div class="cbi-map">
 	<h3><%:Wireless Scan%></h3>
 	<div class="cbi-section">
-		<div class="table cbi-section-table">
+		<div class="table-wrapper"><div class="table cbi-section-table">
 			<div class="tr cbi-section-table-titles">
 				<div class="th left"><%:Uplink SSID%></div>
 				<div class="th left"><%:Uplink BSSID%></div>
@@ -82,7 +82,7 @@ This is free software, licensed under the Apache License, Version 2.0
 				</div>
 			</div>
 			<%- end -%>
-		</div>
+		</div></div>
 	</div>
 	<div class="cbi-page-actions right">
 		<form class="inline" action="<%=luci.dispatcher.build_url('admin/services/travelmate/stations')%>" method="get">

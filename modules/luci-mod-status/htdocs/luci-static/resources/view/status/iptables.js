@@ -50,18 +50,20 @@ function create_chain_section(table, chain, policy, packets, bytes, references)
 	if (!cdiv) {
 		cdiv = E('div', { 'data-chain': chain }, [
 			E('h4', { 'id': 'rule_%s_%s'.format(table.toLowerCase(), chain) }, title),
-			E('div', { 'class': 'table' }, [
-				E('div', { 'class': 'tr table-titles' }, [
-					E('div', { 'class': 'th center' }, _('Pkts.')),
-					E('div', { 'class': 'th center' }, _('Traffic')),
-					E('div', { 'class': 'th' }, _('Target')),
-					E('div', { 'class': 'th' }, _('Prot.')),
-					E('div', { 'class': 'th' }, _('In')),
-					E('div', { 'class': 'th' }, _('Out')),
-					E('div', { 'class': 'th' }, _('Source')),
-					E('div', { 'class': 'th' }, _('Destination')),
-					E('div', { 'class': 'th' }, _('Options')),
-					E('div', { 'class': 'th' }, _('Comment'))
+			E('div', { 'class': 'table-wrapper' }, [
+				E('div', { 'class': 'table' }, [
+					E('div', { 'class': 'tr table-titles' }, [
+						E('div', { 'class': 'th center' }, _('Pkts.')),
+						E('div', { 'class': 'th center' }, _('Traffic')),
+						E('div', { 'class': 'th' }, _('Target')),
+						E('div', { 'class': 'th' }, _('Prot.')),
+						E('div', { 'class': 'th' }, _('In')),
+						E('div', { 'class': 'th' }, _('Out')),
+						E('div', { 'class': 'th' }, _('Source')),
+						E('div', { 'class': 'th' }, _('Destination')),
+						E('div', { 'class': 'th' }, _('Options')),
+						E('div', { 'class': 'th' }, _('Comment'))
+					])
 				])
 			])
 		]);
@@ -72,7 +74,7 @@ function create_chain_section(table, chain, policy, packets, bytes, references)
 		cdiv.firstElementChild.innerHTML = title;
 	}
 
-	return cdiv.lastElementChild;
+	return cdiv.lastElementChild.lastElementChild;
 }
 
 function update_chain_section(chaintable, rows)

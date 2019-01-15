@@ -157,7 +157,7 @@ end
 
 	<fieldset class="cbi-section">
 	<legend><%:Internal services%></legend>
-	<div class="table cbi-section-table" id="olsr_services">
+	<div class="table-wrapper"><div class="table cbi-section-table" id="olsr_services">
 			<div class="tr cbi-section-table-titles">
 				<div class="th cbi-section-table-cell"><%:Url%></div>
 				<div class="th cbi-section-table-cell"><%:Protocol%></div>
@@ -186,7 +186,7 @@ end
 			</div>
 			<% i = ((i % 2) + 1)
 		end %>
-	</div>
+	</div></div>
 	<br />
 	<%=last_update%>
 	</fieldset>

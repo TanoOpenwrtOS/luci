@@ -66,7 +66,7 @@
 
 <div class="cbi-section">
 	<h3><%:Active DHCP Leases%></h3>
-	<div class="table" id="lease_status_table">
+	<div class="table-wrapper"><div class="table" id="lease_status_table">
 		<div class="tr table-titles">
 			<div class="th"><%:Hostname%></div>
 			<div class="th"><%:IPv4-Address%></div>
@@ -76,12 +76,12 @@
 		<div class="tr placeholder">
 			<div class="td"><em><%:Collecting data...%></em></div>
 		</div>
-	</div>
+	</div></div>
 </div>
 
 <div class="cbi-section" style="display:none">
 	<h3><%:Active DHCPv6 Leases%></h3>
-	<div class="table" id="lease6_status_table">
+	<div class="table-wrapper"><div class="table" id="lease6_status_table">
 		<div class="tr table-titles">
 			<div class="th"><%:Host%></div>
 			<div class="th"><%:IPv6-Address%></div>
@@ -91,5 +91,5 @@
 		<div class="tr placeholder">
 			<div class="td"><em><%:Collecting data...%></em></div>
 		</div>
-	</div>
+	</div></div>
 </div>

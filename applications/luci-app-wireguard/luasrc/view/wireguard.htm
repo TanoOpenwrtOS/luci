@@ -212,7 +212,7 @@ for ikey, iface in pairs(data) do
 		<span class="cbi-value" style="display: none" id="qrcode_<%=ikey%>"><%=qrcode%></span>
 	</div>
 	<div class="cbi-section-node">
-		<div class="table cbi-section-table">
+		<div class="table-wrapper"><div class="table cbi-section-table">
 			<div class="tr cbi-section-table-row" style="text-align: left;">
 				<div class="td" style="text-align: left; vertical-align:top"><%:Configuration%></div>
 				<div class="td" style="flex: 0 1 90%; text-align: left;">
@@ -261,7 +261,7 @@ for ikey, iface in pairs(data) do
 		<%-
 	end
 	-%>
-		</div>
+		</div></div>
 	</div>
 	<%-
 end

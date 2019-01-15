@@ -63,7 +63,7 @@ local route_host = luci.config.diag and luci.config.diag.route or "dev.openwrt.o
 		<div class="cbi-section">
 			<legend><%:Network Utilities%></legend>
 
-			<div class="table">
+			<div class="table-wrapper"><div class="table">
 				<div class="tr">
 					<div class="td left">
 						<input style="margin: 5px 0" type="text" value="<%=ping_host%>" name="ping" /><br />
@@ -104,7 +104,7 @@ local route_host = luci.config.diag and luci.config.diag.route or "dev.openwrt.o
 						<input type="button" value="<%:Nslookup%>" class="cbi-button cbi-button-apply" onclick="update_status(this.form.nslookup)" />
 					</div>
 				</div>
-			</div>
+			</div></div>
 		</div>
 	</div>
 

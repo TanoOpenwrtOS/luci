@@ -104,7 +104,7 @@ This is free software, licensed under the Apache License, Version 2.0
 	</div>
 
 	<div class="cbi-section">
-		<div class="table cbi-section-table">
+		<div class="table-wrapper"><div class="table cbi-section-table">
 			<div class="tr cbi-section-table-titles">
 				<div class="th left"><%:Device%></div>
 				<div class="th left"><%:SSID%></div>
@@ -136,7 +136,7 @@ This is free software, licensed under the Apache License, Version 2.0
 				</div>
 			</div>
 		<%- end; end) -%>
-		</div>
+		</div></div>
 	</div>
 	<div class="cbi-page-actions right">
 		<%- uci:foreach("wireless", "wifi-device", function(s)

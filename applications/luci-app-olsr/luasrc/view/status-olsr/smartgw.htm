@@ -102,7 +102,7 @@ XHR.poll(10, '<%=REQUEST_URI%>', { status: 1 },
 
 	<fieldset class="cbi-section">
 		<legend><%:Overview of smart gateways in this network%></legend>
-		<div class="table cbi-section-table" id="olsrd_smartgw">
+		<div class="table-wrapper"><div class="table cbi-section-table" id="olsrd_smartgw">
 			<div class="tr cbi-section-table-titles">
 				<div class="th cbi-section-table-cell"><%:Gateway%></div>
 				<div class="th cbi-section-table-cell"><%:Selected%></div>
@@ -142,7 +142,7 @@ XHR.poll(10, '<%=REQUEST_URI%>', { status: 1 },
 
 			<% i = ((i % 2) + 1)
 			end %>
-		</div>
+		</div></div>
 	</fieldset>
 
 <% else %>

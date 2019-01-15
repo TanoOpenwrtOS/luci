@@ -121,7 +121,7 @@ end
 <fieldset class="cbi-section">
 	<legend><%:Overview of currently established OLSR connections%></legend>
 
-	<div class="table cbi-section-table" id="olsr_neigh_table">
+	<div class="table-wrapper"><div class="table cbi-section-table" id="olsr_neigh_table">
 			<div class="tr cbi-section-table-cell">
 				<div class="th cbi-section-table-cell"><%:Neighbour IP%></div>
 				<div class="th cbi-section-table-cell"><%:Hostname%></div>
@@ -170,7 +170,7 @@ end
 		<% 
 			i = ((i % 2) + 1)
 		end %>
-	</div>
+	</div></div>
 <br />
 
 <%+status-olsr/legend%>

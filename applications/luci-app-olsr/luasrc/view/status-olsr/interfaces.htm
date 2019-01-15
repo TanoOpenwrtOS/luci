@@ -18,7 +18,7 @@ local i = 1
 <fieldset class="cbi-section">
 	<legend><%:Overview of interfaces where OLSR is running%></legend>
 
-	<div class="table cbi-section-table">
+	<div class="table-wrapper"><div class="table cbi-section-table">
 		<div class="tr">
 			<div class="th cbi-section-table-cell"><%:Interface%></div>
 			<div class="th cbi-section-table-cell"><%:Device%></div>
@@ -44,7 +44,7 @@ local i = 1
 		</div>
 		<% i = ((i % 2) + 1)
 		end %>
-	</div>
+	</div></div>
 </fieldset>
 <%+status-olsr/common_js%>
 <%+footer%>

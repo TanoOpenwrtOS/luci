@@ -5,7 +5,7 @@
 
 <% if #zones > 0 then %>
 	<h4><%:Open ports on router%></h4>
-	<div class="table">
+	<div class="table-wrapper"><div class="table">
 		<div class="tr cbi-section-table-titles">
 			<div class="th"><%:Name%></div>
 			<div class="th"><%:Protocol%></div>
@@ -31,11 +31,11 @@
 				<input type="submit" class="cbi-button cbi-button-add" name="_newopen.submit" value="<%:Add%>" />
 			</div>
 		</div>
-	</div>
+	</div></div>
 <% end %>
 <% if #zones > 1 then %>
 	<h4><%:New forward rule%></h4>
-	<div class="table">
+	<div class="table-wrapper"><div class="table">
 		<div class="tr cbi-section-table-titles">
 			<div class="th"><%:Name%></div>
 			<div class="th"><%:Source zone%></div>
@@ -64,7 +64,7 @@
 				<input type="submit" class="cbi-button cbi-button-link" name="_newfwd.submit" value="<%:Add and edit...%>" />
 			</div>
 		</div>
-	</div>
+	</div></div>
 <% else %>
 	<input type="submit" class="cbi-button cbi-button-add" name="cbi.cts.<%=self.config%>.<%=self.sectiontype%>.<%=section%>" value="<%:Add%>" />
 <% end %>

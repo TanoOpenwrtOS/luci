@@ -15,7 +15,7 @@ local i = 1
 <div id="togglebuttons"></div> 
 <fieldset class="cbi-section">
 	<legend><%:Overview of known multiple interface announcements%></legend>
-	<div class="table cbi-section-table">
+	<div class="table-wrapper"><div class="table cbi-section-table">
 		<div class="tr cbi-section-table-titles">
 			<div class="th cbi-section-table-cell"><%:OLSR node%></div>
 			<div class="th cbi-section-table-cell" ><%:Secondary OLSR interfaces%></div>
@@ -44,7 +44,7 @@ local i = 1
 
 		<% i = ((i % 2) + 1)
 		end %>
-	</div>
+	</div></div>
 </fieldset>
 <%+status-olsr/common_js%>
 <%+footer%>

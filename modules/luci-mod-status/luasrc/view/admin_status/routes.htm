@@ -40,7 +40,7 @@
 	<div class="cbi-section">
 		<legend>ARP</legend>
 		<div class="cbi-section-node">
-			<div class="table">
+			<div class="table-wrapper"><div class="table">
 				<div class="tr table-titles">
 					<div class="th"><%_<abbr title="Internet Protocol Version 4">IPv4</abbr>-Address%></div>
 					<div class="th"><%_<abbr title="Media Access Control">MAC</abbr>-Address%></div>
@@ -61,14 +61,14 @@
 						end
 					end
 				%>
-			</div>
+			</div></div>
 		</div>
 	</div>
 
 	<div class="cbi-section">
 		<legend><%_Active <abbr title="Internet Protocol Version 4">IPv4</abbr>-Routes%></legend>
 		<div class="cbi-section-node">
-			<div class="table">
+			<div class="table-wrapper"><div class="table">
 				<div class="tr table-titles">
 					<div class="th"><%:Network%></div>
 					<div class="th"><%:Target%></div>
@@ -85,7 +85,7 @@
 					<div class="td"><%=rtn[v.table] or v.table%></div>
 				</div>
 				<% style = not style end %>
-			</div>
+			</div></div>
 		</div>
 	</div>
 
@@ -96,7 +96,7 @@
 	<div class="cbi-section">
 		<legend><%_Active <abbr title="Internet Protocol Version 6">IPv6</abbr>-Routes%></legend>
 		<div class="cbi-section-node">
-			<div class="table">
+			<div class="table-wrapper"><div class="table">
 				<div class="tr table-titles">
 					<div class="th"><%:Network%></div>
 					<div class="th"><%:Target%></div>
@@ -120,14 +120,14 @@
 						end
 					end
 				%>
-			</div>
+			</div></div>
 		</div>
 	</div>
 
 	<div class="cbi-section">
 		<legend><%:IPv6 Neighbours%></legend>
 		<div class="cbi-section-node">
-			<div class="table">
+			<div class="table-wrapper"><div class="table">
 				<div class="tr table-titles">
 					<div class="th"><%:IPv6-Address%></div>
 					<div class="th"><%:MAC-Address%></div>
@@ -147,7 +147,7 @@
 						end
 					end
 				%>
-			</div>
+			</div></div>
 		</div>
 	</div>
 	<% end %>

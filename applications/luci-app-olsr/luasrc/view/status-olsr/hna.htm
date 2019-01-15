@@ -85,7 +85,7 @@ XHR.poll(10, '<%=REQUEST_URI%>', { status: 1 },
 <fieldset class="cbi-section">
 
 	<legend><%:Overview of currently active OLSR host net announcements%></legend>
-	<div class="table cbi-section-table" id="olsrd_hna">
+	<div class="table-wrapper"><div class="table cbi-section-table" id="olsrd_hna">
 		<div class="tr cbi-section-table-titles">
 			<div class="th cbi-section-table-cell"><%:Announced network%></div>
 			<div class="th cbi-section-table-cell"><%:OLSR gateway%></div>
@@ -117,7 +117,7 @@ XHR.poll(10, '<%=REQUEST_URI%>', { status: 1 },
 
 		<% i = ((i % 2) + 1)
 		end %>
-	</div>
+	</div></div>
 </fieldset>
 
 <%+status-olsr/common_js%>

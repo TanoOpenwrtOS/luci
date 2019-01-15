@@ -74,7 +74,7 @@
 <%+openvpn/ovpn_css%>
 
 <div class="cbi-section-node">
-	<div class="table cbi-section-table">
+	<div class="table-wrapper"><div class="table cbi-section-table">
 		<h4><%:Template based configuration%></h4>
 		<div class="tr cbi-section-table-row" id="div_add">
 			<div class="td left">
@@ -104,7 +104,7 @@
 				<input class="cbi-button cbi-button-add" type="submit" onclick="vpn_upload(); return false;" value="<%:Upload%>" title="<%:Upload ovpn file%>" />
 			</div>
 		</div>
-	</div>
+	</div></div>
 	<div class="vpn-output">
 		<span id="vpn_output"></span>
 	</div>

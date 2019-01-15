@@ -17,7 +17,7 @@ local olsrtools = require "luci.tools.olsr"
 
 <fieldset class="cbi-section">
 	<legend><%:Overview of currently known OLSR nodes%></legend>
-	<div class="table cbi-section-table">
+	<div class="table-wrapper"><div class="table cbi-section-table">
 		<div class="tr cbi-section-table-titles">
 			<div class="th cbi-section-table-cell"><%:OLSR node%></div>
 			<div class="th cbi-section-table-cell"><%:Last hop%></div>
@@ -54,7 +54,7 @@ local olsrtools = require "luci.tools.olsr"
 
 		<%	i = ((i % 2) + 1)
 		end %>
-	</div>
+	</div></div>
 <%+status-olsr/legend%>
 </fieldset>
 

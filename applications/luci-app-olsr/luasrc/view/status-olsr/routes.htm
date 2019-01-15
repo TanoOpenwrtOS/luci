@@ -102,7 +102,7 @@ XHR.poll(20, '<%=REQUEST_URI%>', { status: 1 },
 <fieldset class="cbi-section">
 <legend><%:Overview of currently known routes to other OLSR nodes%></legend>
 
-<div class="table cbi-section-table" id="olsrd_routes">
+<div class="table-wrapper"><div class="table cbi-section-table" id="olsrd_routes">
 		<div class="tr cbi-section-table-cell">
 			<div class="th cbi-section-table-cell"><%:Announced network%></div>
 			<div class="th cbi-section-table-cell"><%:OLSR gateway%></div>
@@ -135,7 +135,7 @@ XHR.poll(20, '<%=REQUEST_URI%>', { status: 1 },
 	<% 
 		i = ((i % 2) + 1)
 	end %>
-</div>
+</div></div>
 
 <%+status-olsr/legend%>
 </fieldset>
