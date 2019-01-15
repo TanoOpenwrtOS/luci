@@ -7,9 +7,16 @@ module("luci.tools.webadmin", package.seeall)
 local util = require "luci.util"
 local uci  = require "luci.model.uci"
 local ip   = require "luci.ip"
+local i18n = require "luci.i18n"
 
 function byte_format(byte)
-	local suff = {"B", "KB", "MB", "GB", "TB"}
+	local suff = {
+		i18n.translate("B"),
+		i18n.translate("KB"),
+		i18n.translate("MB"),
+		i18n.translate("GB"),
+		i18n.translate("TB")
+	}
 	for i=1, 5 do
 		if byte > 1024 and i < 5 then
 			byte = byte / 1024
