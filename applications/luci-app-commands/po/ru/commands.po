@@ -79,7 +79,7 @@ msgstr "Команда:"
 
 #: applications/luci-app-commands/luasrc/controller/commands.lua:9
 msgid "Configure"
-msgstr "Настройка панели управления"
+msgstr "Настройки"
 
 #: applications/luci-app-commands/luasrc/controller/commands.lua:7
 #: applications/luci-app-commands/luasrc/model/cbi/commands.lua:6
