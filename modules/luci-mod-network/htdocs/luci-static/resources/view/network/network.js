@@ -33,8 +33,8 @@ function render_iface(ifc) {
 				_('Device'),    ifc.ifname,
 				_('Connected'), ifc.is_up ? _('yes') : _('no'),
 				_('MAC'),       ifc.macaddr,
-				_('RX'),        '%.2mB (%d %s)'.format(ifc.rx_bytes, ifc.rx_packets, _('Pkts.')),
-				_('TX'),        '%.2mB (%d %s)'.format(ifc.tx_bytes, ifc.tx_packets, _('Pkts.'))
+				_('RX'),        _('%.2mB (%d %s)').format(ifc.rx_bytes, ifc.rx_packets, _('Pkts.')),
+				_('TX'),        _('%.2mB (%d %s)').format(ifc.tx_bytes, ifc.tx_packets, _('Pkts.'))
 			])
 		])
 	]);
@@ -84,8 +84,8 @@ L.poll(5, L.url('admin/network/iface_status', networks.join(',')), null,
 						_('Protocol'), '%h'.format(desc || '?'),
 						_('Uptime'),   ifc.is_up ? '%t'.format(ifc.uptime) : null,
 						_('MAC'),      (!ifc.is_dynamic && !ifc.is_alias && ifc.macaddr) ? ifc.macaddr : null,
-						_('RX'),       (!ifc.is_dynamic && !ifc.is_alias) ? '%.2mB (%d %s)'.format(ifc.rx_bytes, ifc.rx_packets, _('Pkts.')) : null,
-						_('TX'),       (!ifc.is_dynamic && !ifc.is_alias) ? '%.2mB (%d %s)'.format(ifc.tx_bytes, ifc.tx_packets, _('Pkts.')) : null,
+						_('RX'),       (!ifc.is_dynamic && !ifc.is_alias) ? _('%.2mB (%d %s)').format(ifc.rx_bytes, ifc.rx_packets, _('Pkts.')) : null,
+						_('TX'),       (!ifc.is_dynamic && !ifc.is_alias) ? _('%.2mB (%d %s)').format(ifc.tx_bytes, ifc.tx_packets, _('Pkts.')) : null,
 						_('IPv4'),     ifc.ipaddrs ? ifc.ipaddrs[0] : null,
 						_('IPv4'),     ifc.ipaddrs ? ifc.ipaddrs[1] : null,
 						_('IPv4'),     ifc.ipaddrs ? ifc.ipaddrs[2] : null,
