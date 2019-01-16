@@ -7,7 +7,7 @@ module("luci.controller.admin.system", package.seeall)
 function index()
 	local fs = require "nixio.fs"
 
-	entry({"admin", "system", "system"}, cbi("admin_system/system"), _("System"), 1)
+	entry({"admin", "system", "system"}, cbi("admin_system/system"), _("General Settings"), 1)
 	entry({"admin", "system", "time"}, cbi("admin_system/time"), _("Time"), 1)
 	entry({"admin", "system", "clock_status"}, post_on({ set = true }, "action_clock_status"))
 

@@ -9,7 +9,7 @@ local conf  = require "luci.config"
 local m, s, o
 local has_zram = fs.access("/etc/init.d/zram")
 
-m = Map("system", translate("System"), translate("Here you can configure the basic aspects of your device like its hostname or the logging."))
+m = Map("system", translate("General System Settings"), translate("Here you can configure the basic aspects of your device like its hostname or the logging."))
 m:chain("luci")
 
 
