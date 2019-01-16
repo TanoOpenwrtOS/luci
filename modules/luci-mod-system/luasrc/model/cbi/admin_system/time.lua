@@ -24,10 +24,50 @@ o.template = "admin_system/clock_status"
 o = s:option(ListValue, "zonename", translate("Timezone"))
 o:value("UTC")
 
+--[[
+	Change signs for «Etc/GMT» zones.
+
+	The special area of «Etc» is used for some administrative zones, particularly for «Etc/UTC»
+	which represents Coordinated Universal Time. In order to conform with the POSIX style,
+	those zone names beginning with «Etc/GMT» have their sign reversed from what most people
+	expect. In this style, zones west of GMT have a positive sign and those east have
+	a negative sign in their name (e.g «Etc/GMT-14» is 14 hours ahead/east of GMT.)
+--]]
+local TZ_replacements = {
+	['Etc/GMT']    = 'GMT',
+	['Etc/GMT+1']  = 'GMT-1',
+	['Etc/GMT+2']  = 'GMT-2',
+	['Etc/GMT+3']  = 'GMT-3',
+	['Etc/GMT+4']  = 'GMT-4',
+	['Etc/GMT+5']  = 'GMT-5',
+	['Etc/GMT+6']  = 'GMT-6',
+	['Etc/GMT+7']  = 'GMT-7',
+	['Etc/GMT+8']  = 'GMT-8',
+	['Etc/GMT+9']  = 'GMT-9',
+	['Etc/GMT+10'] = 'GMT-10',
+	['Etc/GMT+11'] = 'GMT-11',
+	['Etc/GMT+12'] = 'GMT-12',
+	['Etc/GMT-1']  = 'GMT+1',
+	['Etc/GMT-2']  = 'GMT+2',
+	['Etc/GMT-3']  = 'GMT+3',
+	['Etc/GMT-4']  = 'GMT+4',
+	['Etc/GMT-5']  = 'GMT+5',
+	['Etc/GMT-6']  = 'GMT+6',
+	['Etc/GMT-7']  = 'GMT+7',
+	['Etc/GMT-8']  = 'GMT+8',
+	['Etc/GMT-9']  = 'GMT+9',
+	['Etc/GMT-10'] = 'GMT+10',
+	['Etc/GMT-11'] = 'GMT+11',
+	['Etc/GMT-12'] = 'GMT+12',
+	['Etc/GMT-13'] = 'GMT+13',
+	['Etc/GMT-14'] = 'GMT+14',
+}
+
 for i, zone in ipairs(zones.TZ) do
 	local zone_exists = fs.access("/usr/share/zoneinfo/" .. zone[1])
 	if (zone_exists) then
-		o:value(zone[1])
+		local zone_name = TZ_replacements[zone[1]] or zone[1]
+		o:value(zone[1], zone_name)
 	end
 end
 
