@@ -17,7 +17,7 @@ s = m:section(TypedSection, "system", translate("System Properties"))
 s.anonymous = true
 s.addremove = false
 
-s:tab("general",  translate("General Settings"))
+s:tab("host",  translate("Host"))
 s:tab("logging",  translate("Logging"))
 s:tab("language", translate("Language and Style"))
 if has_zram then s:tab("zram", translate("ZRam Settings")) end
@@ -26,7 +26,7 @@ if has_zram then s:tab("zram", translate("ZRam Settings")) end
 -- System Properties
 --
 
-o = s:taboption("general", Value, "hostname", translate("Hostname"))
+o = s:taboption("host", Value, "hostname", translate("Hostname"))
 o.datatype = "hostname"
 
 function o.write(self, section, value)
