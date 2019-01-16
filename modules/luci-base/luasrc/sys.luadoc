@@ -104,6 +104,31 @@ Returns the current system uptime stats.
 ]]
 
 ---[[
+Compute the difference in seconds between local time and UTC.
+
+@class function
+@name timezone
+@return String containing difference in seconds between local time and UTC.
+]]
+
+---[[
+Return a timezone string in ISO 8601:2000 standard form (+hhmm or -hhmm)
+
+@class function
+@name tzoffset
+@param timezone	difference in seconds between local time and UTC.
+@return String containing a timezone string in ISO 8601:2000 standard form (+hhmm or -hhmm)
+]]
+
+---[[
+Return a current timezone string in ISO 8601:2000 standard form (+hhmm or -hhmm)
+
+@class function
+@name tzoffset_current
+@return String containing a timezone string in ISO 8601:2000 standard form (+hhmm or -hhmm)
+]]
+
+---[[
 LuCI system utilities / network related functions.
 
 @class	module

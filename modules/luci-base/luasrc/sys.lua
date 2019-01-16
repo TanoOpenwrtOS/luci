@@ -4,6 +4,8 @@
 local io     = require "io"
 local os     = require "os"
 local table  = require "table"
+local math   = require "math"
+local string = require "string"
 local nixio  = require "nixio"
 local fs     = require "nixio.fs"
 local uci    = require "luci.model.uci"
@@ -133,6 +135,22 @@ function uptime()
 	return nixio.sysinfo().uptime
 end
 
+-- Compute the difference in seconds between local time and UTC.
+function timezone()
+	local now = os.time()
+	return os.difftime(now, os.time(os.date("!*t", now)))
+end
+
+-- Return a timezone string in ISO 8601:2000 standard form (+hhmm or -hhmm)
+function tzoffset(timezone)
+	local h, m = math.modf(timezone / 3600)
+	return string.format("%+.4d", 100 * h + 60 * m)
+end
+
+-- Return a current timezone string in ISO 8601:2000 standard form (+hhmm or -hhmm)
+function tzoffset_current()
+	return tzoffset(timezone())
+end
 
 net = {}
 
