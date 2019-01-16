@@ -13,7 +13,7 @@ m = Map("system", translate("General System Settings"), translate("Here you can 
 m:chain("luci")
 
 
-s = m:section(TypedSection, "system", translate("System Properties"))
+s = m:section(TypedSection, "system")
 s.anonymous = true
 s.addremove = false
 
