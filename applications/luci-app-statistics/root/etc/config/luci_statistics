@@ -153,6 +153,7 @@ config statistics 'collectd_ping'
 
 config statistics 'collectd_processes'
 	option enable '0'
+	option CollectFileDescriptor '1'
 	option Processes 'uhttpd dnsmasq dropbear'
 
 config statistics 'collectd_sensors'

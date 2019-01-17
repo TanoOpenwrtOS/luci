@@ -111,6 +111,19 @@ function rrdargs( graph, plugin, plugin_instance, dtype )
 					ps_vm = { color = "0000ff", title = "Virtual memory" }
 				}
 			}
+		},
+
+		{
+			title = "%H: Opened files count by %pi",
+			vlabel = "Files",
+			detail = true,
+			data = {
+				types = { "file_handles" },
+
+				options = {
+					file_handles = { color = "0000ff", title = "Opened files count" }
+				}
+			}
 		}
 	}
     end

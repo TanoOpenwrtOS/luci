@@ -21,4 +21,9 @@ processes = s:option( Value, "Processes", translate("Monitor processes"),
 processes:depends( "enable", 1 )
 processes.default = "uhttpd dropbear dnsmasq"
 
+-- collectd_processes.collectfiledescriptor (CollectFileDescriptor)
+collectfiledescriptor= s:option( Flag, "CollectFileDescriptor", translate("Collect opened file descriptors count") )
+collectfiledescriptor.default = 0
+collectfiledescriptor:depends( "enable", 1 )
+
 return m
