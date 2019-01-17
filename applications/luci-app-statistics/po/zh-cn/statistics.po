@@ -93,6 +93,10 @@ msgstr "缓存清空间隙"
 msgid "Chain"
 msgstr "链"
 
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/processes.lua:25
+msgid "Collect opened file descriptors count"
+msgstr ""
+
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:24
 msgid "CollectLinks"
 msgstr "收集链接"

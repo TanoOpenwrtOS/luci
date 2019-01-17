@@ -90,6 +90,10 @@ msgstr "Intervalo de limpeza do cache"
 msgid "Chain"
 msgstr "Cadeia"
 
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/processes.lua:25
+msgid "Collect opened file descriptors count"
+msgstr ""
+
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:24
 msgid "CollectLinks"
 msgstr ""

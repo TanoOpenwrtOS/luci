@@ -81,6 +81,10 @@ msgstr "Intervall for tømming av hurtigbuffer"
 msgid "Chain"
 msgstr "Lenke"
 
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/processes.lua:25
+msgid "Collect opened file descriptors count"
+msgstr ""
+
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:24
 msgid "CollectLinks"
 msgstr ""
