@@ -11,7 +11,7 @@ local knownParams = {
 	--	Description
 	--	Option(s)
 
-	{ translate("Service"), {
+	{ "Service", {
 	-- initialisation and daemon options
 		{ ListValue,
 			"verb",
@@ -164,7 +164,7 @@ local knownParams = {
 			translate("Enable a compression algorithm") },
 	} },
 
-	{ translate("Networking"), {
+	{ "Networking", {
 	-- socket config
 		{ ListValue,
 			"mode",
@@ -364,7 +364,7 @@ local knownParams = {
 			{dev_type="tun" } },
 	} },
 
-	{ translate("VPN"), {
+	{ "VPN", {
 		{ Value,
 			"server",
 			"10.200.200.0 255.255.255.0",
@@ -561,7 +561,7 @@ local knownParams = {
 			translate("Specify whether the client is required to supply a valid certificate") },
 	} },
 
-	{ translate("Cryptography"), {
+	{ "Cryptography", {
 		{ FileUpload,
 			"secret",
 			"/etc/openvpn/secret.key",
