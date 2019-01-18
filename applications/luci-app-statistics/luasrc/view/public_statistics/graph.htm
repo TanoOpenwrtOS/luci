@@ -29,8 +29,9 @@
 
 <div style="text-align: center">
 	<% for i, img in ipairs(images) do %>
+	<div class="graph-wrapper">
 		<img src="<%=REQUEST_URI%>?img=<%=img%>&#38;host=<%=current_host%>" />
-		<br />
+	</div>
 	<% end %>
 </div>
 
