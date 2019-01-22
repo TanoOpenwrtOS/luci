@@ -419,6 +419,10 @@ msgstr "Adresse der lokalen Relay-Brücke"
 msgid "Administration"
 msgstr "Administration"
 
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:23
+msgid "Advanced"
+msgstr ""
+
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/dhcp.lua:22
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:189
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:463
@@ -434,7 +438,7 @@ msgstr "Erweiterte Einstellungen"
 msgid "Aggregate Transmit Power(ACTATP)"
 msgstr "Vollständige Sendeleistung (ACTATP)"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:71
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:72
 msgid "Alert"
 msgstr "Alarm"
 
@@ -1222,11 +1226,11 @@ msgstr "Erzeuge Schnittstelle"
 msgid "Create a bridge over multiple interfaces"
 msgstr "Erzeuge Netzwerkbrücke über mehrere Schnittstellen"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:70
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:71
 msgid "Critical"
 msgstr "Kritisch"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:74
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:75
 msgid "Cron Log Level"
 msgstr "Cron Protokolllevel"
 
@@ -1364,8 +1368,8 @@ msgstr "DUID"
 msgid "Data Rate"
 msgstr "Datenrate"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:65
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:76
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:66
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:77
 msgid "Debug"
 msgstr "Debug"
 
@@ -1687,7 +1691,7 @@ msgstr "Diese Schnittstelle bearbeiten"
 msgid "Edit this network"
 msgstr "Dieses Netzwerk bearbeiten"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:72
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:73
 msgid "Emergency"
 msgstr "Notfall"
 
@@ -1728,7 +1732,7 @@ msgstr "Aushandeln von IPv6-Adressen auf der PPP-Verbindung aktivieren"
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Aktiviere Jumbo Frame Durchleitung"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:95
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:135
 msgid "Enable NTP client"
 msgstr "Aktiviere NTP-Client"
 
@@ -1844,7 +1848,7 @@ msgstr "Lösche..."
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:107
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:108
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:109
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:69
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:70
 msgid "Error"
 msgstr "Fehler"
 
@@ -1896,15 +1900,15 @@ msgstr "Externe R0-Key-Holder-List"
 msgid "External R1 Key Holder List"
 msgstr "Externe R1-Key-Holder-List"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:46
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:47
 msgid "External system log server"
 msgstr "Externer Protokollserver IP"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:51
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:52
 msgid "External system log server port"
 msgstr "Externer Protokollserver Port"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:56
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:57
 msgid "External system log server protocol"
 msgstr "Externes Protokollserver Protokoll"
 
@@ -2285,7 +2289,7 @@ msgstr "\"Host-Uniq\"-Bezeichner"
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/dhcp.lua:283
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/hosts.lua:15
 #: modules/luci-mod-status/luasrc/view/admin_status/index/10-system.htm:17
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:29
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:30
 #: themes/luci-theme-freifunk-generic/luasrc/view/themes/freifunk-generic/header.htm:129
 msgid "Hostname"
 msgstr "Hostname"
@@ -2623,7 +2627,7 @@ msgstr "Timeout bei Inaktivität"
 msgid "Inbound:"
 msgstr "Eingehend:"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:66
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:67
 msgid "Info"
 msgstr "Info"
 
@@ -2787,7 +2791,7 @@ msgstr "Schlüssel"
 msgid "Key #%d"
 msgstr "Schlüssel Nr. %d"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:41
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:42
 msgid "KiB"
 msgstr ""
 
@@ -2830,7 +2834,7 @@ msgstr "LLC"
 msgid "Label"
 msgstr "Label"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:108
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:109
 msgid "Language"
 msgstr "Sprache"
 
@@ -3073,7 +3077,7 @@ msgstr "Lokalisiere Anfragen"
 msgid "Locked to channel %s used by: %s"
 msgstr "Festgelegt auf Kanal %s, verwendet durch: %s"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:64
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:65
 msgid "Log output level"
 msgstr "Protokolllevel"
 
@@ -3385,7 +3389,7 @@ msgstr ""
 msgid "NT Domain"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:118
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:158
 msgid "NTP server candidates"
 msgstr "NTP Server Kandidaten"
 
@@ -3537,7 +3541,7 @@ msgstr "An Schnittstellen binden"
 msgid "None"
 msgstr "keine"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:77
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:78
 msgid "Normal"
 msgstr "Normal"
 
@@ -3559,7 +3563,7 @@ msgstr "Nicht verbunden"
 msgid "Note: interface name length"
 msgstr "Hinweis: Länge des Namens beachten"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:67
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:68
 msgid "Notice"
 msgstr "Notiz"
 
@@ -3573,7 +3577,7 @@ msgstr ""
 "Anzahl der zwischengespeicherten DNS-Einträge. Maximum sind 10000 Einträge, "
 "\"0\" deaktiviert die Zwischenspeicherung."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:97
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:98
 msgid "Number of parallel threads used for compression"
 msgstr "Für Kompression benutze parallele Prozessanzahl"
 
@@ -4022,6 +4026,14 @@ msgstr "Bitte Benutzernamen und Passwort eingeben."
 msgid "Policy"
 msgstr "Standardregel"
 
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:149
+msgid "Polling interval"
+msgstr ""
+
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:150
+msgid "Polling interval for status queries in seconds"
+msgstr ""
+
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:22
 msgid "Port"
 msgstr "Port"
@@ -4113,7 +4125,7 @@ msgstr "Protokoll für die neue Schnittstelle"
 msgid "Protocol support is not installed"
 msgstr "Protokollunterstützung ist nicht installiert"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:114
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:154
 msgid "Provide NTP server"
 msgstr "NTP-Server anbieten"
 
@@ -4689,7 +4701,7 @@ msgstr ""
 "Option ausgewählt, so werden die Hotplug-Skripte bei Änderung nicht "
 "aufgerufen)"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:86
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:126
 #, fuzzy
 msgid "Set up Time Synchronization"
 msgstr "Zeitsynchronisierung einrichten"
@@ -4757,7 +4769,7 @@ msgstr "Größe"
 msgid "Size of DNS query cache"
 msgstr "Größe des DNS-Caches"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:85
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:86
 msgid "Size of the ZRam device in megabytes"
 msgstr "Größe der ZRAM-Gerätedatei in Megabytes."
 
@@ -5019,7 +5031,7 @@ msgstr "Systemprotokoll"
 msgid "System Time"
 msgstr "Systemzeit"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:41
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:42
 msgid "System log buffer size"
 msgstr "Größe des Systemprotokoll-Puffers"
 
@@ -5294,7 +5306,7 @@ msgstr ""
 "Das hochgeladene Firmware-Image hat ein nicht unterstütztes Format. Stellen "
 "Sie sicher dass Sie das generische Format für Ihre Platform gewählt haben."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:128
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:129
 msgid "Theme"
 msgstr "Thema"
 
@@ -5435,12 +5447,12 @@ msgstr "Diese Sektion enthält noch keine Einträge"
 msgid "Time"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:80
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:91
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:120
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:131
 msgid "Time Synchronization"
 msgstr "Zeitsynchronisation"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:85
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:125
 msgid "Time Synchronization is not configured yet."
 msgstr "Die Zeitsynchronisation wurde noch nicht konfiguriert."
 
@@ -5937,8 +5949,8 @@ msgstr "Warte auf das Anwenden der Konfigurationsänderungen... %d Sekunden"
 msgid "Waiting for device..."
 msgstr "Warte auf Gerät..."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:68
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:78
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:69
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:79
 msgid "Warning"
 msgstr "Warnung"
 
@@ -6038,7 +6050,7 @@ msgstr "Das WLAN-Netzwerk ist aktiviert"
 msgid "Write received DNS requests to syslog"
 msgstr "Empfangene DNS-Anfragen in das Systemprotokoll schreiben"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:60
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:61
 msgid "Write system log to file"
 msgstr "Systemprotokoll in Datei schreiben"
 
@@ -6078,19 +6090,19 @@ msgstr ""
 "korrekt darzustellen. Bitte mindestens auf Version 7 upgraden oder einen "
 "anderen Browser wie Firefox, Opera oder Safari benutzen."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:90
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:91
 msgid "ZRam Compression Algorithm"
 msgstr "ZRAM Kompressionsalgorithmus"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:97
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:98
 msgid "ZRam Compression Streams"
 msgstr "ZRAM Kompressionsprozesse"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:23
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:24
 msgid "ZRam Settings"
 msgstr "ZRAM Einstellungen"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:85
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:86
 msgid "ZRam Size"
 msgstr "ZRAM Größe"
 

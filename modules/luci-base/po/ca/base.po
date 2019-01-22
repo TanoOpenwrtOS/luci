@@ -210,7 +210,7 @@ msgstr "Passarel·la <abbr title=\"Internet Protocol Version 6\">IPv6</abbr>"
 msgid "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Suffix (hex)"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:34
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:35
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/leds.lua:4
 msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Configuration"
 msgstr "Configuració dels <abbr title=\"Light Emitting Diode\">LED</abbr>s"
@@ -364,8 +364,8 @@ msgid "Ad-Hoc"
 msgstr "Ad-Hoc"
 
 #: modules/luci-base/luasrc/view/cbi/nsection.htm:25
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:189
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:197
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:191
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:199
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:34
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:42
 #: modules/luci-base/luasrc/view/cbi/ucisection.htm:54
@@ -415,9 +415,13 @@ msgid "Address to access local relay bridge"
 msgstr "Adreça per accedir al relay bridge local"
 
 #: modules/luci-base/luasrc/controller/admin/index.lua:29
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:13
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:14
 msgid "Administration"
 msgstr "Administració"
+
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:23
+msgid "Advanced"
+msgstr ""
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/dhcp.lua:22
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:189
@@ -434,7 +438,7 @@ msgstr "Paràmetres avançats"
 msgid "Aggregate Transmit Power(ACTATP)"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:106
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:72
 msgid "Alert"
 msgstr "Alerta"
 
@@ -805,7 +809,7 @@ msgstr "Enrere als resultats de l'escaneig"
 msgid "Backup"
 msgstr "Còpia de seguretat"
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:37
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:38
 msgid "Backup / Flash Firmware"
 msgstr "Còpia de seguretat i microprogramari"
 
@@ -921,7 +925,7 @@ msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:45
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:48
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:234
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:236
 msgid "Chain"
 msgstr "Cadena"
 
@@ -1083,7 +1087,7 @@ msgstr "Aplegant dades..."
 msgid "Command"
 msgstr "Ordre"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:64
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:65
 msgid "Comment"
 msgstr ""
 
@@ -1187,11 +1191,11 @@ msgstr "Crea interfície"
 msgid "Create a bridge over multiple interfaces"
 msgstr "Crea un pont entre múltiples interfícies"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:105
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:71
 msgid "Critical"
 msgstr "Crític"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:109
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:75
 msgid "Cron Log Level"
 msgstr "Nivell de registre del Cron"
 
@@ -1328,8 +1332,8 @@ msgstr "DUID"
 msgid "Data Rate"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:100
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:111
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:66
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:77
 msgid "Debug"
 msgstr "Depuració"
 
@@ -1371,7 +1375,7 @@ msgid ""
 msgstr ""
 
 #: modules/luci-base/luasrc/view/cbi/nsection.htm:11
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:162
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:163
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:11
 #: modules/luci-mod-network/luasrc/view/admin_network/iface_overview.htm:41
 msgid "Delete"
@@ -1394,7 +1398,7 @@ msgstr ""
 msgid "Description"
 msgstr "Descripció"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:62
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:63
 #: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:361
 msgid "Destination"
 msgstr "Destí"
@@ -1562,7 +1566,7 @@ msgstr ""
 "No reenviïs les peticions <abbr title=\"Domain Name System\">DNS</abbr> "
 "sense el nom <abbr title=\"Domain Name System\">DNS</abbr>"
 
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:152
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:153
 msgid "Down"
 msgstr ""
 
@@ -1621,8 +1625,8 @@ msgstr ""
 msgid "EAP-Method"
 msgstr "Mètode EAP"
 
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:154
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:160
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:155
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:161
 #: modules/luci-mod-network/luasrc/view/admin_network/iface_overview.htm:38
 #: modules/luci-mod-network/luasrc/view/admin_network/wifi_overview.htm:42
 msgid "Edit"
@@ -1642,7 +1646,7 @@ msgstr "Edita aquesta interfície"
 msgid "Edit this network"
 msgstr "Edita aquesta xarxa"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:107
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:73
 msgid "Emergency"
 msgstr "Emergència"
 
@@ -1681,7 +1685,7 @@ msgstr "Habilita negociació IPv6 en la enllaç PPP"
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Habilita el passatge de trames enormes"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:222
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:135
 msgid "Enable NTP client"
 msgstr "Habilita el client NTP"
 
@@ -1786,7 +1790,7 @@ msgstr ""
 msgid "Enter custom values"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:264
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:265
 msgid "Erasing..."
 msgstr "Esborrant..."
 
@@ -1795,7 +1799,7 @@ msgstr "Esborrant..."
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:107
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:108
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:109
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:104
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:70
 msgid "Error"
 msgstr "Error"
 
@@ -1844,15 +1848,15 @@ msgstr ""
 msgid "External R1 Key Holder List"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:81
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:47
 msgid "External system log server"
 msgstr "Servidor de registre del sistema extern"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:86
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:52
 msgid "External system log server port"
 msgstr "Port del servidor de registre del sistema extern"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:91
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:57
 msgid "External system log server protocol"
 msgstr "Protocol del servidor de registre del sistema extern"
 
@@ -1960,7 +1964,7 @@ msgstr "Escriu una imatge nova a la memòria flaix"
 msgid "Flash operations"
 msgstr "Operacions a la memòria flaix"
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:185
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:186
 msgid "Flashing..."
 msgstr "Escrivint a la memòria flaix..."
 
@@ -2083,9 +2087,9 @@ msgid "Gateway ports"
 msgstr "Ports de passarel·la"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/dhcp.lua:19
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:10
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:49
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:33
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:22
 msgid "General Settings"
 msgstr "Ajusts generals"
 
@@ -2095,6 +2099,10 @@ msgstr "Ajusts generals"
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:141
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:360
 msgid "General Setup"
+msgstr ""
+
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:12
+msgid "General System Settings"
 msgstr ""
 
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:41
@@ -2171,13 +2179,15 @@ msgstr ""
 msgid "Heartbeat intervall (%s)"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:14
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:12
 msgid ""
 "Here you can configure the basic aspects of your device like its hostname or "
-"the timezone."
+"the logging."
 msgstr ""
-"Ací pots configurar els aspectes bàsics del teu dispositiu, com el nom de la "
-"màquina o el fus horari."
+
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:13
+msgid "Here you can configure the time settings."
+msgstr ""
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:489
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:546
@@ -2186,13 +2196,14 @@ msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr ""
 "No mostris l'<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:99
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:101
 #: modules/luci-mod-status/luasrc/view/admin_status/iptables.htm:61
 msgid "Hide empty chains"
 msgstr ""
 
 #: modules/luci-base/luasrc/view/lease_status.htm:86
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:110
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:20
 msgid "Host"
 msgstr "Nom de màquina"
 
@@ -2216,7 +2227,7 @@ msgstr ""
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/dhcp.lua:283
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/hosts.lua:15
 #: modules/luci-mod-status/luasrc/view/admin_status/index/10-system.htm:17
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:35
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:30
 #: themes/luci-theme-freifunk-generic/luasrc/view/themes/freifunk-generic/header.htm:129
 msgid "Hostname"
 msgstr "Nom de màquina"
@@ -2526,7 +2537,7 @@ msgstr "Ignora el fitxer de resolució"
 msgid "Image"
 msgstr "Fitxer d'imatge"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:59
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:60
 msgid "In"
 msgstr "Entr."
 
@@ -2549,7 +2560,7 @@ msgstr "Temps d'espera d'inactivitat"
 msgid "Inbound:"
 msgstr "Entrant:"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:101
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:67
 msgid "Info"
 msgstr "Informació"
 
@@ -2626,7 +2637,7 @@ msgstr ""
 msgid "Internal Server Error"
 msgstr "Error de servidor intern"
 
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:192
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:194
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:37
 msgid "Invalid"
 msgstr "Invàlid"
@@ -2709,7 +2720,7 @@ msgstr "Clau"
 msgid "Key #%d"
 msgstr "Clau #%d"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:76
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:42
 msgid "KiB"
 msgstr ""
 
@@ -2752,11 +2763,11 @@ msgstr "LLC"
 msgid "Label"
 msgstr "Etiqueta"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:143
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:109
 msgid "Language"
 msgstr "Llengua"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:24
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:22
 msgid "Language and Style"
 msgstr "Llengua i estil"
 
@@ -2935,7 +2946,7 @@ msgid "Local Startup"
 msgstr "Inici local"
 
 #: modules/luci-mod-status/luasrc/view/admin_status/index/10-system.htm:25
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:31
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:21
 msgid "Local Time"
 msgstr "Hora local"
 
@@ -2971,7 +2982,7 @@ msgstr "Localitza les peticions"
 msgid "Locked to channel %s used by: %s"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:99
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:65
 msgid "Log output level"
 msgstr "Nivell de sortida de registre"
 
@@ -2979,7 +2990,7 @@ msgstr "Nivell de sortida de registre"
 msgid "Log queries"
 msgstr "Registra les peticions"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:23
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:21
 msgid "Logging"
 msgstr "Registre"
 
@@ -3206,7 +3217,7 @@ msgstr ""
 msgid "Mount Point"
 msgstr "Punt de muntatge"
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:27
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:28
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:36
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:137
 msgid "Mount Points"
@@ -3248,11 +3259,11 @@ msgstr ""
 msgid "Mounted file systems"
 msgstr "Sistemes de fitxers muntats"
 
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:152
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:153
 msgid "Move down"
 msgstr "Baixa"
 
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:151
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:152
 msgid "Move up"
 msgstr "Puja"
 
@@ -3280,7 +3291,7 @@ msgstr ""
 msgid "NT Domain"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:245
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:158
 msgid "NTP server candidates"
 msgstr "Candidats de servidor NTP"
 
@@ -3391,7 +3402,7 @@ msgstr "No hi ha cap contrasenya establerta!"
 msgid "No public keys present yet."
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:83
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:85
 msgid "No rules in this chain."
 msgstr "No hi ha regles en aquesta cadena"
 
@@ -3432,7 +3443,7 @@ msgstr ""
 msgid "None"
 msgstr "Cap"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:112
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:78
 msgid "Normal"
 msgstr "Normal"
 
@@ -3454,7 +3465,7 @@ msgstr "No connectat"
 msgid "Note: interface name length"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:102
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:68
 msgid "Notice"
 msgstr "Avís"
 
@@ -3466,7 +3477,7 @@ msgstr "Nslookup"
 msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:132
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:98
 msgid "Number of parallel threads used for compression"
 msgstr ""
 
@@ -3605,7 +3616,7 @@ msgstr ""
 msgid "Optional. UDP port used for outgoing and incoming packets."
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:63
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:64
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:212
 msgid "Options"
 msgstr "Opcions"
@@ -3614,7 +3625,7 @@ msgstr "Opcions"
 msgid "Other:"
 msgstr "Altres:"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:60
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:61
 msgid "Out"
 msgstr "Sort."
 
@@ -3886,7 +3897,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:37
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:87
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:88
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:55
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:56
 #: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:170
 msgid "Pkts."
 msgstr "Paquets"
@@ -3898,6 +3909,14 @@ msgstr "Si us plau entra el teu nom d'usuari i contrasenya."
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:45
 msgid "Policy"
 msgstr "Política"
+
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:149
+msgid "Polling interval"
+msgstr ""
+
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:150
+msgid "Polling interval for status queries in seconds"
+msgstr ""
 
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:22
 msgid "Port"
@@ -3968,7 +3987,7 @@ msgstr "Processos"
 msgid "Profile"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:58
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:59
 msgid "Prot."
 msgstr "Prot."
 
@@ -3988,7 +4007,7 @@ msgstr ""
 msgid "Protocol support is not installed"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:241
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:154
 msgid "Provide NTP server"
 msgstr "Habilita el servidor NTP"
 
@@ -4142,7 +4161,7 @@ msgstr ""
 msgid "Rebind protection"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:47
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:48
 #: modules/luci-mod-system/luasrc/view/admin_system/reboot.htm:9
 msgid "Reboot"
 msgstr "Reinicia"
@@ -4357,7 +4376,7 @@ msgstr ""
 msgid "Router Advertisement-Service"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:14
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:15
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:6
 msgid "Router Password"
 msgstr "Contrasenya de l'encaminador"
@@ -4376,7 +4395,7 @@ msgstr ""
 "Les rutes especifiquen per quina interfície i passarel·la es pot arribar a "
 "un cert ordinador o xarxa."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:240
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:242
 msgid "Rule"
 msgstr ""
 
@@ -4396,7 +4415,7 @@ msgstr ""
 msgid "SNR"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:18
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:19
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:5
 msgid "SSH Access"
 msgstr "Accés SSH"
@@ -4413,7 +4432,7 @@ msgstr ""
 msgid "SSH username"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:19
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:20
 #: modules/luci-mod-system/luasrc/view/admin_system/sshkeys.htm:27
 msgid "SSH-Keys"
 msgstr "Claus SSH"
@@ -4461,7 +4480,7 @@ msgstr "Escaneja"
 msgid "Scan request failed"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:24
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:25
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/crontab.lua:8
 msgid "Scheduled Tasks"
 msgstr "Tasques programades"
@@ -4531,7 +4550,7 @@ msgid ""
 "sense events do not invoke hotplug handlers)."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:213
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:126
 #, fuzzy
 msgid "Set up Time Synchronization"
 msgstr "Configura la sincronització de l'hora"
@@ -4564,7 +4583,7 @@ msgstr ""
 msgid "Show current backup file list"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:99
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:101
 msgid "Show empty chains"
 msgstr ""
 
@@ -4599,7 +4618,7 @@ msgstr "Mida"
 msgid "Size of DNS query cache"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:120
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:86
 msgid "Size of the ZRam device in megabytes"
 msgstr ""
 
@@ -4645,7 +4664,7 @@ msgid ""
 "instructions."
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:61
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:62
 #: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:360
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:103
 msgid "Source"
@@ -4709,7 +4728,7 @@ msgstr ""
 msgid "Starting wireless scan..."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:23
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:24
 msgid "Startup"
 msgstr "Arrencada"
 
@@ -4829,8 +4848,6 @@ msgstr "Sincronitzant..."
 
 #: modules/luci-base/luasrc/controller/admin/index.lua:47
 #: modules/luci-mod-status/luasrc/view/admin_status/index/10-system.htm:14
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:10
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:14
 #: modules/luci-mod-system/luasrc/view/admin_system/applyreboot.htm:39
 msgid "System"
 msgstr "Sistema"
@@ -4840,11 +4857,11 @@ msgstr "Sistema"
 msgid "System Log"
 msgstr "Registre del sistema"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:18
-msgid "System Properties"
-msgstr "Propietats del sistema"
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:17
+msgid "System Time"
+msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:76
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:42
 msgid "System log buffer size"
 msgstr "Mida de la memòria intermèdia per al registre del sistema"
 
@@ -4886,7 +4903,7 @@ msgstr "Taula"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/routes.lua:21
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/routes.lua:68
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:57
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:58
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:74
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:102
 msgid "Target"
@@ -5058,7 +5075,7 @@ msgstr "El protocol seleccionat necessita un dispositiu assignat"
 msgid "The submitted security token is invalid or already expired!"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:265
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:266
 msgid ""
 "The system is erasing the configuration partition now and will reboot itself "
 "when finished."
@@ -5066,7 +5083,7 @@ msgstr ""
 "El sistema està esborrant la partició de configuració i es reiniciarà quan "
 "termini."
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:186
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:187
 #, fuzzy
 msgid ""
 "The system is flashing now.<br /> DO NOT POWER OFF THE DEVICE!<br /> Wait a "
@@ -5092,7 +5109,7 @@ msgstr ""
 "La imatge pujada no conté un format suportat. Assegura't de triar el format "
 "d'imatge genèric per la teva plataforma."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:163
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:129
 msgid "Theme"
 msgstr "Tema"
 
@@ -5212,17 +5229,22 @@ msgstr ""
 "Aquesta pàgina ofereix una vista general de les connexions de xarxa actives "
 "actualment."
 
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:172
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:173
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:27
 msgid "This section contains no values yet"
 msgstr "Aquesta secció encara no conté cap valor"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:207
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:218
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:11
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:13
+msgid "Time"
+msgstr ""
+
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:120
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:131
 msgid "Time Synchronization"
 msgstr "Sincronització de l'hora"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:212
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:125
 msgid "Time Synchronization is not configured yet."
 msgstr "La sincronització de hora encara no s'ha configurat."
 
@@ -5230,7 +5252,7 @@ msgstr "La sincronització de hora encara no s'ha configurat."
 msgid "Time interval for rekeying GTK"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:44
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/time.lua:24
 msgid "Timezone"
 msgstr "Zona horària"
 
@@ -5264,7 +5286,7 @@ msgid "Traceroute"
 msgstr "Rastre de ruta"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:45
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:56
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:57
 #: modules/luci-mod-status/luasrc/controller/admin/status.lua:24
 msgid "Traffic"
 msgstr "Trànsit"
@@ -5423,7 +5445,7 @@ msgstr ""
 msgid "Unsupported protocol type."
 msgstr "Tipus de protocol no suportat."
 
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:151
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:152
 msgid "Up"
 msgstr ""
 
@@ -5712,8 +5734,8 @@ msgstr ""
 msgid "Waiting for device..."
 msgstr "Esperant el dispositiu..."
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:103
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:113
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:69
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:79
 msgid "Warning"
 msgstr "Advertència"
 
@@ -5808,7 +5830,7 @@ msgstr "La xarxa sense fils està habilitada"
 msgid "Write received DNS requests to syslog"
 msgstr "Escriure les peticions DNS rebudes al registre del sistema"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:95
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:61
 msgid "Write system log to file"
 msgstr "Escriure el registre del sistema al fitxer"
 
@@ -5845,19 +5867,19 @@ msgid ""
 "or Safari."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:125
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:91
 msgid "ZRam Compression Algorithm"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:132
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:98
 msgid "ZRam Compression Streams"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:25
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:24
 msgid "ZRam Settings"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:120
+#: modules/luci-mod-system/luasrc/model/cbi/admin_system/system.lua:86
 msgid "ZRam Size"
 msgstr ""
 
@@ -6337,6 +6359,16 @@ msgstr "sí"
 #: modules/luci-base/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« Enrere"
+
+#~ msgid ""
+#~ "Here you can configure the basic aspects of your device like its hostname "
+#~ "or the timezone."
+#~ msgstr ""
+#~ "Ací pots configurar els aspectes bàsics del teu dispositiu, com el nom de "
+#~ "la màquina o el fus horari."
+
+#~ msgid "System Properties"
+#~ msgstr "Propietats del sistema"
 
 #~ msgid ""
 #~ "Here you can paste public SSH-Keys (one per line) for SSH public-key "
