@@ -4458,7 +4458,7 @@ msgstr "ルーター アドバタイズメント-サービス"
 
 #: modules/luci-mod-system/luasrc/controller/admin/system.lua:15
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:6
-msgid "Router Password"
+msgid "Device Password"
 msgstr "ルーター パスワード"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/routes.lua:8

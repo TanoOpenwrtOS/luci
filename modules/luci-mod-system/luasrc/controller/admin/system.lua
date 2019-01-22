@@ -12,7 +12,7 @@ function index()
 	entry({"admin", "system", "clock_status"}, post_on({ set = true }, "action_clock_status"))
 
 	entry({"admin", "system", "admin"}, firstchild(), _("Administration"), 2)
-	entry({"admin", "system", "admin", "password"}, template("admin_system/password"), _("Router Password"), 1)
+	entry({"admin", "system", "admin", "password"}, template("admin_system/password"), _("Device Password"), 1)
 	entry({"admin", "system", "admin", "password", "json"}, post("action_password"))
 
 	if fs.access("/etc/config/dropbear") then

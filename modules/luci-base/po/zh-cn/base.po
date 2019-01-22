@@ -4386,7 +4386,7 @@ msgstr "路由通告服务"
 
 #: modules/luci-mod-system/luasrc/controller/admin/system.lua:15
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:6
-msgid "Router Password"
+msgid "Device Password"
 msgstr "主机密码"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/routes.lua:8

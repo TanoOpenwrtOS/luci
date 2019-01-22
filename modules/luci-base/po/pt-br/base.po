@@ -4580,7 +4580,7 @@ msgstr "Serviço de Anúncio de Roteador"
 
 #: modules/luci-mod-system/luasrc/controller/admin/system.lua:15
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:6
-msgid "Router Password"
+msgid "Device Password"
 msgstr "Senha do Roteador"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/routes.lua:8
