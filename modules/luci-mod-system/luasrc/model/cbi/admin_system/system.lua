@@ -20,6 +20,7 @@ s.addremove = false
 s:tab("host",  translate("Host"))
 s:tab("logging",  translate("Logging"))
 s:tab("language", translate("Language and Style"))
+s:tab("advanced", translate("Advanced"))
 if has_zram then s:tab("zram", translate("ZRam Settings")) end
 
 --
@@ -138,6 +139,27 @@ end
 
 function o.write(self, section, value)
 	m.uci:set("luci", "main", "mediaurlbase", value)
+end
+
+--
+-- Advanced
+--
+
+o = s:taboption("advanced", Value, "_pollinterval",
+	translate("Polling interval"),
+	translate("Polling interval for status queries in seconds"))
+o.datatype = "range(3, 20)"
+o.default = 5
+o:value("3")
+o:value("5")
+o:value("10")
+
+function o.cfgvalue(...)
+	return m.uci:get("luci", "main", "pollinterval")
+end
+
+function o.write(self, section, value)
+	m.uci:set("luci", "main", "pollinterval", value)
 end
 
 return m
