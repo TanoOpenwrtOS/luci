@@ -80,7 +80,7 @@
 		if (!isNaN(vals.selected))
 			sel.selectedIndex = vals.selected;
 
-		sel.parentNode.style.display = (sel.options.length <= 1) ? 'none' : '';
+		sel.parentNode.style.display = (sel.options.length <= 1) ? 'none' : 'inline-block';
 		sel.vals = vals;
 	}
 
@@ -145,19 +145,19 @@
 	}
 //]]></script>
 
-<label style="float:left; margin-right:3px">
+<label style="float:left; margin-right:3px; display:inline-block">
 	<%:Mode%><br />
 	<select style="width:auto" id="<%= cbid %>.mode" name="<%= cbid %>.mode" onchange="cbi_toggle_wifi_mode('<%= cbid %>')"></select>
 </label>
-<label style="float:left; margin-right:3px">
+<label style="float:left; margin-right:3px; display:inline-block">
 	<%:Band%><br />
 	<select style="width:auto" id="<%= cbid %>.band" name="<%= cbid %>.band" onchange="cbi_toggle_wifi_band('<%= cbid %>')"></select>
 </label>
-<label style="float:left; margin-right:3px">
+<label style="float:left; margin-right:3px; display:inline-block">
 	<%:Channel%><br />
 	<select style="width:auto" id="<%= cbid %>.channel" name="<%= cbid %>.channel"></select>
 </label>
-<label style="float:left; margin-right:3px">
+<label style="float:left; margin-right:3px; display:inline-block">
 	<%:Width%><br />
 	<select style="width:auto" id="<%= cbid %>.htmode" name="<%= cbid %>.htmode"></select>
 </label>
