@@ -20,8 +20,8 @@ enable.default = 0
 
 -- collectd_interface.interfaces (Interface)
 interfaces = s:option( MultiValue, "Interfaces", translate("Monitor interfaces") )
-interfaces.widget = "select"
-interfaces.size   = 5
+interfaces.widget = "checkbox"
+interfaces.size   = 1
 interfaces:depends( "enable", 1 )
 for k, v in pairs(sys.net.devices()) do
 	interfaces:value(v)
