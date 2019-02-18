@@ -2,6 +2,7 @@
  * luci-bwc - Very simple bandwidth collector cache for LuCI realtime graphs
  *
  *   Copyright (C) 2010 Jo-Philipp Wich <jow@openwrt.org>
+ *   Copyright (C) 2019 Anton Kikin <a.kikin@tano-systems.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -410,13 +411,34 @@ static int update_ldstat(uint16_t load1, uint16_t load5, uint16_t load15)
 	return update_file(path, &e, sizeof(struct load_entry));
 }
 
+static void iw_checkif(
+	void *iw,
+	const char *ifname
+)
+{
+	uint16_t rate;
+	uint8_t rssi;
+	uint8_t noise;
+	struct stat s;
+
+	char path[256];
+
+	snprintf(path, sizeof(path), "/sys/class/net/%s", ifname);
+	if (!stat(path, &s))
+	{
+		if (iw_update(iw, ifname, &rate, &rssi, &noise))
+		{
+			update_radiostat(ifname, rate, rssi, noise);
+			return;
+		}
+	}
+}
+
 static int run_daemon(void)
 {
 	FILE *info;
 	uint32_t rxb, txb, rxp, txp;
 	uint32_t udp, tcp, other;
-	uint16_t rate;
-	uint8_t rssi, noise;
 	float lf1, lf5, lf15;
 	char line[1024];
 	char ifname[16];
@@ -494,19 +516,14 @@ static int run_daemon(void)
 		{
 			for (i = 0; i < 5; i++)
 			{
-#define iw_checkif(pattern) \
-				do {                                                      \
-					snprintf(ifname, sizeof(ifname), pattern, i);         \
-					if (iw_update(iw, ifname, &rate, &rssi, &noise))  \
-					{                                                     \
-						update_radiostat(ifname, rate, rssi, noise);      \
-						continue;                                         \
-					}                                                     \
-				} while(0)
+				snprintf(ifname, sizeof(ifname), "wlan%d", i);
+				iw_checkif(iw, ifname);
 
-				iw_checkif("wlan%d");
-				iw_checkif("ath%d");
-				iw_checkif("wl%d");
+				snprintf(ifname, sizeof(ifname), "ath%d", i);
+				iw_checkif(iw, ifname);
+
+				snprintf(ifname, sizeof(ifname), "wl%d", i);
+				iw_checkif(iw, ifname);
 			}
 		}
 
