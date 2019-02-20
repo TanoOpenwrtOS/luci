@@ -29,7 +29,7 @@ function renderBadge(icon, title) {
 	]);
 }
 
-L.poll(5, L.location(), { status: 1 },
+XHR.poll(-1, L.location(), { status: 1 },
 	function(x, info)
 	{
 		var us = document.getElementById('upstream_status_table');

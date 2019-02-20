@@ -248,7 +248,7 @@ function parse_output(table, s)
 }
 
 table_names.forEach(function(table) {
-	L.poll(5, L.url('admin/status/iptables_dump', current_mode, table.toLowerCase()), null,
+	XHR.poll(-1, L.url('admin/status/iptables_dump', current_mode, table.toLowerCase()), null,
 		function (xhr) {
 			parse_output(table, xhr.responseText);
 		});
