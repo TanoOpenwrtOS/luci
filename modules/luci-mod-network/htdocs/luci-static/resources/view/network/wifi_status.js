@@ -4,7 +4,7 @@ requestAnimationFrame(function() {
 		    small = container.querySelector('small'),
 		    info = container.querySelector('span');
 
-		L.poll(5, L.url('admin/network/wireless_status', ifname), null, function(xhr, iws) {
+		XHR.poll(-1, L.url('admin/network/wireless_status', ifname), null, function(xhr, iws) {
 			var iw = Array.isArray(iws) ? iws[0] : null;
 			if (!iw)
 				return;

@@ -4,7 +4,7 @@ requestAnimationFrame(function() {
 		    icon = container.querySelector('img'),
 		    info = container.querySelector('span');
 
-		L.poll(5, L.url('admin/network/iface_status', network), null, function(xhr, ifaces) {
+		XHR.poll(-1, L.url('admin/network/iface_status', network), null, function(xhr, ifaces) {
 			var ifc = Array.isArray(ifaces) ? ifaces[0] : null;
 			if (!ifc)
 				return;

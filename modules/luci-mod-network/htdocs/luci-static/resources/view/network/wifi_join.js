@@ -112,7 +112,7 @@ function scan() {
 
 		var count = 0;
 
-		poll = L.poll(3, L.url('admin/network/wireless_scan_results', dev), null, function(s, results) {
+		poll = XHR.poll(-1, L.url('admin/network/wireless_scan_results', dev), null, function(s, results) {
 			if (Array.isArray(results)) {
 				var bss = [];
 

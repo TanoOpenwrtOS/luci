@@ -24,7 +24,7 @@ document.querySelectorAll('[data-network]').forEach(function(n) {
 	networks.push(n.getAttribute('data-network'));
 });
 
-L.poll(5, L.url('admin/network/wireless_status', networks.join(',')), null,
+XHR.poll(-1, L.url('admin/network/wireless_status', networks.join(',')), null,
 	function(x, st) {
 		if (st) {
 			var rowstyle = 1;

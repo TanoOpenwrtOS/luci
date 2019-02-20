@@ -40,7 +40,7 @@ function render_iface(ifc) {
 	]);
 }
 
-L.poll(5, L.url('admin/network/iface_status', networks.join(',')), null,
+XHR.poll(-1, L.url('admin/network/iface_status', networks.join(',')), null,
 	function(x, ifcs) {
 		if (ifcs) {
 			for (var idx = 0; idx < ifcs.length; idx++) {
