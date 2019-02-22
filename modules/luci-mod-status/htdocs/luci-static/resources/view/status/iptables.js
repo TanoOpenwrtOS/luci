@@ -229,7 +229,7 @@ function parse_output(table, s)
 					rspan.appendChild(E('small', { 'class': 'cbi-tooltip ifacebadge', 'style': 'top:1em; left:auto' }, [ E('ul') ]));
 
 					refs.forEach(function(ref) {
-						var chain = ref[0].parentNode.getAttribute('data-chain'),
+						var chain = ref[0].parentNode.parentNode.getAttribute('data-chain'),
 						    num = ref[1];
 
 						rspan.lastElementChild.lastElementChild.appendChild(E('li', {}, [
