@@ -311,6 +311,19 @@ function _iface_ignore(x)
 	return false
 end
 
+function get_blacklist()
+	local blacklist = { }
+	local blacklist_uci = uci:get("luci", "net_blacklist", "blacklist") or ""
+
+	local iface
+
+	for iface in utl.imatch(blacklist_uci) do
+		blacklist[#blacklist + 1] = iface
+	end
+
+	return blacklist
+end
+
 function init(cursor)
 	_uci = cursor or _uci or uci.cursor()
 
@@ -324,33 +337,37 @@ function init(cursor)
 	_ubusdevcache  = { }
 	_ubuswificache = { }
 
+	local blacklist = get_blacklist()
+
 	-- read interface information
 	local n, i
 	for n, i in ipairs(nxo.getifaddrs()) do
 		local name = i.name:match("[^:]+")
 
-		if _iface_virtual(name) then
-			_tunnel[name] = true
-		end
+		if not utl.contains(blacklist, name) then
+			if _iface_virtual(name) then
+				_tunnel[name] = true
+			end
 
-		if _tunnel[name] or not (_iface_ignore(name) or _iface_virtual(name)) then
-			_interfaces[name] = _interfaces[name] or {
-				idx      = i.ifindex or n,
-				name     = name,
-				rawname  = i.name,
-				flags    = { },
-				ipaddrs  = { },
-				ip6addrs = { }
-			}
+			if _tunnel[name] or not (_iface_ignore(name) or _iface_virtual(name)) then
+				_interfaces[name] = _interfaces[name] or {
+					idx      = i.ifindex or n,
+					name     = name,
+					rawname  = i.name,
+					flags    = { },
+					ipaddrs  = { },
+					ip6addrs = { }
+				}
 
-			if i.family == "packet" then
-				_interfaces[name].flags   = i.flags
-				_interfaces[name].stats   = i.data
-				_interfaces[name].macaddr = ipc.checkmac(i.addr)
-			elseif i.family == "inet" then
-				_interfaces[name].ipaddrs[#_interfaces[name].ipaddrs+1] = ipc.IPv4(i.addr, i.netmask)
-			elseif i.family == "inet6" then
-				_interfaces[name].ip6addrs[#_interfaces[name].ip6addrs+1] = ipc.IPv6(i.addr, i.netmask)
+				if i.family == "packet" then
+					_interfaces[name].flags   = i.flags
+					_interfaces[name].stats   = i.data
+					_interfaces[name].macaddr = ipc.checkmac(i.addr)
+				elseif i.family == "inet" then
+					_interfaces[name].ipaddrs[#_interfaces[name].ipaddrs+1] = ipc.IPv4(i.addr, i.netmask)
+				elseif i.family == "inet6" then
+					_interfaces[name].ip6addrs[#_interfaces[name].ip6addrs+1] = ipc.IPv6(i.addr, i.netmask)
+				end
 			end
 		end
 	end
@@ -691,19 +708,26 @@ function get_interfaces(self)
 	local ifaces = { }
 	local nfs = { }
 
+	local blacklist = get_blacklist()
+
+
 	-- find normal interfaces
 	_uci:foreach("network", "interface",
 		function(s)
 			for iface in utl.imatch(s.ifname) do
-				if not _iface_ignore(iface) and not _iface_virtual(iface) and not _wifi_iface(iface) then
-					nfs[iface] = interface(iface)
+				if not utl.contains(blacklist, iface) then
+					if not _iface_ignore(iface) and not _iface_virtual(iface) and not _wifi_iface(iface) then
+						nfs[iface] = interface(iface)
+					end
 				end
 			end
 		end)
 
 	for iface in utl.kspairs(_interfaces) do
 		if not (nfs[iface] or _iface_ignore(iface) or _iface_virtual(iface) or _wifi_iface(iface)) then
-			nfs[iface] = interface(iface)
+			if not utl.contains(blacklist, iface) then
+				nfs[iface] = interface(iface)
+			end
 		end
 	end
 
