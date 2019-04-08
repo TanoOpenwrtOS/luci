@@ -26,34 +26,34 @@ function index()
 		apcups		= _("APC UPS"),
 		conntrack	= _("Conntrack"),
 		contextswitch	= _("Context Switches"),
-		cpu			= _("Processor"),
+		cpu		= _("Processor"),
 		cpufreq		= _("CPU Frequency"),
-		csv			= _("CSV Output"),
+		csv		= _("CSV Output"),
 		curl		= _("cUrl"),
-		df			= _("Disk Space Usage"),
+		df		= _("Disk Space Usage"),
 		disk		= _("Disk Usage"),
-		dns			= _("DNS"),
+		dns		= _("DNS"),
 		email		= _("Email"),
 		entropy		= _("Entropy"),
 		exec		= _("Exec"),
 		interface	= _("Interfaces"),
 		iptables	= _("Firewall"),
-		irq			= _("Interrupts"),
+		irq		= _("Interrupts"),
 		iwinfo		= _("Wireless"),
 		load		= _("System Load"),
 		memory		= _("Memory"),
 		netlink		= _("Netlink"),
 		network		= _("Network"),
-		nut			= _("UPS"),
+		nut		= _("UPS"),
 		olsrd		= _("OLSRd"),
 		openvpn		= _("OpenVPN"),
 		ping		= _("Ping"),
 		processes	= _("Processes"),
 		rrdtool		= _("RRDTool"),
-		sensors     = _("Sensors"),
-		splash_leases = _("Splash Leases"),
+		sensors		= _("Sensors"),
+		splash_leases	= _("Splash Leases"),
 		tcpconns	= _("TCP Connections"),
-		thermal	= 	_("Thermal"),
+		thermal		= _("Thermal"),
 		unixsock	= _("UnixSock"),
 		uptime		= _("Uptime")
 	}
@@ -115,11 +115,15 @@ function index()
 		-- get plugin instances
 		local instances = tree:plugin_instances( plugin )
 
-		-- plugin menu entry
-		entry(
-			{ "admin", "statistics", "graph", plugin },
-			call("statistics_render"), labels[plugin], idx
-		).query = { timespan = span , host = host }
+		-- load plugin menu entry from the description
+		local plugin_name = "luci.statistics.rrdtool.definitions." .. plugin
+		local stat, def = pcall( require, plugin_name )
+		if stat and def and type(def.item) == "function" then
+			entry(
+				{ "admin", "statistics", "graph", plugin },
+				call("statistics_render"), def.item(), idx
+			).query = { timespan = span , host = host }
+		end
 
 		-- if more then one instance is found then generate submenu
 		if #instances > 1 then
@@ -170,12 +174,12 @@ function statistics_render()
 	local images = { }
 
 	-- find requested plugin and instance
-    for i, p in ipairs( luci.dispatcher.context.path ) do
-        if luci.dispatcher.context.path[i] == "graph" then
-            plugin    = luci.dispatcher.context.path[i+1]
-            instances = { luci.dispatcher.context.path[i+2] }
-        end
-    end
+	for i, p in ipairs( luci.dispatcher.context.path ) do
+		if luci.dispatcher.context.path[i] == "graph" then
+			plugin    = luci.dispatcher.context.path[i+1]
+			instances = { luci.dispatcher.context.path[i+2] }
+		end
+	end
 
 	-- no instance requested, find all instances
 	if #instances == 0 then
@@ -188,7 +192,6 @@ function statistics_render()
 		instances[1] = ""
 		is_index = true
 	end
-
 
 	-- render graphs
 	for i, inst in luci.util.vspairs( instances ) do

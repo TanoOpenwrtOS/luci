@@ -15,6 +15,7 @@ msgstr ""
 "X-Generator: Pootle 1.1.0\n"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:26
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/apcups.lua:7
 msgid "APC UPS"
 msgstr ""
 
@@ -60,6 +61,7 @@ msgid "CPU Context Switches Plugin Configuration"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:30
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpufreq.lua:6
 msgid "CPU Frequency"
 msgstr ""
 
@@ -122,6 +124,7 @@ msgstr ""
 "cai collectd daemon. "
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:27
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/conntrack.lua:7
 msgid "Conntrack"
 msgstr ""
 
@@ -130,6 +133,7 @@ msgid "Conntrack Plugin Configuration"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:28
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/contextswitch.lua:6
 msgid "Context Switches"
 msgstr ""
 
@@ -138,6 +142,7 @@ msgid "DF Plugin Configuration"
 msgstr "Cấu hình DF plugin"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:35
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/dns.lua:7
 msgid "DNS"
 msgstr "DNS"
 
@@ -170,10 +175,12 @@ msgid "Disk Plugin Configuration"
 msgstr "Cấu hình disk plugin"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:33
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/df.lua:7
 msgid "Disk Space Usage"
 msgstr "Khoảng trống trên đĩa"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:34
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/disk.lua:7
 msgid "Disk Usage"
 msgstr "Disk Usage"
 
@@ -238,6 +245,7 @@ msgid "Enable this plugin"
 msgstr "Kích hoạt plugin này"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:37
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/entropy.lua:7
 msgid "Entropy"
 msgstr ""
 
@@ -258,6 +266,7 @@ msgid "Filter class monitoring"
 msgstr "Filter class monitoring"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:40
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/iptables.lua:7
 msgid "Firewall"
 msgstr "Firewall"
 
@@ -349,10 +358,12 @@ msgid "Interface Plugin Configuration"
 msgstr "Cấu hình giao diện plugin"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:39
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/interface.lua:7
 msgid "Interfaces"
 msgstr "Giao diện"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:41
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/irq.lua:7
 msgid "Interrupts"
 msgstr "Cắt ngang"
 
@@ -395,6 +406,7 @@ msgid "Maximum allowed connections"
 msgstr "Tối đã kết nối cho phép"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:44
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/memory.lua:15
 msgid "Memory"
 msgstr ""
 
@@ -480,6 +492,7 @@ msgid "Name of the rule"
 msgstr "Tên của rule"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:45
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/netlink.lua:7
 msgid "Netlink"
 msgstr "Netlink"
 
@@ -514,6 +527,7 @@ msgid "Number of threads for data collection"
 msgstr "Số lượng các chủ đề để thu thập dữ liệu"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:48
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/olsrd.lua:7
 msgid "OLSRd"
 msgstr ""
 
@@ -526,6 +540,7 @@ msgid "Only create average RRAs"
 msgstr "Chỉ tạo trung bình RRAs"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:49
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/openvpn.lua:7
 msgid "OpenVPN"
 msgstr ""
 
@@ -550,6 +565,7 @@ msgid "Output plugins"
 msgstr "Output plugins"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:50
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/ping.lua:7
 msgid "Ping"
 msgstr "Ping"
 
@@ -579,6 +595,7 @@ msgid "Port for apcupsd communication"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:51
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/processes.lua:7
 msgid "Processes"
 msgstr "Quá trình xử lý"
 
@@ -591,6 +608,7 @@ msgid "Processes to monitor separated by space"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:29
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpu.lua:7
 msgid "Processor"
 msgstr "Bộ xử lý"
 
@@ -646,6 +664,7 @@ msgid "Sensor list"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:53
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/sensors.lua:7
 msgid "Sensors"
 msgstr ""
 
@@ -702,6 +721,7 @@ msgid "Specifies what information to collect about the global topology."
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:54
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/splash_leases.lua:7
 msgid "Splash Leases"
 msgstr ""
 
@@ -736,10 +756,12 @@ msgid "Stored timespans"
 msgstr "Lưu timspans"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:43
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/load.lua:7
 msgid "System Load"
 msgstr "System Load"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:55
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/tcpconns.lua:7
 msgid "TCP Connections"
 msgstr "Kết nối TCP"
 
@@ -981,6 +1003,7 @@ msgid "The uptime plugin collects statistics about the uptime of the system."
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:56
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/thermal.lua:6
 msgid "Thermal"
 msgstr ""
 
@@ -1014,6 +1037,7 @@ msgstr "Thử tra cứu những tên host đủ điều kiện"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:47
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/nut.lua:12
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/nut.lua:6
 msgid "UPS"
 msgstr ""
 
@@ -1038,6 +1062,7 @@ msgid "Unixsock Plugin Configuration"
 msgstr "Cấu hình Unixsock Plugin "
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:58
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/uptime.lua:15
 msgid "Uptime"
 msgstr ""
 
@@ -1063,6 +1088,7 @@ msgid "Verbose monitoring"
 msgstr "Verbose monitoring"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:42
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/iwinfo.lua:7
 msgid "Wireless"
 msgstr "Mạng không dây"
 
@@ -1076,6 +1102,7 @@ msgid ""
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:32
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/curl.lua:7
 msgid "cUrl"
 msgstr ""
 

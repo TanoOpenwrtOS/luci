@@ -10,6 +10,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:26
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/apcups.lua:7
 msgid "APC UPS"
 msgstr ""
 
@@ -55,6 +56,7 @@ msgid "CPU Context Switches Plugin Configuration"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:30
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpufreq.lua:6
 msgid "CPU Frequency"
 msgstr ""
 
@@ -117,6 +119,7 @@ msgstr ""
 "collectd-demonen."
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:27
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/conntrack.lua:7
 msgid "Conntrack"
 msgstr ""
 
@@ -125,6 +128,7 @@ msgid "Conntrack Plugin Configuration"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:28
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/contextswitch.lua:6
 msgid "Context Switches"
 msgstr ""
 
@@ -133,6 +137,7 @@ msgid "DF Plugin Configuration"
 msgstr "Konfiguration av insticksprogrammet DF"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:35
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/dns.lua:7
 msgid "DNS"
 msgstr "DNS"
 
@@ -165,10 +170,12 @@ msgid "Disk Plugin Configuration"
 msgstr "Konfiguration av insticksprogrammet Disk"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:33
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/df.lua:7
 msgid "Disk Space Usage"
 msgstr "Användning av diskutrymme"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:34
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/disk.lua:7
 msgid "Disk Usage"
 msgstr "Användning av disk"
 
@@ -233,6 +240,7 @@ msgid "Enable this plugin"
 msgstr "Aktivera det här insticksprogrammet"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:37
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/entropy.lua:7
 msgid "Entropy"
 msgstr "Entropi"
 
@@ -253,6 +261,7 @@ msgid "Filter class monitoring"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:40
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/iptables.lua:7
 msgid "Firewall"
 msgstr "Brandvägg"
 
@@ -338,10 +347,12 @@ msgid "Interface Plugin Configuration"
 msgstr "Konfiguration av insticksprogrammets gränssnitt"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:39
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/interface.lua:7
 msgid "Interfaces"
 msgstr "Gränssnitt"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:41
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/irq.lua:7
 msgid "Interrupts"
 msgstr "Avbrott"
 
@@ -384,6 +395,7 @@ msgid "Maximum allowed connections"
 msgstr "Maximalt tillåtna anslutningar"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:44
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/memory.lua:15
 msgid "Memory"
 msgstr "Minne"
 
@@ -469,6 +481,7 @@ msgid "Name of the rule"
 msgstr "Regelns namn"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:45
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/netlink.lua:7
 msgid "Netlink"
 msgstr "Nätlänk"
 
@@ -503,6 +516,7 @@ msgid "Number of threads for data collection"
 msgstr "Antalet trådar för insamling av data"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:48
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/olsrd.lua:7
 msgid "OLSRd"
 msgstr "OLSRd"
 
@@ -515,6 +529,7 @@ msgid "Only create average RRAs"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:49
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/openvpn.lua:7
 msgid "OpenVPN"
 msgstr "OpenVPN"
 
@@ -539,6 +554,7 @@ msgid "Output plugins"
 msgstr "Insticksprogram för utmatning"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:50
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/ping.lua:7
 msgid "Ping"
 msgstr "Pinga"
 
@@ -568,6 +584,7 @@ msgid "Port for apcupsd communication"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:51
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/processes.lua:7
 msgid "Processes"
 msgstr "Processer"
 
@@ -580,6 +597,7 @@ msgid "Processes to monitor separated by space"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:29
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpu.lua:7
 msgid "Processor"
 msgstr "Processor"
 
@@ -635,6 +653,7 @@ msgid "Sensor list"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:53
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/sensors.lua:7
 msgid "Sensors"
 msgstr "Sensorer"
 
@@ -691,6 +710,7 @@ msgid "Specifies what information to collect about the global topology."
 msgstr "Anger vilken information som ska samlas in om den globala topologin."
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:54
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/splash_leases.lua:7
 msgid "Splash Leases"
 msgstr ""
 
@@ -725,10 +745,12 @@ msgid "Stored timespans"
 msgstr "Lagrade tidsspann"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:43
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/load.lua:7
 msgid "System Load"
 msgstr "Belastning av systemet"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:55
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/tcpconns.lua:7
 msgid "TCP Connections"
 msgstr "TCP-anslutningar"
 
@@ -928,6 +950,7 @@ msgid "The uptime plugin collects statistics about the uptime of the system."
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:56
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/thermal.lua:6
 msgid "Thermal"
 msgstr ""
 
@@ -960,6 +983,7 @@ msgstr "Försök att kolla upp fullständigt kvalificerade värdnamn"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:47
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/nut.lua:12
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/nut.lua:6
 msgid "UPS"
 msgstr "UPS"
 
@@ -984,6 +1008,7 @@ msgid "Unixsock Plugin Configuration"
 msgstr "Konfiguration av insticksprogrammet UnixSock"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:58
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/uptime.lua:15
 msgid "Uptime"
 msgstr "Upptid"
 
@@ -1009,6 +1034,7 @@ msgid "Verbose monitoring"
 msgstr "Detaljerad övervakning"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:42
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/iwinfo.lua:7
 msgid "Wireless"
 msgstr "Trådlöst"
 
@@ -1024,6 +1050,7 @@ msgstr ""
 "mer statistik."
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:32
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/curl.lua:7
 msgid "cUrl"
 msgstr ""
 

@@ -170,22 +170,22 @@
      * Sidebar expand
      */
     var showSide = false;
-    if ($(win).height() == 992) {
-        $(".showSide").click(function () {
-            if (showSide) {
-                $(".darkMask").stop(true).fadeOut("fast");
-                $(".main-left").stop(true).fadeOut("fast");
-                $(".main-right").css("overflow-y", "visible");
-                showSide = false;
-            } else {
-                $(".darkMask").stop(true).fadeIn("fast");
-                $(".main-left").stop(true).animate({
-                    width: "100%"
-                }, "fast").fadeIn("fast");
-                $(".main-right").css("overflow-y", "hidden");
-                showSide = true;
-            }
-        });
+    $(".showSide").click(function () {
+        if (showSide) {
+            $(".darkMask").stop(true).fadeOut("fast");
+            $(".main-left").stop(true).fadeOut("fast");
+            $(".main-right").css("overflow-y", "visible");
+            showSide = false;
+        } else {
+            $(".darkMask").stop(true).fadeIn("fast");
+            $(".main-left").stop(true).animate({
+                width: "100%"
+            }, "fast").fadeIn("fast");
+            $(".main-right").css("overflow-y", "hidden");
+            showSide = true;
+        }
+    });
+    if($(win).width() <= 992){
         $(".main-left").click(function(e) {
             e.preventDefault();
             $(".main-left").stop(true).fadeOut("fast");
@@ -205,6 +205,7 @@
         }
     });
 
+    $('.login .main-right').css('min-height', $(win).height());
     $(win).resize(function () {
         if ($(win).width() > 921) {
             $(".main-left").css("width", "");
@@ -213,7 +214,7 @@
             showSide = false;
         }
 
-        $('body.login').height($(win).height());
+        $('.login .main-right').css('min-height', $(win).height());
     });
 
     /**
@@ -262,16 +263,19 @@
         $(this).next().css('border-color', $(this).css('background-color'));
     });
 
-    $('<div class="eye"></div>').appendTo('.login > .main .cbi-value-last > .cbi-value-field');
-    $('.login > .main .cbi-value-last > .cbi-value-field .eye').click(function () {
-        var className = $(this).attr('class');
-        if (className.indexOf('op-eye') > (-1)) {
-            $('.login > .main .cbi-value-last > .cbi-value-field').children().prop('type', 'text');
-            $(this).addClass('eye').removeClass('op-eye');
-        } else {
-            $('.login > .main .cbi-value-last > .cbi-value-field').children().prop('type', 'password');
-            $(this).addClass('op-eye').removeClass('eye');
+    $('<div>').appendTo('.login > .main .cbi-value-last .cbi-value-field');
+    $('.login > .main .cbi-value-last .cbi-value-field > div').click(function(){
+        var thisParent = $(this).parent();
+        if( thisParent.attr('class').indexOf('op-eye') == (-1) ){
+            thisParent.addClass('op-eye');
+            $(this).prev().attr('type', 'text');
+        }else {
+            thisParent.removeClass('op-eye');
+            $(this).prev().attr('type', 'password');
         }
+
     });
 
+    $('#cbi-network-switch_vlan .table').wrap('#vlan_table');
+    
 })(window, jQuery);
