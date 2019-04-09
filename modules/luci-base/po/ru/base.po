@@ -28,6 +28,12 @@ msgstr "%.1f дБ"
 msgid "%.2mB (%d %s)"
 msgstr "%.2mБ (%d %s)"
 
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:6
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:7
+#: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:170
+msgid "%1024.2mB"
+msgstr "%1024.2mБ"
+
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:109
 msgid "%d Bit"
 msgstr "%d бит"

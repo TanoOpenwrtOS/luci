@@ -167,7 +167,7 @@
 								c.layer4.toUpperCase(),
 								c.hasOwnProperty('sport') ? (src + ':' + c.sport) : src,
 								c.hasOwnProperty('dport') ? (dst + ':' + c.dport) : dst,
-								'%1024.2mB (%d <%:Pkts.%>)'.format(c.bytes, c.packets)
+								'<%:%1024.2mB%> (%d <%:Pkts.%>)'.format(c.bytes, c.packets)
 							]);
 						}
 
