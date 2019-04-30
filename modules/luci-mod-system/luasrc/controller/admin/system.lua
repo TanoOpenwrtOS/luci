@@ -10,6 +10,7 @@ function index()
 	entry({"admin", "system", "system"}, cbi("admin_system/system"), _("General Settings"), 1)
 	entry({"admin", "system", "time"}, cbi("admin_system/time"), _("Time"), 1)
 	entry({"admin", "system", "clock_status"}, post_on({ set = true }, "action_clock_status"))
+	entry({"admin", "system", "ntp_restart"}, call("action_ntp_restart"), nil).leaf = true
 
 	entry({"admin", "system", "admin"}, firstchild(), _("Administration"), 2)
 	entry({"admin", "system", "admin", "password"}, template("admin_system/password"), _("Device Password"), 1)
@@ -63,6 +64,14 @@ function action_clock_status()
 
 	luci.http.prepare_content("application/json")
 	luci.http.write_json({ timestring = os.date("%c") })
+end
+
+function action_ntp_restart()
+	if nixio.fs.access("/etc/init.d/sysntpd") then
+		os.execute("/etc/init.d/sysntpd restart")
+	end
+	luci.http.prepare_content("text/plain")
+	luci.http.write("0")
 end
 
 local function image_supported(image)
