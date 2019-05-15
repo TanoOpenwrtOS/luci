@@ -205,7 +205,7 @@ function action_backup()
 		%{ luci.sys.hostname(), os.date("%Y-%m-%d") })
 
 	luci.http.prepare_content("application/x-targz")
-	luci.sys.process.exec({ "/sbin/sysupgrade", "--create-backup", "-" }, luci.http.write)
+	luci.sys.process.exec({ "/sbin/sysupgrade", "--empty-dirs", "--create-backup", "-" }, luci.http.write)
 end
 
 function action_backupmtdblock()
