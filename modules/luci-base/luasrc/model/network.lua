@@ -301,16 +301,6 @@ function _iface_virtual(x)
 	return false
 end
 
-function _iface_ignore(x)
-	local _, p
-	for _, p in ipairs(IFACE_PATTERNS_IGNORE) do
-		if x:match(p) then
-			return true
-		end
-	end
-	return false
-end
-
 function get_blacklist()
 	local blacklist = { }
 	local blacklist_uci = uci:get("luci", "net_blacklist", "blacklist") or ""
@@ -322,6 +312,20 @@ function get_blacklist()
 	end
 
 	return blacklist
+end
+
+function _iface_ignore(x)
+	local _, p
+	for _, p in ipairs(IFACE_PATTERNS_IGNORE) do
+		if x:match(p) then
+			return true
+		end
+	end
+	local blacklist = get_blacklist()
+	if utl.contains(blacklist, x) then
+		return true
+	end
+	return false
 end
 
 function init(cursor)
