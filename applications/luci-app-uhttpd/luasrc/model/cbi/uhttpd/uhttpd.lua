@@ -15,8 +15,8 @@ local lhttps = nil
 local cert_file = nil
 local key_file = nil
 
-ucs:tab("general", translate("General Settings"))
-ucs:tab("server", translate("Full Web Server Settings"), translate("For settings primarily geared to serving more than the web UI"))
+ucs:tab("general", translate("Basic Settings"))
+ucs:tab("server", translate("Secondary Settings"), translate("For settings primarily geared to serving more than the web UI"))
 ucs:tab("advanced", translate("Advanced Settings"), translate("Settings which are either rarely needed or which affect serving the WebUI"))
 
 lhttp = ucs:taboption("general", DynamicList, "listen_http", translate("HTTP listeners (address:port)"), translate("Bind to specific interface:port (by specifying interface address"))
@@ -202,29 +202,29 @@ o = ucs:taboption("advanced", Value, "max_requests", translate("Maximum number o
 o.optional = true
 o.datatype = "uinteger"
 
-local s = m:section(TypedSection, "cert", translate("uHTTPd Self-signed Certificate Parameters"))
+local s = m:section(TypedSection, "cert", translate("Self-signed Certificate Parameters"))
 
 s.template  = "cbi/tsection"
 s.anonymous = true
 
-o = s:option(Value, "days", translate("Valid for # of Days"))
+o = s:option(Value, "days", translate("Number of days a generated certificate is valid"))
 o.default = 730
 o.datatype = "uinteger"
 
-o = s:option(Value, "bits", translate("Length of key in bits"))
+o = s:option(Value, "bits", translate("Length of the private key in bits"))
 o.default = 2048
 o.datatype = "min(1024)"
 
-o = s:option(Value, "commonname", translate("Server Hostname"), translate("a.k.a CommonName"))
+o = s:option(Value, "commonname", translate("Common name (/CN)"), translate("The fully-qualified domain name"))
 o.default = luci.sys.hostname()
 
-o = s:option(Value, "country", translate("Country"))
+o = s:option(Value, "country", translate("Country name (/C)"), translate("The two-letter country code where your company is legally located"))
 o.default = "ZZ"
 
-o = s:option(Value, "state", translate("State"))
-o.default = "Unknown"
+o = s:option(Value, "state", translate("State or province name (/ST)"), translate("The state/province where your company is legally located"))
+o.default = ""
 
-o = s:option(Value, "location", translate("Location"))
-o.default = "Unknown"
+o = s:option(Value, "location", translate("Locality name (/L)"), translate("The city where your company is legally located"))
+o.default = ""
 
 return m

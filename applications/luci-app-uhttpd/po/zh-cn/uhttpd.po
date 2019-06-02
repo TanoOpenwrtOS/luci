@@ -37,6 +37,10 @@ msgstr "别名"
 msgid "Base directory for files to be served"
 msgstr "基本文件提供目录"
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:18
+msgid "Basic Settings"
+msgstr ""
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:22
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:50
 msgid "Bind to specific interface:port (by specifying interface address"
@@ -50,6 +54,10 @@ msgstr "CGI 文件类型处理程序"
 msgid "CGI is disabled if not present."
 msgstr "如果不存在，CGI 将被禁用。"
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
+msgid "Common name (/CN)"
+msgstr ""
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:142
 msgid "Config file (e.g. for credentials for Basic Auth)"
 msgstr "配置文件（例如，基本身份验证的凭据）"
@@ -59,8 +67,8 @@ msgid "Connection reuse"
 msgstr "连接重用"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
-msgid "Country"
-msgstr "国家"
+msgid "Country name (/C)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:173
 msgid "Disable JSON-RPC authorization via ubus session API"
@@ -94,21 +102,17 @@ msgstr "启用 JSON-RPC 跨域资源支持"
 msgid "For settings primarily geared to serving more than the web UI"
 msgstr "适用于主要服务于 Web UI 的设置"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:19
-msgid "Full Web Server Settings"
-msgstr "完整的 Web 服务器设置"
-
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:160
 msgid "Full real path to handler for Lua scripts"
 msgstr "Lua 脚本处理程序的完整真实路径"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:18
-msgid "General Settings"
-msgstr "常规设置"
-
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:22
 msgid "HTTP listeners (address:port)"
 msgstr "HTTP 监听（地址:端口）"
+
+#: applications/luci-app-uhttpd/luasrc/controller/uhttpd/uhttpd.lua:13
+msgid "HTTP/HTTPS"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:94
 msgid "HTTPS Certificate (DER Encoded)"
@@ -137,12 +141,12 @@ msgid ""
 msgstr "文件结尾关联的解释器（“后缀=处理程序”，例如“.php=/usr/bin/php-cgi”）"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:214
-msgid "Length of key in bits"
-msgstr "密钥长度"
+msgid "Length of the private key in bits"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:227
-msgid "Location"
-msgstr "位置"
+msgid "Locality name (/L)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:197
 msgid "Maximum number of connections"
@@ -159,6 +163,10 @@ msgstr "Lua、CGI 或 ubus 执行的最长等待时间"
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:182
 msgid "Maximum wait time for network activity"
 msgstr "网络活动的最长等待时间"
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:210
+msgid "Number of days a generated certificate is valid"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:166
 msgid "Override path for ubus socket"
@@ -190,9 +198,13 @@ msgstr "删除证书和密钥的配置"
 msgid "Remove old certificate and key"
 msgstr "删除旧证书和密钥"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
-msgid "Server Hostname"
-msgstr "服务器主机名"
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:19
+msgid "Secondary Settings"
+msgstr ""
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:205
+msgid "Self-signed Certificate Parameters"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:20
 msgid ""
@@ -200,20 +212,32 @@ msgid ""
 msgstr "很少需要或影响 WebUI 服务的设置"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:224
-msgid "State"
-msgstr "州"
+msgid "State or province name (/ST)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:192
 msgid "TCP Keepalive"
 msgstr "TCP Keepalive"
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:227
+msgid "The city where your company is legally located"
+msgstr ""
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
+msgid "The fully-qualified domain name"
+msgstr ""
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:224
+msgid "The state/province where your company is legally located"
+msgstr ""
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
+msgid "The two-letter country code where your company is legally located"
+msgstr ""
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:110
 msgid "This permanently deletes the cert, key, and configuration to use same."
 msgstr "这将永久删除证书、密钥及使用它的配置。"
-
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:210
-msgid "Valid for # of Days"
-msgstr "有效天数"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:145
 msgid ""
@@ -233,18 +257,9 @@ msgstr "ubus 通过 JSON-RPC 集成的虚拟路径前缀"
 msgid "Will not use HTTP authentication if not present"
 msgstr "如果不存在，将不使用 HTTP 身份验证"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
-msgid "a.k.a CommonName"
-msgstr "又名 CommonName"
-
-#: applications/luci-app-uhttpd/luasrc/controller/uhttpd/uhttpd.lua:13
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:6
 msgid "uHTTPd"
 msgstr "uHTTPd"
-
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:205
-msgid "uHTTPd Self-signed Certificate Parameters"
-msgstr "uHTTPd 自签名证书参数"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:99
 msgid ""
@@ -255,3 +270,33 @@ msgstr "uHTTPd 将使用下面显示的配置生成新的自签名证书。"
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:163
 msgid "ubus integration is disabled if not present"
 msgstr "如果不存在，则禁用 ubus 集成"
+
+#~ msgid "Country"
+#~ msgstr "国家"
+
+#~ msgid "Full Web Server Settings"
+#~ msgstr "完整的 Web 服务器设置"
+
+#~ msgid "General Settings"
+#~ msgstr "常规设置"
+
+#~ msgid "Length of key in bits"
+#~ msgstr "密钥长度"
+
+#~ msgid "Location"
+#~ msgstr "位置"
+
+#~ msgid "Server Hostname"
+#~ msgstr "服务器主机名"
+
+#~ msgid "State"
+#~ msgstr "州"
+
+#~ msgid "Valid for # of Days"
+#~ msgstr "有效天数"
+
+#~ msgid "a.k.a CommonName"
+#~ msgstr "又名 CommonName"
+
+#~ msgid "uHTTPd Self-signed Certificate Parameters"
+#~ msgstr "uHTTPd 自签名证书参数"

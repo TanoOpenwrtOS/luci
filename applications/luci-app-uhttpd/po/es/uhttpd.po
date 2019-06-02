@@ -38,6 +38,10 @@ msgstr "Alias"
 msgid "Base directory for files to be served"
 msgstr "Directorio base para archivos a ser servidos"
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:18
+msgid "Basic Settings"
+msgstr ""
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:22
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:50
 msgid "Bind to specific interface:port (by specifying interface address"
@@ -53,6 +57,10 @@ msgstr "Controlador de tipo de archivo CGI"
 msgid "CGI is disabled if not present."
 msgstr "CGI está deshabilitado si no está presente."
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
+msgid "Common name (/CN)"
+msgstr ""
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:142
 msgid "Config file (e.g. for credentials for Basic Auth)"
 msgstr ""
@@ -64,8 +72,8 @@ msgid "Connection reuse"
 msgstr "Reutilización de la conexión"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
-msgid "Country"
-msgstr "País"
+msgid "Country name (/C)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:173
 msgid "Disable JSON-RPC authorization via ubus session API"
@@ -102,21 +110,17 @@ msgstr ""
 "Para configuraciones principalmente orientadas a servir más que la interfaz "
 "de usuario web"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:19
-msgid "Full Web Server Settings"
-msgstr "Configuración completa del servidor web"
-
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:160
 msgid "Full real path to handler for Lua scripts"
 msgstr "Ruta real completa al controlador para scripts Lua"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:18
-msgid "General Settings"
-msgstr "Ajustes generales"
-
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:22
 msgid "HTTP listeners (address:port)"
 msgstr "Escuchas HTTP (direccion:puerto)"
+
+#: applications/luci-app-uhttpd/luasrc/controller/uhttpd/uhttpd.lua:13
+msgid "HTTP/HTTPS"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:94
 msgid "HTTPS Certificate (DER Encoded)"
@@ -147,12 +151,12 @@ msgstr ""
 "ejemplo, '.php=/usr/bin/php-cgi')"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:214
-msgid "Length of key in bits"
-msgstr "Longitud de la clave en bits"
+msgid "Length of the private key in bits"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:227
-msgid "Location"
-msgstr "Ubicación"
+msgid "Locality name (/L)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:197
 msgid "Maximum number of connections"
@@ -169,6 +173,10 @@ msgstr "Tiempo máximo de espera para la ejecución de Lua, CGI o ubus"
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:182
 msgid "Maximum wait time for network activity"
 msgstr "Tiempo máximo de espera para la actividad de la red"
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:210
+msgid "Number of days a generated certificate is valid"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:166
 msgid "Override path for ubus socket"
@@ -202,9 +210,13 @@ msgstr "Eliminar configuración para certificado y clave"
 msgid "Remove old certificate and key"
 msgstr "Eliminar certificado y clave antiguos"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
-msgid "Server Hostname"
-msgstr "Nombre de host del servidor"
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:19
+msgid "Secondary Settings"
+msgstr ""
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:205
+msgid "Self-signed Certificate Parameters"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:20
 msgid ""
@@ -214,22 +226,34 @@ msgstr ""
 "WebUI"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:224
-msgid "State"
-msgstr "Estado"
+msgid "State or province name (/ST)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:192
 msgid "TCP Keepalive"
 msgstr "Mantener vivo TCP"
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:227
+msgid "The city where your company is legally located"
+msgstr ""
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
+msgid "The fully-qualified domain name"
+msgstr ""
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:224
+msgid "The state/province where your company is legally located"
+msgstr ""
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
+msgid "The two-letter country code where your company is legally located"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:110
 msgid "This permanently deletes the cert, key, and configuration to use same."
 msgstr ""
 "Esto elimina permanentemente el certificado, la clave y la configuración "
 "para utilizarlo."
-
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:210
-msgid "Valid for # of Days"
-msgstr "Válido por # de días"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:145
 msgid ""
@@ -251,18 +275,9 @@ msgstr "Prefijo de ruta virtual para ubus a través de la integración JSON-RPC"
 msgid "Will not use HTTP authentication if not present"
 msgstr "No utilizará la autenticación HTTP si no está presente"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
-msgid "a.k.a CommonName"
-msgstr "a.k.a Nombre común"
-
-#: applications/luci-app-uhttpd/luasrc/controller/uhttpd/uhttpd.lua:13
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:6
 msgid "uHTTPd"
 msgstr "uHTTPd"
-
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:205
-msgid "uHTTPd Self-signed Certificate Parameters"
-msgstr "Parámetros del certificado autofirmado de uHTTPd"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:99
 msgid ""
@@ -275,3 +290,33 @@ msgstr ""
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:163
 msgid "ubus integration is disabled if not present"
 msgstr "La integración de ubus está deshabilitada si no está presente"
+
+#~ msgid "Country"
+#~ msgstr "País"
+
+#~ msgid "Full Web Server Settings"
+#~ msgstr "Configuración completa del servidor web"
+
+#~ msgid "General Settings"
+#~ msgstr "Ajustes generales"
+
+#~ msgid "Length of key in bits"
+#~ msgstr "Longitud de la clave en bits"
+
+#~ msgid "Location"
+#~ msgstr "Ubicación"
+
+#~ msgid "Server Hostname"
+#~ msgstr "Nombre de host del servidor"
+
+#~ msgid "State"
+#~ msgstr "Estado"
+
+#~ msgid "Valid for # of Days"
+#~ msgstr "Válido por # de días"
+
+#~ msgid "a.k.a CommonName"
+#~ msgstr "a.k.a Nombre común"
+
+#~ msgid "uHTTPd Self-signed Certificate Parameters"
+#~ msgstr "Parámetros del certificado autofirmado de uHTTPd"
