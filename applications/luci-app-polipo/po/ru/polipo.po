@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: LuCI: polipo\n"
 "POT-Creation-Date: 2012-08-15 17:51+0300\n"
-"PO-Revision-Date: 2018-01-24 14:59+0300\n"
+"PO-Revision-Date: 2019-06-05 18:55+0300\n"
 "Language-Team: http://cyber-place.ru\n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -70,7 +70,7 @@ msgstr "Размер первого<br />PMM-сегмента (в байтах)"
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:10
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:120
 msgid "General Settings"
-msgstr "Основные настройки"
+msgstr "Общие настройки"
 
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:113
 msgid "How much RAM should Polipo use for its cache."

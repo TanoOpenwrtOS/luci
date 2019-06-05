@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: ahcp\n"
 "POT-Creation-Date: 2013-09-05 15:29+0200\n"
-"PO-Revision-Date: 2018-01-24 14:59+0300\n"
+"PO-Revision-Date: 2019-06-05 18:53+0300\n"
 "Last-Translator: Vladimir aka sunny <picfun@ya.ru>\n"
 "Language-Team: http://cyber-place.ru\n"
 "Language: ru\n"
@@ -76,7 +76,7 @@ msgstr "Перенаправление запросов"
 
 #: applications/luci-app-ahcp/luasrc/model/cbi/ahcp.lua:13
 msgid "General Setup"
-msgstr "Основные настройки"
+msgstr "Общие настройки"
 
 #: applications/luci-app-ahcp/luasrc/model/cbi/admin_network/proto_ahcp.lua:24
 #: applications/luci-app-ahcp/luasrc/model/cbi/ahcp.lua:61

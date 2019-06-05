@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: LuCI: firewall\n"
 "POT-Creation-Date: 2013-09-05 16:02+0200\n"
-"PO-Revision-Date: 2018-09-06 09:29+0300\n"
+"PO-Revision-Date: 2019-06-05 18:54+0300\n"
 "Language-Team: http://cyber-place.ru\n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -294,7 +294,7 @@ msgstr "Из %s в <var>это устройство</var> с источника�
 #: applications/luci-app-firewall/luasrc/model/cbi/firewall/zone-details.lua:56
 #: applications/luci-app-firewall/luasrc/model/cbi/firewall/zones.lua:16
 msgid "General Settings"
-msgstr "Основные настройки"
+msgstr "Общие настройки"
 
 #: applications/luci-app-firewall/luasrc/model/cbi/firewall/zones.lua:51
 msgid "Hardware flow offloading"

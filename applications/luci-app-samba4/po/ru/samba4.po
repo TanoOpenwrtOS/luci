@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: LuCI: samba\n"
 "POT-Creation-Date: 2009-05-19 19:36+0200\n"
-"PO-Revision-Date: 2018-01-14 11:43+0300\n"
+"PO-Revision-Date: 2019-06-05 18:56+0300\n"
 "Language-Team: http://cyber-place.ru\n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -85,7 +85,7 @@ msgstr ""
 
 #: applications/luci-app-samba4/luasrc/model/cbi/samba4.lua:8
 msgid "General Settings"
-msgstr "Основные настройки"
+msgstr "Общие настройки"
 
 #: applications/luci-app-samba4/luasrc/model/cbi/samba4.lua:83
 msgid "Guests only"
@@ -142,7 +142,7 @@ msgstr ""
 "Это содержимое файла '/etc/samba/smb.conf.template', из которого "
 "генерируется config файл - samba.<br />Значения, заключенные в символы "
 "('|'), не должны быть изменены.<br />Они будут автоматически заменены на "
-"значения со страницы 'Основные настройки'."
+"значения со страницы 'Общие настройки'."
 
 #: applications/luci-app-samba4/luasrc/model/cbi/samba4.lua:108
 msgid "Time-machine size in GB"
