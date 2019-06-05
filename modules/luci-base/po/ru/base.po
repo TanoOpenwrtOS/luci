@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2019-01-22 05:18+0300\n"
+"PO-Revision-Date: 2019-06-05 12:57+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
 "Language-Team: http://cyber-place.ru\n"
 "Language: ru\n"
@@ -3711,7 +3711,7 @@ msgstr ""
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:148
 msgid "Optional. Create routes for Allowed IPs for this peer."
 msgstr ""
-"Необязательно. Создавать маршруты для разрешенных IP адресов для этого узла."
+"Необязательно. Создавать маршруты для разрешенных IP-адресов для этого узла."
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:103
 msgid "Optional. Description of peer."
@@ -3953,11 +3953,11 @@ msgstr "Перетащите файл SSH ключа или вставьте с�
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:1000
 msgid "Path to CA-Certificate"
-msgstr "Путь к CA-Сертификату"
+msgstr "Путь к CA-сертификату"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:1007
 msgid "Path to Client-Certificate"
-msgstr "Путь к Client-Сертификату"
+msgstr "Путь к Client-сертификату"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:1013
 msgid "Path to Private Key"
@@ -3965,11 +3965,11 @@ msgstr "Путь к Приватному ключу"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:1049
 msgid "Path to inner CA-Certificate"
-msgstr "Путь к внутренним CA-Сертификатам"
+msgstr "Путь к внутренним CA-сертификатам"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:1055
 msgid "Path to inner Client-Certificate"
-msgstr "Путь к внутренним Client-Сертификатам"
+msgstr "Путь к внутренним Client-сертификатам"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:1061
 msgid "Path to inner Private Key"
@@ -3991,7 +3991,7 @@ msgstr "Пиковая:"
 
 #: protocols/luci-proto-pppossh/luasrc/model/cbi/admin_network/proto_pppossh.lua:28
 msgid "Peer IP address to assign"
-msgstr "Запрос IP адреса назначения"
+msgstr "Запрос IP-адреса назначения"
 
 #: modules/luci-base/luasrc/model/network.lua:32
 msgid "Peer address is missing"
@@ -4348,7 +4348,7 @@ msgstr "Приёмная антенна"
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:42
 msgid "Recommended. IP addresses of the WireGuard interface."
-msgstr "Рекомендуемый. IP адреса интерфейса WireGuard."
+msgstr "Рекомендуемый. IP-адреса интерфейса WireGuard."
 
 #: modules/luci-mod-network/luasrc/view/admin_network/iface_overview.htm:28
 #: modules/luci-mod-network/luasrc/view/admin_network/iface_overview.htm:32
@@ -4535,7 +4535,7 @@ msgstr "Подготовка корневой директории"
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:147
 msgid "Route Allowed IPs"
-msgstr "Маршрут разрешенный для IP адресов"
+msgstr "Маршрут разрешенный для IP-адресов"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/routes.lua:46
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/routes.lua:88
