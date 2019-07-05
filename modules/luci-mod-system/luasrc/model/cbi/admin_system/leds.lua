@@ -49,17 +49,17 @@ for t in triggers:gmatch("[%w-]+") do
 	elseif t == "none" then
 		trigger:value(t, translatef("Always off (%s)", t))
 	elseif t == "timer" then
-		trigger:value(t, translatef("Custom flash intervall (%s)", t))
+		trigger:value(t, translatef("Custom flash interval (%s)", t))
 	elseif t == "netdev" then
 		trigger:value(t, translatef("Network device activity (%s)", t))
 	elseif t == "heartbeat" then
-		trigger:value(t, translatef("Heartbeat intervall (%s)", t))
+		trigger:value(t, translatef("Heartbeat interval (%s)", t))
 	elseif t == "nand-disk" then
-		trigger:value(t, translatef("Flashmemory write access (%s)", t))
+		trigger:value(t, translatef("Flash memory activity (%s)", t))
 	elseif t == "mtd" then
-		trigger:value(t, translatef("Flashmemory write access (%s)", t))
+		trigger:value(t, translatef("Flash memory activity (%s)", t))
 	elseif t:match("mmc[0-9]") then
-		trigger:value(t, translatef("Flashmemory write access (%s)", t))
+		trigger:value(t, translatef("Flash memory activity (%s)", t))
 	elseif t:match("switch[0-9]") then
 		trigger:value(t, translatef("Switchport activity (%s)", t))
 	elseif t:match("phy[0-9]rx") then
