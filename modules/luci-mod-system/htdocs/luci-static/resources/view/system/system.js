@@ -44,6 +44,7 @@ return L.view.extend({
 		s.tab('host', _('Host'));
 		s.tab('logging', _('Logging'));
 		s.tab('language', _('Language and Style'));
+		s.tab('advanced', _('Advanced'));
 
 		/*
 		 * System Properties
@@ -144,6 +145,20 @@ return L.view.extend({
 		for (var i = 0; i < k.length; i++)
 			if (k[i].charAt(0) != '.')
 				o.value(uci.get('luci', 'themes', k[i]), k[i]);
+
+		/*
+		 * Advanced
+		 */
+
+		o = s.taboption('advanced', form.Value, '_pollinterval',
+			_('Polling interval'), _('Polling interval for status queries in seconds'))
+		o.uciconfig = 'luci';
+		o.ucisection = 'main';
+		o.ucioption = 'pollinterval';
+		o.value('3');
+		o.value('5');
+		o.value('10');
+		o.datatype = 'range(3, 20)';
 
 		return m.render().then(function(mapEl) {
 			return mapEl;
