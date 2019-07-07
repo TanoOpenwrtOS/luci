@@ -43,9 +43,66 @@ local methods = {
 		end
 	},
 
+	set_localtime = {
+		args = { localtime = 0 },
+		call = function(args)
+			if args.localtime then
+				-- setup localtime
+				local sys = require "luci.sys"
+				local date = os.date("*t", args.localtime)
+				if date then
+					sys.call("date -s '%04d-%02d-%02d %02d:%02d:%02d'" %{
+						date.year, date.month, date.day, date.hour, date.min, date.sec
+					})
+					sys.call("/etc/init.d/sysfixtime restart")
+				end
+			end
+			return { localtime = os.time() }
+		end
+	},
+
 	timezone = {
 		args = { zonename = "UTC" },
 		call = function(args)
+			--[[
+				Change signs for «Etc/GMT» zones.
+
+				The special area of «Etc» is used for some administrative zones, particularly for «Etc/UTC»
+				which represents Coordinated Universal Time. In order to conform with the POSIX style,
+				those zone names beginning with «Etc/GMT» have their sign reversed from what most people
+				expect. In this style, zones west of GMT have a positive sign and those east have
+				a negative sign in their name (e.g «Etc/GMT-14» is 14 hours ahead/east of GMT.)
+			--]]
+			local TZ_replacements = {
+				['Etc/GMT']    = 'GMT',
+				['Etc/GMT+1']  = 'GMT-1',
+				['Etc/GMT+2']  = 'GMT-2',
+				['Etc/GMT+3']  = 'GMT-3',
+				['Etc/GMT+4']  = 'GMT-4',
+				['Etc/GMT+5']  = 'GMT-5',
+				['Etc/GMT+6']  = 'GMT-6',
+				['Etc/GMT+7']  = 'GMT-7',
+				['Etc/GMT+8']  = 'GMT-8',
+				['Etc/GMT+9']  = 'GMT-9',
+				['Etc/GMT+10'] = 'GMT-10',
+				['Etc/GMT+11'] = 'GMT-11',
+				['Etc/GMT+12'] = 'GMT-12',
+				['Etc/GMT-1']  = 'GMT+1',
+				['Etc/GMT-2']  = 'GMT+2',
+				['Etc/GMT-3']  = 'GMT+3',
+				['Etc/GMT-4']  = 'GMT+4',
+				['Etc/GMT-5']  = 'GMT+5',
+				['Etc/GMT-6']  = 'GMT+6',
+				['Etc/GMT-7']  = 'GMT+7',
+				['Etc/GMT-8']  = 'GMT+8',
+				['Etc/GMT-9']  = 'GMT+9',
+				['Etc/GMT-10'] = 'GMT+10',
+				['Etc/GMT-11'] = 'GMT+11',
+				['Etc/GMT-12'] = 'GMT+12',
+				['Etc/GMT-13'] = 'GMT+13',
+				['Etc/GMT-14'] = 'GMT+14',
+			}
+
 			local util  = require "luci.util"
 			local zones = require "luci.sys.zoneinfo"
 
@@ -59,10 +116,15 @@ local methods = {
 			local result = {}
 			local _, zone
 			for _, zone in ipairs(zones.TZ) do
-				result[zone[1]] = {
-					tzstring = zone[2],
-					active = (res and res.value == zone[1]) and true or nil
-				}
+				local zone_exists = fs.access("/usr/share/zoneinfo/" .. zone[1])
+				if (zone_exists) then
+					local zone_name = TZ_replacements[zone[1]] or zone[1]
+					result[zone[1]] = {
+						name = zone_name,
+						tzstring = zone[2],
+						active = (res and res.value == zone[1]) and true or nil
+					}
+				end
 			end
 			return { result = result }
 		end
