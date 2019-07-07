@@ -4,22 +4,6 @@
 'require network';
 'require firewall';
 
-function toArray(x) {
-	if (x == null)
-		return [];
-	else if (Array.isArray(x))
-		return x.map(String);
-	else if (typeof(x) == 'object')
-		return [ x ];
-
-	var s = String(x).trim();
-
-	if (s == '')
-		return [];
-
-	return s.split(/\s+/);
-}
-
 var CBIZoneSelect = form.ListValue.extend({
 	__name__: 'CBI.ZoneSelect',
 
@@ -45,7 +29,7 @@ var CBIZoneSelect = form.ListValue.extend({
 	},
 
 	renderWidget: function(section_id, option_index, cfgvalue) {
-		var values = toArray((cfgvalue != null) ? cfgvalue : this.default),
+		var values = L.toArray((cfgvalue != null) ? cfgvalue : this.default),
 		    choices = {};
 
 		if (this.allowlocal) {
@@ -94,7 +78,7 @@ var CBIZoneSelect = form.ListValue.extend({
 					'class': 'ifacebadge' + (network.getName() == this.network ? ' ifacebadge-active' : '')
 				}, network.getName() + ': ');
 
-				var devices = network.isBridge() ? network.getDevices() : toArray(network.getDevice());
+				var devices = network.isBridge() ? network.getDevices() : L.toArray(network.getDevice());
 
 				for (var k = 0; k < devices.length; k++) {
 					span.appendChild(E('img', {
@@ -168,7 +152,7 @@ var CBIZoneForwards = form.DummyValue.extend({
 				'class': 'ifacebadge' + (network.getName() == this.network ? ' ifacebadge-active' : '')
 			}, network.getName() + ': ');
 
-			var devices = network.isBridge() ? network.getDevices() : toArray(network.getDevice());
+			var devices = network.isBridge() ? network.getDevices() : L.toArray(network.getDevice());
 
 			for (var k = 0; k < devices.length && devices[k]; k++) {
 				span.appendChild(E('img', {
@@ -241,8 +225,27 @@ var CBINetworkSelect = form.ListValue.extend({
 		return true;
 	},
 
+	renderIfaceBadge: function(network) {
+		var span = E('span', { 'class': 'ifacebadge' }, network.getName() + ': '),
+		    devices = network.isBridge() ? network.getDevices() : L.toArray(network.getDevice());
+
+		for (var j = 0; j < devices.length && devices[j]; j++) {
+			span.appendChild(E('img', {
+				'title': devices[j].getI18n(),
+				'src': L.resource('icons/%s%s.png'.format(devices[j].getType(), devices[j].isUp() ? '' : '_disabled'))
+			}));
+		}
+
+		if (!devices.length) {
+			span.appendChild(E('em', { 'class': 'hide-close' }, _('(no interfaces attached)')));
+			span.appendChild(E('em', { 'class': 'hide-open' }, '-'));
+		}
+
+		return span;
+	},
+
 	renderWidget: function(section_id, option_index, cfgvalue) {
-		var values = toArray((cfgvalue != null) ? cfgvalue : this.default),
+		var values = L.toArray((cfgvalue != null) ? cfgvalue : this.default),
 		    choices = {},
 		    checked = {};
 
@@ -264,25 +267,10 @@ var CBINetworkSelect = form.ListValue.extend({
 			if (this.novirtual && network.isVirtual())
 				continue;
 
-			var span = E('span', { 'class': 'ifacebadge' }, network.getName() + ': '),
-			    devices = network.isBridge() ? network.getDevices() : toArray(network.getDevice());
-
-			for (var j = 0; j < devices.length && devices[j]; j++) {
-				span.appendChild(E('img', {
-					'title': devices[j].getI18n(),
-					'src': L.resource('icons/%s%s.png'.format(devices[j].getType(), devices[j].isUp() ? '' : '_disabled'))
-				}));
-			}
-
-			if (!devices.length) {
-				span.appendChild(E('em', { 'class': 'hide-close' }, _('(no interfaces attached)')));
-				span.appendChild(E('em', { 'class': 'hide-open' }, '-'));
-			}
-
 			if (checked[name])
 				values.push(name);
 
-			choices[name] = span;
+			choices[name] = this.renderIfaceBadge(network);
 		}
 
 		var widget = new ui.Dropdown(this.multiple ? values : values[0], choices, {
@@ -304,6 +292,30 @@ var CBINetworkSelect = form.ListValue.extend({
 		});
 
 		return widget.render();
+	},
+
+	textvalue: function(section_id) {
+		var cfgvalue = this.cfgvalue(section_id),
+		    values = L.toArray((cfgvalue != null) ? cfgvalue : this.default),
+		    rv = E([]);
+
+		for (var i = 0; i < (this.networks || []).length; i++) {
+			var network = this.networks[i],
+			    name = network.getName();
+
+			if (values.indexOf(name) == -1)
+				continue;
+
+			if (rv.length)
+				L.dom.append(rv, ' ');
+
+			L.dom.append(rv, this.renderIfaceBadge(network));
+		}
+
+		if (!rv.firstChild)
+			rv.appendChild(E('em', _('unspecified')));
+
+		return rv;
 	},
 });
 
