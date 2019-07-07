@@ -35,7 +35,7 @@ msgstr "Проверка подключения к интернету, с пом
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:18
 msgid "Configuration"
-msgstr "Настройка config файла"
+msgstr "Конфигурация"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:44
 msgid "Curl is currently not installed. Please install the package in the"

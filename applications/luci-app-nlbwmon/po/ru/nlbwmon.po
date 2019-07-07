@@ -195,7 +195,7 @@ msgstr "Сжатие базы данных"
 
 #: applications/luci-app-nlbwmon/luasrc/controller/nlbw.lua:9
 msgid "Configuration"
-msgstr "Настройка config файла"
+msgstr "Конфигурация"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:302
 msgid "Conn."

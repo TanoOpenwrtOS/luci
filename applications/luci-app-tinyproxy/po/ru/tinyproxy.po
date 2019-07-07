@@ -87,7 +87,7 @@ msgstr ""
 
 #: applications/luci-app-tinyproxy/luasrc/controller/tinyproxy.lua:14
 msgid "Configuration"
-msgstr "Настройка config файла"
+msgstr "Конфигурация"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:164
 msgid "Connection timeout"

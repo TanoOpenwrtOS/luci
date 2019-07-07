@@ -24,7 +24,7 @@ msgstr "Сбор данных..."
 
 #: applications/luci-app-wireguard/luasrc/view/wireguard.htm:217
 msgid "Configuration"
-msgstr "Настройка config файла"
+msgstr "Конфигурация"
 
 #: applications/luci-app-wireguard/luasrc/view/wireguard.htm:178
 msgid "Data Received"

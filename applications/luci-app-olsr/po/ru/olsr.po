@@ -84,7 +84,7 @@ msgstr "Допускается только IPv6 адрес или 'по умо�
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/overview.htm:198
 msgid "Configuration"
-msgstr "Настройка config файла"
+msgstr "Конфигурация"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/overview.htm:56
 msgid ""

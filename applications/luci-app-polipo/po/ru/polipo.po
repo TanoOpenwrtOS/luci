@@ -37,7 +37,7 @@ msgstr ""
 
 #: applications/luci-app-polipo/luasrc/controller/polipo.lua:13
 msgid "Configuration"
-msgstr "Настройка config файла"
+msgstr "Конфигурация"
 
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:11
 msgid "DNS and Query Settings"
