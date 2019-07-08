@@ -37,32 +37,26 @@ local methods = {
 		end
 	},
 
-	localtime = {
+	getLocaltime = {
 		call = function(args)
 			return { localtime = os.time() }
 		end
 	},
 
-	set_localtime = {
+	setLocaltime = {
 		args = { localtime = 0 },
 		call = function(args)
-			if args.localtime then
-				-- setup localtime
-				local sys = require "luci.sys"
-				local date = os.date("*t", args.localtime)
-				if date then
-					sys.call("date -s '%04d-%02d-%02d %02d:%02d:%02d'" %{
-						date.year, date.month, date.day, date.hour, date.min, date.sec
-					})
-					sys.call("/etc/init.d/sysfixtime restart")
-				end
+			local sys = require "luci.sys"
+			local date = os.date("*t", args.localtime)
+			if date then
+				sys.call("date -s '%04d-%02d-%02d %02d:%02d:%02d' >/dev/null" %{ date.year, date.month, date.day, date.hour, date.min, date.sec })
+				sys.call("/etc/init.d/sysfixtime restart >/dev/null")
 			end
-			return { localtime = os.time() }
+			return { localtime = args.localtime }
 		end
 	},
 
 	timezone = {
-		args = { zonename = "UTC" },
 		call = function(args)
 			--[[
 				Change signs for «Etc/GMT» zones.

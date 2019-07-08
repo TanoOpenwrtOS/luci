@@ -3,7 +3,7 @@
 'require rpc';
 'require form';
 
-var callInitList, callInitAction, callSetLocaltime, callLocaltime, callTimezone, CBILocalTime;
+var callInitList, callInitAction, callSetLocaltime, callGetLocaltime, callTimezone, CBILocalTime;
 
 callInitList = rpc.declare({
 	object: 'luci',
@@ -24,16 +24,16 @@ callInitAction = rpc.declare({
 	expect: { result: false }
 });
 
-callLocaltime = rpc.declare({
+callGetLocaltime = rpc.declare({
 	object: 'luci',
-	method: 'localtime',
+	method: 'getLocaltime',
 	expect: { localtime: 0 }
 });
 
 callSetLocaltime = rpc.declare({
 	object: 'luci',
+	method: 'setLocaltime',
 	params: [ 'localtime' ],
-	method: 'localtime',
 	expect: { localtime: 0 }
 });
 
@@ -55,7 +55,7 @@ CBILocalTime = form.DummyValue.extend({
 					this.blur();
 					this.classList.add('spinning');
 					this.disabled = true;
-					callLocaltime(Math.floor(Date.now() / 1000)).then(L.bind(function() {
+					callSetLocaltime(Math.floor(Date.now() / 1000)).then(L.bind(function() {
 						this.classList.remove('spinning');
 						this.disabled = false;
 					}, this));
@@ -83,7 +83,7 @@ return L.view.extend({
 		return Promise.all([
 			callInitList('sysntpd'),
 			callTimezone(),
-			callLocaltime(),
+			callGetLocaltime(),
 			uci.load('luci'),
 			uci.load('system')
 		]);
@@ -184,7 +184,7 @@ return L.view.extend({
 
 		return m.render().then(function(mapEl) {
 			L.Poll.add(function() {
-				return callLocaltime().then(function(t) {
+				return callGetLocaltime().then(function(t) {
 					mapEl.querySelector('#localtime').innerHTML = new Date(t * 1000).toLocaleString();
 				});
 			});
