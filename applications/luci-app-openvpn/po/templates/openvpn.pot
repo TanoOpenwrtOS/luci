@@ -136,10 +136,6 @@ msgstr ""
 msgid "Connection retry interval"
 msgstr ""
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:564
-msgid "Cryptography"
-msgstr ""
-
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:47
 msgid "Daemonize after initialization"
 msgstr ""
@@ -371,10 +367,6 @@ msgstr ""
 msgid "Maximum number of queued TCP output packets"
 msgstr ""
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:167
-msgid "Networking"
-msgstr ""
-
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:446
 msgid "Number of allocated broadcast buffers"
 msgstr ""
@@ -581,10 +573,6 @@ msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:495
 msgid "Send notification to peer on disconnect"
-msgstr ""
-
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:14
-msgid "Service"
 msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:35
@@ -797,10 +785,6 @@ msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:471
 msgid "Use username as common name"
-msgstr ""
-
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:367
-msgid "VPN"
 msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:63
