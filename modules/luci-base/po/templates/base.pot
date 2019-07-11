@@ -873,7 +873,7 @@ msgstr ""
 msgid "Broadcom BCM%04x 802.11 Wireless Controller"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:18
+#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:19
 msgid "Buffered"
 msgstr ""
 
@@ -881,8 +881,12 @@ msgstr ""
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:13
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:14
 msgid "CPU usage (%)"
+msgstr ""
+
+#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:21
+msgid "Cached"
 msgstr ""
 
 #: protocols/luci-proto-qmi/luasrc/model/network/proto_qmi.lua:53
@@ -1061,7 +1065,7 @@ msgstr ""
 msgid "Collecting data..."
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:12
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:13
 msgid "Command"
 msgstr ""
 
@@ -1131,6 +1135,7 @@ msgstr ""
 msgid "Connections"
 msgstr ""
 
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:21
 #: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:90
 msgid "Controls"
 msgstr ""
@@ -2045,8 +2050,8 @@ msgstr ""
 msgid "Frame Bursting"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:17
-#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:28
+#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:18
+#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:32
 msgid "Free"
 msgstr ""
 
@@ -2167,7 +2172,7 @@ msgstr ""
 msgid "HT mode (802.11n)"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:16
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:17
 msgid "Hang Up"
 msgstr ""
 
@@ -2715,7 +2720,7 @@ msgstr ""
 msgid "Key #%d"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:28
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:19
 msgid "Kill"
 msgstr ""
 
@@ -3150,11 +3155,11 @@ msgstr ""
 msgid "Medium"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:13
+#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:14
 msgid "Memory"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:14
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:15
 msgid "Memory usage (%)"
 msgstr ""
 
@@ -3732,7 +3737,7 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:11
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:12
 msgid "Owner"
 msgstr ""
 
@@ -3762,7 +3767,7 @@ msgstr ""
 msgid "PAP/CHAP username"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:10
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:11
 msgid "PID"
 msgstr ""
 
@@ -4040,7 +4045,7 @@ msgid "Proceed"
 msgstr ""
 
 #: modules/luci-mod-status/luasrc/controller/admin/status.lua:30
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:5
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:6
 msgid "Processes"
 msgstr ""
 
@@ -4835,7 +4840,7 @@ msgstr ""
 #: modules/luci-base/luasrc/controller/admin/index.lua:40
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:197
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:145
-#: modules/luci-mod-status/luasrc/view/admin_status/index.htm:129
+#: modules/luci-mod-status/luasrc/view/admin_status/index.htm:139
 msgid "Status"
 msgstr ""
 
@@ -4864,7 +4869,7 @@ msgstr ""
 msgid "Suppress logging of the routine operation of these protocols"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:24
+#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:28
 msgid "Swap"
 msgstr ""
 
@@ -4985,7 +4990,7 @@ msgstr ""
 msgid "Target network"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:22
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:18
 msgid "Terminate"
 msgstr ""
 
@@ -5239,7 +5244,7 @@ msgid ""
 "This is usually the address of the nearest PoP operated by the tunnel broker"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:5
+#: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:6
 msgid ""
 "This list gives an overview over currently running system processes and "
 "their status."
@@ -5293,8 +5298,8 @@ msgstr ""
 msgid "Tone"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:16
-#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:27
+#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:17
+#: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:31
 msgid "Total Available"
 msgstr ""
 
