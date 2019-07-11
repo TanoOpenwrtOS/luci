@@ -954,7 +954,7 @@ msgstr "Загрузка ЦП (%)"
 
 #: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:21
 msgid "Cached"
-msgstr "Кешированно"
+msgstr "Кешировано"
 
 #: protocols/luci-proto-qmi/luasrc/model/network/proto_qmi.lua:53
 msgid "Call failed"
