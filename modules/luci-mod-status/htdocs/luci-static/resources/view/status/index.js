@@ -191,7 +191,7 @@ XHR.poll(-1, L.location(), { status: 1 },
 			);
 
 		progressbar('#memtotal',
-			info.memory.free + info.memory.buffered,
+			info.memory.available,
 			info.memory.total,
 			true);
 
@@ -202,6 +202,11 @@ XHR.poll(-1, L.location(), { status: 1 },
 
 		progressbar('#membuff',
 			info.memory.buffered,
+			info.memory.total,
+			true);
+
+		progressbar('#memcached',
+			info.memory.cached,
 			info.memory.total,
 			true);
 

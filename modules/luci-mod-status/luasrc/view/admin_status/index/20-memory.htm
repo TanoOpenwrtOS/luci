@@ -7,6 +7,7 @@
 <%
 	local sysinfo = luci.util.ubus("system", "info") or { }
 	local has_swap = sysinfo.swap and sysinfo.swap.total > 0 or false
+	local has_cached = sysinfo.memory and sysinfo.memory.cached
 %>
 
 <div class="cbi-section">
@@ -16,7 +17,10 @@
 		<div class="tr"><div class="td left" width="33%"><%:Total Available%></div><div class="td left"><div id="memtotal" class="cbi-progressbar" title="-"><div></div></div></div></div>
 		<div class="tr"><div class="td left" width="33%"><%:Free%></div><div class="td left"><div id="memfree" class="cbi-progressbar" title="-"><div></div></div></div></div>
 		<div class="tr"><div class="td left" width="33%"><%:Buffered%></div><div class="td left"><div id="membuff" class="cbi-progressbar" title="-"><div></div></div></div></div>
-	</div></div>
+	<% if has_cached then %>
+		<div class="tr"><div class="td left" width="33%"><%:Cached%></div><div class="td left"><div id="memcached" class="cbi-progressbar" title="-"><div></div></div></div></div>
+	<% end %>
+		</div></div>
 </div>
 
 <% if has_swap then %>
