@@ -272,7 +272,7 @@ msgid ""
 "was empty before editing."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:775
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:817
 msgid "A new login is required since the authentication session expired."
 msgstr ""
 
@@ -335,7 +335,7 @@ msgstr ""
 msgid "ATM device number"
 msgstr "ATM device number"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:119
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:136
 msgid "ATU-C System Vendor ID"
 msgstr ""
 
@@ -428,7 +428,25 @@ msgid "Additional servers file"
 msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:55
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:81
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:56
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:57
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:58
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:59
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:60
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:61
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:62
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:63
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:64
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:89
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:90
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:91
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:92
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:93
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:94
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:95
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:96
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:97
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:98
 msgid "Address"
 msgstr "Address"
 
@@ -457,7 +475,7 @@ msgstr ""
 msgid "Advanced Settings"
 msgstr "Advanced Settings"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:110
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:127
 msgid "Aggregate Transmit Power(ACTATP)"
 msgstr ""
 
@@ -548,7 +566,7 @@ msgid ""
 msgstr ""
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/network.lua:95
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:102
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:119
 msgid "Annex"
 msgstr ""
 
@@ -652,7 +670,7 @@ msgid "Any zone"
 msgstr "Any zone"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1981
-msgid "Apply request failed with status <code>%h</code>%>"
+msgid "Apply request failed with status <code>%h</code>"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1867
@@ -688,7 +706,7 @@ msgstr ""
 msgid "Associated Stations"
 msgstr "Associated Stations"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:161
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:178
 msgid "Associations"
 msgstr ""
 
@@ -795,7 +813,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:43
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:75
 #: modules/luci-mod-network/luasrc/view/admin_network/wifi_join.htm:32
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:159
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:176
 msgid "BSSID"
 msgstr "BSSID"
 
@@ -867,7 +885,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:49
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:88
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:170
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:187
 msgid "Bitrate"
 msgstr "Bitrate"
 
@@ -976,7 +994,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:87
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:174
 #: modules/luci-mod-network/luasrc/view/admin_network/wifi_join.htm:30
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:169
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:186
 msgid "Channel"
 msgstr "Channel"
 
@@ -1152,8 +1170,8 @@ msgid "Connect"
 msgstr "Connect"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:34
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:64
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:88
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:72
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:105
 msgid "Connected"
 msgstr "Connected"
 
@@ -1289,16 +1307,16 @@ msgstr ""
 msgid "DHCPv6-Service"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:58
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:59
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:60
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:61
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:62
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:83
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:84
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:85
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:86
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:87
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:66
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:67
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:68
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:69
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:70
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:100
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:101
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:102
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:103
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:104
 msgid "DNS"
 msgstr "DNS"
 
@@ -1331,7 +1349,7 @@ msgstr ""
 msgid "DSL"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:97
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:114
 msgid "DSL Status"
 msgstr ""
 
@@ -1347,7 +1365,7 @@ msgstr ""
 msgid "DUID"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:104
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:121
 msgid "Data Rate"
 msgstr ""
 
@@ -1442,7 +1460,7 @@ msgstr "Destination"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/iface_status.js:13
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:33
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:52
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:77
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:85
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:84
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:154
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:253
@@ -1826,7 +1844,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:76
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:603
 #: modules/luci-mod-network/luasrc/view/admin_network/wifi_join.htm:33
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:160
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:177
 msgid "Encryption"
 msgstr "Encryption"
 
@@ -1859,7 +1877,7 @@ msgstr ""
 msgid "Error"
 msgstr "Error"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:112
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:129
 msgid "Errored seconds (ES)"
 msgstr ""
 
@@ -1885,7 +1903,7 @@ msgstr ""
 msgid "Expecting: %s"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:63
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:71
 msgid "Expires"
 msgstr ""
 
@@ -2074,7 +2092,7 @@ msgstr ""
 msgid "Forward DHCP traffic"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:111
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:128
 msgid "Forward Error Correction Seconds (FECS)"
 msgstr ""
 
@@ -2120,7 +2138,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:45
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:87
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:169
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:186
 msgid "GHz"
 msgstr ""
 
@@ -2129,8 +2147,8 @@ msgstr ""
 msgid "GPRS only"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:57
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:82
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:65
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:99
 msgid "Gateway"
 msgstr ""
 
@@ -2225,7 +2243,7 @@ msgstr ""
 msgid "Hang Up"
 msgstr "Hang Up"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:116
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:133
 msgid "Header Error Code Errors (HEC)"
 msgstr ""
 
@@ -2438,7 +2456,7 @@ msgstr ""
 msgid "IPv6 ULA-Prefix"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:73
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:81
 msgid "IPv6 Upstream"
 msgstr ""
 
@@ -2824,7 +2842,7 @@ msgstr "Language"
 msgid "Language and Style"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:106
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:123
 msgid "Latency"
 msgstr ""
 
@@ -2876,19 +2894,19 @@ msgstr ""
 msgid "Limit listening to these interfaces, and loopback."
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:107
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:124
 msgid "Line Attenuation (LATN)"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:100
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:117
 msgid "Line Mode"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:99
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:116
 msgid "Line State"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:101
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:118
 msgid "Line Uptime"
 msgstr ""
 
@@ -2972,7 +2990,7 @@ msgstr ""
 msgid "Loading data..."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1162
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1204
 #: modules/luci-base/luasrc/view/view.htm:4
 msgid "Loading view…"
 msgstr ""
@@ -3072,7 +3090,7 @@ msgstr "Logout"
 msgid "Logs"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:114
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:131
 msgid "Loss of Signal Seconds (LOSS)"
 msgstr ""
 
@@ -3094,7 +3112,7 @@ msgstr ""
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:109
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:33
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:53
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:78
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:86
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:133
 msgid "MAC-Address"
 msgstr ""
@@ -3163,7 +3181,7 @@ msgstr ""
 msgid "Master"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:105
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:122
 msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
@@ -3202,7 +3220,7 @@ msgstr ""
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:21
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:49
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:88
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:170
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:187
 #: modules/luci-mod-status/luasrc/view/admin_status/bandwidth.htm:79
 #: modules/luci-mod-status/luasrc/view/admin_status/wireless.htm:284
 msgid "Mbit/s"
@@ -3260,7 +3278,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:74
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:366
 #: modules/luci-mod-network/luasrc/view/admin_network/wifi_join.htm:31
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:158
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:175
 msgid "Mode"
 msgstr "Mode"
 
@@ -3410,10 +3428,6 @@ msgstr "Name of the new network"
 msgid "Navigation"
 msgstr "Navigation"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:56
-msgid "Netmask"
-msgstr ""
-
 #: modules/luci-base/luasrc/controller/admin/index.lua:62
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:108
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:402
@@ -3467,7 +3481,7 @@ msgid "No files found"
 msgstr ""
 
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:100
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:174
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:191
 #: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:180
 msgid "No information available"
 msgstr ""
@@ -3519,7 +3533,7 @@ msgstr ""
 msgid "Noise"
 msgstr "Noise"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:109
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:126
 msgid "Noise Margin (SNR)"
 msgstr ""
 
@@ -3527,7 +3541,7 @@ msgstr ""
 msgid "Noise:"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:117
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:134
 msgid "Non Pre-emtive CRC errors (CRC_P)"
 msgstr ""
 
@@ -3554,7 +3568,7 @@ msgid "Not associated"
 msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:54
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:79
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:87
 msgid "Not connected"
 msgstr ""
 
@@ -4053,11 +4067,11 @@ msgstr ""
 msgid "Potential negation of: %s"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:120
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:137
 msgid "Power Management Mode"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:118
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:135
 msgid "Pre-emtive CRC errors (CRCP_P)"
 msgstr ""
 
@@ -4069,7 +4083,7 @@ msgstr ""
 msgid "Prefer UMTS"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:80
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:88
 msgid "Prefix Delegated"
 msgstr ""
 
@@ -4114,7 +4128,7 @@ msgstr "Proceed"
 msgid "Processes"
 msgstr "Processes"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:103
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:120
 msgid "Profile"
 msgstr ""
 
@@ -4125,7 +4139,7 @@ msgstr "Prot."
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:84
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:216
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:54
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:79
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:87
 #: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:390
 msgid "Protocol"
 msgstr "Protocol"
@@ -4171,7 +4185,7 @@ msgid "QMI Cellular"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_join.js:24
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:156
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:173
 msgid "Quality"
 msgstr ""
 
@@ -4421,7 +4435,7 @@ msgid ""
 "come from unsigned domains"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1226
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1268
 #: modules/luci-base/luasrc/view/cbi/delegator.htm:17
 #: modules/luci-base/luasrc/view/cbi/footer.htm:30
 #: modules/luci-base/luasrc/view/cbi/simpleform.htm:66
@@ -4544,7 +4558,7 @@ msgstr ""
 msgid "Run filesystem check"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:636
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:651
 msgid "Runtime error"
 msgstr ""
 
@@ -4581,7 +4595,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:42
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:73
 #: modules/luci-mod-network/luasrc/view/admin_network/wifi_join.htm:29
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:157
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:174
 msgid "SSID"
 msgstr "SSID"
 
@@ -4590,7 +4604,7 @@ msgid "SWAP"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:1127
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1220
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1262
 #: modules/luci-base/luasrc/view/cbi/error.htm:17
 #: modules/luci-base/luasrc/view/cbi/footer.htm:26
 #: modules/luci-base/luasrc/view/cbi/header.htm:17
@@ -4598,7 +4612,7 @@ msgstr ""
 msgid "Save"
 msgstr "Save"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1214
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1256
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1768
 #: modules/luci-base/luasrc/view/cbi/footer.htm:22
 msgid "Save & Apply"
@@ -4680,7 +4694,7 @@ msgstr ""
 msgid "Services"
 msgstr "Services"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:773
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:815
 msgid "Session expired"
 msgstr ""
 
@@ -4706,7 +4720,7 @@ msgstr ""
 msgid "Setup DHCP Server"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:113
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:130
 msgid "Severely Errored Seconds (SES)"
 msgstr ""
 
@@ -4737,11 +4751,11 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:47
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:69
 #: modules/luci-mod-network/luasrc/view/admin_network/wifi_join.htm:28
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:156
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:173
 msgid "Signal"
 msgstr "Signal"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:108
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:125
 msgid "Signal Attenuation (SATN)"
 msgstr ""
 
@@ -4909,7 +4923,7 @@ msgstr ""
 #: modules/luci-base/luasrc/controller/admin/index.lua:40
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:197
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:145
-#: modules/luci-mod-status/luasrc/view/admin_status/index.htm:139
+#: modules/luci-mod-status/luasrc/view/admin_status/index.htm:138
 msgid "Status"
 msgstr "Status"
 
@@ -5368,7 +5382,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "Timezone"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:783
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:825
 msgid "To login…"
 msgstr ""
 
@@ -5453,7 +5467,7 @@ msgid "Tx-Power"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:32
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:168
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:185
 #: protocols/luci-proto-ipv6/luasrc/model/cbi/admin_network/proto_map.lua:11
 msgid "Type"
 msgstr "Type"
@@ -5517,7 +5531,7 @@ msgstr ""
 msgid "Unable to resolve peer host name"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:115
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:132
 msgid "Unavailable Seconds (UAS)"
 msgstr ""
 
@@ -5904,13 +5918,13 @@ msgstr "Wireless Security"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:54
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:77
 #: modules/luci-mod-network/luasrc/view/admin_network/wifi_overview.htm:30
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:162
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:179
 msgid "Wireless is disabled"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:54
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:77
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:162
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:179
 msgid "Wireless is not associated"
 msgstr ""
 
