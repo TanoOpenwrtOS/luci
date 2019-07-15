@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2019-07-14 21:54+0300\n"
+"PO-Revision-Date: 2019-07-15 12:57+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
 "Language-Team: http://cyber-place.ru\n"
 "Language: ru\n"
@@ -1671,7 +1671,7 @@ msgstr "Не перенаправлять обратные DNS-запросы д
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:173
 msgid "Do you really want to delete the following SSH key?"
-msgstr "Вы действительно хотите удалить следующий SSH-ключ?"
+msgstr "Вы действительно хотите удалить следующий SSH ключ?"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:73
 msgid "Domain required"
@@ -4754,7 +4754,7 @@ msgstr "SSH логин"
 #: modules/luci-mod-system/luasrc/controller/admin/system.lua:19
 #: modules/luci-mod-system/luasrc/view/admin_system/sshkeys.htm:27
 msgid "SSH-Keys"
-msgstr "SSH-ключи"
+msgstr "SSH ключи"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_status.js:42
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:73
