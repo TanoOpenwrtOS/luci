@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2019-07-15 12:57+0300\n"
+"PO-Revision-Date: 2019-07-15 15:36+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
 "Language-Team: http://cyber-place.ru\n"
 "Language: ru\n"
@@ -1927,11 +1927,11 @@ msgstr "Шифрование"
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:155
 msgid "Endpoint Host"
-msgstr "Конечная точка Хоста"
+msgstr "Конечный узел"
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:165
 msgid "Endpoint Port"
-msgstr "Конечная точка Порта"
+msgstr "Порт конечного узла"
 
 #: modules/luci-base/luasrc/view/cbi/dropdown.htm:16
 msgid "Enter custom value"
@@ -3837,7 +3837,7 @@ msgid ""
 "symmetric-key cryptography for post-quantum resistance."
 msgstr ""
 "Необязательно. Base64-шифрованный общий ключ. Добавляет дополнительный слой "
-"криптографии с симметричным ключом для пост-квантового сопротивления."
+"криптографии с симметричным ключом для постквантовой устойчивости."
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:148
 msgid "Optional. Create routes for Allowed IPs for this peer."
@@ -3853,11 +3853,11 @@ msgid ""
 "Optional. Host of peer. Names are resolved prior to bringing up the "
 "interface."
 msgstr ""
-"Необязательно. Запрашивающий хост. Имена разрешаются до появления интерфейса."
+"Необязательно. Имя хоста пира. Имена разрешаются до появления интерфейса."
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:67
 msgid "Optional. Maximum Transmission Unit of tunnel interface."
-msgstr "Необязательно. Максимальная единица передачи туннельного интерфейса."
+msgstr "Необязательно. MTU туннельного интерфейса."
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:166
 msgid "Optional. Port of peer."
@@ -4554,7 +4554,7 @@ msgstr "Запрос IPv6 префикс длины"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:1141
 msgid "Required"
-msgstr "Требовать"
+msgstr "Обязательно"
 
 #: modules/luci-base/luasrc/model/cbi/admin_network/proto_dhcp.lua:20
 msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
@@ -4563,11 +4563,11 @@ msgstr ""
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:19
 msgid "Required. Base64-encoded private key for this interface."
-msgstr "Требовать Приватный ключ в кодировке Base64 для этого интерфейса."
+msgstr "Обязательно. Приватный ключ в кодировке Base64 для этого интерфейса."
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:113
 msgid "Required. Base64-encoded public key of peer."
-msgstr "Требовать Публичный ключ узла в кодировке Base64."
+msgstr "Обязательно. Публичный ключ узла в кодировке Base64."
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:136
 msgid ""
@@ -4575,9 +4575,9 @@ msgid ""
 "the tunnel. Usually the peer's tunnel IP addresses and the networks the peer "
 "routes through the tunnel."
 msgstr ""
-"Требовать IP-адреса и префиксы, которые разрешено использовать этому "
-"одноранговому узлу внутри туннеля. Обычно туннельные IP-адреса однорангового "
-"узла и сети одноранговых маршрутов через туннель."
+"Обязательно. IP-адреса и префиксы, которые разрешено использовать этому "
+"пиру внутри туннеля. Обычно IP-адреса и сети пира маршрутизируются "
+"через туннель."
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:1134
 msgid ""
@@ -4678,11 +4678,7 @@ msgstr "Подготовка корневой директории"
 
 #: protocols/luci-proto-wireguard/luasrc/model/cbi/admin_network/proto_wireguard.lua:147
 msgid "Route Allowed IPs"
-msgstr "Маршрут разрешенный для IP-адресов"
-
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:72
-msgid "Route table"
-msgstr "Таблица маршрутизации"
+msgstr "Маршрутизировать разрешенные IP-адреса"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:72
 msgid "Route table"
