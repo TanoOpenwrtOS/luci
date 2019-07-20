@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 17:57+0200\n"
-"PO-Revision-Date: 2018-12-13 11:43+0100\n"
+"PO-Revision-Date: 2019-07-19 18:17+0200\n"
 "Last-Translator: Jo-Philipp Wich <jo@mein.io>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/network.lua:133
 msgid "%.1f dB"
@@ -124,6 +124,7 @@ msgstr "-- Bitte auswählen --"
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:382
 msgid "0 = not using RSSI threshold, 1 = do not change driver default"
 msgstr ""
+"0 = keinen Signal-Schwellwert benutzen, 1 = Treiber-Default nicht ändern"
 
 #: modules/luci-mod-status/luasrc/view/admin_status/load.htm:252
 msgid "1 Minute Load:"
@@ -692,7 +693,7 @@ msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1867
 msgid "Apply unchecked"
-msgstr ""
+msgstr "Ungeprüft übernehmen"
 
 #: modules/luci-mod-status/luasrc/view/admin_status/index/10-system.htm:19
 msgid "Architecture"
@@ -1699,7 +1700,7 @@ msgstr "Downstream SNR-Offset"
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:914
 msgid "Drag to reorder"
-msgstr ""
+msgstr "Ziehen zum Umsortieren"
 
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:9
 msgid "Dropbear Instance"
@@ -1956,7 +1957,7 @@ msgstr "Hosts vervollständigen"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:59
 msgid "Expecting: %s"
-msgstr ""
+msgstr "Erwarte: %s"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:71
 msgid "Expires"
@@ -3092,7 +3093,7 @@ msgstr ""
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:1204
 #: modules/luci-base/luasrc/view/view.htm:4
 msgid "Loading view…"
-msgstr ""
+msgstr "Lade Seite…"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:10
 #: modules/luci-base/luasrc/model/network.lua:30
@@ -3338,7 +3339,7 @@ msgstr "Mbit/s"
 
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:18
 msgid "Medium"
-msgstr ""
+msgstr "Mittel"
 
 #: modules/luci-mod-status/luasrc/view/admin_status/index/20-memory.htm:14
 msgid "Memory"
@@ -3426,11 +3427,11 @@ msgstr "Monitor"
 
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:14
 msgid "More Characters"
-msgstr ""
+msgstr "Mehr Zeichen"
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:802
 msgid "More…"
-msgstr ""
+msgstr "Mehr…"
 
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:45
 msgid "Mount Entry"
@@ -3612,6 +3613,10 @@ msgstr "Keine Netzwerke auf diesem Gerät konfiguriert"
 msgid "No network name specified"
 msgstr "Netzwerkname nicht angegeben"
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_join.js:147
+msgid "No networks in range"
+msgstr "Keine Netzwerke in Reichweite"
+
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:173
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:211
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:238
@@ -3627,7 +3632,7 @@ msgstr "Bisher keine SSH-Schlüssel hinterlegt."
 msgid "No rules in this chain."
 msgstr "Keine Regeln in dieser Kette"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_join.js:146
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_join.js:150
 msgid "No scan results available yet..."
 msgstr "Noch keine Scan-Ergebnisse verfügbar..."
 
@@ -3684,7 +3689,7 @@ msgstr "Nicht verbunden"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:105
 msgid "Not started on boot"
-msgstr ""
+msgstr "Beim Hochfahren nicht starten"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/iface_add.lua:26
 msgid "Note: interface name length"
@@ -3746,7 +3751,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:95
 msgid "On-Link route"
-msgstr ""
+msgstr "Link-lokale Route"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:78
 msgid "On-State Delay"
@@ -3758,7 +3763,7 @@ msgstr "Es muss entweder ein Hostname oder eine MAC-Adresse angegeben werden!"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:456
 msgid "One of the following: %s"
-msgstr ""
+msgstr "Eine der folgenden Möglichkeiten: %s"
 
 #: modules/luci-base/luasrc/view/cbi/nullsection.htm:17
 #: modules/luci-base/luasrc/view/cbi/ucisection.htm:22
@@ -4066,7 +4071,7 @@ msgstr "Password des inneren, privaten Schlüssels"
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:18
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:20
 msgid "Password strength"
-msgstr ""
+msgstr "Passwortstärke"
 
 #: protocols/luci-proto-openconnect/luasrc/model/cbi/admin_network/proto_openconnect.lua:44
 msgid "Password2"
@@ -4193,7 +4198,7 @@ msgstr "Port-Status:"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:482
 msgid "Potential negation of: %s"
-msgstr ""
+msgstr "Mögliche Negation von: %s"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:137
 msgid "Power Management Mode"
@@ -4347,7 +4352,7 @@ msgstr "RFC3947 \"NAT-T\"-Modus"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:381
 msgid "RSSI threshold for joining"
-msgstr ""
+msgstr "RSSI-Schwellwert für Assoziationen"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:256
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:597
@@ -4677,7 +4682,7 @@ msgstr "Erlaubte IP-Addressen routen"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:72
 msgid "Route table"
-msgstr ""
+msgstr "Routen-Tabelle"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:59
 msgid "Route type"
@@ -4715,7 +4720,7 @@ msgstr "Dateisystemprüfung durchführen"
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:651
 msgid "Runtime error"
-msgstr ""
+msgstr "Laufzeitfehler"
 
 #: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:29
 msgid "SHA256"
@@ -4991,7 +4996,7 @@ msgstr "Quelle"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:83
 msgid "Source Address"
-msgstr ""
+msgstr "Quelladresse"
 
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:103
 msgid "Specifies the directory the device is attached to"
@@ -5117,7 +5122,7 @@ msgstr "Strikte Reihenfolge"
 
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:16
 msgid "Strong"
-msgstr ""
+msgstr "Stark"
 
 #: modules/luci-base/luasrc/view/cbi/simpleform.htm:61
 msgid "Submit"
@@ -5179,7 +5184,7 @@ msgstr "Auf CIDR-Listen-Notation wechseln"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:76
 msgid "Sync with NTP-Server"
-msgstr ""
+msgstr "Mit NTP-Server synchronisieren"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:63
 msgid "Sync with browser"
@@ -5474,7 +5479,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:403
 msgid "There are no active leases"
-msgstr ""
+msgstr "Es gibt keine aktiven Leases"
 
 #: modules/luci-base/luasrc/view/lease_status.htm:29
 #: modules/luci-base/luasrc/view/lease_status.htm:61
@@ -5483,7 +5488,7 @@ msgstr "Es gibt z.Z. keine aktiven Leases."
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1973
 msgid "There are no changes to apply"
-msgstr ""
+msgstr "Es gibt keine anzuwendenden Änderungen"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:204
 msgid ""
@@ -5514,6 +5519,9 @@ msgid ""
 "'server=1.2.3.4' for domain-specific or full upstream <abbr title=\"Domain "
 "Name System\">DNS</abbr> servers."
 msgstr ""
+"Diese Datei muss Zeilen in der Form <code>server=/domain/1.2.3.4</code> oder "
+"<code>server=1.2.3.4</code> für domainspezifische oder volle Upstream-DNS-"
+"Server beinhalten."
 
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/backupfiles.lua:16
 msgid ""
@@ -6124,7 +6132,7 @@ msgstr ""
 
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:20
 msgid "Weak"
-msgstr ""
+msgstr "Schwach"
 
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:946
 msgid ""
@@ -6266,7 +6274,7 @@ msgstr "auto"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:84
 msgid "automatic"
-msgstr ""
+msgstr "automatisch"
 
 #: modules/luci-mod-network/luasrc/view/admin_network/switch_status.htm:45
 msgid "baseT"
@@ -6357,7 +6365,7 @@ msgstr "Halb-Duplex"
 msgid "hexadecimal encoded value"
 msgstr "hexadezimal kodierten Wert"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_join.js:137
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wifi_join.js:138
 msgid "hidden"
 msgstr "versteckt"
 
