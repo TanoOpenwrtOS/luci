@@ -301,19 +301,6 @@ function _iface_virtual(x)
 	return false
 end
 
-function get_blacklist()
-	local blacklist = { }
-	local blacklist_uci = uci:get("luci", "net_blacklist", "blacklist") or ""
-
-	local iface
-
-	for iface in utl.imatch(blacklist_uci) do
-		blacklist[#blacklist + 1] = iface
-	end
-
-	return blacklist
-end
-
 function _iface_ignore(x)
 	local _, p
 	for _, p in ipairs(IFACE_PATTERNS_IGNORE) do
@@ -321,7 +308,8 @@ function _iface_ignore(x)
 			return true
 		end
 	end
-	local blacklist = get_blacklist()
+	local sys = require("luci.sys")
+	local blacklist = sys.net.blacklist()
 	if utl.contains(blacklist, x) then
 		return true
 	end
@@ -341,7 +329,8 @@ function init(cursor)
 	_ubusdevcache  = { }
 	_ubuswificache = { }
 
-	local blacklist = get_blacklist()
+	local sys = require("luci.sys")
+	local blacklist = sys.net.blacklist()
 
 	-- read interface information
 	local n, i
@@ -718,8 +707,8 @@ function get_interfaces(self)
 	local ifaces = { }
 	local nfs = { }
 
-	local blacklist = get_blacklist()
-
+	local sys = require("luci.sys")
+	local blacklist = sys.net.blacklist()
 
 	-- find normal interfaces
 	_uci:foreach("network", "interface",

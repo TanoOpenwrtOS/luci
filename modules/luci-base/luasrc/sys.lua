@@ -410,13 +410,30 @@ function net.conntrack(callback)
 	return callback and true or connt
 end
 
+function net.blacklist()
+	local blacklist = { }
+	local blacklist_uci = uci:get("luci", "net_blacklist", "blacklist") or ""
+
+	local iface
+
+	for iface in luci.util.imatch(blacklist_uci) do
+		blacklist[#blacklist + 1] = iface
+	end
+
+	return blacklist
+end
+
 function net.devices()
 	local devs = {}
 	local seen = {}
+	local blacklist = net.blacklist()
+
 	for k, v in ipairs(nixio.getifaddrs()) do
-		if v.name and not seen[v.name] then
-			seen[v.name] = true
-			devs[#devs+1] = v.name
+		if not luci.util.contains(blacklist, v.name) then
+			if v.name and not seen[v.name] then
+				seen[v.name] = true
+				devs[#devs+1] = v.name
+			end
 		end
 	end
 	return devs
