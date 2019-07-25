@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2019-07-20 15:31+0300\n"
+"PO-Revision-Date: 2019-07-25 12:58+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
 "Language-Team: http://cyber-place.ru\n"
 "Language: ru\n"
@@ -66,10 +66,10 @@ msgstr "(%d минутное окно, %d секундный интервал)"
 msgid "(%s available)"
 msgstr "(%s доступно)"
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:91
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:97
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:165
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:171
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:105
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:111
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:244
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:268
 #: modules/luci-base/luasrc/view/cbi/firewall_zoneforwards.htm:38
 #: modules/luci-base/luasrc/view/cbi/firewall_zoneforwards.htm:41
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:88
@@ -77,7 +77,7 @@ msgstr "(%s доступно)"
 msgid "(empty)"
 msgstr "(пусто)"
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:240
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:337
 #: modules/luci-base/luasrc/view/cbi/network_netinfo.htm:23
 #: modules/luci-base/luasrc/view/cbi/network_netlist.htm:58
 msgid "(no interfaces attached)"
@@ -235,7 +235,7 @@ msgstr ""
 "<abbr title=\"англ. Internet Protocol version 6\">IPv6</abbr>-суффикс (hex)"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:58
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:35
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:34
 msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Configuration"
 msgstr ""
 "Настройка <abbr title=\"англ. Light-Emitting Diode\">LED</abbr> индикации"
@@ -347,6 +347,12 @@ msgstr "ATM номер устройства"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:136
 msgid "ATU-C System Vendor ID"
 msgstr "ATU-C идентификатор производителя"
+
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:251
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:495
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:499
+msgid "Absent Interface"
+msgstr "Отсутствующий интерфейс"
 
 #: protocols/luci-proto-ppp/luasrc/model/cbi/admin_network/proto_pppoe.lua:19
 msgid "Access Concentrator"
@@ -498,7 +504,7 @@ msgid "Alert"
 msgstr "Тревога"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1628
-#: modules/luci-base/luasrc/model/network.lua:1445
+#: modules/luci-base/luasrc/model/network.lua:1434
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:78
 msgid "Alias Interface"
 msgstr "Псевдоним"
@@ -691,7 +697,9 @@ msgstr "Антенна 2"
 msgid "Antenna Configuration"
 msgstr "Настройка антенн"
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:57
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:71
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:160
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:181
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:60
 msgid "Any zone"
 msgstr "Любая зона"
@@ -699,10 +707,6 @@ msgstr "Любая зона"
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1981
 msgid "Apply request failed with status <code>%h</code>"
 msgstr "Запрос применения завершился со статусом ошибки <code>%h</code>"
-
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1867
-msgid "Apply unchecked"
-msgstr "Применить без проверки"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1867
 msgid "Apply unchecked"
@@ -937,7 +941,7 @@ msgid "Bogus NX Domain Override"
 msgstr "Переопределение поддельного NX-домена"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1634
-#: modules/luci-base/luasrc/model/network.lua:1420
+#: modules/luci-base/luasrc/model/network.lua:1438
 msgid "Bridge"
 msgstr "Мост"
 
@@ -1166,7 +1170,7 @@ msgstr "Закрыть список..."
 #: modules/luci-mod-status/luasrc/view/admin_status/index/30-network.htm:11
 #: modules/luci-mod-status/luasrc/view/admin_status/index/50-dsl.htm:17
 #: modules/luci-mod-status/luasrc/view/admin_status/index/60-wifi.htm:17
-#: modules/luci-mod-status/luasrc/view/admin_status/iptables.htm:68
+#: modules/luci-mod-status/luasrc/view/admin_status/iptables.htm:73
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:201
 msgid "Collecting data..."
 msgstr "Сбор данных..."
@@ -1299,6 +1303,8 @@ msgstr "Критическая ситуация"
 msgid "Cron Log Level"
 msgstr "Запись событий cron"
 
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:519
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:521
 #: modules/luci-base/luasrc/view/cbi/network_ifacelist.htm:51
 #: modules/luci-base/luasrc/view/cbi/network_ifacelist.htm:53
 #: modules/luci-base/luasrc/view/cbi/network_ifacelist.htm:82
@@ -1349,7 +1355,7 @@ msgid "DHCP and DNS"
 msgstr "DHCP и DNS"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1195
-#: modules/luci-base/luasrc/model/network.lua:968
+#: modules/luci-base/luasrc/model/network.lua:986
 msgid "DHCP client"
 msgstr "DHCP-клиент"
 
@@ -1517,12 +1523,18 @@ msgstr "Тема оформления"
 msgid "Destination"
 msgstr "Направление"
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:40
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:46
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:151
+msgid "Destination zone"
+msgstr "Зона назначения"
+
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:54
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:177
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:43
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/iface_status.js:13
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:33
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:52
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:77
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:85
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:84
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:154
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:253
@@ -1625,8 +1637,6 @@ msgstr "Ошибка попытки отключения"
 #: modules/luci-base/htdocs/luci-static/resources/form.js:1121
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1762
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1855
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:17
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:28
 msgid "Dismiss"
 msgstr "Отклонить"
 
@@ -1770,8 +1780,8 @@ msgstr "Метод EAP"
 #: modules/luci-base/htdocs/luci-static/resources/form.js:934
 #: modules/luci-base/htdocs/luci-static/resources/form.js:935
 #: modules/luci-base/htdocs/luci-static/resources/form.js:1199
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:154
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:160
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:155
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:161
 #: modules/luci-mod-network/luasrc/view/admin_network/iface_overview.htm:38
 #: modules/luci-mod-network/luasrc/view/admin_network/wifi_overview.htm:42
 msgid "Edit"
@@ -1959,12 +1969,12 @@ msgid "Errored seconds (ES)"
 msgstr "Ошибочные секунды (ES)"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1646
-#: modules/luci-base/luasrc/model/network.lua:1461
+#: modules/luci-base/luasrc/model/network.lua:1450
 msgid "Ethernet Adapter"
 msgstr "Ethernet-адаптер"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1637
-#: modules/luci-base/luasrc/model/network.lua:1451
+#: modules/luci-base/luasrc/model/network.lua:1440
 msgid "Ethernet Switch"
 msgstr "Ethernet-коммутатор"
 
@@ -2248,7 +2258,7 @@ msgstr "Порты шлюза"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:66
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:23
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:112
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:10
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:49
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:33
 msgid "General Settings"
@@ -3101,7 +3111,7 @@ msgstr "Загрузка SSH ключей..."
 msgid "Loading data..."
 msgstr "Загрузка данных..."
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1162
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1204
 #: modules/luci-base/luasrc/view/view.htm:4
 msgid "Loading view…"
 msgstr "Загрузка страницы..."
@@ -3208,7 +3218,7 @@ msgstr "Выйти"
 msgid "Logs"
 msgstr "Журналы"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:114
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:131
 msgid "Loss of Signal Seconds (LOSS)"
 msgstr "Потеря сигнала в секундах (LOSS)"
 
@@ -3301,7 +3311,7 @@ msgstr "Вручную"
 msgid "Master"
 msgstr "Мастер"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:105
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:122
 msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr "Max. Attainable Data Rate (ATTNDR)"
 
@@ -3906,6 +3916,11 @@ msgstr "Исходящий:"
 msgid "Output Interface"
 msgstr "Исходящий интерфейс"
 
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:46
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:151
+msgid "Output zone"
+msgstr "Исходящая зона"
+
 #: modules/luci-base/luasrc/model/cbi/admin_network/proto_dhcp.lua:63
 #: modules/luci-base/luasrc/model/cbi/admin_network/proto_static.lua:155
 #: protocols/luci-proto-hnet/luasrc/model/cbi/admin_network/proto_hnet.lua:33
@@ -4191,6 +4206,14 @@ msgstr "Введите логин и пароль."
 msgid "Policy"
 msgstr "Политика"
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:154
+msgid "Polling interval"
+msgstr "Интервал автообновления"
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:154
+msgid "Polling interval for status queries in seconds"
+msgstr "Интервал автообновления данных страниц в секундах"
+
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:22
 msgid "Port"
 msgstr "Порт"
@@ -4203,7 +4226,7 @@ msgstr "Состояние порта:"
 msgid "Potential negation of: %s"
 msgstr "Потенциальное отрицание: %s"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:120
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:137
 msgid "Power Management Mode"
 msgstr "Режим управления питанием"
 
@@ -4598,7 +4621,7 @@ msgstr ""
 "Требуется поддержка внешней сетью DNSSEC; убедитесь, что ответы "
 "неподписанного домена действительно поступают от неподписанных доменов"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1226
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1268
 #: modules/luci-base/luasrc/view/cbi/delegator.htm:17
 #: modules/luci-base/luasrc/view/cbi/footer.htm:30
 #: modules/luci-base/luasrc/view/cbi/simpleform.htm:66
@@ -4864,7 +4887,7 @@ msgstr "Тип службы"
 msgid "Services"
 msgstr "Сервисы"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:773
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:815
 msgid "Session expired"
 msgstr "Сессия истекла"
 
@@ -4964,7 +4987,7 @@ msgid "Slot time"
 msgstr "Время слота"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1640
-#: modules/luci-base/luasrc/model/network.lua:1427
+#: modules/luci-base/luasrc/model/network.lua:1445
 msgid "Software VLAN"
 msgstr "Программное обеспечение VLAN"
 
@@ -5086,7 +5109,7 @@ msgid "Static Routes"
 msgstr "Статические маршруты"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1194
-#: modules/luci-base/luasrc/model/network.lua:995
+#: modules/luci-base/luasrc/model/network.lua:984
 msgid "Static address"
 msgstr "Статический адрес"
 
@@ -5107,7 +5130,7 @@ msgstr "Максимально допустимое время бездейст�
 #: modules/luci-base/luasrc/controller/admin/index.lua:40
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:197
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/wifi.lua:145
-#: modules/luci-mod-status/luasrc/view/admin_status/index.htm:128
+#: modules/luci-mod-status/luasrc/view/admin_status/index.htm:138
 msgid "Status"
 msgstr "Состояние"
 
@@ -5169,7 +5192,7 @@ msgid "Switch Port Mask"
 msgstr "Изменить маску порта"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1640
-#: modules/luci-base/luasrc/model/network.lua:1425
+#: modules/luci-base/luasrc/model/network.lua:1443
 msgid "Switch VLAN"
 msgstr "Изменить VLAN"
 
@@ -5191,8 +5214,7 @@ msgstr "Синхронизировать с браузером"
 
 #: modules/luci-base/luasrc/controller/admin/index.lua:47
 #: modules/luci-mod-status/luasrc/view/admin_status/index/10-system.htm:14
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:102
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:10
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:34
 #: modules/luci-mod-system/luasrc/view/admin_system/applyreboot.htm:39
 msgid "System"
 msgstr "Система"
@@ -5588,7 +5610,7 @@ msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:726
 #: modules/luci-base/htdocs/luci-static/resources/form.js:809
-#: modules/luci-base/luasrc/view/cbi/tblsection.htm:172
+#: modules/luci-base/luasrc/view/cbi/tblsection.htm:173
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:32
 msgid "This section contains no values yet"
 msgstr "Здесь не содержатся необходимые значения"
@@ -5615,7 +5637,7 @@ msgstr "Временная метка"
 msgid "Timezone"
 msgstr "Часовой пояс"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:783
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:825
 msgid "To login…"
 msgstr "Аутентификация..."
 
@@ -5686,7 +5708,7 @@ msgid "Tunnel ID"
 msgstr "Идентификатор туннеля"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1643
-#: modules/luci-base/luasrc/model/network.lua:1459
+#: modules/luci-base/luasrc/model/network.lua:1448
 msgid "Tunnel Interface"
 msgstr "Интерфейс туннеля"
 
@@ -5770,17 +5792,17 @@ msgid "Unavailable Seconds (UAS)"
 msgstr "Секунды неготовности (UAS)"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1196
-#: modules/luci-base/luasrc/model/network.lua:970
+#: modules/luci-base/luasrc/model/network.lua:988
 msgid "Unknown"
 msgstr "Неизвестно"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1349
-#: modules/luci-base/luasrc/model/network.lua:1137
+#: modules/luci-base/luasrc/model/network.lua:1155
 msgid "Unknown error (%s)"
 msgstr "Неизвестная ошибка (%s)"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1193
-#: modules/luci-base/luasrc/model/network.lua:964
+#: modules/luci-base/luasrc/model/network.lua:982
 msgid "Unmanaged"
 msgstr "Неуправляемый"
 
@@ -6108,8 +6130,8 @@ msgstr "Ожидание применения конфигурации... %d с�
 msgid "Waiting for device..."
 msgstr "Ожидание подключения устройства..."
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:172
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:182
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:87
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:97
 msgid "Warning"
 msgstr "Внимание"
 
@@ -6148,14 +6170,14 @@ msgid "Wireless"
 msgstr "Wi-Fi"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1631
-#: modules/luci-base/luasrc/model/network.lua:1418
+#: modules/luci-base/luasrc/model/network.lua:1436
 msgid "Wireless Adapter"
 msgstr "Беспроводной адаптер"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1617
 #: modules/luci-base/htdocs/luci-static/resources/network.js:2052
-#: modules/luci-base/luasrc/model/network.lua:1404
-#: modules/luci-base/luasrc/model/network.lua:1865
+#: modules/luci-base/luasrc/model/network.lua:1422
+#: modules/luci-base/luasrc/model/network.lua:1885
 msgid "Wireless Network"
 msgstr "Беспроводная сеть"
 
@@ -6226,19 +6248,19 @@ msgstr ""
 "Вам необходимо включить JavaScript в вашем браузере для корректной работы "
 "LuCI."
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:196
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:111
 msgid "ZRam Compression Algorithm"
 msgstr "Алгоритм компрессии ZRam"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:203
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:118
 msgid "ZRam Compression Streams"
 msgstr "Потоки компрессии ZRam"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:189
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:104
 msgid "ZRam Settings"
 msgstr "Настройки ZRam"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:191
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:106
 msgid "ZRam Size"
 msgstr "Размер ZRam"
 
@@ -6273,8 +6295,8 @@ msgstr "baseT"
 msgid "bridged"
 msgstr "соед. мостом"
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:118
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:289
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:132
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:386
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:35
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:99
 #: modules/luci-base/luasrc/view/cbi/network_netlist.htm:31
@@ -6339,7 +6361,8 @@ msgstr ""
 "Файл, где хранятся арендованные <abbr title=\"англ. Dynamic Host "
 "Configuration Protocol\">DHCP</abbr>-адреса"
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:58
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:72
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:181
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:61
 msgid "forward"
 msgstr "перенаправить"
@@ -6370,7 +6393,8 @@ msgstr "гибридный режим"
 msgid "if target is a network"
 msgstr "если сеть"
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:42
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:56
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:177
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:46
 msgid "input"
 msgstr "ввод"
@@ -6458,7 +6482,7 @@ msgstr "включено"
 msgid "open"
 msgstr "открыть"
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:42
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:56
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:46
 msgid "output"
 msgstr "вывод"
@@ -6535,11 +6559,13 @@ msgid "unlimited"
 msgstr "неограниченный"
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:1401
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:49
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:110
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:258
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:281
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:316
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:63
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:124
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:355
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:378
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:413
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:446
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:512
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:53
 #: modules/luci-base/luasrc/view/cbi/network_netlist.htm:38
 msgid "unspecified"

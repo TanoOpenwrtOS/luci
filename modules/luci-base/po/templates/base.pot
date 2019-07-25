@@ -52,10 +52,10 @@ msgstr ""
 msgid "(%s available)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:91
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:97
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:165
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:171
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:105
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:111
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:244
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:268
 #: modules/luci-base/luasrc/view/cbi/firewall_zoneforwards.htm:38
 #: modules/luci-base/luasrc/view/cbi/firewall_zoneforwards.htm:41
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:88
@@ -63,7 +63,7 @@ msgstr ""
 msgid "(empty)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:240
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:337
 #: modules/luci-base/luasrc/view/cbi/network_netinfo.htm:23
 #: modules/luci-base/luasrc/view/cbi/network_netlist.htm:58
 msgid "(no interfaces attached)"
@@ -316,6 +316,12 @@ msgstr ""
 msgid "ATU-C System Vendor ID"
 msgstr ""
 
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:251
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:495
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:499
+msgid "Absent Interface"
+msgstr ""
+
 #: protocols/luci-proto-ppp/luasrc/model/cbi/admin_network/proto_pppoe.lua:19
 msgid "Access Concentrator"
 msgstr ""
@@ -461,7 +467,7 @@ msgid "Alert"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1628
-#: modules/luci-base/luasrc/model/network.lua:1445
+#: modules/luci-base/luasrc/model/network.lua:1434
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:78
 msgid "Alias Interface"
 msgstr ""
@@ -640,7 +646,9 @@ msgstr ""
 msgid "Antenna Configuration"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:57
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:71
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:160
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:181
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:60
 msgid "Any zone"
 msgstr ""
@@ -867,7 +875,7 @@ msgid "Bogus NX Domain Override"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1634
-#: modules/luci-base/luasrc/model/network.lua:1449
+#: modules/luci-base/luasrc/model/network.lua:1438
 msgid "Bridge"
 msgstr ""
 
@@ -1204,6 +1212,8 @@ msgstr ""
 msgid "Cron Log Level"
 msgstr ""
 
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:519
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:521
 #: modules/luci-base/luasrc/view/cbi/network_ifacelist.htm:51
 #: modules/luci-base/luasrc/view/cbi/network_ifacelist.htm:53
 #: modules/luci-base/luasrc/view/cbi/network_ifacelist.htm:82
@@ -1250,7 +1260,7 @@ msgid "DHCP and DNS"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1195
-#: modules/luci-base/luasrc/model/network.lua:997
+#: modules/luci-base/luasrc/model/network.lua:986
 msgid "DHCP client"
 msgstr ""
 
@@ -1415,7 +1425,13 @@ msgstr ""
 msgid "Destination"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:40
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:46
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:151
+msgid "Destination zone"
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:54
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:177
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:43
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/iface_status.js:13
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:33
@@ -1833,12 +1849,12 @@ msgid "Errored seconds (ES)"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1646
-#: modules/luci-base/luasrc/model/network.lua:1461
+#: modules/luci-base/luasrc/model/network.lua:1450
 msgid "Ethernet Adapter"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1637
-#: modules/luci-base/luasrc/model/network.lua:1451
+#: modules/luci-base/luasrc/model/network.lua:1440
 msgid "Ethernet Switch"
 msgstr ""
 
@@ -3703,6 +3719,11 @@ msgstr ""
 msgid "Output Interface"
 msgstr ""
 
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:46
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:151
+msgid "Output zone"
+msgstr ""
+
 #: modules/luci-base/luasrc/model/cbi/admin_network/proto_dhcp.lua:63
 #: modules/luci-base/luasrc/model/cbi/admin_network/proto_static.lua:155
 #: protocols/luci-proto-hnet/luasrc/model/cbi/admin_network/proto_hnet.lua:33
@@ -4728,7 +4749,7 @@ msgid "Slot time"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1640
-#: modules/luci-base/luasrc/model/network.lua:1456
+#: modules/luci-base/luasrc/model/network.lua:1445
 msgid "Software VLAN"
 msgstr ""
 
@@ -4840,7 +4861,7 @@ msgid "Static Routes"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1194
-#: modules/luci-base/luasrc/model/network.lua:995
+#: modules/luci-base/luasrc/model/network.lua:984
 msgid "Static address"
 msgstr ""
 
@@ -4918,7 +4939,7 @@ msgid "Switch Port Mask"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1640
-#: modules/luci-base/luasrc/model/network.lua:1454
+#: modules/luci-base/luasrc/model/network.lua:1443
 msgid "Switch VLAN"
 msgstr ""
 
@@ -5368,7 +5389,7 @@ msgid "Tunnel ID"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1643
-#: modules/luci-base/luasrc/model/network.lua:1459
+#: modules/luci-base/luasrc/model/network.lua:1448
 msgid "Tunnel Interface"
 msgstr ""
 
@@ -5452,17 +5473,17 @@ msgid "Unavailable Seconds (UAS)"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1196
-#: modules/luci-base/luasrc/model/network.lua:999
+#: modules/luci-base/luasrc/model/network.lua:988
 msgid "Unknown"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1349
-#: modules/luci-base/luasrc/model/network.lua:1166
+#: modules/luci-base/luasrc/model/network.lua:1155
 msgid "Unknown error (%s)"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1193
-#: modules/luci-base/luasrc/model/network.lua:993
+#: modules/luci-base/luasrc/model/network.lua:982
 msgid "Unmanaged"
 msgstr ""
 
@@ -5810,14 +5831,14 @@ msgid "Wireless"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1631
-#: modules/luci-base/luasrc/model/network.lua:1447
+#: modules/luci-base/luasrc/model/network.lua:1436
 msgid "Wireless Adapter"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1617
 #: modules/luci-base/htdocs/luci-static/resources/network.js:2052
-#: modules/luci-base/luasrc/model/network.lua:1433
-#: modules/luci-base/luasrc/model/network.lua:1896
+#: modules/luci-base/luasrc/model/network.lua:1422
+#: modules/luci-base/luasrc/model/network.lua:1885
 msgid "Wireless Network"
 msgstr ""
 
@@ -5929,8 +5950,8 @@ msgstr ""
 msgid "bridged"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:118
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:289
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:132
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:386
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:35
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:99
 #: modules/luci-base/luasrc/view/cbi/network_netlist.htm:31
@@ -5993,7 +6014,8 @@ msgid ""
 "abbr>-leases will be stored"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:58
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:72
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:181
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:61
 msgid "forward"
 msgstr ""
@@ -6024,7 +6046,8 @@ msgstr ""
 msgid "if target is a network"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:42
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:56
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:177
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:46
 msgid "input"
 msgstr ""
@@ -6112,7 +6135,7 @@ msgstr ""
 msgid "open"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:42
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:56
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:46
 msgid "output"
 msgstr ""
@@ -6189,11 +6212,13 @@ msgid "unlimited"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:1401
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:49
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:110
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:258
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:281
-#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:316
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:63
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:124
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:355
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:378
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:413
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:446
+#: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:512
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:53
 #: modules/luci-base/luasrc/view/cbi/network_netlist.htm:38
 msgid "unspecified"
