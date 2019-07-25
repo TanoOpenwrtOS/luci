@@ -14,7 +14,7 @@ function submitPassword(ev) {
 				showModal(_('Change login password'), [
 					E('div', _('The system password has been successfully changed.')),
 					E('div', { 'class': 'right' },
-						E('div', { class: 'btn', click: L.hideModal }, _('Close')))
+						E('div', { class: 'btn', click: function() { L.hideModal; location = location.href; } }, _('Close')))
 				]);
 
 				pw1.value = pw2.value = '';
