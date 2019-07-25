@@ -761,6 +761,11 @@ var CBITableSection = CBITypedSection.extend({
 				'id': 'cbi-%s-%s'.format(config_name, this.sectiontype),
 				'class': 'cbi-section cbi-tblsection'
 			}),
+
+			tableWrapperEl = E('div', {
+				'class': 'table-wrapper'
+			}),
+
 			tableEl = E('div', {
 				'class': 'table cbi-section-table'
 			});
@@ -808,7 +813,8 @@ var CBITableSection = CBITypedSection.extend({
 				E('div', { 'class': 'td' },
 					E('em', {}, _('This section contains no values yet')))));
 
-		sectionEl.appendChild(tableEl);
+		tableWrapperEl.appendChild(tableEl);
+		sectionEl.appendChild(tableWrapperEl);
 
 		sectionEl.appendChild(this.renderSectionAdd('cbi-tblsection-create'));
 
