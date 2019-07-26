@@ -1467,6 +1467,7 @@ var CBIListValue = CBIValue.extend({
 			size: this.size,
 			sort: this.keylist,
 			optional: this.rmempty || this.optional,
+			placeholder: this.placeholder,
 			validate: L.bind(this.validate, this, section_id)
 		});
 
