@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2019-07-25 12:58+0300\n"
+"PO-Revision-Date: 2019-07-26 04:15+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
 "Language-Team: http://cyber-place.ru\n"
 "Language: ru\n"
@@ -88,8 +88,8 @@ msgid "-- Additional Field --"
 msgstr "-- Дополнительно --"
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:258
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1401
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1532
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1407
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1538
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:250
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:350
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1114
@@ -266,7 +266,7 @@ msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Extension Mechanisms for "
 "Domain Name System\">EDNS0</abbr> packet size"
 msgstr ""
-"Максимальный<abbr title=\"англ. Extension Mechanisms for Domain Name System"
+"Максимальный <abbr title=\"англ. Extension Mechanisms for Domain Name System"
 "\">EDNS0</abbr> размер пакета"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:251
@@ -404,7 +404,7 @@ msgstr "Ad-Hoc"
 #: modules/luci-base/htdocs/luci-static/resources/form.js:651
 #: modules/luci-base/htdocs/luci-static/resources/form.js:666
 #: modules/luci-base/htdocs/luci-static/resources/form.js:667
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1290
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1296
 #: modules/luci-base/luasrc/view/cbi/nsection.htm:25
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:191
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:199
@@ -1483,9 +1483,9 @@ msgstr ""
 "серверах."
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:705
-#: modules/luci-base/htdocs/luci-static/resources/form.js:958
-#: modules/luci-base/htdocs/luci-static/resources/form.js:959
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1271
+#: modules/luci-base/htdocs/luci-static/resources/form.js:964
+#: modules/luci-base/htdocs/luci-static/resources/form.js:965
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1277
 #: modules/luci-base/luasrc/view/cbi/nsection.htm:11
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:163
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:16
@@ -1634,7 +1634,7 @@ msgstr "Отключить"
 msgid "Disconnection attempt failed"
 msgstr "Ошибка попытки отключения"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1121
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1127
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1762
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1855
 msgid "Dismiss"
@@ -1727,7 +1727,7 @@ msgstr "Скачать MTD раздел"
 msgid "Downstream SNR offset"
 msgstr "SNR offset внутренней сети"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:914
+#: modules/luci-base/htdocs/luci-static/resources/form.js:920
 msgid "Drag to reorder"
 msgstr "Перетащите, чтобы изменить порядок"
 
@@ -1777,9 +1777,9 @@ msgstr "EA-bits длина"
 msgid "EAP-Method"
 msgstr "Метод EAP"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:934
-#: modules/luci-base/htdocs/luci-static/resources/form.js:935
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1199
+#: modules/luci-base/htdocs/luci-static/resources/form.js:940
+#: modules/luci-base/htdocs/luci-static/resources/form.js:941
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1205
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:155
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:161
 #: modules/luci-mod-network/luasrc/view/admin_network/iface_overview.htm:38
@@ -2307,8 +2307,8 @@ msgstr "Основные настройки сети"
 msgid "Go to password configuration..."
 msgstr "Перейти к настройке пароля..."
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:857
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1369
+#: modules/luci-base/htdocs/luci-static/resources/form.js:863
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1375
 #: modules/luci-base/luasrc/view/cbi/full_valueheader.htm:4
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:58
 msgid "Go to relevant configuration page"
@@ -2902,6 +2902,10 @@ msgstr "Пароль (ключ)"
 msgid "Key #%d"
 msgstr "Ключ №%d"
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:60
+msgid "KiB"
+msgstr "КиБ"
+
 #: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:19
 msgid "Kill"
 msgstr "Принудительно завершить"
@@ -3450,7 +3454,7 @@ msgstr "Монитор"
 msgid "More Characters"
 msgstr "Слишком мало символов"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:802
+#: modules/luci-base/htdocs/luci-static/resources/form.js:807
 msgid "More…"
 msgstr "Больше..."
 
@@ -3541,7 +3545,7 @@ msgstr "NT домен"
 msgid "NTP server candidates"
 msgstr "Список NTP-серверов"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:837
+#: modules/luci-base/htdocs/luci-static/resources/form.js:843
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:27
 #: modules/luci-mod-network/luasrc/model/cbi/admin_network/ifaces.lua:502
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:65
@@ -3591,7 +3595,7 @@ msgstr "Сеть без интерфейсов."
 msgid "Next »"
 msgstr "Следующий »"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1506
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1512
 #: protocols/luci-proto-vpnc/luasrc/model/cbi/admin_network/proto_vpnc.lua:84
 msgid "No"
 msgstr "Нет"
@@ -4623,7 +4627,7 @@ msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:1268
 #: modules/luci-base/luasrc/view/cbi/delegator.htm:17
-#: modules/luci-base/luasrc/view/cbi/footer.htm:30
+#: modules/luci-base/luasrc/view/cbi/footer.htm:34
 #: modules/luci-base/luasrc/view/cbi/simpleform.htm:66
 #: modules/luci-base/luasrc/view/sysauth.htm:39
 msgid "Reset"
@@ -4789,10 +4793,10 @@ msgstr "SSID"
 msgid "SWAP"
 msgstr "Разделы подкачки (swap)"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1127
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1133
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:1262
 #: modules/luci-base/luasrc/view/cbi/error.htm:17
-#: modules/luci-base/luasrc/view/cbi/footer.htm:26
+#: modules/luci-base/luasrc/view/cbi/footer.htm:29
 #: modules/luci-base/luasrc/view/cbi/header.htm:17
 #: modules/luci-mod-system/luasrc/view/admin_system/password.htm:54
 msgid "Save"
@@ -4800,7 +4804,7 @@ msgstr "Сохранить"
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:1256
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1768
-#: modules/luci-base/luasrc/view/cbi/footer.htm:22
+#: modules/luci-base/luasrc/view/cbi/footer.htm:24
 msgid "Save & Apply"
 msgstr "Сохранить и применить"
 
@@ -4969,7 +4973,7 @@ msgstr "Размер кэша DNS запроса"
 msgid "Size of the ZRam device in megabytes"
 msgstr "Размер ZRam в мегабайтах"
 
-#: modules/luci-base/luasrc/view/cbi/footer.htm:18
+#: modules/luci-base/luasrc/view/cbi/footer.htm:19
 #: modules/luci-base/luasrc/view/cbi/simpleform.htm:57
 msgid "Skip"
 msgstr "Пропустить"
@@ -5609,7 +5613,7 @@ msgstr ""
 "Страница содержит список всех активных на данный момент сетевых соединений."
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:726
-#: modules/luci-base/htdocs/luci-static/resources/form.js:809
+#: modules/luci-base/htdocs/luci-static/resources/form.js:814
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:173
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:32
 msgid "This section contains no values yet"
@@ -6222,7 +6226,7 @@ msgstr "Записывать полученные DNS-запросы в сист
 msgid "Write system log to file"
 msgstr "Записывать системные события в файл"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1506
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1512
 #: protocols/luci-proto-vpnc/luasrc/model/cbi/admin_network/proto_vpnc.lua:85
 msgid "Yes"
 msgstr "Да"
@@ -6453,7 +6457,7 @@ msgstr "нет соединения"
 msgid "non-empty value"
 msgstr "не пустое значение"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1195
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1201
 msgid "none"
 msgstr "нет"
 
@@ -6558,7 +6562,7 @@ msgstr "неизвестный"
 msgid "unlimited"
 msgstr "неограниченный"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1401
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1407
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:63
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:124
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:355
