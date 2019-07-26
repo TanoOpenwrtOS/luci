@@ -57,7 +57,7 @@ return L.view.extend({
 		 * Logging
 		 */
 
-		o = s.taboption('logging', form.Value, 'log_size', _('System log buffer size'), "kiB")
+		o = s.taboption('logging', form.Value, 'log_size', _('System log buffer size'), _("KiB"))
 		o.optional    = true
 		o.placeholder = 16
 		o.datatype    = 'uinteger'
