@@ -74,8 +74,8 @@ msgid "-- Additional Field --"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:258
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1407
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1538
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1401
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1533
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:250
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:350
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1114
@@ -1437,7 +1437,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:33
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:52
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:85
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:84
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:86
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:154
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:253
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:86
@@ -2873,7 +2873,7 @@ msgstr ""
 msgid "Line Uptime"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:99
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:101
 msgid "Link On"
 msgstr ""
 
@@ -3420,7 +3420,7 @@ msgstr ""
 msgid "Next »"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1512
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1507
 #: protocols/luci-proto-vpnc/luasrc/model/cbi/admin_network/proto_vpnc.lua:84
 msgid "No"
 msgstr ""
@@ -3577,7 +3577,7 @@ msgstr ""
 msgid "Obtain IPv6-Address"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:81
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:83
 msgid "Off-State Delay"
 msgstr ""
 
@@ -3595,7 +3595,7 @@ msgstr ""
 msgid "On-Link route"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:78
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:80
 msgid "On-State Delay"
 msgstr ""
 
@@ -4286,7 +4286,7 @@ msgstr ""
 msgid "Reboots the operating system of your device"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:101
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:103
 msgid "Receive"
 msgstr ""
 
@@ -4938,7 +4938,7 @@ msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:140
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:146
 msgid "Switch Port Mask"
 msgstr ""
 
@@ -5365,7 +5365,7 @@ msgstr ""
 msgid "Transmission Rate"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:100
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:102
 msgid "Transmit"
 msgstr ""
 
@@ -5384,7 +5384,7 @@ msgstr ""
 msgid "Trigger"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:96
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:98
 msgid "Trigger Mode"
 msgstr ""
 
@@ -5425,11 +5425,11 @@ msgstr ""
 msgid "UMTS/GPRS/EV-DO"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:103
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:106
 msgid "USB Device"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:117
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:122
 msgid "USB Ports"
 msgstr ""
 
@@ -5887,7 +5887,7 @@ msgstr ""
 msgid "Write system log to file"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1512
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1507
 #: protocols/luci-proto-vpnc/luasrc/model/cbi/admin_network/proto_vpnc.lua:85
 msgid "Yes"
 msgstr ""
@@ -6215,7 +6215,7 @@ msgstr ""
 msgid "unlimited"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1407
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1401
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:63
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:124
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:355

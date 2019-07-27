@@ -88,8 +88,8 @@ msgid "-- Additional Field --"
 msgstr "-- Дополнительно --"
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:258
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1407
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1538
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1401
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1533
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:250
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:350
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1114
@@ -1535,7 +1535,7 @@ msgstr "Зона назначения"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:33
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:52
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:85
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:84
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:86
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:154
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:253
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:86
@@ -3021,7 +3021,7 @@ msgstr "Состояние Линии"
 msgid "Line Uptime"
 msgstr "Время бесперебойной работы линии"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:99
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:101
 msgid "Link On"
 msgstr "Подключение"
 
@@ -3595,7 +3595,7 @@ msgstr "Сеть без интерфейсов."
 msgid "Next »"
 msgstr "Следующий »"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1512
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1507
 #: protocols/luci-proto-vpnc/luasrc/model/cbi/admin_network/proto_vpnc.lua:84
 msgid "No"
 msgstr "Нет"
@@ -3754,7 +3754,7 @@ msgstr "Obfuscated Password"
 msgid "Obtain IPv6-Address"
 msgstr "Получение IPv6-адреса"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:81
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:83
 msgid "Off-State Delay"
 msgstr "Задержка выключенного состояния"
 
@@ -3778,7 +3778,7 @@ msgstr ""
 msgid "On-Link route"
 msgstr "On-link маршрут"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:78
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:80
 msgid "On-State Delay"
 msgstr "Задержка включенного состояния"
 
@@ -4507,7 +4507,7 @@ msgstr ""
 "Программная перезагрузка вашего устройства, т.е. выполнение команды "
 "<code>reboot</code>"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:101
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:103
 msgid "Receive"
 msgstr "Приём"
 
@@ -5191,7 +5191,7 @@ msgstr ""
 "Коммутатор %q имеет неизвестную топологию — настройки VLAN не могут быть "
 "точными."
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:140
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:146
 msgid "Switch Port Mask"
 msgstr "Изменить маску порта"
 
@@ -5684,7 +5684,7 @@ msgstr "Передача"
 msgid "Transmission Rate"
 msgstr "Скорость передачи"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:100
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:102
 msgid "Transmit"
 msgstr "Передача"
 
@@ -5703,7 +5703,7 @@ msgstr "Передающая антенна"
 msgid "Trigger"
 msgstr "Назначить"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:96
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:98
 msgid "Trigger Mode"
 msgstr "Режим работы"
 
@@ -5744,11 +5744,11 @@ msgstr "Только UMTS"
 msgid "UMTS/GPRS/EV-DO"
 msgstr "UMTS/GPRS/EV-DO"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:103
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:106
 msgid "USB Device"
 msgstr "USB устройство"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:117
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:122
 msgid "USB Ports"
 msgstr "USB порты"
 
@@ -6226,7 +6226,7 @@ msgstr "Записывать полученные DNS-запросы в сист
 msgid "Write system log to file"
 msgstr "Записывать системные события в файл"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1512
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1507
 #: protocols/luci-proto-vpnc/luasrc/model/cbi/admin_network/proto_vpnc.lua:85
 msgid "Yes"
 msgstr "Да"
@@ -6562,7 +6562,7 @@ msgstr "неизвестный"
 msgid "unlimited"
 msgstr "неограниченный"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1407
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1401
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:63
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:124
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:355
