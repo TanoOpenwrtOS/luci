@@ -223,6 +223,9 @@ var UISelect = UIElement.extend({
 			widget: 'select',
 			orientation: 'horizontal'
 		}, options);
+
+		if (this.choices.hasOwnProperty(''))
+			this.options.optional = true;
 	},
 
 	render: function() {
@@ -1327,10 +1330,16 @@ var UIDynamicList = UIElement.extend({
 
 	getValue: function() {
 		var items = this.node.querySelectorAll('.item > input[type="hidden"]'),
+		    input = this.node.querySelector('.add-item > input[type="text"]'),
 		    v = [];
 
 		for (var i = 0; i < items.length; i++)
 			v.push(items[i].value);
+
+		if (input && input.value != null && input.value.match(/\S/) &&
+		    input.classList.contains('cbi-input-invalid') == false &&
+		    v.filter(function(s) { return s == input.value }).length == 0)
+			v.push(input.value);
 
 		return v;
 	},
@@ -1580,8 +1589,14 @@ return L.Class.extend({
 			if (selected === null) {
 				selected = this.getActiveTabId(groupId);
 
-				if (selected < 0 || selected >= panes.length)
-					selected = 0;
+				if (selected < 0 || selected >= panes.length || L.dom.isEmpty(panes[selected])) {
+					for (var i = 0; i < panes.length; i++) {
+						if (!L.dom.isEmpty(panes[i])) {
+							selected = i;
+							break;
+						}
+					}
+				}
 
 				menu.childNodes[selected].classList.add('cbi-tab');
 				menu.childNodes[selected].classList.remove('cbi-tab-disabled');
@@ -1621,13 +1636,13 @@ return L.Class.extend({
 			return true;
 		},
 
-		updateTabs: function(ev) {
-			document.querySelectorAll('[data-tab-title]').forEach(function(pane) {
+		updateTabs: function(ev, root) {
+			(root || document).querySelectorAll('[data-tab-title]').forEach(function(pane) {
 				var menu = pane.parentNode.previousElementSibling,
 				    tab = menu.querySelector('[data-tab="%s"]'.format(pane.getAttribute('data-tab'))),
 				    n_errors = pane.querySelectorAll('.cbi-input-invalid').length;
 
-				if (!pane.firstElementChild) {
+				if (L.dom.isEmpty(pane)) {
 					tab.style.display = 'none';
 					tab.classList.remove('flash');
 				}
