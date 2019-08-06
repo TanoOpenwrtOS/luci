@@ -5,7 +5,7 @@
 -%>
 <%+cbi/valueheader%>
 	<% if s then %>
-		<%:Uploaded File%> (<%=t.byte_format(s.size)%>)
+		<div class="cbi-upload-info"><%:Uploaded File%> (<%=t.byte_format(s.size)%>)</div>
                 <% if self.unsafeupload then %>
 		    <input type="hidden"<%= attr("value", v) .. attr("name", cbid) .. attr("id", cbid) %> />
 		    <input class="cbi-button cbi-button-image" type="image" value="<%:Replace entry%>" name="cbi.rlf.<%=section .. "." .. self.option%>" alt="<%:Replace entry%>" title="<%:Replace entry%>" src="<%=resource%>/cbi/reload.gif" />
