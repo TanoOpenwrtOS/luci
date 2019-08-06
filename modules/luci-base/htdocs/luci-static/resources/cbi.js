@@ -644,12 +644,12 @@ String.prototype.format = function()
 
 						var i = 0;
 						var val = (+param || 0);
-						var units = [ ' ', _(' K'), _(' M'), _(' G'), _(' T'), _(' P'), _(' E') ];
+						var units = [ '', _('K'), _('M'), _('G'), _('T'), _('P'), _('E') ];
 
 						for (i = 0; (i < units.length) && (val > mf); i++)
 							val /= mf;
 
-						subst = (i ? val.toFixed(pr) : val) + units[i];
+						subst = (i ? val.toFixed(pr) : val) + ' ' + units[i];
 						pMinLength = null;
 						break;
 				}
