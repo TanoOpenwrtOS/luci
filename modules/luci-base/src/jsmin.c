@@ -1,5 +1,5 @@
-/* jsmin.c
-   2011-09-30
+﻿/* jsmin.c
+   2013-03-29
 
 Copyright (c) 2002 Douglas Crockford  (www.crockford.com)
 
@@ -30,7 +30,18 @@ SOFTWARE.
 static int   theA;
 static int   theB;
 static int   theLookahead = EOF;
+static int   theX = EOF;
+static int   theY = EOF;
 
+
+static void
+error(char* s)
+{
+    fputs("JSMIN Error: ", stderr);
+    fputs(s, stderr);
+    fputc('\n', stderr);
+    exit(1);
+}
 
 /* isAlphanum -- return true if the character is a letter, digit, underscore,
         dollar sign, or non-ASCII character.
@@ -93,28 +104,29 @@ next()
             for (;;) {
                 c = get();
                 if (c <= '\n') {
-                    return c;
+                    break;
                 }
             }
+            break;
         case '*':
             get();
-            for (;;) {
+            while (c != ' ') {
                 switch (get()) {
                 case '*':
                     if (peek() == '/') {
                         get();
-                        return ' ';
+                        c = ' ';
                     }
                     break;
                 case EOF:
-                    fprintf(stderr, "Error: JSMIN Unterminated comment.\n");
-                    exit(1);
+                    error("Unterminated comment.");
                 }
             }
-        default:
-            return c;
+            break;
         }
     }
+    theY = theX;
+    theX = c;
     return c;
 }
 
@@ -133,6 +145,13 @@ action(int d)
     switch (d) {
     case 1:
         putc(theA, stdout);
+        if (
+            (theY == '\n' || theY == ' ') &&
+            (theA == '+' || theA == '-' || theA == '*' || theA == '/') &&
+            (theB == '+' || theB == '-' || theB == '*' || theB == '/')
+        ) {
+            putc(theY, stdout);
+        }
     case 2:
         theA = theB;
         if (theA == '\'' || theA == '"' || theA == '`') {
@@ -147,19 +166,22 @@ action(int d)
                     theA = get();
                 }
                 if (theA == EOF) {
-                    fprintf(stderr, "Error: JSMIN unterminated string literal.");
-                    exit(1);
+                    error("Unterminated string literal.");
                 }
             }
         }
     case 3:
         theB = next();
-        if (theB == '/' && (theA == '(' || theA == ',' || theA == '=' ||
-                            theA == ':' || theA == '[' || theA == '!' ||
-                            theA == '&' || theA == '|' || theA == '?' ||
-                            theA == '{' || theA == '}' || theA == ';' ||
-                            theA == '\n')) {
+        if (theB == '/' && (
+            theA == '(' || theA == ',' || theA == '=' || theA == ':' ||
+            theA == '[' || theA == '!' || theA == '&' || theA == '|' ||
+            theA == '?' || theA == '+' || theA == '-' || theA == '~' ||
+            theA == '*' || theA == '/' || theA == '{' || theA == '\n'
+        )) {
             putc(theA, stdout);
+            if (theA == '/' || theA == '*') {
+                putc(' ', stdout);
+            }
             putc(theB, stdout);
             for (;;) {
                 theA = get();
@@ -175,21 +197,22 @@ action(int d)
                             theA = get();
                         }
                         if (theA == EOF) {
-                            fprintf(stderr,
-                                "Error: JSMIN unterminated set in Regular Expression literal.\n");
-                            exit(1);
+                            error("Unterminated set in Regular Expression literal.");
                         }
                     }
                 } else if (theA == '/') {
+                    switch (peek()) {
+                    case '/':
+                    case '*':
+                        error("Unterminated set in Regular Expression literal.");
+                    }
                     break;
                 } else if (theA =='\\') {
                     putc(theA, stdout);
                     theA = get();
                 }
                 if (theA == EOF) {
-                    fprintf(stderr,
-                        "Error: JSMIN unterminated Regular Expression literal.\n");
-                    exit(1);
+                    error("Unterminated Regular Expression literal.");
                 }
                 putc(theA, stdout);
             }
@@ -208,16 +231,17 @@ action(int d)
 static void
 jsmin()
 {
+    if (peek() == 0xEF) {
+        get();
+        get();
+        get();
+    }
     theA = '\n';
     action(3);
     while (theA != EOF) {
         switch (theA) {
         case ' ':
-            if (isAlphanum(theB)) {
-                action(1);
-            } else {
-                action(2);
-            }
+            action(isAlphanum(theB) ? 1 : 2);
             break;
         case '\n':
             switch (theB) {
@@ -226,27 +250,21 @@ jsmin()
             case '(':
             case '+':
             case '-':
+            case '!':
+            case '~':
                 action(1);
                 break;
             case ' ':
                 action(3);
                 break;
             default:
-                if (isAlphanum(theB)) {
-                    action(1);
-                } else {
-                    action(2);
-                }
+                action(isAlphanum(theB) ? 1 : 2);
             }
             break;
         default:
             switch (theB) {
             case ' ':
-                if (isAlphanum(theA)) {
-                    action(1);
-                    break;
-                }
-                action(3);
+                action(isAlphanum(theA) ? 1 : 3);
                 break;
             case '\n':
                 switch (theA) {
@@ -261,11 +279,7 @@ jsmin()
                     action(1);
                     break;
                 default:
-                    if (isAlphanum(theA)) {
-                        action(1);
-                    } else {
-                        action(3);
-                    }
+                    action(isAlphanum(theA) ? 1 : 3);
                 }
                 break;
             default:
