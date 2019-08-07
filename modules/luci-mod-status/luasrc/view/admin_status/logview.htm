@@ -23,6 +23,7 @@
 	}
 
 	#lv-table .td.lf-message {
+		      min-width: 250px;
 		      font-size: 90%;
 		    font-family: monospace;
 		  overflow-wrap: break-word;
@@ -72,16 +73,17 @@
 		color: #a0a0a0; /* GREY */
 	}
 
-	#lv-controls { text-align: right !important; padding-bottom: 8px; }
-	#lv-controls .lv-controls-left { float: left; }
-	#lv-controls select { width: auto; }
+	#lv-controls { display: flex; flex-flow: row; flex-wrap: wrap; justify-content: space-between; }
+	#lv-controls > div { flex-basis: 100%; align-items: center; margin-bottom: 8px; display: flex; flex-flow: row; }
 
-	#lv-controls input,
-	#lv-controls select,
-	#lv-controls label {
-		vertical-align: middle;
-	}
+	#lv-controls > div .cbi-button { flex-basis: 100%; }
+	#lv-controls > div label { margin-right: 5px; }
+	#lv-controls > div a + a { margin-left: 5px; }
 
+@media screen and (min-width: 768px) {
+	#lv-controls > div { flex-basis: auto; }
+	#lv-controls > div select { margin-right: 5px; }
+}
 </style>
 
 <h2 name="content"><%=log.name%></h2>
@@ -89,22 +91,24 @@
 <div class="cbi-section">
 	<legend><%:Controls%></legend>
 	<div id="lv-controls">
-		<div class="lv-controls-left">
+		<div>
 			<label for="lv-sort"><%:Order%>:</label>
 			<select id="lv-sort" class="cbi-input-select" onchange="lv_apply_sorting(this.value)">
 				<option value="0" selected><%:Descending time (latest on top)%></option>
 				<option value="1" ><%:Ascending time (latest on bottom)%></option>
 			</select>
 		</div>
-		<a href="" class="cbi-button cbi-button-apply" id="lv-refresh" onclick="return lv_refresh()">
-			<%:Refresh%>
-		</a>
-		<a href="<%=url("/admin/status/logview/download/" .. log.id .. ".txt")%>" class="cbi-button cbi-button-apply" download="<%=log.id%>.txt">
-			<%:Download (TXT)%>
-		</a>
-		<a href="<%=url("/admin/status/logview/download/" .. log.id .. ".csv")%>" class="cbi-button cbi-button-apply" download="<%=log.id%>.csv">
-			<%:Download (CSV)%>
-		</a>
+		<div>
+			<a href="" class="cbi-button cbi-button-apply" id="lv-refresh" onclick="return lv_refresh()">
+				<%:Refresh%>
+			</a>
+			<a href="<%=url("/admin/status/logview/download/" .. log.id .. ".txt")%>" class="cbi-button cbi-button-apply" download="<%=log.id%>.txt">
+				<%:Download (TXT)%>
+			</a>
+			<a href="<%=url("/admin/status/logview/download/" .. log.id .. ".csv")%>" class="cbi-button cbi-button-apply" download="<%=log.id%>.csv">
+				<%:Download (CSV)%>
+			</a>
+		</div>
 	</div>
 </div>
 
