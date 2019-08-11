@@ -1,6 +1,6 @@
 <% for _, tab in ipairs(self.tab_names) do data = self.tabs[tab] %>
 	<div class="cbi-tabcontainer"<%=
-		attr("id", "container.%s.%s.%s" %{ self.config, section, tab }) ..
+		attr("id", "container.%s.%s.%s" %{ self.config, section or 1, tab }) ..
 		attr("data-tab", tab) ..
 		attr("data-tab-title", data.title) ..
 		attr("data-tab-active", tostring(tab == self.selected_tab))
@@ -9,6 +9,6 @@
 			<div class="cbi-tab-descr"><%=data.description%></div>
 		<% end %>
 
-		<% self:render_tab(tab, section, scope or {}) %>
+		<% self:render_tab(tab, section or 1, scope or {}) %>
 	</div>
 <% end %>

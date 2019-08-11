@@ -5,9 +5,13 @@
 	<% if self.description and #self.description > 0 then -%>
 		<div class="cbi-section-descr"><%=self.description%></div>
 	<%- end %>
-	<div class="cbi-section-node">
+	<div class="cbi-section-node<% if self.tabs then %> cbi-section-node-tabbed<% end %>">
 		<div id="cbi-<%=self.config%>-<%=tostring(self):sub(8)%>">
-			<% self:render_children(1, scope or {}) %>
+			<% if self.tabs then %>
+				<%+cbi/tabcontainer%>
+			<% else %>
+				<% self:render_children(1, scope or {}) %>
+			<% end %>
 		</div>
 		<% if self.error and self.error[1] then -%>
 			<div class="cbi-section-error">
