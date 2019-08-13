@@ -1640,7 +1640,8 @@ return L.Class.extend({
 			(root || document).querySelectorAll('[data-tab-title]').forEach(function(pane) {
 				var menu = pane.parentNode.previousElementSibling,
 				    tab = menu.querySelector('[data-tab="%s"]'.format(pane.getAttribute('data-tab'))),
-				    n_errors = pane.querySelectorAll('.cbi-input-invalid').length;
+				    n_errors = pane.querySelectorAll('.cbi-input-invalid, .cbi-value-error').length
+				             - pane.querySelectorAll('.cbi-value-error .cbi-input-invalid').length;
 
 				if (L.dom.isEmpty(pane)) {
 					tab.style.display = 'none';
