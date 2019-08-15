@@ -7,28 +7,22 @@
 'require tools.widgets as widgets';
 
 return L.view.extend({
-	callOffloadSupport: rpc.declare({
-		object: 'luci',
-		method: 'offload_support',
-		expect: { offload_support: false }
-	}),
-
 	callConntrackHelpers: rpc.declare({
 		object: 'luci',
-		method: 'conntrack_helpers',
-		expect: { helpers: [] }
+		method: 'getConntrackHelpers',
+		expect: { result: [] }
 	}),
 
 	load: function() {
 		return Promise.all([
-			this.callOffloadSupport(),
-			this.callConntrackHelpers()
+			this.callConntrackHelpers(),
+			firewall.getDefaults()
 		]);
 	},
 
 	render: function(data) {
-		var hasOffloading = data[0],
-		    ctHelpers = data[1],
+		var ctHelpers = data[0],
+		    fwDefaults = data[1],
 		    m, s, o, inp, out;
 
 		m = new form.Map('firewall', _('Firewall - Zone Settings'),
@@ -55,7 +49,7 @@ return L.view.extend({
 
 		/* Netfilter flow offload support */
 
-		if (hasOffloading) {
+		if (L.hasSystemFeature('offloading')) {
 			s = m.section(form.TypedSection, 'defaults', _('Routing/NAT Offloading'),
 				_('Experimental feature. Not fully compatible with QoS/SQM.'));
 
@@ -125,6 +119,10 @@ return L.view.extend({
 			p[i].value('ACCEPT', _('accept'));
 			p[i].editable = true;
 		}
+
+		p[0].default = fwDefaults.getInput();
+		p[1].default = fwDefaults.getOutput();
+		p[2].default = fwDefaults.getForward();
 
 		o = s.taboption('general', form.Flag, 'masq', _('Masquerading'));
 		o.editable = true;

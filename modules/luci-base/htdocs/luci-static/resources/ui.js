@@ -207,7 +207,7 @@ var UICheckbox = UIElement.extend({
 
 var UISelect = UIElement.extend({
 	__init__: function(value, choices, options) {
-		if (typeof(choices) != 'object')
+		if (!L.isObject(choices))
 			choices = {};
 
 		if (!Array.isArray(value))
@@ -1199,7 +1199,7 @@ var UIDynamicList = UIElement.extend({
 					'name': this.options.name,
 					'value': value })]);
 
-		dl.querySelectorAll('.item, .add-item').forEach(function(item) {
+		dl.querySelectorAll('.item').forEach(function(item) {
 			if (exists)
 				return;
 
@@ -1210,9 +1210,12 @@ var UIDynamicList = UIElement.extend({
 
 			if (hidden && hidden.value === value)
 				exists = true;
-			else if (!hidden || hidden.value >= value)
-				exists = !!item.parentNode.insertBefore(new_item, item);
 		});
+
+		if (!exists) {
+			var ai = dl.querySelector('.add-item');
+			ai.parentNode.insertBefore(new_item, ai);
+		}
 
 		dl.dispatchEvent(new CustomEvent('cbi-dynlist-change', {
 			bubbles: true,
@@ -1553,9 +1556,6 @@ return L.Class.extend({
 			document.addEventListener('dependency-update', this.updateTabs.bind(this));
 
 			this.updateTabs();
-
-			if (!groups.length)
-				this.setActiveTabId(-1, -1);
 		},
 
 		initTabGroup: function(panes) {
@@ -1573,6 +1573,7 @@ return L.Class.extend({
 				    active = pane.getAttribute('data-tab-active') === 'true';
 
 				menu.appendChild(E('li', {
+					'style': L.dom.isEmpty(pane) ? 'display:none' : null,
 					'class': active ? 'cbi-tab' : 'cbi-tab-disabled',
 					'data-tab': name
 				}, E('a', {
@@ -1587,7 +1588,7 @@ return L.Class.extend({
 			group.parentNode.insertBefore(menu, group);
 
 			if (selected === null) {
-				selected = this.getActiveTabId(groupId);
+				selected = this.getActiveTabId(panes[0]);
 
 				if (selected < 0 || selected >= panes.length || L.dom.isEmpty(panes[selected])) {
 					for (var i = 0; i < panes.length; i++) {
@@ -1602,8 +1603,24 @@ return L.Class.extend({
 				menu.childNodes[selected].classList.remove('cbi-tab-disabled');
 				panes[selected].setAttribute('data-tab-active', 'true');
 
-				this.setActiveTabId(groupId, selected);
+				this.setActiveTabId(panes[selected], selected);
 			}
+		},
+
+		getPathForPane: function(pane) {
+			var path = [], node = null;
+
+			for (node = pane ? pane.parentNode : null;
+			     node != null && node.hasAttribute != null;
+			     node = node.parentNode)
+			{
+				if (node.hasAttribute('data-tab'))
+					path.unshift(node.getAttribute('data-tab'));
+				else if (node.hasAttribute('data-section-id'))
+					path.unshift(node.getAttribute('data-section-id'));
+			}
+
+			return path.join('/');
 		},
 
 		getActiveTabState: function() {
@@ -1611,23 +1628,26 @@ return L.Class.extend({
 
 			try {
 				var val = JSON.parse(window.sessionStorage.getItem('tab'));
-				if (val.page === page && Array.isArray(val.groups))
+				if (val.page === page && L.isObject(val.paths))
 					return val;
 			}
 			catch(e) {}
 
 			window.sessionStorage.removeItem('tab');
-			return { page: page, groups: [] };
+			return { page: page, paths: {} };
 		},
 
-		getActiveTabId: function(groupId) {
-			return +this.getActiveTabState().groups[groupId] || 0;
+		getActiveTabId: function(pane) {
+			var path = this.getPathForPane(pane);
+			return +this.getActiveTabState().paths[path] || 0;
 		},
 
-		setActiveTabId: function(groupId, tabIndex) {
+		setActiveTabId: function(pane, tabIndex) {
+			var path = this.getPathForPane(pane);
+
 			try {
 				var state = this.getActiveTabState();
-				    state.groups[groupId] = tabIndex;
+				    state.paths[path] = tabIndex;
 
 			    window.sessionStorage.setItem('tab', JSON.stringify(state));
 			}
@@ -1639,9 +1659,12 @@ return L.Class.extend({
 		updateTabs: function(ev, root) {
 			(root || document).querySelectorAll('[data-tab-title]').forEach(function(pane) {
 				var menu = pane.parentNode.previousElementSibling,
-				    tab = menu.querySelector('[data-tab="%s"]'.format(pane.getAttribute('data-tab'))),
+				    tab = menu ? menu.querySelector('[data-tab="%s"]'.format(pane.getAttribute('data-tab'))) : null,
 				    n_errors = pane.querySelectorAll('.cbi-input-invalid, .cbi-value-error').length
 				             - pane.querySelectorAll('.cbi-value-error .cbi-input-invalid').length;
+
+				if (!menu || !tab)
+					return;
 
 				if (L.dom.isEmpty(pane)) {
 					tab.style.display = 'none';
@@ -1688,7 +1711,7 @@ return L.Class.extend({
 				if (L.dom.matches(pane, '[data-tab]')) {
 					if (pane.getAttribute('data-tab') === name) {
 						pane.setAttribute('data-tab-active', 'true');
-						L.ui.tabs.setActiveTabId(groupId, index);
+						L.ui.tabs.setActiveTabId(pane, index);
 					}
 					else {
 						pane.setAttribute('data-tab-active', 'false');
@@ -2057,6 +2080,29 @@ return L.Class.extend({
 			return validatorFn;
 		}
 		catch (e) { }
+	},
+
+	createHandlerFn: function(ctx, fn /*, ... */) {
+		if (typeof(fn) == 'string')
+			fn = ctx[fn];
+
+		if (typeof(fn) != 'function')
+			return null;
+
+		return Function.prototype.bind.apply(function() {
+			var t = arguments[arguments.length - 1].target;
+
+			t.classList.add('spinning');
+			t.disabled = true;
+
+			if (t.blur)
+				t.blur();
+
+			Promise.resolve(fn.apply(ctx, arguments)).then(function() {
+				t.classList.remove('spinning');
+				t.disabled = false;
+			});
+		}, this.varargs(arguments, 2, ctx));
 	},
 
 	/* Widgets */

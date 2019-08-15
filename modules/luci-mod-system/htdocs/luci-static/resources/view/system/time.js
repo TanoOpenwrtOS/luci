@@ -7,9 +7,9 @@ var callInitList, callInitAction, callSetLocaltime, callGetLocaltime, callTimezo
 
 callInitList = rpc.declare({
 	object: 'luci',
-	method: 'initList',
+	method: 'getInitList',
 	params: [ 'name' ],
-	expect: { result: {} },
+	expect: { '': {} },
 	filter: function(res) {
 		for (var k in res)
 			return +res[k].enabled;
@@ -19,7 +19,7 @@ callInitList = rpc.declare({
 
 callInitAction = rpc.declare({
 	object: 'luci',
-	method: 'initCall',
+	method: 'setInitAction',
 	params: [ 'name', 'action' ],
 	expect: { result: false }
 });
@@ -27,20 +27,20 @@ callInitAction = rpc.declare({
 callGetLocaltime = rpc.declare({
 	object: 'luci',
 	method: 'getLocaltime',
-	expect: { localtime: 0 }
+	expect: { result: 0 }
 });
 
 callSetLocaltime = rpc.declare({
 	object: 'luci',
 	method: 'setLocaltime',
 	params: [ 'localtime' ],
-	expect: { localtime: 0 }
+	expect: { result: 0 }
 });
 
 callTimezone = rpc.declare({
 	object: 'luci',
-	method: 'timezone',
-	expect: { result: {} }
+	method: 'getTimezones',
+	expect: { '': {} }
 });
 
 CBILocalTime = form.DummyValue.extend({

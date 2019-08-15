@@ -7,9 +7,9 @@ var callInitList;
 
 callInitList = rpc.declare({
 	object: 'luci',
-	method: 'initList',
+	method: 'getInitList',
 	params: [ 'name' ],
-	expect: { result: {} },
+	expect: { '': {} },
 	filter: function(res) {
 		for (var k in res)
 			return +res[k].enabled;
@@ -35,7 +35,6 @@ return L.view.extend({
 			_('Here you can configure the basic aspects of your device like its hostname or the logging.'));
 
 		m.chain('luci');
-		m.tabbed = true;
 
 		s = m.section(form.TypedSection, 'system');
 		s.anonymous = true;
