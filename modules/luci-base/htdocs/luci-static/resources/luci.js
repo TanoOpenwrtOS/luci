@@ -360,8 +360,13 @@
 						break;
 
 					case 'object':
-						content = JSON.stringify(opt.content);
-						contenttype = 'application/json';
+						if (!(opt.content instanceof FormData)) {
+							content = JSON.stringify(opt.content);
+							contenttype = 'application/json';
+						}
+						else {
+							content = opt.content;
+						}
 						break;
 
 					default:
@@ -377,6 +382,9 @@
 							else
 								contenttype = opt.headers[header];
 						}
+
+				if ('progress' in opt && 'upload' in opt.xhr)
+					opt.xhr.upload.addEventListener('progress', opt.progress);
 
 				if (contenttype != null)
 					opt.xhr.setRequestHeader('Content-Type', contenttype);
@@ -491,7 +499,7 @@
 			return true;
 		},
 
-		remove: function(entry) {
+		remove: function(fn) {
 			if (typeof(fn) != 'function')
 				throw new TypeError('Invalid argument to LuCI.Poll.remove()');
 
@@ -611,15 +619,34 @@
 
 			if (type instanceof Error) {
 				e = type;
-				stack = (e.stack || '').split(/\n/);
 
 				if (msg)
 					e.message = msg + ': ' + e.message;
 			}
 			else {
+				try { throw new Error('stacktrace') }
+				catch (e2) { stack = (e2.stack || '').split(/\n/) }
+
 				e = new (window[type || 'Error'] || Error)(msg || 'Unspecified error');
 				e.name = type || 'Error';
 			}
+
+			stack = (stack || []).map(function(frame) {
+				frame = frame.replace(/(.*?)@(.+):(\d+):(\d+)/g, 'at $1 ($2:$3:$4)').trim();
+				return frame ? '  ' + frame : '';
+			});
+
+			if (!/^  at /.test(stack[0]))
+				stack.shift();
+
+			if (/\braise /.test(stack[0]))
+				stack.shift();
+
+			if (/\berror /.test(stack[0]))
+				stack.shift();
+
+			if (stack.length)
+				e.message += '\n' + stack.join('\n');
 
 			if (window.console && console.debug)
 				console.debug(e);
@@ -632,28 +659,16 @@
 				L.raise.apply(L, Array.prototype.slice.call(arguments));
 			}
 			catch (e) {
-				var stack = (e.stack || '').split(/\n/).map(function(frame) {
-					frame = frame.replace(/(.*?)@(.+):(\d+):(\d+)/g, 'at $1 ($2:$3:$4)').trim();
-					return frame ? '  ' + frame : '';
-				});
+				if (!e.reported) {
+					if (L.ui)
+						L.ui.addNotification(e.name || _('Runtime error'),
+							E('pre', {}, e.message), 'danger');
+					else
+						L.dom.content(document.querySelector('#maincontent'),
+							E('pre', { 'class': 'alert-message error' }, e.message));
 
-				if (!/^  at /.test(stack[0]))
-					stack.shift();
-
-				if (/\braise /.test(stack[0]))
-					stack.shift();
-
-				if (/\berror /.test(stack[0]))
-					stack.shift();
-
-				stack = stack.length ? '\n' + stack.join('\n') : '';
-
-				if (L.ui)
-					L.ui.showModal(e.name || _('Runtime error'),
-						E('pre', { 'class': 'alert-message error' }, e.message + stack));
-				else
-					L.dom.content(document.querySelector('#maincontent'),
-						E('pre', { 'class': 'alert-message error' }, e + stack));
+					e.reported = true;
+				}
 
 				throw e;
 			}
@@ -835,6 +850,25 @@
 			return (ft != null && ft != false);
 		},
 
+		notifySessionExpiry: function() {
+			Poll.stop();
+
+			L.ui.showModal(_('Session expired'), [
+				E('div', { class: 'alert-message warning' },
+					_('A new login is required since the authentication session expired.')),
+				E('div', { class: 'right' },
+					E('div', {
+						class: 'btn primary',
+						click: function() {
+							var loc = window.location;
+							window.location = loc.protocol + '//' + loc.host + loc.pathname + loc.search;
+						}
+					}, _('To login…')))
+			]);
+
+			L.raise('SessionError', 'Login session is expired');
+		},
+
 		setupDOM: function(res) {
 			var domEv = res[0],
 			    uiClass = res[1],
@@ -844,26 +878,31 @@
 
 			rpcClass.setBaseURL(rpcBaseURL);
 
-			Request.addInterceptor(function(res) {
-				if (res.status != 403 || res.headers.get('X-LuCI-Login-Required') != 'yes')
+			rpcClass.addInterceptor(function(msg, req) {
+				if (!L.isObject(msg) || !L.isObject(msg.error) || msg.error.code != -32002)
 					return;
 
-				Poll.stop();
+				if (!L.isObject(req) || (req.object == 'session' && req.method == 'access'))
+					return;
 
-				L.ui.showModal(_('Session expired'), [
-					E('div', { class: 'alert-message warning' },
-						_('A new login is required since the authentication session expired.')),
-					E('div', { class: 'right' },
-						E('div', {
-							class: 'btn primary',
-							click: function() {
-								var loc = window.location;
-								window.location = loc.protocol + '//' + loc.host + loc.pathname + loc.search;
-							}
-						}, _('To login…')))
-				]);
+				return rpcClass.declare({
+					'object': 'session',
+					'method': 'access',
+					'params': [ 'scope', 'object', 'function' ],
+					'expect': { access: true }
+				})('uci', 'luci', 'read').catch(L.notifySessionExpiry);
+			});
 
-				throw 'Session expired';
+			Request.addInterceptor(function(res) {
+				var isDenied = false;
+
+				if (res.status == 403 && res.headers.get('X-LuCI-Login-Required') == 'yes')
+					isDenied = true;
+
+				if (!isDenied)
+					return;
+
+				L.notifySessionExpiry();
 			});
 
 			return this.probeSystemFeatures().finally(this.initDOM);
@@ -1230,9 +1269,9 @@
 				return inst[method].apply(inst, inst.varargs(arguments, 2));
 			},
 
-			isEmpty: function(node) {
+			isEmpty: function(node, ignoreFn) {
 				for (var child = node.firstElementChild; child != null; child = child.nextElementSibling)
-					if (!child.classList.contains('hidden'))
+					if (!child.classList.contains('hidden') && (!ignoreFn || !ignoreFn(child)))
 						return false;
 
 				return true;
@@ -1298,24 +1337,18 @@
 
 				if (mc.querySelector('.cbi-map')) {
 					footer.appendChild(E('div', { 'class': 'cbi-page-actions' }, [
-						E('input', {
+						E('button', {
 							'class': 'cbi-button cbi-button-apply',
-							'type': 'button',
-							'value': _('Save & Apply'),
-							'click': L.bind(this.handleSaveApply, this)
-						}), ' ',
-						E('input', {
+							'click': L.ui.createHandlerFn(this, 'handleSaveApply')
+						}, _('Save & Apply')), ' ',
+						E('button', {
 							'class': 'cbi-button cbi-button-save',
-							'type': 'submit',
-							'value': _('Save'),
-							'click': L.bind(this.handleSave, this)
-						}), ' ',
-						E('input', {
+							'click': L.ui.createHandlerFn(this, 'handleSave')
+						}, _('Save')), ' ',
+						E('button', {
 							'class': 'cbi-button cbi-button-reset',
-							'type': 'button',
-							'value': _('Reset'),
-							'click': L.bind(this.handleReset, this)
-						})
+							'click': L.ui.createHandlerFn(this, 'handleReset')
+						}, _('Reset'))
 					]));
 				}
 

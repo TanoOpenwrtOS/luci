@@ -20,21 +20,36 @@
 	"luci-access": {
 		"description": "Grant access to basic LuCI procedures",
 		"read": {
+			"file": {
+				"/": [ "list" ],
+				"/*": [ "list" ],
+				"/etc/crontabs/root": [ "read" ],
+				"/etc/rc.local": [ "read" ],
+				"/proc/sys/kernel/hostname": [ "read" ]
+			},
 			"ubus": {
-				"iwinfo": [ "info" ],
-				"luci": [ "getBoardJSON", "getDUIDHints", "getHostHints", "getIfaddrs", "getInitList", "getLocaltime", "getTimezones", "getDHCPLeases", "getLEDs", "getNetworkDevices", "getUSBDevices" ],
+				"file": [ "list", "read", "stat" ],
+				"iwinfo": [ "assoclist", "freqlist", "txpowerlist", "countrylist" ],
+				"luci": [ "getBoardJSON", "getDUIDHints", "getHostHints", "getIfaddrs", "getInitList", "getLocaltime", "getTimezones", "getDHCPLeases", "getLEDs", "getNetworkDevices", "getUSBDevices", "getWirelessDevices", "getSwconfigFeatures", "getSwconfigPortState" ],
 				"network.device": [ "status" ],
 				"network.interface": [ "dump" ],
-				"network.wireless": [ "status" ],
 				"network": [ "get_proto_handlers" ],
 				"uci": [ "changes", "get" ]
 			},
 			"uci": [ "*" ]
 		},
 		"write": {
+			"cgi-io": [ "upload", "/etc/luci-uploads/*" ],
+			"file": {
+				"/etc/crontabs/root": [ "write" ],
+				"/etc/luci-uploads/*": [ "write" ],
+				"/etc/rc.local": [ "write" ]
+			},
 			"ubus": {
+				"file": [ "write", "remove" ],
+				"iwinfo": [ "scan" ],
 				"luci": [ "setInitAction", "setLocaltime" ],
-				"uci": [ "add", "apply", "confirm", "delete", "order", "set" ]
+				"uci": [ "add", "apply", "confirm", "delete", "order", "set", "rename" ]
 			},
 			"uci": [ "*" ]
 		}

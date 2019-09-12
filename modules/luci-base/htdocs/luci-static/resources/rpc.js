@@ -2,7 +2,8 @@
 
 var rpcRequestID = 1,
     rpcSessionID = L.env.sessionid || '00000000000000000000000000000000',
-    rpcBaseURL = L.url('admin/ubus');
+    rpcBaseURL = L.url('admin/ubus'),
+    rpcInterceptorFns = [];
 
 return L.Class.extend({
 	call: function(req, cb) {
@@ -13,55 +14,73 @@ return L.Class.extend({
 				return Promise.resolve([]);
 
 			for (var i = 0; i < req.length; i++)
-				q += '%s%s.%s'.format(
-					q ? ';' : '/',
-					req[i].params[1],
-					req[i].params[2]
-				);
+				if (req[i].params)
+					q += '%s%s.%s'.format(
+						q ? ';' : '/',
+						req[i].params[1],
+						req[i].params[2]
+					);
 		}
-		else {
+		else if (req.params) {
 			q += '/%s.%s'.format(req.params[1], req.params[2]);
 		}
 
 		return L.Request.post(rpcBaseURL + q, req, {
 			timeout: (L.env.rpctimeout || 5) * 1000,
 			credentials: true
-		}).then(cb);
+		}).then(cb, cb);
 	},
 
-	handleListReply: function(req, msg) {
-		var list = msg.result;
+	parseCallReply: function(req, res) {
+		var msg = null;
 
-		/* verify message frame */
-		if (typeof(msg) != 'object' || msg.jsonrpc != '2.0' || !msg.id || !Array.isArray(list))
-			list = [ ];
+		if (res instanceof Error)
+			return req.reject(res);
 
-		req.resolve(list);
-	},
+		try {
+			if (!res.ok)
+				L.raise('RPCError', 'RPC call to %s/%s failed with HTTP error %d: %s',
+					req.object, req.method, res.status, res.statusText || '?');
 
-	handleCallReply: function(req, res) {
-		var type = Object.prototype.toString,
-		    msg = null;
-
-		if (!res.ok)
-			L.error('RPCError', 'RPC call failed with HTTP error %d: %s',
-				res.status, res.statusText || '?');
-
-		msg = res.json();
-
-		/* fetch response attribute and verify returned type */
-		var ret = undefined;
-
-		/* verify message frame */
-		if (typeof(msg) == 'object' && msg.jsonrpc == '2.0') {
-			if (typeof(msg.error) == 'object' && msg.error.code && msg.error.message)
-				req.reject(new Error('RPC call failed with error %d: %s'
-					.format(msg.error.code, msg.error.message || '?')));
-			else if (Array.isArray(msg.result) && msg.result[0] == 0)
-				ret = (msg.result.length > 1) ? msg.result[1] : msg.result[0];
+			msg = res.json();
 		}
-		else {
-			req.reject(new Error('Invalid message frame received'));
+		catch (e) {
+			return req.reject(e);
+		}
+
+		/*
+		 * The interceptor args are intentionally swapped.
+		 * Response is passed as first arg to align with Request class interceptors
+		 */
+		Promise.all(rpcInterceptorFns.map(function(fn) { return fn(msg, req) }))
+			.then(this.handleCallReply.bind(this, req, msg))
+			.catch(req.reject);
+	},
+
+	handleCallReply: function(req, msg) {
+		var type = Object.prototype.toString,
+		    ret = null;
+
+		try {
+			/* verify message frame */
+			if (!L.isObject(msg) || msg.jsonrpc != '2.0')
+				L.raise('RPCError', 'RPC call to %s/%s returned invalid message frame',
+					req.object, req.method);
+
+			/* check error condition */
+			if (L.isObject(msg.error) && msg.error.code && msg.error.message)
+				L.raise('RPCError', 'RPC call to %s/%s failed with error %d: %s',
+					req.object, req.method, msg.error.code, msg.error.message || '?');
+		}
+		catch (e) {
+			return req.reject(e);
+		}
+
+		if (!req.object && !req.method) {
+			ret = msg.result;
+		}
+		else if (Array.isArray(msg.result)) {
+			ret = (msg.result.length > 1) ? msg.result[1] : msg.result[0];
 		}
 
 		if (req.expect) {
@@ -94,7 +113,16 @@ return L.Class.extend({
 			params:  arguments.length ? this.varargs(arguments) : undefined
 		};
 
-		return this.call(msg, this.handleListReply);
+		return new Promise(L.bind(function(resolveFn, rejectFn) {
+			/* store request info */
+			var req = {
+				resolve: resolveFn,
+				reject:  rejectFn
+			};
+
+			/* call rpc */
+			this.call(msg, this.parseCallReply.bind(this, req));
+		}, this));
 	},
 
 	declare: function(options) {
@@ -120,7 +148,9 @@ return L.Class.extend({
 					resolve: resolveFn,
 					reject:  rejectFn,
 					params:  params,
-					priv:    priv
+					priv:    priv,
+					object:  options.object,
+					method:  options.method
 				};
 
 				/* build message object */
@@ -137,7 +167,7 @@ return L.Class.extend({
 				};
 
 				/* call rpc */
-				rpc.call(msg, rpc.handleCallReply.bind(rpc, req));
+				rpc.call(msg, rpc.parseCallReply.bind(rpc, req));
 			});
 		}, this, this, options);
 	},
@@ -156,5 +186,36 @@ return L.Class.extend({
 
 	setBaseURL: function(url) {
 		rpcBaseURL = url;
+	},
+
+	getStatusText: function(statusCode) {
+		switch (statusCode) {
+		case 0: return _('Command OK');
+		case 1: return _('Invalid command');
+		case 2: return _('Invalid argument');
+		case 3: return _('Method not found');
+		case 4: return _('Resource not found');
+		case 5: return _('No data received');
+		case 6: return _('Permission denied');
+		case 7: return _('Request timeout');
+		case 8: return _('Not supported');
+		case 9: return _('Unspecified error');
+		case 10: return _('Connection lost');
+		default: return _('Unknown error code');
+		}
+	},
+
+	addInterceptor: function(interceptorFn) {
+		if (typeof(interceptorFn) == 'function')
+			rpcInterceptorFns.push(interceptorFn);
+		return interceptorFn;
+	},
+
+	removeInterceptor: function(interceptorFn) {
+		var oldlen = rpcInterceptorFns.length, i = oldlen;
+		while (i--)
+			if (rpcInterceptorFns[i] === interceptorFn)
+				rpcInterceptorFns.splice(i, 1);
+		return (rpcInterceptorFns.length < oldlen);
 	}
 });

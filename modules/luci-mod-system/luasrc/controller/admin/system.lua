@@ -20,8 +20,8 @@ function index()
 		entry({"admin", "system", "admin", "sshkeys", "json"}, post_on({ keys = true }, "action_sshkeys"))
 	end
 
-	entry({"admin", "system", "startup"}, form("admin_system/startup"), _("Startup"), 45)
-	entry({"admin", "system", "crontab"}, form("admin_system/crontab"), _("Scheduled Tasks"), 46)
+	entry({"admin", "system", "startup"}, view("system/startup"), _("Startup"), 45)
+	entry({"admin", "system", "crontab"}, view("system/crontab"), _("Scheduled Tasks"), 46)
 
 	if fs.access("/sbin/block") and fs.access("/etc/config/fstab") then
 		entry({"admin", "system", "fstab"}, cbi("admin_system/fstab"), _("Mount Points"), 50)
