@@ -945,7 +945,15 @@
 
 		/* Data helpers */
 		isObject: function(val) {
-			return (val != null && typeof(val) == 'object');
+			var ret = (val != null && typeof(val) == 'object');
+			if (ret) {
+				for(var key in val) {
+					if(val.hasOwnProperty(key))
+						return true;
+				}
+				return false;
+			}
+			return ret;
 		},
 
 		sortedKeys: function(obj, key, sortmode) {
