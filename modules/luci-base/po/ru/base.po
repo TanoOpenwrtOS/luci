@@ -28,6 +28,11 @@ msgstr "%.1f дБ"
 msgid "%.2mB (%d %s)"
 msgstr "%.2mБ (%d %s)"
 
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1507
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1825
+msgid " %s (%1000mB)"
+msgstr " %s (%1000mБ)"
+
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:6
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:7
 #: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:176

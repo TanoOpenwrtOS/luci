@@ -1504,7 +1504,7 @@ var UIFileUpload = UIElement.extend({
 				this.stat = stat;
 
 			if (this.stat != null)
-				label = [ this.iconForType(this.stat.type), ' %s (%1000mB)'.format(this.truncatePath(this.stat.path), this.stat.size) ];
+				label = [ this.iconForType(this.stat.type), _(' %s (%1000mB)').format(this.truncatePath(this.stat.path), this.stat.size) ];
 			else if (this.value != null)
 				label = [ this.iconForType('file'), ' %s (%s)'.format(this.truncatePath(this.value), _('File not accessible')) ];
 			else
@@ -1822,7 +1822,7 @@ var UIFileUpload = UIElement.extend({
 
 			L.dom.content(button, [
 				this.iconForType(fileStat.type),
-				' %s (%1000mB)'.format(this.truncatePath(path), fileStat.size)
+				_(' %s (%1000mB)').format(this.truncatePath(path), fileStat.size)
 			]);
 
 			browser.classList.remove('open');

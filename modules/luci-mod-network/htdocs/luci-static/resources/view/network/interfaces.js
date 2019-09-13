@@ -38,8 +38,8 @@ function render_iface(dev, alias) {
 				_('Device'),    dev ? dev.getName() : _('Not present'),
 				_('Connected'), up ? _('yes') : _('no'),
 				_('MAC'),       dev ? dev.getMAC() : null,
-				_('RX'),        dev ? '%.2mB (%d %s)'.format(dev.getRXBytes(), dev.getRXPackets(), _('Pkts.')) : null,
-				_('TX'),        dev ? '%.2mB (%d %s)'.format(dev.getTXBytes(), dev.getTXPackets(), _('Pkts.')) : null
+				_('RX'),        dev ? _('%.2mB (%d %s)').format(dev.getRXBytes(), dev.getRXPackets(), _('Pkts.')) : null,
+				_('TX'),        dev ? _('%.2mB (%d %s)').format(dev.getTXBytes(), dev.getTXPackets(), _('Pkts.')) : null
 			])
 		])
 	]);
@@ -73,8 +73,8 @@ function render_status(node, ifc, with_device) {
 		_('Device'),   with_device ? (maindev ? maindev.getShortName() : E('em', _('Not present'))) : null,
 		_('Uptime'),   (!changecount && ifc.isUp()) ? '%t'.format(ifc.getUptime()) : null,
 		_('MAC'),      (!changecount && !ifc.isDynamic() && !ifc.isAlias() && macaddr) ? macaddr : null,
-		_('RX'),       (!changecount && !ifc.isDynamic() && !ifc.isAlias() && maindev) ? '%.2mB (%d %s)'.format(maindev.getRXBytes(), maindev.getRXPackets(), _('Pkts.')) : null,
-		_('TX'),       (!changecount && !ifc.isDynamic() && !ifc.isAlias() && maindev) ? '%.2mB (%d %s)'.format(maindev.getTXBytes(), maindev.getTXPackets(), _('Pkts.')) : null,
+		_('RX'),       (!changecount && !ifc.isDynamic() && !ifc.isAlias() && maindev) ? _('%.2mB (%d %s)').format(maindev.getRXBytes(), maindev.getRXPackets(), _('Pkts.')) : null,
+		_('TX'),       (!changecount && !ifc.isDynamic() && !ifc.isAlias() && maindev) ? _('%.2mB (%d %s)').format(maindev.getTXBytes(), maindev.getTXPackets(), _('Pkts.')) : null,
 		_('IPv4'),     ipaddrs[0],
 		_('IPv4'),     ipaddrs[1],
 		_('IPv4'),     ipaddrs[2],
