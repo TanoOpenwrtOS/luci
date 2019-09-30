@@ -399,17 +399,21 @@
 		},
 
 		handleReadyStateChange: function(resolveFn, rejectFn, ev) {
-			var xhr = this.xhr;
+			var xhr = this.xhr,
+			    duration = Date.now() - this.start;
 
 			if (xhr.readyState !== 4)
 				return;
 
 			if (xhr.status === 0 && xhr.statusText === '') {
-				rejectFn.call(this, new Error('XHR request aborted by browser'));
+				if (duration >= this.timeout)
+					rejectFn.call(this, new Error('XHR request timed out'));
+				else
+					rejectFn.call(this, new Error('XHR request aborted by browser'));
 			}
 			else {
 				var response = new Response(
-					xhr, xhr.responseURL || this.url, Date.now() - this.start);
+					xhr, xhr.responseURL || this.url, duration);
 
 				Promise.all(Request.interceptors.map(function(fn) { return fn(response) }))
 					.then(resolveFn.bind(this, response))
@@ -575,8 +579,13 @@
 		__init__: function(env) {
 
 			document.querySelectorAll('script[src*="/luci.js"]').forEach(function(s) {
-				if (env.base_url == null || env.base_url == '')
-					env.base_url = s.getAttribute('src').replace(/\/luci\.js(?:\?v=[^?]+)?$/, '');
+				if (env.base_url == null || env.base_url == '') {
+					var m = (s.getAttribute('src') || '').match(/^(.*)\/luci\.js(?:\?v=([^?]+))?$/);
+					if (m) {
+						env.base_url = m[1];
+						env.resource_version = m[2];
+					}
+				}
 			});
 
 			if (env.base_url == null)
@@ -693,7 +702,7 @@
 				return classes[name];
 			}
 
-			url = '%s/%s.js'.format(L.env.base_url, name.replace(/\./g, '/'));
+			url = '%s/%s.js%s'.format(L.env.base_url, name.replace(/\./g, '/'), (L.env.resource_version ? '?v=' + L.env.resource_version : ''));
 			from = [ name ].concat(from);
 
 			var compileClass = function(res) {
@@ -814,9 +823,14 @@
 		},
 
 		probeSystemFeatures: function() {
+			var sessionid = classes.rpc.getSessionID();
+
 			if (sysFeatures == null) {
 				try {
-					sysFeatures = JSON.parse(window.sessionStorage.getItem('sysFeatures'));
+					var data = JSON.parse(window.sessionStorage.getItem('sysFeatures'));
+
+					if (this.isObject(data) && this.isObject(data[sessionid]))
+						sysFeatures = data[sessionid];
 				}
 				catch (e) {}
 			}
@@ -828,7 +842,10 @@
 					expect: { '': {} }
 				})().then(function(features) {
 					try {
-						window.sessionStorage.setItem('sysFeatures', JSON.stringify(features));
+						var data = {};
+						    data[sessionid] = features;
+
+						window.sessionStorage.setItem('sysFeatures', JSON.stringify(data));
 					}
 					catch (e) {}
 
@@ -1340,23 +1357,22 @@
 			},
 
 			addFooter: function() {
-				var footer = E([]),
-				    mc = document.getElementById('maincontent');
+				var footer = E([]);
 
-				if (mc.querySelector('.cbi-map')) {
+				if (this.handleSaveApply || this.handleSave || this.handleReset) {
 					footer.appendChild(E('div', { 'class': 'cbi-page-actions' }, [
-						E('button', {
+						this.handleSaveApply ? E('button', {
 							'class': 'cbi-button cbi-button-apply',
 							'click': L.ui.createHandlerFn(this, 'handleSaveApply')
-						}, _('Save & Apply')), ' ',
-						E('button', {
+						}, [ _('Save & Apply') ]) : '', ' ',
+						this.handleSave ? E('button', {
 							'class': 'cbi-button cbi-button-save',
 							'click': L.ui.createHandlerFn(this, 'handleSave')
-						}, _('Save')), ' ',
-						E('button', {
+						}, [ _('Save') ]) : '', ' ',
+						this.handleReset ? E('button', {
 							'class': 'cbi-button cbi-button-reset',
 							'click': L.ui.createHandlerFn(this, 'handleReset')
-						}, _('Reset'))
+						}, [ _('Reset') ]) : ''
 					]));
 				}
 

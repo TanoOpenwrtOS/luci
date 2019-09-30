@@ -78,6 +78,7 @@ var callIwinfoScan = rpc.declare({
 	object: 'iwinfo',
 	method: 'scan',
 	params: [ 'device' ],
+	nobatch: true,
 	expect: { results: [] }
 });
 
@@ -174,6 +175,10 @@ function getProtocolHandlers(cache) {
 	return callGetProtoHandlers().then(function(protos) {
 		if (!L.isObject(protos))
 			throw !1;
+
+		/* Register "none" protocol */
+		if (!protos.hasOwnProperty('none'))
+			Object.assign(protos, { none: { no_device: false } });
 
 		/* Hack: emulate relayd protocol */
 		if (!protos.hasOwnProperty('relay'))
@@ -459,7 +464,9 @@ function initNetworkState(refresh) {
 					if (a.family == 'packet') {
 						s.netdevs[name].flags   = a.flags;
 						s.netdevs[name].stats   = a.data;
-						s.netdevs[name].macaddr = a.addr;
+
+						if (a.addr != null && a.addr != '00:00:00:00:00:00' && a.addr.length == 17)
+							s.netdevs[name].macaddr = a.addr;
 					}
 					else if (a.family == 'inet') {
 						s.netdevs[name].ipaddrs.push(a.addr + '/' + a.netmask);
@@ -815,7 +822,9 @@ Network = L.Class.extend({
 	},
 
 	deleteNetwork: function(name) {
-		return Promise.all([ L.require('firewall').catch(function() { return null }), initNetworkState() ]).then(function() {
+		var requireFirewall = Promise.resolve(L.require('firewall')).catch(function() {});
+
+		return Promise.all([ requireFirewall, initNetworkState() ]).then(function() {
 			var uciInterface = uci.get('network', name);
 
 			if (uciInterface != null && uciInterface['.type'] == 'interface') {
@@ -1307,6 +1316,18 @@ Hosts = L.Class.extend({
 			if (this.hosts[mac].ipv6 == ip6addr)
 				return mac;
 		return null;
+	},
+
+	getMACHints: function(preferIp6) {
+		var rv = [];
+		for (var mac in this.hosts) {
+			var hint = this.hosts[mac].name ||
+				this.hosts[mac][preferIp6 ? 'ipv6' : 'ipv4'] ||
+				this.hosts[mac][preferIp6 ? 'ipv4' : 'ipv6'];
+
+			rv.push([mac, hint]);
+		}
+		return rv.sort(function(a, b) { return a[0] > b[0] });
 	}
 });
 
@@ -1740,10 +1761,16 @@ Device = L.Class.extend({
 		this.network = network;
 	},
 
-	_ubus: function(field) {
-		var dump = _state.devices[this.ifname] || {};
+	_devstate: function(/* ... */) {
+		var rv = this.dev;
 
-		return (field != null ? dump[field] : dump);
+		for (var i = 0; i < arguments.length; i++)
+			if (L.isObject(rv))
+				rv = rv[arguments[i]];
+			else
+				return null;
+
+		return rv;
 	},
 
 	getName: function() {
@@ -1751,24 +1778,21 @@ Device = L.Class.extend({
 	},
 
 	getMAC: function() {
-		var mac = (this.dev != null ? this.dev.macaddr : null);
-		if (mac == null)
-			mac = this._ubus('macaddr');
-
+		var mac = this._devstate('macaddr');
 		return mac ? mac.toUpperCase() : null;
 	},
 
 	getMTU: function() {
-		return this.dev ? this.dev.mtu : null;
+		return this._devstate('mtu');
 	},
 
 	getIPAddrs: function() {
-		var addrs = (this.dev != null ? this.dev.ipaddrs : null);
+		var addrs = this._devstate('ipaddrs');
 		return (Array.isArray(addrs) ? addrs : []);
 	},
 
 	getIP6Addrs: function() {
-		var addrs = (this.dev != null ? this.dev.ip6addrs : null);
+		var addrs = this._devstate('ip6addrs');
 		return (Array.isArray(addrs) ? addrs : []);
 	},
 
@@ -1858,7 +1882,7 @@ Device = L.Class.extend({
 	},
 
 	isUp: function() {
-		var up = this._ubus('up');
+		var up = this._devstate('flags', 'up');
 
 		if (up == null)
 			up = (this.getType() == 'alias');
@@ -1871,26 +1895,26 @@ Device = L.Class.extend({
 	},
 
 	isBridgePort: function() {
-		return (this.dev != null && this.dev.bridge != null);
+		return (this._devstate('bridge') != null);
 	},
 
 	getTXBytes: function() {
-		var stat = this._ubus('statistics');
+		var stat = this._devstate('stats');
 		return (stat != null ? stat.tx_bytes || 0 : 0);
 	},
 
 	getRXBytes: function() {
-		var stat = this._ubus('statistics');
+		var stat = this._devstate('stats');
 		return (stat != null ? stat.rx_bytes || 0 : 0);
 	},
 
 	getTXPackets: function() {
-		var stat = this._ubus('statistics');
+		var stat = this._devstate('stats');
 		return (stat != null ? stat.tx_packets || 0 : 0);
 	},
 
 	getRXPackets: function() {
-		var stat = this._ubus('statistics');
+		var stat = this._devstate('stats');
 		return (stat != null ? stat.rx_packets || 0 : 0);
 	},
 
@@ -2097,7 +2121,17 @@ WifiNetwork = L.Class.extend({
 	},
 
 	getSSID: function() {
+		if (this.getMode() == 'mesh')
+			return null;
+
 		return this.ubus('net', 'config', 'ssid') || this.get('ssid');
+	},
+
+	getMeshID: function() {
+		if (this.getMode() != 'mesh')
+			return null;
+
+		return this.ubus('net', 'config', 'mesh_id') || this.get('mesh_id');
 	},
 
 	getBSSID: function() {

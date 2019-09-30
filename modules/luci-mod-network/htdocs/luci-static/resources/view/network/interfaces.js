@@ -65,7 +65,7 @@ function render_status(node, ifc, with_device) {
 	    ipaddrs = changecount ? [] : ifc.getIPAddrs(),
 	    ip6addrs = changecount ? [] : ifc.getIP6Addrs(),
 	    errors = ifc.getErrors(),
-	    maindev = ifc.getDevice(),
+	    maindev = ifc.getL3Device() || ifc.getDevice(),
 	    macaddr = maindev ? maindev.getMAC() : null;
 
 	return L.itemlist(node, [
@@ -591,6 +591,10 @@ return L.view.extend({
 					so.value('relay', _('relay mode'));
 					so.value('hybrid', _('hybrid mode'));
 
+					so = ss.taboption('ipv6', form.Flag , 'master', _('Master'), _('Set this interface as master for the dhcpv6 relay.'));
+					so.depends('dhcpv6', 'relay');
+					so.depends('dhcpv6', 'hybrid');
+
 					so = ss.taboption('ipv6', form.ListValue, 'ra_management', _('DHCPv6-Mode'), _('Default is stateless + stateful'));
 					so.value('0', _('stateless'));
 					so.value('1', _('stateless + stateful'));
@@ -738,6 +742,12 @@ return L.view.extend({
 
 				nodes.querySelector('[id="%s"] input[type="text"]'.format(name.cbid('_new_'))).focus();
 			}, this));
+		};
+
+		s.handleRemove = function(section_id, ev) {
+			return network.deleteNetwork(section_id).then(L.bind(function(section_id, ev) {
+				return form.GridSection.prototype.handleRemove.apply(this, [section_id, ev]);
+			}, this, section_id, ev));
 		};
 
 		o = s.option(form.DummyValue, '_ifacebox');

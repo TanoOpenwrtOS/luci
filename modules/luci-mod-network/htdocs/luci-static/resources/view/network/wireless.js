@@ -87,8 +87,9 @@ function render_network_status(radioNet) {
 	var mode = radioNet.getActiveMode(),
 	    bssid = radioNet.getActiveBSSID(),
 	    channel = radioNet.getChannel(),
-	    disabled = (radioNet.get('disabled') == '1'),
+	    disabled = (radioNet.get('disabled') == '1' || uci.get('wireless', radioNet.getWifiDeviceName(), 'disabled') == '1'),
 	    is_assoc = (bssid && bssid != '00:00:00:00:00:00' && channel && mode != 'Unknown' && !disabled),
+	    is_mesh = (radioNet.getMode() == 'mesh'),
 	    changecount = count_changes(radioNet.getName()),
 	    status_text = null;
 
@@ -101,7 +102,7 @@ function render_network_status(radioNet) {
 		status_text = E('em', disabled ? _('Wireless is disabled') : _('Wireless is not associated'));
 
 	return L.itemlist(E('div'), [
-		_('SSID'),       radioNet.getSSID() || '?',
+		is_mesh ? _('Mesh ID') : _('SSID'), (is_mesh ? radioNet.getMeshID() : radioNet.getSSID()) || '?',
 		_('Mode'),       mode,
 		_('BSSID'),      (!changecount && is_assoc) ? bssid : null,
 		_('Encryption'), (!changecount && is_assoc) ? radioNet.getActiveEncryption() || _('None') : null,
@@ -704,7 +705,8 @@ return L.view.extend({
 				];
 			}
 			else {
-				var isDisabled = (inst.get('disabled') == '1');
+				var isDisabled = (inst.get('disabled') == '1' ||
+					uci.get('wireless', inst.getWifiDeviceName(), 'disabled') == '1');
 
 				btns = [
 					E('button', {
@@ -893,7 +895,15 @@ return L.view.extend({
 					o.datatype = 'macaddr';
 					o.depends('macfilter', 'allow');
 					o.depends('macfilter', 'deny');
-					//nt.mac_hints(function(mac, name) ml:value(mac, '%s (%s)' %{ mac, name }) end);
+					o.load = function(section_id) {
+						return network.getHostHints().then(L.bind(function(hints) {
+							hints.getMACHints().map(L.bind(function(hint) {
+								this.value(hint[0], hint[1] ? '%s (%s)'.format(hint[0], hint[1]) : hint[0]);
+							}, this));
+
+							return form.DynamicList.prototype.load.apply(this, [section_id]);
+						}, this));
+					};
 
 					mode.value('ap-wds', '%s (%s)'.format(_('Access Point'), _('WDS')));
 					mode.value('sta-wds', '%s (%s)'.format(_('Client'), _('WDS')));
@@ -1037,9 +1047,7 @@ return L.view.extend({
 				};
 
 
-				encr.value('none', _('No Encryption'));
-				encr.value('wep-open',   _('WEP Open System'));
-				encr.value('wep-shared', _('WEP Shared Key'));
+				var crypto_modes = [];
 
 				if (hwtype == 'mac80211') {
 					var has_supplicant = L.hasSystemFeature('wpasupplicant'),
@@ -1059,26 +1067,26 @@ return L.view.extend({
 
 
 					if (has_hostapd || has_supplicant) {
-						encr.value('psk', 'WPA-PSK');
-						encr.value('psk2', 'WPA2-PSK');
-						encr.value('psk-mixed', 'WPA-PSK/WPA2-PSK Mixed Mode');
+						crypto_modes.push(['psk2',      'WPA2-PSK',                    33]);
+						crypto_modes.push(['psk-mixed', 'WPA-PSK/WPA2-PSK Mixed Mode', 22]);
+						crypto_modes.push(['psk',       'WPA-PSK',                     21]);
 					}
 					else {
 						encr.description = _('WPA-Encryption requires wpa_supplicant (for client mode) or hostapd (for AP and ad-hoc mode) to be installed.');
 					}
 
 					if (has_ap_sae || has_sta_sae) {
-						encr.value('sae', 'WPA3-SAE');
-						encr.value('sae-mixed', 'WPA2-PSK/WPA3-SAE Mixed Mode');
+						crypto_modes.push(['sae',       'WPA3-SAE',                     31]);
+						crypto_modes.push(['sae-mixed', 'WPA2-PSK/WPA3-SAE Mixed Mode', 30]);
 					}
 
 					if (has_ap_eap || has_sta_eap) {
-						encr.value('wpa', 'WPA-EAP');
-						encr.value('wpa2', 'WPA2-EAP');
+						crypto_modes.push(['wpa2', 'WPA2-EAP', 32]);
+						crypto_modes.push(['wpa',  'WPA-EAP',  20]);
 					}
 
 					if (has_ap_owe || has_sta_owe) {
-						encr.value('owe', 'OWE');
+						crypto_modes.push(['owe', 'OWE', 1]);
 					}
 
 					encr.crypto_support = {
@@ -1145,9 +1153,23 @@ return L.view.extend({
 					};
 				}
 				else if (hwtype == 'broadcom') {
-					encr.value('psk', 'WPA-PSK');
-					encr.value('psk2', 'WPA2-PSK');
-					encr.value('psk+psk2', 'WPA-PSK/WPA2-PSK Mixed Mode');
+					crypto_modes.push(['psk2',     'WPA2-PSK',                    33]);
+					crypto_modes.push(['psk+psk2', 'WPA-PSK/WPA2-PSK Mixed Mode', 22]);
+					crypto_modes.push(['psk',      'WPA-PSK',                     21]);
+				}
+
+				crypto_modes.push(['wep-open',   _('WEP Open System'), 11]);
+				crypto_modes.push(['wep-shared', _('WEP Shared Key'),  10]);
+				crypto_modes.push(['none',       _('No Encryption'),   0]);
+
+				crypto_modes.sort(function(a, b) { return b[2] - a[2] });
+
+				for (var i = 0; i < crypto_modes.length; i++) {
+					var security_level = (crypto_modes[i][2] >= 30) ? _('strong security')
+						: (crypto_modes[i][2] >= 20) ? _('medium security')
+							: (crypto_modes[i][2] >= 10) ? _('weak security') : _('open network');
+
+					encr.value(crypto_modes[i][0], '%s (%s)'.format(crypto_modes[i][1], security_level));
 				}
 
 
@@ -1243,6 +1265,9 @@ return L.view.extend({
 				o.write = function(section_id, value) {
 					uci.set('wireless', section_id, 'key', value);
 					uci.unset('wireless', section_id, 'key1');
+					uci.unset('wireless', section_id, 'key2');
+					uci.unset('wireless', section_id, 'key3');
+					uci.unset('wireless', section_id, 'key4');
 				};
 
 
@@ -1256,7 +1281,7 @@ return L.view.extend({
 
 				o.cfgvalue = function(section_id) {
 					var slot = +uci.get('wireless', section_id, 'key');
-					return (slot >= 1 && slot <= 4) ? slot : 1;
+					return (slot >= 1 && slot <= 4) ? String(slot) : '';
 				};
 
 				o.write = function(section_id, value) {
@@ -1507,8 +1532,7 @@ return L.view.extend({
 						// ieee802.11w options
 						if (L.hasSystemFeature('hostapd', '11w')) {
 							o = ss.taboption('encryption', form.ListValue, 'ieee80211w', _('802.11w Management Frame Protection'), _("Requires the 'full' version of wpad/hostapd and support from the wifi driver <br />(as of Jan 2019: ath9k, ath10k, mwlwifi and mt76)"));
-							o.default = '';
-							o.value('', _('Disabled (default)'));
+							o.value('', _('Disabled'));
 							o.value('1', _('Optional'));
 							o.value('2', _('Required'));
 							o.depends({ mode: 'ap', encryption: 'wpa2' });
@@ -1535,6 +1559,11 @@ return L.view.extend({
 							o.depends({ mode: 'sta-wds', encryption: 'sae' });
 							o.depends({ mode: 'sta-wds', encryption: 'sae-mixed' });
 							o.depends({ mode: 'sta-wds', encryption: 'owe' });
+							o.defaults = {
+								'2': [{ encryption: 'sae' }, { encryption: 'owe' }],
+								'1': [{ encryption: 'sae-mixed'}],
+								'':  []
+							};
 
 							o = ss.taboption('encryption', form.Value, 'ieee80211w_max_timeout', _('802.11w maximum timeout'), _('802.11w Association SA Query maximum timeout'));
 							o.depends('ieee80211w', '1');
@@ -1564,13 +1593,15 @@ return L.view.extend({
 						o.depends({ mode: 'ap-wds', encryption: 'sae-mixed' });
 
 						if (L.hasSystemFeature('hostapd', 'cli') && L.hasSystemFeature('wpasupplicant')) {
-							o = ss.taboption('encryption', form.Flag, 'wps_pushbutton', _('Enable WPS pushbutton, requires WPA(2)-PSK'))
+							o = ss.taboption('encryption', form.Flag, 'wps_pushbutton', _('Enable WPS pushbutton, requires WPA(2)-PSK/WPA3-SAE'))
 							o.enabled = '1';
 							o.disabled = '0';
 							o.default = o.disabled;
 							o.depends('encryption', 'psk');
 							o.depends('encryption', 'psk2');
 							o.depends('encryption', 'psk-mixed');
+							o.depends('encryption', 'sae');
+							o.depends('encryption', 'sae-mixed');
 						}
 					}
 				}
@@ -1693,7 +1724,8 @@ return L.view.extend({
 			    zoneval = zoneopt ? zoneopt.formvalue('_new_') : null,
 			    enc = L.isObject(bss.encryption) ? bss.encryption : null,
 			    is_wep = (enc && Array.isArray(enc.wep)),
-			    is_psk = (enc && Array.isArray(enc.wpa) && Array.isArray(enc.authentication) && enc.authentication[0] == 'psk');
+			    is_psk = (enc && Array.isArray(enc.wpa) && L.toArray(enc.authentication).filter(function(a) { return a == 'psk' })),
+			    is_sae = (enc && Array.isArray(enc.wpa) && L.toArray(enc.authentication).filter(function(a) { return a == 'sae' }));
 
 			if (nameval == null || (passopt && passval == null))
 				return;
@@ -1721,7 +1753,11 @@ return L.view.extend({
 				else if (bss.bssid != null)
 					uci.set('wireless', section_id, 'bssid', bss.bssid);
 
-				if (is_psk) {
+				if (is_sae) {
+					uci.set('wireless', section_id, 'encryption', 'sae');
+					uci.set('wireless', section_id, 'key', passval);
+				}
+				else if (is_psk) {
 					for (var i = enc.wpa.length - 1; i >= 0; i--) {
 						if (enc.wpa[i] == 2) {
 							uci.set('wireless', section_id, 'encryption', 'psk2');
@@ -1741,14 +1777,14 @@ return L.view.extend({
 					uci.set('wireless', section_id, 'key1', passval);
 				}
 
-				var zonePromise = zoneval
-					? firewall.getZone(zoneval).then(function(zone) { return zone || firewall.addZone(zoneval) })
-					: Promise.resolve();
+				return network.addNetwork(nameval, { proto: 'dhcp' }).then(function(net) {
+					firewall.deleteNetwork(net.getName());
 
-				return zonePromise.then(function(zone) {
-					return network.addNetwork(nameval, { proto: 'dhcp' }).then(function(net) {
-						firewall.deleteNetwork(net.getName());
+					var zonePromise = zoneval
+						? firewall.getZone(zoneval).then(function(zone) { return zone || firewall.addZone(zoneval) })
+						: Promise.resolve();
 
+					return zonePromise.then(function(zone) {
 						if (zone)
 							zone.addNetwork(net.getName());
 					});
@@ -1765,7 +1801,7 @@ return L.view.extend({
 			    s2 = m2.section(form.NamedSection, '_new_'),
 			    enc = L.isObject(bss.encryption) ? bss.encryption : null,
 			    is_wep = (enc && Array.isArray(enc.wep)),
-			    is_psk = (enc && Array.isArray(enc.wpa) && Array.isArray(enc.authentication) && enc.authentication[0] == 'psk'),
+			    is_psk = (enc && Array.isArray(enc.wpa) && L.toArray(enc.authentication).filter(function(a) { return a == 'psk' || a == 'sae' })),
 			    replace, passphrase, name, zone;
 
 			s2.render = function() {

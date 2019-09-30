@@ -20,7 +20,6 @@ callInitList = rpc.declare({
 return L.view.extend({
 	load: function() {
 		return Promise.all([
-			callInitList('zram'),
 			uci.load('luci'),
 			uci.load('system')
 		]);
@@ -64,7 +63,7 @@ return L.view.extend({
 		o = s.taboption('logging', form.Value, 'log_ip', _('External system log server'))
 		o.optional    = true
 		o.placeholder = '0.0.0.0'
-		o.datatype    = 'ip4addr'
+		o.datatype    = 'ipaddr'
 
 		o = s.taboption('logging', form.Value, 'log_port', _('External system log server port'))
 		o.optional    = true
@@ -99,7 +98,7 @@ return L.view.extend({
 		 * Zram Properties
 		 */
 
-		if (zram_support != null) {
+		if (L.hasSystemFeature('zram')) {
 			s.tab('zram', _('ZRam Settings'));
 
 			o = s.taboption('zram', form.Value, 'zram_size_mb', _('ZRam Size'), _('Size of the ZRam device in megabytes'));
@@ -148,7 +147,6 @@ return L.view.extend({
 		/*
 		 * Advanced
 		 */
-
 		o = s.taboption('advanced', form.Value, '_pollinterval',
 			_('Polling interval'), _('Polling interval for status queries in seconds'))
 		o.uciconfig = 'luci';

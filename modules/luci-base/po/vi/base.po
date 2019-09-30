@@ -12,19 +12,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0\n"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:857
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:867
 msgid "%.1f dB"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:109
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:122
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:264
 msgid "%d Bit"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2189
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2194
 msgid "%d invalid field(s)"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:281
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:31
 msgid "%s is untagged in multiple VLANs!"
 msgstr ""
 
@@ -35,11 +36,6 @@ msgstr ""
 #: modules/luci-mod-status/luasrc/view/admin_status/wireless.htm:169
 msgid "(%d minute window, %d second interval)"
 msgstr ""
-
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:35
-#, fuzzy
-msgid "(%s available)"
-msgstr "(%s available)"
 
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:105
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:111
@@ -63,32 +59,30 @@ msgid "-- Additional Field --"
 msgstr "---Mục bổ sung---"
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:258
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1436
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1568
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:309
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:409
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1173
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1648
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1780
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:314
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:414
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1178
 #: modules/luci-base/luasrc/view/cbi/header.htm:5
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:88
 msgid "-- Please choose --"
 msgstr "--Hãy chọn--"
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:259
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:410
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1174
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:415
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1179
 #: modules/luci-base/luasrc/view/cbi/header.htm:6
 msgid "-- custom --"
 msgstr "--tùy chỉnh--"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:89
-msgid "-- match by device --"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:73
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:293
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:402
 msgid "-- match by label --"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:59
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:279
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:385
 msgid "-- match by uuid --"
 msgstr ""
 
@@ -98,7 +92,7 @@ msgstr ""
 msgid "-- please select --"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:813
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:814
 msgid "0 = not using RSSI threshold, 1 = do not change driver default"
 msgstr ""
 
@@ -110,7 +104,7 @@ msgstr ""
 msgid "15 Minute Load:"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1313
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1337
 msgid "4-character hexadecimal ID"
 msgstr ""
 
@@ -123,35 +117,35 @@ msgstr ""
 msgid "5 Minute Load:"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1342
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1366
 msgid "6-octet identifier as a hex string - no colons"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1286
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1310
 msgid "802.11r Fast Transition"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1539
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1567
 msgid "802.11w Association SA Query maximum timeout"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1546
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1574
 msgid "802.11w Association SA Query retry timeout"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1509
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1533
 msgid "802.11w Management Frame Protection"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1539
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1567
 msgid "802.11w maximum timeout"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1546
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1574
 msgid "802.11w retry timeout"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:830
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:831
 msgid "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 msgstr "<abbr title=\"Dịch vụ căn bản đặt Identifier\">BSSID</abbr>"
 
@@ -169,7 +163,7 @@ msgid ""
 "order of the resolvfile"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:819
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:820
 msgid "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "<abbr title=\"Mở rộng dịch vụ đặt Identifier\">ESSID</abbr>"
 
@@ -204,12 +198,12 @@ msgstr "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Gateway"
 msgid "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Suffix (hex)"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:53
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:35
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:40
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:29
 msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Configuration"
 msgstr "<abbr title=\"Light Emitting Diode\">LED</abbr> Configuration"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:62
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:51
 msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Name"
 msgstr ""
 
@@ -238,33 +232,33 @@ msgstr ""
 msgid "<abbr title=\"maximal\">Max.</abbr> concurrent queries"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/crontab.lua:10
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/crontab.js:42
 msgid ""
 "<br/>Note: you need to manually restart the cron service if the crontab file "
 "was empty before editing."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1600
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1605
 msgid "A directory with the same name already exists."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:858
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:875
 msgid "A new login is required since the authentication session expired."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:837
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:847
 msgid "A43C + J43 + A43"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:838
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:848
 msgid "A43C + J43 + A43 + V43"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:850
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:860
 msgid "ADSL"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:826
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:836
 msgid "ANSI T1.413"
 msgstr ""
 
@@ -278,32 +272,32 @@ msgstr ""
 msgid "ARP retry threshold"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:845
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:855
 msgid "ATM (Asynchronous Transfer Mode)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:866
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:876
 msgid "ATM Bridges"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:898
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:908
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoa.js:66
 msgid "ATM Virtual Channel Identifier (VCI)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:899
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:909
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoa.js:70
 msgid "ATM Virtual Path Identifier (VPI)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:866
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:876
 msgid ""
 "ATM bridges expose encapsulated ethernet in AAL5 connections as virtual "
 "Linux network interfaces which can be used in conjunction with DHCP or PPP "
 "to dial into the provider network."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:905
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:915
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoa.js:62
 msgid "ATM device number"
 msgstr ""
@@ -322,13 +316,12 @@ msgstr ""
 msgid "Access Concentrator"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:801
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:898
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:802
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:907
 msgid "Access Point"
 msgstr "Điểm truy cập"
 
-#: modules/luci-mod-system/luasrc/view/admin_system/backupfiles.htm:8
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:12
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:481
 msgid "Actions"
 msgstr "Hành động"
 
@@ -354,17 +347,17 @@ msgstr ""
 msgid "Active DHCPv6 Leases"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2169
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:803
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2193
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:804
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:23
 msgid "Ad-Hoc"
 msgstr "Ad-Hoc"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:686
-#: modules/luci-base/htdocs/luci-static/resources/form.js:688
-#: modules/luci-base/htdocs/luci-static/resources/form.js:701
-#: modules/luci-base/htdocs/luci-static/resources/form.js:702
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1327
+#: modules/luci-base/htdocs/luci-static/resources/form.js:902
+#: modules/luci-base/htdocs/luci-static/resources/form.js:904
+#: modules/luci-base/htdocs/luci-static/resources/form.js:917
+#: modules/luci-base/htdocs/luci-static/resources/form.js:918
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1538
 #: modules/luci-base/luasrc/view/cbi/nsection.htm:25
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:189
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:197
@@ -375,7 +368,7 @@ msgstr "Ad-Hoc"
 msgid "Add"
 msgstr "Thêm vào"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:870
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:880
 msgid "Add ATM Bridge"
 msgstr ""
 
@@ -383,14 +376,25 @@ msgstr ""
 msgid "Add IPv4 address…"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:195
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:204
 msgid "Add IPv6 address…"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:120
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:143
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:149
-#: modules/luci-mod-system/luasrc/view/admin_system/sshkeys.htm:38
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:47
+msgid "Add LED action"
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:215
+msgid "Add VLAN"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:14
+msgid "Add instance"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:153
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:159
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:250
 msgid "Add key"
 msgstr ""
 
@@ -399,11 +403,11 @@ msgid "Add local domain suffix to names served from hosts files"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:263
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:705
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:709
 msgid "Add new interface..."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:96
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:99
 msgid "Add peer"
 msgstr ""
 
@@ -443,19 +447,18 @@ msgid "Address to access local relay bridge"
 msgstr ""
 
 #: modules/luci-base/luasrc/controller/admin/index.lua:29
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:14
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:12
 msgid "Administration"
 msgstr "Quản trị"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:70
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:276
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:505
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:896
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:906
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:24
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:741
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:798
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:50
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:34
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:742
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:799
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:264
 msgid "Advanced Settings"
 msgstr ""
 
@@ -463,11 +466,11 @@ msgstr ""
 msgid "Aggregate Transmit Power(ACTATP)"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:174
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:166
 msgid "Alert"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1813
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1837
 #: modules/luci-base/luasrc/model/network.lua:1416
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:54
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:78
@@ -493,23 +496,23 @@ msgstr ""
 msgid "Allocate IP sequentially"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:30
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:24
 msgid "Allow <abbr title=\"Secure Shell\">SSH</abbr> password authentication"
 msgstr "Cho phép <abbr title=\"Secure Shell\">SSH</abbr> xác thực mật mã"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:978
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:987
 msgid "Allow AP mode to disconnect STAs based on low ACK condition"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:890
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:891
 msgid "Allow all except listed"
 msgstr "Cho phép tất cả trừ danh sách liệt kê"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:766
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:767
 msgid "Allow legacy 802.11b rates"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:889
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:890
 msgid "Allow listed only"
 msgstr "Chỉ cho phép danh sách liệt kê"
 
@@ -517,15 +520,15 @@ msgstr "Chỉ cho phép danh sách liệt kê"
 msgid "Allow localhost"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:47
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:35
 msgid "Allow remote hosts to connect to local SSH forwarded ports"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:38
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:30
 msgid "Allow root logins with password"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:39
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:30
 msgid "Allow the <em>root</em> user to login with password"
 msgstr ""
 
@@ -534,102 +537,102 @@ msgid ""
 "Allow upstream responses in the 127.0.0.0/8 range, e.g. for RBL services"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:119
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:122
 msgid "Allowed IPs"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:602
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:606
 msgid "Always announce default router"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:781
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:782
 msgid ""
 "Always use 40MHz channels even if the secondary channel overlaps. Using this "
 "option does not comply with IEEE 802.11n-2009!"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:818
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:828
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:119
 msgid "Annex"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:819
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:829
 msgid "Annex A + L + M (all)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:827
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:837
 msgid "Annex A G.992.1"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:828
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:838
 msgid "Annex A G.992.2"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:829
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:839
 msgid "Annex A G.992.3"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:830
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:840
 msgid "Annex A G.992.5"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:820
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:830
 msgid "Annex B (all)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:823
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:833
 msgid "Annex B G.992.1"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:824
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:834
 msgid "Annex B G.992.3"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:825
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:835
 msgid "Annex B G.992.5"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:821
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:831
 msgid "Annex J (all)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:831
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:841
 msgid "Annex L G.992.3 POTS 1"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:822
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:832
 msgid "Annex M (all)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:832
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:842
 msgid "Annex M G.992.3"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:833
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:843
 msgid "Annex M G.992.5"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:602
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:606
 msgid "Announce as default router even if no public prefix is available."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:607
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:611
 msgid "Announced DNS domains"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:606
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:610
 msgid "Announced DNS servers"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1472
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1496
 msgid "Anonymous Identity"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:53
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:186
 msgid "Anonymous Mount"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:49
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:182
 msgid "Anonymous Swap"
 msgstr ""
 
@@ -640,11 +643,15 @@ msgstr ""
 msgid "Any zone"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2529
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:268
+msgid "Apply backup?"
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2522
 msgid "Apply request failed with status <code>%h</code>"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2415
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2409
 msgid "Apply unchecked"
 msgstr ""
 
@@ -668,7 +675,7 @@ msgid ""
 "Assign prefix parts using this hexadecimal subprefix ID for this interface."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1939
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1972
 #: modules/luci-mod-status/luasrc/view/admin_status/index/60-wifi.htm:22
 msgid "Associated Stations"
 msgstr ""
@@ -677,12 +684,16 @@ msgstr ""
 msgid "Associations"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:178
+msgid "Attempt to enable configured mount points for attached devices"
+msgstr ""
+
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:101
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:64
 msgid "Auth Group"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1397
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1421
 msgid "Authentication"
 msgstr "Xác thực"
 
@@ -725,27 +736,27 @@ msgstr ""
 msgid "Automatic Homenet (HNCP)"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:65
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:198
 msgid "Automatically check filesystem for errors before mounting"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:61
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:194
 msgid "Automatically mount filesystems on hotplug"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:57
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:190
 msgid "Automatically mount swap on hotplug"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:61
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:194
 msgid "Automount Filesystem"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:57
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:190
 msgid "Automount Swap"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:102
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:217
 msgid "Available"
 msgstr "Sẵn có"
 
@@ -763,11 +774,11 @@ msgstr "Sẵn có"
 msgid "Average:"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:839
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:849
 msgid "B43 + B43C"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:840
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:850
 msgid "B43 + B43C + V43"
 msgstr ""
 
@@ -777,7 +788,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:106
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:128
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1592
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1620
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:176
 msgid "BSSID"
 msgstr ""
@@ -791,14 +802,15 @@ msgstr ""
 msgid "Back to configuration"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:17
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:484
 msgid "Backup"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:38
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:32
 msgid "Backup / Flash Firmware"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:446
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/backupfiles.lua:12
 msgid "Backup file list"
 msgstr ""
@@ -812,10 +824,11 @@ msgstr ""
 msgid "Band"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:784
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:785
 msgid "Beacon Interval"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:447
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/backupfiles.lua:46
 msgid ""
 "Below is the determined list of files to backup. It consists of changed "
@@ -847,17 +860,17 @@ msgstr ""
 msgid "Bogus NX Domain Override"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1819
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1843
 #: modules/luci-base/luasrc/model/network.lua:1420
 msgid "Bridge"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:368
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:678
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:682
 msgid "Bridge interfaces"
 msgstr "Giao diện cầu nối"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:906
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:916
 msgid "Bridge unit number"
 msgstr ""
 
@@ -865,7 +878,8 @@ msgstr ""
 msgid "Bring up on boot"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1692
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1697
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:96
 msgid "Browse…"
 msgstr ""
 
@@ -890,14 +904,16 @@ msgstr "CPU usage (%)"
 msgid "Call failed"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1784
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1789
 #: modules/luci-base/luasrc/view/cbi/delegator.htm:14
 #: modules/luci-base/luasrc/view/cbi/simpleform.htm:52
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:711
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:948
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1811
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:176
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:60
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:715
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:958
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1844
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:105
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:277
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:399
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:191
 msgid "Cancel"
 msgstr "Bỏ qua"
 
@@ -905,12 +921,8 @@ msgstr "Bỏ qua"
 msgid "Category"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:44
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:361
 msgid "Caution: Configuration files will be erased"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:48
-msgid "Caution: System upgrade will be forced"
 msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:45
@@ -919,13 +931,7 @@ msgstr ""
 msgid "Chain"
 msgstr "chuỗi"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:9
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:14
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:24
-msgid "Change login password"
-msgstr ""
-
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2292
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2297
 msgid "Changes"
 msgstr "Thay đổi"
 
@@ -933,49 +939,46 @@ msgstr "Thay đổi"
 msgid "Changes applied."
 msgstr "Thay đổi đã áp dụng"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2552
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2545
 msgid "Changes have been reverted."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:30
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:43
 msgid "Changes the administrator password for accessing the device"
-msgstr ""
-
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:10
-msgid "Changing password…"
 msgstr ""
 
 #: modules/luci-base/luasrc/view/cbi/wireless_modefreq.htm:162
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:77
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:130
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:376
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1590
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1618
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:186
 msgid "Channel"
 msgstr "Kênh"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:229
-msgid "Check"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:65
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:198
 msgid "Check filesystems before mount"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1778
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1811
 msgid "Check this option to delete the existing networks from this radio."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:27
-msgid "Checksum"
-msgstr "Checksum"
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:259
+msgid "Checking archive…"
+msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:70
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:340
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:342
+msgid "Checking image…"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:512
 msgid "Choose mtdblock"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:443
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1801
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1834
 msgid ""
 "Choose the firewall zone you want to assign to this interface. Select "
 "<em>unspecified</em> to remove the interface from the associated zone or "
@@ -983,13 +986,13 @@ msgid ""
 "interface to it."
 msgstr "Giao diện này chưa thuộc về bất kỳ firewall zone nào."
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:833
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:834
 msgid ""
 "Choose the network(s) you want to attach to this wireless interface or fill "
 "out the <em>create</em> field to define a new network."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1014
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1023
 msgid "Cipher"
 msgstr ""
 
@@ -997,21 +1000,21 @@ msgstr ""
 msgid "Cisco UDP encapsulation"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:18
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:484
 msgid ""
 "Click \"Generate archive\" to download a tar archive of the current "
 "configuration files."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:65
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:509
 msgid ""
 "Click \"Save mtdblock\" to download specified mtdblock file. (NOTE: THIS "
 "FEATURE IS FOR PROFESSIONALS! )"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2168
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:802
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:899
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2192
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:803
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:908
 msgid "Client"
 msgstr "Client"
 
@@ -1020,8 +1023,8 @@ msgstr "Client"
 msgid "Client ID to send when requesting DHCP"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:145
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:151
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:155
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:161
 msgid "Close"
 msgstr ""
 
@@ -1044,7 +1047,7 @@ msgstr ""
 #: modules/luci-base/luasrc/view/lease_status.htm:98
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:118
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:39
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1937
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1970
 #: modules/luci-mod-network/luasrc/view/admin_network/iface_status.htm:6
 #: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:398
 #: modules/luci-mod-status/luasrc/view/admin_status/index/30-network.htm:11
@@ -1059,15 +1062,19 @@ msgstr ""
 msgid "Command"
 msgstr "Lệnh"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:187
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:194
 msgid "Command OK"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:41
+msgid "Command failed"
 msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:64
 msgid "Comment"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1554
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1582
 msgid ""
 "Complicates key reinstallation attacks on the client side by disabling "
 "retransmission of EAPOL-Key frames that are used to install keys. This "
@@ -1075,10 +1082,9 @@ msgid ""
 "negotiation especially in environments with heavy traffic load."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2292
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2297
 #: modules/luci-base/luasrc/controller/admin/uci.lua:11
-#: modules/luci-mod-system/luasrc/view/admin_system/backupfiles.htm:9
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:13
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:543
 msgid "Configuration"
 msgstr "Cấu hình"
 
@@ -1087,23 +1093,23 @@ msgstr "Cấu hình"
 msgid "Configuration failed"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:42
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:361
 msgid "Configuration files will be kept"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2463
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2456
 msgid "Configuration has been applied."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2396
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2395
 msgid "Configuration has been rolled back!"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:942
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:952
 msgid "Confirm disconnect"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:43
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:50
 msgid "Confirmation"
 msgstr "Xác nhận"
 
@@ -1119,7 +1125,7 @@ msgstr ""
 msgid "Connection attempt failed"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:197
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:204
 msgid "Connection lost"
 msgstr ""
 
@@ -1127,11 +1133,19 @@ msgstr ""
 msgid "Connections"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/crontab.js:30
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:463
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:66
+msgid "Contents have been saved."
+msgstr ""
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:618
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:281
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:391
 msgid "Continue"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2438
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2431
 msgid ""
 "Could not regain access to the device after applying the configuration "
 "changes. You might need to reconnect if you modified network related "
@@ -1142,24 +1156,24 @@ msgstr ""
 msgid "Country"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:763
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:764
 msgid "Country Code"
 msgstr "Mã quốc gia"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:443
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1801
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1834
 msgid "Create / Assign firewall-zone"
 msgstr "Tạo/ gán firewall-zone"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:735
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:739
 msgid "Create interface"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:173
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:165
 msgid "Critical"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:177
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:169
 msgid "Cron Log Level"
 msgstr ""
 
@@ -1180,13 +1194,13 @@ msgstr ""
 msgid "Custom delegated IPv6-prefix"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:53
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:503
 msgid ""
 "Custom files (certificates, scripts) may remain on the system. To prevent "
 "this, perform a factory-reset first."
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:54
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:41
 msgid ""
 "Customizes the behaviour of the device <abbr title=\"Light Emitting Diode"
 "\">LED</abbr>s if possible."
@@ -1194,15 +1208,15 @@ msgstr ""
 "Tùy chỉnh chế độ của thiết bị <abbr title=\"Light Emitting Diode\">LED</"
 "abbr>s nếu có thể."
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1202
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1223
 msgid "DAE-Client"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1210
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1231
 msgid "DAE-Port"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1218
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1239
 msgid "DAE-Secret"
 msgstr ""
 
@@ -1211,11 +1225,11 @@ msgid "DHCP Server"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:61
-#: modules/luci-mod-network/luasrc/controller/admin/network.lua:68
+#: modules/luci-mod-network/luasrc/controller/admin/network.lua:62
 msgid "DHCP and DNS"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1367
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1388
 #: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:16
 #: modules/luci-base/luasrc/model/network.lua:968
 msgid "DHCP client"
@@ -1230,7 +1244,7 @@ msgstr "Tùy chọn DHCP"
 msgid "DHCPv6 client"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:594
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:598
 msgid "DHCPv6-Mode"
 msgstr ""
 
@@ -1275,7 +1289,7 @@ msgstr ""
 msgid "DS-Lite AFTR address"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:815
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:825
 #: modules/luci-mod-status/luasrc/view/admin_status/index/50-dsl.htm:14
 msgid "DSL"
 msgstr ""
@@ -1284,11 +1298,11 @@ msgstr ""
 msgid "DSL Status"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:848
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:858
 msgid "DSL line mode"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:954
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:963
 msgid "DTIM Interval"
 msgstr ""
 
@@ -1300,14 +1314,14 @@ msgstr ""
 msgid "Data Rate"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:168
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:179
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:160
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:171
 msgid "Debug"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1162
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1186
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1210
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1183
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1207
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1231
 msgid "Default %d"
 msgstr ""
 
@@ -1326,11 +1340,11 @@ msgstr ""
 msgid "Default gateway"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:594
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:598
 msgid "Default is stateless + stateful"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:65
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:54
 msgid "Default state"
 msgstr ""
 
@@ -1345,47 +1359,47 @@ msgid ""
 "servers to clients."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:750
-#: modules/luci-base/htdocs/luci-static/resources/form.js:998
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1004
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1312
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1753
+#: modules/luci-base/htdocs/luci-static/resources/form.js:966
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1212
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1215
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1523
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1758
 #: modules/luci-base/luasrc/view/cbi/nsection.htm:11
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:162
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:16
 msgid "Delete"
 msgstr "Xóa"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:172
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:178
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:187
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:193
 msgid "Delete key"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1649
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1654
 msgid "Delete permission denied"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1651
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1656
 msgid "Delete request failed: %d %s"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:722
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:723
 msgid "Delete this network"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:954
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:963
 msgid "Delivery Traffic Indication Message Interval"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:105
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:108
 msgid "Description"
 msgstr "Mô tả"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1749
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1754
 msgid "Deselect"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:223
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:215
 msgid "Design"
 msgstr "Thiết kế"
 
@@ -1408,15 +1422,15 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:33
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:52
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:85
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:81
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:154
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:253
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:86
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:40
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:72
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:270
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:303
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:379
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:415
 msgid "Device"
 msgstr "Công cụ"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:736
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:737
 msgid "Device Configuration"
 msgstr ""
 
@@ -1433,7 +1447,7 @@ msgstr ""
 msgid "Device is restarting…"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2437
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2430
 msgid "Device unreachable!"
 msgstr ""
 
@@ -1441,7 +1455,7 @@ msgstr ""
 msgid "Device unreachable! Still waiting for device..."
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/controller/admin/network.lua:84
+#: modules/luci-mod-network/luasrc/controller/admin/network.lua:78
 #: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:61
 msgid "Diagnostics"
 msgstr ""
@@ -1451,12 +1465,12 @@ msgstr ""
 msgid "Dial number"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1549
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1554
 msgid "Directory"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:714
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:753
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:715
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:754
 msgid "Disable"
 msgstr ""
 
@@ -1470,15 +1484,16 @@ msgstr ""
 msgid "Disable Encryption"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:964
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:973
 msgid "Disable Inactivity Polling"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:712
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:713
 msgid "Disable this network"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:44
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1534
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:76
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:107
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:99
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/l2tp.js:51
@@ -1489,11 +1504,7 @@ msgstr ""
 msgid "Disabled"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1511
-msgid "Disabled (default)"
-msgstr ""
-
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:978
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:987
 msgid "Disassociate On Low Acknowledgement"
 msgstr ""
 
@@ -1503,7 +1514,7 @@ msgstr ""
 
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:92
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:114
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:956
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:966
 msgid "Disconnect"
 msgstr ""
 
@@ -1512,21 +1523,20 @@ msgstr ""
 msgid "Disconnection attempt failed"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1163
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1990
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2310
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2403
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1606
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:17
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:28
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1374
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1995
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2314
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2401
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1634
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:453
 msgid "Dismiss"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:769
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:770
 msgid "Distance Optimization"
 msgstr "Khoảng cách tối ưu"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:769
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:770
 msgid "Distance to farthest network member in meters."
 msgstr "Khoảng cách tới thành viên xa nhất trong mạng lưới tính bằng mét"
 
@@ -1554,15 +1564,19 @@ msgstr ""
 msgid "Do not forward reverse lookups for local networks"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1634
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1639
 msgid "Do you really want to delete \"%s\" ?"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:173
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:188
 msgid "Do you really want to delete the following SSH key?"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1632
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:241
+msgid "Do you really want to erase all settings?"
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1637
 msgid "Do you really want to recursively delete the directory \"%s\" ?"
 msgstr ""
 
@@ -1590,27 +1604,27 @@ msgstr ""
 msgid "Down"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:23
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:487
 msgid "Download backup"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:87
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:519
 msgid "Download mtdblock"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:853
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:863
 msgid "Downstream SNR offset"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:953
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1171
 msgid "Drag to reorder"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:9
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:11
 msgid "Dropbear Instance"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:6
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:9
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
@@ -1642,17 +1656,17 @@ msgstr ""
 msgid "EA-bits length"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1362
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1386
 msgid "EAP-Method"
 msgstr "EAP-Method"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:973
-#: modules/luci-base/htdocs/luci-static/resources/form.js:974
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1238
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1190
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1193
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1449
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:154
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:160
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:291
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:719
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:720
 msgid "Edit"
 msgstr "Chỉnh sửa"
 
@@ -1662,7 +1676,7 @@ msgid ""
 "reload the page."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:717
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:718
 msgid "Edit this network"
 msgstr ""
 
@@ -1670,12 +1684,12 @@ msgstr ""
 msgid "Edit wireless network"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:175
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:167
 msgid "Emergency"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:714
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:753
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:715
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:754
 msgid "Enable"
 msgstr ""
 
@@ -1706,11 +1720,11 @@ msgstr ""
 msgid "Enable IPv6 negotiation on the PPP link"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:143
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:188
 msgid "Enable Jumbo Frame passthrough"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:243
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:235
 msgid "Enable NTP client"
 msgstr ""
 
@@ -1722,27 +1736,27 @@ msgstr ""
 msgid "Enable TFTP server"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:134
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:180
 msgid "Enable VLAN functionality"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1567
-msgid "Enable WPS pushbutton, requires WPA(2)-PSK"
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1595
+msgid "Enable WPS pushbutton, requires WPA(2)-PSK/WPA3-SAE"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1554
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1582
 msgid "Enable key reinstallation (KRACK) countermeasures"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:138
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:183
 msgid "Enable learning and aging"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:150
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:194
 msgid "Enable mirroring of incoming packets"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:151
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:195
 msgid "Enable mirroring of outgoing packets"
 msgstr ""
 
@@ -1750,25 +1764,17 @@ msgstr ""
 msgid "Enable the DF (Don't Fragment) flag of the encapsulating packets."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:53
-msgid "Enable this mount"
-msgstr ""
-
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:712
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:713
 msgid "Enable this network"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:37
-msgid "Enable this swap"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:37
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:88
 msgid "Enable/Disable"
 msgstr "Cho kích hoạt/ Vô hiệu hóa"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:152
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:251
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:41
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:266
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:375
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:76
 msgid "Enabled"
 msgstr ""
 
@@ -1776,7 +1782,7 @@ msgstr ""
 msgid "Enables IGMP snooping on this bridge"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1286
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1310
 msgid ""
 "Enables fast roaming among access points that belong to the same Mobility "
 "Domain"
@@ -1790,24 +1796,24 @@ msgstr "Kích hoạt Spanning Tree Protocol trên cầu nối này"
 msgid "Encapsulation limit"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:843
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:901
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:853
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:911
 msgid "Encapsulation mode"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:107
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:129
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:983
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1593
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:992
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1621
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:177
 msgid "Encryption"
 msgstr "Encryption"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:125
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:128
 msgid "Endpoint Host"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:129
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:132
 msgid "Endpoint Port"
 msgstr ""
 
@@ -1819,7 +1825,7 @@ msgstr ""
 msgid "Enter custom values"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:273
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:248
 msgid "Erasing..."
 msgstr ""
 
@@ -1833,7 +1839,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:108
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:109
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:110
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:172
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:164
 msgid "Error"
 msgstr "Lỗi"
 
@@ -1841,12 +1847,12 @@ msgstr "Lỗi"
 msgid "Errored seconds (ES)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1831
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1855
 #: modules/luci-base/luasrc/model/network.lua:1432
 msgid "Ethernet Adapter"
 msgstr "Bộ tương hợp ethernet"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1822
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1846
 #: modules/luci-base/luasrc/model/network.lua:1422
 msgid "Ethernet Switch"
 msgstr "Bộ chuyển đảo ethernet"
@@ -1857,6 +1863,10 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:154
 msgid "Expand hosts"
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:195
+msgid "Expecting an hexadecimal assignment hint"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:59
@@ -1876,23 +1886,23 @@ msgstr ""
 msgid "External"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1353
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1377
 msgid "External R0 Key Holder List"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1357
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1381
 msgid "External R1 Key Holder List"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:149
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:141
 msgid "External system log server"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:154
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:146
 msgid "External system log server port"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:159
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:151
 msgid "External system log server protocol"
 msgstr ""
 
@@ -1900,31 +1910,39 @@ msgstr ""
 msgid "Extra SSH command options"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1327
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1351
 msgid "FT over DS"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1328
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1352
 msgid "FT over the Air"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1325
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1349
 msgid "FT protocol"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2390
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:82
+msgid "Failed to change the system password."
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2389
 msgid "Failed to confirm apply within %ds, waiting for rollback…"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1556
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:45
+msgid "Failed to execute \"/etc/init.d/%s %s\" action: %s"
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1561
 msgid "File"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1509
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1514
 msgid "File not accessible"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1693
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1698
 msgid "Filename"
 msgstr ""
 
@@ -1932,9 +1950,8 @@ msgstr ""
 msgid "Filename of the boot image advertised to clients"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:98
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:199
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:126
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:215
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:337
 msgid "Filesystem"
 msgstr "Tập tin hệ thống"
 
@@ -1951,7 +1968,7 @@ msgstr "Lọc không hữu dụng"
 msgid "Finalizing failed"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:41
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:174
 msgid ""
 "Find all currently attached filesystems and swap and replace configuration "
 "with defaults based on what was detected"
@@ -1969,7 +1986,7 @@ msgstr ""
 msgid "Firewall"
 msgstr "Firewall"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:73
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:76
 msgid "Firewall Mark"
 msgstr ""
 
@@ -1981,7 +1998,7 @@ msgstr ""
 msgid "Firewall Status"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:860
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:870
 msgid "Firmware File"
 msgstr ""
 
@@ -1993,35 +2010,37 @@ msgstr ""
 msgid "Fixed source port for outbound DNS queries"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:9
-msgid "Flash Firmware"
-msgstr "Phần cứng flash"
-
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:127
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:409
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:538
 msgid "Flash image..."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:99
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:406
+msgid "Flash image?"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:525
 msgid "Flash new firmware image"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:9
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:478
 msgid "Flash operations"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:194
-msgid "Flashing..."
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:414
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:416
+msgid "Flashing…"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:550
 msgid "Force"
 msgstr "Force"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:781
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:782
 msgid "Force 40MHz mode"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1022
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1031
 msgid "Force CCMP (AES)"
 msgstr ""
 
@@ -2029,19 +2048,19 @@ msgstr ""
 msgid "Force DHCP on this network even if another server is detected."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1023
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1032
 msgid "Force TKIP"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1024
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1033
 msgid "Force TKIP and CCMP (AES)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:795
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:805
 msgid "Force link"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:113
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:382
 msgid "Force upgrade"
 msgstr ""
 
@@ -2065,15 +2084,15 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:808
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:809
 msgid "Forward mesh peer traffic"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:908
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:918
 msgid "Forwarding mode"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:773
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:774
 msgid "Fragmentation Threshold"
 msgstr "Ngưỡng cửa Phân đoạn"
 
@@ -2082,7 +2101,7 @@ msgstr "Ngưỡng cửa Phân đoạn"
 msgid "Free"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:86
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:89
 msgid ""
 "Further information about WireGuard interfaces and peers at <a href='http://"
 "wireguard.com'>wireguard.com</a>."
@@ -2104,52 +2123,51 @@ msgstr ""
 msgid "Gateway"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:35
+msgid "Gateway Ports"
+msgstr ""
+
 #: modules/luci-base/htdocs/luci-static/resources/network.js:9
 #: modules/luci-base/luasrc/model/network.lua:29
 msgid "Gateway address is invalid"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:46
-msgid "Gateway ports"
-msgstr ""
-
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:67
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:275
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:23
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:111
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:49
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:33
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:263
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:103
 msgid "General Settings"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:504
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:895
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:740
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:795
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:905
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:741
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:796
 msgid "General Setup"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:41
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:174
 msgid "Generate Config"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1331
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1355
 msgid "Generate PMK locally"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:25
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:489
 msgid "Generate archive"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:26
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:74
 msgid "Given password confirmation did not match, password not changed!"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:37
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:170
 msgid "Global Settings"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:806
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:816
 msgid "Global network options"
 msgstr ""
 
@@ -2160,8 +2178,8 @@ msgstr ""
 msgid "Go to password configuration..."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:896
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1404
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1114
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1616
 #: modules/luci-base/luasrc/view/cbi/full_valueheader.htm:4
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:58
 msgid "Go to relevant configuration page"
@@ -2191,7 +2209,7 @@ msgstr "Hang Up"
 msgid "Header Error Code Errors (HEC)"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:103
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:95
 msgid ""
 "Here you can configure the basic aspects of your device like its hostname or "
 "the timezone."
@@ -2199,7 +2217,7 @@ msgstr ""
 "Ở đây bạn có thể cấu hình những đặc tính cơ bản của thiết bị như tên máy chủ "
 "hoặc múi giờ."
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:932
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:941
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "Giấu <abbr title=\"Chế độ mở rộng đặt Identifier\">ESSID</abbr>"
 
@@ -2210,7 +2228,7 @@ msgstr ""
 
 #: modules/luci-base/luasrc/view/lease_status.htm:92
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:110
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1931
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1964
 msgid "Host"
 msgstr ""
 
@@ -2235,7 +2253,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:317
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/hosts.js:26
 #: modules/luci-mod-status/luasrc/view/admin_status/index/10-system.htm:17
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:124
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:116
 msgid "Hostname"
 msgstr "Tên host"
 
@@ -2244,7 +2262,7 @@ msgid "Hostname to send when requesting DHCP"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/hosts.js:19
-#: modules/luci-mod-network/luasrc/controller/admin/network.lua:73
+#: modules/luci-mod-network/luasrc/controller/admin/network.lua:67
 msgid "Hostnames"
 msgstr "Tên host"
 
@@ -2256,7 +2274,7 @@ msgstr ""
 msgid "IKE DH Group"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:56
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:59
 msgid "IP Addresses"
 msgstr ""
 
@@ -2402,7 +2420,7 @@ msgstr ""
 msgid "IPv6 Settings"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:810
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:820
 msgid "IPv6 ULA-Prefix"
 msgstr ""
 
@@ -2410,7 +2428,7 @@ msgstr ""
 msgid "IPv6 Upstream"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:193
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:202
 msgid "IPv6 address"
 msgstr ""
 
@@ -2424,7 +2442,7 @@ msgstr ""
 msgid "IPv6 assignment length"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:198
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:207
 msgid "IPv6 gateway"
 msgstr ""
 
@@ -2442,12 +2460,12 @@ msgstr ""
 msgid "IPv6 prefix length"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:202
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:211
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/6in4.js:57
 msgid "IPv6 routed prefix"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:206
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:215
 msgid "IPv6 suffix"
 msgstr ""
 
@@ -2477,7 +2495,7 @@ msgstr ""
 msgid "IPv6-over-IPv4 (6to4)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1454
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1478
 msgid "Identity"
 msgstr "Nhận dạng"
 
@@ -2489,14 +2507,14 @@ msgstr ""
 msgid "If checked, encryption is disabled"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:57
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:48
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:277
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:383
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:71
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:51
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:290
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:399
 msgid ""
 "If specified, mount the device by the partition label instead of a fixed "
 "device node"
@@ -2535,7 +2553,7 @@ msgstr ""
 msgid "If unchecked, the advertised DNS server addresses are ignored"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:236
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:362
 msgid ""
 "If your physical memory is insufficient unused data can be temporarily "
 "swapped to a swap-device resulting in a higher amount of usable <abbr title="
@@ -2561,7 +2579,7 @@ msgstr "Lờ đi giao diện"
 msgid "Ignore resolve file"
 msgstr "Lờ đi tập tin resolve"
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:124
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:536
 msgid "Image"
 msgstr ""
 
@@ -2588,7 +2606,7 @@ msgstr ""
 msgid "Inbound:"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:169
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:161
 msgid "Info"
 msgstr ""
 
@@ -2602,11 +2620,11 @@ msgstr ""
 msgid "Initialization failure"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:34
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:87
 msgid "Initscript"
 msgstr "Initscript"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:26
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:122
 msgid "Initscripts"
 msgstr "Initscripts"
 
@@ -2621,20 +2639,20 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:416
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:423
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:683
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:687
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:691
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:26
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:47
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:134
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:14
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:16
 msgid "Interface"
 msgstr "Giao diện "
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:35
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:58
 msgid "Interface %q device auto-migrated from %q to %q."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:791
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:792
 msgid "Interface Configuration"
 msgstr ""
 
@@ -2664,7 +2682,7 @@ msgstr ""
 msgid "Interface is stopping..."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:945
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:954
 msgid "Interface name"
 msgstr ""
 
@@ -2677,7 +2695,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:260
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:287
-#: modules/luci-mod-network/luasrc/controller/admin/network.lua:60
+#: modules/luci-mod-network/luasrc/controller/admin/network.lua:54
 msgid "Interfaces"
 msgstr "Giao diện "
 
@@ -2694,27 +2712,27 @@ msgstr ""
 msgid "Invalid"
 msgstr "Giá trị nhập vào không hợp lí"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:7
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:10
 msgid "Invalid Base64 key string"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:311
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:281
 msgid "Invalid VLAN ID given! Only IDs between %d and %d are allowed."
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:307
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:290
 msgid "Invalid VLAN ID given! Only unique IDs are allowed"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:189
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:196
 msgid "Invalid argument"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:188
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:195
 msgid "Invalid command"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:77
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:80
 msgid "Invalid hexadecimal value"
 msgstr ""
 
@@ -2722,11 +2740,11 @@ msgstr ""
 msgid "Invalid username and/or password! Please try again."
 msgstr "Tên và mật mã không đúng. Xin thử lại "
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:941
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:950
 msgid "Isolate Clients"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:18
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:369
 #, fuzzy
 msgid ""
 "It appears that you are trying to flash an image that does not fit into the "
@@ -2742,19 +2760,19 @@ msgstr ""
 msgid "JavaScript required!"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1663
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1691
 msgid "Join Network"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1600
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1628
 msgid "Join Network: Wireless Scan"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1805
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1838
 msgid "Joining Network: %q"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:106
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:533
 msgid "Keep settings"
 msgstr ""
 
@@ -2767,15 +2785,15 @@ msgstr "Kernel Log"
 msgid "Kernel Version"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1227
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1248
 msgid "Key"
 msgstr "Phím "
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1252
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1253
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1254
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1255
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1267
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1276
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1277
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1278
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1279
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1291
 msgid "Key #%d"
 msgstr ""
 
@@ -2810,20 +2828,20 @@ msgstr ""
 msgid "LCP echo interval"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:902
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:912
 msgid "LLC"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:70
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:50
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:290
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:399
 msgid "Label"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:212
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:204
 msgid "Language"
 msgstr "Ngôn ngữ"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:114
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:106
 msgid "Language and Style"
 msgstr ""
 
@@ -2863,7 +2881,7 @@ msgstr ""
 msgid "Leave empty to use the current WAN address"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2294
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2299
 msgid "Legend:"
 msgstr ""
 
@@ -2895,7 +2913,7 @@ msgstr ""
 msgid "Line Uptime"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:96
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:88
 msgid "Link On"
 msgstr "Link On"
 
@@ -2905,7 +2923,7 @@ msgid ""
 "requests to"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1353
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1377
 msgid ""
 "List of R0KHs in the same Mobility Domain. <br />Format: MAC-address,NAS-"
 "Identifier,128-bit key as hex string. <br />This list is used to map R0KH-ID "
@@ -2914,7 +2932,7 @@ msgid ""
 "Association."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1357
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1381
 msgid ""
 "List of R1KHs in the same Mobility Domain. <br />Format: MAC-address,R1KH-ID "
 "as 6 octets with colons,128-bit key as hex string. <br />This list is used "
@@ -2939,11 +2957,11 @@ msgstr ""
 msgid "Listen Interfaces"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:51
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:54
 msgid "Listen Port"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:15
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:16
 msgid "Listen only on the given interface or, if unspecified, on all"
 msgstr ""
 
@@ -2966,15 +2984,11 @@ msgstr ""
 msgid "Loading"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/sshkeys.htm:35
-msgid "Loading SSH keys…"
-msgstr ""
-
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1814
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1819
 msgid "Loading directory contents…"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1291
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1308
 #: modules/luci-base/luasrc/view/view.htm:4
 msgid "Loading view…"
 msgstr ""
@@ -3005,12 +3019,12 @@ msgstr ""
 msgid "Local Service Only"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:81
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:126
 msgid "Local Startup"
 msgstr ""
 
 #: modules/luci-mod-status/luasrc/view/admin_status/index/10-system.htm:25
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:120
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:112
 msgid "Local Time"
 msgstr "Giờ địa phương"
 
@@ -3042,7 +3056,7 @@ msgstr ""
 msgid "Localise queries"
 msgstr "Tra vấn địa phương"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:167
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:159
 msgid "Log output level"
 msgstr ""
 
@@ -3050,7 +3064,7 @@ msgstr ""
 msgid "Log queries"
 msgstr "Bản ghi tra vấn"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:112
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:104
 msgid "Logging"
 msgstr ""
 
@@ -3081,22 +3095,22 @@ msgstr ""
 #: modules/luci-base/luasrc/view/lease_status.htm:73
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:109
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:35
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1930
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1963
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:53
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:86
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:133
 msgid "MAC-Address"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:885
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:886
 msgid "MAC-Address Filter"
 msgstr "Lọc địa chỉ MAC"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:797
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:798
 msgid "MAC-Filter"
 msgstr "Lọc MAC"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:892
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:893
 msgid "MAC-List"
 msgstr "Danh sách MAC"
 
@@ -3114,7 +3128,7 @@ msgstr ""
 msgid "MB/s"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:28
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:359
 msgid "MD5"
 msgstr ""
 
@@ -3124,11 +3138,11 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:53
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:53
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:68
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:71
 msgid "MTU"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:121
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:325
 msgid ""
 "Make sure to clone the root filesystem using something like the commands "
 "below:"
@@ -3144,7 +3158,8 @@ msgstr ""
 msgid "Manual"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2167
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2191
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:594
 msgid "Master"
 msgstr ""
 
@@ -3152,7 +3167,7 @@ msgstr ""
 msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:973
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:982
 msgid "Maximum allowed Listen Interval"
 msgstr ""
 
@@ -3178,7 +3193,7 @@ msgstr ""
 msgid "Maximum number of leased addresses."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:760
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:761
 msgid "Maximum transmit power"
 msgstr ""
 
@@ -3191,7 +3206,7 @@ msgstr ""
 msgid "Mbit/s"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:18
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:32
 msgid "Medium"
 msgstr ""
 
@@ -3203,34 +3218,34 @@ msgstr "Bộ nhớ"
 msgid "Memory usage (%)"
 msgstr "Memory usage (%)"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2170
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2194
 msgid "Mesh"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:805
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:806
 msgid "Mesh Id"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:190
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:197
 msgid "Method not found"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:45
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:76
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:104
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:63
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:66
 msgid "Metric"
 msgstr "Metric"
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:154
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:198
 msgid "Mirror monitor port"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:153
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:197
 msgid "Mirror source port"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1313
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1337
 msgid "Mobility Domain"
 msgstr ""
 
@@ -3238,8 +3253,8 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:105
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:126
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:360
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:800
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1591
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:801
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1619
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:175
 msgid "Mode"
 msgstr "Chế độ"
@@ -3270,43 +3285,38 @@ msgstr ""
 msgid "Modem init timeout"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2171
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:879
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2195
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:880
 msgid "Monitor"
 msgstr "Monitor"
 
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:14
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:28
 msgid "More Characters"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:841
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1057
 msgid "More…"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:45
-msgid "Mount Entry"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:100
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:190
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:216
 msgid "Mount Point"
 msgstr "Lắp điểm"
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:28
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:36
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:137
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:168
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:251
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:24
 msgid "Mount Points"
 msgstr "Lắp điểm"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:35
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:252
 msgid "Mount Points - Mount Entry"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:20
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:363
 msgid "Mount Points - Swap Entry"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:137
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:251
 msgid ""
 "Mount Points define at which point a memory device will be attached to the "
 "filesystem"
@@ -3314,23 +3324,27 @@ msgstr ""
 "Số điểm lắp xác định tại một điểm mà ở đó bộ nhớ sẽ được gắn vào hệ thống "
 "tập tin"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:53
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:178
+msgid "Mount attached devices"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:186
 msgid "Mount filesystems not specifically configured"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:147
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:354
 msgid "Mount options"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:102
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:315
 msgid "Mount point"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:49
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:182
 msgid "Mount swap not specifically configured"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:96
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:246
 msgid "Mounted file systems"
 msgstr "Lắp tập tin hệ thống"
 
@@ -3342,7 +3356,7 @@ msgstr ""
 msgid "Move up"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1305
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1329
 msgid "NAS ID"
 msgstr "NAS ID"
 
@@ -3367,19 +3381,19 @@ msgstr ""
 msgid "NT Domain"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:272
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:264
 msgid "NTP server candidates"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:876
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1094
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:27
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:553
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:658
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:60
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:662
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:49
 msgid "Name"
 msgstr "Tên"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1780
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1813
 msgid "Name of the new network"
 msgstr ""
 
@@ -3389,8 +3403,8 @@ msgstr "Sự điều hướng"
 
 #: modules/luci-base/luasrc/controller/admin/index.lua:69
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:108
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:833
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1929
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:834
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1962
 #: modules/luci-mod-status/luasrc/view/admin_status/connections.htm:389
 #: modules/luci-mod-status/luasrc/view/admin_status/index/30-network.htm:8
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:73
@@ -3415,7 +3429,7 @@ msgstr ""
 msgid "Network without interfaces."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:661
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:665
 msgid "New interface name…"
 msgstr ""
 
@@ -3423,7 +3437,7 @@ msgstr ""
 msgid "Next »"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1542
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1754
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:108
 msgid "No"
 msgstr ""
@@ -3432,7 +3446,7 @@ msgstr ""
 msgid "No DHCP Server configured for this interface"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1040
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1162
 msgid "No Encryption"
 msgstr ""
 
@@ -3440,11 +3454,11 @@ msgstr ""
 msgid "No NAT-T"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:192
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:199
 msgid "No data received"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1759
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1764
 msgid "No entries in this directory"
 msgstr ""
 
@@ -3475,11 +3489,12 @@ msgstr ""
 msgid "No password set!"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:101
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:104
 msgid "No peers defined yet"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:116
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:129
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:271
 msgid "No public keys present yet."
 msgstr ""
 
@@ -3492,7 +3507,7 @@ msgid "No signal"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:145
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:756
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:766
 msgid "No zone assigned"
 msgstr ""
 
@@ -3524,7 +3539,7 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:180
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:172
 msgid "Normal"
 msgstr ""
 
@@ -3550,11 +3565,11 @@ msgstr ""
 msgid "Not started on boot"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:195
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:202
 msgid "Not supported"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:170
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:162
 msgid "Notice"
 msgstr ""
 
@@ -3566,7 +3581,7 @@ msgstr ""
 msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:202
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:194
 msgid "Number of parallel threads used for compression"
 msgstr ""
 
@@ -3589,7 +3604,7 @@ msgstr ""
 msgid "Obtain IPv6-Address"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:78
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:68
 msgid "Off-State Delay"
 msgstr ""
 
@@ -3597,7 +3612,7 @@ msgstr ""
 msgid "On-Link route"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:75
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:64
 msgid "On-State Delay"
 msgstr ""
 
@@ -3623,6 +3638,7 @@ msgstr ""
 msgid "One or more required fields have no value!"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:560
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/backupfiles.lua:19
 msgid "Open list..."
 msgstr ""
@@ -3632,30 +3648,30 @@ msgstr ""
 msgid "OpenConnect (CISCO AnyConnect)"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:756
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:757
 msgid "Operating frequency"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2301
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2306
 msgid "Option changed"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2303
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2308
 msgid "Option removed"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1512
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:63
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1535
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:66
 msgid "Optional"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:73
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:76
 msgid ""
 "Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
 "starting with <code>0x</code>."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:206
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:215
 msgid ""
 "Optional. Allowed values: 'eui64', 'random', fixed value like '::1' or "
 "'::1:2'. When IPv6 prefix (like 'a:b:c:d::') is received from a delegating "
@@ -3663,46 +3679,45 @@ msgid ""
 "for the interface."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:114
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:117
 msgid ""
 "Optional. Base64-encoded preshared key. Adds in an additional layer of "
 "symmetric-key cryptography for post-quantum resistance."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:123
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:126
 msgid "Optional. Create routes for Allowed IPs for this peer."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:105
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:108
 msgid "Optional. Description of peer."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:125
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:128
 msgid ""
 "Optional. Host of peer. Names are resolved prior to bringing up the "
 "interface."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:68
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:71
 msgid "Optional. Maximum Transmission Unit of tunnel interface."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:129
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:132
 msgid "Optional. Port of peer."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:133
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:136
 msgid ""
 "Optional. Seconds between keep alive messages. Default is 0 (disabled). "
 "Recommended value if this device is behind a NAT is 25."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:51
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:54
 msgid "Optional. UDP port used for outgoing and incoming packets."
 msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:63
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:212
 msgid "Options"
 msgstr "Lựa chọn "
 
@@ -3728,14 +3743,14 @@ msgid "Output zone"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:54
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:210
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:219
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:40
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:50
 msgid "Override MAC address"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:58
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:214
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:223
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:44
 #: protocols/luci-proto-ipip/htdocs/luci-static/resources/protocol/ipip.js:53
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:54
@@ -3757,7 +3772,7 @@ msgstr ""
 msgid "Override TTL"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:945
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:954
 msgid "Override default interface name"
 msgstr ""
 
@@ -3779,7 +3794,7 @@ msgstr ""
 msgid "Overview"
 msgstr "Nhìn chung"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1601
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1606
 msgid "Overwrite existing file \"%s\" ?"
 msgstr ""
 
@@ -3824,7 +3839,7 @@ msgstr ""
 msgid "PIN code rejected"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1348
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1372
 msgid "PMK R1 Push"
 msgstr ""
 
@@ -3865,7 +3880,7 @@ msgstr ""
 msgid "PSID-bits length"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:846
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:856
 msgid "PTM/EFM (Packet Transfer Mode)"
 msgstr ""
 
@@ -3874,34 +3889,34 @@ msgid "Packets"
 msgstr "Gói tin"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:145
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:756
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:766
 msgid "Part of zone %q"
 msgstr ""
 
 #: modules/luci-base/luasrc/view/sysauth.htm:29
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1490
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:35
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1514
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:46
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:104
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:58
 msgid "Password"
 msgstr "Mật mã"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:29
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:24
 msgid "Password authentication"
 msgstr "Xác thực mật mã"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1390
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1414
 msgid "Password of Private Key"
 msgstr "Mật mã của private key"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1447
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1471
 msgid "Password of inner Private Key"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:14
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:16
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:18
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:20
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:28
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:30
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:32
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:34
 msgid "Password strength"
 msgstr ""
 
@@ -3909,31 +3924,31 @@ msgstr ""
 msgid "Password2"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/sshkeys.htm:37
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:244
 msgid "Paste or drag SSH key file…"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1372
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1396
 msgid "Path to CA-Certificate"
 msgstr "Đường dẫn tới CA-Certificate"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1378
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1402
 msgid "Path to Client-Certificate"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1384
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1408
 msgid "Path to Private Key"
 msgstr "Đường dẫn tới private key"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1429
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1453
 msgid "Path to inner CA-Certificate"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1435
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1459
 msgid "Path to inner Client-Certificate"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1441
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1465
 msgid "Path to inner Private Key"
 msgstr ""
 
@@ -3960,7 +3975,7 @@ msgstr ""
 msgid "Peer address is missing"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:86
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:89
 msgid "Peers"
 msgstr ""
 
@@ -3972,15 +3987,15 @@ msgstr ""
 msgid "Perform reboot"
 msgstr "Tiến hành reboot"
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:40
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:499
 msgid "Perform reset"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:193
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:200
 msgid "Permission denied"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:133
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:136
 msgid "Persistent Keep Alive"
 msgstr ""
 
@@ -4016,19 +4031,23 @@ msgstr ""
 msgid "Please enter your username and password."
 msgstr "Nhập tên và mật mã"
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:81
+msgid "Please select the file to upload."
+msgstr ""
+
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:45
 msgid "Policy"
 msgstr "Chính sách"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:22
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:20
 msgid "Port"
 msgstr "Cửa "
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:139
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:133
 msgid "Port %s"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/view/admin_network/switch_status.htm:18
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:274
 msgid "Port status:"
 msgstr ""
 
@@ -4056,7 +4075,7 @@ msgstr ""
 msgid "Prefix Delegated"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:114
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:117
 msgid "Preshared Key"
 msgstr ""
 
@@ -4075,17 +4094,13 @@ msgstr ""
 msgid "Prevent listening on these interfaces."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:941
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:950
 msgid "Prevents client-to-client communication"
 msgstr "Ngăn chặn giao tiếp giữa client-và-client"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:46
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:49
 msgid "Private Key"
 msgstr ""
-
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:61
-msgid "Proceed"
-msgstr "Proceed"
 
 #: modules/luci-mod-status/luasrc/controller/admin/status.lua:17
 #: modules/luci-mod-status/luasrc/model/cbi/admin_status/processes.lua:5
@@ -4102,7 +4117,7 @@ msgstr "Prot."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:72
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:349
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:675
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:679
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:84
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:54
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:87
@@ -4110,7 +4125,7 @@ msgstr "Prot."
 msgid "Protocol"
 msgstr "Protocol"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:268
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:260
 msgid "Provide NTP server"
 msgstr ""
 
@@ -4118,15 +4133,15 @@ msgstr ""
 msgid "Provide new network"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:878
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:879
 msgid "Pseudo Ad-Hoc (ahdemo)"
 msgstr "Pseudo Ad-Hoc (ahdemo)"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:110
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:113
 msgid "Public Key"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/sshkeys.htm:30
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:278
 msgid ""
 "Public keys allow for the passwordless SSH logins with a higher security "
 "compared to the use of plain passwords. In order to upload a new key to the "
@@ -4134,7 +4149,7 @@ msgid ""
 "code> file into the input field."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:202
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:211
 msgid "Public prefix routed to this device for distribution to clients."
 msgstr ""
 
@@ -4153,11 +4168,11 @@ msgid ""
 "servers"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1336
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1360
 msgid "R0 Key Lifetime"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1342
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1366
 msgid "R1 Key Holder"
 msgstr ""
 
@@ -4165,11 +4180,11 @@ msgstr ""
 msgid "RFC3947 NAT-T mode"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:813
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:814
 msgid "RSSI threshold for joining"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:777
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:778
 msgid "RTS/CTS Threshold"
 msgstr "RTS/CTS Threshold"
 
@@ -4185,31 +4200,31 @@ msgstr "RX"
 msgid "RX Rate"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1933
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1966
 msgid "RX Rate / TX Rate"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1186
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1207
 msgid "Radius-Accounting-Port"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1194
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1215
 msgid "Radius-Accounting-Secret"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1178
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1199
 msgid "Radius-Accounting-Server"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1162
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1183
 msgid "Radius-Authentication-Port"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1170
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1191
 msgid "Radius-Authentication-Secret"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1154
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1175
 msgid "Radius-Authentication-Server"
 msgstr ""
 
@@ -4229,10 +4244,6 @@ msgstr ""
 msgid ""
 "Really delete this interface? The deletion cannot be undone! You might lose "
 "access to this device if you are connected via this interface"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:40
-msgid "Really reset all changes?"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:354
@@ -4259,7 +4270,7 @@ msgstr ""
 msgid "Realtime Wireless"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1319
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1343
 msgid "Reassociation Deadline"
 msgstr ""
 
@@ -4267,7 +4278,7 @@ msgstr ""
 msgid "Rebind protection"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:48
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:34
 #: modules/luci-mod-system/luasrc/view/admin_system/reboot.htm:9
 msgid "Reboot"
 msgstr "Reboot"
@@ -4277,15 +4288,20 @@ msgstr "Reboot"
 msgid "Rebooting..."
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:301
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:310
+msgid "Rebooting…"
+msgstr ""
+
 #: modules/luci-mod-system/luasrc/view/admin_system/reboot.htm:11
 msgid "Reboots the operating system of your device"
 msgstr "Reboots hệ điều hành của công cụ"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:98
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:90
 msgid "Receive"
 msgstr "Receive"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:56
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:59
 msgid "Recommended. IP addresses of the WireGuard interface."
 msgstr ""
 
@@ -4325,11 +4341,11 @@ msgstr ""
 msgid "Remote IPv4 address or FQDN"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:724
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:725
 msgid "Remove"
 msgstr "Loại bỏ"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1778
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1811
 msgid "Replace wireless configuration"
 msgstr ""
 
@@ -4341,11 +4357,11 @@ msgstr ""
 msgid "Request IPv6-prefix of length"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:194
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:201
 msgid "Request timeout"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1513
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1536
 msgid "Required"
 msgstr ""
 
@@ -4353,42 +4369,42 @@ msgstr ""
 msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:46
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:49
 msgid "Required. Base64-encoded private key for this interface."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:110
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:113
 msgid "Required. Base64-encoded public key of peer."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:119
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:122
 msgid ""
 "Required. IP addresses and prefixes that this peer is allowed to use inside "
 "the tunnel. Usually the peer's tunnel IP addresses and the networks the peer "
 "routes through the tunnel."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1088
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1089
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1090
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1095
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1096
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1097
 msgid "Requires hostapd"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1093
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1094
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1100
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1101
 msgid "Requires hostapd with EAP support"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1095
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1102
 msgid "Requires hostapd with OWE support"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1091
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1092
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1098
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1099
 msgid "Requires hostapd with SAE support"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1509
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1533
 msgid ""
 "Requires the 'full' version of wpad/hostapd and support from the wifi driver "
 "<br />(as of Jan 2019: ath9k, ath10k, mwlwifi and mt76)"
@@ -4400,31 +4416,31 @@ msgid ""
 "come from unsigned domains"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1100
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1101
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1102
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1112
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1113
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1114
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1107
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1108
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1109
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1119
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1120
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1121
 msgid "Requires wpa-supplicant"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1105
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1106
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1112
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1113
 msgid "Requires wpa-supplicant with EAP support"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1107
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1114
 msgid "Requires wpa-supplicant with OWE support"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1103
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1104
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1117
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1110
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1111
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1124
 msgid "Requires wpa-supplicant with SAE support"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1351
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1367
 #: modules/luci-base/luasrc/view/cbi/delegator.htm:17
 #: modules/luci-base/luasrc/view/cbi/footer.htm:30
 #: modules/luci-base/luasrc/view/cbi/simpleform.htm:66
@@ -4436,7 +4452,7 @@ msgstr "Reset"
 msgid "Reset Counters"
 msgstr "Reset bộ đếm"
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:38
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:497
 msgid "Reset to defaults"
 msgstr ""
 
@@ -4448,13 +4464,14 @@ msgstr ""
 msgid "Resolve file"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:191
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:198
 msgid "Resource not found"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:302
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:693
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:71
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:90
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:112
 msgid "Restart"
 msgstr ""
 
@@ -4466,18 +4483,16 @@ msgstr "Khởi động lại Firewall"
 msgid "Restart radio interface"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:31
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:493
 msgid "Restore"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:47
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:503
 msgid "Restore backup"
 msgstr "Phục hồi backup"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:114
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:115
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:38
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:46
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:119
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:120
 msgid "Reveal/hide password"
 msgstr ""
 
@@ -4485,31 +4500,27 @@ msgstr ""
 msgid "Revert"
 msgstr "Revert"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2409
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2405
 msgid "Revert changes"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2561
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2554
 msgid "Revert request failed with status <code>%h</code>"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2541
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2534
 msgid "Reverting configuration…"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:217
-msgid "Root"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:271
 msgid "Root directory for files served via TFTP"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:109
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:320
 msgid "Root preparation"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:123
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:126
 msgid "Route Allowed IPs"
 msgstr ""
 
@@ -4525,8 +4536,8 @@ msgstr ""
 msgid "Router Advertisement-Service"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:15
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:27
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:43
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:13
 msgid "Router Password"
 msgstr ""
 
@@ -4548,19 +4559,19 @@ msgstr ""
 msgid "Rule"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:155
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:358
 msgid "Run a filesystem check before mounting the device"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:154
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:358
 msgid "Run filesystem check"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:664
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:673
 msgid "Runtime error"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:29
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:360
 msgid "SHA256"
 msgstr ""
 
@@ -4568,8 +4579,8 @@ msgstr ""
 msgid "SNR"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:19
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:5
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:9
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:16
 msgid "SSH Access"
 msgstr ""
 
@@ -4585,80 +4596,77 @@ msgstr ""
 msgid "SSH username"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:20
-#: modules/luci-mod-system/luasrc/view/admin_system/sshkeys.htm:27
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:277
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:17
 msgid "SSH-Keys"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:104
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:127
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1589
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1617
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:174
 msgid "SSID"
 msgstr "SSID"
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:236
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:362
 msgid "SWAP"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1167
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1347
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1378
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1363
 #: modules/luci-base/luasrc/view/cbi/error.htm:17
 #: modules/luci-base/luasrc/view/cbi/footer.htm:26
 #: modules/luci-base/luasrc/view/cbi/header.htm:17
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:54
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:551
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:133
 msgid "Save"
 msgstr "Lưu"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1343
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2316
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1359
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2318
 #: modules/luci-base/luasrc/view/cbi/footer.htm:22
 msgid "Save & Apply"
 msgstr "Lưu & áp dụng "
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:89
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:521
 msgid "Save mtdblock"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:64
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:509
 msgid "Save mtdblock contents"
-msgstr ""
-
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:120
-msgid "Saving keys…"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:698
 msgid "Scan"
 msgstr "Scan"
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:25
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/crontab.lua:8
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/crontab.js:39
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:21
 msgid "Scheduled Tasks"
 msgstr "Scheduled Tasks"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2297
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2302
 msgid "Section added"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2299
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2304
 msgid "Section removed"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:148
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:354
 msgid "See \"mount\" manpage for details"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:119
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:384
 msgid ""
 "Select 'Force upgrade' to flash the image even if the image format check "
 "fails. Use only if you are sure that the firmware is correct and meant for "
 "your device!"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1511
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1641
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1804
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1516
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1646
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1809
 msgid "Select file…"
 msgstr ""
 
@@ -4690,7 +4698,7 @@ msgstr ""
 msgid "Services"
 msgstr "Dịch vụ "
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:856
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:873
 msgid "Session expired"
 msgstr ""
 
@@ -4698,10 +4706,14 @@ msgstr ""
 msgid "Set VPN as Default Route"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:795
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:805
 msgid ""
 "Set interface properties regardless of the link carrier (If set, carrier "
 "sense events do not invoke hotplug handlers)."
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:594
+msgid "Set this interface as master for the dhcpv6 relay."
 msgstr ""
 
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:23
@@ -4727,10 +4739,11 @@ msgstr ""
 msgid "Short GI"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:951
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:960
 msgid "Short Preamble"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:558
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/backupfiles.lua:18
 msgid "Show current backup file list"
 msgstr ""
@@ -4747,12 +4760,12 @@ msgstr ""
 #: modules/luci-base/luasrc/view/wifi_assoclist.htm:111
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:47
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:132
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1588
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1616
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:173
 msgid "Signal"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1932
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1965
 msgid "Signal / Noise"
 msgstr ""
 
@@ -4764,7 +4777,7 @@ msgstr ""
 msgid "Signal:"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:30
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:358
 msgid "Size"
 msgstr "Dung lượng "
 
@@ -4772,7 +4785,7 @@ msgstr "Dung lượng "
 msgid "Size of DNS query cache"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:190
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:182
 msgid "Size of the ZRam device in megabytes"
 msgstr ""
 
@@ -4789,7 +4802,7 @@ msgstr "Nhảy tới nội dung"
 msgid "Skip to navigation"
 msgstr "Chuyển đến mục định hướng"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1825
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1849
 #: modules/luci-base/luasrc/model/network.lua:1427
 msgid "Software VLAN"
 msgstr ""
@@ -4806,7 +4819,7 @@ msgstr ""
 msgid "Sorry, the server encountered an unexpected error."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:133
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:528
 msgid ""
 "Sorry, there is no sysupgrade support present; a new firmware image must be "
 "flashed manually. Please refer to the wiki for device specific install "
@@ -4823,12 +4836,8 @@ msgstr "Nguồn"
 msgid "Source Address"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:103
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:315
 msgid "Specifies the directory the device is attached to"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/dropbear.lua:23
-msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr ""
 
 #: protocols/luci-proto-relay/htdocs/luci-static/resources/protocol/relay.js:175
@@ -4843,7 +4852,7 @@ msgid ""
 "dead"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:760
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:761
 msgid ""
 "Specifies the maximum transmit power the wireless radio may use. Depending "
 "on regulatory requirements and wireless usage, the actual transmit power may "
@@ -4866,28 +4875,30 @@ msgid ""
 "bytes)."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1795
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1828
 msgid "Specify the secret encryption key here."
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:533
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:64
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:89
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:111
 msgid "Start"
 msgstr "Bắt đầu "
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:33
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:86
 msgid "Start priority"
 msgstr "Bắt đầu ưu tiên"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2506
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2499
 msgid "Starting configuration apply…"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1598
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1626
 msgid "Starting wireless scan..."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:24
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:120
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:20
 msgid "Startup"
 msgstr ""
 
@@ -4903,11 +4914,11 @@ msgstr "Static IPv6 Routes"
 msgid "Static Leases"
 msgstr "Thống kê leases"
 
-#: modules/luci-mod-network/luasrc/controller/admin/network.lua:79
+#: modules/luci-mod-network/luasrc/controller/admin/network.lua:73
 msgid "Static Routes"
 msgstr "Static Routes"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1366
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1387
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:172
 #: modules/luci-base/luasrc/model/network.lua:966
 msgid "Static address"
@@ -4920,19 +4931,20 @@ msgid ""
 "configurations where only hosts with a corresponding lease are served."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:968
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:977
 msgid "Station inactivity limit"
 msgstr ""
 
 #: modules/luci-base/luasrc/controller/admin/index.lua:40
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:337
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:745
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:746
 #: modules/luci-mod-status/luasrc/view/admin_status/index.htm:128
 msgid "Status"
 msgstr "Tình trạng"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:308
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:75
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:91
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:113
 msgid "Stop"
 msgstr ""
 
@@ -4940,12 +4952,12 @@ msgstr ""
 msgid "Strict order"
 msgstr "Yêu cầu nghiêm ngặt"
 
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:16
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:30
 msgid "Strong"
 msgstr ""
 
 #: modules/luci-base/luasrc/view/cbi/simpleform.htm:61
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1815
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1848
 msgid "Submit"
 msgstr "Trình "
 
@@ -4961,33 +4973,25 @@ msgstr ""
 msgid "Swap"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:29
-msgid "Swap Entry"
-msgstr ""
-
-#: modules/luci-mod-network/luasrc/controller/admin/network.lua:23
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:5
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:135
+#: modules/luci-mod-network/luasrc/controller/admin/network.lua:21
 msgid "Switch"
 msgstr "chuyển đổi"
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:129
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:168
 msgid "Switch %q"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:128
-msgid "Switch %q (%s)"
-msgstr ""
-
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:66
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:146
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:148
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:142
 msgid "Switch Port Mask"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1825
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1849
 #: modules/luci-base/luasrc/model/network.lua:1425
 msgid "Switch VLAN"
 msgstr ""
@@ -5002,11 +5006,11 @@ msgstr ""
 msgid "Switch to CIDR list notation"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1542
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1547
 msgid "Symbolic link"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:77
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:71
 msgid "Sync with NTP-Server"
 msgstr ""
 
@@ -5016,7 +5020,7 @@ msgstr ""
 
 #: modules/luci-base/luasrc/controller/admin/index.lua:47
 #: modules/luci-mod-status/luasrc/view/admin_status/index/10-system.htm:14
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:102
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:94
 #: modules/luci-mod-system/luasrc/controller/admin/system.lua:10
 #: modules/luci-mod-system/luasrc/view/admin_system/applyreboot.htm:39
 msgid "System"
@@ -5027,11 +5031,11 @@ msgstr "Hệ thống"
 msgid "System Log"
 msgstr "System Log"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:107
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:99
 msgid "System Properties"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:144
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:136
 msgid "System log buffer size"
 msgstr ""
 
@@ -5080,6 +5084,10 @@ msgstr ""
 msgid "Terminate"
 msgstr "Terminate"
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:120
+msgid "The <em>block mount</em> command failed with code %d"
+msgstr ""
+
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/6in4.js:77
 msgid ""
 "The HE.net endpoint update configuration changed, you must now use the plain "
@@ -5097,21 +5105,17 @@ msgid ""
 "The IPv6 prefix assigned to the provider, usually ends with <code>::</code>"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1780
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1813
 msgid ""
 "The allowed characters are: <code>A-Z</code>, <code>a-z</code>, <code>0-9</"
 "code> and <code>_</code>"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:59
-msgid "The backup archive does not appear to be a valid gzip file."
 msgstr ""
 
 #: modules/luci-base/luasrc/view/cbi/error.htm:6
 msgid "The configuration file could not be loaded due to the following error:"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2397
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2396
 msgid ""
 "The device could not be reached within %d seconds after applying the pending "
 "changes, which caused the configuration to be rolled back for safety "
@@ -5122,8 +5126,8 @@ msgid ""
 "state."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:87
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:41
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:303
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:415
 msgid ""
 "The device file of the memory or partition (<abbr title=\"for example\">e.g."
 "</abbr> <code>/dev/sda1</code>)"
@@ -5137,19 +5141,14 @@ msgid ""
 "properly."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:127
-msgid ""
-"The filesystem that was used to format the memory (<abbr title=\"for example"
-"\">e.g.</abbr> <samp><abbr title=\"Third Extended Filesystem\">ext3</abbr></"
-"samp>)"
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:246
+msgid "The firstboot command failed with code %d"
 msgstr ""
-"Filesystem mà được dùng để format memory (<abbr title=\"for example\">e.g.</"
-"abbr> <samp><abbr title=\"Third Extended Filesystem\">ext3</abbr></samp>)"
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:11
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:356
 msgid ""
 "The flash image was uploaded. Below is the checksum and file size listed, "
-"compare them with the original file to ensure data integrity.<br /> Click "
+"compare them with the original file to ensure data integrity. <br /> Click "
 "\"Proceed\" below to start the flash procedure."
 msgstr ""
 
@@ -5161,21 +5160,21 @@ msgstr ""
 msgid "The gateway address must not be a local IP address"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:144
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:154
 msgid "The given SSH public key has already been added."
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:150
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:160
 msgid ""
 "The given SSH public key is invalid. Please supply proper public RSA or "
 "ECDSA keys."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:664
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:668
 msgid "The interface name is already used"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:670
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:674
 msgid "The interface name is too long"
 msgstr ""
 
@@ -5195,11 +5194,11 @@ msgstr ""
 msgid "The local IPv4 address over which the tunnel is created (optional)."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1786
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1819
 msgid "The network name is already used"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:5
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:135
 msgid ""
 "The network ports on this device can be combined to several <abbr title="
 "\"Virtual Local Area Network\">VLAN</abbr>s in which computers can "
@@ -5209,7 +5208,15 @@ msgid ""
 "next greater network like the internet and other ports for a local network."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1142
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:306
+msgid "The reboot command failed with code %d"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:295
+msgid "The restore command failed with code %d"
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1149
 msgid "The selected %s mode is incompatible with %s encryption"
 msgstr ""
 
@@ -5217,13 +5224,13 @@ msgstr ""
 msgid "The submitted security token is invalid or already expired!"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:274
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:249
 msgid ""
 "The system is erasing the configuration partition now and will reboot itself "
 "when finished."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:195
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:417
 #, fuzzy
 msgid ""
 "The system is flashing now.<br /> DO NOT POWER OFF THE DEVICE!<br /> Wait a "
@@ -5235,11 +5242,32 @@ msgstr ""
 "một vài phút cho tới khi kết nối lại. Có thể cần phải làm mới địa chỉ của "
 "máy tính để tiếp cận thiết bị một lần nữa, phụ thuộc vào cài đặt của bạn. "
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:15
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:311
+msgid ""
+"The system is rebooting now. If the restored configuration changed the "
+"current LAN IP address, you might need to reconnect manually."
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:80
 msgid "The system password has been successfully changed."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:118
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:440
+msgid "The sysupgrade command failed with code %d"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:269
+msgid ""
+"The uploaded backup archive appears to be valid and contains the files "
+"listed below. Press \"Continue\" to restore the backup and reboot, or "
+"\"Cancel\" to abort the operation."
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:264
+msgid "The uploaded backup archive is not readable"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:377
 msgid ""
 "The uploaded image file does not contain a supported format. Make sure that "
 "you choose the generic image format for your platform."
@@ -5256,7 +5284,7 @@ msgstr ""
 msgid "There are no active leases."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2521
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2514
 msgid "There are no changes to apply"
 msgstr ""
 
@@ -5273,7 +5301,7 @@ msgstr ""
 msgid "This IPv4 address of the relay"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1424
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1448
 msgid "This authentication type is not applicable to the selected EAP method."
 msgstr ""
 
@@ -5288,6 +5316,7 @@ msgid ""
 "Name System\">DNS</abbr> servers."
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:543
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/backupfiles.lua:16
 msgid ""
 "This is a list of shell glob patterns for matching files and directories to "
@@ -5301,7 +5330,7 @@ msgid ""
 "password if no update key has been configured"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:82
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:127
 msgid ""
 "This is the content of /etc/rc.local. Insert your own commands here (in "
 "front of 'exit 0') to execute them at the end of the boot process."
@@ -5330,7 +5359,7 @@ msgid ""
 "This is the prefix routed to you by the tunnel broker for use by clients"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/crontab.lua:9
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/crontab.js:41
 msgid "This is the system crontab in which scheduled tasks can be defined."
 msgstr "Đây là system crontab mà scheduled tasks có thể bị định nghĩa."
 
@@ -5352,37 +5381,37 @@ msgid "This page gives an overview over currently active network connections."
 msgstr ""
 "Trang này cung cấp một tổng quan về đang hoạt động kết nối mạng hiện tại."
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:720
-#: modules/luci-base/htdocs/luci-static/resources/form.js:848
+#: modules/luci-base/htdocs/luci-static/resources/form.js:936
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1064
 #: modules/luci-base/luasrc/view/cbi/tblsection.htm:172
 #: modules/luci-base/luasrc/view/cbi/tsection.htm:32
 msgid "This section contains no values yet"
 msgstr "Phần này chưa có giá trị nào"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:113
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:105
 msgid "Time Synchronization"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:959
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:968
 msgid "Time interval for rekeying GTK"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:127
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:119
 msgid "Timezone"
 msgstr "Múi giờ "
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:866
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:883
 msgid "To login…"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:32
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:493
 msgid ""
 "To restore configuration files, you can upload a previously generated backup "
 "archive here. To reset the firmware to its initial state, click \"Perform "
 "reset\" (only possible with squashfs images)."
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:835
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:845
 msgid "Tone"
 msgstr ""
 
@@ -5406,15 +5435,15 @@ msgstr ""
 msgid "Transfer"
 msgstr "Chuyển giao"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:97
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:89
 msgid "Transmit"
 msgstr "Transmit"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:68
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:57
 msgid "Trigger"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:93
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:84
 msgid "Trigger Mode"
 msgstr ""
 
@@ -5422,7 +5451,7 @@ msgstr ""
 msgid "Tunnel ID"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1828
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1852
 #: modules/luci-base/luasrc/model/network.lua:1430
 msgid "Tunnel Interface"
 msgstr ""
@@ -5457,16 +5486,16 @@ msgstr ""
 msgid "UMTS/GPRS/EV-DO"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:101
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:93
 msgid "USB Device"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:117
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:110
 msgid "USB Ports"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:56
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/swap.lua:47
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:277
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:383
 msgid "UUID"
 msgstr ""
 
@@ -5496,6 +5525,10 @@ msgstr ""
 msgid "Unable to obtain client ID"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:244
+msgid "Unable to obtain mount information"
+msgstr ""
+
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dslite.js:7
 #: protocols/luci-proto-ipv6/luasrc/model/network/proto_4x6.lua:61
 msgid "Unable to resolve AFTR host name"
@@ -5506,44 +5539,51 @@ msgstr ""
 msgid "Unable to resolve peer host name"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/crontab.js:33
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:465
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:68
+msgid "Unable to save contents: %s"
+msgstr ""
+
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:132
 msgid "Unavailable Seconds (UAS)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1368
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1389
 #: modules/luci-base/luasrc/model/network.lua:970
 msgid "Unknown"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1521
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1542
 #: modules/luci-base/luasrc/model/network.lua:1137
 msgid "Unknown error (%s)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:198
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:205
 msgid "Unknown error code"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1365
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1386
 #: modules/luci-base/htdocs/luci-static/resources/protocol/none.js:6
 #: modules/luci-base/luasrc/model/network.lua:964
 msgid "Unmanaged"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:119
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:125
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:219
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:240
 msgid "Unmount"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:107
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:120
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:262
 msgid "Unnamed key"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2256
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2261
 msgid "Unsaved Changes"
 msgstr "Thay đổi không lưu"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:196
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:203
 msgid "Unspecified error"
 msgstr ""
 
@@ -5566,27 +5606,39 @@ msgstr ""
 msgid "Up"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:103
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:153
+msgid "Upload"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:527
 msgid ""
 "Upload a sysupgrade-compatible image here to replace the running firmware. "
 "Check \"Keep settings\" to retain the current configuration (requires a "
 "compatible firmware image)."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/flashops.htm:51
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:286
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:316
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:505
 msgid "Upload archive..."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1698
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1703
 msgid "Upload file"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1673
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1678
 msgid "Upload file…"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1618
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1623
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:142
 msgid "Upload request failed: %s"
+msgstr ""
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:80
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:118
+msgid "Uploading file…"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:613
@@ -5644,11 +5696,11 @@ msgstr ""
 msgid "Use TTL on tunnel interface"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:106
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:317
 msgid "Use as external overlay (/overlay)"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab/mount.lua:105
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:316
 msgid "Use as root filesystem (/)"
 msgstr ""
 
@@ -5656,7 +5708,7 @@ msgstr ""
 msgid "Use broadcast flag"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:791
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:801
 msgid "Use builtin IPv6-management"
 msgstr ""
 
@@ -5687,7 +5739,7 @@ msgid "Use default gateway"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:45
-#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:218
+#: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:227
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:119
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/464xlat.js:51
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/6in4.js:88
@@ -5719,18 +5771,18 @@ msgid ""
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:111
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:218
 msgid "Used"
 msgstr "Đã sử dụng"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1249
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1273
 msgid "Used Key Slot"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1305
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1329
 msgid ""
 "Used for two different purposes: RADIUS NAS ID and 802.11r R0KH-ID. Not "
-"needed with normal WPA(2)-PSK."
+"needed with normal WPA(2)-PSK/WPA3-SAE."
 msgstr ""
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:110
@@ -5747,20 +5799,16 @@ msgstr ""
 msgid "Username"
 msgstr "Tên người dùng "
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:903
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:913
 msgid "VC-Mux"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:851
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:861
 msgid "VDSL"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:172
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:169
 msgid "VLANs on %q"
-msgstr ""
-
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:171
-msgid "VLANs on %q (%s)"
 msgstr ""
 
 #: modules/luci-base/luasrc/controller/admin/index.lua:55
@@ -5802,8 +5850,8 @@ msgstr ""
 msgid "Vendor Class to send when requesting DHCP"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/upgrade.htm:9
-msgid "Verify"
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:343
+msgid "Verifying the uploaded image file."
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:52
@@ -5811,32 +5859,32 @@ msgstr ""
 msgid "Virtual dynamic interface"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:898
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:899
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:907
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:908
 msgid "WDS"
 msgstr "WDS"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1041
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1160
 msgid "WEP Open System"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1042
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1161
 msgid "WEP Shared Key"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1795
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1828
 msgid "WEP passphrase"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:936
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:945
 msgid "WMM Mode"
 msgstr "WMM Mode"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1795
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1828
 msgid "WPA passphrase"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1067
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1074
 msgid ""
 "WPA-Encryption requires wpa_supplicant (for client mode) or hostapd (for AP "
 "and ad-hoc mode) to be installed."
@@ -5850,7 +5898,7 @@ msgstr ""
 msgid "Waiting for command to complete..."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2488
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2481
 msgid "Waiting for configuration to get applied… %ds"
 msgstr ""
 
@@ -5858,8 +5906,8 @@ msgstr ""
 msgid "Waiting for device..."
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:171
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:181
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:163
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:173
 msgid "Warning"
 msgstr ""
 
@@ -5867,11 +5915,11 @@ msgstr ""
 msgid "Warning: There are unsaved changes that will get lost on reboot!"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/view/admin_system/password.htm:20
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:34
 msgid "Weak"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1331
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1355
 msgid ""
 "When using a PSK, the PMK can be automatically generated. When enabled, the "
 "R0/R1 key options below are not applied. Disable this to use the R0 and R1 "
@@ -5883,24 +5931,24 @@ msgstr ""
 msgid "Width"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:14
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:17
 #: protocols/luci-proto-wireguard/luasrc/model/network/proto_wireguard.lua:9
 msgid "WireGuard VPN"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/controller/admin/network.lua:46
+#: modules/luci-mod-network/luasrc/controller/admin/network.lua:40
 #: modules/luci-mod-status/luasrc/controller/admin/status.lua:28
 #: modules/luci-mod-status/luasrc/view/admin_status/index/60-wifi.htm:14
 msgid "Wireless"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1816
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1840
 #: modules/luci-base/luasrc/model/network.lua:1418
 msgid "Wireless Adapter"
 msgstr "Bộ tương hợp không dây"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1802
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2267
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1826
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2291
 #: modules/luci-base/luasrc/model/network.lua:1404
 #: modules/luci-base/luasrc/model/network.lua:1865
 msgid "Wireless Network"
@@ -5910,7 +5958,7 @@ msgstr ""
 msgid "Wireless Overview"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:796
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:797
 msgid "Wireless Security"
 msgstr ""
 
@@ -5930,11 +5978,11 @@ msgstr ""
 msgid "Wireless is not associated"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:751
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:752
 msgid "Wireless network is disabled"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:751
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:752
 msgid "Wireless network is enabled"
 msgstr ""
 
@@ -5942,22 +5990,22 @@ msgstr ""
 msgid "Write received DNS requests to syslog"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:163
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:155
 msgid "Write system log to file"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1542
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1754
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:109
 msgid "Yes"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:943
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:953
 msgid ""
 "You appear to be currently connected to the device via the \"%h\" interface. "
 "Do you really want to shut down the interface?"
 msgstr ""
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/startup.lua:26
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:123
 msgid ""
 "You can enable or disable installed init scripts here. Changes will applied "
 "after a device reboot.<br /><strong>Warning: If you disable essential init "
@@ -5976,19 +6024,19 @@ msgid ""
 "You must enable JavaScript in your browser or LuCI will not work properly."
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:195
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:187
 msgid "ZRam Compression Algorithm"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:202
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:194
 msgid "ZRam Compression Streams"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:188
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:180
 msgid "ZRam Settings"
 msgstr ""
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:190
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:182
 msgid "ZRam Size"
 msgstr ""
 
@@ -5996,10 +6044,10 @@ msgstr ""
 msgid "any"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:836
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:844
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:849
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1021
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:846
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:854
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:859
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1030
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:78
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoe.js:48
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoe.js:51
@@ -6012,11 +6060,11 @@ msgstr "tự động"
 msgid "automatic"
 msgstr "thống kê"
 
-#: modules/luci-mod-network/luasrc/view/admin_network/switch_status.htm:45
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:78
 msgid "baseT"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:909
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:919
 msgid "bridged"
 msgstr ""
 
@@ -6033,7 +6081,7 @@ msgid "create:"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:368
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:678
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:682
 msgid "creates a bridge over specified interface(s)"
 msgstr "tạo một cầu nối trên một giao diện được chỉ định"
 
@@ -6058,7 +6106,7 @@ msgstr ""
 msgid "dBm"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:888
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:889
 msgid "disable"
 msgstr "Vô hiệu hóa"
 
@@ -6095,11 +6143,11 @@ msgstr ""
 msgid "forward"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/view/admin_network/switch_status.htm:47
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:80
 msgid "full-duplex"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/view/admin_network/switch_status.htm:47
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:80
 msgid "half-duplex"
 msgstr ""
 
@@ -6159,18 +6207,20 @@ msgstr ""
 msgid "local <abbr title=\"Domain Name System\">DNS</abbr> file"
 msgstr "Tập tin <abbr title=\"Domain Name System\">DNS</abbr> địa phương"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1336
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1168
+msgid "medium security"
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1360
 msgid "minutes"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:39
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:34
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:225
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:232
 msgid "no"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/view/admin_network/switch_status.htm:54
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:72
 msgid "no link"
 msgstr ""
 
@@ -6178,19 +6228,19 @@ msgstr ""
 msgid "non-empty value"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1234
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1445
 msgid "none"
 msgstr "không "
 
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:166
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:176
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:186
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:77
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:91
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:105
 msgid "not present"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:775
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:779
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:363
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:341
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:776
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:780
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:163
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:194
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:206
@@ -6205,13 +6255,13 @@ msgstr ""
 msgid "on"
 msgstr ""
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1169
+msgid "open network"
+msgstr ""
+
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:56
 #: modules/luci-base/luasrc/view/cbi/firewall_zonelist.htm:46
 msgid "output"
-msgstr ""
-
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:223
-msgid "overlay"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:236
@@ -6222,7 +6272,7 @@ msgstr ""
 msgid "positive integer value"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:53
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:56
 msgid "random"
 msgstr ""
 
@@ -6232,12 +6282,12 @@ msgstr ""
 msgid "relay mode"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:910
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:920
 msgid "routed"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:959
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:968
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:977
 msgid "sec"
 msgstr ""
 
@@ -6246,23 +6296,27 @@ msgstr ""
 msgid "server mode"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:597
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:601
 msgid "stateful-only"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:595
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:599
 msgid "stateless"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:596
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:600
 msgid "stateless + stateful"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:369
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1167
+msgid "strong security"
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:346
 msgid "tagged"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1319
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1343
 msgid "time units (TUs / 1.024 ms) [1000-65535]"
 msgstr ""
 
@@ -6281,7 +6335,7 @@ msgstr ""
 msgid "unlimited"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1436
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1648
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:63
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:124
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:355
@@ -6298,7 +6352,7 @@ msgstr ""
 msgid "unspecified -or- create:"
 msgstr ""
 
-#: modules/luci-mod-network/luasrc/model/cbi/admin_network/vlan.lua:366
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:344
 msgid "untagged"
 msgstr ""
 
@@ -6462,16 +6516,40 @@ msgstr ""
 msgid "value with at most %d characters"
 msgstr ""
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1169
+msgid "weak security"
+msgstr ""
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:39
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/network.js:34
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:221
-#: modules/luci-mod-system/luasrc/model/cbi/admin_system/fstab.lua:232
 msgid "yes"
 msgstr ""
 
 #: modules/luci-base/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr ""
+
+#, fuzzy
+#~ msgid "(%s available)"
+#~ msgstr "(%s available)"
+
+#~ msgid "Checksum"
+#~ msgstr "Checksum"
+
+#~ msgid "Flash Firmware"
+#~ msgstr "Phần cứng flash"
+
+#~ msgid "Proceed"
+#~ msgstr "Proceed"
+
+#~ msgid ""
+#~ "The filesystem that was used to format the memory (<abbr title=\"for "
+#~ "example\">e.g.</abbr> <samp><abbr title=\"Third Extended Filesystem"
+#~ "\">ext3</abbr></samp>)"
+#~ msgstr ""
+#~ "Filesystem mà được dùng để format memory (<abbr title=\"for example\">e.g."
+#~ "</abbr> <samp><abbr title=\"Third Extended Filesystem\">ext3</abbr></"
+#~ "samp>)"
 
 #~ msgid "Connection Limit"
 #~ msgstr "Giới hạn kết nối"
