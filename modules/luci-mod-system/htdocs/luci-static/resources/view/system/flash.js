@@ -204,7 +204,7 @@ function findStorageSize(procmtd, procpart) {
 }
 
 
-var mapdata = { actions: {}, config: {} };
+var mapdata = { actions: { dl_backup: {} }, config: { showlist: {} } };
 
 return L.view.extend({
 	load: function() {
@@ -251,7 +251,7 @@ return L.view.extend({
 				E('p', { 'class': 'spinning' }, _('The system is erasing the configuration partition now and will reboot itself when finished.'))
 			]);
 
-			awaitReconnect('192.168.1.1', 'openwrt.lan');
+			awaitReconnect('192.168.1.1', 'tanowrt.lan');
 		});
 	},
 
@@ -481,8 +481,6 @@ return L.view.extend({
 		m.tabbed = true;
 
 		s = m.section(form.NamedSection, 'actions', _('Actions'));
-
-
 		o = s.option(form.SectionValue, 'actions', form.NamedSection, 'actions', 'actions', _('Backup'), _('Click "Generate archive" to download a tar archive of the current configuration files.'));
 		ss = o.subsection;
 
