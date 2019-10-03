@@ -344,6 +344,15 @@ function isIgnoredIfname(ifname) {
 		if (iface_patterns_ignore[i].test(ifname))
 			return true;
 
+	var blacklist = uci.get('luci', 'net_blacklist', 'blacklist');
+	if (Array.isArray(blacklist))
+		return blacklist.includes(ifname);
+	else {
+		var splitted = blacklist.split(/\s+/);
+		if (splitted && Array.isArray(splitted))
+			return splitted.includes(ifname);
+	};
+
 	return false;
 }
 
