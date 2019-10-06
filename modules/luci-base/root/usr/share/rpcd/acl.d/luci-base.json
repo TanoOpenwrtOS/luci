@@ -34,7 +34,6 @@
 				"/proc/mtd": [ "read" ],
 				"/proc/partitions": [ "read" ],
 				"/proc/sys/kernel/hostname": [ "read" ],
-				"/sys/devices/virtual/mtd/*/name": [ "read" ],
 				"/sys/devices/virtual/ubi/*/name": [ "read" ]
 			},
 			"ubus": {
@@ -44,6 +43,7 @@
 				"network.device": [ "status" ],
 				"network.interface": [ "dump" ],
 				"network": [ "get_proto_handlers" ],
+				"system": [ "validate_firmware_image" ],
 				"uci": [ "changes", "get" ]
 			},
 			"uci": [ "*" ]

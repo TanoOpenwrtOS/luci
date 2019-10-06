@@ -2,7 +2,7 @@
 'require form';
 'require rpc';
 
-var callFileStat, callFileRead, callFileWrite, callFileExec, callFileRemove;
+var callFileStat, callFileRead, callFileWrite, callFileExec, callFileRemove, callSystemValidateFirmwareImage;
 
 callFileStat = rpc.declare({
 	object: 'file',
@@ -36,6 +36,13 @@ callFileRemove = rpc.declare({
 	object: 'file',
 	method: 'remove',
 	params: [ 'path' ]
+});
+
+callSystemValidateFirmwareImage = rpc.declare({
+	object: 'system',
+	method: 'validate_firmware_image',
+	params: [ 'path' ],
+	expect: { '': { valid: false, forcable: true } }
 });
 
 function pingDevice(proto, ipaddr) {
@@ -208,16 +215,13 @@ var mapdata = { actions: { dl_backup: {} }, config: { showlist: {} } };
 
 return L.view.extend({
 	load: function() {
-		var max_mtd = 10, max_ubi = 2, max_ubi_vol = 4;
+		var max_ubi = 2, max_ubi_vol = 4;
 		var tasks = [
 			callFileStat('/lib/upgrade/platform.sh'),
 			callFileRead('/proc/sys/kernel/hostname'),
 			callFileRead('/proc/mtd'),
 			callFileRead('/proc/partitions')
 		];
-
-		for (var i = 0; i < max_mtd; i++)
-			tasks.push(callFileRead('/sys/devices/virtual/mtd/mtd%d/name'.format(i)));
 
 		for (var i = 0; i < max_ubi; i++)
 			for (var j = 0; j < max_ubi_vol; j++)
@@ -345,13 +349,19 @@ return L.view.extend({
 					E('span', { 'class': 'spinning' }, _('Verifying the uploaded image file.'))
 				]);
 
+				return callSystemValidateFirmwareImage('/tmp/firmware.bin')
+					.then(function(res) { return [ reply, res ]; });
+			}, this, ev.target))
+			.then(L.bind(function(btn, reply) {
 				return callFileExec('/sbin/sysupgrade', [ '--test', '/tmp/firmware.bin' ])
-					.then(function(res) { return [ reply, res ] });
+					.then(function(res) { reply.push(res); return reply; });
 			}, this, ev.target))
 			.then(L.bind(function(btn, res) {
-				var keep = document.querySelector('[data-name="keep"] input[type="checkbox"]'),
+				var keep = E('input', { type: 'checkbox' }),
 				    force = E('input', { type: 'checkbox' }),
-				    is_invalid = (res[1].code != 0),
+				    is_valid = res[1].valid,
+				    is_forceable = res[1].forceable,
+				    allow_backup = res[1].allow_backup,
 				    is_too_big = (storage_size > 0 && res[0].size > storage_size),
 				    body = [];
 
@@ -359,11 +369,10 @@ return L.view.extend({
 				body.push(E('ul', {}, [
 					res[0].size ? E('li', {}, '%s: %1024.2mB'.format(_('Size'), res[0].size)) : '',
 					res[0].checksum ? E('li', {}, '%s: %s'.format(_('MD5'), res[0].checksum)) : '',
-					res[0].sha256sum ? E('li', {}, '%s: %s'.format(_('SHA256'), res[0].sha256sum)) : '',
-					E('li', {}, keep.checked ? _('Configuration files will be kept') : _('Caution: Configuration files will be erased'))
+					res[0].sha256sum ? E('li', {}, '%s: %s'.format(_('SHA256'), res[0].sha256sum)) : ''
 				]));
 
-				if (is_invalid || is_too_big)
+				if (!is_valid || is_too_big)
 					body.push(E('hr'));
 
 				if (is_too_big)
@@ -371,15 +380,27 @@ return L.view.extend({
 						_('It appears that you are trying to flash an image that does not fit into the flash memory, please verify the image file!')
 					]));
 
-				if (is_invalid)
+				if (!is_valid)
 					body.push(E('p', { 'class': 'alert-message' }, [
-						res[1].stderr ? res[1].stderr : '',
-						res[1].stderr ? E('br') : '',
-						res[1].stderr ? E('br') : '',
+						res[2].stderr ? res[2].stderr : '',
+						res[2].stderr ? E('br') : '',
+						res[2].stderr ? E('br') : '',
 						_('The uploaded image file does not contain a supported format. Make sure that you choose the generic image format for your platform.')
 					]));
 
-				if (is_invalid || is_too_big)
+				if (!allow_backup)
+					body.push(E('p', { 'class': 'alert-message' }, [
+						_('The uploaded firmware does not allow keeping current configuration.')
+					]));
+				if (allow_backup)
+					keep.checked = true;
+				else
+					keep.disabled = true;
+				body.push(E('p', {}, E('label', { 'class': 'btn' }, [
+					keep, ' ', _('Keep settings and retain the current configuration')
+				])));
+
+				if ((!is_valid || is_too_big) && is_forceable)
 					body.push(E('p', {}, E('label', { 'class': 'btn alert-message danger' }, [
 						force, ' ', _('Force upgrade'),
 						E('br'), E('br'),
@@ -389,7 +410,7 @@ return L.view.extend({
 				var cntbtn = E('button', {
 					'class': 'btn cbi-button-action important',
 					'click': L.ui.createHandlerFn(this, 'handleSysupgradeConfirm', btn, keep.checked, force.checked),
-					'disabled': (is_invalid || is_too_big) ? true : null
+					'disabled': (!is_valid || is_too_big) ? true : null
 				}, [ _('Continue') ]);
 
 				body.push(E('div', { 'class': 'right' }, [
@@ -473,7 +494,7 @@ return L.view.extend({
 		    hostname = rpc_replies[1],
 		    procmtd = rpc_replies[2],
 		    procpart = rpc_replies[3],
-		    has_rootfs_data = rpc_replies.slice(4).filter(function(n) { return n == 'rootfs_data' })[0],
+		    has_rootfs_data = (procmtd.match(/"rootfs_data"/) != null) || rpc_replies.slice(4).filter(function(n) { return n == 'rootfs_data' })[0],
 		    storage_size = findStorageSize(procmtd, procpart),
 		    m, s, o, ss;
 
@@ -526,15 +547,12 @@ return L.view.extend({
 
 		o = s.option(form.SectionValue, 'actions', form.NamedSection, 'actions', 'actions', _('Flash new firmware image'),
 			has_sysupgrade
-				? _('Upload a sysupgrade-compatible image here to replace the running firmware. Check "Keep settings" to retain the current configuration (requires a compatible firmware image).')
+				? _('Upload a sysupgrade-compatible image here to replace the running firmware.')
 				: _('Sorry, there is no sysupgrade support present; a new firmware image must be flashed manually. Please refer to the wiki for device specific install instructions.'));
 
 		ss = o.subsection;
 
 		if (has_sysupgrade) {
-			o = ss.option(form.Flag, 'keep', _('Keep settings'));
-			o.default = o.enabled;
-
 			o = ss.option(form.Button, 'sysupgrade', _('Image'));
 			o.inputstyle = 'action important';
 			o.inputtitle = _('Flash image...');
