@@ -44,13 +44,13 @@ var iface_patterns_wireless = [
 
 var iface_patterns_virtual = [ ];
 
-var callLuciNetdevs = rpc.declare({
+var callLuciNetworkDevices = rpc.declare({
 	object: 'luci',
 	method: 'getNetworkDevices',
 	expect: { '': {} }
 });
 
-var callLuciWifidevs = rpc.declare({
+var callLuciWirelessDevices = rpc.declare({
 	object: 'luci',
 	method: 'getWirelessDevices',
 	expect: { '': {} }
@@ -62,9 +62,15 @@ var callLuciIfaddrs = rpc.declare({
 	expect: { result: [] }
 });
 
-var callLuciBoardjson = rpc.declare({
+var callLuciBoardJSON = rpc.declare({
 	object: 'luci',
 	method: 'getBoardJSON'
+});
+
+var callLuciHostHints = rpc.declare({
+	object: 'luci',
+	method: 'getHostHints',
+	expect: { '': {} }
 });
 
 var callIwinfoAssoclist = rpc.declare({
@@ -82,7 +88,7 @@ var callIwinfoScan = rpc.declare({
 	expect: { results: [] }
 });
 
-var callNetworkInterfaceStatus = rpc.declare({
+var callNetworkInterfaceDump = rpc.declare({
 	object: 'network.interface',
 	method: 'dump',
 	expect: { 'interface': [] }
@@ -94,15 +100,9 @@ var callNetworkDeviceStatus = rpc.declare({
 	expect: { '': {} }
 });
 
-var callGetProtoHandlers = rpc.declare({
+var callNetworkProtoHandlers = rpc.declare({
 	object: 'network',
 	method: 'get_proto_handlers',
-	expect: { '': {} }
-});
-
-var callGetHostHints = rpc.declare({
-	object: 'luci',
-	method: 'getHostHints',
 	expect: { '': {} }
 });
 
@@ -111,71 +111,8 @@ var _init = null,
     _protocols = {},
     _protospecs = {};
 
-function getInterfaceState(cache) {
-	return callNetworkInterfaceStatus().then(function(state) {
-		if (!Array.isArray(state))
-			throw !1;
-		return state;
-	}).catch(function() {
-		return [];
-	});
-}
-
-function getDeviceState(cache) {
-	return callNetworkDeviceStatus().then(function(state) {
-		if (!L.isObject(state))
-			throw !1;
-		return state;
-	}).catch(function() {
-		return {};
-	});
-}
-
-function getIfaddrState(cache) {
-	return callLuciIfaddrs().then(function(addrs) {
-		if (!Array.isArray(addrs))
-			throw !1;
-		return addrs;
-	}).catch(function() {
-		return [];
-	});
-}
-
-function getNetdevState(cache) {
-	return callLuciNetdevs().then(function(state) {
-		if (!L.isObject(state))
-			throw !1;
-		return state;
-	}).catch(function() {
-		return {};
-	});
-}
-
-function getWifidevState(cache) {
-	return callLuciWifidevs().then(function(state) {
-		if (!L.isObject(state))
-			throw !1;
-		return state;
-	}).catch(function() {
-		return {};
-	});
-}
-
-function getBoardState(cache) {
-	return callLuciBoardjson().then(function(state) {
-		if (!L.isObject(state))
-			throw !1;
-		return state;
-	}).catch(function() {
-		return {};
-	});
-}
-
 function getProtocolHandlers(cache) {
-	return callGetProtoHandlers().then(function(protos) {
-		if (!L.isObject(protos))
-			throw !1;
-
+	return callNetworkProtoHandlers().then(function(protos) {
 		/* Register "none" protocol */
 		if (!protos.hasOwnProperty('none'))
 			Object.assign(protos, { none: { no_device: false } });
@@ -194,16 +131,6 @@ function getProtocolHandlers(cache) {
 		})).then(function() {
 			return protos;
 		});
-	}).catch(function() {
-		return {};
-	});
-}
-
-function getHostHints(cache) {
-	return callGetHostHints().then(function(hosts) {
-		if (!L.isObject(hosts))
-			throw !1;
-		return hosts;
 	}).catch(function() {
 		return {};
 	});
@@ -442,19 +369,29 @@ function maskToPrefix(mask, v6) {
 function initNetworkState(refresh) {
 	if (_state == null || refresh) {
 		_init = _init || Promise.all([
-			getInterfaceState(), getDeviceState(), getBoardState(),
-			getIfaddrState(), getNetdevState(), getWifidevState(),
-			getHostHints(), getProtocolHandlers(),
-			uci.load('network'), uci.load('wireless'), uci.load('luci')
+			L.resolveDefault(callNetworkInterfaceDump(), []),
+			L.resolveDefault(callNetworkDeviceStatus(), {}),
+			L.resolveDefault(callLuciBoardJSON(), {}),
+			L.resolveDefault(callLuciIfaddrs(), []),
+			L.resolveDefault(callLuciNetworkDevices(), {}),
+			L.resolveDefault(callLuciWirelessDevices(), {}),
+			L.resolveDefault(callLuciHostHints(), {}),
+			getProtocolHandlers(),
+			uci.load(['network', 'wireless', 'luci'])
 		]).then(function(data) {
-			var board = data[2], ifaddrs = data[3], devices = data[4];
+			var netifd_ifaces = data[0],
+			    netifd_devs   = data[1],
+			    board_json    = data[2],
+			    luci_ifaddrs  = data[3],
+			    luci_devs     = data[4];
+
 			var s = {
 				isTunnel: {}, isBridge: {}, isSwitch: {}, isWifi: {},
-				ifaces: data[0], devices: data[1], radios: data[5],
-				hosts: data[6], netdevs: {}, bridges: {}, switches: {}
+				ifaces: netifd_ifaces, radios: data[5], hosts: data[6],
+				netdevs: {}, bridges: {}, switches: {}
 			};
 
-			for (var i = 0, a; (a = ifaddrs[i]) != null; i++) {
+			for (var i = 0, a; (a = luci_ifaddrs[i]) != null; i++) {
 				var name = a.name.replace(/:.+$/, '');
 
 				if (isVirtualIfname(name))
@@ -486,8 +423,21 @@ function initNetworkState(refresh) {
 				}
 			}
 
-			for (var devname in devices) {
-				var dev = devices[devname];
+			/* override getifaddr() stats with netifd device status stats as
+			   the former are limited to 32bit counters only */
+			for (var devname in netifd_devs) {
+				if (!s.netdevs.hasOwnProperty(devname))
+					continue;
+
+				if (!L.isObject(netifd_devs[devname]))
+					continue;
+
+				s.netdevs[devname].stats = Object.assign({},
+					s.netdevs[devname].stats, netifd_devs[devname].statistics);
+			}
+
+			for (var devname in luci_devs) {
+				var dev = luci_devs[devname];
 
 				if (dev.bridge) {
 					var b = {
@@ -521,9 +471,9 @@ function initNetworkState(refresh) {
 				}
 			}
 
-			if (L.isObject(board.switch)) {
-				for (var switchname in board.switch) {
-					var layout = board.switch[switchname],
+			if (L.isObject(board_json.switch)) {
+				for (var switchname in board_json.switch) {
+					var layout = board_json.switch[switchname],
 					    netdevs = {},
 					    nports = {},
 					    ports = [],
@@ -585,8 +535,8 @@ function initNetworkState(refresh) {
 				}
 			}
 
-			if (L.isObject(board.dsl) && L.isObject(board.dsl.modem)) {
-				s.hasDSLModem = board.dsl.modem;
+			if (L.isObject(board_json.dsl) && L.isObject(board_json.dsl.modem)) {
+				s.hasDSLModem = board_json.dsl.modem;
 			}
 
 			_init = null;
@@ -2215,6 +2165,27 @@ Protocol = L.Class.extend(/** @lends LuCI.Network.Protocol.prototype */ {
 					rv.push('%s/%d'.format(addrs[i]['local-address'].address, addrs[i]['local-address'].mask));
 
 		return rv;
+	},
+
+	/**
+	 * Query the gateway (nexthop) of the IPv6 default route associated with
+	 * this logical interface.
+	 *
+	 * @returns {string}
+	 * Returns a string containing the IPv6 nexthop address of the associated
+	 * default route or `null` if no default route was found.
+	 */
+	getGateway6Addr: function() {
+		var routes = this._ubus('route');
+
+		if (Array.isArray(routes))
+			for (var i = 0; i < routes.length; i++)
+				if (typeof(routes[i]) == 'object' &&
+				    routes[i].target == '::' &&
+				    routes[i].mask == 0)
+				    return routes[i].nexthop;
+
+		return null;
 	},
 
 	/**

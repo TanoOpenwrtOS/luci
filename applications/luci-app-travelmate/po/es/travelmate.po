@@ -3,11 +3,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-09-17 22:49-0300\n"
+"PO-Revision-Date: 2019-10-09 13:55-0300\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.4\n"
 "Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: es\n"
@@ -38,7 +38,7 @@ msgid ""
 "Additional trigger delay in seconds before travelmate processing begins."
 msgstr ""
 "Demora adicional del disparador en segundos antes de que comience el "
-"procesamiento de travelmate"
+"procesamiento de travelmate."
 
 #: applications/luci-app-travelmate/luasrc/controller/travelmate.lua:21
 msgid "Advanced"
@@ -49,8 +49,8 @@ msgstr "Avanzado"
 msgid "Authentication"
 msgstr "Autenticación"
 
-#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_add.lua:143
-#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_edit.lua:136
+#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_add.lua:144
+#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_edit.lua:137
 msgid "Auto Login Script"
 msgstr "Script de inicio de sesión automático"
 
@@ -174,7 +174,7 @@ msgstr "Editar la configuración de Travelmate"
 
 #: applications/luci-app-travelmate/luasrc/controller/travelmate.lua:23
 msgid "Edit Wireless Configuration"
-msgstr "Editar la configuración del WiFi"
+msgstr "Editar la configuración de WiFi"
 
 #: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_edit.lua:10
 msgid "Edit Wireless Uplink Configuration"
@@ -203,8 +203,8 @@ msgstr "Habilitar registro de depuración detallado"
 msgid "Encryption"
 msgstr "Encriptación"
 
-#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_add.lua:144
-#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_edit.lua:137
+#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_add.lua:145
+#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_edit.lua:138
 msgid ""
 "External script reference which will be called for automated captive portal "
 "logins."
@@ -327,6 +327,11 @@ msgstr "Comprobación de error neto"
 #: applications/luci-app-travelmate/luasrc/view/travelmate/wifi_scan.htm:25
 msgid "Open"
 msgstr "Abrir"
+
+#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_add.lua:146
+#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_edit.lua:139
+msgid "Optional Arguments"
+msgstr "Argumentos opcionales"
 
 #: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/overview_tab.lua:101
 msgid ""
@@ -472,6 +477,16 @@ msgstr "Umbral de calidad de señal"
 msgid "Signal strength"
 msgstr "Intensidad de señal"
 
+#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_add.lua:147
+#: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_edit.lua:140
+msgid ""
+"Space separated list of additional optional arguments passed to the Auto "
+"Login Script, i.e. username and password"
+msgstr ""
+"Lista separada por espacios de argumentos opcionales adicionales pasados al "
+"Script de inicio de sesión automático, es decir, nombre de usuario y "
+"contraseña"
+
 #: applications/luci-app-travelmate/luasrc/view/travelmate/runtime.htm:113
 msgid "Station ID (RADIO/SSID/BSSID)"
 msgstr "ID de estación (RADIO/SSID/BSSID)"
@@ -612,7 +627,7 @@ msgstr "Estaciones WiFi"
 
 #: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/overview_tab.lua:27
 msgid "add it to the wan zone of the firewall."
-msgstr "añadir a la zona wan del firewall"
+msgstr "añadir a la zona wan del firewall."
 
 #: applications/luci-app-travelmate/luasrc/view/travelmate/wifi_scan.htm:56
 msgid "hidden"

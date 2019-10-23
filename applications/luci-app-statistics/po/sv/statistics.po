@@ -1,13 +1,16 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: PACKAGE VERSION\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-10-17 20:20+0000\n"
+"Last-Translator: Mattias Münster <mattiasmun@gmail.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsstatistics/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/apcups.lua:7
 #: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/apcups.lua:7
@@ -16,6 +19,10 @@ msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/apcups.lua:5
 msgid "APCUPS Plugin Configuration"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:15
+msgid "Absolute values"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/iptables.lua:70
@@ -55,6 +62,10 @@ msgstr "Basmapp"
 msgid "Basic monitoring"
 msgstr "Standardövervakning"
 
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:18
+msgid "By setting this, CPU is not aggregate of all processors on the system"
+msgstr ""
+
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/contextswitch.lua:4
 msgid "CPU Context Switches Plugin Configuration"
 msgstr ""
@@ -92,10 +103,6 @@ msgstr ""
 msgid "Chain"
 msgstr "Kedja"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/processes.lua:25
-msgid "Collect opened file descriptors count"
-msgstr ""
-
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:24
 msgid "CollectLinks"
 msgstr ""
@@ -108,11 +115,11 @@ msgstr ""
 msgid "CollectTopology"
 msgstr ""
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:10
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:8
 msgid "Collectd Settings"
 msgstr "Inställningar för Collectd"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:11
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:9
 msgid ""
 "Collectd is a small daemon for collecting data from various sources through "
 "different plugins. On this page you can change general settings for the "
@@ -205,7 +212,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/curl.lua:17
 msgid "Enable"
-msgstr ""
+msgstr "Aktivera"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/apcups.lua:14
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/conntrack.lua:10
@@ -403,7 +410,7 @@ msgid "Maximum allowed connections"
 msgstr "Maximalt tillåtna anslutningar"
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/memory.lua:7
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/memory.lua:15
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/memory.lua:7
 msgid "Memory"
 msgstr "Minne"
 
@@ -486,7 +493,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/curl.lua:20
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/iptables.lua:45
 msgid "Name of the rule"
@@ -565,26 +572,17 @@ msgstr "Utgående gränssnitt"
 msgid "Output plugins"
 msgstr "Insticksprogram för utmatning"
 
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:23
+msgid "Percent values"
+msgstr ""
+
 #: applications/luci-app-statistics/luasrc/statistics/plugins/ping.lua:7
 #: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/ping.lua:7
 msgid "Ping"
-msgstr "Pinga"
+msgstr "Ping"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/ping.lua:5
 msgid "Ping Plugin Configuration"
-msgstr ""
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
-msgid "Pixels"
-msgstr ""
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
-msgid "Plots height"
-msgstr ""
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
-msgid "Plots width"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:18
@@ -609,7 +607,7 @@ msgid "Processes to monitor separated by space"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/cpu.lua:7
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpu.lua:7
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpu.lua:10
 msgid "Processor"
 msgstr "Processor"
 
@@ -637,8 +635,16 @@ msgstr "RRDTool"
 msgid "RRDTool Plugin Configuration"
 msgstr ""
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:62
-msgid "RRDtool Settings"
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:17
+msgid "Report by CPU"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:24
+msgid "Report by state"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:31
+msgid "Report in percent"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:74
@@ -715,7 +721,7 @@ msgstr "Anger vilken information som ska samlas in om länkar."
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:32
 msgid "Specifies what information to collect about routes."
-msgstr "Anger vilken information som ska samlas in om rutter"
+msgstr "Anger vilken information som ska samlas in om rutter."
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:39
 msgid "Specifies what information to collect about the global topology."
@@ -735,10 +741,6 @@ msgstr ""
 #: applications/luci-app-statistics/luasrc/view/public_statistics/graph.htm:9
 msgid "Statistics"
 msgstr "Statistik"
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:7
-msgid "Statistics Settings"
-msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:23
 msgid "Storage directory"
@@ -1009,7 +1011,7 @@ msgstr "UPS-namnet i NUT ups@värd-format"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/curl.lua:22
 msgid "URL"
-msgstr ""
+msgstr "Webbadress"
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/unixsock.lua:7
 msgid "UnixSock"
@@ -1044,6 +1046,19 @@ msgstr "Användare"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/netlink.lua:35
 msgid "Verbose monitoring"
 msgstr "Detaljerad övervakning"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:25
+msgid "When set to true, reports per-state metric (system, user, idle)"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:16
+msgid "When set to true, we request absolute values"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:32
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:24
+msgid "When set to true, we request percentage values"
+msgstr ""
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/iwinfo.lua:7
 #: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/iwinfo.lua:7

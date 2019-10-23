@@ -1,13 +1,14 @@
 #
-# Yangfl <mmyangfl@gmail.com>, 2017-2019, 2019.
+# Yangfl <mmyangfl@gmail.com>, 2017-2019.
+# Zheng Qian <sotux82@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:40+0200\n"
-"PO-Revision-Date: 2019-02-11 22:41+0800\n"
-"Last-Translator: Yangfl <mmyangfl@gmail.com>\n"
+"PO-Revision-Date: 2019-10-16 09:58+0800\n"
+"Last-Translator: Zheng Qian <sotux82@gmail.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,6 +25,10 @@ msgstr "APC UPS"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/apcups.lua:5
 msgid "APCUPS Plugin Configuration"
 msgstr "APCUPS 插件配置"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:15
+msgid "Absolute values"
+msgstr "绝对值"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/iptables.lua:70
 msgid "Action (target)"
@@ -48,7 +53,7 @@ msgstr "新增通知命令"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/ping.lua:24
 msgid "Address family"
-msgstr ""
+msgstr "地址簇"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/openvpn.lua:23
 msgid "Aggregate number of connected users"
@@ -61,6 +66,10 @@ msgstr "基本目录"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/netlink.lua:24
 msgid "Basic monitoring"
 msgstr "基本监控"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:18
+msgid "By setting this, CPU is not aggregate of all processors on the system"
+msgstr "设置此选项后，CPU 图表上不再统计系统上所有处理器的汇总值"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/contextswitch.lua:4
 msgid "CPU Context Switches Plugin Configuration"
@@ -99,10 +108,6 @@ msgstr "缓存清空间隙"
 msgid "Chain"
 msgstr "链"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/processes.lua:25
-msgid "Collect opened file descriptors count"
-msgstr ""
-
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:24
 msgid "CollectLinks"
 msgstr "收集链接"
@@ -115,11 +120,11 @@ msgstr "收集路由"
 msgid "CollectTopology"
 msgstr "收集拓扑"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:10
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:8
 msgid "Collectd Settings"
 msgstr "Collectd 设置"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:11
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:9
 msgid ""
 "Collectd is a small daemon for collecting data from various sources through "
 "different plugins. On this page you can change general settings for the "
@@ -268,7 +273,7 @@ msgstr "Exec 插件配置"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpufreq.lua:15
 msgid "Extra items"
-msgstr ""
+msgstr "额外项目"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/netlink.lua:68
 msgid "Filter class monitoring"
@@ -357,7 +362,7 @@ msgstr "忽略源地址"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/iptables.lua:103
 msgid "Incoming interface"
-msgstr "入接口"
+msgstr "入站接口"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/interface.lua:8
 msgid "Interface Plugin Configuration"
@@ -412,7 +417,7 @@ msgid "Maximum allowed connections"
 msgstr "最大允许连接数"
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/memory.lua:7
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/memory.lua:15
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/memory.lua:7
 msgid "Memory"
 msgstr "内存"
 
@@ -491,7 +496,7 @@ msgstr "监测远程端口"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpufreq.lua:15
 msgid "More details about frequency usage and transitions"
-msgstr ""
+msgstr "有关频率使用和切换的更多详细信息"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/curl.lua:20
 msgid "Name"
@@ -570,11 +575,15 @@ msgstr "选项"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/iptables.lua:109
 msgid "Outgoing interface"
-msgstr "出接口"
+msgstr "出站接口"
 
 #: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:22
 msgid "Output plugins"
 msgstr "Output 插件"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:23
+msgid "Percent values"
+msgstr "百分比"
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/ping.lua:7
 #: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/ping.lua:7
@@ -584,19 +593,6 @@ msgstr "Ping"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/ping.lua:5
 msgid "Ping Plugin Configuration"
 msgstr "Ping 插件配置"
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
-msgid "Pixels"
-msgstr ""
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
-msgid "Plots height"
-msgstr ""
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
-msgid "Plots width"
-msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:18
 msgid "Port"
@@ -620,7 +616,7 @@ msgid "Processes to monitor separated by space"
 msgstr "监控的进程，用空格隔开"
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/cpu.lua:7
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpu.lua:7
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpu.lua:10
 msgid "Processor"
 msgstr "处理器"
 
@@ -648,9 +644,17 @@ msgstr "RRDTool"
 msgid "RRDTool Plugin Configuration"
 msgstr "RRDTool 插件配置"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:62
-msgid "RRDtool Settings"
-msgstr ""
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:17
+msgid "Report by CPU"
+msgstr "按每个 CPU 统计"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:24
+msgid "Report by state"
+msgstr "按使用状态统计"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:31
+msgid "Report in percent"
+msgstr "按百分比统计"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:74
 msgid "Rows per RRA"
@@ -746,10 +750,6 @@ msgstr "Splash Leases 插件配置"
 #: applications/luci-app-statistics/luasrc/view/public_statistics/graph.htm:9
 msgid "Statistics"
 msgstr "统计"
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:7
-msgid "Statistics Settings"
-msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:23
 msgid "Storage directory"
@@ -1072,6 +1072,19 @@ msgstr "用户"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/netlink.lua:35
 msgid "Verbose monitoring"
 msgstr "详细监测"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:25
+msgid "When set to true, reports per-state metric (system, user, idle)"
+msgstr "当选中时，报告每个状态指标（系统，用户，空闲）"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:16
+msgid "When set to true, we request absolute values"
+msgstr "当选中时，按绝对值统计"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:32
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:24
+msgid "When set to true, we request percentage values"
+msgstr "当选中时，按百分比统计"
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/iwinfo.lua:7
 #: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/iwinfo.lua:7

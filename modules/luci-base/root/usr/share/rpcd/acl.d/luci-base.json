@@ -30,11 +30,13 @@
 				"/etc/filesystems": [ "read" ],
 				"/etc/rc.local": [ "read" ],
 				"/etc/sysupgrade.conf": [ "read" ],
+				"/etc/passwd": [ "read" ],
+				"/etc/group": [ "read" ],
 				"/proc/filesystems": [ "read" ],
 				"/proc/mtd": [ "read" ],
 				"/proc/partitions": [ "read" ],
 				"/proc/sys/kernel/hostname": [ "read" ],
-				"/sys/devices/virtual/ubi/*/name": [ "read" ]
+				"/proc/mounts": [ "read" ]
 			},
 			"ubus": {
 				"file": [ "list", "read", "stat" ],

@@ -20,6 +20,10 @@ msgstr ""
 msgid "APCUPS Plugin Configuration"
 msgstr ""
 
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:15
+msgid "Absolute values"
+msgstr ""
+
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/iptables.lua:70
 msgid "Action (target)"
 msgstr "Tevékenység (cél)"
@@ -56,6 +60,10 @@ msgstr "Alapkönyvtár"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/netlink.lua:24
 msgid "Basic monitoring"
 msgstr "Általános figyelés"
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:18
+msgid "By setting this, CPU is not aggregate of all processors on the system"
+msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/contextswitch.lua:4
 msgid "CPU Context Switches Plugin Configuration"
@@ -94,10 +102,6 @@ msgstr "Gyorsítótár ürítési időköz"
 msgid "Chain"
 msgstr "Lánc"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/processes.lua:25
-msgid "Collect opened file descriptors count"
-msgstr ""
-
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:24
 msgid "CollectLinks"
 msgstr ""
@@ -110,11 +114,11 @@ msgstr ""
 msgid "CollectTopology"
 msgstr ""
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:10
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:8
 msgid "Collectd Settings"
 msgstr "Collectd beállítások"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:11
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:9
 msgid ""
 "Collectd is a small daemon for collecting data from various sources through "
 "different plugins. On this page you can change general settings for the "
@@ -415,7 +419,7 @@ msgid "Maximum allowed connections"
 msgstr "Megengedett kapcsolatok maximális száma"
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/memory.lua:7
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/memory.lua:15
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/memory.lua:7
 msgid "Memory"
 msgstr "Memória"
 
@@ -577,6 +581,10 @@ msgstr "Kimenő interfész"
 msgid "Output plugins"
 msgstr "Kimeneti bővítmények"
 
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:23
+msgid "Percent values"
+msgstr ""
+
 #: applications/luci-app-statistics/luasrc/statistics/plugins/ping.lua:7
 #: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/ping.lua:7
 msgid "Ping"
@@ -585,19 +593,6 @@ msgstr "Ping"
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/ping.lua:5
 msgid "Ping Plugin Configuration"
 msgstr "Ping bővítmény beállítása"
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
-msgid "Pixels"
-msgstr ""
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:70
-msgid "Plots height"
-msgstr ""
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:65
-msgid "Plots width"
-msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua:18
 msgid "Port"
@@ -621,7 +616,7 @@ msgid "Processes to monitor separated by space"
 msgstr "Figyelendő folyamatok szóközzel elválasztva"
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/cpu.lua:7
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpu.lua:7
+#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpu.lua:10
 msgid "Processor"
 msgstr "Processzor"
 
@@ -649,8 +644,16 @@ msgstr "RRDTool"
 msgid "RRDTool Plugin Configuration"
 msgstr "RRDTool bővítmény beállítása"
 
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:62
-msgid "RRDtool Settings"
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:17
+msgid "Report by CPU"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:24
+msgid "Report by state"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:31
+msgid "Report in percent"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:74
@@ -751,10 +754,6 @@ msgstr ""
 #: applications/luci-app-statistics/luasrc/view/public_statistics/graph.htm:9
 msgid "Statistics"
 msgstr "Statisztikák"
-
-#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/collectd.lua:7
-msgid "Statistics Settings"
-msgstr ""
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua:23
 msgid "Storage directory"
@@ -1092,6 +1091,19 @@ msgstr "Felhasználó"
 
 #: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/netlink.lua:35
 msgid "Verbose monitoring"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:25
+msgid "When set to true, reports per-state metric (system, user, idle)"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:16
+msgid "When set to true, we request absolute values"
+msgstr ""
+
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/cpu.lua:32
+#: applications/luci-app-statistics/luasrc/model/cbi/luci_statistics/memory.lua:24
+msgid "When set to true, we request percentage values"
 msgstr ""
 
 #: applications/luci-app-statistics/luasrc/statistics/plugins/iwinfo.lua:7

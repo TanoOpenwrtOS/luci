@@ -226,7 +226,7 @@ var CBIWifiFrequencyValue = form.Value.extend({
 				'11a': L.hasSystemFeature('hostapd', 'acs') ? [ 'auto', 'auto', true ] : []
 			};
 
-			for (var i = 0; Array.isArray(data[1]) && i < data[1].length; i++)
+			for (var i = 0; i < data[1].length; i++)
 				this.channels[(data[1][i].mhz > 2484) ? '11a' : '11g'].push(
 					data[1][i].channel,
 					'%d (%d Mhz)'.format(data[1][i].channel, data[1][i].mhz),
@@ -286,7 +286,7 @@ var CBIWifiFrequencyValue = form.Value.extend({
 			if (vals[i+2])
 				sel.add(E('option', { value: vals[i+0] }, [ vals[i+1] ]));
 
-		if (!isNaN(vals.selected))
+		if (vals && !isNaN(vals.selected))
 			sel.selectedIndex = vals.selected;
 
 		sel.parentNode.style.display = (sel.options.length <= 1) ? 'none' : '';
@@ -483,7 +483,7 @@ var CBIWifiCountryValue = form.Value.extend({
 	},
 
 	renderWidget: function(section_id, option_index, cfgvalue) {
-		var typeClass = this.keylist.length ? form.ListValue : form.Value;
+		var typeClass = (this.keylist && this.keylist.length) ? form.ListValue : form.Value;
 		return typeClass.prototype.renderWidget.apply(this, [section_id, option_index, cfgvalue]);
 	}
 });
