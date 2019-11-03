@@ -9,7 +9,6 @@ local string = require "string"
 local nixio  = require "nixio"
 local fs     = require "nixio.fs"
 local uci    = require "luci.model.uci"
-local ntm    = require "luci.model.network"
 
 local luci  = {}
 luci.util   = require "luci.util"
@@ -571,6 +570,8 @@ end
 wifi = {}
 
 function wifi.getiwinfo(ifname)
+	local ntm = require "luci.model.network"
+
 	ntm.init()
 
 	local wnet = ntm:get_wifinet(ifname)

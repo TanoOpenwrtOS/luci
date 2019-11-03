@@ -204,19 +204,6 @@ local methods = {
 		end
 	},
 
-	getIfaddrs = {
-		call = function()
-			return { result = nixio.getifaddrs() }
-		end
-	},
-
-	getHostHints = {
-		call = function()
-			local sys = require "luci.sys"
-			return sys.net.host_hints()
-		end
-	},
-
 	getDUIDHints = {
 		call = function()
 			local fp = io.open('/var/hosts/odhcpd')
@@ -234,154 +221,6 @@ local methods = {
 				fp:close()
 			end
 			return result
-		end
-	},
-
-	getDHCPLeases = {
-		args = { family = 0 },
-		call = function(args)
-			local s = require "luci.tools.status"
-
-			if args.family == 4 then
-				return { dhcp_leases = s.dhcp_leases() }
-			elseif args.family == 6 then
-				return { dhcp6_leases = s.dhcp6_leases() }
-			else
-				return {
-					dhcp_leases = s.dhcp_leases(),
-					dhcp6_leases = s.dhcp6_leases()
-				}
-			end
-		end
-	},
-
-	getNetworkDevices = {
-		call = function(args)
-			local dir = fs.dir("/sys/class/net")
-			local result = { }
-			if dir then
-				local dev
-				for dev in dir do
-					if not result[dev] then
-						result[dev] = { name = dev }
-					end
-
-					if fs.access("/sys/class/net/"..dev.."/master") then
-						local brname = fs.basename(fs.readlink("/sys/class/net/"..dev.."/master"))
-						if not result[brname] then
-							result[brname] = { name = brname }
-						end
-
-						if not result[brname].ports then
-							result[brname].ports = { }
-						end
-
-						result[brname].ports[#result[brname].ports+1] = dev
-					elseif fs.access("/sys/class/net/"..dev.."/bridge") then
-						if not result[dev].ports then
-							result[dev].ports = { }
-						end
-
-						result[dev].id = readfile("/sys/class/net/"..dev.."/bridge/bridge_id")
-						result[dev].stp = (readfile("/sys/class/net/"..dev.."/bridge/stp_state") ~= "0")
-						result[dev].bridge = true
-					end
-
-					local opr = readfile("/sys/class/net/"..dev.."/operstate")
-
-					result[dev].up = (opr == "up" or opr == "unknown")
-					result[dev].type = tonumber(readfile("/sys/class/net/"..dev.."/type"))
-					result[dev].name = dev
-
-					local mtu = tonumber(readfile("/sys/class/net/"..dev.."/mtu"))
-					if mtu and mtu > 0 then
-						result[dev].mtu = mtu
-					end
-
-					local qlen = tonumber(readfile("/sys/class/net/"..dev.."/tx_queue_len"))
-					if qlen and qlen > 0 then
-						result[dev].qlen = qlen
-					end
-
-					local master = fs.readlink("/sys/class/net/"..dev.."/master")
-					if master then
-						result[dev].master = fs.basename(master)
-					end
-
-					local mac = readfile("/sys/class/net/"..dev.."/address")
-					if mac and #mac == 17 then
-						result[dev].mac = mac
-					end
-				end
-			end
-			return result
-		end
-	},
-
-	getWirelessDevices = {
-		call = function(args)
-			local ubus = require "ubus".connect()
-			if not ubus then
-				return { error = "Unable to establish ubus connection" }
-			end
-
-			local status = ubus:call("network.wireless", "status", {})
-			if type(status) == "table" then
-				local radioname, radiodata
-				for radioname, radiodata in pairs(status) do
-					if type(radiodata) == "table" then
-						radiodata.iwinfo = ubus:call("iwinfo", "info", { device = radioname }) or {}
-						radiodata.iwinfo.bitrate     = nil
-						radiodata.iwinfo.bssid       = nil
-						radiodata.iwinfo.encryption  = nil
-						radiodata.iwinfo.mode        = nil
-						radiodata.iwinfo.quality     = nil
-						radiodata.iwinfo.quality_max = nil
-						radiodata.iwinfo.ssid        = nil
-
-						local iwdata = nil
-
-						if type(radiodata.interfaces) == "table" then
-							local _, interfacedata
-							for _, interfacedata in ipairs(radiodata.interfaces) do
-								if type(interfacedata) == "table" and
-								   type(interfacedata.ifname) == "string"
-								then
-									local iwinfo = ubus:call("iwinfo", "info", { device = interfacedata.ifname })
-
-									iwdata = iwdata or iwinfo
-									interfacedata.iwinfo = iwinfo or {}
-								end
-							end
-						end
-
-						radiodata.iwinfo = {}
-
-						local _, k, v
-						for k, v in pairs(iwdata or ubus:call("iwinfo", "info", { device = radioname }) or {}) do
-							if k ~= "bitrate" and k ~= "bssid" and k ~= "encryption" and
-							   k ~= "mode" and k ~= "quality" and k ~= "quality_max" and
-							   k ~= "ssid"
-							then
-								if type(v) == "table" then
-									radiodata.iwinfo[k] = json.parse(json.stringify(v))
-								else
-									radiodata.iwinfo[k] = v
-								end
-							end
-						end
-					end
-				end
-			end
-
-			return status
-		end
-	},
-
-	getBoardJSON = {
-		call = function(args)
-			local jsc = require "luci.jsonc"
-			return jsc.parse(fs.readfile("/etc/board.json") or "")
 		end
 	},
 
@@ -720,20 +559,6 @@ local methods = {
 			else
 				return { error = err }
 			end
-		end
-	},
-
-	setUmount = {
-		args = { path = "/mnt" },
-		call = function(args)
-			local util = require "luci.util"
-			return { result = (os.execute(string.format("/bin/umount %s", util.shellquote(args.path))) == 0) }
-		end
-	},
-
-	setReboot = {
-		call = function()
-			return { result = (os.execute("/sbin/reboot >/dev/null 2>&1") == 0) }
 		end
 	}
 }

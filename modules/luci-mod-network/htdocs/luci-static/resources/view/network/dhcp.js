@@ -6,7 +6,7 @@
 var callHostHints, callDUIDHints, callDHCPLeases, CBILeaseStatus;
 
 callHostHints = rpc.declare({
-	object: 'luci',
+	object: 'luci-rpc',
 	method: 'getHostHints',
 	expect: { '': {} }
 });
@@ -18,7 +18,7 @@ callDUIDHints = rpc.declare({
 });
 
 callDHCPLeases = rpc.declare({
-	object: 'luci',
+	object: 'luci-rpc',
 	method: 'getDHCPLeases',
 	params: [ 'family' ],
 	expect: { dhcp_leases: [] }
@@ -44,8 +44,6 @@ CBILeaseStatus = form.DummyValue.extend({
 });
 
 return L.view.extend({
-
-
 	load: function() {
 		return Promise.all([
 			callHostHints(),

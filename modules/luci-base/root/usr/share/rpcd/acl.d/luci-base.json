@@ -36,16 +36,18 @@
 				"/proc/mtd": [ "read" ],
 				"/proc/partitions": [ "read" ],
 				"/proc/sys/kernel/hostname": [ "read" ],
-				"/proc/mounts": [ "read" ]
+				"/proc/sys/net/netfilter/nf_conntrack_*": [ "read" ],
+				"/proc/mounts": [ "read" ],
+				"/usr/lib/lua/luci/version.lua": [ "read" ]
 			},
 			"ubus": {
 				"file": [ "list", "read", "stat" ],
 				"iwinfo": [ "assoclist", "freqlist", "txpowerlist", "countrylist" ],
-				"luci": [ "getBoardJSON", "getDUIDHints", "getHostHints", "getIfaddrs", "getInitList", "getLocaltime", "getTimezones", "getDHCPLeases", "getLEDs", "getNetworkDevices", "getUSBDevices", "getWirelessDevices", "getSwconfigFeatures", "getSwconfigPortState", "getBlockDevices", "getMountPoints" ],
-				"network.device": [ "status" ],
+				"luci": [ "getDUIDHints", "getInitList", "getLocaltime", "getTimezones", "getLEDs", "getUSBDevices", "getSwconfigFeatures", "getSwconfigPortState", "getBlockDevices", "getMountPoints" ],
+				"luci-rpc": [ "getBoardJSON", "getDHCPLeases", "getDSLStatus", "getHostHints", "getNetworkDevices", "getWirelessDevices" ],
 				"network.interface": [ "dump" ],
 				"network": [ "get_proto_handlers" ],
-				"system": [ "validate_firmware_image" ],
+				"system": [ "board", "info", "validate_firmware_image" ],
 				"uci": [ "changes", "get" ]
 			},
 			"uci": [ "*" ]
@@ -60,16 +62,21 @@
 				"/etc/sysupgrade.conf": [ "write" ],
 				"/sbin/block": [ "exec" ],
 				"/sbin/firstboot": [ "exec" ],
+				"/sbin/ifup": [ "exec" ],
 				"/sbin/reboot": [ "exec" ],
 				"/sbin/sysupgrade": [ "exec" ],
+				"/sbin/wifi": [ "exec" ],
 				"/bin/tar": [ "exec" ],
+				"/bin/umount": [ "exec" ],
 				"/tmp/backup.tar.gz": [ "write" ],
-				"/tmp/firmware.bin": [ "write" ]
+				"/tmp/firmware.bin": [ "write" ],
+				"/tmp/upload.ipk": [ "write" ]
 			},
 			"ubus": {
 				"file": [ "write", "remove", "exec" ],
+				"hostapd.*": [ "del_client" ],
 				"iwinfo": [ "scan" ],
-				"luci": [ "setInitAction", "setLocaltime", "setPassword", "setBlockDetect", "setUmount", "setReboot" ],
+				"luci": [ "setInitAction", "setLocaltime", "setPassword", "setBlockDetect" ],
 				"uci": [ "add", "apply", "confirm", "delete", "order", "set", "rename" ]
 			},
 			"uci": [ "*" ]
