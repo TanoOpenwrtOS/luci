@@ -1,4 +1,5 @@
 'use strict';
+'require ui';
 'require uci';
 'require rpc';
 'require form';
@@ -46,7 +47,7 @@ callTimezone = rpc.declare({
 CBILocalTime = form.DummyValue.extend({
 	renderWidget: function(section_id, option_id, cfgvalue) {
 		return E([], [
-			E('span', {} [
+			E('span', {}, [
 				E('input', {
 					'id': 'localtime',
 					'type': 'text',
@@ -57,14 +58,14 @@ CBILocalTime = form.DummyValue.extend({
 			' ',
 			E('button', {
 				'class': 'cbi-button cbi-button-apply',
-				'click': L.ui.createHandlerFn(this, function() {
+				'click': ui.createHandlerFn(this, function() {
 					return callSetLocaltime(Math.floor(Date.now() / 1000));
 				})
 			}, _('Sync with browser')),
 			' ',
 			this.ntpd_support ? E('button', {
 				'class': 'cbi-button cbi-button-apply',
-				'click': L.ui.createHandlerFn(this, function() {
+				'click': ui.createHandlerFn(this, function() {
 					return callInitAction('sysntpd', 'restart');
 				})
 			}, _('Sync with NTP-Server')) : ''

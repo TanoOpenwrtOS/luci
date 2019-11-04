@@ -1,4 +1,5 @@
 'use strict';
+'require ui';
 'require uci';
 'require rpc';
 'require form';
