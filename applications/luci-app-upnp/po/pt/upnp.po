@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 19:03+0200\n"
-"PO-Revision-Date: 2019-11-02 16:04+0000\n"
+"PO-Revision-Date: 2019-11-06 00:10+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsupnp/pt/>\n"
@@ -42,11 +42,11 @@ msgstr ""
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:59
 msgid "Announced model number"
-msgstr ""
+msgstr "Número modelo anunciado"
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:58
 msgid "Announced serial number"
-msgstr ""
+msgstr "Número de série anunciado"
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:69
 msgid "Clean rules interval"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:44
 msgid "Downlink"
-msgstr "Link para download"
+msgstr "Downlink"
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:38
 msgid "Enable IGDv1 mode"
@@ -106,7 +106,7 @@ msgstr ""
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:35
 msgid "Enable secure mode"
-msgstr "Enable secure mode"
+msgstr "Ativar o modo seguro"
 
 #: applications/luci-app-upnp/luasrc/view/upnp_status.htm:43
 msgid "External Port"
@@ -142,7 +142,7 @@ msgstr ""
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:61
 msgid "Notify interval"
-msgstr ""
+msgstr "Intervalo de Notificação"
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:50
 msgid "Port"
@@ -192,16 +192,16 @@ msgstr "Plug & Play Universal"
 
 #: applications/luci-app-upnp/luasrc/view/upnp_status.htm:26
 msgid "Unknown"
-msgstr ""
+msgstr "Desconhecido"
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:47
 msgid "Uplink"
-msgstr "Link para Upload"
+msgstr "Uplink"
 
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:45
 #: applications/luci-app-upnp/luasrc/model/cbi/upnp/upnp.lua:48
 msgid "Value in KByte/s, informational only"
-msgstr ""
+msgstr "Valor em KByte/s, apenas informativo"
 
 #~ msgid ""
 #~ "UPNP allows clients in the local network to automatically configure the "

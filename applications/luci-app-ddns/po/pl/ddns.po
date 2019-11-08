@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-ddns 2.4.0-1\n"
 "POT-Creation-Date: 2016-01-30 11:07+0100\n"
-"PO-Revision-Date: 2013-01-06 13:08+0200\n"
-"Last-Translator: obsy <cezary@eko.one.pl>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2019-11-06 00:11+0000\n"
+"Last-Translator: Michal L <michalrmsmi@wp.pl>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsddns/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.4\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.10-dev\n"
 
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:145
 msgid "&"
@@ -29,7 +30,7 @@ msgstr ""
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:53
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:264
 msgid "Advanced Settings"
-msgstr ""
+msgstr "Ustawienia zaawansowane"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/global.lua:46
 msgid "Allow non-public IP's"
@@ -102,12 +103,12 @@ msgstr ""
 
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:55
 msgid "Collecting data..."
-msgstr ""
+msgstr "Zbieranie danych..."
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:109
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:48
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguracja"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/global.lua:27
 msgid ""
@@ -224,11 +225,11 @@ msgstr ""
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:224
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:68
 msgid "Disabled"
-msgstr ""
+msgstr "Wyłączone"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:479
 msgid "Domain"
-msgstr ""
+msgstr "Domena"
 
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:44
 msgid "Dynamic DNS"
@@ -253,7 +254,7 @@ msgstr ""
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:271
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:160
 msgid "Enabled"
-msgstr ""
+msgstr "Włączone"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1286
 msgid "Error"
@@ -339,7 +340,7 @@ msgstr ""
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/global.lua:26
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:32
 msgid "Global Settings"
-msgstr ""
+msgstr "Ustawienia globalne"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:606
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:615
@@ -457,7 +458,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:177
 msgid "Loading"
-msgstr ""
+msgstr "Ładowanie"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:266
 msgid "Log File Viewer"
@@ -516,7 +517,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:45
 msgid "Never"
-msgstr ""
+msgstr "Nigdy"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:166
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:49
@@ -598,7 +599,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:101
 msgid "Overview"
-msgstr ""
+msgstr "Przegląd"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1233
 msgid "PROXY-Server"
@@ -615,7 +616,7 @@ msgstr "Hasło"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:630
 msgid "Path to CA-Certificate"
-msgstr ""
+msgstr "Ścieżka do certyfikatu CA"
 
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:144
 msgid "Please [Save & Apply] your changes first"
@@ -688,7 +689,7 @@ msgstr ""
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:34
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:115
 msgid "Start"
-msgstr ""
+msgstr "Uruchomienie"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:236
 msgid "Start / Stop"
@@ -791,7 +792,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/luasrc/view/ddns/overview_status.htm:178
 msgid "Waiting for changes to be applied..."
-msgstr ""
+msgstr "Oczekiwanie na zastosowanie zmian..."
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1285
 msgid "Warning"
@@ -1013,7 +1014,7 @@ msgstr ""
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1406
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1474
 msgid "seconds"
-msgstr ""
+msgstr "sekund"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:633
 msgid "to run HTTPS without verification of server certificates (insecure)"
