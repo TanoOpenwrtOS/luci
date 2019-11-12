@@ -172,6 +172,7 @@ return L.view.extend({
 				'class': 'cbi-button cbi-button-apply',
 				'click': L.ui.createHandlerFn(this, function() {
 					return callDDnsGetStatus().then(L.bind(function(data) {
+						var action = data['_enabled'] ? 'stop' : 'start';
 						return callInitAction('ddns', action == 'stop' ? 'disable' : 'enable').then(function() {
 							return callInitAction('ddns', action);
 						});
