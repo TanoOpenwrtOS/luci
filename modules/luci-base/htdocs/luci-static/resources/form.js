@@ -967,7 +967,7 @@ var CBITypedSection = CBIAbstractSection.extend({
 			}
 
 			if (!this.anonymous)
-				sectionEl.appendChild(E('h3', cfgsections[i].toUpperCase()));
+				sectionEl.appendChild(E('legend', cfgsections[i].toUpperCase()));
 
 			sectionEl.appendChild(E('div', {
 				'id': 'cbi-%s-%s'.format(config_name, cfgsections[i]),
@@ -1026,7 +1026,7 @@ var CBITableSection = CBITypedSection.extend({
 			});
 
 		if (this.title != null && this.title != '')
-			sectionEl.appendChild(E('h3', {}, this.title));
+			sectionEl.appendChild(E('legend', {}, this.title));
 
 		if (this.description != null && this.description != '')
 			sectionEl.appendChild(E('div', { 'class': 'cbi-section-descr' }, this.description));
