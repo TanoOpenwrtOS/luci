@@ -234,6 +234,8 @@ local methods = {
 				return false
 			end
 
+			res['has_bindhost'] = has_bindhost() or false
+
 			local function has_hostip()
 				return (sys.call( [[which hostip >/dev/null 2>&1]] ) == 0)
 			end
