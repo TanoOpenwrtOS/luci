@@ -202,7 +202,7 @@ return L.view.extend({
 
 		if (!env['has_ssl']) {
 			o = s.option(form.DummyValue, '_no_https');
-			o.titleref = L.url("admin", "system", "opkg")
+			o.titleref = L.url("admin", "system", "opkg");
 			o.rawhtml  = true;
 			o.title = '<b>' + _("HTTPS not supported") + '</b>';
 			o.cfgvalue = function() { return _("Neither GNU Wget with SSL nor cURL installed to support secure updates via HTTPS protocol.") +
@@ -212,7 +212,7 @@ return L.view.extend({
 
 		if (!env['has_bindnet']) {
 			o = s.option(form.DummyValue, '_no_bind_network');
-			o.titleref = L.url("admin", "system", "opkg")
+			o.titleref = L.url("admin", "system", "opkg");
 			o.rawhtml  = true;
 			o.title = '<b>' + _("Binding to a specific network not supported") + '</b>';
 			o.cfgvalue = function() { return _("Neither GNU Wget with SSL nor cURL installed to select a network to use for communication.") +
@@ -226,7 +226,7 @@ return L.view.extend({
 
 		if (!env['has_proxy']) {
 			o = s.option(form.DummyValue, '_no_proxy');
-			o.titleref = L.url("admin", "system", "opkg")
+			o.titleref = L.url("admin", "system", "opkg");
 			o.rawhtml  = true;
 			o.title = '<b>' + _("cURL without Proxy Support") + '</b>';
 			o.cfgvalue = function() { return _("cURL is installed, but libcurl was compiled without proxy support.") +
@@ -238,7 +238,7 @@ return L.view.extend({
 
 		if (!env['has_forceip']) {
 			o = s.option(form.DummyValue, '_no_force_ip');
-			o.titleref = L.url("admin", "system", "opkg")
+			o.titleref = L.url("admin", "system", "opkg");
 			o.rawhtml  = true;
 			o.title = '<b>' + _("Force IP Version not supported") + '</b>';
 			o.cfgvalue = function() { return _("BusyBox's nslookup and Wget do not support to specify the IP version to use for communication with DDNS Provider!") +
@@ -248,7 +248,7 @@ return L.view.extend({
 
 		if (!env['has_bindhost']) {
 			o = s.option(form.DummyValue, '_no_dnstcp');
-			o.titleref = L.url("admin", "system", "opkg")
+			o.titleref = L.url("admin", "system", "opkg");
 			o.rawhtml  = true;
 			o.title = '<b>' + _("DNS requests via TCP not supported") + '</b>';
 			o.cfgvalue = function() { return _("BusyBox's nslookup and hostip do not support to specify to use TCP instead of default UDP when requesting DNS server!") +
@@ -258,7 +258,7 @@ return L.view.extend({
 
 		if (!env['has_dnsserver']) {
 			o = s.option(form.DummyValue, '_no_dnsserver');
-			o.titleref = L.url("admin", "system", "opkg")
+			o.titleref = L.url("admin", "system", "opkg");
 			o.rawhtml  = true;
 			o.title = '<b>' + _("Using specific DNS Server not supported") + '</b>';
 			o.cfgvalue = function() { return _("BusyBox's nslookup in the current compiled version does not handle given DNS Servers correctly!") +
@@ -268,7 +268,7 @@ return L.view.extend({
 
 		if (env['has_ssl'] && !env['has_cacerts']) {
 			o = s.option(form.DummyValue, '_no_certs');
-			o.titleref = L.url("admin", "system", "opkg")
+			o.titleref = L.url("admin", "system", "opkg");
 			o.rawhtml  = true;
 			o.title = '<b>' + _("No certificates found") + '</b>';
 			o.cfgvalue = function() { return _("If using secure communication you should verify server certificates!") +
@@ -458,14 +458,14 @@ return L.view.extend({
 		o.modalonly = true;
 		o.rmempty  = false;
 
-		o.value("0", _("IPv4-Address"))
+		o.value("0", _("IPv4-Address"));
 		if (env["has_ipv6"])
-			o.value("1", _("IPv6-Address"))
+			o.value("1", _("IPv6-Address"));
 
 		// service_name
 
 		o = s.taboption('basic', form.ListValue, 'ipv4_service_name', _("DDNS Service provider") + " [IPv4]");
-		o.depends("use_ipv6", "0")
+		o.depends("use_ipv6", "0");
 		o.modalonly = true;
 
 		for (var i = 0; i < services4.length; i++)
@@ -487,7 +487,7 @@ return L.view.extend({
 		};
 
 		o = s.taboption('basic', form.ListValue, 'ipv6_service_name', _("DDNS Service provider") + " [IPv6]");
-		o.depends("use_ipv6", "1")
+		o.depends("use_ipv6", "1");
 		o.modalonly = true;
 
 		for (var i = 0; i < services6.length; i++)
@@ -751,13 +751,13 @@ return L.view.extend({
 		o = s.taboption("advanced", form.ListValue, "use_syslog", _("Log to syslog"),
 			_("Writes log messages to syslog. Critical Errors will always be written to syslog."));
 		o.modalonly = true;
-		o.placeholder = "2"
+		o.placeholder = "2";
 		o.optional = true;
-		o.value("0", _("No logging"))
-		o.value("1", _("Info"))
-		o.value("2", _("Notice"))
-		o.value("3", _("Warning"))
-		o.value("4", _("Error"))
+		o.value("0", _("No logging"));
+		o.value("1", _("Info"));
+		o.value("2", _("Notice"));
+		o.value("3", _("Warning"));
+		o.value("4", _("Error"));
 
 		// use_logfile
 
@@ -794,7 +794,7 @@ return L.view.extend({
 		o = s.taboption("timer", form.ListValue, "check_unit", _('Check Unit'));
 		o.description = _("Interval unit to check for changed IP");
 		o.modalonly = true;
-		o.default  = "minutes"
+		o.default  = "minutes";
 		o.value("seconds", _("seconds"));
 		o.value("minutes", _("minutes"));
 		o.value("hours", _("hours"));
@@ -831,7 +831,7 @@ return L.view.extend({
 		o.description = _("Interval unit to force updates send to DDNS Provider");
 		o.modalonly = true;
 		o.optional = true;
-		o.default  = "minutes"
+		o.default  = "minutes";
 		o.value("minutes", _("minutes"));
 		o.value("hours", _("hours"));
 		o.value("hours", _("days"));
@@ -860,7 +860,7 @@ return L.view.extend({
 		o.description = _("On Error the script will retry the failed action after given time");
 		o.modalonly = true;
 		o.optional = true;
-		o.default  = "seconds"
+		o.default  = "seconds";
 		o.value("seconds", _("seconds"));
 		o.value("minutes", _("minutes"));
 
@@ -916,7 +916,7 @@ return L.view.extend({
 			+ _("For supported codes look here")
 			+ '</a><br>' +
 			_('Current setting:') + ' <b>' + status['_curr_dateformat'] + '</b>';
-		o.default = "%F %R"
+		o.default = "%F %R";
 		o.optional = true;
 		o.rmempty = true;
 
