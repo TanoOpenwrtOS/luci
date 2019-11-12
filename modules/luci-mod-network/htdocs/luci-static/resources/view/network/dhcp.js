@@ -12,7 +12,7 @@ callHostHints = rpc.declare({
 });
 
 callDUIDHints = rpc.declare({
-	object: 'luci',
+	object: 'luci-rpc',
 	method: 'getDUIDHints',
 	expect: { '': {} }
 });
@@ -126,10 +126,7 @@ return L.view.extend({
 			_('Localise queries'),
 			_('Localise hostname depending on the requesting subnet if multiple IPs are available'));
 
-		//local have_dnssec_support = luci.util.checklib('/usr/sbin/dnsmasq', 'libhogweed.so');
-		var have_dnssec_support = true;
-
-		if (have_dnssec_support) {
+		if (L.hasSystemFeature('dnsmasq', 'dnssec')) {
 			o = s.taboption('advanced', form.Flag, 'dnssec',
 				_('DNSSEC'));
 			o.optional = true;
@@ -394,7 +391,7 @@ return L.view.extend({
 		so = ss.option(form.Value, 'duid', _('<abbr title="The DHCP Unique Identifier">DUID</abbr>'));
 		so.datatype = 'and(rangelength(20,36),hexstring)';
 		Object.keys(duids).forEach(function(duid) {
-			so.value(duid, '%s (%s)'.format(duid, duids[duid].name || '?'));
+			so.value(duid, '%s (%s)'.format(duid, duids[duid].hostname || duids[duid].macaddr || duids[duid].ip6addr || '?'));
 		});
 
 		so = ss.option(form.Value, 'hostid', _('<abbr title="Internet Protocol Version 6">IPv6</abbr>-Suffix (hex)'));

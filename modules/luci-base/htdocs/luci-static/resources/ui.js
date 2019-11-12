@@ -1188,6 +1188,51 @@ var UICombobox = UIDropdown.extend({
 	}
 });
 
+var UIComboButton = UIDropdown.extend({
+	__init__: function(value, choices, options) {
+		this.super('__init__', [ value, choices, Object.assign({
+			sort: true
+		}, options, {
+			multiple: false,
+			create: false,
+			optional: false
+		}) ]);
+	},
+
+	render: function(/* ... */) {
+		var node = UIDropdown.prototype.render.apply(this, arguments),
+		    val = this.getValue();
+
+		if (L.isObject(this.options.classes) && this.options.classes.hasOwnProperty(val))
+			node.setAttribute('class', 'cbi-dropdown ' + this.options.classes[val]);
+
+		return node;
+	},
+
+	handleClick: function(ev) {
+		var sb = ev.currentTarget,
+		    t = ev.target;
+
+		if (sb.hasAttribute('open') || L.dom.matches(t, '.cbi-dropdown > span.open'))
+			return UIDropdown.prototype.handleClick.apply(this, arguments);
+
+		if (this.options.click)
+			return this.options.click.call(sb, ev, this.getValue());
+	},
+
+	toggleItem: function(sb /*, ... */) {
+		var rv = UIDropdown.prototype.toggleItem.apply(this, arguments),
+		    val = this.getValue();
+
+		if (L.isObject(this.options.classes) && this.options.classes.hasOwnProperty(val))
+			sb.setAttribute('class', 'cbi-dropdown ' + this.options.classes[val]);
+		else
+			sb.setAttribute('class', 'cbi-dropdown');
+
+		return rv;
+	}
+});
+
 var UIDynamicList = UIElement.extend({
 	__init__: function(values, choices, options) {
 		if (!Array.isArray(values))
@@ -2233,7 +2278,23 @@ return L.Class.extend({
 							type: 'file',
 							style: 'display:none',
 							change: function(ev) {
-								L.dom.parent(ev.target, '.modal').querySelector('.cbi-button-action.important').disabled = false;
+								var modal = L.dom.parent(ev.target, '.modal'),
+								    body = modal.querySelector('p'),
+								    upload = modal.querySelector('.cbi-button-action.important'),
+								    file = ev.currentTarget.files[0];
+
+								if (file == null)
+									return;
+
+								L.dom.content(body, [
+									E('ul', {}, [
+										E('li', {}, [ '%s: %s'.format(_('Name'), file.name.replace(/^.*[\\\/]/, '')) ]),
+										E('li', {}, [ '%s: %1024mB'.format(_('Size'), file.size) ])
+									])
+								]);
+
+								upload.disabled = false;
+								upload.focus();
 							}
 						}),
 						E('button', {
@@ -2701,8 +2762,10 @@ return L.Class.extend({
 		if (typeof(fn) != 'function')
 			return null;
 
+		var arg_offset = arguments.length - 2;
+
 		return Function.prototype.bind.apply(function() {
-			var t = arguments[arguments.length - 1].target;
+			var t = arguments[arg_offset].target;
 
 			t.classList.add('spinning');
 			t.disabled = true;
@@ -2725,6 +2788,7 @@ return L.Class.extend({
 	Dropdown: UIDropdown,
 	DynamicList: UIDynamicList,
 	Combobox: UICombobox,
+	ComboButton: UIComboButton,
 	Hiddenfield: UIHiddenfield,
 	FileUpload: UIFileUpload
 });
