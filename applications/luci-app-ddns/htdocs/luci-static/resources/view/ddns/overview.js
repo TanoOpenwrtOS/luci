@@ -179,7 +179,7 @@ return L.view.extend({
 						});
 					}, this)).then(L.bind(m.render, m));
 				})
-			}, _(action.toUpperCase() + ' DDns'))]);
+			}, (action == "start") ? _('Start DDNS') : _('Stop DDNS') )]);
 		};
 
 		o = s.option(form.DummyValue, '_restart', '&nbsp');
