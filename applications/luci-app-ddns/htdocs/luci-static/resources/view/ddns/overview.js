@@ -66,11 +66,10 @@ return L.view.extend({
 
 		L.dom.content(ddns_enabled, function() {
 			return E([], [
-				E('div', {}, status['_enabled'] ? _('DDNS Autostart enabled') : [
-					_('DDNS Autostart disabled'),
+				E('div', {}, status['_enabled'] ? _('DDNS autostart enabled') : [
+					_('DDNS autostart disabled'),
 					E('div', { 'class' : 'cbi-value-description' },
-					_("Currently DDNS updates are not started at boot or on interface events.") + "<br>" +
-					_("This is the default if you run DDNS scripts by yourself (i.e. via cron with force_interval set to '0')"))
+					_("Currently DDNS updates are not started at boot or on interface events. This is the default if you run DDNS scripts by yourself (i.e. via cron with force_interval set to '0')"))
 				]),]);
 		});
 
@@ -160,10 +159,9 @@ return L.view.extend({
 		o.cfgvalue = function() {
 			var res = status[this.option];
 			if (!res) {
-				this.description = _("Currently DDNS updates are not started at boot or on interface events.") + "<br>" +
-				_("This is the default if you run DDNS scripts by yourself (i.e. via cron with force_interval set to '0')")
+				this.description = _("Currently DDNS updates are not started at boot or on interface events. This is the default if you run DDNS scripts by yourself (i.e. via cron with force_interval set to '0')")
 			}
-			return res ? _('DDNS Autostart enabled') : _('DDNS Autostart disabled')
+			return res ? _('DDNS autostart enabled') : _('DDNS autostart disabled')
 		};
 
 		o = s.option(form.DummyValue, '_toggle', '&nbsp');
@@ -199,9 +197,7 @@ return L.view.extend({
 			o = s.option(form.DummyValue, '_no_ipv6');
 			o.rawhtml  = true;
 			o.title = '<b>' + _("IPv6 not supported") + '</b>';
-			o.cfgvalue = function() { return _("IPv6 is currently not (fully) supported by this system") + "<br>" +
-			_("Please follow the instructions on OpenWrt's homepage to enable IPv6 support") + "<br>" +
-			_("or update your system to the latest OpenWrt Release")};
+			o.cfgvalue = function() { return _("IPv6 is currently not (fully) supported by this system. Please follow the instructions on OpenWrt's homepage to enable IPv6 support or update your system to the latest OpenWrt Release")};
 		}
 
 		if (!env['has_ssl']) {
@@ -211,9 +207,7 @@ return L.view.extend({
 			o.title = '<b>' + _("HTTPS not supported") + '</b>';
 			o.cfgvalue = function() { return _("Neither GNU Wget with SSL nor cURL installed to support secure updates via HTTPS protocol.") +
 			"<br />- " +
-			_("You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-*ssl' package.") +
-			"<br />- " +
-			_("In some versions cURL/libcurl in OpenWrt is compiled without proxy support.")};
+			_("You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-*ssl' package. In some versions cURL/libcurl in OpenWrt is compiled without proxy support.")};
 		}
 
 		if (!env['has_bindnet']) {
@@ -247,8 +241,7 @@ return L.view.extend({
 			o.titleref = L.url("admin", "system", "opkg")
 			o.rawhtml  = true;
 			o.title = '<b>' + _("Force IP Version not supported") + '</b>';
-			o.cfgvalue = function() { return _("BusyBox's nslookup and Wget do not support to specify " +
-				"the IP version to use for communication with DDNS Provider!") +
+			o.cfgvalue = function() { return _("BusyBox's nslookup and Wget do not support to specify the IP version to use for communication with DDNS Provider!") +
 				"<br />- " + _("You should install 'wget' or 'curl' or 'uclient-fetch' package.")
 			};
 		}
@@ -258,8 +251,7 @@ return L.view.extend({
 			o.titleref = L.url("admin", "system", "opkg")
 			o.rawhtml  = true;
 			o.title = '<b>' + _("DNS requests via TCP not supported") + '</b>';
-			o.cfgvalue = function() { return _("BusyBox's nslookup and hostip do not support to specify to use TCP " +
-				"instead of default UDP when requesting DNS server!") +
+			o.cfgvalue = function() { return _("BusyBox's nslookup and hostip do not support to specify to use TCP instead of default UDP when requesting DNS server!") +
 				"<br />- " +
 				_("You should install 'bind-host' or 'knot-host' or 'drill' package for DNS requests.")};
 		}
@@ -269,11 +261,9 @@ return L.view.extend({
 			o.titleref = L.url("admin", "system", "opkg")
 			o.rawhtml  = true;
 			o.title = '<b>' + _("Using specific DNS Server not supported") + '</b>';
-			o.cfgvalue = function() { return _("BusyBox's nslookup in the current compiled version " +
-			"does not handle given DNS Servers correctly!") +
+			o.cfgvalue = function() { return _("BusyBox's nslookup in the current compiled version does not handle given DNS Servers correctly!") +
 		"<br />- " +
-		_("You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' package, " +
-			"if you need to specify a DNS server to detect your registered IP.")};
+		_("You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' package, if you need to specify a DNS server to detect your registered IP.")};
 		}
 
 		if (env['has_ssl'] && !env['has_cacerts']) {
@@ -283,15 +273,14 @@ return L.view.extend({
 			o.title = '<b>' + _("No certificates found") + '</b>';
 			o.cfgvalue = function() { return _("If using secure communication you should verify server certificates!") +
 			"<br />- " +
-			_("Install 'ca-certificates' package or needed certificates " +
-				"by hand into /etc/ssl/certs default directory")};
+			_("Install 'ca-certificates' package or needed certificates by hand into /etc/ssl/certs default directory")};
 		}
 
 		// DDNS services
 		s = m.section(form.GridSection, 'service', _('Services'));
 		s.anonymous = true;
 		s.addremove = true;
-		s.addbtntitle = _('Add new services...');
+		s.addbtntitle = _('Add new service...');
 
 		s.anonymous = true;
 		s.addremove = true;
@@ -320,7 +309,7 @@ return L.view.extend({
 			};
 
 			m2.render().then(L.bind(function(nodes) {
-				L.ui.showModal(_('Add new services...'), [
+				L.ui.showModal(_('Add new service...'), [
 					nodes,
 					E('div', { 'class': 'right' }, [
 						E('button', {
@@ -447,8 +436,7 @@ return L.view.extend({
 		// TAB: BASIC
 
 		// enabled
-		o = s.taboption('basic', form.Flag, 'enabled', _('Enabled'),_("If this service section is disabled it could not be started." + "<br />" +
-		"Neither from LuCI interface nor from console"));
+		o = s.taboption('basic', form.Flag, 'enabled', _('Enabled'),_("If service is disabled it could not be started. Neither from LuCI interface nor from console"));
 		o.modalonly = true;
 		o.rmempty  = false;
 		o.default = '1';
@@ -523,8 +511,7 @@ return L.view.extend({
 		// update_url
 
 		o = s.taboption('basic', form.Value, 'update_url', _("Custom update-URL"),
-		_("Update URL to be used for updating your DDNS Provider." + "<br />" +
-		"Follow instructions you will find on their WEB page."));
+		_("Update URL to be used for updating your DDNS Provider. Follow instructions you will find on their WEB page."));
 		o.modalonly = true;
 		o.rmempty	= false;
 		o.depends("ipv6_service_name","-");
@@ -584,11 +571,8 @@ return L.view.extend({
 			o.optional = true;
 			o.modalonly = true;
 
-			o = s.taboption('basic', form.Value, 'cacert',
-				_("Path to CA-Certificate"),
-				_("directory or path/file") + "<br>" +
-				_("or") + '<b>' + " IGNORE " + '</b>' +
-				_("to run HTTPS without verification of server certificates (insecure)"));
+			o = s.taboption('basic', form.Value, 'cacert', _("Path to CA-Certificate"),
+				_("Directory or path/file or <b>IGNORE</b> to run HTTPS without verification of server certificates (insecure)"));
 			o.modalonly = true;
 			o.depends("use_https", "1");
 			o.placeholder = "/etc/ssl/certs";
@@ -635,7 +619,7 @@ return L.view.extend({
 					break;
 			};
 
-			return uci.set('ddns', section_id, 'ip_source', formvalue )
+			return uci.set('ddns', section_id, 'ip_source', formvalue );
 		};
 
 		// ip_network
@@ -650,10 +634,10 @@ return L.view.extend({
 		// ip_url
 
 		o = s.taboption('advanced', form.Value, 'ip_url', _("URL to detect"),
-		_("Defines the Web page to read systems IP-Address from" + '<br>' +
-		_('Example for IPv4' + ': http://checkip.dyndns.com') + '<br>' +
-		_('Example for IPv6' + ': http://checkipv6.dyndns.com')));
-		o.depends("ip_source", "web")
+		_("Defines the Web page to read systems IP-Address from") + '<br>' +
+		_('Example for IPv4:') + ' http://checkip.dyndns.com' + '<br>' +
+		_('Example for IPv6:') + ' http://checkipv6.dyndns.com');
+		o.depends("ip_source", "web");
 
 		o.modalonly = true;
 
@@ -663,7 +647,7 @@ return L.view.extend({
 		_("Defines the interface to read systems IP-Address from"));
 
 		o.modalonly = true;
-		o.depends("ip_source", "interface")
+		o.depends("ip_source", "interface");
 		o.multiple = false;
 		o.default = 'wan';
 
@@ -673,8 +657,8 @@ return L.view.extend({
 		_("User defined script to read systems IP-Address"));
 
 		o.modalonly = true;
-		o.depends("ip_source", "script")
-		o.placeholder = "/path/to/script.sh"
+		o.depends("ip_source", "script");
+		o.placeholder = "/path/to/script.sh";
 
 		// interface
 
@@ -708,8 +692,7 @@ return L.view.extend({
 
 		if (env['has_bindnet']) {
 			o = s.taboption('advanced', widgets.ZoneSelect, 'bind_network', _("Bind Network"),
-				_('OPTIONAL: Network to use for communication') + '<br>' +
-				_("Network on which the ddns-updater scripts will be started"));
+				_('OPTIONAL: Network to use for communication. Network on which the ddns-updater scripts will be started'));
 			o.depends("ip_source", "web");
 			o.optional = true;
 			o.rmempty = true;
@@ -731,7 +714,7 @@ return L.view.extend({
 		if (env['has_dnsserver']) {
 			o = s.taboption("advanced", form.Value, "dns_server",
 				_("DNS-Server"),
-				_("OPTIONAL: Use non-default DNS-Server to detect 'Registered IP'.") + "<br />" +
+				_("OPTIONAL: Use non-default DNS-Server to detect 'Registered IP'.") + '<br />' +
 				_("Format: IP or FQDN"));
 			o.placeholder = "mydns.lan"
 			o.optional = true;
@@ -755,7 +738,7 @@ return L.view.extend({
 		if (env['has_proxy']) {
 			o = s.taboption("advanced", form.Value, "proxy", _("PROXY-Server"),
 				_("OPTIONAL: Proxy-Server for detection and updates.") + "<br />" +
-				_("Format") + ": " + '<b>' + "[user:password@]proxyhost:port" + '</b>' + "<br />" +
+				_("Format:") + " " + '<b>' + "[user:password@]proxyhost:port" + '</b>' + "<br />" +
 				_("IPv6 address must be given in square brackets") + ": " +
 				'<b>' + " [2001:db8::1]:8080" + '</b>');
 			o.optional = true;
@@ -784,7 +767,7 @@ return L.view.extend({
 		o.modalonly = true;
 		o.cfgvalue = function(section_id) {
 			this.description = _("Writes detailed messages to log file. File will be truncated automatically.") + "<br>" +
-			_("File") + ': "' + logdir + '/' + section_id + '.log"';
+			_('File: "%s"').format(logdir + '/' + section_id + '.log');
 			return uci.get('ddns', section_id, 'use_logfile');
 		};
 
@@ -801,14 +784,14 @@ return L.view.extend({
 				time_to_sec = time_res[unit || 'minutes'] * formvalue;
 
 			if (formvalue && time_to_sec < 300)
-				return _('Values below 5 minutes == 300 seconds are not supported');
+				return _('Values below 5 minutes (300 seconds) are not supported');
 
 			return true;
 
 		};
 
 		// check_interval
-		o = s.taboption("timer", form.ListValue, "check_unit",'Check Unit');
+		o = s.taboption("timer", form.ListValue, "check_unit", _('Check Unit'));
 		o.description = _("Interval unit to check for changed IP");
 		o.modalonly = true;
 		o.default  = "minutes"
@@ -819,8 +802,7 @@ return L.view.extend({
 		// force_interval
 
 		o = s.taboption("timer", form.Value, "force_interval", _("Force Interval"));
-		o.description = _("Interval to force updates send to DDNS Provider" + "<br />" +
-		"Setting this parameter to 0 will force the script to only run once");
+		o.description = _("Interval to force updates send to DDNS Provider. Setting this parameter to 0 will force the script to only run once");
 		o.placeholder = "72";
 		o.optional = true;
 		o.modalonly = true;
@@ -838,14 +820,14 @@ return L.view.extend({
 				force_to_sec = time_res[force_unit || 'minutes'] * formvalue;
 
 			if (force_to_sec != 0 && force_to_sec < check_to_sec)
-				return _("Values lower 'Check Interval' except '0' are not supported");
+				return _("Values lower than 'Check Interval' except '0' are not supported");
 
 			return true;
 		};
 
 		// force_unit
 
-		o = s.taboption("timer", form.ListValue, "force_unit",'Force Unit');
+		o = s.taboption("timer", form.ListValue, "force_unit",_('Force Unit'));
 		o.description = _("Interval unit to force updates send to DDNS Provider");
 		o.modalonly = true;
 		o.optional = true;
@@ -857,9 +839,7 @@ return L.view.extend({
 		// retry_count
 
 		o = s.taboption("timer", form.Value, "retry_count", _("Error Retry Counter"));
-		o.description = _("On Error the script will stop execution after given number of retrys")
-		+ "<br />"
-		+ _("The default setting of '0' will retry infinite.");
+		o.description = _("On Error the script will stop execution after given number of retries. The default setting of '0' will retry infinite.");
 		o.placeholder = "0";
 		o.optional = true;
 		o.modalonly = true;
@@ -868,9 +848,7 @@ return L.view.extend({
 		// retry_interval
 
 		o = s.taboption("timer", form.Value, "retry_interval", _("Error Retry Interval"));
-		o.description = _("On Error the script will stop execution after given number of retrys")
-		+ "<br />"
-		+ _("The default setting of '0' will retry infinite.");
+		o.description = _("On Error the script will stop execution after given number of retries. The default setting of '0' will retry infinite.");
 		o.placeholder = "60";
 		o.optional = true;
 		o.modalonly = true;
@@ -878,7 +856,7 @@ return L.view.extend({
 
 		// retry_unit
 
-		o = s.taboption("timer", form.ListValue, "retry_unit",'Retry Unit');
+		o = s.taboption("timer", form.ListValue, "retry_unit",_('Retry Unit'));
 		o.description = _("On Error the script will retry the failed action after given time");
 		o.modalonly = true;
 		o.optional = true;
@@ -912,8 +890,8 @@ return L.view.extend({
 
 		o.render = L.bind(function() {
 			return E([
-				E('p', {}, _('This is the current content of the log file in ') + logdir + ' for this service.'),
-				E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 20, 'readonly' : 'readonly', 'id' : 'log_area' }, _('Please press [Read] button') ))
+				E('p', {}, _('This is the current content of the log file in "%s" for this service.').format(logdir)),
+				E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 20, 'readonly' : 'readonly', 'id' : 'log_area' }, _('Please press "Read / Reread log file" button') ))
 			]);
 		}, o, this)
 
@@ -921,13 +899,7 @@ return L.view.extend({
 		// Advanced Configuration Section
 
 		s = m.section(form.NamedSection, 'global', 'ddns', _('Global Configuration'));
-		s.description = _('Configure here the details for all Dynamic DNS services including this LuCI application.')
-			+ '<br /><strong>'
-			+ _("It is NOT recommended for casual users to change settings on this page.")
-			+ '</strong><br />'
-			+ '<a href="https://openwrt.org/docs/guide-user/base-system/ddns#section_ddns" target="_blank">'
-			+ _('For detailed information about parameter settings look here.')
-			+ '</a>';
+		s.description = _('Configure here the details for all Dynamic DNS services including this LuCI application. It is NOT recommended for casual users to change settings on this page. <a href="https://openwrt.org/docs/guide-user/base-system/ddns#section_ddns" target="_blank">For detailed information about parameter settings look here.</a>');
 		s.addremove = false;
 
 		o = s.option(form.Flag, 'upd_privateip', _("Allow non-public IP's"));
@@ -943,25 +915,25 @@ return L.view.extend({
 		o.description = '<a href="http://www.cplusplus.com/reference/ctime/strftime/" target="_blank">'
 			+ _("For supported codes look here")
 			+ '</a><br>' +
-			_('Current setting: ') + '<b>' + status['_curr_dateformat'] + '</b>';
+			_('Current setting:') + ' <b>' + status['_curr_dateformat'] + '</b>';
 		o.default = "%F %R"
 		o.optional = true;
 		o.rmempty = true;
 
 		o = s.option(form.Value, 'ddns_rundir', _('Status directory'));
-		o.description = _('Directory contains PID and other status information for each running section.');
+		o.description = _('Directory contains PID and other status information for each running service.');
 		o.default = "/var/run/ddns";
 		o.optional = true;
 		o.rmempty = true;
 
 		o = s.option(form.Value, 'ddns_logdir', _('Log directory'));
-		o.description = _('Directory contains Log files for each running section.');
+		o.description = _('Directory contains Log files for each running service.');
 		o.default = "/var/log/ddns";
 		o.optional = true;
 		o.rmempty = true;
 		o.validate = function(section_id, formvalue) {
 			if (formvalue.indexOf('../') !== -1)
-				return _('"../" not allowed in path for Security Reason.')
+				return _('"../" not allowed in path for security reasons.');
 
 			return true;
 		}
@@ -974,7 +946,7 @@ return L.view.extend({
 		if (env['has_wget'] && env['has_curl']) {
 
 			o = s.option(form.Flag, 'use_curl', _('Use cURL'));
-			o.description = _('If Wget and cURL package are installed, Wget is used for communication by default.');
+			o.description = _('If wget and cURL package are installed, wget is used for communication by default.');
 			o.default = "0";
 			o.optional = true;
 			o.rmempty = true;
