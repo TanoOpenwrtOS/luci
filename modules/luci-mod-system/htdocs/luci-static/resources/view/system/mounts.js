@@ -33,7 +33,7 @@ function device_textvalue(devices, section_id) {
 		this.section.devices[section_id] = devices[e];
 
 		if (e && devices[e].size)
-			return E('span', 'UUID: %h (%s, %1024.2mB)'.format(v, devices[e].dev, devices[e].size));
+			return E('span', 'UUID: %h (%s, '.format(v, devices[e].dev) + _('%1024.2mB').format(devices[e].size)) + ')';
 		else if (e)
 			return E('span', 'UUID: %h (%s)'.format(v, devices[e].dev));
 		else
@@ -47,7 +47,7 @@ function device_textvalue(devices, section_id) {
 		this.section.devices[section_id] = this.section.devices[section_id] || devices[e];
 
 		if (e && devices[e].size)
-			return E('span', 'Label: %h (%s, %1024.2mB)'.format(v, devices[e].dev, devices[e].size));
+			return E('span', 'Label: %h (%s, '.format(v, devices[e].dev) + _('%1024.2mB').format(devices[e].size)) + ')';
 		else if (e)
 			return E('span', 'Label: %h (%s)'.format(v, devices[e].dev));
 		else
@@ -61,7 +61,7 @@ function device_textvalue(devices, section_id) {
 		this.section.devices[section_id] = this.section.devices[section_id] || devices[e];
 
 		if (e && devices[e].size)
-			return E('span', '%h (%1024.2mB)'.format(v, devices[e].size));
+			return E('span', '%h (%s, '.format(v) + _('%1024.2mB').format(devices[e].size)) + ')';
 		else if (e)
 			return E('span', '%h'.format(v));
 		else
@@ -207,8 +207,8 @@ return L.view.extend({
 				rows.push([
 					this.mounts[i].device,
 					this.mounts[i].mount,
-					'%1024.2mB / %1024.2mB'.format(this.mounts[i].avail, this.mounts[i].size),
-					'%.2f%% (%1024.2mB)'.format(100 / this.mounts[i].size * used, used),
+					_('%1024.2mB').format(this.mounts[i].avail) + ' / ' + _('%1024.2mB').format(this.mounts[i].size),
+					'%.2f%% ('.format(100 / this.mounts[i].size * used) + _('%1024.2mB').format(used) + ')',
 					umount ? E('button', {
 						'class': 'btn cbi-button-remove',
 						'click': ui.createHandlerFn(view, 'handleUmount', m, this.mounts[i].mount)
@@ -257,7 +257,7 @@ return L.view.extend({
 		for (var i = 0; i < devs.length; i++) {
 			var dev = devices[devs[i]];
 			if (dev.uuid && dev.size)
-				o.value(dev.uuid, '%s (%s, %1024.2mB)'.format(dev.uuid, dev.dev, dev.size));
+				o.value(dev.uuid, '%s (%s, '.format(dev.uuid, dev.dev) + _('%1024.2mB').format(dev.size) + ')');
 			else if (dev.uuid)
 				o.value(dev.uuid, '%s (%s)'.format(dev.uuid, dev.dev));
 		}
@@ -270,7 +270,7 @@ return L.view.extend({
 		for (var i = 0; i < devs.length; i++) {
 			var dev = devices[devs[i]];
 			if (dev.label && dev.size)
-				o.value(dev.label, '%s (%s, %1024.2mB)'.format(dev.label, dev.dev, dev.size));
+				o.value(dev.label, '%s (%s, '.format(dev.label, dev.dev) + _('%1024.2mB').format(dev.size) + ')');
 			else if (dev.label)
 				o.value(dev.label, '%s (%s)'.format(dev.label, dev.dev));
 		}
@@ -282,7 +282,7 @@ return L.view.extend({
 		for (var i = 0; i < devs.length; i++) {
 			var dev = devices[devs[i]];
 			if (dev.size)
-				o.value(dev.dev, '%s (%1024.2mB)'.format(dev.dev, dev.size));
+				o.value(dev.dev, '%s ('.format(dev.dev) + _('%1024.2mB').format(dev.size) + ')');
 			else
 				o.value(dev.dev);
 		}
@@ -366,7 +366,7 @@ return L.view.extend({
 				continue;
 
 			if (dev.uuid && dev.size)
-				o.value(dev.uuid, '%s (%s, %1024.2mB)'.format(dev.uuid, dev.dev, dev.size));
+				o.value(dev.uuid, '%s (%s, '.format(dev.uuid, dev.dev) + _('%1024.2mB').format(dev.size) + ')');
 			else if (dev.uuid)
 				o.value(dev.uuid, '%s (%s)'.format(dev.uuid, dev.dev));
 		}
@@ -382,7 +382,7 @@ return L.view.extend({
 				continue;
 
 			if (dev.label && dev.size)
-				o.value(dev.label, '%s (%s, %1024.2mB)'.format(dev.label, dev.dev, dev.size));
+				o.value(dev.label, '%s (%s, '.format(dev.label, dev.dev) + _('%1024.2mB').format(dev.size) + ')');
 			else if (dev.label)
 				o.value(dev.label, '%s (%s)'.format(dev.label, dev.dev));
 		}
@@ -397,7 +397,7 @@ return L.view.extend({
 				continue;
 
 			if (dev.size)
-				o.value(dev.dev, '%s (%1024.2mB)'.format(dev.dev, dev.size));
+				o.value(dev.dev, '%s ('.format(dev.dev) + _('%1024.2mB').format(dev.size) + ')');
 			else
 				o.value(dev.dev);
 		}
