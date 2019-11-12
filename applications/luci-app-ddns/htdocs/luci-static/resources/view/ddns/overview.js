@@ -190,10 +190,10 @@ return L.view.extend({
 				'click': L.ui.createHandlerFn(this, function() {
 					return callInitAction('ddns', 'restart').then(L.bind(m.render, m));
 				})
-			}, _('Restart DDns'))]);
+			}, _('Restart DDNS'))]);
 		};
 
-		// DDns hints
+		// DDNS hints
 
 		if (!env['has_ipv6']) {
 			o = s.option(form.DummyValue, '_no_ipv6');
@@ -287,7 +287,7 @@ return L.view.extend({
 				"by hand into /etc/ssl/certs default directory")};
 		}
 
-		// DDns services
+		// DDNS services
 		s = m.section(form.GridSection, 'service', _('Services'));
 		s.anonymous = true;
 		s.addremove = true;
@@ -311,7 +311,7 @@ return L.view.extend({
 			name = s2.option(form.Value, 'name', _('Name'));
 			name.rmempty = false;
 			name.datatype = 'uciname';
-			name.placeholder = _('New DDns Service…');
+			name.placeholder = _('New DDNS Service…');
 			name.validate = function(section_id, value) {
 				if (uci.get('ddns', value) != null)
 					return _('The service name is already used');
@@ -424,7 +424,7 @@ return L.view.extend({
 		};
 
 		s.modaltitle = function(section_id) {
-			return _('DDns Service') + ' » ' + section_id;
+			return _('DDNS Service') + ' » ' + section_id;
 		};
 
 		o = s.option(form.DummyValue, '_cfg_status', _('Status'));
