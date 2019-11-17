@@ -4,15 +4,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-10-22 08:49+0000\n"
-"Last-Translator: Zheng Qian <sotux82@gmail.com>\n"
+"PO-Revision-Date: 2019-11-15 03:04+0000\n"
+"Last-Translator: Meano Lee <meanocat@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/luci/zh_Hans/>\n"
 "Language: zh-cn\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1-dev\n"
+"X-Generator: Weblate 3.10-dev\n"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:910
 msgid "%.1f dB"
@@ -899,7 +899,7 @@ msgstr "CPU 使用率（%）"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:40
 msgid "Cached"
-msgstr ""
+msgstr "已缓存"
 
 #: modules/luci-compat/luasrc/model/network/proto_modemmanager.lua:53
 #: modules/luci-compat/luasrc/model/network/proto_qmi.lua:53
@@ -1090,11 +1090,11 @@ msgid "Configuration failed"
 msgstr "配置失败"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2565
-msgid "Configuration has been applied."
+msgid "Configuration changes applied."
 msgstr "配置已应用。"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2504
-msgid "Configuration has been rolled back!"
+msgid "Configuration changes have been rolled back!"
 msgstr "配置已回滚！"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:170
@@ -1462,7 +1462,7 @@ msgstr ""
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:171
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:370
 msgid "Disable DNS lookups"
-msgstr ""
+msgstr "禁用 DNS 查找"
 
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:93
 msgid "Disable Encryption"
@@ -1514,7 +1514,7 @@ msgstr "尝试断开连接失败"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1640
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:326
 msgid "Dismiss"
-msgstr "解除"
+msgstr "取消"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:774
 msgid "Distance Optimization"
@@ -1690,7 +1690,7 @@ msgstr "开启 <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:364
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:370
 msgid "Enable DNS lookups"
-msgstr ""
+msgstr "启用 DNS 查找"
 
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/6in4.js:60
 msgid "Enable HE.net dynamic endpoint update"
@@ -2118,7 +2118,7 @@ msgstr "网关地址无效"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:98
 msgid "Gateway metric"
-msgstr ""
+msgstr "网关跃点"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:65
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:318
@@ -2270,7 +2270,7 @@ msgstr "IP 协议"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:88
 msgid "IP Type"
-msgstr ""
+msgstr "IP 类型"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/hosts.js:30
 msgid "IP address"
@@ -2358,7 +2358,7 @@ msgstr "IPv4-in-IPv4 (RFC2003)"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:89
 msgid "IPv4/IPv6 (both - defaults to IPv4)"
-msgstr ""
+msgstr "IPv4/IPv6 (双栈 - 默认 IPv4)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:85
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:86
@@ -3096,7 +3096,7 @@ msgstr "MAP 规则无效"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:319
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:320
 msgid "MBit/s"
-msgstr ""
+msgstr "MBit/s"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:214
 msgid "MD5"
@@ -3222,7 +3222,7 @@ msgstr "数据包镜像源端口"
 
 #: modules/luci-compat/luasrc/model/network/proto_modemmanager.lua:9
 msgid "Mobile Data"
-msgstr ""
+msgstr "移动数据"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1341
 msgid "Mobility Domain"
@@ -3240,7 +3240,7 @@ msgstr "模式"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:39
 msgid "Model"
-msgstr "主机型号"
+msgstr "型号"
 
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:72
 msgid "Modem default"
@@ -3267,7 +3267,7 @@ msgstr "调制解调器初始化超时"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:27
 msgid "ModemManager"
-msgstr ""
+msgstr "调制解调器管理器"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:3543
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:884
@@ -3788,7 +3788,7 @@ msgstr "用户名"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:71
 msgid "PAP/CHAP (both)"
-msgstr ""
+msgstr "PAP/CHAP (两者都)"
 
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:98
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:82
@@ -3816,7 +3816,7 @@ msgstr "PAP/CHAP 用户名"
 
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:101
 msgid "PDP Type"
-msgstr ""
+msgstr "PDP 类型"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:68
 msgid "PID"
@@ -3902,7 +3902,7 @@ msgstr "密码验证"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1418
 msgid "Password of Private Key"
-msgstr "私有密钥"
+msgstr "私钥密码"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1475
 msgid "Password of inner Private Key"
@@ -4042,7 +4042,7 @@ msgstr "端口状态："
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:488
 msgid "Potential negation of: %s"
-msgstr ""
+msgstr "可能存在的冲突: %s"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:37
 msgid "Power Management Mode"
@@ -4858,7 +4858,7 @@ msgstr "在此指定密钥。"
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:75
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:97
 msgid "Start"
-msgstr "开始"
+msgstr "启动"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:72
 msgid "Start priority"
@@ -4923,7 +4923,7 @@ msgstr "状态"
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:77
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:99
 msgid "Stop"
-msgstr "关闭"
+msgstr "停止"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:164
 msgid "Strict order"
@@ -4948,7 +4948,7 @@ msgstr "不记录这些协议的常规操作日志"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:43
 msgid "Swap free"
-msgstr ""
+msgstr "空闲交换区"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:136
 #: modules/luci-mod-network/luasrc/controller/admin/network.lua:11
@@ -4970,7 +4970,7 @@ msgstr "交换机端口掩码"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:151
 msgid "Switch Speed Mask"
-msgstr ""
+msgstr "交换机速率掩码"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:2760
 #: modules/luci-compat/luasrc/model/network.lua:1425
@@ -5894,7 +5894,7 @@ msgid "Waiting for command to complete..."
 msgstr "等待命令执行完成…"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2590
-msgid "Waiting for configuration to get applied… %ds"
+msgid "Applying configuration changes… %ds"
 msgstr "正在等待配置被应用… %ds"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/reboot.js:40
@@ -5908,7 +5908,7 @@ msgstr "警告"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/reboot.js:19
 msgid "Warning: There are unsaved changes that will get lost on reboot!"
-msgstr "警告：一些未保存的配置将在重启后丢失！"
+msgstr "警告：未保存的更改会在重启时丢失！"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:35
 msgid "Weak"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2019-11-07 08:28+0000\n"
-"Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
+"PO-Revision-Date: 2019-11-13 21:10+0000\n"
+"Last-Translator: Michal L <michalrmsmi@wp.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsminidlna/pl/>\n"
 "Language: pl\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:115
 msgid "Announced model number"
-msgstr "Rozgłaszany model"
+msgstr "Rozgłaszany numer modelu"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:111
 msgid "Announced serial number"
@@ -71,7 +71,7 @@ msgstr "Interfejsy"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:82
 msgid "Log directory"
-msgstr "Katalog dzienników (logów)"
+msgstr "Katalog rejestru"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:132
 msgid "Media directories"
@@ -101,7 +101,7 @@ msgstr "Interfejsy sieciowe do obsługiwania."
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:106
 msgid "Notify interval"
-msgstr "Interwał powiadamiania."
+msgstr "Interwał powiadamiania"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:107
 msgid "Notify interval in seconds."
