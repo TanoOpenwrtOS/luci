@@ -15,6 +15,11 @@ local http = require "luci.http"
 local sys = require "luci.sys"
 local dispatcher = require "luci.dispatcher"
 local uci = require "luci.model.uci".cursor()
+local packageName = "luci-app-advanced-reboot"
+
+function logger(t)
+	util.exec("logger -t " .. packageName .. " '" .. tostring(t) .. "'")
+end
 
 function is_alt_mountable(p1_mtd, p2_mtd)
 	if p1_mtd:sub(1,3) == "mtd" and
@@ -33,11 +38,13 @@ function get_partition_os_info(op_ubi)
 	if fs.access("/etc/os-release") then
 		cp_info = util.trim(util.exec('. /etc/os-release && echo "$PRETTY_NAME"'))
 	end
+	logger(i18n.translate("attempting to mount alternative partition") .. " (mtd" .. tostring(op_ubi) .. ")")
 	alt_partition_unmount(op_ubi)
 	alt_partition_mount(op_ubi)
 	if fs.access("/alt/rom/etc/os-release") then
 		ap_info = util.trim(util.exec('. /alt/rom/etc/os-release && echo "$PRETTY_NAME"'))
 	end
+	logger(i18n.translate("attempting to unmount alternative partition") .. " (mtd" .. tostring(op_ubi) .. ")")
 	alt_partition_unmount(op_ubi)
 	return cp_info, ap_info
 end
@@ -45,7 +52,6 @@ end
 function alt_partition_mount(op_ubi)
 	local ubi_dev
 	util.exec('for i in rom overlay firmware; do [ ! -d "$i" ] && mkdir -p "/alt/${i}"; done')
-	util.exec("ubidetach -m " .. tostring(op_ubi))
 	ubi_dev = tostring(util.exec("ubiattach -m " .. tostring(op_ubi)))
 	_, _, ubi_dev = ubi_dev:find("UBI device number (%d+)")
 	if not ubi_dev then 
@@ -54,17 +60,25 @@ function alt_partition_mount(op_ubi)
 	end
 	util.exec("ubiblock --create /dev/ubi" .. ubi_dev .. "_0")
 	util.exec("mount -t squashfs -o ro /dev/ubiblock" .. ubi_dev .. "_0 /alt/rom")
-	util.exec("mount -t ubifs /dev/ubi1_" .. ubi_dev .. " /alt/overlay")
-	util.exec("mount -t overlay overlay -o noatime,lowerdir=/alt/rom,upperdir=/alt/overlay/upper,workdir=/alt/overlay/work /alt/firmware")
+	util.exec("mount -t ubifs /dev/ubi" .. ubi_dev .. "_1 /alt/overlay")
+--	util.exec("mount -t overlay overlay -o noatime,lowerdir=/alt/rom,upperdir=/alt/overlay/upper,workdir=/alt/overlay/work /alt/firmware")
 end
 
 function alt_partition_unmount(op_ubi)
-	util.exec("umount /alt/firmware")
-	util.exec("umount /alt/overlay")
-	util.exec("umount /alt/rom")
-	util.exec("ubiblock --remove /dev/ubi1_0")
-	util.exec("ubidetach -m " .. tostring(op_ubi))
-	util.exec('rm -rf /alt')
+	local mtdCount = tonumber(util.exec("ubinfo | grep 'Present UBI devices' | grep -c ','"))
+	mtdCount = mtdCount and mtdCount + 1 or 10
+--	util.exec("[ -d /alt/firmware ] && umount /alt/firmware")
+	util.exec("[ -d /alt/overlay ] && umount /alt/overlay")
+	util.exec("[ -d /alt/rom ] && umount /alt/rom")
+	for i = 0, mtdCount do
+		if not fs.access("/sys/devices/virtual/ubi/ubi" .. tostring(i) .. "/mtd_num") then break end
+		ubi_mtd =  tonumber(util.trim(util.exec("cat /sys/devices/virtual/ubi/ubi" .. i .. "/mtd_num")))
+		if ubi_mtd and ubi_mtd == op_ubi then
+			util.exec("ubiblock --remove /dev/ubi" .. tostring(i) .. "_0")
+			util.exec("ubidetach -m " .. tostring(op_ubi))
+			util.exec('rm -rf /alt')
+		end
+	end
 end
 
 devices = {
@@ -169,7 +183,7 @@ function index()
 end
 
 function action_reboot()
-	ltemplate.render("admin_system/applyreboot", {
+	ltemplate.render("advanced_reboot/applyreboot", {
 				title = i18n.translate("Rebooting..."),
 				msg   = i18n.translate("The system is rebooting now.<br /> DO NOT POWER OFF THE DEVICE!<br /> Wait a few minutes before you try to reconnect. It might be necessary to renew the address of your computer to reach the device again, depending on your settings."),
 				addr  = ip.new(type(ip) == "string" and ip or "192.168.1.1") or "192.168.1.1"
@@ -240,7 +254,7 @@ function action_altreboot()
 			end
 		end
 		if not errorMessage then
-			ltemplate.render("admin_system/applyreboot", {
+			ltemplate.render("advanced_reboot/applyreboot", {
 						title = i18n.translate("Rebooting..."),
 						msg   = i18n.translate("The system is rebooting to an alternative partition now.<br /> DO NOT POWER OFF THE DEVICE!<br /> Wait a few minutes before you try to reconnect. It might be necessary to renew the address of your computer to reach the device again, depending on your settings."),
 						addr  = ip.new(uci:get("network", "lan", "ipaddr")) or "192.168.1.1"
@@ -261,7 +275,6 @@ function action_altreboot()
 end
 
 function action_poweroff()
-	local uci = require "luci.model.uci".cursor()
 	if http.formvalue("cancel") then
 		http.redirect(dispatcher.build_url('admin/system/advanced_reboot'))
 		return
@@ -274,7 +287,7 @@ function action_poweroff()
 			ltemplate.render("advanced_reboot/advanced_reboot",{})
 		end
 	elseif step == 2 then
-		ltemplate.render("admin_system/applyreboot", {
+		ltemplate.render("advanced_reboot/applyreboot", {
 					title = i18n.translate("Shutting down..."),
 					msg   = i18n.translate("The system is shutting down now.<br /> DO NOT POWER OFF THE DEVICE!<br /> It might be necessary to renew the address of your computer to reach the device again, depending on your settings."),
 					addr  = ip.new(uci:get("network", "lan", "ipaddr")) or "192.168.1.1"

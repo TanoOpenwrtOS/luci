@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-30 17:00+0200\n"
-"PO-Revision-Date: 2019-11-13 21:10+0000\n"
-"Last-Translator: Michal L <michalrmsmi@wp.pl>\n"
+"PO-Revision-Date: 2019-11-19 16:05+0000\n"
+"Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfirewall/pl/>\n"
 "Language: pl\n"
@@ -42,7 +42,7 @@ msgstr "<var>%s</var> i ograniczone do %s"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:293
 msgid "Accept forward"
-msgstr ""
+msgstr "Zaakceptuj przekierowanie"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:303
 msgid "Accept input"
@@ -158,15 +158,15 @@ msgstr "Strefa docelowa"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:299
 msgid "Discard forward"
-msgstr ""
+msgstr "Odrzuć przekierowanie"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:309
 msgid "Discard input"
-msgstr ""
+msgstr "Odrzuć wejście"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:289
 msgid "Discard output"
-msgstr ""
+msgstr "Odrzuć wyjście"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:211
 msgid ""
@@ -176,15 +176,15 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:297
 msgid "Do not track forward"
-msgstr ""
+msgstr "Nie śledź przekazywania"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:307
 msgid "Do not track input"
-msgstr ""
+msgstr "Nie śledź wejścia"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:287
 msgid "Do not track output"
-msgstr ""
+msgstr "Nie śledź wyjścia"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:36
 msgid "Drop invalid packets"
@@ -193,7 +193,7 @@ msgstr "Porzuć wadliwe pakiety"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:149
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:189
 msgid "Enable"
-msgstr "Włączone"
+msgstr "Włącz"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:262
 msgid "Enable NAT Loopback"
@@ -201,19 +201,20 @@ msgstr "Włącz NAT Loopback"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:35
 msgid "Enable SYN-flood protection"
-msgstr "Włącz ochronę przed atakiem SYN-flood"
+msgstr "Włącz ochronę SYN-flood"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:224
 msgid "Enable logging on this zone"
-msgstr "Włącz logowanie na tej strefy"
+msgstr "Włącz logowanie tej strefy"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:54
 msgid "Experimental feature. Not fully compatible with QoS/SQM."
-msgstr ""
+msgstr "Funkcja eksperymentalna. Nie w pełni kompatybilna z QoS/SQM."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:218
 msgid "Explicitly choses allowed connection tracking helpers for zone traffic"
 msgstr ""
+"Dokładnie wybiera dozwolone pomoce śledzenia połączeń dla ruchu strefowego"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:210
 msgid "External IP address"
@@ -230,15 +231,15 @@ msgstr "Dodatkowe argumenty"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:249
 msgid "Extra destination arguments"
-msgstr ""
+msgstr "Dodatkowe argumenty przeznaczenia"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:80
 msgid "Extra iptables arguments"
-msgstr ""
+msgstr "Dodatkowe argumenty tablicy IP"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:239
 msgid "Extra source arguments"
-msgstr ""
+msgstr "Dodatkowe argumenty zródłowe"
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Generated from applications/luci-fw/luasrc/model/cbi/luci_fw/zones.lua      #
@@ -317,7 +318,7 @@ msgstr "Ustawienia główne"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:65
 msgid "Hardware flow offloading"
-msgstr ""
+msgstr "Sprzętowy flow offloading"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:157
 msgid "IP"
@@ -451,7 +452,7 @@ msgstr ""
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:40
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:116
 msgid "Output"
-msgstr "Wyjście (Output)"
+msgstr "Ruch wychodzący"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:268
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:337
@@ -509,15 +510,15 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:305
 msgid "Refuse input"
-msgstr ""
+msgstr "Odmowa wejścia"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:285
 msgid "Refuse output"
-msgstr ""
+msgstr "Odmowa wyjścia"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:66
 msgid "Requires hardware NAT support. Implemented at least for mt7621"
-msgstr ""
+msgstr "Wymaga sprzętowej obsługi NAT. Wdrożono dla co najmniej mt7621"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:201
 msgid "Restrict Masquerading to given destination subnets"
@@ -536,7 +537,7 @@ msgstr "Ogranicz do rodziny adresów"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:53
 msgid "Routing/NAT Offloading"
-msgstr ""
+msgstr "Routing/NAT Offloading"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:351
 msgid "Saturday"
@@ -544,11 +545,11 @@ msgstr "Sobota"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:61
 msgid "Software based offloading for routing/NAT"
-msgstr ""
+msgstr "Oprogramowanie oparte na offloading dla routingu/NAT"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:60
 msgid "Software flow offloading"
-msgstr ""
+msgstr "Programowy flow offloading"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:186
 msgid "Source IP address"
@@ -682,7 +683,7 @@ msgstr "Wtorek"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/custom.js:18
 msgid "Unable to save contents: %s"
-msgstr ""
+msgstr "Nie można zapisać zawartości: %s"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:108
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:122
