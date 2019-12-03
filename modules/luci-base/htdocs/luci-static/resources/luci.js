@@ -67,7 +67,7 @@
 	 * It provides simple means to create subclasses of given classes and
 	 * implements prototypal inheritance.
 	 */
-	var superContext = null, Class = Object.assign(function() {}, {
+	var superContext = {}, classIndex = 0, Class = Object.assign(function() {}, {
 		/**
 		 * Extends this base class with the properties described in
 		 * `properties` and returns a new subclassed Class instance
@@ -86,8 +86,9 @@
 		 */
 		extend: function(properties) {
 			var props = {
+				__id__: { value: classIndex },
 				__base__: { value: this.prototype },
-				__name__: { value: properties.__name__ || 'anonymous' }
+				__name__: { value: properties.__name__ || 'anonymous' + classIndex++ }
 			};
 
 			var ClassConstructor = function() {
@@ -265,15 +266,21 @@
 			 * superclass method returned `null`.
 			 */
 			super: function(key, callArgs) {
-				for (superContext = Object.getPrototypeOf(superContext ||
-				                                          Object.getPrototypeOf(this));
-				     superContext && !superContext.hasOwnProperty(key);
-				     superContext = Object.getPrototypeOf(superContext)) { }
-
-				if (!superContext)
+				if (key == null)
 					return null;
 
-				var res = superContext[key];
+				var slotIdx = this.__id__ + '.' + key,
+				    symStack = superContext[slotIdx],
+				    protoCtx = null;
+
+				for (protoCtx = Object.getPrototypeOf(symStack ? symStack[0] : Object.getPrototypeOf(this));
+				     protoCtx != null && !protoCtx.hasOwnProperty(key);
+				     protoCtx = Object.getPrototypeOf(protoCtx)) {}
+
+				if (protoCtx == null)
+					return null;
+
+				var res = protoCtx[key];
 
 				if (arguments.length > 1) {
 					if (typeof(res) != 'function')
@@ -282,10 +289,18 @@
 					if (typeof(callArgs) != 'object')
 						callArgs = this.varargs(arguments, 1);
 
-					res = res.apply(this, callArgs);
-				}
+					if (symStack)
+						symStack.unshift(protoCtx);
+					else
+						superContext[slotIdx] = [ protoCtx ];
 
-				superContext = null;
+					res = res.apply(this, callArgs);
+
+					if (symStack && symStack.length > 1)
+						symStack.shift(protoCtx);
+					else
+						delete superContext[slotIdx];
+				}
 
 				return res;
 			},
