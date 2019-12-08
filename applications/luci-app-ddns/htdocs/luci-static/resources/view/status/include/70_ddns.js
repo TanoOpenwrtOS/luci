@@ -41,6 +41,6 @@ return L.Class.extend({
 			];
 		}), E('em', _('There is no service configured.')));
 
-		return E([table]);
+		return E('div', { 'class': 'table-wrapper' }, [ table ]);
 	}
 });
