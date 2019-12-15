@@ -262,7 +262,7 @@ function isIgnoredIfname(ifname) {
 	var blacklist = uci.get('luci', 'net_blacklist', 'blacklist');
 	if (Array.isArray(blacklist))
 		return blacklist.includes(ifname);
-	else {
+	else if (blacklist) {
 		var splitted = blacklist.split(/\s+/);
 		if (splitted && Array.isArray(splitted))
 			return splitted.includes(ifname);
