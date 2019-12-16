@@ -67,7 +67,8 @@ return L.view.extend({
 			fs.trimmed('/proc/sys/kernel/hostname'),
 			fs.trimmed('/proc/mtd'),
 			fs.trimmed('/proc/partitions'),
-			fs.trimmed('/proc/mounts')
+			fs.trimmed('/proc/mounts'),
+			fs.trimmed('/tmp/overlay_partition')
 		];
 
 		return Promise.all(tasks);
@@ -345,9 +346,15 @@ return L.view.extend({
 		    procmtd = rpc_replies[2],
 		    procpart = rpc_replies[3],
 		    procmounts = rpc_replies[4],
-		    has_rootfs_data = (procmtd.match(/"rootfs_data"/) != null) || (procmounts.match("overlayfs:\/overlay \/ ") != null),
+		    overlay_partition = rpc_replies[5],
+		    has_rootfs_data,
 		    storage_size = findStorageSize(procmtd, procpart),
 		    m, s, o, ss;
+
+		if (!overlay_partition || overlay_partition == "")
+			overlay_partition = "rootfs_data";
+
+		has_rootfs_data = (procmtd.match(new RegExp('"' + overlay_partition + '"', '')) != null) || (procmounts.match("overlayfs:\/overlay \/ ") != null);
 
 		m = new form.JSONMap(mapdata, _('Flash operations'));
 		m.tabbed = true;
