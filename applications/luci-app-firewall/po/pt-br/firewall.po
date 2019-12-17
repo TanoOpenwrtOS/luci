@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-30 17:00+0200\n"
-"PO-Revision-Date: 2019-12-02 16:08+0000\n"
+"PO-Revision-Date: 2019-12-09 20:03+0000\n"
 "Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsfirewall/pt_BR/>\n"
@@ -40,15 +40,15 @@ msgstr "<var>%s</var> e limite a %s"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:293
 msgid "Accept forward"
-msgstr "Aceitar o encaminhamento"
+msgstr "Aceitar encaminhamento"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:303
 msgid "Accept input"
-msgstr "Aceitar a entrada"
+msgstr "Aceitar entrada"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:283
 msgid "Accept output"
-msgstr "Aceitar a saída"
+msgstr "Aceitar saída"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:183
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:328
@@ -82,7 +82,7 @@ msgstr "Configurações Avançadas"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:208
 msgid "Allow \"invalid\" traffic"
-msgstr "Permitir o tráfego \"inválido\""
+msgstr "Permitir tráfego \"inválido\""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:308
 msgid "Allow forward from <em>source zones</em>:"
@@ -136,7 +136,7 @@ msgstr "Redes cobertas"
 msgid "Covered subnets"
 msgstr "Sub-redes cobertas"
 
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:18
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:43
 msgid "Custom Rules"
 msgstr "Regras Personalizadas"
 
@@ -202,7 +202,7 @@ msgstr "Descartar pacotes inválidos"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:149
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:189
 msgid "Enable"
-msgstr "Habilitar"
+msgstr "Ativar"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:262
 msgid "Enable NAT Loopback"
@@ -252,7 +252,7 @@ msgstr "Argumentos extras para o iptables"
 msgid "Extra source arguments"
 msgstr "Argumentos extras da fonte"
 
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:6
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:3
 msgid "Firewall"
 msgstr "Firewall"
 
@@ -316,7 +316,7 @@ msgstr "De %s <var>neste dispositivo</var> com origem %s e %s"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:136
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:31
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:77
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:9
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:16
 msgid "General Settings"
 msgstr "Configurações Gerais"
 
@@ -479,7 +479,7 @@ msgstr ""
 "regras do firewall expondo todos os serviços completamente."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:95
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:12
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:25
 msgid "Port Forwards"
 msgstr "Encaminhamentos de Porta"
 
@@ -663,7 +663,7 @@ msgid "To %s, %s in %s"
 msgstr "Para %s, %s em %s"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:131
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:15
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:34
 msgid "Traffic Rules"
 msgstr "Regras de tráfego"
 
@@ -721,7 +721,7 @@ msgstr "Via %s"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:70
 msgid "Via %s at %s"
-msgstr "Via %s at %s"
+msgstr "Através do %s na %s"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:348
 msgid "Wednesday"

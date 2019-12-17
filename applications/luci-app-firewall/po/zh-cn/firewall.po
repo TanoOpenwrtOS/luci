@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2019-11-21 14:23+0000\n"
-"Last-Translator: Xingcong Li <lixingcong512@gmail.com>\n"
+"PO-Revision-Date: 2019-12-04 12:06+0000\n"
+"Last-Translator: lissom <kkjoy2617@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsfirewall/zh_Hans/>\n"
 "Language: zh-cn\n"
@@ -120,7 +120,7 @@ msgstr "Conntrack 助手"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/custom.js:15
 msgid "Contents have been saved."
-msgstr "内容已经保存。"
+msgstr "内容已保存。"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:178
 msgid "Covered devices"
@@ -134,7 +134,7 @@ msgstr "涵盖的网络"
 msgid "Covered subnets"
 msgstr "涵盖的子网"
 
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:18
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:43
 msgid "Custom Rules"
 msgstr "自定义规则"
 
@@ -231,7 +231,7 @@ msgstr "外部端口"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:267
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:336
 msgid "Extra arguments"
-msgstr "附加参数"
+msgstr "额外参数"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:246
 msgid "Extra destination arguments"
@@ -245,7 +245,7 @@ msgstr "额外的 iptables 参数"
 msgid "Extra source arguments"
 msgstr "额外的源参数"
 
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:6
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:3
 msgid "Firewall"
 msgstr "防火墙"
 
@@ -309,7 +309,7 @@ msgstr "来自 %s 位于<var>本设备</var>源端口 %s 源 MAC %s"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:136
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:31
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:77
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:9
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:16
 msgid "General Settings"
 msgstr "基本设置"
 
@@ -465,7 +465,7 @@ msgstr ""
 "而对外暴露所有服务。"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:95
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:12
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:25
 msgid "Port Forwards"
 msgstr "端口转发"
 
@@ -640,7 +640,7 @@ msgid "To %s, %s in %s"
 msgstr "到 %s, %s 位于 %s"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:131
-#: applications/luci-app-firewall/luasrc/controller/firewall.lua:15
+#: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:34
 msgid "Traffic Rules"
 msgstr "通信规则"
 

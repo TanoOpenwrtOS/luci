@@ -5,16 +5,6 @@
 module("luci.controller.admin.status", package.seeall)
 
 function index()
-	local page
-
-	entry({"admin", "status", "overview"}, template("admin_status/index"), _("Overview"), 1)
-
-	entry({"admin", "status", "iptables"}, template("admin_status/iptables"), _("Firewall"), 2).leaf = true
-	entry({"admin", "status", "iptables_dump"}, call("dump_iptables")).leaf = true
-	entry({"admin", "status", "iptables_action"}, post("action_iptables")).leaf = true
-
-	entry({"admin", "status", "routes"}, template("admin_status/routes"), _("Routes"), 3)
-
 	local lv = require("luci.tools.logview")
 	local logs = lv.get_logs()
 
@@ -28,17 +18,6 @@ function index()
 		entry({"admin", "status", "logview", "get_json"}, call("logview_get_json")).leaf = true
 		entry({"admin", "status", "logview", "download"}, call("logview_download")).leaf = true
 	end
-
-	entry({"admin", "status", "processes"}, view("status/processes"), _("Processes"), 6)
-
-	entry({"admin", "status", "realtime"}, alias("admin", "status", "realtime", "load"), _("Realtime Graphs"), 7)
-
-	entry({"admin", "status", "realtime", "load"}, view("status/load"), _("Load"), 1)
-	entry({"admin", "status", "realtime", "bandwidth"}, view("status/bandwidth"), _("Traffic"), 2)
-	entry({"admin", "status", "realtime", "wireless"}, view("status/wireless"), _("Wireless"), 3).uci_depends = { wireless = true }
-	entry({"admin", "status", "realtime", "connections"}, view("status/connections"), _("Connections"), 4)
-
-	entry({"admin", "status", "nameinfo"}, call("action_nameinfo")).leaf = true
 end
 
 function logview_render(log_id)
@@ -65,6 +44,11 @@ function logview_get_json(log_id)
 		luci.http.status(404, "No such log file")
 		luci.http.prepare_content("text/plain")
 	end
+end
+
+function action_syslog()
+	local syslog = luci.sys.syslog()
+	luci.template.render("admin_status/syslog", {syslog=syslog})
 end
 
 function logview_download(log_name)
