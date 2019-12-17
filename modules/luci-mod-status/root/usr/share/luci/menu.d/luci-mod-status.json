@@ -42,26 +42,6 @@
 		}
 	},
 
-	"admin/status/syslog": {
-		"title": "System Log",
-		"order": 4,
-		"action": {
-			"type": "call",
-			"module": "luci.controller.admin.status",
-			"function": "action_syslog"
-		}
-	},
-
-	"admin/status/dmesg": {
-		"title": "Kernel Log",
-		"order": 5,
-		"action": {
-			"type": "call",
-			"module": "luci.controller.admin.status",
-			"function": "action_dmesg"
-		}
-	},
-
 	"admin/status/processes": {
 		"title": "Processes",
 		"order": 6,

@@ -46,11 +46,6 @@ function logview_get_json(log_id)
 	end
 end
 
-function action_syslog()
-	local syslog = luci.sys.syslog()
-	luci.template.render("admin_status/syslog", {syslog=syslog})
-end
-
 function logview_download(log_name)
 	local lv = require("luci.tools.logview")
 
