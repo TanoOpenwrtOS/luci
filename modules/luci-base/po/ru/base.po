@@ -925,10 +925,6 @@ msgstr "Резервное копирование / Перепрошивка"
 msgid "Backup file list"
 msgstr "Список файлов для резервного копирования"
 
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:45
-msgid "Bad address specified!"
-msgstr "Указан неправильный адрес!"
-
 #: modules/luci-compat/luasrc/view/cbi/wireless_modefreq.htm:158
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:371
 msgid "Band"
@@ -1250,7 +1246,6 @@ msgstr "Ошибка попытки соединения"
 msgid "Connection lost"
 msgstr "Подключение потеряно"
 
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:40
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:114
 msgid "Connections"
 msgstr "Соединения"
@@ -1583,7 +1578,6 @@ msgstr "Устройство недоступно!"
 msgid "Device unreachable! Still waiting for device..."
 msgstr "Устройство недоступно! Ожидание устройства..."
 
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:55
 #: modules/luci-mod-network/root/usr/share/luci/menu.d/luci-mod-network.json:78
 msgid "Diagnostics"
 msgstr "Диагностика"
@@ -2160,7 +2154,6 @@ msgstr "Найти и присоединиться к сети"
 msgid "Finish"
 msgstr "Завершить"
 
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:13
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:12
 msgid "Firewall"
 msgstr "Межсетевой экран"
@@ -2449,9 +2442,6 @@ msgstr "Содержимое Host-Uniq тега"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:33
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:396
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/hosts.js:26
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:61
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:100
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:139
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:53
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:28
 #: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:130
@@ -2513,8 +2503,6 @@ msgstr "IP-адрес не указан"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:82
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:83
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:84
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:71
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:110
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:82
 msgid "IPv4"
 msgstr "IPv4"
@@ -2594,8 +2582,6 @@ msgstr "IPv4/IPv6 (оба, по умолчанию IPv4)"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:92
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:93
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:94
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:72
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:111
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:84
 msgid "IPv6"
 msgstr "IPv6"
@@ -3193,7 +3179,6 @@ msgstr ""
 msgid "Listening port for inbound DNS queries"
 msgstr "Порт для входящих DNS-запросов"
 
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:37
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:203
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:84
 msgid "Load"
@@ -3202,10 +3187,6 @@ msgstr "Загрузка"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:60
 msgid "Load Average"
 msgstr "Средняя загрузка"
-
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:32
-msgid "Loading"
-msgstr "Загружаем"
 
 #: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:118
 #: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:272
@@ -3316,7 +3297,7 @@ msgstr "Войти"
 msgid "Logout"
 msgstr "Выйти"
 
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:23
+#: modules/luci-mod-status/luasrc/controller/admin/status.lua:12
 msgid "Logs"
 msgstr "Журналы"
 
@@ -3844,8 +3825,6 @@ msgid "Notice"
 msgstr "Заметка"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:125
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:136
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:147
 msgid "Nslookup"
 msgstr "DNS-запрос"
 
@@ -4093,7 +4072,6 @@ msgstr ""
 msgid "Override the table used for internal routes"
 msgstr "Назначить таблицу внутренних маршрутов"
 
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:11
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:3
 msgid "Overview"
 msgstr "Обзор"
@@ -4329,9 +4307,6 @@ msgstr "Настройки канала"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:77
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:78
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:88
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:58
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:81
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:83
 msgid "Ping"
 msgstr "Пинг-запрос"
 
@@ -4434,7 +4409,6 @@ msgid "Private Key"
 msgstr "Приватный ключ"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:65
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:33
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:66
 msgid "Processes"
 msgstr "Процессы"
@@ -4450,8 +4424,6 @@ msgstr "Прот."
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:74
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:392
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:722
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:68
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:107
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:382
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:31
 msgid "Protocol"
@@ -4583,7 +4555,6 @@ msgstr ""
 msgid "Really switch protocol?"
 msgstr "Вы действительно хотите изменить протокол?"
 
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:35
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:75
 msgid "Realtime Graphs"
 msgstr "Графики в реальном времени"
@@ -4865,7 +4836,6 @@ msgid "Router Advertisement-Service"
 msgstr "Доступные режимы работы"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:14
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:17
 #: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:37
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:37
 msgid "Routes"
@@ -5841,15 +5811,11 @@ msgstr "Всего доступно"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:100
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:101
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:111
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:97
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:120
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:122
 msgid "Traceroute"
 msgstr "Трассировка"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:45
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:57
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:38
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:93
 msgid "Traffic"
 msgstr "Трафик"
@@ -6331,10 +6297,6 @@ msgstr ""
 "Необходимо установить wpa_supplicant (режим клиента) или hostapd (режим "
 "точки доступа или ad-hoc) для поддержки шифрования WPA."
 
-#: modules/luci-mod-network/luasrc/view/admin_network/diagnostics.htm:33
-msgid "Waiting for command to complete..."
-msgstr "Ожидание завершения выполнения команды..."
-
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/reboot.js:40
 msgid "Waiting for device..."
 msgstr "Ожидание подключения устройства..."
@@ -6375,7 +6337,6 @@ msgid "WireGuard VPN"
 msgstr "WireGuard VPN"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:77
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:39
 #: modules/luci-mod-network/root/usr/share/luci/menu.d/luci-mod-network.json:16
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:102
 msgid "Wireless"
