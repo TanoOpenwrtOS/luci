@@ -20,7 +20,7 @@
 	"luci-access": {
 		"description": "Grant access to basic LuCI procedures",
 		"read": {
-			"cgi-io": [ "backup", "download" ],
+			"cgi-io": [ "backup", "download", "exec" ],
 			"file": {
 				"/": [ "list" ],
 				"/*": [ "list" ],
@@ -48,6 +48,7 @@
 				"/usr/bin/traceroute *": [ "exec" ],
 				"/usr/bin/traceroute6 *": [ "exec" ],
 				"/usr/bin/nslookup *": [ "exec" ],
+				"/usr/libexec/luci-peeraddr": [ "exec" ],
 				"/tmp/overlay_partition": [ "read" ]
 			},
 			"ubus": {

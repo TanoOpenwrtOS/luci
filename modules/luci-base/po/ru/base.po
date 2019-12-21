@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2019-11-15 03:04+0000\n"
-"Last-Translator: Alex Vinnick <alexv10@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/>"
-"\n"
+"PO-Revision-Date: 2019-12-21 08:33+0300\n"
+"Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/"
+">\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 2.2\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
@@ -539,7 +539,7 @@ msgid "Advanced Settings"
 msgstr "Дополнительные настройки"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:27
-msgid "Aggregate Transmit Power(ACTATP)"
+msgid "Aggregate Transmit Power (ACTATP)"
 msgstr "Aggregate Transmit Power (ACTATP)"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:89
@@ -2020,7 +2020,7 @@ msgid "Expand hosts"
 msgstr "Расширять имена узлов"
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:198
-msgid "Expecting an hexadecimal assignment hint"
+msgid "Expecting a hexadecimal assignment hint"
 msgstr "Ожидается шестнадцатеричное значение подсказки присвоения"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:59
@@ -2487,7 +2487,7 @@ msgstr "IP-адрес"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:8
 #: modules/luci-compat/luasrc/model/network.lua:28
-msgid "IP address in invalid"
+msgid "IP address is invalid"
 msgstr "Неверный IP-адрес"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:11
@@ -3055,16 +3055,19 @@ msgstr "Лист"
 msgid "Lease time"
 msgstr "Время аренды адреса"
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:36
+msgid "Lease time remaining"
+msgstr "Оставшееся время аренды"
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:166
 msgid "Leasefile"
 msgstr "Файл аренд"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:36
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:55
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:31
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:60
 msgid "Leasetime remaining"
-msgstr "Оставшееся время аренды"
+msgstr "Время аренды адреса"
 
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/464xlat.js:41
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoe.js:47
@@ -3781,8 +3784,8 @@ msgid "Noise:"
 msgstr "Шум:"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:34
-msgid "Non Pre-emtive CRC errors (CRC_P)"
-msgstr "Non Pre-emtive CRC errors (CRC_P)"
+msgid "Non Pre-emptive CRC errors (CRC_P)"
+msgstr "Non Pre-emptive CRC errors (CRC_P)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:371
 msgid "Non-wildcard"
@@ -3861,7 +3864,7 @@ msgstr "Получение IPv6-адреса"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:62
 msgid "Off"
-msgstr ""
+msgstr "Выкл"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:76
 msgid "Off-State Delay"
@@ -3869,7 +3872,7 @@ msgstr "Задержка выключенного состояния"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:62
 msgid "On"
-msgstr ""
+msgstr "Вкл"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:95
 msgid "On-Link route"
@@ -4362,8 +4365,8 @@ msgid "Power Management Mode"
 msgstr "Режим управления питанием"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:35
-msgid "Pre-emtive CRC errors (CRCP_P)"
-msgstr "Pre-emtive CRC errors (CRCP_P)"
+msgid "Pre-emptive CRC errors (CRCP_P)"
+msgstr "Pre-emptive CRC errors (CRCP_P)"
 
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:73
 msgid "Prefer LTE"
