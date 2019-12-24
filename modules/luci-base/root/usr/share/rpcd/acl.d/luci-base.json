@@ -39,16 +39,20 @@
 				"/proc/sys/net/netfilter/nf_conntrack_*": [ "read" ],
 				"/proc/mounts": [ "read" ],
 				"/usr/lib/lua/luci/version.lua": [ "read" ],
+				"/bin/dmesg -r": [ "exec" ],
 				"/bin/ping *": [ "exec" ],
 				"/bin/ping6 *": [ "exec" ],
 				"/bin/traceroute *": [ "exec" ],
 				"/bin/traceroute6 *": [ "exec" ],
+				"/sbin/logread -e ^": [ "exec" ],
 				"/usr/bin/ping *": [ "exec" ],
 				"/usr/bin/ping6 *": [ "exec" ],
 				"/usr/bin/traceroute *": [ "exec" ],
 				"/usr/bin/traceroute6 *": [ "exec" ],
 				"/usr/bin/nslookup *": [ "exec" ],
 				"/usr/libexec/luci-peeraddr": [ "exec" ],
+				"/usr/sbin/iptables --line-numbers -w -nvxL -t *": [ "exec" ],
+				"/usr/sbin/ip6tables --line-numbers -w -nvxL -t *": [ "exec" ],
 				"/tmp/overlay_partition": [ "read" ]
 			},
 			"ubus": {
@@ -69,6 +73,7 @@
 			"file": {
 				"/etc/crontabs/root": [ "write" ],
 				"/etc/dropbear/authorized_keys": [ "write" ],
+				"/etc/init.d/firewall restart": [ "exec" ],
 				"/etc/luci-uploads/*": [ "write" ],
 				"/etc/rc.local": [ "write" ],
 				"/etc/sysupgrade.conf": [ "write" ],
@@ -84,7 +89,9 @@
 				"/bin/umount": [ "exec" ],
 				"/tmp/backup.tar.gz": [ "write" ],
 				"/tmp/firmware.bin": [ "write" ],
-				"/tmp/upload.ipk": [ "write" ]
+				"/tmp/upload.ipk": [ "write" ],
+				"/usr/sbin/iptables -Z": [ "exec" ],
+				"/usr/sbin/ip6tables -Z": [ "exec" ]
 			},
 			"ubus": {
 				"file": [ "write", "remove", "exec" ],

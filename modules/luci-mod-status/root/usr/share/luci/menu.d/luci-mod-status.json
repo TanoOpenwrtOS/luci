@@ -8,28 +8,12 @@
 		}
 	},
 
-	"admin/status/iptables/*": {
+	"admin/status/iptables": {
 		"title": "Firewall",
 		"order": 2,
 		"action": {
-			"type": "template",
-			"path": "admin_status/iptables"
-		}
-	},
-
-	"admin/status/iptables_dump/*": {
-		"action": {
-			"type": "call",
-			"module": "luci.controller.admin.status",
-			"function": "dump_iptables"
-		}
-	},
-
-	"admin/status/iptables_action/*": {
-		"action": {
-			"type": "call",
-			"module": "luci.controller.admin.status",
-			"function": "action_iptables"
+			"type": "view",
+			"path": "status/iptables"
 		}
 	},
 
@@ -96,14 +80,6 @@
 		"action": {
 			"type": "view",
 			"path": "status/connections"
-		}
-	},
-
-	"admin/status/nameinfo/*": {
-		"action": {
-			"type": "call",
-			"module": "luci.controller.admin.status",
-			"function": "action_nameinfo"
 		}
 	}
 }
