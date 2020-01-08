@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2019-12-15 21:21+0000\n"
+"PO-Revision-Date: 2019-12-16 23:23+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnut/mr/>\n"
@@ -113,7 +113,7 @@ msgstr ""
 
 #: applications/luci-app-nut/luasrc/model/cbi/nut_cgi.lua:40
 msgid "Enable"
-msgstr ""
+msgstr "सक्षम करा"
 
 #: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:138
 msgid ""
@@ -220,7 +220,12 @@ msgstr ""
 msgid "Maximum Age of Data"
 msgstr ""
 
+#: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:91
+msgid "Maximum Retries"
+msgstr ""
+
 #: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:87
+#: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:158
 msgid "Maximum Start Delay"
 msgstr ""
 
@@ -234,14 +239,6 @@ msgstr ""
 
 #: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:101
 msgid "Maximum time in seconds between refresh of UPS status"
-msgstr ""
-
-#: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:91
-msgid "Maxium Retries"
-msgstr ""
-
-#: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:158
-msgid "Maxium Start Delay"
 msgstr ""
 
 #: applications/luci-app-nut/luasrc/model/cbi/nut_monitor.lua:17

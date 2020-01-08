@@ -1,8 +1,14 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2019-12-28 03:17+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsnoddos/mr/>\n"
 "Language: mr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.10\n"
 
 #: applications/luci-app-noddos/luasrc/view/noddos/clients.htm:48
 msgid "Class"
@@ -17,11 +23,11 @@ msgid "Clients"
 msgstr ""
 
 #: applications/luci-app-noddos/luasrc/view/noddos/clients.htm:83
-msgid "DhcpHostname"
+msgid "DHCP Hostname"
 msgstr ""
 
 #: applications/luci-app-noddos/luasrc/view/noddos/clients.htm:82
-msgid "DhcpVendor"
+msgid "DHCP Vendor"
 msgstr ""
 
 #: applications/luci-app-noddos/luasrc/model/cbi/noddos.lua:25
@@ -51,7 +57,7 @@ msgstr ""
 #: applications/luci-app-noddos/luasrc/view/noddos/clients.htm:43
 #: applications/luci-app-noddos/luasrc/view/noddos/clients.htm:77
 msgid "Hostname"
-msgstr ""
+msgstr "होस्टनाव"
 
 #: applications/luci-app-noddos/luasrc/view/noddos/clients.htm:44
 #: applications/luci-app-noddos/luasrc/view/noddos/clients.htm:78

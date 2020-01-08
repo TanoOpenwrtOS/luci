@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-11-17 11:06+0000\n"
+"PO-Revision-Date: 2020-01-03 04:12+0000\n"
 "Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsradicale/pl/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.10\n"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:268
 msgid ""
@@ -29,23 +29,24 @@ msgstr "AUTO"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:734
 msgid "Access-Control-Allow-Headers"
-msgstr ""
+msgstr "Access-Control-Allow-Headers"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:726
 msgid "Access-Control-Allow-Methods"
-msgstr ""
+msgstr "Access-Control-Allow-Methods"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:718
 msgid "Access-Control-Allow-Origin"
-msgstr ""
+msgstr "Access-Control-Allow-Origin"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:742
+#, fuzzy
 msgid "Access-Control-Expose-Headers"
-msgstr ""
+msgstr "Access-Control-Expose-Headers"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:706
 msgid "Additional HTTP headers"
-msgstr ""
+msgstr "Dodatkowe nagłówki HTTP"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:222
 msgid "Address:Port"
@@ -161,7 +162,7 @@ msgstr ""
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:193
 msgid "During delay ifup-events are not monitored !"
-msgstr ""
+msgstr "Podczas zwłoki zdarzenia ifup-events nie są monitorowane!"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:251
 msgid "Enable HTTPS"
@@ -547,7 +548,7 @@ msgstr ""
 
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:43
 msgid "or higher"
-msgstr ""
+msgstr "lub wyżej"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:391
 msgid "plain"

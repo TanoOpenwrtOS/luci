@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-12-09 20:04+0000\n"
-"Last-Translator: Guillaume D. <2a3b@protonmail.com>\n"
+"PO-Revision-Date: 2020-01-03 04:35+0000\n"
+"Last-Translator: Philippe Paté <asushen@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbanip/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.10\n"
 
 #: applications/luci-app-banip/luasrc/view/banip/ripeview.htm:89
 #, fuzzy
@@ -235,7 +235,7 @@ msgstr ""
 
 #: applications/luci-app-banip/luasrc/controller/banip.lua:17
 msgid "Overview"
-msgstr "Vue d'ensemble"
+msgstr "Vue d\\'ensemble"
 
 #: applications/luci-app-banip/luasrc/model/cbi/banip/blacklist_tab.lua:32
 #: applications/luci-app-banip/luasrc/model/cbi/banip/whitelist_tab.lua:32
@@ -445,7 +445,7 @@ msgstr "Délai de déclenchement"
 
 #: applications/luci-app-banip/luasrc/model/cbi/banip/overview_tab.lua:83
 msgid "Verbose Debug Logging"
-msgstr ""
+msgstr "Logs en mode verbeux"
 
 #: applications/luci-app-banip/luasrc/controller/banip.lua:20
 msgid "View Logfile"
