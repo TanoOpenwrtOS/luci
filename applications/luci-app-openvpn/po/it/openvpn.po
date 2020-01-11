@@ -3,15 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-19 19:36+0200\n"
-"PO-Revision-Date: 2012-04-20 10:36+0200\n"
-"Last-Translator: claudyus <claudyus84@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-01-11 18:22+0000\n"
+"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsopenvpn/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.10.1\n"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:821
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:824
@@ -166,8 +167,8 @@ msgstr "Ritarda lo script di apertura e avvio del tun/tap"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:661
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:81
-msgid "Diffie Hellman parameters"
-msgstr "Parametri Diffie Hellman"
+msgid "Diffie-Hellman parameters"
+msgstr "Parametri Diffie-Hellman"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:426
 msgid "Directory for custom client config files"
@@ -287,8 +288,8 @@ msgid "Execute shell cmd after routes are added"
 msgstr "Esegui un comando shell dopo che le rotte sono aggiunte"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:131
-msgid "Execute shell command on remote ip change"
-msgstr "Esegui un comando shell al cambio di ip remoto"
+msgid "Execute shell command on remote IP change"
+msgstr "Esegui un comando shell al cambio di IP remoto"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:156
 msgid ""
@@ -369,7 +370,7 @@ msgid "Local certificate"
 msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:176
-msgid "Local host name or ip address"
+msgid "Local host name or IP address"
 msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:669
@@ -469,7 +470,7 @@ msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:141
 msgid "Port"
-msgstr "Porta"
+msgstr "Port"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:156
 msgid "Protocol"
@@ -503,8 +504,11 @@ msgstr ""
 msgid "Remap SIGUSR1 signals"
 msgstr ""
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:500
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:61
+msgid "Remote host name or IP address"
+msgstr ""
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:500
 msgid "Remote host name or ip address"
 msgstr ""
 

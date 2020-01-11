@@ -168,7 +168,7 @@ msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:661
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:81
-msgid "Diffie Hellman parameters"
+msgid "Diffie-Hellman parameters"
 msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:426
@@ -287,7 +287,7 @@ msgid "Execute shell cmd after routes are added"
 msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:131
-msgid "Execute shell command on remote ip change"
+msgid "Execute shell command on remote IP change"
 msgstr "Εκτέλεση της εντολής κελύφους στην αλλαγή IP του απομακρυσμένου"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:156
@@ -370,7 +370,7 @@ msgid "Local certificate"
 msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:176
-msgid "Local host name or ip address"
+msgid "Local host name or IP address"
 msgstr "Όνομα τοπικού μηχανήματος ή διεύθυνση IP"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:669
@@ -504,10 +504,13 @@ msgstr ""
 msgid "Remap SIGUSR1 signals"
 msgstr ""
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:500
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:61
-msgid "Remote host name or ip address"
+msgid "Remote host name or IP address"
 msgstr "Όνομα απομακρυσμένου μηχανήματος ή διεύθυνση IP"
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:500
+msgid "Remote host name or ip address"
+msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:315
 msgid "Remote ping timeout"

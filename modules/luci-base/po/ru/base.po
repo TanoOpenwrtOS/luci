@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2019-12-26 18:21+0000\n"
-"Last-Translator: Alex Ky <esthomolupus@gmail.com>\n"
+"PO-Revision-Date: 2020-01-11 18:21+0000\n"
+"Last-Translator: Khomyak-sibiryak <owalski@protonmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/>"
 "\n"
 "Language: ru\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 3.10.1\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
@@ -232,12 +232,10 @@ msgid "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "<abbr title=\"англ. Extended Service Set Identification\">ESSID</abbr>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:452
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:45
 msgid "<abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Address"
 msgstr "<abbr title=\"англ. Internet Protocol version 4\">IPv4</abbr>-адрес"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:41
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:75
 msgid "<abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Gateway"
 msgstr "<abbr title=\"англ.Internet Protocol version 4\">IPv4</abbr>-шлюз"
 
@@ -274,7 +272,6 @@ msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Name"
 msgstr "Имя <abbr title=\"англ. Light-Emitting Diode\">LED</abbr>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:408
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:46
 msgid "<abbr title=\"Media Access Control\">MAC</abbr>-Address"
 msgstr "<abbr title=\"англ. Media Access Control\">MAC</abbr>-адрес"
 
@@ -343,7 +340,7 @@ msgstr "APN"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:198
 msgid "ARP"
-msgstr ""
+msgstr "ARP"
 
 #: protocols/luci-proto-relay/htdocs/luci-static/resources/protocol/relay.js:175
 msgid "ARP retry threshold"
@@ -407,14 +404,12 @@ msgid "Actions"
 msgstr "Действия"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:201
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:69
 msgid "Active <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Routes"
 msgstr ""
 "Активные <abbr title=\"англ. Internet Protocol version 4\">IPv4</abbr>-"
 "маршруты"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:207
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:97
 msgid "Active <abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Routes"
 msgstr ""
 "Активные <abbr title=\"англ. Internet Protocol version 6\">IPv6</abbr>-"
@@ -524,8 +519,8 @@ msgstr "Адрес"
 msgid "Address to access local relay bridge"
 msgstr "Адрес для доступа к локальному мосту-ретранслятору"
 
-#: modules/luci-mod-system/luasrc/controller/admin/system.lua:11
 #: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:3
+#: modules/luci-mod-system/luasrc/controller/admin/system.lua:11
 msgid "Administration"
 msgstr "Управление"
 
@@ -2570,7 +2565,7 @@ msgstr "IPv4-адрес"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:165
 msgid "IPv4-Gateway"
-msgstr ""
+msgstr "IPv4-шлюз"
 
 #: modules/luci-compat/luasrc/model/network/proto_ipip.lua:9
 #: protocols/luci-proto-ipip/htdocs/luci-static/resources/protocol/ipip.js:10
@@ -2602,7 +2597,6 @@ msgid "IPv6 Firewall"
 msgstr "Межсетевой экран IPv6"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:204
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:128
 msgid "IPv6 Neighbours"
 msgstr "IPv6 соседи (neighbours)"
 
@@ -2666,7 +2660,6 @@ msgstr "IPv6 суффикс"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:53
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:58
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:173
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:132
 msgid "IPv6-Address"
 msgstr "IPv6-адрес"
 
@@ -2840,8 +2833,6 @@ msgstr "Установить расширения протокола..."
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:26
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:157
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:175
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:47
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:134
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:16
 msgid "Interface"
 msgstr "Интерфейс"
@@ -3198,8 +3189,8 @@ msgstr ""
 msgid "Listening port for inbound DNS queries"
 msgstr "Порт для входящих DNS-запросов"
 
-#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:203
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:48
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:203
 msgid "Load"
 msgstr "Загрузка"
 
@@ -3344,7 +3335,6 @@ msgstr "MAC"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:125
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:156
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:174
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:133
 msgid "MAC-Address"
 msgstr "MAC-адрес"
 
@@ -3496,8 +3486,6 @@ msgstr "Метод не найден"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:45
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:166
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:184
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:76
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:104
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:66
 msgid "Metric"
 msgstr "Метрика"
@@ -3676,6 +3664,7 @@ msgstr "Имя новой сети"
 msgid "Navigation"
 msgstr "Навигация"
 
+#: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:54
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:869
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2005
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:381
@@ -3683,9 +3672,6 @@ msgstr "Навигация"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:124
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:163
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:181
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:73
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:101
-#: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:54
 msgid "Network"
 msgstr "Сеть"
 
@@ -4099,7 +4085,7 @@ msgstr "Назначить таблицу внутренних маршруто�
 
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:3
 msgid "Overview"
-msgstr "Главное меню"
+msgstr "Обзор"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1696
 msgid "Overwrite existing file \"%s\" ?"
@@ -4862,7 +4848,6 @@ msgstr "Доступные режимы работы"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:14
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:195
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:37
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:21
 msgid "Routes"
 msgstr "Маршруты"
@@ -5164,7 +5149,6 @@ msgstr ""
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:383
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:68
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:183
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:103
 msgid "Source"
 msgstr "Источник"
 
@@ -5230,7 +5214,7 @@ msgstr "Укажите закрытый ключ."
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:75
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:97
 msgid "Start"
-msgstr "Старт"
+msgstr "Запустить"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:72
 msgid "Start priority"
@@ -5285,10 +5269,10 @@ msgstr ""
 msgid "Station inactivity limit"
 msgstr "Максимально допустимое время бездействия клиента"
 
+#: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:16
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:380
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:781
 #: modules/luci-mod-status/luasrc/view/admin_status/index.htm:9
-#: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:16
 msgid "Status"
 msgstr "Состояние"
 
@@ -5321,7 +5305,7 @@ msgstr "Подавить логирование стандартной рабо�
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:43
 msgid "Swap free"
-msgstr "Раздел подкачки (свободно)"
+msgstr "Свободно подкачки (swap)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:136
 #: modules/luci-mod-network/root/usr/share/luci/menu.d/luci-mod-network.json:3
@@ -5374,9 +5358,9 @@ msgstr "Синхронизировать с NTP-сервером"
 msgid "Sync with browser"
 msgstr "Синхронизировать с браузером"
 
+#: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:26
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:16
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:34
-#: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:26
 msgid "System"
 msgstr "Система"
 
@@ -5425,8 +5409,6 @@ msgstr "Cкорость передачи"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:15
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:167
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:185
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:77
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:105
 msgid "Table"
 msgstr "Таблица"
 
@@ -5438,8 +5420,6 @@ msgstr "Тег"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:64
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:164
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:182
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:74
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:102
 msgid "Target"
 msgstr "Назначение"
 
@@ -5530,7 +5510,6 @@ msgstr ""
 ">Нажмите кнопку «Продолжить» ниже, чтобы начать процедуру прошивки."
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:196
-#: modules/luci-mod-status/luasrc/view/admin_status/routes.htm:38
 msgid "The following rules are currently active on this system."
 msgstr "На данном устройстве активны следующие правила."
 
@@ -5943,7 +5922,7 @@ msgstr "Невозможно обработать запрос для"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/dmesg.js:8
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/syslog.js:8
 msgid "Unable to load log data:"
-msgstr ""
+msgstr "Невозможно загрузить данные журнала:"
 
 #: modules/luci-compat/luasrc/model/network/proto_modemmanager.lua:54
 #: modules/luci-compat/luasrc/model/network/proto_qmi.lua:54
@@ -5958,11 +5937,11 @@ msgstr "Невозможно получить информацию о точка
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:278
 msgid "Unable to reset ip6tables counters: %s"
-msgstr ""
+msgstr "Невозможно сбросить счетчики ip6tables: %s"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:276
 msgid "Unable to reset iptables counters: %s"
-msgstr ""
+msgstr "Невозможно сбросить счетчики iptables: %s"
 
 #: modules/luci-compat/luasrc/model/network/proto_4x6.lua:61
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dslite.js:7
@@ -5976,7 +5955,7 @@ msgstr "Не удалось разрешить имя хоста пира"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:284
 msgid "Unable to restart firewall: %s"
-msgstr ""
+msgstr "Невозможно перезапустить межсетевой экран: %s"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/crontab.js:17
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:339
@@ -6385,8 +6364,8 @@ msgstr "Ширина"
 msgid "WireGuard VPN"
 msgstr "WireGuard VPN"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:77
 #: modules/luci-mod-network/root/usr/share/luci/menu.d/luci-mod-network.json:16
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:77
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:66
 msgid "Wireless"
 msgstr "Wi-Fi"

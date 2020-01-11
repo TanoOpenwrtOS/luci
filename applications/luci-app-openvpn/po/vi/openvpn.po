@@ -169,8 +169,8 @@ msgstr "Trì hoãn tun/tap mở và up script execution"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:661
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:81
-msgid "Diffie Hellman parameters"
-msgstr "Tham số Diffie Hellman "
+msgid "Diffie-Hellman parameters"
+msgstr "Tham số Diffie-Hellman "
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:426
 msgid "Directory for custom client config files"
@@ -288,8 +288,8 @@ msgid "Execute shell cmd after routes are added"
 msgstr "Thực hiện shell cmd sau khi tuyến đã thêm vào"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:131
-msgid "Execute shell command on remote ip change"
-msgstr "Thực hiện lệnh shell trên ip thay đổi từ xa"
+msgid "Execute shell command on remote IP change"
+msgstr "Thực hiện lệnh shell trên IP thay đổi từ xa"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:156
 msgid ""
@@ -370,7 +370,7 @@ msgid "Local certificate"
 msgstr "Chứng chỉ địa phương"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:176
-msgid "Local host name or ip address"
+msgid "Local host name or IP address"
 msgstr "Tên host địa phương và địa chỉ IP"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:669
@@ -504,10 +504,13 @@ msgstr "Từ chối kết nối nêu không có config đối tượng tùy ch�
 msgid "Remap SIGUSR1 signals"
 msgstr "Remap tín hiệu SIGUSR1"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:500
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:61
-msgid "Remote host name or ip address"
+msgid "Remote host name or IP address"
 msgstr "Tên host ngoài vùng và địa chỉ IP"
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:500
+msgid "Remote host name or ip address"
+msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:315
 msgid "Remote ping timeout"

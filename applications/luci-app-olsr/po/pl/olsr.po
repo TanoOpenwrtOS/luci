@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2019-11-30 21:05+0000\n"
+"PO-Revision-Date: 2020-01-11 18:23+0000\n"
 "Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsolsr/pl/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.10.1\n"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/mid.htm:13
 msgid "Active MID announcements"
@@ -231,9 +231,8 @@ msgid "HNA validity time"
 msgstr "Czas poprawności HNA"
 
 #: applications/luci-app-olsr/luasrc/controller/olsr6.lua:24
-#, fuzzy
 msgid "HNA6 Announcements"
-msgstr "Ogłoszenia HNA"
+msgstr "Ogłoszenia HNA6"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:381
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:362
@@ -446,8 +445,8 @@ msgstr "Interfejs"
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:52
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface6.lua:52
 msgid ""
-"Interface Mode is used to prevent unnecessary packet forwarding on switched "
-"ethernet interfaces. valid Modes are \"mesh\" and \"ether\". Default is "
+"Interface mode is used to prevent unnecessary packet forwarding on switched "
+"ethernet interfaces. Valid modes are \"mesh\" and \"ether\". Default is "
 "\"mesh\"."
 msgstr ""
 "Tryb interfejsu jest używany, aby zapobiec niepotrzebnemu przekazywaniu "
@@ -478,6 +477,8 @@ msgid ""
 "Interval to poll network interfaces for configuration changes (in seconds). "
 "Default is \"2.5\"."
 msgstr ""
+"Interwał sprawdzania interfejsów sieciowych pod kątem zmian konfiguracji (w "
+"sekundach). Domyślnie jest to \"2.5\"."
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:268
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:262
@@ -554,9 +555,8 @@ msgstr "Biblioteka"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:43
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:43
-#, fuzzy
 msgid "Link Quality Settings"
-msgstr "Ustawienia jakości linków"
+msgstr "Ustawienia jakości łącza"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:91
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:85
@@ -1088,7 +1088,7 @@ msgstr ""
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:60
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface6.lua:60
 msgid "Weight"
-msgstr "Waga"
+msgstr "Rozmiar"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:236
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:230
