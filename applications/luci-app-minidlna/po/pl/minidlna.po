@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2020-01-10 12:23+0000\n"
+"PO-Revision-Date: 2020-01-14 15:22+0000\n"
 "Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsminidlna/pl/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10.1\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:16
 msgid "Advanced Settings"
@@ -23,7 +23,7 @@ msgstr "Nazwy okładek albumów"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:94
 msgid "Allow wide links"
-msgstr "Pozwól na szerokie linki"
+msgstr "Zezwól na szerokie linki"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:115
 msgid "Announced model number"
@@ -71,7 +71,7 @@ msgstr "Interfejsy"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:82
 msgid "Log directory"
-msgstr "Katalog rejestru"
+msgstr "Katalog dzienników"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:132
 msgid "Media directories"
@@ -121,7 +121,7 @@ msgstr "Port dla ruchu HTTP (opisy, SOAP, transfer mediów)."
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:102
 msgid "Presentation URL"
-msgstr "Przedstawiany URL"
+msgstr "URL prezentacji"
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:124
 msgid "Root container"
@@ -145,7 +145,7 @@ msgid ""
 "to store its database and album art cache."
 msgstr ""
 "Ustaw to, jeśli chcesz podać folder, w którym miniDLNA powinien przechowywać "
-"bazę danych i cache okładek albumów."
+"bazę danych i pamięć podręczną okładek albumów."
 
 #: applications/luci-app-minidlna/luasrc/model/cbi/minidlna.lua:83
 msgid ""

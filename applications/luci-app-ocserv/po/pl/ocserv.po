@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-01-11 18:23+0000\n"
+"PO-Revision-Date: 2020-01-13 14:26+0000\n"
 "Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsocserv/pl/>\n"
@@ -52,7 +52,7 @@ msgstr "Trwa zbieranie danych..."
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:132
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:111
 msgid "DNS servers"
-msgstr ""
+msgstr "Serwery DNS"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:60
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:54
@@ -98,7 +98,7 @@ msgstr ""
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:16
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:16
 msgid "Enable server"
-msgstr ""
+msgstr "Włącz serwer"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:75
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:65
@@ -153,14 +153,14 @@ msgstr "Nazwa"
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:151
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:131
 msgid "Netmask (or IPv6-prefix)"
-msgstr ""
+msgstr "Maska sieciowa (lub przedrostek IPv6)"
 
 #: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:14
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:7
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:7
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:7
 msgid "OpenConnect VPN"
-msgstr ""
+msgstr "OpenConnect VPN"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:24
 msgid "Password"
@@ -219,17 +219,22 @@ msgid ""
 "network different than the LAN addresses unless proxy ARP is enabled. Leave "
 "empty to attempt auto-configuration."
 msgstr ""
+"Adres podsieci IPv4 do udostępnienia klientom; powinna to być jakaś prywatna "
+"sieć inna niż adresy LAN, chyba że włączone jest proxy ARP. Pozostawić puste "
+"aby spróbować automatycznej konfiguracji."
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:125
 msgid ""
 "The IPv6 subnet address to provide to clients; leave empty to attempt auto-"
 "configuration."
 msgstr ""
+"Adres podsieci IPv6, który należy podać klientom; pozostawić pusty, aby "
+"podjąć próbę automatycznej konfiguracji."
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:63
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:57
 msgid "The assigned IPs will be selected deterministically"
-msgstr ""
+msgstr "Przypisane IP będą wybierane szczegółowo"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:50
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:38
