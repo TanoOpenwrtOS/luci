@@ -77,7 +77,7 @@ return L.view.extend({
 	handleBackup: function(ev) {
 		var form = E('form', {
 			method: 'post',
-			action: '/cgi-bin/cgi-backup',
+			action: L.env.cgi_base + '/cgi-backup',
 			enctype: 'application/x-www-form-urlencoded'
 		}, E('input', { type: 'hidden', name: 'sessionid', value: rpc.getSessionID() }));
 
@@ -170,7 +170,7 @@ return L.view.extend({
 		var mtdblock = L.dom.parent(ev.target, '.cbi-section').querySelector('[data-name="mtdselect"] select').value;
 		var form = E('form', {
 			'method': 'post',
-			'action': '/cgi-bin/cgi-download',
+			'action': L.env.cgi_base + '/cgi-download',
 			'enctype': 'application/x-www-form-urlencoded'
 		}, [
 			E('input', { 'type': 'hidden', 'name': 'sessionid', 'value': rpc.getSessionID() }),

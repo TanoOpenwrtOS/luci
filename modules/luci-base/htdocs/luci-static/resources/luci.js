@@ -1192,6 +1192,8 @@
 			if (env.base_url == null)
 				this.error('InternalError', 'Cannot find url of luci.js');
 
+			env.cgi_base = env.scriptname.replace(/\/[^\/]+$/, '');
+
 			Object.assign(this.env, env);
 
 			document.addEventListener('poll-start', function(ev) {
@@ -1508,8 +1510,8 @@
 			if (rpcBaseURL == null) {
 				var rpcFallbackURL = this.url('admin/ubus');
 
-				rpcBaseURL = Request.get('/ubus/').then(function(res) {
-					return (rpcBaseURL = (res.status == 400) ? '/ubus/' : rpcFallbackURL);
+				rpcBaseURL = Request.get(this.env.ubuspath).then(function(res) {
+					return (rpcBaseURL = (res.status == 400) ? L.env.ubuspath : rpcFallbackURL);
 				}, function() {
 					return (rpcBaseURL = rpcFallbackURL);
 				}).then(function(url) {

@@ -148,14 +148,23 @@ return L.view.extend({
 		expect: { '': {} }
 	}),
 
+	callConntrackHelpers: rpc.declare({
+		object: 'luci',
+		method: 'getConntrackHelpers',
+		expect: { result: [] }
+	}),
+
 	load: function() {
-		return this.callHostHints().catch(function(e) {
-			console.debug('load fail', e);
-		});
+		return Promise.all([
+			this.callHostHints(),
+			this.callConntrackHelpers()
+		]);
 	},
 
-	render: function(hosts) {
-		var m, s, o;
+	render: function(data) {
+		var hosts = data[0],
+		    ctHelpers = data[1],
+		    m, s, o;
 
 		m = new form.Map('firewall', _('Firewall - Traffic Rules'),
 			_('Traffic rules define policies for packets traveling between different zones, for example to reject traffic between certain hosts or to open WAN ports on the router.'));
@@ -223,9 +232,34 @@ return L.view.extend({
 		o.default = o.enabled;
 		o.editable = true;
 
-		//ft.opt_enabled(s, Button);
-		//ft.opt_name(s, Value, _('Name'));
 
+		o = s.taboption('advanced', form.ListValue, 'direction', _('Match device'));
+		o.modalonly = true;
+		o.value('', _('unspecified'));
+		o.value('in', _('Inbound device'));
+		o.value('out', _('Outbound device'));
+		o.cfgvalue = function(section_id) {
+			var val = uci.get('firewall', section_id, 'direction');
+			switch (val) {
+				case 'in':
+				case 'ingress':
+					return 'in';
+
+				case 'out':
+				case 'egress':
+					return 'out';
+			}
+
+			return null;
+		};
+
+		o = s.taboption('advanced', widgets.DeviceSelect, 'device', _('Device name'),
+			_('Specifies whether to tie this traffic rule to a specific inbound or outbound network device.'));
+		o.modalonly = true;
+		o.noaliases = true;
+		o.rmempty = false;
+		o.depends('direction', 'in');
+		o.depends('direction', 'out');
 
 		o = s.taboption('advanced', form.ListValue, 'family', _('Restrict to address family'));
 		o.modalonly = true;
@@ -358,6 +392,32 @@ return L.view.extend({
 		o.value('ACCEPT', _('accept'));
 		o.value('REJECT', _('reject'));
 		o.value('NOTRACK', _("don't track"));
+		o.value('HELPER', _('assign conntrack helper'));
+
+		o = s.taboption('general', form.ListValue, 'set_helper', _('Tracking helper'), _('Assign the specified connection tracking helper to matched traffic.'));
+		o.modalonly = true;
+		o.placeholder = _('any');
+		o.depends('target', 'HELPER');
+		for (var i = 0; i < ctHelpers.length; i++)
+			o.value(ctHelpers[i].name, '%s (%s)'.format(ctHelpers[i].description, ctHelpers[i].name.toUpperCase()));
+
+		o = s.taboption('advanced', form.Value, 'helper', _('Match helper'), _('Match traffic using the specified connection tracking helper.'));
+		o.modalonly = true;
+		o.placeholder = _('any');
+		for (var i = 0; i < ctHelpers.length; i++)
+			o.value(ctHelpers[i].name, '%s (%s)'.format(ctHelpers[i].description, ctHelpers[i].name.toUpperCase()));
+		o.validate = function(section_id, value) {
+			if (value == '' || value == null)
+				return true;
+
+			value = value.replace(/^!\s*/, '');
+
+			for (var i = 0; i < ctHelpers.length; i++)
+				if (value == ctHelpers[i].name)
+					return true;
+
+			return _('Unknown or not installed conntrack helper "%s"').format(value);
+		};
 
 		o = s.taboption('advanced', form.Value, 'extra', _('Extra arguments'),
 			_('Passes additional arguments to iptables. Use with care!'));
