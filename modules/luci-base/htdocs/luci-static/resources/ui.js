@@ -442,11 +442,17 @@ var UIDropdown = UIElement.extend({
 				if (!this.choices.hasOwnProperty(this.values[i]))
 					keys.push(this.values[i]);
 
-		for (var i = 0; i < keys.length; i++)
+		for (var i = 0; i < keys.length; i++) {
+			var label = this.choices[keys[i]];
+
+			if (L.dom.elem(label))
+				label = label.cloneNode(true);
+
 			sb.lastElementChild.appendChild(E('li', {
 				'data-value': keys[i],
 				'selected': (this.values.indexOf(keys[i]) > -1) ? '' : null
-			}, this.choices[keys[i]] || keys[i]));
+			}, [ label || keys[i] ]));
+		}
 
 		if (this.options.create) {
 			var createEl = E('input', {
@@ -1320,7 +1326,11 @@ var UIDynamicList = UIElement.extend({
 		}, E('div', { 'class': 'add-item' }));
 
 		if (this.choices) {
+			if (this.options.placeholder != null)
+				this.options.select_placeholder = this.options.placeholder;
+
 			var cbox = new UICombobox(null, this.choices, this.options);
+
 			dl.lastElementChild.appendChild(cbox.render());
 		}
 		else {
@@ -1339,9 +1349,14 @@ var UIDynamicList = UIElement.extend({
 				                  true, this.options.validate, 'blur', 'keyup');
 		}
 
-		for (var i = 0; i < this.values.length; i++)
-			this.addItem(dl, this.values[i],
-				this.choices ? this.choices[this.values[i]] : null);
+		for (var i = 0; i < this.values.length; i++) {
+			var label = this.choices ? this.choices[this.values[i]] : null;
+
+			if (L.dom.elem(label))
+				label = label.cloneNode(true);
+
+			this.addItem(dl, this.values[i], label);
+		}
 
 		return this.bind(dl);
 	},
@@ -1458,7 +1473,16 @@ var UIDynamicList = UIElement.extend({
 			sbVal.element.setAttribute('dynlistcustom', '');
 		}
 
-		this.addItem(dl, sbVal.value, sbVal.text, true);
+		var label = sbVal.text;
+
+		if (sbVal.element) {
+			label = E([]);
+
+			for (var i = 0; i < sbVal.element.childNodes.length; i++)
+				label.appendChild(sbVal.element.childNodes[i].cloneNode(true));
+		}
+
+		this.addItem(dl, sbVal.value, label, true);
 	},
 
 	handleKeydown: function(ev) {
@@ -1531,6 +1555,16 @@ var UIDynamicList = UIElement.extend({
 		for (var i = 0; i < values.length; i++)
 			this.addItem(this.node, values[i],
 				this.choices ? this.choices[values[i]] : null);
+	},
+
+	addChoices: function(values, labels) {
+		var dl = this.node.lastElementChild.firstElementChild;
+		L.dom.callClassMethod(dl, 'addChoices', values, labels);
+	},
+
+	clearChoices: function() {
+		var dl = this.node.lastElementChild.firstElementChild;
+		L.dom.callClassMethod(dl, 'clearChoices');
 	}
 });
 

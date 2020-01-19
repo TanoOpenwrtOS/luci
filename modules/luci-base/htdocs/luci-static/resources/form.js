@@ -403,11 +403,12 @@ var CBIMap = CBINode.extend({
 
 		for (var i = 0; i < depends.length; i++) {
 			var istat = true,
-			    reverse = false;
+			    reverse = depends[i]['!reverse'],
+			    contains = depends[i]['!contains'];
 
 			for (var dep in depends[i]) {
-				if (dep == '!reverse') {
-					reverse = true;
+				if (dep == '!reverse' || dep == '!contains') {
+					continue;
 				}
 				else if (dep == '!default') {
 					def = true;
@@ -417,7 +418,11 @@ var CBIMap = CBINode.extend({
 					var res = this.lookupOption(dep, section_id, config_name),
 					    val = (res && res[0].isActive(res[1])) ? res[0].formvalue(res[1]) : null;
 
-					istat = (istat && isEqual(val, depends[i][dep]));
+					var equal = contains
+						? isContained(val, depends[i][dep])
+						: isEqual(val, depends[i][dep]);
+
+					istat = (istat && equal);
 				}
 			}
 
@@ -631,6 +636,23 @@ var isEqual = function(x, y) {
 	}
 
 	return true;
+};
+
+var isContained = function(x, y) {
+	if (Array.isArray(x)) {
+		for (var i = 0; i < x.length; i++)
+			if (x[i] == y)
+				return true;
+	}
+	else if (L.isObject(x)) {
+		if (x.hasOwnProperty(y) && x[y] != null)
+			return true;
+	}
+	else if (typeof(x) == 'string') {
+		return (x.indexOf(y) > -1);
+	}
+
+	return false;
 };
 
 var CBIAbstractValue = CBINode.extend({
@@ -1578,7 +1600,7 @@ var CBIValue = CBIAbstractValue.extend({
 		this.keylist.push(String(key));
 
 		this.vallist = this.vallist || [];
-		this.vallist.push(String(val != null ? val : key));
+		this.vallist.push(L.dom.elem(val) ? val : String(val != null ? val : key));
 	},
 
 	render: function(option_index, section_id, in_table) {
