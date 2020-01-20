@@ -87,7 +87,7 @@ return L.view.extend({
 		if (!chaintable)
 			return;
 
-		cbi_update_table(chaintable, rows, _('No rules in this chain.'));
+		cbi_update_table(chaintable.querySelector('.table'), rows, _('No rules in this chain.'));
 
 		if (rows.length === 0 &&
 		    document.querySelector('[data-hide-empty="true"]'))
