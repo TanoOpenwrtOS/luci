@@ -33,7 +33,7 @@ function device_textvalue(devices, section_id) {
 		this.section.devices[section_id] = devices[e];
 
 		if (e && devices[e].size)
-			return E('span', 'UUID: %h (%s, '.format(v, devices[e].dev) + _('%1024.2mB').format(devices[e].size)) + ')';
+			return E('span', 'UUID: %h (%s, %s)'.format(v, devices[e].dev, _('%1024.2mB').format(devices[e].size)));
 		else if (e)
 			return E('span', 'UUID: %h (%s)'.format(v, devices[e].dev));
 		else
@@ -47,7 +47,7 @@ function device_textvalue(devices, section_id) {
 		this.section.devices[section_id] = this.section.devices[section_id] || devices[e];
 
 		if (e && devices[e].size)
-			return E('span', 'Label: %h (%s, '.format(v, devices[e].dev) + _('%1024.2mB').format(devices[e].size)) + ')';
+			return E('span', 'Label: %h (%s, %s)'.format(v, devices[e].dev, _('%1024.2mB').format(devices[e].size)));
 		else if (e)
 			return E('span', 'Label: %h (%s)'.format(v, devices[e].dev));
 		else
@@ -61,7 +61,7 @@ function device_textvalue(devices, section_id) {
 		this.section.devices[section_id] = this.section.devices[section_id] || devices[e];
 
 		if (e && devices[e].size)
-			return E('span', '%h (%s, '.format(v) + _('%1024.2mB').format(devices[e].size)) + ')';
+			return E('span', '%h (%s)'.format(v, _('%1024.2mB').format(devices[e].size)));
 		else if (e)
 			return E('span', '%h'.format(v));
 		else
@@ -254,6 +254,7 @@ return L.view.extend({
 		o.value('', _('-- match by uuid --'));
 
 		var devs = Object.keys(devices).sort();
+
 		for (var i = 0; i < devs.length; i++) {
 			var dev = devices[devs[i]];
 			if (dev.uuid && dev.size)
