@@ -4,45 +4,43 @@
 'require uci';
 
 return L.view.extend({
-	handleCommand: function(exec, args) {
-		var buttons = document.querySelectorAll('.diag-action > .cbi-button');
+	handleCommand: function(ev, exec, args) {
+		var button = ev.currentTarget;
+		var out = button.parentNode.parentNode.parentNode.querySelector('.command-output');
 
-		for (var i = 0; i < buttons.length; i++)
-			buttons[i].setAttribute('disabled', 'true');
+		button.setAttribute('disabled', 'true');
 
 		return fs.exec(exec, args).then(function(res) {
-			var out = document.querySelector('.command-output');
-			    out.style.display = '';
+			out.style.display = '';
 
 			L.dom.content(out, [ res.stdout || '', res.stderr || '' ]);
 		}).catch(function(err) {
 			ui.addNotification(null, E('p', [ err ]))
 		}).finally(function() {
-			for (var i = 0; i < buttons.length; i++)
-				buttons[i].removeAttribute('disabled');
+			button.removeAttribute('disabled');
 		});
 	},
 
 	handlePing: function(ev, cmd) {
 		var exec = cmd || 'ping',
-		    addr = ev.currentTarget.parentNode.previousSibling.value,
+		    addr = ev.currentTarget.parentNode.parentNode.parentNode.querySelector("#address").value,
 		    args = (exec == 'ping') ? [ '-c', '5', '-W', '1', addr ] : [ '-c', '5', addr ];
 
-		return this.handleCommand(exec, args);
+		return this.handleCommand(ev, exec, args);
 	},
 
 	handleTraceroute: function(ev, cmd) {
 		var exec = cmd || 'traceroute',
-		    addr = ev.currentTarget.parentNode.previousSibling.value,
+		    addr = ev.currentTarget.parentNode.parentNode.parentNode.querySelector("#address").value,
 		    args = (exec == 'traceroute') ? [ '-q', '1', '-w', '1', '-n', addr ] : [ '-q', '1', '-w', '2', '-n', addr ];
 
-		return this.handleCommand(exec, args);
+		return this.handleCommand(ev, exec, args);
 	},
 
 	handleNslookup: function(ev, cmd) {
-		var addr = ev.currentTarget.parentNode.previousSibling.value;
+		var addr = addr = ev.currentTarget.parentNode.parentNode.parentNode.querySelector("#address").value;
 
-		return this.handleCommand('nslookup', [ addr ]);
+		return this.handleCommand(ev, 'nslookup', [ addr ]);
 	},
 
 	load: function() {
@@ -64,15 +62,18 @@ return L.view.extend({
 
 		return E([], [
 			E('h2', {}, [ _('Network Utilities') ]),
-			E('div', { 'class': 'table' }, [
-				E('div', { 'class': 'tr' }, [
-					E('div', { 'class': 'td left' }, [
-						E('input', {
-							'style': 'margin:5px 0',
-							'type': 'text',
-							'value': ping_host
-						}),
-						E('span', { 'class': 'diag-action' }, [
+			E('div', { 'class': 'cbi-section' }, [
+				E('legend', {}, _('Ping')),
+				E('div', { 'class': 'cbi-section-node' }, [
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, _('Hostname')),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('input', { 'class': 'cbi-input-text', 'type': 'text', 'value': ping_host, 'id': 'address' })
+						])
+					]),
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
 							has_ping6 ? new ui.ComboButton('ping', {
 								'ping': '%s %s'.format(_('IPv4'), _('Ping')),
 								'ping6': '%s %s'.format(_('IPv6'), _('Ping')),
@@ -88,14 +89,28 @@ return L.view.extend({
 							}, [ _('Ping') ])
 						])
 					]),
-
-					E('div', { 'class': 'td left' }, [
-						E('input', {
-							'style': 'margin:5px 0',
-							'type': 'text',
-							'value': route_host
-						}),
-						E('span', { 'class': 'diag-action' }, [
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('div', { 'id': '' }, [
+								E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
+							])
+						])
+					])
+				])
+			]),
+			E('div', { 'class': 'cbi-section' }, [
+				E('legend', {}, _('Traceroute')),
+				E('div', { 'class': 'cbi-section-node' }, [
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, _('Hostname')),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('input', { 'class': 'cbi-input-text', 'type': 'text', 'value': route_host, 'id': 'address' })
+						])
+					]),
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
 							has_traceroute6 ? new ui.ComboButton('traceroute', {
 								'traceroute': '%s %s'.format(_('IPv4'), _('Traceroute')),
 								'traceroute6': '%s %s'.format(_('IPv6'), _('Traceroute')),
@@ -111,23 +126,44 @@ return L.view.extend({
 							}, [ _('Traceroute') ])
 						])
 					]),
-
-					E('div', { 'class': 'td left' }, [
-						E('input', {
-							'style': 'margin:5px 0',
-							'type': 'text',
-							'value': dns_host
-						}),
-						E('span', { 'class': 'diag-action' }, [
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('div', { 'id': '' }, [
+								E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
+							])
+						])
+					])
+				])
+			]),
+			E('div', { 'class': 'cbi-section' }, [
+				E('legend', {}, _('Nslookup')),
+				E('div', { 'class': 'cbi-section-node' }, [
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, _('Hostname')),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('input', { 'class': 'cbi-input-text', 'type': 'text', 'value': dns_host, 'id': 'address' })
+						])
+					]),
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
 							E('button', {
 								'class': 'cbi-button cbi-button-action',
 								'click': ui.createHandlerFn(this, 'handleNslookup')
 							}, [ _('Nslookup') ])
 						])
+					]),
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('div', { 'id': '' }, [
+								E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
+							])
+						])
 					])
 				])
-			]),
-			E('pre', { 'class': 'command-output', 'style': 'display:none' })
+			])
 		]);
 	},
 
