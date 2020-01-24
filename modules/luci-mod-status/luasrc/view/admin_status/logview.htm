@@ -124,14 +124,14 @@
 	var sorting_mode = 0;
 
 	var header_mapping = {
-		"id"        : _("ID"),
-		"ktime"     : _("Time"),
-		"timestamp" : _("Timestamp"),
-		"hostname"  : _("Hostname"),
-		"message"   : _("Message"),
-		"priority"  : _("Priority"),
-		"facility"  : _("Facility"),
-		"tag"       : _("Tag")
+		"id"        : '<%=translate("ID")%>',
+		"ktime"     : '<%=translate("Time")%>',
+		"timestamp" : '<%=translate("Timestamp")%>',
+		"hostname"  : '<%=translate("Hostname")%>',
+		"message"   : '<%=translate("Message")%>',
+		"priority"  : '<%=translate("Priority")%>',
+		"facility"  : '<%=translate("Facility")%>',
+		"tag"       : '<%=translate("Tag")%>'
 	}
 
 	function lv_table_create(e, data)

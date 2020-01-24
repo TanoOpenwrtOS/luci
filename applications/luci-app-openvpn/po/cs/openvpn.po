@@ -151,14 +151,6 @@ msgstr "Připojit ke vzdálenému hostiteli prostřednictvím HTTP proxy"
 msgid "Connection retry interval"
 msgstr "Interval opakování připojení"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:564
-msgid "Cryptography"
-msgstr ""
-
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:47
-msgid "Daemonize after initialization"
-msgstr "Po inicializaci změnit na démona"
-
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:232
 msgid "Delay n seconds after connection"
 msgstr "Zpoždění n sekund po připojení"
@@ -311,10 +303,6 @@ msgstr ""
 msgid "Exit on TLS negotiation failure"
 msgstr "Ukončit při selhání vyjednávání TLS"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:753
-msgid "Get PEM password from controlling tty before we daemonize"
-msgstr "Získat heslo PEM z řídící TTY před démonizací"
-
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:572
 msgid "HMAC authentication for packets"
 msgstr "HMAC autentizace pro pakety"
@@ -392,10 +380,6 @@ msgstr "Hlavní režim"
 msgid "Maximum number of queued TCP output packets"
 msgstr "Maximální počet odchozích TCP paketů ve frontě"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:167
-msgid "Networking"
-msgstr ""
-
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:446
 msgid "Number of allocated broadcast buffers"
 msgstr "Počet přidělených vysílacích vyrovnávacích pamětí"
@@ -428,10 +412,6 @@ msgstr "OpenVPN instance"
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:83
 msgid "Optimize TUN/TAP/UDP writes"
 msgstr "Optimalizovat zápisy TUN/TAP/UDP"
-
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:51
-msgid "Output to syslog and do not daemonize"
-msgstr "Vypsat do syslog a nedémonizovat"
 
 #: applications/luci-app-openvpn/luasrc/view/openvpn/pageswitch.htm:11
 msgid "Overview"
@@ -568,10 +548,6 @@ msgstr "Opakovat po neomezenou dobu u chyb SOCKS proxy"
 msgid "Route subnet to client"
 msgstr "Směrovat podsíť klientovi"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:59
-msgid "Run as an inetd or xinetd server"
-msgstr "Spustit jako inetd nebo xinetd server"
-
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:144
 msgid "Run script cmd on client connection"
 msgstr "Spustit skript cmd pro připojení klienta"
@@ -606,21 +582,9 @@ msgstr "Vybrat šablonu …"
 msgid "Send notification to peer on disconnect"
 msgstr "Poslat protistraně oznámení při odpojení"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:14
-msgid "Service"
-msgstr ""
-
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:35
-msgid "Set GID to group"
-msgstr "Nastavit GID na skupinu"
-
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:265
 msgid "Set TCP/UDP MTU"
 msgstr "Nastavit TCP/UDP MTU"
-
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:31
-msgid "Set UID to user"
-msgstr "Nastavit UID na uživatele"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:396
 msgid "Set aside a pool of subnets"
@@ -829,17 +793,9 @@ msgstr "Použít uzel zařízení TUN/TAP"
 msgid "Use username as common name"
 msgstr "Použít uživatelské jméno jako Common Name"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:367
-msgid "VPN"
-msgstr ""
-
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:63
 msgid "Write log to file"
 msgstr "Zapsat protokol do souboru"
-
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:75
-msgid "Write process ID to file"
-msgstr "Zapsat ID procesu do souboru"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:95
 msgid "Write status to file every n seconds"
@@ -870,5 +826,8 @@ msgstr "časový limit nečinnosti TUN/TAP"
 msgid "yes (%i)"
 msgstr "ano (%i)"
 
-#~ msgid "Invalid"
-#~ msgstr "Neplatné"
+#~ msgid "Daemonize after initialization"
+#~ msgstr "Po inicializaci změnit na démona"
+
+#~ msgid "Set GID to group"
+#~ msgstr "Nastavit GID na skupinu"
