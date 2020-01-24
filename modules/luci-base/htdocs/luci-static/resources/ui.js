@@ -2505,7 +2505,7 @@ return L.Class.extend({
 					}
 				});
 			}, this));
-		}, this), 5000);
+		}, this), 15000);
 	},
 
 	/* UCI Changes */
