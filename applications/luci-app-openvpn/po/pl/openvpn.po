@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2020-01-14 15:22+0000\n"
+"PO-Revision-Date: 2020-02-01 06:56+0000\n"
 "Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsopenvpn/pl/>\n"
@@ -86,7 +86,7 @@ msgstr "Automatycznie przekieruj domyślną trasę"
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:11
 msgid "Below is a list of configured OpenVPN instances and their current state"
 msgstr ""
-"Ponieżej znajduje się lista skonfigurowanych procesów OpenVPN wraz z ich "
+"Poniżej znajduje się lista skonfigurowanych instancji OpenVPN wraz z ich "
 "aktualnymi stanami"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:119
@@ -186,7 +186,7 @@ msgstr "Nie uruchamiaj obecnie ifconfig"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:236
 msgid "Don't add routes automatically"
-msgstr "Nie dodawaj tras (routes) automatycznie"
+msgstr "Nie dodawaj tras automatycznie"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:757
 msgid "Don't cache --askpass or --auth-user-pass passwords"
@@ -207,7 +207,7 @@ msgstr "Nie zapisuj czasu w logu"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:240
 msgid "Don't pull routes automatically"
-msgstr "Nie ciągnij tras automatycznie"
+msgstr "Nie ściągaj tras automatycznie"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:331
 msgid "Don't re-read key on restart"
@@ -349,7 +349,7 @@ msgstr "Zachowaj zdalny adres IP przy restarcie"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:327
 msgid "Keep tun/tap device open on restart"
-msgstr "Utrzymaj urządzenie tun/tap po restarcie jako otwarte"
+msgstr "Utrzymaj urządzenie TUN/TAP po restarcie jako otwarte"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:733
 msgid "Key transition window"
@@ -615,12 +615,12 @@ msgstr "Ustaw rozmiar buforu wysyłania TCP/UDP"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:295
 msgid "Set tun/tap TX queue length"
-msgstr "Ustaw długość kolejki tun / tap TX"
+msgstr "Ustaw długość kolejki TUN/TAP TX"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:212
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:29
 msgid "Set tun/tap adapter parameters"
-msgstr "Ustaw parametr adaptera tun/tap"
+msgstr "Ustaw parametr adaptera TUN/TAP"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:269
 msgid "Set tun/tap device MTU"
@@ -792,7 +792,7 @@ msgstr "Użyj protokołu"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:208
 msgid "Use tun/tap device node"
-msgstr "Użyj węzła urządzenia tun/tap"
+msgstr "Użyj węzła urządzenia TUN/TAP"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:471
 msgid "Use username as common name"
@@ -821,11 +821,11 @@ msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:200
 msgid "tun/tap device"
-msgstr "urządzenie tun/tap"
+msgstr "urządzenie TUN/TAP"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:303
 msgid "tun/tap inactivity timeout"
-msgstr "czas bezczynności tun/tap"
+msgstr "czas bezczynności TUN/TAP"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:111
 msgid "yes (%i)"

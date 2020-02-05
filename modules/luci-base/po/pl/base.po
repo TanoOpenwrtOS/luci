@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: LuCI\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-20 09:40+0200\n"
-"PO-Revision-Date: 2020-01-24 16:09+0000\n"
+"PO-Revision-Date: 2020-02-01 06:56+0000\n"
 "Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/luci/pl/>"
 "\n"
@@ -248,7 +248,8 @@ msgstr "Katalog o tej samej nazwie już istnieje."
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:1606
 msgid "A new login is required since the authentication session expired."
-msgstr "Wymagane jest ponowne zalogowanie ponieważ sesja wygasła."
+msgstr ""
+"Wymagane jest ponowne zalogowanie, ponieważ sesja uwierzytelniania wygasła."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:890
 msgid "A43C + J43 + A43"
@@ -343,15 +344,11 @@ msgstr "Akcje"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:201
 msgid "Active <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Routes"
-msgstr ""
-"Aktywne trasy routingu <abbr title=\"Internet Protocol Version 4\">IPv4</"
-"abbr>"
+msgstr "Aktywne trasy <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:207
 msgid "Active <abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Routes"
-msgstr ""
-"Aktywne trasy routingu <abbr title=\"Internet Protocol Version 6\">IPv6</"
-"abbr>"
+msgstr "Aktywne trasy <abbr title=\"Internet Protocol Version 6\">IPv6</abbr>"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:80
 msgid "Active Connections"
@@ -810,7 +807,7 @@ msgstr "B43 + B43C + V43"
 
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/map.js:48
 msgid "BR / DMR / AFTR"
-msgstr "BR / DMR / AFTR"
+msgstr "BR/DMR/AFTR"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:109
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:131
@@ -834,7 +831,7 @@ msgstr "Kopia zapasowa"
 
 #: modules/luci-mod-system/luasrc/controller/admin/system.lua:28
 msgid "Backup / Flash Firmware"
-msgstr "Kopia zapasowa / Aktualizacja systemu"
+msgstr "Kopia/Aktualizacja"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:319
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/backupfiles.lua:12
@@ -977,8 +974,8 @@ msgid ""
 "Certificate constraint substring - e.g. /CN=wifi.mycompany.com<br />See "
 "`logread -f` during handshake for actual values"
 msgstr ""
-"Certyfikat ograniczenia podciągów - np. /CN=wifi.mycompany.com<br />Zobacz "
-"`logread -f` podczas uzgadniania wartości rzeczywistych"
+"Certyfikat ograniczenia podciągów - np. /CN=wifi.mycompany.com<br/>Zobacz `"
+"logread -f` podczas uzgadniania wartości rzeczywistych"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1464
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1560
@@ -986,8 +983,8 @@ msgid ""
 "Certificate constraint(s) against DNS SAN values (if available)<br />or "
 "Subject CN (exact match)"
 msgstr ""
-"Ograniczenie(-a) certyfikatu w stosunku do wartości DNS SAN (jeśli "
-"dostępne)<br />lub Subject CN (dokładne dopasowanie)"
+"Ograniczenie(-a) certyfikatu w stosunku do wartości DNS SAN (jeśli dostępne)<"
+"br/>lub Subject CN (dokładne dopasowanie)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1470
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1566
@@ -996,7 +993,7 @@ msgid ""
 "Subject CN (suffix match)"
 msgstr ""
 "Ograniczenie(-a) certyfikatu w odniesieniu do wartości DNS SAN (jeśli "
-"dostępne)<br />lub Subject CN (dopasowanie przyrostka)"
+"dostępne)<br/>lub Subject CN (dopasowanie przyrostka)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1458
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1554
@@ -1004,8 +1001,8 @@ msgid ""
 "Certificate constraint(s) via Subject Alternate Name values<br />(supported "
 "attributes: EMAIL, DNS, URI) - e.g. DNS:wifi.mycompany.com"
 msgstr ""
-"Ograniczenie(-a) certyfikatu przez Subject Alternate Name values<br /"
-">(obsługiwane atrybuty: EMAIL, DNS, URI) - np. DNS:wifi.mycompany.com"
+"Ograniczenie(-a) certyfikatu przez Subject Alternate Name values<br/>("
+"obsługiwane atrybuty: EMAIL, DNS, URI) - np. DNS:wifi.mycompany.com"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:51
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:54
@@ -1023,7 +1020,7 @@ msgstr "Zmiany zostały cofnięte."
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:44
 msgid "Changes the administrator password for accessing the device"
-msgstr "Zmienia hasło administratora"
+msgstr "Zmienia hasło administratora umożliwiające dostęp do urządzenia"
 
 #: modules/luci-compat/luasrc/view/cbi/wireless_modefreq.htm:162
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:79
@@ -1082,7 +1079,7 @@ msgstr "Szyfr"
 
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:91
 msgid "Cisco UDP encapsulation"
-msgstr "Cisco UDP encapsulation"
+msgstr "Enkapsulacja Cisco UDP"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:358
 msgid ""
@@ -1250,7 +1247,7 @@ msgstr "Kod kraju"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:486
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1957
 msgid "Create / Assign firewall-zone"
-msgstr "Utwórz / Przypisz strefę zapory sieciowej"
+msgstr "Utwórz/Przypisz strefę zapory sieciowej"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:782
 msgid "Create interface"
@@ -1355,7 +1352,7 @@ msgstr "Przekazywania DNS"
 
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:37
 msgid "DNS-Label / FQDN"
-msgstr "DNS-Label / FQDN"
+msgstr "DNS-Label/FQDN"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:212
 msgid "DNSSEC"
@@ -1412,7 +1409,7 @@ msgstr "Domyślne %d"
 
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:107
 msgid "Default Route"
-msgstr "Domyślna ścieżka routingu"
+msgstr "Trasa domyślna"
 
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/464xlat.js:48
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/6in4.js:85
@@ -2299,7 +2296,7 @@ msgstr "Przejdź do powiązanych ustawień"
 
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:66
 msgid "Group Password"
-msgstr "Hasło Grupy"
+msgstr "Hasło grupy"
 
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:22
 msgid "Guest"
@@ -2648,7 +2645,7 @@ msgstr ""
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pptp.js:74
 #: protocols/luci-proto-pppossh/htdocs/luci-static/resources/protocol/pppossh.js:97
 msgid "If unchecked, no default route is configured"
-msgstr "Jeśli odznaczone, nie ma zdefiniowanej domyślnej ścieżki routingu"
+msgstr "Jeśli odznaczone, nie ma zdefiniowanej domyślnej trasy"
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:37
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:124
@@ -3254,7 +3251,7 @@ msgstr "Lista MAC"
 #: modules/luci-compat/luasrc/model/network/proto_4x6.lua:16
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/map.js:13
 msgid "MAP / LW4over6"
-msgstr "MAP / LW4over6"
+msgstr "MAP/LW4over6"
 
 #: modules/luci-compat/luasrc/model/network/proto_4x6.lua:62
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/map.js:7
@@ -3286,8 +3283,8 @@ msgid ""
 "Make sure to clone the root filesystem using something like the commands "
 "below:"
 msgstr ""
-"Upewnij się, że klonujesz główny system plików, używając czegoś podobnego do "
-"poleceń poniżej:"
+"Upewnij się, że sklonowałeś główny system plików, używając czegoś podobnego "
+"do poleceń poniżej:"
 
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:108
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:100
@@ -3963,7 +3960,7 @@ msgstr ""
 
 #: protocols/luci-proto-relay/htdocs/luci-static/resources/protocol/relay.js:179
 msgid "Override the table used for internal routes"
-msgstr "Nadpisz tablicę routingu używaną dla wewnętrznych tras routowania"
+msgstr "Zastąp tabelę używaną do tras wewnętrznych"
 
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:3
 msgid "Overview"
@@ -4388,7 +4385,7 @@ msgstr "Szybkość RX"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2087
 msgid "RX Rate / TX Rate"
-msgstr "Szybkość: RX / TX"
+msgstr "Szybkość: RX/TX"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1242
 msgid "Radius-Accounting-Port"
@@ -4434,7 +4431,7 @@ msgstr "Naprawdę zmienić protokół?"
 
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:57
 msgid "Realtime Graphs"
-msgstr "Wykresy w czasie rzeczywistym"
+msgstr "Wykresy rzeczywiste"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1378
 msgid "Reassociation Deadline"
@@ -4683,7 +4680,7 @@ msgstr "Przywracanie konfiguracji…"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:349
 msgid "Root directory for files served via TFTP"
-msgstr "Katalog Root`a dla plików udostępnianych przez TFTP"
+msgstr "Katalog główny dla plików udostępnianych przez TFTP"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:295
 msgid "Root preparation"
@@ -4714,15 +4711,15 @@ msgstr "Hasło routera"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:195
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:21
 msgid "Routes"
-msgstr "Ścieżki routingu"
+msgstr "Trasy"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:14
 msgid ""
 "Routes specify over which interface and gateway a certain host or network "
 "can be reached."
 msgstr ""
-"Ścieżki routingu pokazują routerowi przez który interfejs oraz którą bramę "
-"może skomunikować się z daną siecią lub komputerem."
+"Trasy określają, przez który interfejs i bramę można dotrzeć do określonego "
+"hosta lub sieci."
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:204
 msgid "Rule"
@@ -4879,7 +4876,7 @@ msgstr "Sesja wygasła"
 
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:107
 msgid "Set VPN as Default Route"
-msgstr "Wybierz VPN jako Domyślną Trasę"
+msgstr "Wybierz VPN jako domyślną trasę"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:848
 msgid ""
@@ -4947,7 +4944,7 @@ msgstr "Sygnał"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2086
 msgid "Signal / Noise"
-msgstr "Sygnał / Szum"
+msgstr "Sygnał/Szum"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:25
 msgid "Signal Attenuation (SATN)"
@@ -4968,7 +4965,7 @@ msgstr "Rozmiar pamięci podręcznej zapytań DNS"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:183
 msgid "Size of the ZRam device in megabytes"
-msgstr "Rozmiar ZRam urządzenia w megabajtach"
+msgstr "Rozmiar ZRam urządzenia w Megabajtach"
 
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:18
 #: modules/luci-compat/luasrc/view/cbi/simpleform.htm:57
@@ -5098,11 +5095,11 @@ msgstr "Autostart usług"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:18
 msgid "Static IPv4 Routes"
-msgstr "Statyczne ścieżki routingu IPv4"
+msgstr "Statyczne trasy IPv4"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:18
 msgid "Static IPv6 Routes"
-msgstr "Statyczne ścieżki routingu IPv6"
+msgstr "Statyczne trasy IPv6"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:150
 msgid "Static Leases"
@@ -5110,7 +5107,7 @@ msgstr "Dzierżawy statyczne"
 
 #: modules/luci-mod-network/root/usr/share/luci/menu.d/luci-mod-network.json:69
 msgid "Static Routes"
-msgstr "Statyczne ścieżki routingu"
+msgstr "Statyczne trasy"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:1955
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:172
@@ -5364,7 +5361,7 @@ msgid ""
 "\"Proceed\" below to start the flash procedure."
 msgstr ""
 "Obraz został załadowany. Poniżej podano sumę kontrolną i rozmiar pliku, "
-"Porównaj je z oryginalnym plikiem, aby zapewnić integralność danych. <br /> "
+"Porównaj je z oryginalnym plikiem, aby zapewnić integralność danych. <br/> "
 "Kliknij \"Kontynuuj\" poniżej, aby rozpocząć procedurę flashowania."
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:196
@@ -5463,7 +5460,7 @@ msgid ""
 "address of your computer to reach the device again, depending on your "
 "settings."
 msgstr ""
-"System wykonuje flashowanie.<br /> NIE WYŁĄCZAJ URZĄDZENIA!<br /> Poczekaj "
+"System wykonuje flashowanie.<br/> NIE WYŁĄCZAJ URZĄDZENIA!<br/> Poczekaj "
 "kilka minut, zanim spróbujesz połączyć się ponownie. W zależności od "
 "ustawień może być konieczne odnowienie adresu twojego komputera, aby dostać "
 "się do urządzenia."
@@ -5681,7 +5678,7 @@ msgstr "Łącznie dostępna"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:101
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:111
 msgid "Traceroute"
-msgstr "Trasa routowania"
+msgstr "Śledzenie trasy"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:51
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:62
@@ -6042,7 +6039,7 @@ msgstr "Użyj metryki bramy"
 
 #: protocols/luci-proto-relay/htdocs/luci-static/resources/protocol/relay.js:179
 msgid "Use routing table"
-msgstr "Użyj tabeli routingu"
+msgstr "Użyj tabeli trasowania"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1431
 msgid "Use system certificates"
@@ -6147,8 +6144,8 @@ msgid ""
 "Validate server certificate using built-in system CA bundle,<br />requires "
 "the \"ca-bundle\" package"
 msgstr ""
-"Weryfikacja certyfikatu serwera za pomocą wbudowanego systemu CA bundle,<br /"
-">wymaga pakietu \"ca-bundle\""
+"Weryfikacja certyfikatu serwera za pomocą wbudowanego systemu CA bundle,<br/>"
+"wymaga pakietu \"ca-bundle\""
 
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:73
 msgid "Vendor"
@@ -6316,7 +6313,7 @@ msgid ""
 "scripts like \"network\", your device might become inaccessible!</strong>"
 msgstr ""
 "Tutaj można włączyć lub wyłączyć zainstalowane skrypty. Zmiany zostaną "
-"zastosowane po ponownym uruchomieniu urządzenia.<br /><strong>Ostrzeżenie: "
+"zastosowane po ponownym uruchomieniu urządzenia.<br/><strong>Ostrzeżenie: "
 "Jeśli wyłączysz podstawowe skrypty typu \"network\", urządzenie może stać "
 "się nieosiągalne!</strong>"
 
@@ -6577,7 +6574,7 @@ msgstr "tryb przekaźnika"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:963
 msgid "routed"
-msgstr "routowane"
+msgstr "Prowadzone"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1003
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1012

@@ -17,10 +17,10 @@ _M.fs = fs
 -- Index table
 local index = nil
 
-local function check_fs_depends(fs)
+local function check_fs_depends(spec)
 	local fs = require "nixio.fs"
 
-	for path, kind in pairs(fs) do
+	for path, kind in pairs(spec) do
 		if kind == "directory" then
 			local empty = true
 			for entry in (fs.dir(path) or function() end) do
@@ -806,7 +806,7 @@ function dispatch(request)
 				return tpl.render("sysauth", { duser = "root", fuser = user })
 			end
 
-			http.header("Set-Cookie", 'sysauth=%s; path=%s; HttpOnly%s' %{
+			http.header("Set-Cookie", 'sysauth=%s; path=%s; SameSite=Strict; HttpOnly%s' %{
 				sid, build_url(), http.getenv("HTTPS") == "on" and "; secure" or ""
 			})
 
