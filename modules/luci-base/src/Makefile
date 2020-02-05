@@ -1,16 +1,13 @@
 %.o: %.c
 	$(CC) $(CPPFLAGS) $(CFLAGS) $(FPIC) -DNDEBUG -c -o $@ $<
 
-contrib/lemon: contrib/lemon.c contrib/lempar.c
-	cc -o contrib/lemon $<
-
-plural_formula.c: plural_formula.y contrib/lemon
-	./contrib/lemon -q $<
+plural_formula.c: plural_formula.y
+	lemon -T$(CURDIR)/contrib/lempar.c -q $<
 
 template_lmo.c: plural_formula.c
 
 clean:
-	rm -f contrib/lemon po2lmo parser.so version.lua plural_formula.c plural_formula.h *.o
+	rm -f po2lmo parser.so version.lua plural_formula.c plural_formula.h *.o
 
 jsmin: jsmin.o
 	$(CC) $(LDFLAGS) -o $@ $^
