@@ -1,0 +1,13 @@
+{
+	"admin/services/uhttpd/*": {
+		"title": "HTTP/HTTPS",
+		"action": {
+			"type": "cbi",
+			"path": "uhttpd/uhttpd",
+			"post": { "cbi.submit": true }
+		},
+		"depends": {
+			"uci": { "uhttpd": true }
+		}
+	}
+}
