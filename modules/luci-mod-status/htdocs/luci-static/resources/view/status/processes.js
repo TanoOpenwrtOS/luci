@@ -65,7 +65,7 @@ return L.view.extend({
 			E('h2', _('Processes')),
 			E('div', { 'class': 'cbi-map-descr' }, _('This list gives an overview over currently running system processes and their status.')),
 
-			E('div', { 'class': 'table' }, [
+			E('div', { 'class': 'table-wrapper' }, [ E('div', { 'class': 'table' }, [
 				E('div', { 'class': 'tr table-titles' }, [
 					E('div', { 'class': 'th' }, _('PID')),
 					E('div', { 'class': 'th' }, _('Owner')),
@@ -74,10 +74,10 @@ return L.view.extend({
 					E('div', { 'class': 'th' }, _('Memory usage (%)')),
 					E('div', { 'class': 'th center' }, _('Actions'))
 				])
-			])
+			])])
 		]);
 
-		this.updateTable(v.lastElementChild, processes);
+		this.updateTable(v.lastElementChild.firstElementChild, processes);
 
 		return v;
 	},
