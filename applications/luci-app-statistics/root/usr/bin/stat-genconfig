@@ -214,9 +214,8 @@ end
 function _expand( s, n, nopad )
 	local str = ""
 
-	s = luci.util.trim(s)
-
 	if type(s) == "string" then
+		s = luci.util.trim(s)
 		for i, v in ipairs( luci.util.split( s, "%s+", nil, true ) ) do
 			str = str .. _string( v, n, nopad )
 		end
