@@ -170,7 +170,7 @@ return L.view.extend({
 		var view = E([], [
 			E('h2', {}, [ _('Statistics') ]),
 			E('div', {}, [
-				E('div', {}, [
+				E('div', { 'class': 'statistics-graph-controls' }, [
 					hostSel,
 					E('button', {
 						'class': 'cbi-button cbi-button-apply',
