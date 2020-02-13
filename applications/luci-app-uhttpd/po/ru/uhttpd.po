@@ -281,6 +281,7 @@ msgid "Will not use HTTP authentication if not present"
 msgstr "HTTP-аутентификация не будет использоваться, если файла не существует"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:6
+#: applications/luci-app-uhttpd/root/usr/share/luci/menu.d/luci-app-uhttpd.json:3
 msgid "uHTTPd"
 msgstr "uHTTPd"
 

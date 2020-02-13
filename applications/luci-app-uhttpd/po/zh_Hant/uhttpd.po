@@ -257,7 +257,12 @@ msgstr "ubus 通過 JSON-RPC 整合的虛擬路徑字首"
 msgid "Will not use HTTP authentication if not present"
 msgstr "如果不存在，將不使用 HTTP 身份驗證"
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
+msgid "a.k.a CommonName"
+msgstr "又名 CommonName"
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:6
+#: applications/luci-app-uhttpd/root/usr/share/luci/menu.d/luci-app-uhttpd.json:3
 msgid "uHTTPd"
 msgstr "uHTTPd"
 

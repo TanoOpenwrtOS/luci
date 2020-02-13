@@ -268,7 +268,12 @@ msgstr ""
 msgid "Will not use HTTP authentication if not present"
 msgstr "指定しない場合、HTTP 認証は使用されません。"
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
+msgid "a.k.a CommonName"
+msgstr "共通名"
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:6
+#: applications/luci-app-uhttpd/root/usr/share/luci/menu.d/luci-app-uhttpd.json:3
 msgid "uHTTPd"
 msgstr "uHTTPd"
 

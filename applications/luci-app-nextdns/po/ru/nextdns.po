@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-01-13 14:27+0000\n"
-"Last-Translator: Nazym Bavbekov <joker2000joker@list.ru>\n"
+"PO-Revision-Date: 2020-02-12 11:01+0000\n"
+"Last-Translator: Alex Ky <esthomolupus@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnextdns/ru/>\n"
 "Language: ru\n"
@@ -9,11 +9,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10.1\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:35
 msgid ""
 "Available locations are: Switzerland, Iceland, Finland, Panama and Hong Kong."
+msgstr ""
+
+#: applications/luci-app-nextdns/root/usr/share/luci/menu.d/luci-app-nextdns.json:23
+msgid "Configuration"
 msgstr ""
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:22
@@ -26,7 +30,7 @@ msgstr ""
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:17
 msgid "Enabled"
-msgstr "Включено"
+msgstr "Включить"
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:28
 msgid "Expose LAN clients information in NextDNS analytics."
@@ -58,12 +62,8 @@ msgstr ""
 msgid "Log individual queries to system log."
 msgstr ""
 
-#: applications/luci-app-nextdns/luasrc/controller/nextdns.lua:13
-msgid "Logs"
-msgstr ""
-
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:8
-#: applications/luci-app-nextdns/luasrc/controller/nextdns.lua:11
+#: applications/luci-app-nextdns/root/usr/share/luci/menu.d/luci-app-nextdns.json:3
 msgid "NextDNS"
 msgstr ""
 
@@ -75,7 +75,7 @@ msgstr ""
 msgid "No nextdns related logs yet!"
 msgstr ""
 
-#: applications/luci-app-nextdns/luasrc/controller/nextdns.lua:12
+#: applications/luci-app-nextdns/root/usr/share/luci/menu.d/luci-app-nextdns.json:14
 msgid "Overview"
 msgstr "Обзор"
 

@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-01-11 18:24+0000\n"
-"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
+"PO-Revision-Date: 2020-02-11 05:09+0000\n"
+"Last-Translator: Bob Weetabix <weetabixlalol@grr.la>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsyggdrasil/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10.1\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/status.js:32
 msgid "Active peers"
@@ -80,7 +80,7 @@ msgid "Enable tap mode"
 msgstr ""
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/keys.js:10
-#: applications/luci-app-yggdrasil/luasrc/controller/yggdrasil.lua:13
+#: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:40
 msgid "Encryption keys"
 msgstr ""
 
@@ -239,9 +239,9 @@ msgid ""
 msgstr ""
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/peers.js:10
-#: applications/luci-app-yggdrasil/luasrc/controller/yggdrasil.lua:11
+#: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:22
 msgid "Peers"
-msgstr ""
+msgstr "Pairs"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/tunnel_routing.js:20
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/tunnel_routing.js:34
@@ -260,7 +260,7 @@ msgid ""
 "default value is .* which uses all interfaces."
 msgstr ""
 
-#: applications/luci-app-yggdrasil/luasrc/controller/yggdrasil.lua:14
+#: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:49
 msgid "Session firewall"
 msgstr ""
 
@@ -272,7 +272,7 @@ msgstr ""
 msgid "Set .* to multicast on all interfaces"
 msgstr ""
 
-#: applications/luci-app-yggdrasil/luasrc/controller/yggdrasil.lua:12
+#: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:31
 msgid "Settings"
 msgstr "Réglages"
 
@@ -284,7 +284,7 @@ msgstr ""
 msgid "Signing public key"
 msgstr ""
 
-#: applications/luci-app-yggdrasil/luasrc/controller/yggdrasil.lua:9
+#: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:13
 msgid "Status"
 msgstr ""
 
@@ -308,12 +308,16 @@ msgstr ""
 msgid "Tunnel Routing"
 msgstr ""
 
-#: applications/luci-app-yggdrasil/luasrc/controller/yggdrasil.lua:15
+#: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:58
 msgid "Tunnel routing"
 msgstr ""
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/session_firewall.js:23
 msgid "Whitelisted public keys"
+msgstr ""
+
+#: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:3
+msgid "Yggdrasil"
 msgstr ""
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/status.js:29

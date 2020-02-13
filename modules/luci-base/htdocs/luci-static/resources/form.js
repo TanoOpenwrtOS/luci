@@ -1110,7 +1110,7 @@ var CBITableSection = CBITypedSection.extend({
 		return sectionEl;
 	},
 
-	renderHeaderRows: function(max_cols) {
+	renderHeaderRows: function(max_cols, has_action) {
 		var has_titles = false,
 		    has_descriptions = false,
 		    max_cols = isNaN(this.max_cols) ? this.children.length : this.max_cols,
@@ -1119,7 +1119,7 @@ var CBITableSection = CBITypedSection.extend({
 		    trEls = E([]);
 
 		for (var i = 0, opt; i < max_cols && (opt = this.children[i]) != null; i++) {
-			if (opt.optional || opt.modalonly)
+			if (opt.modalonly)
 				continue;
 
 			has_titles = has_titles || !!opt.title;
@@ -1133,7 +1133,7 @@ var CBITableSection = CBITypedSection.extend({
 			});
 
 			for (var i = 0, opt; i < max_cols && (opt = this.children[i]) != null; i++) {
-				if (opt.optional || opt.modalonly)
+				if (opt.modalonly)
 					continue;
 
 				trEl.appendChild(E('div', {
@@ -1155,7 +1155,7 @@ var CBITableSection = CBITypedSection.extend({
 					L.dom.content(trEl.lastElementChild, opt.title);
 			}
 
-			if (this.sortable || this.extedit || this.addremove || has_more)
+			if (this.sortable || this.extedit || this.addremove || has_more || has_action)
 				trEl.appendChild(E('div', {
 					'class': 'th cbi-section-table-cell cbi-section-actions'
 				}));
@@ -1169,7 +1169,7 @@ var CBITableSection = CBITypedSection.extend({
 			});
 
 			for (var i = 0, opt; i < max_cols && (opt = this.children[i]) != null; i++) {
-				if (opt.optional || opt.modalonly)
+				if (opt.modalonly)
 					continue;
 
 				trEl.appendChild(E('div', {
@@ -1481,6 +1481,10 @@ var CBIGridSection = CBITableSection.extend({
 			'data-name': opt.option,
 			'data-widget': opt.typename || opt.__name__
 		}, (value != null) ? value : E('em', _('none')));
+	},
+
+	renderHeaderRows: function(section_id) {
+		return this.super('renderHeaderRows', [ NaN, true ]);
 	},
 
 	renderRowActions: function(section_id) {
