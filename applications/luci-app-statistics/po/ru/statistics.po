@@ -16,7 +16,7 @@ msgstr ""
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/apcups.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
 msgid "APC UPS"
 msgstr "APC ИБП"
@@ -53,6 +53,10 @@ msgstr "Тип адреса"
 msgid "Aggregate number of connected users"
 msgstr "Общее число подключенных пользователей"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:190
+msgid "Apply interval »"
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/email.js:50
 msgid "Awaiting email input at %s"
 msgstr "Ожидание входящей почты через сокет %s"
@@ -79,7 +83,7 @@ msgstr ""
 msgid "CPU Context Switches Plugin Configuration"
 msgstr "Настройка плагина переключений контекста CPU"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpufreq.lua:9
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/cpufreq.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/cpufreq.json:2
 msgid "CPU Frequency"
 msgstr "Частота CPU"
@@ -149,7 +153,7 @@ msgstr "Комментарий / номер правила"
 msgid "Configure…"
 msgstr "Настроить…"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/conntrack.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/conntrack.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/conntrack.json:2
 msgid "Conntrack"
 msgstr "Отслеживание подключений (Conntrack)"
@@ -162,7 +166,7 @@ msgstr "Настройка плагина «Conntrack»"
 msgid "Conntrack monitoring enabled"
 msgstr "Мониторинг conntrack включён"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/contextswitch.lua:6
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/contextswitch.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/contextswitch.json:2
 msgid "Context Switches"
 msgstr "Переключения контекста"
@@ -175,7 +179,7 @@ msgstr "Мониторинг переключений контекста вкл�
 msgid "DF Plugin Configuration"
 msgstr "Настройка плагина «DF»"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/dns.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/dns.js:9
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/dns.json:2
 msgid "DNS"
 msgstr "DNS"
@@ -208,23 +212,27 @@ msgstr "Папка с config файлом"
 msgid "Disk Plugin Configuration"
 msgstr "Настройка плагина «Disk»"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/df.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/df.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/df.json:2
 msgid "Disk Space Usage"
 msgstr "Использовано места на диске"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/disk.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/disk.js:9
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/disk.json:2
 msgid "Disk Usage"
 msgstr "Использование диска"
 
-#: applications/luci-app-statistics/luasrc/view/public_statistics/graph.htm:18
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:178
 msgid "Display Host »"
 msgstr "Показать хост »"
 
-#: applications/luci-app-statistics/luasrc/view/public_statistics/graph.htm:26
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:184
 msgid "Display timespan »"
 msgstr "Показать за промежуток »"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:162
+msgid "Do not refresh"
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/email.js:6
 msgid "E-Mail Plugin Configuration"
@@ -276,7 +284,7 @@ msgstr "Включить этот плагин"
 msgid "Enabled"
 msgstr "Включить"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/entropy.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/entropy.js:9
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/entropy.json:2
 msgid "Entropy"
 msgstr "Энтропия"
@@ -288,6 +296,18 @@ msgstr "Настройка плагина «Энтропия»"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/entropy.js:9
 msgid "Entropy monitoring enabled"
 msgstr "Мониторинг энтропии включён"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:164
+msgid "Every 30 seconds"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:163
+msgid "Every 5 seconds"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:165
+msgid "Every minute"
+msgstr ""
 
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/exec.json:2
 msgid "Exec"
@@ -317,10 +337,14 @@ msgstr "Получать (fetch) страницы"
 msgid "Filter class monitoring"
 msgstr "Мониторинг класса фильтров"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/iptables.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/iptables.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/iptables.json:2
 msgid "Firewall"
 msgstr "Межсетевой экран"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ip6tables.js:6
+msgid "Firewall (IPv6)"
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:80
 msgid "Flush cache after"
@@ -342,7 +366,7 @@ msgstr "Основные плагины"
 msgid "Generate a separate graph for each logged user"
 msgstr "Создать отдельный график для каждого авторизованного пользователя"
 
-#: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:20
+#: applications/luci-app-statistics/root/usr/share/luci/menu.d/luci-app-statistics.json:14
 msgid "Graphs"
 msgstr "Графики"
 
@@ -405,12 +429,12 @@ msgstr "Имя экземпляра"
 msgid "Interface Plugin Configuration"
 msgstr "Настройка плагина «Интерфейсы»"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/interface.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/interface.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/interface.json:2
 msgid "Interfaces"
 msgstr "Интерфейсы"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/irq.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/irq.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/irq.json:2
 msgid "Interrupts"
 msgstr "Прерывания"
@@ -449,6 +473,11 @@ msgstr "Настройка плагина «Загрузка системы»"
 msgid "Load monitoring enabled"
 msgstr "Мониторинг загрузки включён"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:24
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:81
+msgid "Loading data…"
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:20
 msgid "Match IPv4 iptables rules"
 msgstr "Соответствие IPv4 правилам iptables"
@@ -469,7 +498,7 @@ msgstr ""
 msgid "Maximum allowed connections"
 msgstr "Максимум разрешенных соединений"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/memory.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/memory.js:9
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/memory.json:2
 msgid "Memory"
 msgstr "Оперативная память (RAM)"
@@ -719,7 +748,7 @@ msgstr "Более подробная информация о частоте и 
 msgid "Name"
 msgstr "Имя"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/netlink.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/netlink.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/netlink.json:2
 msgid "Netlink"
 msgstr "Netlink"
@@ -744,6 +773,10 @@ msgstr "Сетевой плагин включён"
 msgid "Network plugins"
 msgstr "Сетевые плагины"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:136
+msgid "No RRD data found"
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:15
 msgid ""
 "Note: as pages are rendered by user 'nobody', the *.rrd files, the storage "
@@ -756,7 +789,7 @@ msgstr ""
 msgid "Number of threads for data collection"
 msgstr "Количество потоков сбора данных"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/olsrd.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/olsrd.js:9
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/olsrd.json:2
 msgid "OLSRd"
 msgstr "OLSRd"
@@ -769,7 +802,7 @@ msgstr "Настройка плагина «OLSRd»"
 msgid "Only create average RRAs"
 msgstr "Создавать только средние RRA"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/openvpn.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/openvpn.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/openvpn.json:2
 msgid "OpenVPN"
 msgstr "OpenVPN"
@@ -790,7 +823,7 @@ msgstr "Плагины вывода"
 msgid "Percent values"
 msgstr "Значения в процентах"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/ping.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ping.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ping.json:2
 msgid "Ping"
 msgstr "Пинг-запрос"
@@ -811,7 +844,7 @@ msgstr "Порт"
 msgid "Port for apcupsd communication"
 msgstr "Порт для связи со службой apcupsd"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/processes.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/processes.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/processes.json:2
 msgid "Processes"
 msgstr "Процессы"
@@ -820,7 +853,7 @@ msgstr "Процессы"
 msgid "Processes Plugin Configuration"
 msgstr "Настройка плагина «Процессы»"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/cpu.lua:10
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/cpu.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/cpu.json:2
 msgid "Processor"
 msgstr "CPU"
@@ -891,7 +924,7 @@ msgstr "Секунд(ы)"
 msgid "Sensor list"
 msgstr "Список сенсоров"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/sensors.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/sensors.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/sensors.json:2
 msgid "Sensors"
 msgstr "Сенсоры"
@@ -912,9 +945,13 @@ msgstr "Интерфейсы сервера"
 msgid "Server port"
 msgstr "Порт сервера"
 
-#: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:17
+#: applications/luci-app-statistics/root/usr/share/luci/menu.d/luci-app-statistics.json:23
 msgid "Setup"
 msgstr "Настройка"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:143
+msgid "Setup collectd"
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:30
 msgid "Shaping class monitoring"
@@ -962,7 +999,7 @@ msgstr "Указывает, какую информацию собирать о 
 msgid "Specifies what information to collect about the global topology."
 msgstr "Указывает, какую информацию собирать о глобальной топологии."
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/splash_leases.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/splash_leases.js:9
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/splash_leases.json:2
 msgid "Splash Leases"
 msgstr "Splash Leases"
@@ -971,9 +1008,8 @@ msgstr "Splash Leases"
 msgid "Splash Leases Plugin Configuration"
 msgstr "Настройка плагина «Splash Leases»"
 
-#: applications/luci-app-statistics/luasrc/controller/luci_statistics/luci_statistics.lua:14
-#: applications/luci-app-statistics/luasrc/view/admin_statistics/index.htm:9
-#: applications/luci-app-statistics/luasrc/view/public_statistics/graph.htm:9
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:171
+#: applications/luci-app-statistics/root/usr/share/luci/menu.d/luci-app-statistics.json:3
 msgid "Statistics"
 msgstr "Статистика"
 
@@ -1001,12 +1037,12 @@ msgstr "Сохраняемые промежутки времени"
 msgid "Storing CSV data in %s"
 msgstr "Сохранение CSV данных в %s"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/load.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/load.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/load.json:2
 msgid "System Load"
 msgstr "Загрузка системы"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/tcpconns.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/tcpconns.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/tcpconns.json:2
 msgid "TCP Connections"
 msgstr "TCPConns"
@@ -1228,16 +1264,6 @@ msgid ""
 "leases."
 msgstr "Плагин «Splash» использует libuci для сбора статистики работы splash."
 
-#: applications/luci-app-statistics/luasrc/view/admin_statistics/index.htm:11
-msgid ""
-"The statistics package uses <a href=\"https://collectd.org/\">Collectd</a> "
-"to gather data and <a href=\"http://oss.oetiker.ch/rrdtool/\">RRDtool</a> to "
-"render diagram images."
-msgstr ""
-"Приложение статистики использует <a href=\"https://collectd.org/\">collectd</"
-"a> для сбора данных и <a href=\"http://oss.oetiker.ch/rrdtool/\">RRDtool</a> "
-"для представления их в виде графиков."
-
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/tcpconns.js:6
 msgid ""
 "The tcpconns plugin collects information about open tcp connections on "
@@ -1268,7 +1294,11 @@ msgstr ""
 msgid "The uptime plugin collects statistics about the uptime of the system."
 msgstr "Плагин «Uptime» собирает статистику о времени работы системы."
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/thermal.lua:6
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:137
+msgid "There is no RRD data available yet to render graphs."
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/thermal.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/thermal.json:2
 msgid "Thermal"
 msgstr "Thermal"
@@ -1303,8 +1333,8 @@ msgstr ""
 msgid "Try to lookup fully qualified hostname"
 msgstr "Пытаться определять полное имя хоста"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/nut.js:6
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/nut.js:14
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/nut.lua:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/nut.json:2
 msgid "UPS"
 msgstr "ИБП"
@@ -1329,7 +1359,7 @@ msgstr "UnixSock"
 msgid "Unixsock Plugin Configuration"
 msgstr "Настройка плагина «UnixSock»"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/uptime.lua:15
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/uptime.js:14
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/uptime.json:2
 msgid "Uptime"
 msgstr "Время работы"
@@ -1382,7 +1412,7 @@ msgstr "При включении, отображаются абсолютные
 msgid "When set to true, we request percentage values"
 msgstr "При включении, отображаются значения в процентах"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/iwinfo.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/iwinfo.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/iwinfo.json:2
 msgid "Wireless"
 msgstr "Wi-Fi"
@@ -1395,18 +1425,17 @@ msgstr "Настройка плагина «Wi-Fi»"
 msgid "Writing *.rrd files to %s"
 msgstr "Запись *.rrd файлов в %s"
 
-#: applications/luci-app-statistics/luasrc/view/admin_statistics/index.htm:15
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:138
 msgid ""
-"You can install additional collectd-mod-* plugins to enable more statistics."
+"You need to configure <em>collectd</em> to gather data into <em>.rrd</em> "
+"files."
 msgstr ""
-"Вы можете установить плагины collectd-mod-* для включения дополнительной "
-"статистики."
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/curl.js:30
 msgid "cURL plugin enabled"
 msgstr "cURL плагин включён"
 
-#: applications/luci-app-statistics/luasrc/statistics/rrdtool/definitions/curl.lua:7
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/curl.js:9
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/curl.json:2
 msgid "cUrl"
 msgstr "cUrl"
@@ -1457,6 +1486,15 @@ msgstr[2] "%d удалённых портов"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:36
 msgid "reduces rrd size"
 msgstr "позволяет уменьшить размер RRD"
+
+#~ msgid ""
+#~ "The statistics package uses <a href=\"https://collectd.org/\">Collectd</"
+#~ "a> to gather data and <a href=\"http://oss.oetiker.ch/rrdtool/\">RRDtool</"
+#~ "a> to render diagram images."
+#~ msgstr ""
+#~ "Приложение статистики использует <a href=\"https://collectd.org/"
+#~ "\">collectd</a> для сбора данных и <a href=\"http://oss.oetiker.ch/"
+#~ "rrdtool/\">RRDtool</a> для представления их в виде графиков."
 
 #~ msgid "Collect opened file descriptors count"
 #~ msgstr ""
