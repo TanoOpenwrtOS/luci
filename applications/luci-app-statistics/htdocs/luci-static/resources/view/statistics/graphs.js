@@ -36,7 +36,7 @@ return L.view.extend({
 				return E('div', {
 					'class': 'center',
 					'data-tab': multiple ? i : null,
-					'data-tab-title': multiple ? '%s: %s'.format(rrdtool.pluginTitle(plugin), plugin_instances[i]) : null,
+					'data-tab-title': multiple ? '%s%s'.format(rrdtool.pluginTitle(plugin), plugin_instances[i] ? (': ' + plugin_instances[i]) : '') : null,
 					'data-plugin': plugin,
 					'data-plugin-instance': plugin_instances[i],
 					'cbi-tab-active': function(ev) { activeInstance = ev.target.getAttribute('data-plugin-instance') }
