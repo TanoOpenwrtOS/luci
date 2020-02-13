@@ -54,7 +54,7 @@ msgstr ""
 msgid "Basic monitoring"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:25
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:29
 msgid "Basic process monitoring enabled"
 msgstr ""
 
@@ -105,6 +105,10 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/unixsock.js:19
 msgid "Change the ownership of the socket file to the specified group."
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:18
+msgid "Collect opened file descriptors count"
 msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:23
@@ -678,7 +682,7 @@ msgid_plural "Monitoring %d interrupts"
 msgstr[0] ""
 msgstr[1] ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:23
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:27
 msgid "Monitoring one process"
 msgid_plural "Monitoring %d processes"
 msgstr[0] ""

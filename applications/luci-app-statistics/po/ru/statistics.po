@@ -69,7 +69,7 @@ msgstr "Основная папка приложения"
 msgid "Basic monitoring"
 msgstr "Основная статистика"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:25
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:29
 msgid "Basic process monitoring enabled"
 msgstr "Включен базовый мониторинг процессов"
 
@@ -123,6 +123,11 @@ msgstr "Цепочка"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/unixsock.js:19
 msgid "Change the ownership of the socket file to the specified group."
 msgstr "Изменить владельца файла сокета на указанную группу."
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:18
+msgid "Collect opened file descriptors count"
+msgstr ""
+"Собирать информацию об открытых файловых дескрипторах (CollectFileDescriptor)"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:23
 msgid "CollectLinks"
@@ -718,7 +723,7 @@ msgstr[0] "Мониторинг одного прерывания"
 msgstr[1] "Мониторинг %d прерываний"
 msgstr[2] "Мониторинг %d прерываний"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:23
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:27
 msgid "Monitoring one process"
 msgid_plural "Monitoring %d processes"
 msgstr[0] "Мониторинг одного процесса"
@@ -1495,10 +1500,6 @@ msgstr "позволяет уменьшить размер RRD"
 #~ "Приложение статистики использует <a href=\"https://collectd.org/"
 #~ "\">collectd</a> для сбора данных и <a href=\"http://oss.oetiker.ch/"
 #~ "rrdtool/\">RRDtool</a> для представления их в виде графиков."
-
-#~ msgid "Collect opened file descriptors count"
-#~ msgstr ""
-#~ "Сбор информации об открытых файловых дескрипторах (CollectFileDescriptor)"
 
 #~ msgid ""
 #~ "Collectd is a small daemon for collecting data from various sources "

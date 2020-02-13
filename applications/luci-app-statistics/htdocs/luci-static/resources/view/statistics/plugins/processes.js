@@ -14,6 +14,10 @@ return L.Class.extend({
 		o = s.option(form.DynamicList, 'Processes', _('Monitor processes'));
 		o.default = 'uhttpd dropbear dnsmasq';
 		o.depends('enable', '1');
+
+		o = s.option(form.Flag, 'CollectFileDescriptor', _('Collect opened file descriptors count'));
+		o.default = false;
+		o.depends('enable', '1');
 	},
 
 	configSummary: function(section) {
