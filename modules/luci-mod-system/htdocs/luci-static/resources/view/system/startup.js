@@ -107,7 +107,7 @@ return L.view.extend({
 			E('div', {}, [
 				E('div', { 'data-tab': 'init', 'data-tab-title': _('Initscripts') }, [
 					E('p', {}, _('You can enable or disable installed init scripts here. Changes will applied after a device reboot.<br /><strong>Warning: If you disable essential init scripts like "network", your device might become inaccessible!</strong>')),
-					table
+					E('div', { 'class': 'table-wrapper' }, table)
 				]),
 				E('div', { 'data-tab': 'rc', 'data-tab-title': _('Local Startup') }, [
 					E('p', {}, _('This is the content of /etc/rc.local. Insert your own commands here (in front of \'exit 0\') to execute them at the end of the boot process.')),
