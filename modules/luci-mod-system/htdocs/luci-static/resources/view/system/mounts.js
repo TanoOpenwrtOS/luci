@@ -218,7 +218,12 @@ return L.view.extend({
 
 			cbi_update_table(table, rows, E('em', _('Unable to obtain mount information')));
 
-			return E([], [ E('h3', _('Mounted file systems')), E('div', { 'class': 'table-wrapper' }, table) ]);
+			return E([], [
+				E('div', { 'class': 'cbi-section cbi-tblsection' }, [
+					E('legend', _('Mounted file systems')),
+					E('div', { 'class': 'table-wrapper' }, table)
+				])
+			]);
 		}, o, this);
 
 
