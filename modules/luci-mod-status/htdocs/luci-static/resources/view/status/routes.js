@@ -193,18 +193,18 @@ return L.view.extend({
 
 		return E([], [
 			E('h2', {}, [ _('Routes') ]),
-			E('p', {}, [ _('The following rules are currently active on this system.') ]),
+			E('div', { 'class': 'cbi-section-descr' }, [ _('The following rules are currently active on this system.') ]),
 
-			E('h3', {}, [ _('ARP') ]),
+			E('div', { 'class': 'cbi-section' }, E('legend', {}, _('ARP'))),
 			E('div', { class: 'table-wrapper' }, neigh4tbl),
 
-			E('h3', {}, _('Active <abbr title="Internet Protocol Version 4">IPv4</abbr>-Routes')),
+			E('div', { 'class': 'cbi-section' }, E('legend', {}, _('Active <abbr title="Internet Protocol Version 4">IPv4</abbr>-Routes'))),
 			E('div', { class: 'table-wrapper' }, route4tbl),
 
-			E('h3', {}, [ _('IPv6 Neighbours') ]),
+			E('div', { 'class': 'cbi-section' }, E('legend', {}, _('IPv6 Neighbours'))),
 			E('div', { class: 'table-wrapper' }, neigh6tbl),
 
-			E('h3', {}, _('Active <abbr title="Internet Protocol Version 6">IPv6</abbr>-Routes')),
+			E('div', { 'class': 'cbi-section' }, E('legend', {}, _('Active <abbr title="Internet Protocol Version 6">IPv6</abbr>-Routes'))),
 			E('div', { class: 'table-wrapper' }, route6tbl)
 		]);
 	},
