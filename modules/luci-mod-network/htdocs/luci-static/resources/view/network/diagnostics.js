@@ -92,9 +92,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, ''),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('div', { 'id': '' }, [
-								E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
-							])
+							E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
 						])
 					])
 				])
@@ -129,9 +127,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, ''),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('div', { 'id': '' }, [
-								E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
-							])
+							E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
 						])
 					])
 				])
@@ -157,9 +153,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, ''),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('div', { 'id': '' }, [
-								E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
-							])
+							E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
 						])
 					])
 				])
