@@ -3777,7 +3777,7 @@ msgstr "Без шифрования"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:63
 msgid "No Host Routes"
-msgstr ""
+msgstr "Не создавать маршруты"
 
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:89
 msgid "No NAT-T"
@@ -4047,7 +4047,7 @@ msgstr "Необязательно. Описание узла."
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:63
 msgid "Optional. Do not create host routes to peers."
-msgstr ""
+msgstr "Необязательно. Не создавать маршруты к пирам."
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:130
 msgid ""
