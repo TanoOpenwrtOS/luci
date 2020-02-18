@@ -2394,7 +2394,7 @@ return L.Class.extend({
 								L.dom.content(body, [
 									E('ul', {}, [
 										E('li', {}, [ '%s: %s'.format(_('Name'), file.name.replace(/^.*[\\\/]/, '')) ]),
-										E('li', {}, [ '%s: %1024mB'.format(_('Size'), file.size) ])
+										E('li', {}, [ ('%s: ' + _('%1024.2mB')).format(_('Size'), file.size) ])
 									])
 								]);
 
@@ -2414,7 +2414,7 @@ return L.Class.extend({
 							'class': 'btn',
 							'click': function() {
 								L.ui.hideModal();
-								rejectFn(new Error('Upload has been cancelled'));
+								rejectFn(new Error(_('Upload has been cancelled')));
 							}
 						}, [ _('Cancel') ]),
 						' ',
