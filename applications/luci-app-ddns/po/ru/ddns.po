@@ -23,7 +23,7 @@ msgstr "Использование «../» в пути не разрешаетс
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:284
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:313
 msgid "Add new service..."
-msgstr "Добавить новый сервис..."
+msgstr "Добавить новую службу..."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:433
 msgid "Advanced Settings"
@@ -105,7 +105,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:332
 msgid "Create service"
-msgstr "Создать сервис"
+msgstr "Создать службу"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:919
 msgid "Current setting:"
@@ -199,14 +199,14 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:931
 msgid "Directory contains Log files for each running service."
-msgstr "Каталог содержащий файлы журналов для каждого запущенного сервиса."
+msgstr "Каталог содержащий файлы журналов для каждой запущенной службы."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:925
 msgid ""
 "Directory contains PID and other status information for each running service."
 msgstr ""
-"Каталог содержащий PID файлы и другую информацию о состоянии каждого "
-"запущенного сервиса."
+"Каталог содержащий PID файлы и другую информацию о состоянии каждой "
+"запущенной службы."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:576
 msgid ""
@@ -369,7 +369,7 @@ msgid ""
 "If service is disabled it could not be started. Neither from LuCI interface "
 "nor from console"
 msgstr ""
-"Если сервис отключён, его нельзя будет запустить ни с веб-интерфейса LuCI, "
+"Если служба отключена, её нельзя будет запустить ни с веб-интерфейса LuCI, "
 "ни с консоли"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:275
@@ -500,7 +500,7 @@ msgstr "Никогда"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:304
 msgid "New DDNS Service…"
-msgstr "Новый DDNS сервис..."
+msgstr "Новая DDNS служба..."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:401
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:27
@@ -629,7 +629,7 @@ msgstr "Перезапустить"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:349
 msgid "Reload this service"
-msgstr "Перезагрузить данный сервис"
+msgstr "Перезагрузить данную службу"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:548
 msgid "Replaces [PASSWORD] in Update-URL (URL-encoded)"
@@ -694,23 +694,23 @@ msgstr "Остановить DDNS"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:357
 msgid "Stop this service"
-msgstr "Остановить этот сервис"
+msgstr "Остановить эту службу"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:16
 msgid "Stopped"
-msgstr "Остановлен"
+msgstr "Остановлено"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:307
 msgid "The service name is already used"
-msgstr "Имя сервиса уже используется"
+msgstr "Имя службы уже используется"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:42
 msgid "There is no service configured."
-msgstr "Сервис не настроен"
+msgstr "Служба не настроена"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:894
 msgid "This is the current content of the log file in \"%s\" for this service."
-msgstr "Текущее содержимое файла журнала в «%s» для данного сервиса."
+msgstr "Текущее содержимое файла журнала в «%s» для данной службы."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:684
 msgid "This will be autoset to the selected interface"
