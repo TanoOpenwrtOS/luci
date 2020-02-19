@@ -319,7 +319,7 @@ return L.view.extend({
 
 			ui.showModal(_('Backup file list'), [
 				E('p', _('Below is the determined list of files to backup. It consists of changed configuration files marked by opkg, essential base files and the user defined backup patterns.')),
-				E('ul', {}, (res.stdout || '').trim().split(/\n/).map(function(ln) { return E('li', {}, ln) })),
+				E('textarea', { 'readonly': 'true', 'rows': 16 }, res.stdout),
 				E('div', { 'class': 'right' }, [
 					E('button', {
 						'class': 'btn',
