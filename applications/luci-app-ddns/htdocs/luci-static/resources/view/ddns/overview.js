@@ -99,7 +99,7 @@ return L.view.extend({
 				if (service[section_id].next_update)
 					next_update = NextUpdateStrings[service[section_id].next_update] || service[section_id].next_update;
 				if (service[section_id].pid)
-					service_status = '<b>' + _('Running') + '</b> : ' + service[section_id].pid;
+					service_status = '<b>' + _('Running') + '</b>: ' + service[section_id].pid;
 			}
 
 			cfg_detail_ip.innerHTML = host + '<br>' + ip;
