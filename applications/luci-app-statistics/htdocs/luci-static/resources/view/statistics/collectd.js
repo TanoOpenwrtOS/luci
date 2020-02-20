@@ -159,7 +159,7 @@ return L.view.extend({
 				if (opt)
 					opt.cfgvalue = function(section_id, set_value) {
 						if (arguments.length == 2)
-							return form.Flag.prototype.cfgvalue.apply(this, [section_id, enabled.formvalue(section_id)]);
+							return form.Flag.prototype.cfgvalue.apply(this, [section_id, set_value | enabled.formvalue(section_id)]);
 						else
 							return form.Flag.prototype.cfgvalue.apply(this, [section_id]);
 					};
