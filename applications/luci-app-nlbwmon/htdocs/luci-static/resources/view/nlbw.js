@@ -334,7 +334,7 @@ function renderHostDetail(tooltip)
 		});
 	}
 
-	cbi_update_table(tooltip.lastElementChild, rows);
+	cbi_update_table(tooltip.lastElementChild.firstElementChild, rows);
 
 	pie(tooltip.querySelector('#bubble-pie1'), rxData);
 	pie(tooltip.querySelector('#bubble-pie2'), txData);
