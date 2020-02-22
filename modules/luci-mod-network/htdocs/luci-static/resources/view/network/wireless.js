@@ -1744,27 +1744,37 @@ return L.view.extend({
 				])
 			]);
 
+			var stop = E('button', {
+				'class': 'btn',
+				'click': L.bind(this.handleScanStartStop, this),
+				'style': 'display:none',
+				'data-state': 'stop'
+			}, _('Stop refresh'));
+
 			cbi_update_table(table, [], E('em', { class: 'spinning' }, _('Starting wireless scan...')));
 
 			var md = ui.showModal(_('Join Network: Wireless Scan'), [
 				table,
-				E('div', { 'class': 'right' },
+				E('div', { 'class': 'right' }, [
+					stop,
+					' ',
 					E('button', {
 						'class': 'btn',
 						'click': L.bind(this.handleScanAbort, this)
-					}, _('Dismiss')))
+					}, _('Dismiss'))
+				])
 			]);
 
 			md.style.maxWidth = '90%';
 			md.style.maxHeight = 'none';
 
-			this.pollFn = L.bind(this.handleScanRefresh, this, radioDev, {}, table);
+			this.pollFn = L.bind(this.handleScanRefresh, this, radioDev, {}, table, stop);
 
 			L.Poll.add(this.pollFn);
 			L.Poll.start();
 		};
 
-		s.handleScanRefresh = function(radioDev, scanCache, table) {
+		s.handleScanRefresh = function(radioDev, scanCache, table, stop) {
 			return radioDev.getScanList().then(L.bind(function(results) {
 				var rows = [];
 
@@ -1801,7 +1811,7 @@ return L.view.extend({
 
 					rows.push([
 						E('span', { 'style': s }, render_signal_badge(q, res.signal, res.noise)),
-						E('span', { 'style': s }, '%h'.format(res.ssid)),
+						E('span', { 'style': s }, (res.ssid != null) ? '%h'.format(res.ssid) : E('em', _('hidden'))),
 						E('span', { 'style': s }, '%d'.format(res.channel)),
 						E('span', { 'style': s }, '%h'.format(res.mode)),
 						E('span', { 'style': s }, '%h'.format(res.bssid)),
@@ -1816,7 +1826,28 @@ return L.view.extend({
 				}
 
 				cbi_update_table(table, rows);
+
+				stop.disabled = false;
+				stop.style.display = '';
+				stop.classList.remove('spinning');
 			}, this));
+		};
+
+		s.handleScanStartStop = function(ev) {
+			var btn = ev.currentTarget;
+
+			if (btn.getAttribute('data-state') == 'stop') {
+				L.Poll.remove(this.pollFn);
+				btn.firstChild.data = _('Start refresh');
+				btn.setAttribute('data-state', 'start');
+			}
+			else {
+				L.Poll.add(this.pollFn);
+				btn.firstChild.data = _('Stop refresh');
+				btn.setAttribute('data-state', 'stop');
+				btn.classList.add('spinning');
+				btn.disabled = true;
+			}
 		};
 
 		s.handleScanAbort = function(ev) {
@@ -1835,10 +1866,12 @@ return L.view.extend({
 		s.handleJoinConfirm = function(radioDev, bss, form, ev) {
 			var nameopt = L.toArray(form.lookupOption('name', '_new_'))[0],
 			    passopt = L.toArray(form.lookupOption('password', '_new_'))[0],
+			    bssidopt = L.toArray(form.lookupOption('bssid', '_new_'))[0],
 			    zoneopt = L.toArray(form.lookupOption('zone', '_new_'))[0],
 			    replopt = L.toArray(form.lookupOption('replace', '_new_'))[0],
 			    nameval = (nameopt && nameopt.isValid('_new_')) ? nameopt.formvalue('_new_') : null,
 			    passval = (passopt && passopt.isValid('_new_')) ? passopt.formvalue('_new_') : null,
+			    bssidval = (bssidopt && bssidopt.isValid('_new_')) ? bssidopt.formvalue('_new_') : null,
 			    zoneval = zoneopt ? zoneopt.formvalue('_new_') : null,
 			    enc = L.isObject(bss.encryption) ? bss.encryption : null,
 			    is_wep = (enc && Array.isArray(enc.wep)),
@@ -1874,10 +1907,15 @@ return L.view.extend({
 				uci.set('wireless', section_id, 'mode', (bss.mode == 'Ad-Hoc') ? 'adhoc' : 'sta');
 				uci.set('wireless', section_id, 'network', nameval);
 
-				if (bss.ssid != null)
+				if (bss.ssid != null) {
 					uci.set('wireless', section_id, 'ssid', bss.ssid);
-				else if (bss.bssid != null)
+
+					if (bssidval == '1')
+						uci.set('wireless', section_id, 'bssid', bss.bssid);
+				}
+				else if (bss.bssid != null) {
 					uci.set('wireless', section_id, 'bssid', bss.bssid);
+				}
 
 				if (is_sae) {
 					uci.set('wireless', section_id, 'encryption', 'sae');
@@ -1901,6 +1939,9 @@ return L.view.extend({
 					uci.set('wireless', section_id, 'encryption', 'wep-open');
 					uci.set('wireless', section_id, 'key', '1');
 					uci.set('wireless', section_id, 'key1', passval);
+				}
+				else {
+					uci.set('wireless', section_id, 'encryption', 'none');
 				}
 
 				return network.addNetwork(nameval, { proto: 'dhcp' }).then(function(net) {
@@ -1928,7 +1969,16 @@ return L.view.extend({
 			    enc = L.isObject(bss.encryption) ? bss.encryption : null,
 			    is_wep = (enc && Array.isArray(enc.wep)),
 			    is_psk = (enc && Array.isArray(enc.wpa) && L.toArray(enc.authentication).filter(function(a) { return a == 'psk' || a == 'sae' })),
-			    replace, passphrase, name, zone;
+			    replace, passphrase, name, bssid, zone;
+
+			var nameUsed = function(name) {
+				var s = uci.get('network', name);
+				if (s != null && s['.type'] != 'interface')
+					return true;
+
+				var net = (s != null) ? network.instantiateNetwork(name) : null;
+				return (net != null && !net.isEmpty());
+			};
 
 			s2.render = function() {
 				return Promise.all([
@@ -1944,13 +1994,13 @@ return L.view.extend({
 			name.default = 'wwan';
 			name.rmempty = false;
 			name.validate = function(section_id, value) {
-				if (uci.get('network', value))
+				if (nameUsed(value))
 					return _('The network name is already used');
 
 				return true;
 			};
 
-			for (var i = 2; uci.get('network', name.default); i++)
+			for (var i = 2; nameUsed(name.default); i++)
 				name.default = 'wwan%d'.format(i);
 
 			if (is_wep || is_psk) {
@@ -1958,6 +2008,11 @@ return L.view.extend({
 				passphrase.datatype = is_wep ? 'wepkey' : 'wpakey';
 				passphrase.password = true;
 				passphrase.rmempty = false;
+			}
+
+			if (bss.ssid != null) {
+				bssid = s2.option(form.Flag, 'bssid', _('Lock to BSSID'), _('Instead of joining any network with a matching SSID, only connect to the BSSID <code>%h</code>.').format(bss.bssid));
+				bssid.default = '0';
 			}
 
 			zone = s2.option(widgets.ZoneSelect, 'zone', _('Create / Assign firewall-zone'), _('Choose the firewall zone you want to assign to this interface. Select <em>unspecified</em> to remove the interface from the associated zone or fill out the <em>create</em> field to define a new zone and attach the interface to it.'));
