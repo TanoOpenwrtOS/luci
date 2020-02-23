@@ -399,6 +399,7 @@ msgstr "Точка доступа"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:75
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:362
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:88
 msgid "Actions"
 msgstr "Действия"
 
@@ -860,6 +861,10 @@ msgstr "Hotplug раздела"
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:165
 msgid "Automount Swap"
 msgstr "Hotplug раздела подкачки"
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:87
+msgid "Autostart"
+msgstr "Автозагрузка"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:192
 msgid "Available"
@@ -1672,7 +1677,6 @@ msgid "Disable this network"
 msgstr "Отключить данную сеть"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1653
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:62
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:107
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:99
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/l2tp.js:51
@@ -1682,6 +1686,11 @@ msgstr "Отключить данную сеть"
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pptp.js:69
 msgid "Disabled"
 msgstr "Отключено"
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:73
+msgctxt "Autostart status"
+msgid "Disabled"
+msgstr "Выключена"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1028
 msgid "Disassociate On Low Acknowledgement"
@@ -1976,15 +1985,15 @@ msgstr "Включите флаг DF (не Фрагментировать) ин�
 msgid "Enable this network"
 msgstr "Включить данную сеть"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:74
-msgid "Enable/Disable"
-msgstr "Включить/отключить"
-
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:246
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:356
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:62
 msgid "Enabled"
 msgstr "Включить"
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:72
+msgctxt "Autostart status"
+msgid "Enabled"
+msgstr "Включена"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:457
 msgid "Enables IGMP snooping on this bridge"
@@ -2865,11 +2874,11 @@ msgstr "Информация"
 msgid "Initialization failure"
 msgstr "Ошибка инициализации"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:73
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:86
 msgid "Initscript"
 msgstr "Скрипт инициализации"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:108
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:121
 msgid "Initscripts"
 msgstr "Скрипты инициализации"
 
@@ -3314,7 +3323,7 @@ msgstr "Локальный IPv6-адрес"
 msgid "Local Service Only"
 msgstr "Только локальный DNS"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:112
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:125
 msgid "Local Startup"
 msgstr "Запуск пакетов и служб пользователя, при включении устройства"
 
@@ -4868,8 +4877,7 @@ msgstr "Ресурс не найден"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:345
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:733
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:76
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:98
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:110
 msgid "Restart"
 msgstr "Перезапустить"
 
@@ -5012,7 +5020,7 @@ msgstr "Разделы подкачки (swap)"
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:29
 #: modules/luci-compat/luasrc/view/cbi/header.htm:17
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:429
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:119
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:132
 msgid "Save"
 msgstr "Сохранить"
 
@@ -5301,12 +5309,11 @@ msgid "Specify the secret encryption key here."
 msgstr "Укажите закрытый ключ."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:576
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:75
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:97
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:109
 msgid "Start"
 msgstr "Запустить"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:72
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:85
 msgid "Start priority"
 msgstr "Приоритет"
 
@@ -5322,7 +5329,7 @@ msgstr "Применение конфигурации…"
 msgid "Starting wireless scan..."
 msgstr "Начато сканирование беспроводных сетей..."
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:106
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:119
 #: modules/luci-mod-system/luasrc/controller/admin/system.lua:20
 msgid "Startup"
 msgstr "Загрузка"
@@ -5371,8 +5378,7 @@ msgid "Status"
 msgstr "Состояние"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:351
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:77
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:99
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:111
 msgid "Stop"
 msgstr "Остановить"
 
@@ -5814,7 +5820,7 @@ msgstr ""
 "Это либо «Update Key», настроенный для туннеля, либо пароль учетной записи, "
 "если ключ обновления не был настроен"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:113
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:126
 msgid ""
 "This is the content of /etc/rc.local. Insert your own commands here (in "
 "front of 'exit 0') to execute them at the end of the boot process."
@@ -6564,7 +6570,7 @@ msgstr ""
 "Похоже вы подключены к устройству через интерфейс «%h». Вы действительно "
 "хотите его выключить?"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:109
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:122
 msgid ""
 "You can enable or disable installed init scripts here. Changes will applied "
 "after a device reboot.<br /><strong>Warning: If you disable essential init "
@@ -7090,3 +7096,6 @@ msgstr "да"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« Назад"
+
+#~ msgid "Enable/Disable"
+#~ msgstr "Включить/отключить"
