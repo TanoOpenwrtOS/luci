@@ -397,7 +397,7 @@ msgstr "Концентратор доступа"
 msgid "Access Point"
 msgstr "Точка доступа"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:75
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:73
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:362
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:88
 msgid "Actions"
@@ -420,12 +420,12 @@ msgid "Active Connections"
 msgstr "Активные соединения"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:30
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:12
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:95
 msgid "Active DHCP Leases"
 msgstr "Активные DHCP аренды"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:49
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:96
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:97
 msgid "Active DHCPv6 Leases"
 msgstr "Активные DHCPv6 аренды"
 
@@ -1012,7 +1012,7 @@ msgstr ""
 msgid "CLAT configuration failed"
 msgstr "Ошибка конфигурации CLAT"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:73
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:71
 msgid "CPU usage (%)"
 msgstr "Загрузка ЦП (%)"
 
@@ -1236,7 +1236,7 @@ msgstr "Закрыть список..."
 msgid "Collecting data..."
 msgstr "Сбор данных..."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:72
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:70
 msgid "Command"
 msgstr "Команда"
 
@@ -2443,9 +2443,10 @@ msgstr "Пароль HE.net"
 msgid "HE.net username"
 msgstr "HE.net логин"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:46
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:45
+msgctxt "Action on PID"
 msgid "Hang Up"
-msgstr "Разъединить"
+msgstr "Перезапустить"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:33
 msgid "Header Error Code Errors (HEC)"
@@ -3082,9 +3083,10 @@ msgstr "Ключ №%d"
 msgid "KiB"
 msgstr "КиБ"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:54
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:53
+msgctxt "Action on PID"
 msgid "Kill"
-msgstr "Принудительно завершить"
+msgstr "Убить"
 
 #: modules/luci-compat/luasrc/model/network/proto_ppp.lua:21
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/l2tp.js:10
@@ -3547,7 +3549,7 @@ msgstr "Средняя"
 msgid "Memory"
 msgstr "Оперативная память (RAM)"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:74
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:72
 msgid "Memory usage (%)"
 msgstr "Использование памяти (%)"
 
@@ -3823,7 +3825,7 @@ msgstr "Файлы не найдены"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:590
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:139
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:215
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:60
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:58
 msgid "No information available"
 msgstr "Нет доступной информации"
 
@@ -4187,7 +4189,7 @@ msgstr "Обзор"
 msgid "Overwrite existing file \"%s\" ?"
 msgstr "Перезаписать существующий файл «%s»?"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:71
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:69
 msgid "Owner"
 msgstr "Пользователь"
 
@@ -4227,7 +4229,7 @@ msgstr "Имя пользователя PAP/CHAP"
 msgid "PDP Type"
 msgstr "Тип PDP"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:70
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:68
 msgid "PID"
 msgstr "PID"
 
@@ -4516,7 +4518,7 @@ msgstr "Приоритет"
 msgid "Private Key"
 msgstr "Приватный ключ"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:65
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:63
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:30
 msgid "Processes"
 msgstr "Процессы"
@@ -5532,7 +5534,8 @@ msgstr "Назначение"
 msgid "Target network"
 msgstr "Сеть назначения"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:50
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:49
+msgctxt "Action on PID"
 msgid "Terminate"
 msgstr "Завершить"
 
@@ -5866,7 +5869,7 @@ msgid ""
 "This is usually the address of the nearest PoP operated by the tunnel broker"
 msgstr "Это адрес ближайшей точки присутствия туннельного брокера"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:66
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:64
 msgid ""
 "This list gives an overview over currently running system processes and "
 "their status."
@@ -7096,6 +7099,3 @@ msgstr "да"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« Назад"
-
-#~ msgid "Enable/Disable"
-#~ msgstr "Включить/отключить"

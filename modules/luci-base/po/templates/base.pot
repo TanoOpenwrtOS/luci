@@ -364,7 +364,7 @@ msgstr ""
 msgid "Access Point"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:75
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:73
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:362
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:88
 msgid "Actions"
@@ -383,12 +383,12 @@ msgid "Active Connections"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:30
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:12
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:95
 msgid "Active DHCP Leases"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:49
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:96
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:97
 msgid "Active DHCPv6 Leases"
 msgstr ""
 
@@ -942,7 +942,7 @@ msgstr ""
 msgid "CLAT configuration failed"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:73
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:71
 msgid "CPU usage (%)"
 msgstr ""
 
@@ -1142,7 +1142,7 @@ msgstr ""
 msgid "Collecting data..."
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:72
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:70
 msgid "Command"
 msgstr ""
 
@@ -2306,7 +2306,8 @@ msgstr ""
 msgid "HE.net username"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:46
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:45
+msgctxt "Action on PID"
 msgid "Hang Up"
 msgstr ""
 
@@ -2923,7 +2924,8 @@ msgstr ""
 msgid "KiB"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:54
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:53
+msgctxt "Action on PID"
 msgid "Kill"
 msgstr ""
 
@@ -3365,7 +3367,7 @@ msgstr ""
 msgid "Memory"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:74
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:72
 msgid "Memory usage (%)"
 msgstr ""
 
@@ -3639,7 +3641,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:590
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:139
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:215
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:60
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:58
 msgid "No information available"
 msgstr ""
 
@@ -3985,7 +3987,7 @@ msgstr ""
 msgid "Overwrite existing file \"%s\" ?"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:71
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:69
 msgid "Owner"
 msgstr ""
 
@@ -4025,7 +4027,7 @@ msgstr ""
 msgid "PDP Type"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:70
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:68
 msgid "PID"
 msgstr ""
 
@@ -4312,7 +4314,7 @@ msgstr ""
 msgid "Private Key"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:65
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:63
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:30
 msgid "Processes"
 msgstr ""
@@ -5278,7 +5280,8 @@ msgstr ""
 msgid "Target network"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:50
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:49
+msgctxt "Action on PID"
 msgid "Terminate"
 msgstr ""
 
@@ -5555,7 +5558,7 @@ msgid ""
 "This is usually the address of the nearest PoP operated by the tunnel broker"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:66
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:64
 msgid ""
 "This list gives an overview over currently running system processes and "
 "their status."
