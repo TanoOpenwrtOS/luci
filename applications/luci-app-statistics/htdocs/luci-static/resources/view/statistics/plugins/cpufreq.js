@@ -13,8 +13,6 @@ return L.Class.extend({
 
 		o = s.option(form.Flag, 'ExtraItems', _('Extra items'),
 			_('More details about frequency usage and transitions'));
-		o.default = '0';
-		o.optional = true;
 		o.depends('enable', '1');
 	},
 
