@@ -35,9 +35,9 @@ return L.view.extend({
 		});
 	},
 
-	handleEnableDisable: function(name, isEnabled, ev) {
+	handleAutostartEnableDisable: function(name, isEnabled, ev) {
 		return this.handleAction(name, isEnabled ? 'disable' : 'enable', ev).then(L.bind(function(name, isEnabled, cell) {
-			L.dom.content(cell, this.renderEnableDisable({
+			L.dom.content(cell.parentNode, this.renderAutostart({
 				name: name,
 				enabled: isEnabled
 			}));
@@ -55,11 +55,24 @@ return L.view.extend({
 		});
 	},
 
-	renderEnableDisable: function(init) {
-		return E('button', {
-			class: 'btn cbi-button-%s'.format(init.enabled ? 'positive' : 'negative'),
-			click: ui.createHandlerFn(this, 'handleEnableDisable', init.name, init.enabled)
-		}, init.enabled ? _('Enabled') : _('Disabled'));
+	renderAutostart: function(init) {
+		var checkBox = E('input', {
+			'type': 'checkbox',
+			'value': '1',
+			'id': 'init-' + init.name,
+			'click': ui.createHandlerFn(this, 'handleAutostartEnableDisable', init.name, init.enabled)
+		});
+
+		if (init.enabled)
+			checkBox.setAttribute('checked', 'true');
+
+		return E('div', { 'style': 'display: flex; align-items: center;' }, [
+			checkBox,
+			E('label', { 'style': 'padding-left: 4px;', 'for': 'init-' + init.name }, [
+				init.enabled ? E('span', { 'class': 'label notice' }, _('Enabled', 'Autostart status')) :
+				               E('span', { 'class': 'label' }, _('Disabled', 'Autostart status'))
+			])
+		]);
 	},
 
 	render: function(data) {
@@ -69,12 +82,10 @@ return L.view.extend({
 
 		var table = E('div', { 'class': 'table' }, [
 			E('div', { 'class': 'tr table-titles' }, [
-				E('div', { 'class': 'th' }, _('Start priority')),
-				E('div', { 'class': 'th' }, _('Initscript')),
-				E('div', { 'class': 'th' }, _('Enable/Disable')),
-				E('div', { 'class': 'th' }, _('Start')),
-				E('div', { 'class': 'th' }, _('Restart')),
-				E('div', { 'class': 'th' }, _('Stop'))
+				E('div', { 'class': 'th top' }, _('Start priority')),
+				E('div', { 'class': 'th top' }, _('Initscript')),
+				E('div', { 'class': 'th top' }, _('Autostart')),
+				E('div', { 'class': 'th top cbi-section-actions' }, _('Actions'))
 			])
 		]);
 
@@ -93,10 +104,12 @@ return L.view.extend({
 			rows.push([
 				'%02d'.format(list[i].index),
 				list[i].name,
-				this.renderEnableDisable(list[i]),
-				E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'start') }, _('Start')),
-				E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'restart') }, _('Restart')),
-				E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'stop') }, _('Stop'))
+				this.renderAutostart(list[i]),
+				E('div', {}, [
+					E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'start')}, _('Start')),
+					E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'restart')}, _('Restart')),
+					E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'stop')}, _('Stop'))
+				])
 			]);
 		}
 
