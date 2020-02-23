@@ -588,22 +588,24 @@ function handleInstall(ev)
 		]),
 		desc || '',
 		errs || inst || '',
-		E('div', { 'class': 'right' }, [
-			E('label', { 'class': 'cbi-checkbox', 'style': 'float:left; padding-top:.5em' }, [
-				E('input', { 'type': 'checkbox', 'name': 'overwrite' }), ' ',
+		E('div', { 'style': 'display:flex; justify-content:space-between; flex-wrap:wrap' }, [
+			E('label', {}, [
+				E('input', { 'type': 'checkbox', 'name': 'overwrite' }),
 				_('Overwrite files from other package(s)')
 			]),
-			E('div', {
-				'class': 'btn',
-				'click': L.hideModal
-			}, _('Cancel')),
-			' ',
-			E('div', {
-				'data-command': 'install',
-				'data-package': name,
-				'class': 'btn cbi-button-action',
-				'click': handleOpkg
-			}, _('Install'))
+			E('div', { 'style': 'flex-grow:1', 'class': 'right' }, [
+				E('div', {
+					'class': 'btn',
+					'click': L.hideModal
+				}, _('Cancel')),
+				' ',
+				E('div', {
+					'data-command': 'install',
+					'data-package': name,
+					'class': 'btn cbi-button-action',
+					'click': handleOpkg
+				}, _('Install'))
+			])
 		])
 	]);
 }
