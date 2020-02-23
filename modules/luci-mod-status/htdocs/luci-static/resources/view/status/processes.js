@@ -35,24 +35,22 @@ return L.view.extend({
 			rows.push([
 				proc.PID,
 				proc.USER,
-				proc.COMMAND,
+				E('div', { 'style': 'white-space: normal; overflow-wrap: break-word;' }, proc.COMMAND),
 				proc['%CPU'],
 				proc['%MEM'],
-				E('div', { 'class': 'cbi-section-actions nowrap' }, [
-					E('div', { }, [
-						E('button', {
-							'class': 'btn cbi-button-action',
-							'click': ui.createHandlerFn(this, 'handleSignal', 1, proc.PID)
-						}, _('Hang Up')), ' ',
-						E('button', {
-							'class': 'btn cbi-button-negative',
-							'click': ui.createHandlerFn(this, 'handleSignal', 15, proc.PID)
-						}, _('Terminate')), ' ',
-						E('button', {
-							'class': 'btn cbi-button-negative',
-							'click': ui.createHandlerFn(this, 'handleSignal', 9, proc.PID)
-						}, _('Kill'))
-					])
+				E('div', { 'style': 'flex-wrap: nowrap;' }, [
+					E('button', {
+						'class': 'btn cbi-button-action',
+						'click': ui.createHandlerFn(this, 'handleSignal', 1, proc.PID)
+					}, _('Hang Up', 'Action on PID')), ' ',
+					E('button', {
+						'class': 'btn cbi-button-negative',
+						'click': ui.createHandlerFn(this, 'handleSignal', 15, proc.PID)
+					}, _('Terminate', 'Action on PID')), ' ',
+					E('button', {
+						'class': 'btn cbi-button-negative',
+						'click': ui.createHandlerFn(this, 'handleSignal', 9, proc.PID)
+					}, _('Kill', 'Action on PID'))
 				])
 			]);
 		}
@@ -67,12 +65,12 @@ return L.view.extend({
 
 			E('div', { 'class': 'table-wrapper' }, [ E('div', { 'class': 'table' }, [
 				E('div', { 'class': 'tr table-titles' }, [
-					E('div', { 'class': 'th' }, _('PID')),
-					E('div', { 'class': 'th' }, _('Owner')),
-					E('div', { 'class': 'th' }, _('Command')),
-					E('div', { 'class': 'th' }, _('CPU usage (%)')),
-					E('div', { 'class': 'th' }, _('Memory usage (%)')),
-					E('div', { 'class': 'th center' }, _('Actions'))
+					E('div', { 'class': 'th top' }, _('PID')),
+					E('div', { 'class': 'th top' }, _('Owner')),
+					E('div', { 'class': 'th top' }, _('Command')),
+					E('div', { 'class': 'th top' }, _('CPU usage (%)')),
+					E('div', { 'class': 'th top' }, _('Memory usage (%)')),
+					E('div', { 'class': 'th top cbi-section-actions' }, _('Actions'))
 				])
 			])])
 		]);
