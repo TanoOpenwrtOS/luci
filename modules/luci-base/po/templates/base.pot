@@ -701,10 +701,6 @@ msgstr ""
 msgid "Architecture"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:98
-msgid "Ascending time (latest on bottom)"
-msgstr ""
-
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:184
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:27
 msgid ""
@@ -1222,10 +1218,6 @@ msgstr ""
 msgid "Continue"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:92
-msgid "Controls"
-msgstr ""
-
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2707
 msgid ""
 "Could not regain access to the device after applying the configuration "
@@ -1458,10 +1450,6 @@ msgstr ""
 msgid "Delivery Traffic Indication Message Interval"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:97
-msgid "Descending time (latest on top)"
-msgstr ""
-
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:337
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:110
 msgid "Description"
@@ -1676,14 +1664,6 @@ msgstr ""
 
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:153
 msgid "Down"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:109
-msgid "Download (CSV)"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:106
-msgid "Download (TXT)"
 msgstr ""
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:366
@@ -2011,10 +1991,6 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1390
 msgid "FT protocol"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:133
-msgid "Facility"
 msgstr ""
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:83
@@ -2366,7 +2342,6 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/hosts.js:26
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:53
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:28
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:130
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:52
 msgid "Hostname"
 msgstr ""
@@ -2382,10 +2357,6 @@ msgstr ""
 
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:24
 msgid "Hybrid"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:127
-msgid "ID"
 msgstr ""
 
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:75
@@ -2899,11 +2870,6 @@ msgstr ""
 msgid "Keep settings and retain the current configuration"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/dmesg.js:19
-#: modules/luci-mod-status/luasrc/tools/logview.lua:23
-msgid "Kernel Log"
-msgstr ""
-
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:57
 msgid "Kernel Version"
 msgstr ""
@@ -3111,11 +3077,6 @@ msgstr ""
 msgid "Load Average"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:118
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:272
-msgid "Loading data..."
-msgstr ""
-
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1941
 msgid "Loading directory contents…"
 msgstr ""
@@ -3193,10 +3154,6 @@ msgstr ""
 msgid "Lock to BSSID"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:116
-msgid "Log Entries"
-msgstr ""
-
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:82
 msgid "Log output level"
 msgstr ""
@@ -3215,10 +3172,6 @@ msgstr ""
 
 #: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:81
 msgid "Logout"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/controller/admin/status.lua:12
-msgid "Logs"
 msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:31
@@ -3381,10 +3334,6 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:847
 msgid "Mesh Id"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:131
-msgid "Message"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/rpc.js:396
@@ -3624,10 +3573,6 @@ msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/rpc.js:398
 msgid "No data received"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:231
-msgid "No data to display"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1884
@@ -3903,10 +3848,6 @@ msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:70
 msgid "Options"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:95
-msgid "Order"
 msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:344
@@ -4306,10 +4247,6 @@ msgstr ""
 msgid "Prevents client-to-client communication"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:132
-msgid "Priority"
-msgstr ""
-
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:49
 msgid "Private Key"
 msgstr ""
@@ -4491,10 +4428,6 @@ msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:54
 msgid "References"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:103
-msgid "Refresh"
 msgstr ""
 
 #: modules/luci-compat/luasrc/model/network/proto_relay.lua:153
@@ -5217,11 +5150,6 @@ msgstr ""
 msgid "System"
 msgstr ""
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/syslog.js:17
-#: modules/luci-mod-status/luasrc/tools/logview.lua:14
-msgid "System Log"
-msgstr ""
-
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:101
 msgid "System Time"
 msgstr ""
@@ -5263,10 +5191,6 @@ msgstr ""
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:167
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:185
 msgid "Table"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:134
-msgid "Tag"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:30
@@ -5577,7 +5501,6 @@ msgstr ""
 msgid "This section contains no values yet"
 msgstr ""
 
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:128
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:95
 #: modules/luci-mod-system/luasrc/controller/admin/system.lua:9
 msgid "Time"
@@ -5589,10 +5512,6 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1009
 msgid "Time interval for rekeying GTK"
-msgstr ""
-
-#: modules/luci-mod-status/luasrc/view/admin_status/logview.htm:129
-msgid "Timestamp"
 msgstr ""
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:113
@@ -5717,11 +5636,6 @@ msgstr ""
 
 #: modules/luci-base/luasrc/view/error404.htm:10
 msgid "Unable to dispatch"
-msgstr ""
-
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/dmesg.js:8
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/syslog.js:8
-msgid "Unable to load log data:"
 msgstr ""
 
 #: modules/luci-compat/luasrc/model/network/proto_modemmanager.lua:54
