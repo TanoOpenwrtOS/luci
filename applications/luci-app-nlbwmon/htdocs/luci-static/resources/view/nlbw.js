@@ -317,19 +317,19 @@ function renderHostDetail(tooltip)
 		rows.push([
 			cell,
 			'%1000.2m'.format(rec.conns),
-			'%1024.2mB'.format(rec.rx_bytes),
-			'%1000.2mP'.format(rec.rx_pkts),
-			'%1024.2mB'.format(rec.tx_bytes),
-			'%1000.2mP'.format(rec.tx_pkts)
+			_('%1024.2mB').format(rec.rx_bytes),
+			_('%1000.2mP').format(rec.rx_pkts),
+			_('%1024.2mB').format(rec.tx_bytes),
+			_('%1000.2mP').format(rec.tx_pkts)
 		]);
 
 		rxData.push({
-			label: ['%s: %%1024.2mB'.format(rec[col] || _('other')), cell],
+			label: [_('%s: %%1024.2mB').format(rec[col] || _('other')), cell],
 			value: rec.rx_bytes
 		});
 
 		txData.push({
-			label: ['%s: %%1024.2mB'.format(rec[col] || _('other')), cell],
+			label: [_('%s: %%1024.2mB').format(rec[col] || _('other')), cell],
 			value: rec.tx_bytes
 		});
 	}
@@ -450,15 +450,15 @@ function renderHostData()
 				'data-col':     'layer7',
 				'data-tooltip': _('Protocol')
 			}, '%1000.2m'.format(rec.conns)),
-			'%1024.2mB'.format(rec.rx_bytes),
-			'%1000.2mP'.format(rec.rx_pkts),
-			'%1024.2mB'.format(rec.tx_bytes),
-			'%1000.2mP'.format(rec.tx_pkts)
+			_('%1024.2mB').format(rec.rx_bytes),
+			_('%1000.2mP').format(rec.rx_pkts),
+			_('%1024.2mB').format(rec.tx_bytes),
+			_('%1000.2mP').format(rec.tx_pkts)
 		]);
 
 		trafData.push({
 			value: rec.rx_bytes + rec.tx_bytes,
-			label: ["%s: %%.2mB".format(key), cell]
+			label: [_("%s: %%.2mB").format(key), cell]
 		});
 
 		connData.push({
@@ -479,8 +479,8 @@ function renderHostData()
 	pie('traf-pie', trafData);
 	pie('conn-pie', connData);
 
-	kpi('rx-total', '%1024.2mB'.format(rx_total));
-	kpi('tx-total', '%1024.2mB'.format(tx_total));
+	kpi('rx-total', _('%1024.2mB').format(rx_total));
+	kpi('tx-total', _('%1024.2mB').format(tx_total));
 	kpi('conn-total', '%1000m'.format(conn_total));
 	kpi('host-total', '%u'.format(hostData.length));
 }
@@ -506,20 +506,20 @@ function renderLayer7Data()
 		rows.push([
 			cell,
 			'%1000m'.format(rec.conns),
-			'%1024.2mB'.format(rec.rx_bytes),
-			'%1000.2mP'.format(rec.rx_pkts),
-			'%1024.2mB'.format(rec.tx_bytes),
-			'%1000.2mP'.format(rec.tx_pkts)
+			_('%1024.2mB').format(rec.rx_bytes),
+			_('%1000.2mP').format(rec.rx_pkts),
+			_('%1024.2mB').format(rec.tx_bytes),
+			_('%1000.2mP').format(rec.tx_pkts)
 		]);
 
 		rxData.push({
 			value: rec.rx_bytes,
-			label: ["%s: %%.2mB".format(rec.layer7 || _('other')), cell]
+			label: [_("%s: %%.2mB").format(rec.layer7 || _('other')), cell]
 		});
 
 		txData.push({
 			value: rec.tx_bytes,
-			label: ["%s: %%.2mB".format(rec.layer7 || _('other')), cell]
+			label: [_("%s: %%.2mB").format(rec.layer7 || _('other')), cell]
 		});
 
 		if (rec.layer7) {
@@ -623,14 +623,14 @@ function renderIPv6Data()
 			mac,
 			[ E('span', _('IPv4')),
 			  E('span', _('IPv6')) ],
-			[ E('span', rec4 ? '%1024.2mB'.format(rec4.rx_bytes) : '-'),
-			  E('span', rec6 ? '%1024.2mB'.format(rec6.rx_bytes) : '-') ],
-			[ E('span', rec4 ? '%1000.2mP'.format(rec4.rx_pkts)  : '-'),
-			  E('span', rec6 ? '%1000.2mP'.format(rec6.rx_pkts)  : '-') ],
-			[ E('span', rec4 ? '%1024.2mB'.format(rec4.tx_bytes) : '-'),
-			  E('span', rec6 ? '%1024.2mB'.format(rec6.tx_bytes) : '-') ],
-			[ E('span', rec4 ? '%1000.2mP'.format(rec4.tx_pkts)  : '-'),
-			  E('span', rec6 ? '%1000.2mP'.format(rec6.tx_pkts)  : '-') ]
+			[ E('span', rec4 ? _('%1024.2mB').format(rec4.rx_bytes) : '-'),
+			  E('span', rec6 ? _('%1024.2mB').format(rec6.rx_bytes) : '-') ],
+			[ E('span', rec4 ? _('%1000.2mP').format(rec4.rx_pkts)  : '-'),
+			  E('span', rec6 ? _('%1000.2mP').format(rec6.rx_pkts)  : '-') ],
+			[ E('span', rec4 ? _('%1024.2mB').format(rec4.tx_bytes) : '-'),
+			  E('span', rec6 ? _('%1024.2mB').format(rec6.tx_bytes) : '-') ],
+			[ E('span', rec4 ? _('%1000.2mP').format(rec4.tx_pkts)  : '-'),
+			  E('span', rec6 ? _('%1000.2mP').format(rec6.tx_pkts)  : '-') ]
 		]);
 	}
 
@@ -644,14 +644,14 @@ function renderIPv6Data()
 	if (rx4_total > 0 || tx4_total > 0)
 		shareData.push({
 			value: rx4_total + tx4_total,
-			label: ["IPv4: %.2mB"],
+			label: [_('IPv4: %.2mB')],
 			color: 'hsl(140, 100%, 50%)'
-	        });
+		});
 
 	if (rx6_total > 0 || tx6_total > 0)
 		shareData.push({
 			value: rx6_total + tx6_total,
-			label: ["IPv6: %.2mB"],
+			label: [ _('IPv6: %.2mB')],
 			color: 'hsl(180, 100%, 50%)'
 		});
 
@@ -681,6 +681,6 @@ function renderIPv6Data()
 
 	kpi('ipv6-hosts', '%.2f%%'.format(100 / (ds_total + v4_total + v6_total) * (ds_total + v6_total)));
 	kpi('ipv6-share', '%.2f%%'.format(100 / (rx4_total + rx6_total + tx4_total + tx6_total) * (rx6_total + tx6_total)));
-	kpi('ipv6-rx', '%1024.2mB'.format(rx6_total));
-	kpi('ipv6-tx', '%1024.2mB'.format(tx6_total));
+	kpi('ipv6-rx', _('%1024.2mB').format(rx6_total));
+	kpi('ipv6-tx', _('%1024.2mB').format(tx6_total));
 }
