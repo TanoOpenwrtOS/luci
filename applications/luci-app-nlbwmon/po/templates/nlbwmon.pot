@@ -1,6 +1,36 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:321
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:323
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:454
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:456
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:510
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:512
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:628
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:629
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:632
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:633
+msgid "%1000.2mP"
+msgstr ""
+
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:320
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:322
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:453
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:455
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:482
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:483
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:509
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:511
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:626
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:627
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:630
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:631
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:684
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:685
+msgid "%1024.2mB"
+msgstr ""
+
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:661
 msgid "%d IPv4-only hosts"
 msgstr ""
@@ -19,6 +49,17 @@ msgstr ""
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:69
 msgid "%s, %s and %s"
+msgstr ""
+
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:461
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:517
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:522
+msgid "%s: %%.2mB"
+msgstr ""
+
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:327
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:332
+msgid "%s: %%1024.2mB"
 msgstr ""
 
 #: applications/luci-app-nlbwmon/luasrc/model/cbi/nlbw/config.lua:68
@@ -293,9 +334,17 @@ msgstr ""
 msgid "IPv4 vs. IPv6"
 msgstr ""
 
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:647
+msgid "IPv4: %.2mB"
+msgstr ""
+
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:625
 #: applications/luci-app-nlbwmon/luasrc/view/nlbw/display.htm:100
 msgid "IPv6"
+msgstr ""
+
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:654
+msgid "IPv6: %.2mB"
 msgstr ""
 
 #: applications/luci-app-nlbwmon/luasrc/model/cbi/nlbw/config.lua:95

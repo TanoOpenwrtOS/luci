@@ -16,6 +16,36 @@ msgstr ""
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:321
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:323
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:454
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:456
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:510
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:512
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:628
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:629
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:632
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:633
+msgid "%1000.2mP"
+msgstr "%1000.2mП"
+
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:320
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:322
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:453
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:455
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:482
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:483
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:509
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:511
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:626
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:627
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:630
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:631
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:684
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:685
+msgid "%1024.2mB"
+msgstr "%1024.2mБ"
+
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:661
 msgid "%d IPv4-only hosts"
 msgstr "%d только IPv4 хост(а, ов)"
@@ -35,6 +65,17 @@ msgstr "%s и %s"
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:69
 msgid "%s, %s and %s"
 msgstr "%s, %s и %s"
+
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:461
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:517
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:522
+msgid "%s: %%.2mB"
+msgstr "%s: %%.2mБ"
+
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:327
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:332
+msgid "%s: %%1024.2mB"
+msgstr "%s: %%1024.2mБ"
 
 #: applications/luci-app-nlbwmon/luasrc/model/cbi/nlbw/config.lua:68
 msgid "-1 - Restart every last day of month"
@@ -175,8 +216,8 @@ msgid ""
 "accounting period exactly every N days, beginning at a given date."
 msgstr ""
 "Выберите «День месяца» для ежемесячного перезапуска отчётного периода в "
-"конкретное число месяца, например каждое 3-е число месяца.<br />Выберите «"
-"Фиксированный интервал», чтобы перезапускать отчётный период через каждые N "
+"конкретное число месяца, например каждое 3-е число месяца.<br />Выберите "
+"«Фиксированный интервал», чтобы перезапускать отчётный период через каждые N "
 "дней, начиная с заданной даты."
 
 #: applications/luci-app-nlbwmon/luasrc/view/nlbw/display.htm:56
@@ -323,10 +364,18 @@ msgstr "IPv4"
 msgid "IPv4 vs. IPv6"
 msgstr "IPv4 против IPv6"
 
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:647
+msgid "IPv4: %.2mB"
+msgstr "IPv4: %.2mБ"
+
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:625
 #: applications/luci-app-nlbwmon/luasrc/view/nlbw/display.htm:100
 msgid "IPv6"
 msgstr "IPv6"
+
+#: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:654
+msgid "IPv6: %.2mB"
+msgstr "IPv6: %.2mБ"
 
 #: applications/luci-app-nlbwmon/luasrc/model/cbi/nlbw/config.lua:95
 msgid "Interval"
@@ -566,15 +615,3 @@ msgstr "нет трафика"
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw.js:522
 msgid "other"
 msgstr "другие"
-
-#~ msgid "Down. (Bytes / Pkts.)"
-#~ msgstr "Внутр. (Bytes / Pkts.)"
-
-#~ msgid "Download (Bytes / Packets)"
-#~ msgstr "Получение (Байты / Пакеты)"
-
-#~ msgid "Up. (Bytes / Pkts.)"
-#~ msgstr "Внешн. (Bytes / Pkts.)"
-
-#~ msgid "Upload (Bytes / Packets)"
-#~ msgstr "Передача (Байты / Пакеты)"
