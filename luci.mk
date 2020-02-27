@@ -30,7 +30,7 @@ LUCI_LANG.mr=Marāṭhī (Marathi)
 LUCI_LANG.ms=Bahasa Melayu (Malay)
 LUCI_LANG.nb_NO=Norsk (Norwegian)
 LUCI_LANG.pl=Polski (Polish)
-LUCI_LANG.pt_BR=Português do Brasil (Brazialian Portuguese)
+LUCI_LANG.pt_BR=Português do Brasil (Brazilian Portuguese)
 LUCI_LANG.pt=Português (Portuguese)
 LUCI_LANG.ro=Română (Romanian)
 LUCI_LANG.ru=Русский (Russian)
@@ -231,6 +231,7 @@ define Package/$(PKG_NAME)/postinst
 }
 endef
 else
+ifndef Package/$(PKG_NAME)/postinst
 define Package/$(PKG_NAME)/postinst
 [ -n "$${IPKG_INSTROOT}" ] || {
 	rm -f /tmp/luci-indexcache
@@ -238,6 +239,7 @@ define Package/$(PKG_NAME)/postinst
 	exit 0
 }
 endef
+endif
 endif
 
 
