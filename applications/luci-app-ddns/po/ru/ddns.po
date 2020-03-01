@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: ddns\n"
 "POT-Creation-Date: 2017-10-17 21:00+0300\n"
-"PO-Revision-Date: 2020-02-23 12:33+0000\n"
+"PO-Revision-Date: 2020-03-01 16:12+0000\n"
 "Last-Translator: Anton Kikin <a.a.kikin@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/ru/>\n"
@@ -18,7 +18,8 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:937
 msgid "\"../\" not allowed in path for security reasons."
-msgstr "Использование «../» в пути не разрешается по соображениям безопасности."
+msgstr ""
+"Использование «../» в пути не разрешается по соображениям безопасности."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:284
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:313
@@ -137,7 +138,7 @@ msgstr "Пользовательский URL обновления"
 msgid "Custom update-script"
 msgstr "Пользовательский скрипт обновления"
 
-#: applications/luci-app-ddns/luasrc/controller/ddns.lua:10
+#: applications/luci-app-ddns/root/usr/share/luci/menu.d/luci-app-ddns.json:3
 msgid "DDNS"
 msgstr "DDNS"
 
@@ -226,7 +227,6 @@ msgstr "Домен"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:147
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:6
-#: applications/luci-app-ddns/root/usr/share/luci/menu.d/luci-app-ddns.json:3
 msgid "Dynamic DNS"
 msgstr "Динамический DNS"
 
