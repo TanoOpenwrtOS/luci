@@ -518,6 +518,9 @@ local function session_setup(user, pass, allowed_users)
 		local rp = context.requestpath
 			and table.concat(context.requestpath, "/") or ""
 
+		require "logging.syslog"
+		local logger = logging.syslog("luci", lsyslog.FACILITY_AUTHPRIV)
+
 		if type(login) == "table" and
 		   type(login.ubus_rpc_session) == "string"
 		then
@@ -526,13 +529,13 @@ local function session_setup(user, pass, allowed_users)
 				values = { token = sys.uniqueid(16) }
 			})
 
-			io.stderr:write("luci: accepted login on /%s for %s from %s\n"
+			logger:notice("luci: accepted login on /%s for %s from %s\n"
 				%{ rp, user, http.getenv("REMOTE_ADDR") or "?" })
 
 			return session_retrieve(login.ubus_rpc_session)
 		end
 
-		io.stderr:write("luci: failed login on /%s for %s from %s\n"
+		logger:warn("luci: failed login on /%s for %s from %s\n"
 			%{ rp, user, http.getenv("REMOTE_ADDR") or "?" })
 	end
 
