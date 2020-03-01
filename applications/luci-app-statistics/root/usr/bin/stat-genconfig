@@ -275,6 +275,11 @@ plugins = {
 		{ },
 		{ }
 	},
+	syslog = {
+		{ "LogLevel", "NotifyLevel" },
+		{ },
+		{ }
+	},
 	logfile	= {
 		{ "LogLevel", "File" },
 		{ "Timestamp" },
@@ -314,7 +319,7 @@ preprocess = {
 
 
 section("collectd")
-
+section("syslog")
 section("logfile")
 
 for plugin in pairs(plugins) do

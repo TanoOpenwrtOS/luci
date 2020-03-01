@@ -17,6 +17,9 @@ config statistics 'rrdtool'
 
 # output plugins
 
+config statistics 'collectd_syslog'
+	option enable '1'
+
 config statistics 'collectd_rrdtool'
 	option enable '1'
 	option DataDir '/tmp/rrd'
