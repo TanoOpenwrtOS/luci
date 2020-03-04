@@ -1758,7 +1758,7 @@ return L.view.extend({
 			cbi_update_table(table, [], E('em', { class: 'spinning' }, _('Starting wireless scan...')));
 
 			var md = ui.showModal(_('Join Network: Wireless Scan'), [
-				table,
+				E('div', { 'class': 'table-wrapper' }, [ table ]),
 				E('div', { 'class': 'right' }, [
 					stop,
 					' ',
@@ -2155,7 +2155,7 @@ return L.view.extend({
 
 			cbi_update_table(table, [], E('em', { 'class': 'spinning' }, _('Collecting data...')))
 
-			return E([ nodes, E('h3', _('Associated Stations')), table ]);
+			return E([ nodes, E('h3', _('Associated Stations')), E('div', { 'class': 'table-wrapper' }, [ table ]) ]);
 		}, this, m));
 	}
 });
