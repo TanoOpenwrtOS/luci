@@ -12,10 +12,10 @@ local i18n = require "luci.i18n"
 function byte_format(byte)
 	local suff = {
 		i18n.translate("B"),
-		i18n.translate("KB"),
-		i18n.translate("MB"),
-		i18n.translate("GB"),
-		i18n.translate("TB")
+		i18n.translate("KiB"),
+		i18n.translate("MiB"),
+		i18n.translate("GiB"),
+		i18n.translate("TiB")
 	}
 	for i=1, 5 do
 		if byte > 1024 and i < 5 then
