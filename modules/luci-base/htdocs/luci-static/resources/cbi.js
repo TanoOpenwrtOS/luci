@@ -641,7 +641,9 @@ String.prototype.format = function()
 
 						var i = 0;
 						var val = (+param || 0);
-						var units = [ '', _('K'), _('M'), _('G'), _('T'), _('P'), _('E') ];
+						var units = (mf == 1024)
+							? [ '', _('Ki'), _('Mi'), _('Gi'), _('Ti'), _('Pi'), _('Ei') ]
+							: [ '', _('K'),  _('M'),  _('G'),  _('T'),  _('P'),  _('E')  ];
 
 						for (i = 0; (i < units.length) && (val > mf); i++)
 							val /= mf;
