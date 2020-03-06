@@ -3,6 +3,7 @@
 'require uci';
 'require rpc';
 'require form';
+'require tools.time as time';
 
 var callInitList, callInitAction, callSetLocaltime, callGetLocaltime, callTimezone, CBILocalTime;
 
@@ -28,14 +29,14 @@ callInitAction = rpc.declare({
 callGetLocaltime = rpc.declare({
 	object: 'luci',
 	method: 'getLocaltime',
-	expect: { result: 0 }
+	expect: { result: { localtime: 0, localtime_gmtoff: 0 } }
 });
 
 callSetLocaltime = rpc.declare({
 	object: 'luci',
 	method: 'setLocaltime',
 	params: [ 'localtime' ],
-	expect: { result: 0 }
+	expect: { result: { localtime: 0, localtime_gmtoff: 0 } }
 });
 
 callTimezone = rpc.declare({
@@ -52,21 +53,31 @@ CBILocalTime = form.DummyValue.extend({
 					'id': 'localtime',
 					'type': 'text',
 					'readonly': true,
-					'value': new Date(cfgvalue * 1000).toLocaleString()
+					'value': time.localtimeToString(cfgvalue)
 				})
 			]),
 			' ',
 			E('button', {
 				'class': 'cbi-button cbi-button-apply',
-				'click': ui.createHandlerFn(this, function() {
-					return callSetLocaltime(Math.floor(Date.now() / 1000));
+				'click': ui.createHandlerFn(this, function(ev) {
+					return callSetLocaltime(Math.floor(Date.now() / 1000)).then(
+						function(t) {
+							ev.target.parentNode.querySelector('#localtime').value =
+								time.localtimeToString(t);
+						}
+					);
 				})
 			}, _('Sync with browser')),
 			' ',
 			this.ntpd_support ? E('button', {
 				'class': 'cbi-button cbi-button-apply',
-				'click': ui.createHandlerFn(this, function() {
-					return callInitAction('sysntpd', 'restart');
+				'click': ui.createHandlerFn(this, function(ev) {
+					return callInitAction('sysntpd', 'restart').then(
+						function() {
+							ev.target.parentNode.querySelector('#localtime').value =
+								_('Synchronization...');
+						}
+					);
 				})
 			}, _('Sync with NTP-Server')) : ''
 		]);
@@ -183,7 +194,7 @@ return L.view.extend({
 		return m.render().then(function(mapEl) {
 			L.Poll.add(function() {
 				return callGetLocaltime().then(function(t) {
-					mapEl.querySelector('#localtime').value = new Date(t * 1000).toLocaleString();
+					mapEl.querySelector('#localtime').value = time.localtimeToString(t);
 				});
 			});
 

@@ -8,6 +8,27 @@ local function readfile(path)
 	return s and (s:gsub("^%s+", ""):gsub("%s+$", ""))
 end
 
+local function getLocaltimeMethod(args)
+	now = os.time()
+	offset = os.difftime(now, os.time(os.date("!*t", now)))
+	return {
+		result = {
+			localtime = now + offset,
+			localtime_gmtoff = offset
+		}
+	}
+end
+
+local function setLocaltimeMethod(args)
+	local sys = require "luci.sys"
+	local date = os.date("*t", args.localtime)
+	if date then
+		sys.call("date -s '%04d-%02d-%02d %02d:%02d:%02d' >/dev/null" %{ date.year, date.month, date.day, date.hour, date.min, date.sec })
+		sys.call("/etc/init.d/sysfixtime restart >/dev/null")
+	end
+	return getLocaltimeMethod()
+end
+
 local methods = {
 	getInitList = {
 		args = { name = "name" },
@@ -38,22 +59,12 @@ local methods = {
 	},
 
 	getLocaltime = {
-		call = function(args)
-			return { result = os.time() }
-		end
+		call = getLocaltimeMethod
 	},
 
 	setLocaltime = {
 		args = { localtime = 0 },
-		call = function(args)
-			local sys = require "luci.sys"
-			local date = os.date("*t", args.localtime)
-			if date then
-				sys.call("date -s '%04d-%02d-%02d %02d:%02d:%02d' >/dev/null" %{ date.year, date.month, date.day, date.hour, date.min, date.sec })
-				sys.call("/etc/init.d/sysfixtime restart >/dev/null")
-			end
-			return { result = args.localtime }
-		end
+		call = setLocaltimeMethod
 	},
 
 	getTimezones = {
