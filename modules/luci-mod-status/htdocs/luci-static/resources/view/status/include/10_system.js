@@ -1,6 +1,7 @@
 'use strict';
 'require fs';
 'require rpc';
+'require tools.time as time';
 
 var callSystemBoard = rpc.declare({
 	object: 'system',
@@ -34,20 +35,7 @@ return L.Class.extend({
 			return l.replace(/^\s*\w+\s*=\s*['"]([^'"]+)['"].*$/, '$1');
 		}).join(' ');
 
-		var datestr = null;
-
-		if (systeminfo.localtime) {
-			var date = new Date(systeminfo.localtime * 1000);
-
-			datestr = '%04d-%02d-%02d %02d:%02d:%02d'.format(
-				date.getUTCFullYear(),
-				date.getUTCMonth() + 1,
-				date.getUTCDate(),
-				date.getUTCHours(),
-				date.getUTCMinutes(),
-				date.getUTCSeconds()
-			);
-		}
+		var datestr = time.localtimeToString(systeminfo);
 
 		var fields = [
 			_('Hostname'),         boardinfo.hostname,
