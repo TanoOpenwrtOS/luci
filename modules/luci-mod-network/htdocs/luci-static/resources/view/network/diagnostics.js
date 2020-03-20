@@ -23,7 +23,7 @@ return L.view.extend({
 
 	handlePing: function(ev, cmd) {
 		var exec = cmd || 'ping',
-		    addr = ev.currentTarget.parentNode.parentNode.parentNode.querySelector("#address").value,
+		    addr = ev.currentTarget.parentNode.parentNode.parentNode.querySelector("#address-ping").value,
 		    args = (exec == 'ping') ? [ '-c', '5', '-W', '1', addr ] : [ '-c', '5', addr ];
 
 		return this.handleCommand(ev, exec, args);
@@ -31,14 +31,14 @@ return L.view.extend({
 
 	handleTraceroute: function(ev, cmd) {
 		var exec = cmd || 'traceroute',
-		    addr = ev.currentTarget.parentNode.parentNode.parentNode.querySelector("#address").value,
+		    addr = ev.currentTarget.parentNode.parentNode.parentNode.querySelector("#address-traceroute").value,
 		    args = (exec == 'traceroute') ? [ '-q', '1', '-w', '1', '-n', addr ] : [ '-q', '1', '-w', '2', '-n', addr ];
 
 		return this.handleCommand(ev, exec, args);
 	},
 
 	handleNslookup: function(ev, cmd) {
-		var addr = addr = ev.currentTarget.parentNode.parentNode.parentNode.querySelector("#address").value;
+		var addr = addr = ev.currentTarget.parentNode.parentNode.parentNode.querySelector("#address-nslookup").value;
 
 		return this.handleCommand(ev, 'nslookup', [ addr ]);
 	},
@@ -68,7 +68,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, _('Hostname')),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('input', { 'class': 'cbi-input-text', 'type': 'text', 'value': ping_host, 'id': 'address' })
+							E('input', { 'class': 'cbi-input-text', 'type': 'text', 'value': ping_host, 'id': 'address-ping' })
 						])
 					]),
 					E('div', { 'class': 'cbi-value' }, [
@@ -103,7 +103,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, _('Hostname')),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('input', { 'class': 'cbi-input-text', 'type': 'text', 'value': route_host, 'id': 'address' })
+							E('input', { 'class': 'cbi-input-text', 'type': 'text', 'value': route_host, 'id': 'address-traceroute' })
 						])
 					]),
 					E('div', { 'class': 'cbi-value' }, [
@@ -138,7 +138,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, _('Hostname')),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('input', { 'class': 'cbi-input-text', 'type': 'text', 'value': dns_host, 'id': 'address' })
+							E('input', { 'class': 'cbi-input-text', 'type': 'text', 'value': dns_host, 'id': 'address-nslookup' })
 						])
 					]),
 					E('div', { 'class': 'cbi-value' }, [
