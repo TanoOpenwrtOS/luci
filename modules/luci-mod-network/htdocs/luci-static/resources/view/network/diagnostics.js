@@ -43,12 +43,17 @@ return L.view.extend({
 		return this.handleCommand(ev, 'nslookup', [ addr ]);
 	},
 
+	handleExternalIP: function(ev, cmd) {
+		return this.handleCommand(ev, '/usr/bin/curl', [ '-s', 'ifconfig.me/ip' ]);
+	},
+
 	load: function() {
 		return Promise.all([
 			L.resolveDefault(fs.stat('/bin/ping6'), {}),
 			L.resolveDefault(fs.stat('/usr/bin/ping6'), {}),
 			L.resolveDefault(fs.stat('/bin/traceroute6'), {}),
 			L.resolveDefault(fs.stat('/usr/bin/traceroute6'), {}),
+			L.resolveDefault(fs.stat('/usr/bin/curl'), {}),
 			uci.load('luci')
 		]);
 	},
@@ -56,6 +61,7 @@ return L.view.extend({
 	render: function(res) {
 		var has_ping6 = res[0].path || res[1].path,
 		    has_traceroute6 = res[2].path || res[3].path,
+		    has_curl = res[4].path,
 			dns_host = uci.get('luci', 'diag', 'dns') || 'openwrt.org',
 			ping_host = uci.get('luci', 'diag', 'ping') || 'openwrt.org',
 			route_host = uci.get('luci', 'diag', 'route') || 'openwrt.org';
@@ -157,7 +163,27 @@ return L.view.extend({
 						])
 					])
 				])
-			])
+			]),
+			has_curl ? E('div', { 'class': 'cbi-section' }, [
+				E('legend', {}, _('External IP address')),
+				E('div', { 'class': 'cbi-section-node' }, [
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('button', {
+								'class': 'cbi-button cbi-button-action',
+								'click': ui.createHandlerFn(this, 'handleExternalIP')
+							}, [ _('Determine external IP address') ])
+						])
+					]),
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
+						])
+					])
+				])
+			]) : ''
 		]);
 	},
 
