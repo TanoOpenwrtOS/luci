@@ -9,12 +9,42 @@ return L.view.extend({
 		var out = button.parentNode.parentNode.parentNode.querySelector('.command-output');
 
 		button.setAttribute('disabled', 'true');
+		out.style.display = 'none';
 
 		return fs.exec(exec, args).then(function(res) {
-			out.style.display = '';
+			if (res.code && res.code != 0) {
+				out.classList.remove('success');
+				out.classList.add('error');
+			} else {
+				out.classList.remove('error');
+				out.classList.add('success');
+			}
 
-			L.dom.content(out, [ res.stdout || '', res.stderr || '' ]);
+			/* Add stdout to output */
+			var output = (res.stdout || '');
+
+			if (res.stderr) {
+				/* Insert newline before stderr if stdout does not have one */
+				if ((output.length > 0) &&
+				    (output.charCodeAt(output.length - 1) != 0x0a) &&
+				    (output.charCodeAt(output.length - 1) != 0x0d))
+					output += '<br />'
+
+				/* Add stderr to output */
+				output += res.stderr;
+			}
+
+			if (output == '') {
+				if (res.code)
+					output = _('Command failed with error code %d').format(res.code);
+				else
+					output = _('Command failed');
+			}
+
+			L.dom.content(out, output);
+			out.style.display = '';
 		}).catch(function(err) {
+			out.style.display = 'none';
 			ui.addNotification(null, E('p', [ err ]))
 		}).finally(function() {
 			button.removeAttribute('disabled');
@@ -98,7 +128,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, ''),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
+							E('pre', { 'class': 'net-diag-output alert-message command-output', 'style': 'display:none' })
 						])
 					])
 				])
@@ -133,7 +163,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, ''),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
+							E('pre', { 'class': 'net-diag-output alert-message command-output', 'style': 'display:none' })
 						])
 					])
 				])
@@ -159,7 +189,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, ''),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
+							E('pre', { 'class': 'net-diag-output alert-message command-output', 'style': 'display:none' })
 						])
 					])
 				])
@@ -179,7 +209,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, ''),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('pre', { 'class': 'net-diag-output command-output', 'style': 'display:none' })
+							E('pre', { 'class': 'net-diag-output alert-message command-output', 'style': 'display:none' })
 						])
 					])
 				])
