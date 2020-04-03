@@ -26,7 +26,7 @@ function index()
 	entry({"admin", "system", "leds"}, view("system/leds"), _("LED Configuration"), 60)
 		.file_depends = { "/sys/class/leds" }
 
-	entry({"admin", "system", "flash"}, view("system/flash"), _("Backup / Flash Firmware"), 70)
+	entry({"admin", "system", "backup"}, view("system/backup"), _("Backup"), 70)
 
 	entry({"admin", "system", "reboot"}, view("system/reboot"), _("Reboot"), 90)
 end
