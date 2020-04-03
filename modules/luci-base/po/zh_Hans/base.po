@@ -4,8 +4,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-02-25 09:43+0000\n"
-"Last-Translator: Zheng Qian <sotux82@gmail.com>\n"
+"PO-Revision-Date: 2020-03-07 21:23+0000\n"
+"Last-Translator: liushuyu011 <liushuyu011@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/luci/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.0-dev\n"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:910
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:924
 msgid "%.1f dB"
 msgstr "%.1f dB"
 
@@ -23,7 +23,7 @@ msgstr "%.1f dB"
 msgid "%d Bit"
 msgstr "%d Bit"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2327
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3505
 msgid "%d invalid field(s)"
 msgstr "%d 个无效字段"
 
@@ -59,19 +59,19 @@ msgid "-- Additional Field --"
 msgstr "-- 更多选项 --"
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:275
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1684
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1815
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:315
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:415
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1249
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1695
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1826
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:718
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:949
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1917
 #: modules/luci-compat/luasrc/view/cbi/header.htm:5
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:88
 msgid "-- Please choose --"
 msgstr "-- 请选择 --"
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:276
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:416
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1250
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:950
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1918
 #: modules/luci-compat/luasrc/view/cbi/header.htm:6
 msgid "-- custom --"
 msgstr "-- 自定义 --"
@@ -92,7 +92,7 @@ msgstr "-- 根据 UUID 匹配 --"
 msgid "-- please select --"
 msgstr "-- 请选择 --"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:859
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:929
 msgid "0 = not using RSSI threshold, 1 = do not change driver default"
 msgstr "0 = 不使用 RSSI 阈值，1 = 驱动默认值"
 
@@ -104,7 +104,7 @@ msgstr "1 分钟负载："
 msgid "15 Minute Load:"
 msgstr "15 分钟负载："
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1382
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1424
 msgid "4-character hexadecimal ID"
 msgstr "4 字符的十六进制 ID"
 
@@ -117,35 +117,35 @@ msgstr "464XLAT (CLAT)"
 msgid "5 Minute Load:"
 msgstr "5 分钟负载："
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1411
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1453
 msgid "6-octet identifier as a hex string - no colons"
 msgstr "十六进制表示的 6 字节标识符，无冒号分隔"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1355
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1413
 msgid "802.11r Fast Transition"
 msgstr "802.11r 快速切换"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1690
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1601
 msgid "802.11w Association SA Query maximum timeout"
 msgstr "802.11w 关联 SA 查询最大超时"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1697
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1608
 msgid "802.11w Association SA Query retry timeout"
 msgstr "802.11w 关联 SA 查询重试超时"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1656
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1589
 msgid "802.11w Management Frame Protection"
 msgstr "802.11w 管理帧保护"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1690
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1601
 msgid "802.11w maximum timeout"
 msgstr "802.11w 最大超时"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1697
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1608
 msgid "802.11w retry timeout"
 msgstr "802.11w 重试超时"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:876
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:946
 msgid "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 msgstr "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 
@@ -165,7 +165,7 @@ msgstr ""
 "按照“解析文件”里的顺序查询 <abbr title=\"Domain Name System\">DNS</abbr> 服务"
 "器"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:865
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:935
 msgid "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 
@@ -241,27 +241,27 @@ msgid ""
 msgstr ""
 "<br/>注意：如果 crontab 文件在编辑前为空，则需要手动重新启动 cron 服务。"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1729
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2654
 msgid "A directory with the same name already exists."
 msgstr "已存在同名的目录。"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1638
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:2529
 msgid "A new login is required since the authentication session expired."
 msgstr "由于身份验证会话已过期，需要重新登录。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:890
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:904
 msgid "A43C + J43 + A43"
 msgstr "A43C + J43 + A43"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:891
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:905
 msgid "A43C + J43 + A43 + V43"
 msgstr "A43C + J43 + A43 + V43"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:903
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:917
 msgid "ADSL"
 msgstr "ADSL"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:879
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:893
 msgid "ANSI T1.413"
 msgstr "ANSI T1.413"
 
@@ -272,7 +272,7 @@ msgstr "ANSI T1.413"
 msgid "APN"
 msgstr "APN"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:198
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:196
 msgid "ARP"
 msgstr "ARP"
 
@@ -280,25 +280,25 @@ msgstr "ARP"
 msgid "ARP retry threshold"
 msgstr "ARP 重试阈值"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:898
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:912
 msgid "ATM (Asynchronous Transfer Mode)"
 msgstr "ATM（异步传输模式）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:919
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:933
 msgid "ATM Bridges"
 msgstr "ATM 桥接"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:951
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:965
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoa.js:66
 msgid "ATM Virtual Channel Identifier (VCI)"
 msgstr "ATM 虚拟通道标识（VCI）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:952
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:966
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoa.js:70
 msgid "ATM Virtual Path Identifier (VPI)"
 msgstr "ATM 虚拟路径标识（VPI）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:919
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:933
 msgid ""
 "ATM bridges expose encapsulated ethernet in AAL5 connections as virtual "
 "Linux network interfaces which can be used in conjunction with DHCP or PPP "
@@ -307,7 +307,7 @@ msgstr ""
 "ATM 桥是以 AAL5 协议封装以太网的虚拟 Linux 网桥，用于协同 DHCP 或 PPP 来拨号"
 "连接到网络运营商。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:958
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:972
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoa.js:62
 msgid "ATM device number"
 msgstr "ATM 设备号码"
@@ -326,21 +326,20 @@ msgstr "接口缺失"
 msgid "Access Concentrator"
 msgstr "接入集中器"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:847
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:952
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:917
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1022
 msgid "Access Point"
 msgstr "接入点 AP"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:73
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:355
 msgid "Actions"
 msgstr "动作"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:201
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:199
 msgid "Active <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Routes"
 msgstr "活动的 <abbr title=\"Internet Protocol Version 4\">IPv4</abbr> 路由"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:207
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:205
 msgid "Active <abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Routes"
 msgstr "活动的 <abbr title=\"Internet Protocol Version 6\">IPv6</abbr> 路由"
 
@@ -358,28 +357,28 @@ msgstr "已分配的 DHCP 租约"
 msgid "Active DHCPv6 Leases"
 msgstr "已分配的 DHCPv6 租约"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3603
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:849
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3630
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:919
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:23
 msgid "Ad-Hoc"
 msgstr "点对点 Ad-Hoc"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:931
 #: modules/luci-base/htdocs/luci-static/resources/form.js:933
-#: modules/luci-base/htdocs/luci-static/resources/form.js:946
-#: modules/luci-base/htdocs/luci-static/resources/form.js:947
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1574
+#: modules/luci-base/htdocs/luci-static/resources/form.js:935
+#: modules/luci-base/htdocs/luci-static/resources/form.js:948
+#: modules/luci-base/htdocs/luci-static/resources/form.js:949
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1576
 #: modules/luci-compat/luasrc/view/cbi/nsection.htm:25
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:189
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:197
 #: modules/luci-compat/luasrc/view/cbi/tsection.htm:39
 #: modules/luci-compat/luasrc/view/cbi/tsection.htm:47
 #: modules/luci-compat/luasrc/view/cbi/ucisection.htm:54
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:747
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:817
 msgid "Add"
 msgstr "添加"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:923
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:937
 msgid "Add ATM Bridge"
 msgstr "添加 ATM 网桥"
 
@@ -418,7 +417,7 @@ msgstr "添加本地域名后缀到 HOSTS 文件中的域名"
 msgid "Add new interface..."
 msgstr "添加新接口…"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:101
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:102
 msgid "Add peer"
 msgstr "添加对等点"
 
@@ -455,10 +454,10 @@ msgstr "管理权"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:149
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:319
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:548
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:949
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:963
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:24
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:786
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:844
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:856
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:914
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:239
 msgid "Advanced Settings"
 msgstr "高级设置"
@@ -471,7 +470,7 @@ msgstr "总发射功率（ACTATP）"
 msgid "Alert"
 msgstr "警戒"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2808
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2835
 #: modules/luci-compat/luasrc/model/network.lua:1417
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:56
 msgid "Alias Interface"
@@ -499,19 +498,19 @@ msgstr "顺序分配 IP"
 msgid "Allow <abbr title=\"Secure Shell\">SSH</abbr> password authentication"
 msgstr "允许 <abbr title=\"Secure Shell\">SSH</abbr> 密码验证"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1032
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1102
 msgid "Allow AP mode to disconnect STAs based on low ACK condition"
 msgstr "允许 AP 模式时在 low ACK 的情况下断开无线终端"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:936
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1006
 msgid "Allow all except listed"
 msgstr "仅允许列表外"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:812
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:882
 msgid "Allow legacy 802.11b rates"
 msgstr "允许传统的 802.11b 速率"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:935
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1005
 msgid "Allow listed only"
 msgstr "仅允许列表内"
 
@@ -536,7 +535,7 @@ msgid ""
 "Allow upstream responses in the 127.0.0.0/8 range, e.g. for RBL services"
 msgstr "允许 127.0.0.0/8 回环范围内的上行响应，例如：RBL 服务"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:124
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:125
 msgid "Allowed IPs"
 msgstr "允许的 IP"
 
@@ -544,71 +543,71 @@ msgstr "允许的 IP"
 msgid "Always announce default router"
 msgstr "总是通告默认路由"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:827
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:897
 msgid ""
 "Always use 40MHz channels even if the secondary channel overlaps. Using this "
 "option does not comply with IEEE 802.11n-2009!"
 msgstr ""
 "即使辅助信道重叠，也始终使用 40MHz 信道。使用此选项不符合 IEEE 802.11n-2009！"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:871
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:885
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:19
 msgid "Annex"
 msgstr "Annex"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:872
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:886
 msgid "Annex A + L + M (all)"
 msgstr "Annex A + L + M（全部）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:880
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:894
 msgid "Annex A G.992.1"
 msgstr "Annex A G.992.1"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:881
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:895
 msgid "Annex A G.992.2"
 msgstr "Annex A G.992.2"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:882
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:896
 msgid "Annex A G.992.3"
 msgstr "Annex A G.992.3"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:883
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:897
 msgid "Annex A G.992.5"
 msgstr "Annex A G.992.5"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:873
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:887
 msgid "Annex B (all)"
 msgstr "Annex B（全部）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:876
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:890
 msgid "Annex B G.992.1"
 msgstr "Annex B G.992.1"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:877
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:891
 msgid "Annex B G.992.3"
 msgstr "Annex B G.992.3"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:878
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:892
 msgid "Annex B G.992.5"
 msgstr "Annex B G.992.5"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:874
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:888
 msgid "Annex J (all)"
 msgstr "Annex J（全部）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:884
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:898
 msgid "Annex L G.992.3 POTS 1"
 msgstr "Annex L G.992.3 POTS 1"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:875
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:889
 msgid "Annex M (all)"
 msgstr "Annex M（全部）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:885
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:899
 msgid "Annex M G.992.3"
 msgstr "Annex M G.992.3"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:886
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:900
 msgid "Annex M G.992.5"
 msgstr "Annex M G.992.5"
 
@@ -624,7 +623,7 @@ msgstr "通告的 DNS 域名"
 msgid "Announced DNS servers"
 msgstr "通告的 DNS 服务器"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1619
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1578
 msgid "Anonymous Identity"
 msgstr "匿名身份"
 
@@ -647,16 +646,16 @@ msgstr "任意区域"
 msgid "Apply backup?"
 msgstr "应用备份？"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2797
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4105
 msgid "Apply request failed with status <code>%h</code>"
 msgstr "应用请求失败，状态 <code>%h</code>"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:2984
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2684
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:2058
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3971
 msgid "Apply unchecked"
 msgstr "强制应用"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2756
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4044
 msgid "Applying configuration changes… %ds"
 msgstr "正在等待配置被应用… %ds"
 
@@ -676,8 +675,8 @@ msgid ""
 "Assign prefix parts using this hexadecimal subprefix ID for this interface."
 msgstr "将此十六进制子 ID 前缀分配给此接口。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2158
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:217
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2060
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:231
 msgid "Associated Stations"
 msgstr "已连接站点"
 
@@ -694,7 +693,7 @@ msgstr "尝试为连接的设备启用已配置的挂载点"
 msgid "Auth Group"
 msgstr "认证组"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1505
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1517
 msgid "Authentication"
 msgstr "身份验证"
 
@@ -715,7 +714,8 @@ msgstr "需要授权"
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:52
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:196
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:197
-#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:205
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:208
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:209
 #: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:241
 #: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:244
 msgid "Auto Refresh"
@@ -776,11 +776,11 @@ msgstr "可用"
 msgid "Average:"
 msgstr "平均："
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:892
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:906
 msgid "B43 + B43C"
 msgstr "B43 + B43C"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:893
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:907
 msgid "B43 + B43C + V43"
 msgstr "B43 + B43C + V43"
 
@@ -788,9 +788,9 @@ msgstr "B43 + B43C + V43"
 msgid "BR / DMR / AFTR"
 msgstr "BR / DMR / AFTR"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:119
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:141
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1745
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:153
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:177
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1647
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:34
 msgid "BSSID"
 msgstr "BSSID"
@@ -818,11 +818,11 @@ msgid "Backup file list"
 msgstr "文件备份列表"
 
 #: modules/luci-compat/luasrc/view/cbi/wireless_modefreq.htm:158
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:381
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:445
 msgid "Band"
 msgstr "带宽"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:830
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:900
 msgid "Beacon Interval"
 msgstr "Beacon 间隔"
 
@@ -850,8 +850,8 @@ msgstr "绑定接口"
 msgid "Bind the tunnel to this interface (optional)."
 msgstr "将隧道绑定到此接口（可选）。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:90
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:147
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:124
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:183
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:53
 msgid "Bitrate"
 msgstr "传输速率"
@@ -860,7 +860,7 @@ msgstr "传输速率"
 msgid "Bogus NX Domain Override"
 msgstr "忽略虚假空域名解析"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2814
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2841
 #: modules/luci-compat/luasrc/model/network.lua:1421
 msgid "Bridge"
 msgstr "桥接"
@@ -870,7 +870,7 @@ msgstr "桥接"
 msgid "Bridge interfaces"
 msgstr "桥接接口"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:959
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:973
 msgid "Bridge unit number"
 msgstr "桥接号"
 
@@ -878,8 +878,8 @@ msgstr "桥接号"
 msgid "Bring up on boot"
 msgstr "开机自动运行"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1817
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2409
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2744
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3615
 msgid "Browse…"
 msgstr "浏览…"
 
@@ -910,13 +910,13 @@ msgstr "已缓存"
 msgid "Call failed"
 msgstr "调用失败"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1909
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2418
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2837
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3624
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:14
 #: modules/luci-compat/luasrc/view/cbi/simpleform.htm:52
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:182
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:758
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2032
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1934
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:124
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:268
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:180
@@ -927,24 +927,24 @@ msgstr "取消"
 msgid "Category"
 msgstr "分类"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1474
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1501
 msgid "Certificate constraint (Domain)"
 msgstr "证书约束（域）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1468
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1498
 msgid "Certificate constraint (SAN)"
 msgstr "证书约束 （SAN）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1462
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1495
 msgid "Certificate constraint (Subject)"
 msgstr "证书约束（主题）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1480
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1504
 msgid "Certificate constraint (Wildcard)"
 msgstr "证书约束（通配符）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1462
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1558
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1495
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1553
 msgid ""
 "Certificate constraint substring - e.g. /CN=wifi.mycompany.com<br />See "
 "`logread -f` during handshake for actual values"
@@ -952,22 +952,22 @@ msgstr ""
 "证书约束子字符串 - 例如 /CN_wifi.myCompany.com<br />请参阅握手期间“logread -"
 "f”的实际值"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1474
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1570
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1501
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1559
 msgid ""
 "Certificate constraint(s) against DNS SAN values (if available)<br />or "
 "Subject CN (exact match)"
 msgstr "针对 DNS SAN 值（如果可用）的证书约束<br />或主题 CN（严格匹配）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1480
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1576
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1504
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1562
 msgid ""
 "Certificate constraint(s) against DNS SAN values (if available)<br />or "
 "Subject CN (suffix match)"
 msgstr "针对 DNS SAN 值（如果可用）的证书约束<br />或主题 CN（后缀匹配）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1468
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1564
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1498
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1556
 msgid ""
 "Certificate constraint(s) via Subject Alternate Name values<br />(supported "
 "attributes: EMAIL, DNS, URI) - e.g. DNS:wifi.mycompany.com"
@@ -981,11 +981,11 @@ msgstr ""
 msgid "Chain"
 msgstr "链"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2572
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3857
 msgid "Changes"
 msgstr "更改数"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2820
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4140
 msgid "Changes have been reverted."
 msgstr "更改已恢复。"
 
@@ -994,10 +994,10 @@ msgid "Changes the administrator password for accessing the device"
 msgstr "更改访问设备的管理员密码"
 
 #: modules/luci-compat/luasrc/view/cbi/wireless_modefreq.htm:162
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:89
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:143
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:389
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1743
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:123
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:179
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:453
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1645
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:52
 msgid "Channel"
 msgstr "信道"
@@ -1006,7 +1006,7 @@ msgstr "信道"
 msgid "Check filesystems before mount"
 msgstr "在挂载前检查文件系统"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1994
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1896
 msgid "Check this option to delete the existing networks from this radio."
 msgstr "选中此选项以从无线中删除现有网络。"
 
@@ -1024,7 +1024,7 @@ msgid "Choose mtdblock"
 msgstr "选择 mtdblock"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:486
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2022
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1924
 msgid ""
 "Choose the firewall zone you want to assign to this interface. Select "
 "<em>unspecified</em> to remove the interface from the associated zone or "
@@ -1034,13 +1034,13 @@ msgstr ""
 "为此接口分配所属的防火墙区域，选择<em>未指定</em>可将该接口移出已关联的区域，"
 "或者填写<em>创建</em>栏来创建一个新的区域，并将当前接口与之建立关联。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:879
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:949
 msgid ""
 "Choose the network(s) you want to attach to this wireless interface or fill "
 "out the <em>create</em> field to define a new network."
 msgstr "选择指派到此无线接口的网络，或者填写<em>创建</em>栏来新建网络。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1068
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1138
 msgid "Cipher"
 msgstr "算法"
 
@@ -1062,9 +1062,9 @@ msgstr ""
 "单击“保存 mtdblock”以下载指定的 mtdblock 文件。（注意：此功能适用于专业人"
 "士！）"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3602
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:848
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:953
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3629
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:918
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1023
 msgid "Client"
 msgstr "客户端 Client"
 
@@ -1095,7 +1095,7 @@ msgstr "关闭列表…"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:39
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:58
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2156
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2058
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:386
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:315
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:318
@@ -1107,7 +1107,7 @@ msgstr "正在收集数据…"
 msgid "Command"
 msgstr "命令"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:393
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:395
 msgid "Command OK"
 msgstr "命令成功"
 
@@ -1119,7 +1119,7 @@ msgstr "执行命令失败"
 msgid "Comment"
 msgstr "备注"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1705
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1616
 msgid ""
 "Complicates key reinstallation attacks on the client side by disabling "
 "retransmission of EAPOL-Key frames that are used to install keys. This "
@@ -1130,16 +1130,16 @@ msgstr ""
 "杂度。此解决方法可能会导致互操作性问题，并降低密钥协商的可靠性，特别是在流量"
 "负载较重的环境中。"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2572
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3857
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:416
 msgid "Configuration"
 msgstr "配置"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2731
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4019
 msgid "Configuration changes applied."
 msgstr "配置已应用。"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2670
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3957
 msgid "Configuration changes have been rolled back!"
 msgstr "配置已回滚！"
 
@@ -1161,12 +1161,12 @@ msgstr "确认密码"
 msgid "Connected"
 msgstr "已连接"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:7
+#: modules/luci-base/htdocs/luci-static/resources/network.js:9
 #: modules/luci-compat/luasrc/model/network.lua:27
 msgid "Connection attempt failed"
 msgstr "尝试连接失败"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:403
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:405
 msgid "Connection lost"
 msgstr "失去连接"
 
@@ -1180,13 +1180,13 @@ msgstr "连接"
 msgid "Contents have been saved."
 msgstr "内容已保存。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:662
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:732
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:128
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:260
 msgid "Continue"
 msgstr "继续"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2706
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3993
 msgid ""
 "Could not regain access to the device after applying the configuration "
 "changes. You might need to reconnect if you modified network related "
@@ -1195,20 +1195,20 @@ msgstr ""
 "应用配置更改后，无法重新获得对设备的访问权限。如果您更改了网络相关设置如 IP "
 "地址或无线安全证书，则可能需要重新连接。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:148
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:184
 msgid "Country"
 msgstr "国家"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:809
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:879
 msgid "Country Code"
 msgstr "国家代码"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:486
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2022
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1924
 msgid "Create / Assign firewall-zone"
 msgstr "创建/分配防火墙区域"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:782
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:793
 msgid "Create interface"
 msgstr "创建接口"
 
@@ -1225,7 +1225,7 @@ msgstr "致命错误"
 msgid "Cron Log Level"
 msgstr "Cron 日志级别"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:460
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:524
 msgid "Current power"
 msgstr "当前功率"
 
@@ -1255,15 +1255,15 @@ msgid ""
 "\">LED</abbr>s if possible."
 msgstr "自定义此设备的 <abbr title=\"Light Emitting Diode\">LED</abbr> 行为。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1268
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1335
 msgid "DAE-Client"
 msgstr "DAE 客户端"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1276
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1340
 msgid "DAE-Port"
 msgstr "DAE 端口"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1284
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1345
 msgid "DAE-Secret"
 msgstr "DAE 加密"
 
@@ -1276,7 +1276,7 @@ msgstr "DHCP 服务器"
 msgid "DHCP and DNS"
 msgstr "DHCP/DNS"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1956
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1964
 #: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:16
 #: modules/luci-compat/luasrc/model/network.lua:969
 msgid "DHCP client"
@@ -1331,7 +1331,7 @@ msgstr "DPD 空闲超时"
 msgid "DS-Lite AFTR address"
 msgstr "DS-Lite AFTR 地址"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:868
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:882
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:44
 msgid "DSL"
 msgstr "DSL"
@@ -1340,11 +1340,11 @@ msgstr "DSL"
 msgid "DSL Status"
 msgstr "DSL 状态"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:901
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:915
 msgid "DSL line mode"
 msgstr "DSL 线路模式"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1008
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1078
 msgid "DTIM Interval"
 msgstr "DTIM 间隔"
 
@@ -1362,9 +1362,9 @@ msgstr "数据速率"
 msgid "Debug"
 msgstr "调试"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1228
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1252
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1276
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1310
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1325
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1340
 msgid "Default %d"
 msgstr "默认 %d"
 
@@ -1400,11 +1400,11 @@ msgstr ""
 "设置 DHCP 的附加选项，例如设定 \"<code>6,192.168.2.1,192.168.2.2</code>\" 表"
 "示通告不同的 DNS 服务器给客户端。"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:995
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1244
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1247
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1559
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1878
+#: modules/luci-base/htdocs/luci-static/resources/form.js:997
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1246
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1249
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1561
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2806
 #: modules/luci-compat/luasrc/view/cbi/nsection.htm:11
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:162
 #: modules/luci-compat/luasrc/view/cbi/tsection.htm:16
@@ -1416,24 +1416,24 @@ msgstr "删除"
 msgid "Delete key"
 msgstr "删除密钥"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1777
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2703
 msgid "Delete request failed: %s"
 msgstr "删除请求失败：%s"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:767
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:837
 msgid "Delete this network"
 msgstr "删除此网络"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1008
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1078
 msgid "Delivery Traffic Indication Message Interval"
 msgstr "发送流量指示消息间隔"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:337
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:110
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:111
 msgid "Description"
 msgstr "描述"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1874
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2802
 msgid "Deselect"
 msgstr "取消"
 
@@ -1465,20 +1465,20 @@ msgstr "目标区域"
 msgid "Device"
 msgstr "设备"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:781
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:851
 msgid "Device Configuration"
 msgstr "设备配置"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:93
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:127
 msgid "Device is not active"
 msgstr "设备未激活"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:180
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:526
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:219
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:590
 msgid "Device is restarting…"
 msgstr "设备正在重启…"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2705
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3992
 msgid "Device unreachable!"
 msgstr "无法连接到设备！"
 
@@ -1495,12 +1495,12 @@ msgstr "网络诊断"
 msgid "Dial number"
 msgstr "拨号号码"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1678
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2600
 msgid "Directory"
 msgstr "目录"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:759
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:799
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:829
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:869
 msgid "Disable"
 msgstr "禁用"
 
@@ -1521,15 +1521,15 @@ msgstr "禁用 DNS 查找"
 msgid "Disable Encryption"
 msgstr "禁用加密"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1018
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1088
 msgid "Disable Inactivity Polling"
 msgstr "禁用不活动轮询"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:757
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:827
 msgid "Disable this network"
 msgstr "禁用此网络"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1657
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1590
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:62
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:107
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:99
@@ -1541,7 +1541,7 @@ msgstr "禁用此网络"
 msgid "Disabled"
 msgstr "已禁用"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1032
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1102
 msgid "Disassociate On Low Acknowledgement"
 msgstr "在低 Ack 应答时断开连接"
 
@@ -1550,10 +1550,8 @@ msgid "Discard upstream RFC1918 responses"
 msgstr "丢弃 RFC1918 上行响应数据"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:192
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:573
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:585
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:198
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:203
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:655
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:217
 msgid "Disconnect"
 msgstr "断开连接"
 
@@ -1562,20 +1560,20 @@ msgstr "断开连接"
 msgid "Disconnection attempt failed"
 msgstr "尝试断开连接失败"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1406
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2117
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2589
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2676
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1768
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1408
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3129
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3874
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3963
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1670
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:326
 msgid "Dismiss"
 msgstr "取消"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:815
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:885
 msgid "Distance Optimization"
 msgstr "距离优化"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:815
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:885
 msgid "Distance to farthest network member in meters."
 msgstr "最远网络用户的距离（米）。"
 
@@ -1602,7 +1600,7 @@ msgstr "不转发公共域名服务器无法回应的请求"
 msgid "Do not forward reverse lookups for local networks"
 msgstr "不转发本地网络的反向查询"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1763
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2689
 msgid "Do you really want to delete \"%s\" ?"
 msgstr "您真的要删除“%s”吗？"
 
@@ -1614,7 +1612,7 @@ msgstr "您真的要删除以下 SSH 密钥吗？"
 msgid "Do you really want to erase all settings?"
 msgstr "您真的要清除所有设置吗？"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1761
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2687
 msgid "Do you really want to recursively delete the directory \"%s\" ?"
 msgstr "您真的要删除目录“%s”吗？"
 
@@ -1649,11 +1647,11 @@ msgstr "下载备份"
 msgid "Download mtdblock"
 msgstr "下载 mtdblock"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:906
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:920
 msgid "Downstream SNR offset"
 msgstr "下游 SNR 偏移"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1203
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1205
 msgid "Drag to reorder"
 msgstr "拖动以重排"
 
@@ -1693,17 +1691,17 @@ msgstr ""
 msgid "EA-bits length"
 msgstr "EA-位长"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1431
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1473
 msgid "EAP-Method"
 msgstr "EAP 类型"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1222
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1225
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1485
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1224
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1227
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1487
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:154
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:160
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:334
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:764
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:834
 msgid "Edit"
 msgstr "编辑"
 
@@ -1713,11 +1711,11 @@ msgid ""
 "reload the page."
 msgstr "编辑上方的原始配置数据来修复错误，点击“保存”按钮以重新载入此页面。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:762
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:832
 msgid "Edit this network"
 msgstr "编辑此网络"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:713
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:783
 msgid "Edit wireless network"
 msgstr "编辑无线网络"
 
@@ -1725,8 +1723,8 @@ msgstr "编辑无线网络"
 msgid "Emergency"
 msgstr "紧急"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:759
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:799
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:829
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:869
 msgid "Enable"
 msgstr "启用"
 
@@ -1784,11 +1782,11 @@ msgstr "启用 TFTP 服务器"
 msgid "Enable VLAN functionality"
 msgstr "启用 VLAN"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1718
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1620
 msgid "Enable WPS pushbutton, requires WPA(2)-PSK/WPA3-SAE"
 msgstr "启用 WPS 一键加密按钮，需要 WPA(2)-PSK/WPA3-SAE"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1705
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1616
 msgid "Enable key reinstallation (KRACK) countermeasures"
 msgstr "启用密钥重新安装（KRACK）对策"
 
@@ -1804,17 +1802,18 @@ msgstr "启用流入数据包镜像"
 msgid "Enable mirroring of outgoing packets"
 msgstr "启用流出数据包镜像"
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:877
+msgid ""
+"Enable packet steering across all CPUs. May help or hinder network speed."
+msgstr ""
+
 #: protocols/luci-proto-ipip/htdocs/luci-static/resources/protocol/ipip.js:67
 msgid "Enable the DF (Don't Fragment) flag of the encapsulating packets."
 msgstr "启用后报文的 DF（禁止分片）标志。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:757
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:827
 msgid "Enable this network"
 msgstr "启用此网络"
-
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:74
-msgid "Enable/Disable"
-msgstr "启用/禁用"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:241
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:350
@@ -1826,7 +1825,7 @@ msgstr "已启用"
 msgid "Enables IGMP snooping on this bridge"
 msgstr "在此桥接上启用 IGMP 窥探"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1355
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1413
 msgid ""
 "Enables fast roaming among access points that belong to the same Mobility "
 "Domain"
@@ -1840,24 +1839,24 @@ msgstr "在此桥接上启用生成树协议"
 msgid "Encapsulation limit"
 msgstr "封装限制"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:896
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:954
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:910
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:968
 msgid "Encapsulation mode"
 msgstr "封装模式"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:120
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:142
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1037
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1746
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:154
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:178
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1107
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1648
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:35
 msgid "Encryption"
 msgstr "加密"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:130
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:131
 msgid "Endpoint Host"
 msgstr "端点主机"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:134
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:135
 msgid "Endpoint Port"
 msgstr "端点端口"
 
@@ -1886,12 +1885,12 @@ msgstr "错误"
 msgid "Errored seconds (ES)"
 msgstr "错误秒数（ES）"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2826
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2853
 #: modules/luci-compat/luasrc/model/network.lua:1433
 msgid "Ethernet Adapter"
 msgstr "以太网适配器"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2817
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2844
 #: modules/luci-compat/luasrc/model/network.lua:1423
 msgid "Ethernet Switch"
 msgstr "以太网交换机"
@@ -1908,7 +1907,7 @@ msgstr "扩展 HOSTS 文件中的主机后缀"
 msgid "Expecting a hexadecimal assignment hint"
 msgstr "这里需要一个十六进制值"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:59
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:60
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:67
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:73
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:101
@@ -1932,11 +1931,11 @@ msgstr "租用地址的到期时间，最短 2 分钟（<code>2m</code>）。"
 msgid "External"
 msgstr "外部"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1422
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1464
 msgid "External R0 Key Holder List"
 msgstr "外部 <abbr title=\"R0 Key Holder\">R0KH</abbr> 列表"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1426
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1468
 msgid "External R1 Key Holder List"
 msgstr "外部 <abbr title=\"R1 Key Holder\">R1KH</abbr> 列表"
 
@@ -1956,15 +1955,15 @@ msgstr "外部系统日志服务器协议"
 msgid "Extra SSH command options"
 msgstr "额外的 SSH 命令选项"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1396
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1438
 msgid "FT over DS"
 msgstr "FT over DS"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1397
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1439
 msgid "FT over the Air"
 msgstr "FT over the Air"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1394
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1436
 msgid "FT protocol"
 msgstr "FT 协议"
 
@@ -1972,7 +1971,7 @@ msgstr "FT 协议"
 msgid "Failed to change the system password."
 msgstr "更改系统密码失败。"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2664
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3951
 msgid "Failed to confirm apply within %ds, waiting for rollback…"
 msgstr "在 %d 秒内确认应用失败，等待回滚…"
 
@@ -1980,15 +1979,15 @@ msgstr "在 %d 秒内确认应用失败，等待回滚…"
 msgid "Failed to execute \"/etc/init.d/%s %s\" action: %s"
 msgstr "执行“/etc/init.d/%s %s”失败：%s"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1685
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2607
 msgid "File"
 msgstr "文件"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1638
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2558
 msgid "File not accessible"
 msgstr "文件无法访问"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1818
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2745
 msgid "Filename"
 msgstr "文件名"
 
@@ -2020,7 +2019,7 @@ msgid ""
 "with defaults based on what was detected"
 msgstr "查找当前系统上的所有分区和 swap 设备，并根据查找结果生成并替换现有配置"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:740
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:810
 msgid "Find and join network"
 msgstr "搜索并加入网络"
 
@@ -2032,7 +2031,7 @@ msgstr "完成"
 msgid "Firewall"
 msgstr "防火墙"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:78
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:79
 msgid "Firewall Mark"
 msgstr "防火墙标识"
 
@@ -2044,7 +2043,7 @@ msgstr "防火墙设置"
 msgid "Firewall Status"
 msgstr "防火墙状态"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:913
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:927
 msgid "Firmware File"
 msgstr "固件文件"
 
@@ -2082,11 +2081,11 @@ msgstr "正在刷写..."
 msgid "Force"
 msgstr "强制"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:827
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:897
 msgid "Force 40MHz mode"
 msgstr "强制 40MHz 模式"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1076
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1148
 msgid "Force CCMP (AES)"
 msgstr "强制 CCMP（AES）"
 
@@ -2094,15 +2093,15 @@ msgstr "强制 CCMP（AES）"
 msgid "Force DHCP on this network even if another server is detected."
 msgstr "即使检测到另一台服务器，也要强制使用此网络上的 DHCP。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1077
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1149
 msgid "Force TKIP"
 msgstr "强制 TKIP"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1078
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1150
 msgid "Force TKIP and CCMP (AES)"
 msgstr "强制 TKIP 和 CCMP（AES）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:848
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:859
 msgid "Force link"
 msgstr "强制链路"
 
@@ -2130,19 +2129,19 @@ msgstr "前向纠错秒数（FECS）"
 msgid "Forward broadcast traffic"
 msgstr "转发广播数据包"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:854
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:924
 msgid "Forward mesh peer traffic"
 msgstr "转发 mesh 节点数据包"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:961
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:975
 msgid "Forwarding mode"
 msgstr "转发模式"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:819
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:889
 msgid "Fragmentation Threshold"
 msgstr "分片阈值"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:91
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:92
 msgid ""
 "Further information about WireGuard interfaces and peers at <a href='http://"
 "wireguard.com'>wireguard.com</a>."
@@ -2150,8 +2149,8 @@ msgstr ""
 "关于 WireGuard 接口和对等点的更多信息请访问 <a href='http://wireguard."
 "com'>wireguard.com</a>。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:89
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:143
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:123
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:179
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:52
 msgid "GHz"
 msgstr "GHz"
@@ -2169,7 +2168,7 @@ msgstr "网关"
 msgid "Gateway Ports"
 msgstr "网关端口"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:9
+#: modules/luci-base/htdocs/luci-static/resources/network.js:11
 #: modules/luci-compat/luasrc/model/network.lua:29
 msgid "Gateway address is invalid"
 msgstr "网关地址无效"
@@ -2187,9 +2186,9 @@ msgid "General Settings"
 msgstr "常规设置"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:547
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:948
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:785
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:841
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:962
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:855
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:911
 msgid "General Setup"
 msgstr "基本设置"
 
@@ -2197,7 +2196,7 @@ msgstr "基本设置"
 msgid "Generate Config"
 msgstr "生成配置"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1400
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1442
 msgid "Generate PMK locally"
 msgstr "本地生成 PMK"
 
@@ -2213,19 +2212,20 @@ msgstr "由于密码验证不匹配，密码没有更改！"
 msgid "Global Settings"
 msgstr "全局设置"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:859
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:870
 msgid "Global network options"
 msgstr "全局网络选项"
 
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:65
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:215
-#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:234
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:230
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:236
 #: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:284
 msgid "Go to password configuration..."
 msgstr "跳转到密码配置页…"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1146
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1652
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1148
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1663
 #: modules/luci-compat/luasrc/view/cbi/full_valueheader.htm:4
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:58
 msgid "Go to relevant configuration page"
@@ -2261,7 +2261,7 @@ msgid ""
 "the timezone."
 msgstr "此处配置设备的基础信息，如主机名称或时区。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:986
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1056
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "隐藏 <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 
@@ -2271,7 +2271,7 @@ msgid "Hide empty chains"
 msgstr "隐藏空链"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:52
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2150
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2052
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:55
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:126
 msgid "Host"
@@ -2319,7 +2319,7 @@ msgstr "混合"
 msgid "IKE DH Group"
 msgstr "IKE DH 组"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:59
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:60
 msgid "IP Addresses"
 msgstr "IP 地址"
 
@@ -2335,12 +2335,12 @@ msgstr "IP 类型"
 msgid "IP address"
 msgstr "IP 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:8
+#: modules/luci-base/htdocs/luci-static/resources/network.js:10
 #: modules/luci-compat/luasrc/model/network.lua:28
 msgid "IP address is invalid"
 msgstr "IP 地址无效"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:11
+#: modules/luci-base/htdocs/luci-static/resources/network.js:13
 #: modules/luci-compat/luasrc/model/network.lua:31
 msgid "IP address is missing"
 msgstr "IP 地址缺失"
@@ -2384,7 +2384,7 @@ msgstr "IPv4 网关"
 msgid "IPv4 netmask"
 msgstr "IPv4 子网掩码"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:286
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:287
 msgid "IPv4 network in address/netmask notation"
 msgstr "地址/网络掩码表示法中的 IPv4 网络"
 
@@ -2407,11 +2407,11 @@ msgstr "IPv4+IPv6"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:34
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:29
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:155
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:153
 msgid "IPv4-Address"
 msgstr "IPv4 地址"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:165
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:163
 msgid "IPv4-Gateway"
 msgstr "IPv4 网关"
 
@@ -2444,7 +2444,7 @@ msgstr "IPv6"
 msgid "IPv6 Firewall"
 msgstr "IPv6 防火墙"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:204
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:202
 msgid "IPv6 Neighbours"
 msgstr "IPv6 网上邻居"
 
@@ -2452,7 +2452,7 @@ msgstr "IPv6 网上邻居"
 msgid "IPv6 Settings"
 msgstr "IPv6 设置"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:863
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:874
 msgid "IPv6 ULA-Prefix"
 msgstr "IPv6 ULA 前缀"
 
@@ -2478,7 +2478,7 @@ msgstr "IPv6 分配长度"
 msgid "IPv6 gateway"
 msgstr "IPv6 网关"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:291
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:292
 msgid "IPv6 network in address/netmask notation"
 msgstr "地址/网络掩码表示法中的 IPv6 网络"
 
@@ -2507,7 +2507,7 @@ msgstr "IPv6 后缀"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:53
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:56
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:173
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:171
 msgid "IPv6-Address"
 msgstr "IPv6 地址"
 
@@ -2530,7 +2530,7 @@ msgstr "IPv6-over-IPv4 (6rd)"
 msgid "IPv6-over-IPv4 (6to4)"
 msgstr "IPv6-over-IPv4 (6to4)"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1601
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1575
 msgid "Identity"
 msgstr "鉴权"
 
@@ -2659,23 +2659,23 @@ msgstr "初始化失败"
 msgid "Initscript"
 msgstr "启动脚本"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:108
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:107
 msgid "Initscripts"
 msgstr "启动脚本"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1570
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1559
 msgid "Inner certificate constraint (Domain)"
 msgstr "内部证书约束（域）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1564
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1556
 msgid "Inner certificate constraint (SAN)"
 msgstr "内部证书约束 （SAN）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1558
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1553
 msgid "Inner certificate constraint (Subject)"
 msgstr "内部证书约束（主题）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1576
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1562
 msgid "Inner certificate constraint (Wildcard)"
 msgstr "内部证书约束（通配符）"
 
@@ -2683,20 +2683,19 @@ msgstr "内部证书约束（通配符）"
 msgid "Install protocol extensions..."
 msgstr "安装扩展协议…"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2018
-#, fuzzy
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1920
 msgid ""
 "Instead of joining any network with a matching SSID, only connect to the "
 "BSSID <code>%h</code>."
-msgstr "仅连接到 BSSID 是 <code>%h</code> 的网络，而不是其它 SSID 相同的网格。"
+msgstr "仅连接到 BSSID 为 <code>%h</code> 的网络，而不是其它 SSID 相同的网络。"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:459
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:466
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:730
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:734
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:26
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:157
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:175
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:155
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:173
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:16
 msgid "Interface"
 msgstr "接口"
@@ -2705,18 +2704,18 @@ msgstr "接口"
 msgid "Interface %q device auto-migrated from %q to %q."
 msgstr "接口设备 %q 从 %q 自动迁移到了 %q。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:837
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:907
 msgid "Interface Configuration"
 msgstr "接口配置"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:105
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:112
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:146
 msgid "Interface has %d pending changes"
 msgstr "接口有 %d 个未应用的更改"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:65
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:87
 msgid "Interface is disabled"
-msgstr ""
+msgstr "接口已禁用"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:59
 msgid "Interface is marked for deletion"
@@ -2740,7 +2739,7 @@ msgstr "正在启动接口…"
 msgid "Interface is stopping..."
 msgstr "正在停止接口…"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:999
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1069
 msgid "Interface name"
 msgstr "接口名称"
 
@@ -2768,7 +2767,7 @@ msgstr "内部服务器错误"
 msgid "Invalid"
 msgstr "无效"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:10
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:11
 msgid "Invalid Base64 key string"
 msgstr "无效的 Base64 密钥"
 
@@ -2780,15 +2779,15 @@ msgstr "无效的 VLAN ID！只有 %d 和 %d 之间的 ID 有效。"
 msgid "Invalid VLAN ID given! Only unique IDs are allowed"
 msgstr "无效的 VLAN ID！只允许唯一的 ID"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:395
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:397
 msgid "Invalid argument"
 msgstr "无效参数"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:394
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:396
 msgid "Invalid command"
 msgstr "无效命令"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:82
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:83
 msgid "Invalid hexadecimal value"
 msgstr "无效 16 进制值"
 
@@ -2796,7 +2795,7 @@ msgstr "无效 16 进制值"
 msgid "Invalid username and/or password! Please try again."
 msgstr "无效的用户名和/或密码！请重试。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:995
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1065
 msgid "Isolate Clients"
 msgstr "隔离客户端"
 
@@ -2808,20 +2807,20 @@ msgstr "您尝试刷写的固件与本路由器不兼容，请重新验证固件
 
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:72
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:222
-#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:224
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:226
 #: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:291
 msgid "JavaScript required!"
 msgstr "需要 JavaScript！"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1826
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1728
 msgid "Join Network"
 msgstr "加入网络"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1760
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1662
 msgid "Join Network: Wireless Scan"
 msgstr "加入网络：搜索无线"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2026
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1928
 msgid "Joining Network: %q"
 msgstr "加入网络：%q"
 
@@ -2838,15 +2837,15 @@ msgstr "内核日志"
 msgid "Kernel Version"
 msgstr "内核版本"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1293
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1351
 msgid "Key"
 msgstr "密码"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1321
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1322
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1323
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1324
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1336
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1379
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1380
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1381
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1382
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1394
 msgid "Key #%d"
 msgstr "密码 #%d"
 
@@ -2885,7 +2884,7 @@ msgstr "LCP 响应间隔"
 msgid "LED Configuration"
 msgstr "LED 配置"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:955
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:969
 msgid "LLC"
 msgstr "LLC"
 
@@ -2939,7 +2938,7 @@ msgstr "留空则自动探测"
 msgid "Leave empty to use the current WAN address"
 msgstr "留空则使用当前 WAN 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2574
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3859
 msgid "Legend:"
 msgstr "图例："
 
@@ -2982,7 +2981,7 @@ msgid ""
 msgstr ""
 "将请求转发到的 <abbr title=\"Domain Name System\">DNS</abbr> 服务器列表"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1422
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1464
 msgid ""
 "List of R0KHs in the same Mobility Domain. <br />Format: MAC-address,NAS-"
 "Identifier,128-bit key as hex string. <br />This list is used to map R0KH-ID "
@@ -2994,7 +2993,7 @@ msgstr ""
 "进制字符串）。<br />在从初始移动域关联期间使用的 R0KH 中请求 PMK-R1 密钥时，"
 "该列表用于将 R0KH-ID（NAS 标识符）映射到目标 MAC 地址。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1426
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1468
 msgid ""
 "List of R1KHs in the same Mobility Domain. <br />Format: MAC-address,R1KH-ID "
 "as 6 octets with colons,128-bit key as hex string. <br />This list is used "
@@ -3023,7 +3022,7 @@ msgstr "允许虚假空域名响应的服务器列表"
 msgid "Listen Interfaces"
 msgstr "监听接口"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:54
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:55
 msgid "Listen Port"
 msgstr "监听端口"
 
@@ -3044,17 +3043,17 @@ msgstr "负载"
 msgid "Load Average"
 msgstr "平均负载"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1941
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2872
 msgid "Loading directory contents…"
 msgstr "正在载入目录内容…"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:2767
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:1841
 #: modules/luci-base/luasrc/view/view.htm:4
 #: modules/luci-mod-status/luasrc/view/admin_status/index.htm:12
 msgid "Loading view…"
 msgstr "正在载入视图…"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:10
+#: modules/luci-base/htdocs/luci-static/resources/network.js:12
 #: modules/luci-compat/luasrc/model/network.lua:30
 msgid "Local IP address is invalid"
 msgstr "本地 IP 地址无效"
@@ -3080,7 +3079,7 @@ msgstr "本地 IPv6 地址"
 msgid "Local Service Only"
 msgstr "仅本地服务"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:112
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:111
 msgid "Local Startup"
 msgstr "本地启动脚本"
 
@@ -3117,8 +3116,7 @@ msgstr "如果有多个 IP 可用，则根据请求来源的子网来本地化�
 msgid "Localise queries"
 msgstr "本地化查询"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2018
-#, fuzzy
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1920
 msgid "Lock to BSSID"
 msgstr "锁定到 BSSID"
 
@@ -3156,24 +3154,24 @@ msgid "MAC"
 msgstr "MAC"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:35
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2149
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2051
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:55
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:30
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:125
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:156
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:174
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:154
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:172
 msgid "MAC-Address"
 msgstr "MAC 地址"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:931
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1001
 msgid "MAC-Address Filter"
 msgstr "MAC 地址过滤"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:843
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:913
 msgid "MAC-Filter"
 msgstr "MAC 过滤"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:938
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1008
 msgid "MAC-List"
 msgstr "MAC 列表"
 
@@ -3197,13 +3195,14 @@ msgstr "MBit/s"
 msgid "MD5"
 msgstr "MD5"
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:194
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:61
 msgid "MHz"
 msgstr "MHz"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:53
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:53
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:73
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:74
 msgid "MTU"
 msgstr "MTU"
 
@@ -3223,7 +3222,7 @@ msgstr "确保使用以下命令来复制根文件系统："
 msgid "Manual"
 msgstr "手动"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3601
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3628
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:637
 msgid "Master"
 msgstr "主"
@@ -3232,7 +3231,7 @@ msgstr "主"
 msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr "最大可达数据速率（ATTNDR）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1027
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1097
 msgid "Maximum allowed Listen Interval"
 msgstr "允许的最大监听间隔"
 
@@ -3258,12 +3257,13 @@ msgstr "调制解调器就绪的最大等待时间（秒）"
 msgid "Maximum number of leased addresses."
 msgstr "最大地址分配数量。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:806
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:876
 msgid "Maximum transmit power"
 msgstr "最大传输功率"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:90
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:147
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:124
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:183
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:194
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:53
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:61
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:324
@@ -3284,26 +3284,26 @@ msgstr "内存"
 msgid "Memory usage (%)"
 msgstr "内存使用率（%）"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3604
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3631
 msgid "Mesh"
 msgstr "Mesh"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:117
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:151
 msgid "Mesh ID"
 msgstr "Mesh ID"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:851
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:921
 msgid "Mesh Id"
 msgstr "Mesh ID"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:396
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:398
 msgid "Method not found"
 msgstr "方法未找到"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:45
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:166
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:184
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:68
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:164
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:182
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:69
 msgid "Metric"
 msgstr "跃点数"
 
@@ -3319,16 +3319,16 @@ msgstr "数据包镜像源端口"
 msgid "Mobile Data"
 msgstr "移动数据"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1382
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1424
 msgid "Mobility Domain"
 msgstr "移动域"
 
 #: modules/luci-compat/luasrc/view/cbi/wireless_modefreq.htm:154
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:118
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:139
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:373
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:846
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1744
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:152
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:175
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:437
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:916
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1646
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:33
 msgid "Mode"
 msgstr "模式"
@@ -3364,8 +3364,8 @@ msgstr "调制解调器初始化超时"
 msgid "ModemManager"
 msgstr "调制解调器管理器"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3605
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:925
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3632
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:995
 msgid "Monitor"
 msgstr "监听"
 
@@ -3373,7 +3373,7 @@ msgstr "监听"
 msgid "More Characters"
 msgstr "需要更多字符"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1089
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1091
 msgid "More…"
 msgstr "更多…"
 
@@ -3433,7 +3433,7 @@ msgstr "下移"
 msgid "Move up"
 msgstr "上移"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1374
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1419
 msgid "NAS ID"
 msgstr "NAS ID"
 
@@ -3462,30 +3462,31 @@ msgstr "NT 域"
 msgid "NTP server candidates"
 msgstr "候选 NTP 服务器"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1126
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2395
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1128
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3601
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:27
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:705
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:66
 msgid "Name"
 msgstr "名称"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1996
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1898
 msgid "Name of the new network"
 msgstr "新网络的名称"
 
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:205
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:199
 msgid "Navigation"
 msgstr "导航"
 
 #: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:54
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:879
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2148
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:949
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2050
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:378
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:62
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:124
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:163
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:181
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:161
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:179
 msgid "Network"
 msgstr "网络"
 
@@ -3497,10 +3498,14 @@ msgstr "网络工具"
 msgid "Network boot image"
 msgstr "网络启动镜像"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:13
+#: modules/luci-base/htdocs/luci-static/resources/network.js:15
 #: modules/luci-compat/luasrc/model/network.lua:33
 msgid "Network device is not present"
 msgstr "网络设备不存在"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:772
+msgid "New interface for \"%s\" can not be created: %s"
+msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:708
 msgid "New interface name…"
@@ -3510,7 +3515,7 @@ msgstr "新接口名称…"
 msgid "Next »"
 msgstr "前进 »"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1789
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1800
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:108
 msgid "No"
 msgstr "否"
@@ -3519,11 +3524,11 @@ msgstr "否"
 msgid "No DHCP Server configured for this interface"
 msgstr "本接口未配置 DHCP 服务器"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1207
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1292
 msgid "No Encryption"
 msgstr "无加密"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:63
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:64
 msgid "No Host Routes"
 msgstr "无主机路由"
 
@@ -3531,11 +3536,19 @@ msgstr "无主机路由"
 msgid "No NAT-T"
 msgstr "无 NAT-T"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:398
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:74
+msgid "No RX signal"
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:64
+msgid "No client associated"
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:400
 msgid "No data received"
 msgstr "没有接收到数据"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1884
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2812
 msgid "No entries in this directory"
 msgstr "此目录中没有内容"
 
@@ -3543,9 +3556,9 @@ msgstr "此目录中没有内容"
 msgid "No files found"
 msgstr "未找到文件"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:594
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:664
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:139
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:213
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:227
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:58
 msgid "No information available"
 msgstr "无可用信息"
@@ -3561,12 +3574,13 @@ msgstr "禁用无效信息缓存"
 
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:62
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:212
-#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:231
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:227
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:233
 #: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:279
 msgid "No password set!"
 msgstr "未设置密码！"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:106
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:107
 msgid "No peers defined yet"
 msgstr "尚未定义对等点"
 
@@ -3579,17 +3593,14 @@ msgstr "当前还没有公钥。"
 msgid "No rules in this chain."
 msgstr "本链没有规则。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:61
-msgid "No signal"
-msgstr "无信号"
-
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:147
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:809
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:820
 msgid "No zone assigned"
 msgstr "未指定区域"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:52
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:146
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:53
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:79
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:182
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:127
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:160
 msgid "Noise"
@@ -3611,8 +3622,8 @@ msgstr "非抢占 CRC 错误（CRC_P）"
 msgid "Non-wildcard"
 msgstr "非全部地址"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:120
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:142
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:154
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:178
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:94
 msgid "None"
 msgstr "无"
@@ -3624,6 +3635,10 @@ msgstr "正常"
 #: modules/luci-base/luasrc/view/error404.htm:8
 msgid "Not Found"
 msgstr "未找到"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:70
+msgid "Not associated"
+msgstr "未关联"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:31
 msgid "Not connected"
@@ -3641,7 +3656,7 @@ msgstr "不存在"
 msgid "Not started on boot"
 msgstr "开机时不启动"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:401
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:403
 msgid "Not supported"
 msgstr "不支持"
 
@@ -3704,7 +3719,7 @@ msgstr "通电时间"
 msgid "One of hostname or mac address must be specified!"
 msgstr "请指定主机名或MAC地址！"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:462
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:463
 msgid "One of the following: %s"
 msgstr "可选值：%s"
 
@@ -3732,24 +3747,24 @@ msgstr "打开列表…"
 msgid "OpenConnect (CISCO AnyConnect)"
 msgstr "OpenConnect (CISCO AnyConnect)"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:802
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:872
 msgid "Operating frequency"
 msgstr "工作频率"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2581
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3866
 msgid "Option changed"
 msgstr "选项已更改"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2583
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3868
 msgid "Option removed"
 msgstr "选项已移除"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1658
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:68
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1591
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:69
 msgid "Optional"
 msgstr "可选"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:78
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:79
 msgid ""
 "Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
 "starting with <code>0x</code>."
@@ -3767,40 +3782,39 @@ msgstr ""
 "权服务器获取到 IPv6 前缀（如“a:b:c:d::”），使用后缀（如 “::1”）合成 IPv6 地址"
 "（“a:b:c:d::1”）分配给此接口。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:119
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:120
 msgid ""
 "Optional. Base64-encoded preshared key. Adds in an additional layer of "
 "symmetric-key cryptography for post-quantum resistance."
 msgstr "可选，Base64 编码的预共享密钥。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:128
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:129
 msgid "Optional. Create routes for Allowed IPs for this peer."
 msgstr "可选，为此 Peer 创建允许 IP 的路由。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:110
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:111
 msgid "Optional. Description of peer."
 msgstr "可选，Peer 的描述。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:63
-#, fuzzy
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:64
 msgid "Optional. Do not create host routes to peers."
 msgstr "可选的。不要创建到对等方的主机路由。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:130
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:131
 msgid ""
 "Optional. Host of peer. Names are resolved prior to bringing up the "
 "interface."
 msgstr "可选，Peer 的主机。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:73
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:74
 msgid "Optional. Maximum Transmission Unit of tunnel interface."
 msgstr "可选，隧道接口的最大传输单元。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:134
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:135
 msgid "Optional. Port of peer."
 msgstr "可选，Peer 的端口。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:138
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:139
 msgid ""
 "Optional. Seconds between keep alive messages. Default is 0 (disabled). "
 "Recommended value if this device is behind a NAT is 25."
@@ -3808,7 +3822,7 @@ msgstr ""
 "可选，Keep-Alive 消息之间的秒数，默认为 0（禁用）。如果此设备位于 NAT 之后，"
 "建议使用的值为 25。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:54
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:55
 msgid "Optional. UDP port used for outgoing and incoming packets."
 msgstr "可选，用于传出和传入数据包的 UDP 端口。"
 
@@ -3868,7 +3882,7 @@ msgstr "重设 TOS"
 msgid "Override TTL"
 msgstr "重设 TTL"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:999
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1069
 msgid "Override default interface name"
 msgstr "重设默认接口名称"
 
@@ -3890,7 +3904,7 @@ msgstr "重设内部路由表"
 msgid "Overview"
 msgstr "概览"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1730
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2655
 msgid "Overwrite existing file \"%s\" ?"
 msgstr "覆盖已存在的文件“%s”吗？"
 
@@ -3941,12 +3955,12 @@ msgstr "PID"
 msgid "PIN"
 msgstr "PIN"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:19
+#: modules/luci-base/htdocs/luci-static/resources/network.js:21
 #: modules/luci-compat/luasrc/model/network.lua:39
 msgid "PIN code rejected"
 msgstr "PIN 码被拒绝"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1417
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1459
 msgid "PMK R1 Push"
 msgstr "R1 推送 PMK"
 
@@ -3987,21 +4001,25 @@ msgstr "PSID 偏移"
 msgid "PSID-bits length"
 msgstr "PSID-位长"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:899
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:913
 msgid "PTM/EFM (Packet Transfer Mode)"
 msgstr "PTM/EFM（分组传输模式）"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:877
+msgid "Packet Steering"
+msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:51
 msgid "Packets"
 msgstr "数据包"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:147
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:809
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:820
 msgid "Part of zone %q"
 msgstr "区域 %q"
 
 #: modules/luci-base/luasrc/view/sysauth.htm:29
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1637
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1581
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:47
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:107
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:58
@@ -4012,11 +4030,11 @@ msgstr "密码"
 msgid "Password authentication"
 msgstr "密码验证"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1498
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1513
 msgid "Password of Private Key"
 msgstr "私钥密码"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1594
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1571
 msgid "Password of inner Private Key"
 msgstr "内部私钥的密码"
 
@@ -4035,29 +4053,33 @@ msgstr "密码 2"
 msgid "Paste or drag SSH key file…"
 msgstr "粘贴或拖动 SSH 密钥文件……"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1456
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1492
 msgid "Path to CA-Certificate"
 msgstr "CA 证书路径"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1486
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1507
 msgid "Path to Client-Certificate"
 msgstr "客户端证书路径"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1492
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1510
 msgid "Path to Private Key"
 msgstr "私钥路径"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1552
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1550
 msgid "Path to inner CA-Certificate"
 msgstr "内部 CA 证书的路径"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1582
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1565
 msgid "Path to inner Client-Certificate"
 msgstr "内部客户端证书的路径"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1588
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1568
 msgid "Path to inner Private Key"
 msgstr "内部私钥的路径"
+
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:212
+msgid "Paused"
+msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:267
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:277
@@ -4077,12 +4099,12 @@ msgstr "峰值："
 msgid "Peer IP address to assign"
 msgstr "要分配的 Peer IP 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:12
+#: modules/luci-base/htdocs/luci-static/resources/network.js:14
 #: modules/luci-compat/luasrc/model/network.lua:32
 msgid "Peer address is missing"
 msgstr "Peer 地址缺失"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:91
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:92
 msgid "Peers"
 msgstr "Peers"
 
@@ -4098,11 +4120,11 @@ msgstr "执行重启"
 msgid "Perform reset"
 msgstr "执行重置"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:399
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:401
 msgid "Permission denied"
 msgstr "没有权限"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:138
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:139
 msgid "Persistent Keep Alive"
 msgstr "持续 Keep-Alive"
 
@@ -4133,7 +4155,7 @@ msgstr "数据包"
 msgid "Please enter your username and password."
 msgstr "请输入用户名和密码。"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2378
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3584
 msgid "Please select the file to upload."
 msgstr "请选择要上传的文件。"
 
@@ -4149,7 +4171,7 @@ msgstr "端口"
 msgid "Port status:"
 msgstr "端口状态："
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:488
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:489
 msgid "Potential negation of: %s"
 msgstr "可能存在的冲突: %s"
 
@@ -4173,7 +4195,7 @@ msgstr "首选 UMTS"
 msgid "Prefix Delegated"
 msgstr "分发前缀"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:119
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:120
 msgid "Preshared Key"
 msgstr "预共享密钥"
 
@@ -4192,11 +4214,11 @@ msgstr "在指定数量的 LCP 响应故障后假定链路已断开，0 为忽�
 msgid "Prevent listening on these interfaces."
 msgstr "不监听这些接口。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:995
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1065
 msgid "Prevents client-to-client communication"
 msgstr "禁止客户端间通信"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:49
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:50
 msgid "Private Key"
 msgstr "私钥"
 
@@ -4225,15 +4247,15 @@ msgstr "协议"
 msgid "Provide NTP server"
 msgstr "作为 NTP 服务器提供服务"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:745
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:815
 msgid "Provide new network"
 msgstr "添加新网络"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:924
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:994
 msgid "Pseudo Ad-Hoc (ahdemo)"
 msgstr "伪装 Ad-Hoc（ahdemo）"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:115
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:116
 msgid "Public Key"
 msgstr "公钥"
 
@@ -4267,11 +4289,11 @@ msgid ""
 msgstr ""
 "查询所有可用的上游 <abbr title=\"Domain Name System\">DNS</abbr> 服务器"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1405
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1447
 msgid "R0 Key Lifetime"
 msgstr "R0 密钥生存期"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1411
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1453
 msgid "R1 Key Holder"
 msgstr "R1 密钥持有者"
 
@@ -4279,11 +4301,11 @@ msgstr "R1 密钥持有者"
 msgid "RFC3947 NAT-T mode"
 msgstr "RFC3947 NAT-T 模式"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:859
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:929
 msgid "RSSI threshold for joining"
 msgstr "RSSI 加入阈值"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:823
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:893
 msgid "RTS/CTS Threshold"
 msgstr "RTS/CTS 阈值"
 
@@ -4296,31 +4318,31 @@ msgstr "接收"
 msgid "RX Rate"
 msgstr "接收速率"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2152
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2054
 msgid "RX Rate / TX Rate"
 msgstr "接收速率/发送速率"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1252
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1325
 msgid "Radius-Accounting-Port"
 msgstr "Radius 计费端口"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1260
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1330
 msgid "Radius-Accounting-Secret"
 msgstr "Radius 计费密钥"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1244
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1320
 msgid "Radius-Accounting-Server"
 msgstr "Radius 计费服务器"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1228
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1310
 msgid "Radius-Authentication-Port"
 msgstr "Radius 认证端口"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1236
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1315
 msgid "Radius-Authentication-Secret"
 msgstr "Radius 认证密钥"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1220
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1305
 msgid "Radius-Authentication-Server"
 msgstr "Radius 认证服务器"
 
@@ -4344,7 +4366,7 @@ msgstr "确定要切换协议？"
 msgid "Realtime Graphs"
 msgstr "实时信息"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1388
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1430
 msgid "Reassociation Deadline"
 msgstr "重关联截止时间"
 
@@ -4372,7 +4394,7 @@ msgstr "重启您设备上的系统"
 msgid "Receive"
 msgstr "接收"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:59
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:60
 msgid "Recommended. IP addresses of the WireGuard interface."
 msgstr "推荐，WireGuard 接口的 IP 地址。"
 
@@ -4383,6 +4405,10 @@ msgstr "重连此接口"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:54
 msgid "References"
 msgstr "引用"
+
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:211
+msgid "Refreshing"
+msgstr ""
 
 #: modules/luci-compat/luasrc/model/network/proto_relay.lua:153
 #: protocols/luci-proto-relay/htdocs/luci-static/resources/protocol/relay.js:39
@@ -4412,11 +4438,11 @@ msgstr "远程 IPv4 地址"
 msgid "Remote IPv4 address or FQDN"
 msgstr "远程 IPv4 地址或 FQDN"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:769
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:839
 msgid "Remove"
 msgstr "移除"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1994
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1896
 msgid "Replace wireless configuration"
 msgstr "重置无线配置"
 
@@ -4428,11 +4454,11 @@ msgstr "请求 IPv6 地址"
 msgid "Request IPv6-prefix of length"
 msgstr "请求指定长度的 IPv6 前缀"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:400
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:402
 msgid "Request timeout"
 msgstr "请求超时"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1659
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1592
 msgid "Required"
 msgstr "必须"
 
@@ -4440,15 +4466,15 @@ msgstr "必须"
 msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr "某些 ISP 需要，例如：同轴线网络 DOCSIS 3"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:49
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:50
 msgid "Required. Base64-encoded private key for this interface."
 msgstr "必须，此接口的 Base64 编码私钥。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:115
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:116
 msgid "Required. Base64-encoded public key of peer."
 msgstr "必须，Peer 的 Base64 编码公钥。"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:124
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:125
 msgid ""
 "Required. IP addresses and prefixes that this peer is allowed to use inside "
 "the tunnel. Usually the peer's tunnel IP addresses and the networks the peer "
@@ -4457,27 +4483,32 @@ msgstr ""
 "必须，允许该 Peer 在隧道中使用的 IP 地址和前缀，通常是该 Peer 的隧道 IP 地址"
 "和通过隧道的路由网络。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1140
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1141
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1142
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1221
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1222
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1223
 msgid "Requires hostapd"
 msgstr "需要 hostapd"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1145
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1146
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1228
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1229
+msgid "Requires hostapd with EAP Suite-B support"
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1226
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1227
 msgid "Requires hostapd with EAP support"
 msgstr "需要带 EAP 支持的 hostapd"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1147
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1230
 msgid "Requires hostapd with OWE support"
 msgstr "需要带 OWE 支持的 hostapd"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1143
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1144
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1224
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1225
 msgid "Requires hostapd with SAE support"
 msgstr "需要带 SAE 支持的 hostapd"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1656
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1589
 msgid ""
 "Requires the 'full' version of wpad/hostapd and support from the wifi driver "
 "<br />(as of Jan 2019: ath9k, ath10k, mwlwifi and mt76)"
@@ -4491,31 +4522,36 @@ msgid ""
 "come from unsigned domains"
 msgstr "需要上级支持 DNSSEC，验证未签名的响应确实是来自未签名的域名"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1152
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1153
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1154
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1164
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1165
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1166
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1235
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1236
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1237
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1249
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1250
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1251
 msgid "Requires wpa-supplicant"
 msgstr "需要 wpa-supplicant"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1157
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1158
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1242
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1243
+msgid "Requires wpa-supplicant with EAP Suite-B support"
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1240
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1241
 msgid "Requires wpa-supplicant with EAP support"
 msgstr "需要带 EAP 支持的 wpa-supplicant"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1159
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1244
 msgid "Requires wpa-supplicant with OWE support"
 msgstr "需要带 OWE 支持的 wpa-supplicant"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1155
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1156
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1169
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1238
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1239
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1254
 msgid "Requires wpa-supplicant with SAE support"
 msgstr "需要带 SAE 支持的 wpa-supplicant"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:3003
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:2077
 #: modules/luci-base/luasrc/view/sysauth.htm:39
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:17
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:30
@@ -4539,14 +4575,13 @@ msgstr "HOSTS 和解析文件"
 msgid "Resolve file"
 msgstr "解析文件"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:397
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:399
 msgid "Resource not found"
 msgstr "未找到资源"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:345
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:737
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:76
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:98
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:807
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:96
 msgid "Restart"
 msgstr "重启"
 
@@ -4554,7 +4589,7 @@ msgstr "重启"
 msgid "Restart Firewall"
 msgstr "重启防火墙"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:735
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:805
 msgid "Restart radio interface"
 msgstr "重启无线接口"
 
@@ -4566,24 +4601,24 @@ msgstr "恢复"
 msgid "Restore backup"
 msgstr "恢复配置"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:120
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:121
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:333
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:334
 msgid "Reveal/hide password"
 msgstr "显示/隐藏 密码"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2597
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3882
 msgid "Revert"
 msgstr "恢复"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2680
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3967
 msgid "Revert changes"
 msgstr "恢复更改"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2829
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4149
 msgid "Revert request failed with status <code>%h</code>"
 msgstr "恢复请求失败，状态 <code>%h</code>"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2809
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4129
 msgid "Reverting configuration…"
 msgstr "正在恢复配置…"
 
@@ -4595,7 +4630,7 @@ msgstr "TFTP 服务器的根目录"
 msgid "Root preparation"
 msgstr "根目录准备"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:128
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:129
 msgid "Route Allowed IPs"
 msgstr "路由允许的 IP"
 
@@ -4617,7 +4652,7 @@ msgid "Router Password"
 msgstr "主机密码"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:14
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:195
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:193
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:21
 msgid "Routes"
 msgstr "路由表"
@@ -4640,7 +4675,7 @@ msgstr "挂载设备前运行文件系统检查"
 msgid "Run filesystem check"
 msgstr "文件系统检查"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1356
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:2247
 msgid "Runtime error"
 msgstr "运行时错误"
 
@@ -4648,7 +4683,7 @@ msgstr "运行时错误"
 msgid "SHA256"
 msgstr "SHA256"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:53
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:54
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:161
 msgid "SNR"
 msgstr "SNR"
@@ -4675,9 +4710,9 @@ msgstr "SSH 用户名"
 msgid "SSH-Keys"
 msgstr "SSH 密钥"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:117
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:140
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1742
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:151
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:176
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1644
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:32
 msgid "SSID"
 msgstr "SSID"
@@ -4686,18 +4721,18 @@ msgstr "SSID"
 msgid "SWAP"
 msgstr "交换分区"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1410
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:2999
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1412
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:2073
 #: modules/luci-compat/luasrc/view/cbi/error.htm:17
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:26
 #: modules/luci-compat/luasrc/view/cbi/header.htm:17
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:424
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:119
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:118
 msgid "Save"
 msgstr "保存"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:2983
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2593
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:2057
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3878
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:22
 msgid "Save & Apply"
 msgstr "保存并应用"
@@ -4710,7 +4745,7 @@ msgstr "保存 mtdblock"
 msgid "Save mtdblock contents"
 msgstr "保存 mtdblock 内容"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:742
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:812
 msgid "Scan"
 msgstr "扫描"
 
@@ -4719,11 +4754,11 @@ msgstr "扫描"
 msgid "Scheduled Tasks"
 msgstr "计划任务"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2577
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3862
 msgid "Section added"
 msgstr "添加的节点"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2579
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3864
 msgid "Section removed"
 msgstr "移除的节点"
 
@@ -4740,9 +4775,9 @@ msgstr ""
 "即使映像文件检查失败，也“强制升级”以烧录映像。仅在您确定固件正确且适用于您的"
 "设备时使用！"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1640
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1770
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1931
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2560
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2696
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2861
 msgid "Select file…"
 msgstr "选择文件…"
 
@@ -4774,7 +4809,7 @@ msgstr "服务类型"
 msgid "Services"
 msgstr "服务"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1636
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:2527
 msgid "Session expired"
 msgstr "会话已过期"
 
@@ -4782,7 +4817,7 @@ msgstr "会话已过期"
 msgid "Set VPN as Default Route"
 msgstr "将 VPN 设置为默认路由"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:848
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:859
 msgid ""
 "Set interface properties regardless of the link carrier (If set, carrier "
 "sense events do not invoke hotplug handlers)."
@@ -4815,11 +4850,12 @@ msgstr "配置 DHCP 服务器"
 msgid "Severely Errored Seconds (SES)"
 msgstr "严重误码秒（SES）"
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:203
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:70
 msgid "Short GI"
 msgstr "Short GI"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1005
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1075
 msgid "Short Preamble"
 msgstr "Short Preamble"
 
@@ -4836,10 +4872,10 @@ msgstr "显示空链"
 msgid "Shutdown this interface"
 msgstr "关闭此接口"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:51
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:57
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:145
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1741
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:52
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:58
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:181
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1643
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:31
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:127
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:159
@@ -4847,7 +4883,7 @@ msgstr "关闭此接口"
 msgid "Signal"
 msgstr "信号"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2151
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2053
 msgid "Signal / Noise"
 msgstr "信号/噪声"
 
@@ -4859,7 +4895,7 @@ msgstr "信号衰减（SATN）"
 msgid "Signal:"
 msgstr "信号："
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2396
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3602
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:213
 msgid "Size"
 msgstr "大小"
@@ -4877,15 +4913,17 @@ msgstr "ZRam 设备的大小（以兆字节为单位）"
 msgid "Skip"
 msgstr "跳过"
 
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:201
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:195
 msgid "Skip to content"
 msgstr "跳到内容"
 
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:200
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:194
 msgid "Skip to navigation"
 msgstr "跳转到导航"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2820
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2847
 #: modules/luci-compat/luasrc/model/network.lua:1428
 msgid "Software VLAN"
 msgstr "软件 VLAN"
@@ -4913,7 +4951,7 @@ msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:380
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:67
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:183
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:181
 msgid "Source"
 msgstr "源地址"
 
@@ -4937,7 +4975,7 @@ msgid ""
 "dead"
 msgstr "判断主机已下线的超时时间（秒）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:806
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:876
 msgid ""
 "Specifies the maximum transmit power the wireless radio may use. Depending "
 "on regulatory requirements and wireless usage, the actual transmit power may "
@@ -4962,13 +5000,12 @@ msgid ""
 "bytes)."
 msgstr "设置 MTU（最大传输单位），缺省值：1280 bytes。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2011
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1913
 msgid "Specify the secret encryption key here."
 msgstr "在此指定密钥。"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:576
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:75
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:97
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:95
 msgid "Start"
 msgstr "启动"
 
@@ -4976,19 +5013,19 @@ msgstr "启动"
 msgid "Start priority"
 msgstr "启动优先级"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1845
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1747
 msgid "Start refresh"
 msgstr "开始刷新"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2774
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4082
 msgid "Starting configuration apply…"
 msgstr "开始应用配置…"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1758
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1660
 msgid "Starting wireless scan..."
 msgstr "正在启动无线扫描…"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:106
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:105
 #: modules/luci-mod-system/luasrc/controller/admin/system.lua:19
 msgid "Startup"
 msgstr "启动项"
@@ -5009,7 +5046,7 @@ msgstr "静态地址分配"
 msgid "Static Routes"
 msgstr "静态路由"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1955
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1963
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:172
 #: modules/luci-compat/luasrc/model/network.lua:967
 msgid "Static address"
@@ -5024,25 +5061,24 @@ msgstr ""
 "静态租约用于给 DHCP 客户端分配固定的 IP 地址和主机标识。只有指定的主机才能连"
 "接，并且接口须为非动态配置。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1022
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1092
 msgid "Station inactivity limit"
 msgstr "非活动站点限制"
 
 #: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:16
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:380
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:791
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:861
 #: modules/luci-mod-status/luasrc/view/admin_status/index.htm:9
 msgid "Status"
 msgstr "状态"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:351
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:77
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:99
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:97
 msgid "Stop"
 msgstr "停止"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1756
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1850
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1658
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1752
 msgid "Stop refresh"
 msgstr "停止刷新"
 
@@ -5055,7 +5091,7 @@ msgid "Strong"
 msgstr "强"
 
 #: modules/luci-compat/luasrc/view/cbi/simpleform.htm:61
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2036
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1938
 msgid "Submit"
 msgstr "提交"
 
@@ -5085,7 +5121,7 @@ msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
 msgstr "交换机 %q 具有未知的拓扑结构，VLAN 设置可能不正确。"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2820
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2847
 #: modules/luci-compat/luasrc/model/network.lua:1426
 msgid "Switch VLAN"
 msgstr "交换机 VLAN"
@@ -5100,15 +5136,15 @@ msgstr "切换协议"
 msgid "Switch to CIDR list notation"
 msgstr "切换到 CIDR 列表记法"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1671
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2593
 msgid "Symbolic link"
 msgstr "符号链接"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:72
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:71
 msgid "Sync with NTP-Server"
 msgstr "与 NTP 服务器同步"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:65
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:64
 msgid "Sync with browser"
 msgstr "同步浏览器时间"
 
@@ -5154,15 +5190,15 @@ msgid "TX Rate"
 msgstr "发送速率"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:15
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:167
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:185
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:165
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:183
 msgid "Table"
 msgstr "表"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:30
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:63
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:164
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:182
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:162
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:180
 msgid "Target"
 msgstr "目标"
 
@@ -5195,7 +5231,7 @@ msgid ""
 "The IPv6 prefix assigned to the provider, usually ends with <code>::</code>"
 msgstr "运营商特定的 IPv6 前缀，通常以 <code>::</code> 为结尾"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1996
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1898
 msgid ""
 "The allowed characters are: <code>A-Z</code>, <code>a-z</code>, <code>0-9</"
 "code> and <code>_</code>"
@@ -5207,7 +5243,7 @@ msgstr ""
 msgid "The configuration file could not be loaded due to the following error:"
 msgstr "由于以下错误，配置文件无法被加载："
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2671
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3958
 msgid ""
 "The device could not be reached within %d seconds after applying the pending "
 "changes, which caused the configuration to be rolled back for safety "
@@ -5230,7 +5266,7 @@ msgstr ""
 "存储器或分区的设备文件（<abbr title=\"for example\">例如：</abbr><code>/dev/"
 "sda1</code>）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:656
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:726
 msgid ""
 "The existing wireless configuration needs to be changed for LuCI to function "
 "properly."
@@ -5245,7 +5281,7 @@ msgstr ""
 "刷写镜像已上传。下面是列出的校验和及文件大小，将它们与原始文件进行比较以确保"
 "数据完整性。<br />单击下面的“继续”开始刷写。"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:196
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:194
 msgid "The following rules are currently active on this system."
 msgstr "以下规则当前在系统中处于活动状态。"
 
@@ -5287,7 +5323,7 @@ msgstr "IPv6 前缀长度（位）"
 msgid "The local IPv4 address over which the tunnel is created (optional)."
 msgstr "所创建隧道的本地 IPv4 地址（可选）。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2002
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1904
 msgid "The network name is already used"
 msgstr "网络名称已被使用"
 
@@ -5314,7 +5350,7 @@ msgstr "reboot 命令失败，代码 %d"
 msgid "The restore command failed with code %d"
 msgstr "restore 命令失败，代码 %d"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1194
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1279
 msgid "The selected %s mode is incompatible with %s encryption"
 msgstr "模式 %s 与 %s 加密方法不兼容"
 
@@ -5384,13 +5420,14 @@ msgstr "不支持所上传的映像文件格式，请选择适合当前平台的
 msgid "There are no active leases"
 msgstr "没有已分配的租约"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2789
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4097
 msgid "There are no changes to apply"
 msgstr "没有待应用的更改"
 
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:63
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:213
-#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:232
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:228
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:234
 #: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:282
 msgid ""
 "There is no password set on this router. Please configure a root password to "
@@ -5401,7 +5438,7 @@ msgstr "尚未设置密码。请为 root 用户设置密码以保护主机并启
 msgid "This IPv4 address of the relay"
 msgstr "中继的 IPv4 地址"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1532
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1533
 msgid "This authentication type is not applicable to the selected EAP method."
 msgstr "此身份验证类型不适用于所选的 EAP 方法。"
 
@@ -5435,7 +5472,7 @@ msgid ""
 "password if no update key has been configured"
 msgstr "如果更新密钥没有设置的话，隧道的“更新密钥”或者账户密码必须填写"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:113
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:112
 msgid ""
 "This is the content of /etc/rc.local. Insert your own commands here (in "
 "front of 'exit 0') to execute them at the end of the boot process."
@@ -5480,14 +5517,14 @@ msgid ""
 "their status."
 msgstr "系统中正在运行的进程概况和它们的状态信息。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1451
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1547
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1487
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1545
 msgid ""
 "This option cannot be used because the ca-bundle package is not installed."
 msgstr "此选项不可用，因为 ca-bundle 软件包未安装。"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:965
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1096
+#: modules/luci-base/htdocs/luci-static/resources/form.js:967
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1098
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:172
 #: modules/luci-compat/luasrc/view/cbi/tsection.htm:32
 msgid "This section contains no values yet"
@@ -5497,7 +5534,7 @@ msgstr "尚无任何配置"
 msgid "Time Synchronization"
 msgstr "时间同步"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1013
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1083
 msgid "Time interval for rekeying GTK"
 msgstr "重新加密 GTK 的时间间隔"
 
@@ -5505,7 +5542,7 @@ msgstr "重新加密 GTK 的时间间隔"
 msgid "Timezone"
 msgstr "时区"
 
-#: modules/luci-base/htdocs/luci-static/resources/luci.js:1646
+#: modules/luci-base/htdocs/luci-static/resources/luci.js:2537
 msgid "To login…"
 msgstr "去登录…"
 
@@ -5518,7 +5555,7 @@ msgstr ""
 "上传备份存档以恢复配置。要将固件恢复到初始状态，请单击“执行重置”（仅 "
 "squashfs 格式的固件有效）。"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:888
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:902
 msgid "Tone"
 msgstr "Tone"
 
@@ -5558,7 +5595,7 @@ msgstr "触发模式"
 msgid "Tunnel ID"
 msgstr "隧道 ID"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2823
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2850
 #: modules/luci-compat/luasrc/model/network.lua:1431
 msgid "Tunnel Interface"
 msgstr "隧道接口"
@@ -5569,7 +5606,7 @@ msgstr "隧道接口"
 msgid "Tunnel Link"
 msgstr "隧道链接"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:144
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:180
 msgid "Tx-Power"
 msgstr "传输功率"
 
@@ -5597,19 +5634,19 @@ msgstr "UMTS/GPRS/EV-DO"
 msgid "UUID"
 msgstr "UUID"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:14
-#: modules/luci-base/htdocs/luci-static/resources/network.js:15
+#: modules/luci-base/htdocs/luci-static/resources/network.js:16
+#: modules/luci-base/htdocs/luci-static/resources/network.js:17
 #: modules/luci-compat/luasrc/model/network.lua:34
 #: modules/luci-compat/luasrc/model/network.lua:35
 msgid "Unable to determine device name"
 msgstr "无法确认设备名称"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:16
+#: modules/luci-base/htdocs/luci-static/resources/network.js:18
 #: modules/luci-compat/luasrc/model/network.lua:36
 msgid "Unable to determine external IP address"
 msgstr "无法确认外部 IP 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:17
+#: modules/luci-base/htdocs/luci-static/resources/network.js:19
 #: modules/luci-compat/luasrc/model/network.lua:37
 msgid "Unable to determine upstream interface"
 msgstr "无法确认上游接口"
@@ -5647,7 +5684,7 @@ msgstr "无法重置 iptables 计数器：%s"
 msgid "Unable to resolve AFTR host name"
 msgstr "无法解析 AFTR 主机名"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:18
+#: modules/luci-base/htdocs/luci-static/resources/network.js:20
 #: modules/luci-compat/luasrc/model/network.lua:38
 msgid "Unable to resolve peer host name"
 msgstr "无法解析 Pear 主机名"
@@ -5666,25 +5703,25 @@ msgstr "无法保存内容：%s"
 msgid "Unavailable Seconds (UAS)"
 msgstr "不可用秒数（UAS）"
 
-#: modules/luci-base/htdocs/luci-static/resources/fs.js:100
+#: modules/luci-base/htdocs/luci-static/resources/fs.js:102
 msgid "Unexpected reply data format"
 msgstr "错误的数据回复格式"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1957
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1965
 #: modules/luci-compat/luasrc/model/network.lua:971
 msgid "Unknown"
 msgstr "未知"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2266
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2274
 #: modules/luci-compat/luasrc/model/network.lua:1138
 msgid "Unknown error (%s)"
 msgstr "未知错误（%s）"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:404
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:406
 msgid "Unknown error code"
 msgstr "未知错误代码"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1954
+#: modules/luci-base/htdocs/luci-static/resources/network.js:1962
 #: modules/luci-base/htdocs/luci-static/resources/protocol/none.js:6
 #: modules/luci-compat/luasrc/model/network.lua:965
 msgid "Unmanaged"
@@ -5700,11 +5737,11 @@ msgstr "卸载分区"
 msgid "Unnamed key"
 msgstr "未命名的密钥"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2536
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3798
 msgid "Unsaved Changes"
 msgstr "未保存的配置"
 
-#: modules/luci-base/htdocs/luci-static/resources/rpc.js:402
+#: modules/luci-base/htdocs/luci-static/resources/rpc.js:404
 msgid "Unspecified error"
 msgstr "未指定的错误"
 
@@ -5726,7 +5763,7 @@ msgstr "不支持的协议类型。"
 msgid "Up"
 msgstr "上移"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2470
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3676
 msgid "Upload"
 msgstr "上传"
 
@@ -5741,25 +5778,25 @@ msgstr "从这里上传一个 sysupgrade 兼容镜像以更新正在运行的固
 msgid "Upload archive..."
 msgstr "上传备份…"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1823
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2750
 msgid "Upload file"
 msgstr "上传文件"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1798
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2725
 msgid "Upload file…"
 msgstr "上传文件…"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1747
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2458
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2672
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3664
 msgid "Upload request failed: %s"
 msgstr "上传请求失败：%s"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2377
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2431
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3583
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3637
 msgid "Uploading file…"
 msgstr "正在上传文件…"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:657
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:727
 msgid ""
 "Upon pressing \"Continue\", anonymous \"wifi-iface\" sections will be "
 "assigned with a name in the form <em>wifinet#</em> and the network will be "
@@ -5798,7 +5835,7 @@ msgstr "使用 DHCP 网关"
 msgid "Use DNS servers advertised by peer"
 msgstr "自动获取 DNS 服务器"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:492
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:556
 msgid "Use ISO/IEC 3166 alpha2 country codes."
 msgstr "参考 ISO/IEC 3166 alpha2 国家代码。"
 
@@ -5830,7 +5867,7 @@ msgstr "作为根文件系统使用（/）"
 msgid "Use broadcast flag"
 msgstr "使用广播标签"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:844
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:855
 msgid "Use builtin IPv6-management"
 msgstr "使用内置的 IPv6 管理"
 
@@ -5884,11 +5921,11 @@ msgstr "使用网关跃点"
 msgid "Use routing table"
 msgstr "使用路由表"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1441
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1480
 msgid "Use system certificates"
 msgstr "使用系统证书"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1537
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1538
 msgid "Use system certificates for inner-tunnel"
 msgstr "为内置隧道使用系统证书"
 
@@ -5910,11 +5947,11 @@ msgstr ""
 msgid "Used"
 msgstr "已用"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1318
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1376
 msgid "Used Key Slot"
 msgstr "启用密码组"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1374
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1419
 msgid ""
 "Used for two different purposes: RADIUS NAS ID and 802.11r R0KH-ID. Not "
 "needed with normal WPA(2)-PSK."
@@ -5936,11 +5973,11 @@ msgstr "用户密钥（PEM）"
 msgid "Username"
 msgstr "用户名"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:956
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:970
 msgid "VC-Mux"
 msgstr "VC-Mux"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:904
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:918
 msgid "VDSL"
 msgstr "VDSL"
 
@@ -5979,8 +6016,8 @@ msgstr "VPN 服务器证书的 SHA1 哈希值"
 msgid "VPNC (CISCO 3000 (and others) VPN)"
 msgstr "VPNC（CISCO 3000 和其他 VPN）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1441
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1537
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1480
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1538
 msgid ""
 "Validate server certificate using built-in system CA bundle,<br />requires "
 "the \"ca-bundle\" package"
@@ -6002,32 +6039,32 @@ msgstr "正在验证上传的镜像文件。"
 msgid "Virtual dynamic interface"
 msgstr "虚拟动态接口"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:952
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:953
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1022
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1023
 msgid "WDS"
 msgstr "WDS"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1205
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1290
 msgid "WEP Open System"
 msgstr "WEP 开放式系统"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1206
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1291
 msgid "WEP Shared Key"
 msgstr "WEP 共享密钥"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2011
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1913
 msgid "WEP passphrase"
 msgstr "WEP 密钥"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:990
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1060
 msgid "WMM Mode"
 msgstr "WMM 模式"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2011
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1913
 msgid "WPA passphrase"
 msgstr "WPA 密钥"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1119
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1195
 msgid ""
 "WPA-Encryption requires wpa_supplicant (for client mode) or hostapd (for AP "
 "and ad-hoc mode) to be installed."
@@ -6052,7 +6089,7 @@ msgstr "警告：未保存的更改会在重启时丢失！"
 msgid "Weak"
 msgstr "弱"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1400
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1442
 msgid ""
 "When using a PSK, the PMK can be automatically generated. When enabled, the "
 "R0/R1 key options below are not applied. Disable this to use the R0 and R1 "
@@ -6062,12 +6099,12 @@ msgstr ""
 "R1 密钥则禁用此选项。"
 
 #: modules/luci-compat/luasrc/view/cbi/wireless_modefreq.htm:166
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:396
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:460
 msgid "Width"
 msgstr "带宽"
 
 #: modules/luci-compat/luasrc/model/network/proto_wireguard.lua:9
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:17
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:18
 msgid "WireGuard VPN"
 msgstr "WireGuard VPN"
 
@@ -6077,47 +6114,47 @@ msgstr "WireGuard VPN"
 msgid "Wireless"
 msgstr "无线"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2811
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2838
 #: modules/luci-compat/luasrc/model/network.lua:1419
 msgid "Wireless Adapter"
 msgstr "无线适配器"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2790
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3994
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2817
+#: modules/luci-base/htdocs/luci-static/resources/network.js:4021
 #: modules/luci-compat/luasrc/model/network.lua:1405
 #: modules/luci-compat/luasrc/model/network.lua:1868
 msgid "Wireless Network"
 msgstr "无线网络"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:673
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:743
 msgid "Wireless Overview"
 msgstr "无线概况"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:842
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:912
 msgid "Wireless Security"
 msgstr "无线安全"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:655
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:725
 msgid "Wireless configuration migration"
 msgstr "无线配置迁移"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:114
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:152
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:148
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:188
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:37
 msgid "Wireless is disabled"
 msgstr "无线未开启"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:114
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:152
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:148
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:188
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:37
 msgid "Wireless is not associated"
 msgstr "无线未关联"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:797
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:867
 msgid "Wireless network is disabled"
 msgstr "无线网络已禁用"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:797
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:867
 msgid "Wireless network is enabled"
 msgstr "无线网络已启用"
 
@@ -6129,7 +6166,7 @@ msgstr "将收到的 DNS 请求写入系统日志"
 msgid "Write system log to file"
 msgstr "将系统日志写入文件"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1789
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1800
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:109
 msgid "Yes"
 msgstr "是"
@@ -6140,7 +6177,7 @@ msgid ""
 "Do you really want to shut down the interface?"
 msgstr "您似乎正通过“%h”连接到此设备，确认要关闭它吗？"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:109
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:108
 msgid ""
 "You can enable or disable installed init scripts here. Changes will applied "
 "after a device reboot.<br /><strong>Warning: If you disable essential init "
@@ -6151,7 +6188,7 @@ msgstr ""
 
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:73
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:223
-#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:225
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:227
 #: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:294
 msgid ""
 "You must enable JavaScript in your browser or LuCI will not work properly."
@@ -6177,10 +6214,10 @@ msgstr "ZRam 大小"
 msgid "any"
 msgstr "任意"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:889
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:897
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:902
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1075
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:903
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:911
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:916
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1147
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:78
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoe.js:48
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoe.js:51
@@ -6196,7 +6233,7 @@ msgstr "自动"
 msgid "baseT"
 msgstr "baseT"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:962
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:976
 msgid "bridged"
 msgstr "桥接的"
 
@@ -6212,14 +6249,17 @@ msgstr "创建"
 msgid "create:"
 msgstr "创建："
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:49
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:51
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:50
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:52
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:56
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:53
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:57
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:144
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:145
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:146
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:58
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:78
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:79
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:82
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:180
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:181
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:182
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:157
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:159
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:160
@@ -6245,9 +6285,9 @@ msgstr "dBm"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/led-trigger/default-on.js:5
 msgid "default-on (kernel)"
-msgstr ""
+msgstr "默认开启（内核）"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:934
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1004
 msgid "disable"
 msgstr "禁用"
 
@@ -6255,13 +6295,13 @@ msgstr "禁用"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:621
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:627
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:633
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:64
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:86
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:25
 msgid "disabled"
 msgstr "已禁用"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:446
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:480
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:510
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:544
 msgid "driver default"
 msgstr "驱动默认"
 
@@ -6296,13 +6336,13 @@ msgstr "半双工"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/led-trigger/heartbeat.js:4
 msgid "heartbeat (kernel)"
-msgstr ""
+msgstr "心跳（内核）"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:565
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:566
 msgid "hexadecimal encoded value"
 msgstr "十六进制编码值"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1818
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1720
 msgid "hidden"
 msgstr "隐藏"
 
@@ -6326,11 +6366,11 @@ msgstr "忽略"
 msgid "input"
 msgstr "输入"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:390
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:391
 msgid "key between 8 and 63 characters"
 msgstr "密钥在 8 到 63 个字符之间"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:402
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:403
 msgid "key with either 5 or 13 characters"
 msgstr "密钥为 5 或 13 个字符"
 
@@ -6338,17 +6378,17 @@ msgstr "密钥为 5 或 13 个字符"
 msgid "local <abbr title=\"Domain Name System\">DNS</abbr> file"
 msgstr "本地 <abbr title=\"Domain Name System\">DNS</abbr> 解析文件"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1213
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1298
 msgid "medium security"
 msgstr "中等安全性"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1405
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1447
 msgid "minutes"
 msgstr "分钟"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/led-trigger/netdev.js:6
 msgid "netdev (kernel)"
-msgstr ""
+msgstr "网络设备（内核）"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:41
 msgid "no"
@@ -6358,17 +6398,17 @@ msgstr "否"
 msgid "no link"
 msgstr "未连接"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:54
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:55
 msgid "non-empty value"
 msgstr "非空值"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1477
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1479
 msgid "none"
 msgstr "无"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/led-trigger/none.js:4
 msgid "none (kernel)"
-msgstr ""
+msgstr "无（内核）"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:40
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:54
@@ -6377,23 +6417,23 @@ msgid "not present"
 msgstr "不存在"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:344
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:821
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:825
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:891
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:895
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:52
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:197
-#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:207
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:209
 #: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:245
 msgid "off"
 msgstr "关"
 
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:51
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:196
-#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:206
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:208
 #: themes/luci-theme-rosy/luasrc/view/themes/rosy/header.htm:242
 msgid "on"
 msgstr "开"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1214
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1299
 msgid "open network"
 msgstr "开放网络"
 
@@ -6402,15 +6442,15 @@ msgstr "开放网络"
 msgid "output"
 msgstr "输出"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:236
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:237
 msgid "positive decimal value"
 msgstr "正十进制值"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:228
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:229
 msgid "positive integer value"
 msgstr "正整数值"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:56
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:57
 msgid "random"
 msgstr "随机"
 
@@ -6420,12 +6460,12 @@ msgstr "随机"
 msgid "relay mode"
 msgstr "中继模式"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:963
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:977
 msgid "routed"
 msgstr "已路由"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1013
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1022
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1083
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1092
 msgid "sec"
 msgstr "秒"
 
@@ -6446,7 +6486,7 @@ msgstr "无状态"
 msgid "stateless + stateful"
 msgstr "无状态 + 有状态"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1212
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1297
 msgid "strong security"
 msgstr "强安全性"
 
@@ -6454,19 +6494,19 @@ msgstr "强安全性"
 msgid "tagged"
 msgstr "已标记"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1388
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1430
 msgid "time units (TUs / 1.024 ms) [1000-65535]"
 msgstr "时间单位（TUs / 1.024ms）[1000-65535]"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/led-trigger/timer.js:5
 msgid "timer (kernel)"
-msgstr ""
+msgstr "计时器（内核）"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:555
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:556
 msgid "unique value"
 msgstr "唯一值"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:461
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:525
 msgid "unknown"
 msgstr "未知"
 
@@ -6478,7 +6518,7 @@ msgstr "未知"
 msgid "unlimited"
 msgstr "无限制"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:1684
+#: modules/luci-base/htdocs/luci-static/resources/form.js:1695
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:76
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:137
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:368
@@ -6499,174 +6539,174 @@ msgstr "不指定或新建："
 msgid "untagged"
 msgstr "未标记"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:241
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:242
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:115
 msgid "valid IP address"
 msgstr "有效 IP 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:241
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:242
 msgid "valid IP address or prefix"
 msgstr "有效 IP 地址或前缀"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:276
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:277
 msgid "valid IPv4 CIDR"
 msgstr "有效 IPv4 CIDR"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:249
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:250
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:117
 msgid "valid IPv4 address"
 msgstr "有效 IPv4 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:249
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:250
 msgid "valid IPv4 address or network"
 msgstr "有效 IPv4 地址或网络"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:369
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:370
 msgid "valid IPv4 address:port"
 msgstr "有效 IPv4 address:port"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:309
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:310
 msgid "valid IPv4 network"
 msgstr "有效 IPv4 网络"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:271
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:272
 msgid "valid IPv4 or IPv6 CIDR"
 msgstr "有效 IPv4 或 IPv6 CIDR"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:262
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:263
 msgid "valid IPv4 prefix value (0-32)"
 msgstr "有效 IPv4 前缀值（0-32）"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:281
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:282
 msgid "valid IPv6 CIDR"
 msgstr "有效 IPv6 CIDR"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:257
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:258
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:119
 msgid "valid IPv6 address"
 msgstr "有效 IPv6 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:257
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:258
 msgid "valid IPv6 address or prefix"
 msgstr "有效 IPv6 地址或前缀"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:299
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:300
 msgid "valid IPv6 host id"
 msgstr "有效 IPv6 主机 ID"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:314
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:315
 msgid "valid IPv6 network"
 msgstr "有效 IPv6 网络"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:267
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:268
 msgid "valid IPv6 prefix value (0-128)"
 msgstr "有效 IPv6 前缀值（0-128）"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:335
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:336
 msgid "valid MAC address"
 msgstr "有效 MAC 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:406
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:407
 msgid "valid UCI identifier"
 msgstr "有效 UCI 识别"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:357
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:358
 msgid "valid UCI identifier, hostname or IP address"
 msgstr "有效 UCI 标识符，主机名或 IP 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:378
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:381
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:379
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:382
 msgid "valid address:port"
 msgstr "有效 address:port"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:529
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:533
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:530
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:534
 msgid "valid date (YYYY-MM-DD)"
 msgstr "有效日期（YYYY-MM-DD）"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:232
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:233
 msgid "valid decimal value"
 msgstr "有效十进制值"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:400
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:401
 msgid "valid hexadecimal WEP key"
 msgstr "有效十六进制 WEP 密钥"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:388
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:389
 msgid "valid hexadecimal WPA key"
 msgstr "有效十六进制 WPA 密钥"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:363
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:364
 msgid "valid host:port"
 msgstr "有效 host:port"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:350
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:352
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:351
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:353
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:67
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:73
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:101
 msgid "valid hostname"
 msgstr "有效主机名"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:340
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:341
 msgid "valid hostname or IP address"
 msgstr "有效主机名或 IP 地址"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:224
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:225
 msgid "valid integer value"
 msgstr "有效整数值"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:304
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:305
 msgid "valid network in address/netmask notation"
 msgstr "地址/网络掩码表示法中的有效网络"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:504
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:505
 msgid "valid phone digit (0-9, \"*\", \"#\", \"!\" or \".\")"
 msgstr "有效电话号码（0-9、“*”、“#”、“!”或“.”）"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:327
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:330
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:328
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:331
 msgid "valid port or port range (port1-port2)"
 msgstr "有效端口或端口范围（port1-port2）"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:319
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:320
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:121
 msgid "valid port value"
 msgstr "有效端口值"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:509
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:510
 msgid "valid time (HH:MM:SS)"
 msgstr "有效时间（HH:MM:SS）"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:431
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:432
 msgid "value between %d and %d characters"
 msgstr "%d 和 %d 字符之间的值"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:411
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:412
 msgid "value between %f and %f"
 msgstr "%f 和 %f 之间的值"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:415
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:416
 msgid "value greater or equal to %f"
 msgstr "值大于或等于 %f"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:419
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:420
 msgid "value smaller or equal to %f"
 msgstr "值小于或等于 %f"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:425
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:426
 msgid "value with %d characters"
 msgstr "值有 %d 个字符"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:436
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:437
 msgid "value with at least %d characters"
 msgstr "值至少为 %d 个字符"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:441
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:442
 msgid "value with at most %d characters"
 msgstr "值至多为 %d 个字符"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1214
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1299
 msgid "weak security"
 msgstr "弱安全性"
 
@@ -6677,6 +6717,12 @@ msgstr "是"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« 后退"
+
+#~ msgid "Enable/Disable"
+#~ msgstr "启用/禁用"
+
+#~ msgid "No signal"
+#~ msgstr "无信号"
 
 #~ msgid "Free"
 #~ msgstr "空闲数"
@@ -6996,9 +7042,6 @@ msgstr "« 后退"
 
 #~ msgid "No scan results available yet..."
 #~ msgstr "还没有可用的扫描结果…"
-
-#~ msgid "Not associated"
-#~ msgstr "未关联"
 
 #~ msgid "Note: interface name length"
 #~ msgstr "注意：接口名称长度"

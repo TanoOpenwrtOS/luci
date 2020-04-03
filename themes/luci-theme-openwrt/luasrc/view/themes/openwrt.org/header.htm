@@ -188,7 +188,7 @@
 //]]></script>
 <title><%=striptags( (boardinfo.hostname or "?") .. ( (node and node.title) and ' - ' .. translate(node.title) or '')) %> - LuCI</title>
 </head>
-<body class="lang_<%=luci.i18n.context.lang%>" data-page="<%= table.concat(disp.context.requestpath, "-") %>">
+<body class="lang_<%=luci.i18n.context.lang%>" data-page="<%= pcdata(table.concat(disp.context.requestpath, "-")) %>">
 
 <p class="skiplink">
 <span id="skiplink1"><a href="#navigation"><%:Skip to navigation%></a></span>
@@ -201,10 +201,12 @@
 <div class="hostinfo">
 	<%=(boardinfo.hostname or "?")%> | <%=ver.distversion%> |
 	<%:Load%>: <%="%.2f" % (loadinfo[1] / 65535.0)%> <%="%.2f" % (loadinfo[2] / 65535.0)%> <%="%.2f" % (loadinfo[3] / 65535.0)%>
+</div>
+
+<div id="indicators">
 	<span id="xhr_poll_status" style="display:none" onclick="XHR.running() ? XHR.halt() : XHR.run()">
-		| <%:Auto Refresh%>:
-		<span id="xhr_poll_status_on"><%:on%></span>
-		<span id="xhr_poll_status_off" style="display:none"><%:off%></span>
+		<span id="xhr_poll_status_on"><%:Auto Refresh%>: <%:on%></span>
+		<span id="xhr_poll_status_off" style="display:none"><%:Auto Refresh%>: <%:off%></span>
 	</span>
 </div>
 

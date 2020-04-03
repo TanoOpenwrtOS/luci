@@ -1,4 +1,7 @@
 'use strict';
+'require view';
+'require dom';
+'require poll';
 'require uci';
 'require rpc';
 'require fs';
@@ -41,7 +44,7 @@ callDDnsGetStatus = rpc.declare({
 	expect: {  }
 });
 
-return L.view.extend({
+return view.extend({
 
 	callDDnsGetEnv: rpc.declare({
 		object: 'luci.ddns',
@@ -64,7 +67,7 @@ return L.view.extend({
 
 		ddns_toggle.innerHTML = status['_enabled'] ? _('Stop DDNS') : _('Start DDNS')
 
-		L.dom.content(ddns_enabled, function() {
+		dom.content(ddns_enabled, function() {
 			return E([], [
 				E('div', {}, status['_enabled'] ? _('DDNS autostart enabled') : [
 					_('DDNS autostart disabled'),
@@ -102,8 +105,8 @@ return L.view.extend({
 					service_status = '<b>' + _('Running') + '</b>: ' + service[section_id].pid;
 			}
 
-			cfg_detail_ip.innerHTML = host + '<br>' + ip;
-			cfg_update.innerHTML = last_update + '<br>' + next_update;
+			cfg_detail_ip.innerHTML = host + '<br />' + ip;
+			cfg_update.innerHTML = last_update + '<br />' + next_update;
 			cfg_status.innerHTML = service_status;
 		}
 
@@ -164,7 +167,7 @@ return L.view.extend({
 			return res ? _('DDNS autostart enabled') : _('DDNS autostart disabled')
 		};
 
-		o = s.option(form.DummyValue, '_toggle', '&nbsp');
+		o = s.option(form.DummyValue, '_toggle', '&#160;');
 		o.cfgvalue = function() {
 			var action = status['_enabled'] ? 'stop' : 'start';
 			return E([], [
@@ -181,7 +184,7 @@ return L.view.extend({
 			}, (action == "start") ? _('Start DDNS') : _('Stop DDNS') )]);
 		};
 
-		o = s.option(form.DummyValue, '_restart', '&nbsp');
+		o = s.option(form.DummyValue, '_restart', '&#160;');
 		o.cfgvalue = function() {
 			return E([], [
 				E('button', {
@@ -364,7 +367,7 @@ return L.view.extend({
 					(resolved[section_id].pid && cfg_enabled == '1'))
 				stop_opt['disabled'] = 'disabled';
 
-			L.dom.content(tdEl.lastChild, [
+			dom.content(tdEl.lastChild, [
 				E('button', stop_opt, _('Stop')),
 				E('button', reload_opt, _('Reload')),
 				tdEl.lastChild.childNodes[0],
@@ -381,7 +384,7 @@ return L.view.extend({
 			return '<b>' + section_id + '</b>';
 		}
 
-		o = s.option(form.DummyValue, '_cfg_detail_ip', _('Lookup Hostname') + "<br>" + _('Registered IP'));
+		o = s.option(form.DummyValue, '_cfg_detail_ip', _('Lookup Hostname') + "<br />" + _('Registered IP'));
 		o.rawhtml   = true;
 		o.modalonly = false;
 		o.textvalue = function(section_id) {
@@ -390,7 +393,7 @@ return L.view.extend({
 			if (resolved[section_id] && resolved[section_id].ip)
 				ip = resolved[section_id].ip;
 
-			return host + '<br>' + ip;
+			return host + '<br />' + ip;
 		};
 
 		o = s.option(form.Flag, 'enabled', _('Enabled'));
@@ -398,7 +401,7 @@ return L.view.extend({
 		o.editable = true;
 		o.modalonly = false;
 
-		o = s.option(form.DummyValue, '_cfg_update', _('Last Update') + "<br>" + _('Next Update'));
+		o = s.option(form.DummyValue, '_cfg_update', _('Last Update') + "<br />" + _('Next Update'));
 		o.rawhtml   = true;
 		o.modalonly = false;
 		o.textvalue = function(section_id) {
@@ -410,7 +413,7 @@ return L.view.extend({
 					next_update =  NextUpdateStrings[resolved[section_id].next_update] || resolved[section_id].next_update;
 			}
 
-			return  last_update + '<br>' + next_update;
+			return  last_update + '<br />' + next_update;
 		};
 
 		s.modaltitle = function(section_id) {
@@ -886,7 +889,7 @@ return L.view.extend({
 		o.modalonly = true;
 
 		o.update_log = L.bind(function(view, log_data) {
-			return document.getElementById('log_area').innerHTML = log_data.result;
+			return document.getElementById('log_area').textContent = log_data.result;
 		}, o, this)
 
 		o.render = L.bind(function() {
@@ -955,7 +958,7 @@ return L.view.extend({
 		}
 
 		return m.render().then(L.bind(function(m, nodes) {
-			L.Poll.add(L.bind(function() {
+			poll.add(L.bind(function() {
 				return Promise.all([
 					this.callDDnsGetServicesStatus(),
 					callDDnsGetStatus()

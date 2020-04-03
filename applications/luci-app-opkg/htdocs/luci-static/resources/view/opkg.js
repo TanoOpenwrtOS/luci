@@ -1,4 +1,5 @@
 'use strict';
+'require view';
 'require fs';
 'require ui';
 'require rpc';
@@ -996,7 +997,7 @@ function handleKeyUp(ev) {
 	}, 250);
 }
 
-return L.view.extend({
+return view.extend({
 	load: function() {
 		return downloadLists();
 	},
@@ -1017,21 +1018,27 @@ return L.view.extend({
 
 				E('div', {}, [
 					E('label', {}, _('Filter') + ':'),
-					E('input', { 'type': 'text', 'name': 'filter', 'placeholder': _('Type to filter…'), 'value': query, 'keyup': handleKeyUp }),
-					E('button', { 'class': 'btn cbi-button', 'click': handleReset }, [ _('Clear') ])
+					E('span', { 'class': 'control-group' }, [
+						E('input', { 'type': 'text', 'name': 'filter', 'placeholder': _('Type to filter…'), 'value': query, 'keyup': handleKeyUp }),
+						E('button', { 'class': 'btn cbi-button', 'click': handleReset }, [ _('Clear') ])
+					])
 				]),
 
 				E('div', {}, [
 					E('label', {}, _('Download and install package') + ':'),
-					E('input', { 'type': 'text', 'name': 'install', 'placeholder': _('Package name or URL…'), 'keydown': function(ev) { if (ev.keyCode === 13) handleManualInstall(ev) } }),
-					E('button', { 'class': 'btn cbi-button cbi-button-action', 'click': handleManualInstall }, [ _('OK') ])
+					E('span', { 'class': 'control-group' }, [
+						E('input', { 'type': 'text', 'name': 'install', 'placeholder': _('Package name or URL…'), 'keydown': function(ev) { if (ev.keyCode === 13) handleManualInstall(ev) } }),
+						E('button', { 'class': 'btn cbi-button cbi-button-action', 'click': handleManualInstall }, [ _('OK') ])
+					])
 				]),
 
 				E('div', {}, [
 					E('label', {}, _('Actions') + ':'), ' ',
-					E('button', { 'class': 'btn cbi-button-positive', 'data-command': 'update', 'click': handleOpkg }, [ _('Update lists…') ]), '\u00a0',
-					E('button', { 'class': 'btn cbi-button-action', 'click': handleUpload }, [ _('Upload Package…') ]), '\u00a0',
-					E('button', { 'class': 'btn cbi-button-neutral', 'click': handleConfig }, [ _('Configure opkg…') ])
+					E('span', { 'class': 'control-group' }, [
+						E('button', { 'class': 'btn cbi-button-positive', 'data-command': 'update', 'click': handleOpkg }, [ _('Update lists…') ]), ' ',
+						E('button', { 'class': 'btn cbi-button-action', 'click': handleUpload }, [ _('Upload Package…') ]), ' ',
+						E('button', { 'class': 'btn cbi-button-neutral', 'click': handleConfig }, [ _('Configure opkg…') ])
+					])
 				])
 			]),
 
@@ -1055,7 +1062,7 @@ return L.view.extend({
 					E('div', { 'class': 'th col-2 left version' }, [ _('Version') ]),
 					E('div', { 'class': 'th col-1 center size'}, [ _('Size (.ipk)') ]),
 					E('div', { 'class': 'th col-10 left' }, [ _('Description') ]),
-					E('div', { 'class': 'th right' }, [ '\u00a0' ])
+					E('div', { 'class': 'th right cbi-section-actions' }, [ '\u00a0' ])
 				])
 			])])
 		]);

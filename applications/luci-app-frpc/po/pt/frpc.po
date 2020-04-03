@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-03 13:36+0000\n"
+"PO-Revision-Date: 2020-03-31 18:12+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfrpc/pt/>\n"
@@ -12,29 +12,31 @@ msgstr ""
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:14
 msgid "Additional configs"
-msgstr ""
+msgstr "Configurações adicionais"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:24
 msgid "Admin address"
-msgstr ""
+msgstr "Endereço do administrador"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:27
 msgid "Admin password"
-msgstr ""
+msgstr "Palavra-passe do administrador"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:25
 msgid "Admin port"
-msgstr ""
+msgstr "Porto de administrador"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:26
 msgid "Admin user"
-msgstr ""
+msgstr "Utilizador do Administrador"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:24
 msgid ""
 "AdminAddr specifies the address that the admin server binds to.<br>By "
 "default, this value is \"127.0.0.1\"."
 msgstr ""
+"AdminAddr especifica o endereço para o qual o servidor admin se liga.<br>Por "
+"padrão, este valor é \"127.0.0.1\"."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:25
 msgid ""
@@ -42,22 +44,29 @@ msgid ""
 "value is 0, the admin server will not be started.<br>By default, this value "
 "is 0."
 msgstr ""
+"AdminPort especifica a porta onde o servidor de administração escuta. Se "
+"este valor for 0, o servidor admin não será iniciado.<br>Por padrão, este "
+"valor é 0."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:27
 msgid ""
 "AdminPwd specifies the password that the admin server will use for login."
 "<br>By default, this value is \"admin\"."
 msgstr ""
+"AdminPwd especifica a palavra-passe que o servidor admin usará para "
+"login.<br>Por padrão, este valor é \"admin\"."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:26
 msgid ""
 "AdminUser specifies the username that the admin server will use for login."
 "<br>By default, this value is \"admin\"."
 msgstr ""
+"AdminUser especifica o nome de utilizador que o servidor admin usará para "
+"login.<br>Por padrão, este valor é \"admin\"."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:28
 msgid "Assets dir"
-msgstr ""
+msgstr "Diretório de ativos"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:28
 msgid ""
@@ -77,6 +86,7 @@ msgstr ""
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:14
 msgid "Config files include in temporary config file"
 msgstr ""
+"Ficheiros de configuração incluídos no ficheiro de configuração temporário"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:51
 msgid "Custom domains"
@@ -84,7 +94,7 @@ msgstr ""
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:22
 msgid "Disable log color"
-msgstr ""
+msgstr "Desativar cores nos registos"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:22
 msgid ""
@@ -98,7 +108,7 @@ msgstr "Encriptação"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:13
 msgid "Environment variable"
-msgstr ""
+msgstr "Variável de ambiente"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:31
 msgid "Exit when login fail"
@@ -110,19 +120,19 @@ msgstr "Configurações Gerais"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:151
 msgid "HTTP Settings"
-msgstr ""
+msgstr "Configurações HTTP"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:58
 msgid "HTTP password"
-msgstr ""
+msgstr "Palavra-passe HTTP"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:20
 msgid "HTTP proxy"
-msgstr ""
+msgstr "Proxy HTTP"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:57
 msgid "HTTP user"
-msgstr ""
+msgstr "Utilizador HTTP"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:34
 msgid ""
@@ -144,7 +154,7 @@ msgstr ""
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:35
 msgid "Heartbeat timeout"
-msgstr ""
+msgstr "Tempo limite do heartbeat"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:59
 msgid "Host header rewrite"
@@ -189,17 +199,20 @@ msgstr "Nível de registo"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:9
 msgid "Log stderr"
-msgstr ""
+msgstr "Regisro do stderr"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:8
 msgid "Log stdout"
-msgstr ""
+msgstr "Registo do stdout"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:21
 msgid ""
 "LogLevel specifies the minimum log level. Valid values are \"trace\", \"debug"
 "\", \"info\", \"warn\", and \"error\".<br>By default, this value is \"info\"."
 msgstr ""
+"O LogLevel determina o nível mínimo de registo. Valores válidos são \"trace\""
+", \"debug\", \"info\", \"warn\" e \"error\". <br>O valor predefinido é \""
+"info\"."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:31
 msgid ""
@@ -217,6 +230,9 @@ msgid ""
 "OS environments pass to frp for config file template, see <a href=\"https://"
 "github.com/fatedier/frp#configuration-file-template\">frp README</a>"
 msgstr ""
+"As variáveis de ambiente do sistema operacional passam para o frp como "
+"modelo de configuração, veja <a href=\"https://github.com/fatedier/frp"
+"#configuration-file-template\">frp README</a>"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:32
 msgid "Protocol"
@@ -251,7 +267,7 @@ msgstr ""
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:12
 msgid "Respawn when crashed"
-msgstr ""
+msgstr "Reiniciar caso travado"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:64
 msgid "Role"
@@ -300,7 +316,7 @@ msgstr ""
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:29
 msgid "TCP mux"
-msgstr ""
+msgstr "TCP mux"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:33
 msgid "TLS"

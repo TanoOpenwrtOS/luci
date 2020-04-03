@@ -1,9 +1,10 @@
 'use strict';
+'require view';
 'require rpc';
 'require fs';
 'require ui';
 
-return L.view.extend({
+return view.extend({
 	callInitList: rpc.declare({
 		object: 'luci',
 		method: 'getInitList',
@@ -40,8 +41,8 @@ return L.view.extend({
 			L.dom.content(cell.parentNode, this.renderAutostart({
 				name: name,
 				enabled: isEnabled
-			}));
-		}, this, name, !isEnabled, ev.currentTarget.parentNode));
+			}), ev.currentTarget);
+		}, this, name, !isEnabled, ev.currentTarget));
 	},
 
 	handleRcLocalSave: function(ev) {

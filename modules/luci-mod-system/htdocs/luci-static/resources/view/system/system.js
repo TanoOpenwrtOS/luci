@@ -1,4 +1,6 @@
 'use strict';
+'require view';
+'require poll';
 'require ui';
 'require uci';
 'require rpc';
@@ -18,7 +20,7 @@ callInitList = rpc.declare({
 	}
 });
 
-return L.view.extend({
+return view.extend({
 	load: function() {
 		return Promise.all([
 			uci.load('luci'),

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2020-01-14 15:22+0000\n"
-"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
+"PO-Revision-Date: 2020-03-29 21:21+0000\n"
+"Last-Translator: Cristian Ionescu <joker_op@yahoo.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/ro/>\n"
 "Language: ro\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Aggregate number of connected users"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:220
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:225
 msgid "Apply interval »"
 msgstr ""
 
@@ -219,11 +219,11 @@ msgstr "Utilizarea spatiului pe disc"
 msgid "Disk Usage"
 msgstr "Utilizarea discului"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:208
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:209
 msgid "Display Host »"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:214
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:217
 msgid "Display timespan »"
 msgstr ""
 
@@ -409,7 +409,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:49
 msgid "Hostname"
-msgstr "Numele de host"
+msgstr "Numele gazdei ( hostname )"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:14
 msgid "IP or hostname where to get the txtinfo output from"
@@ -516,7 +516,7 @@ msgstr ""
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/df.js:88
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/disk.js:31
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/interface.js:19
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:42
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:44
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:24
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:40
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:46
@@ -624,7 +624,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:53
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:55
 msgid "Monitoring all but one interrupt"
 msgid_plural "Monitoring all but %d interrupts"
 msgstr[0] ""
@@ -652,7 +652,7 @@ msgstr ""
 msgid "Monitoring all interfaces"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:51
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:53
 msgid "Monitoring all interrupts"
 msgstr ""
 
@@ -676,9 +676,9 @@ msgstr ""
 msgid "Monitoring local listen ports"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/openvpn.js:41
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/openvpn.js:43
 msgid "Monitoring one OpenVPN instance"
-msgid_plural "Monitoring %d OpenVPN instancees"
+msgid_plural "Monitoring %d OpenVPN instances"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -713,7 +713,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:55
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:57
 msgid "Monitoring one interrupt"
 msgid_plural "Monitoring %d interrupts"
 msgstr[0] ""
@@ -748,7 +748,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/curl.js:24
 msgid "Name"
-msgstr ""
+msgstr "Nume"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/netlink.js:6
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/netlink.json:2
@@ -842,7 +842,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:17
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:18
 msgid "Port for apcupsd communication"

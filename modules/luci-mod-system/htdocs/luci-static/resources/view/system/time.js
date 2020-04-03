@@ -1,4 +1,6 @@
 'use strict';
+'require view';
+'require poll';
 'require ui';
 'require uci';
 'require rpc';
@@ -48,43 +50,42 @@ callTimezone = rpc.declare({
 CBILocalTime = form.DummyValue.extend({
 	renderWidget: function(section_id, option_id, cfgvalue) {
 		return E([], [
-			E('span', {}, [
-				E('input', {
-					'id': 'localtime',
-					'type': 'text',
-					'readonly': true,
-					'value': time.localtimeToString(cfgvalue)
-				})
-			]),
-			' ',
-			E('button', {
-				'class': 'cbi-button cbi-button-apply',
-				'click': ui.createHandlerFn(this, function(ev) {
-					return callSetLocaltime(Math.floor(Date.now() / 1000)).then(
-						function(t) {
-							ev.target.parentNode.querySelector('#localtime').value =
-								time.localtimeToString(t);
-						}
-					);
-				})
-			}, _('Sync with browser')),
-			' ',
-			this.ntpd_support ? E('button', {
-				'class': 'cbi-button cbi-button-apply',
-				'click': ui.createHandlerFn(this, function(ev) {
-					return callInitAction('sysntpd', 'restart').then(
-						function() {
-							ev.target.parentNode.querySelector('#localtime').value =
-								_('Synchronization...');
-						}
-					);
-				})
-			}, _('Sync with NTP-Server')) : ''
+			E('input', {
+				'id': 'localtime',
+				'type': 'text',
+				'readonly': true,
+				'value': new Date(cfgvalue * 1000).toLocaleString()
+			}),
+			E('span', { 'class': 'control-group' }, [
+				E('button', {
+					'class': 'cbi-button cbi-button-apply',
+					'click': ui.createHandlerFn(this, function(ev) {
+						return callSetLocaltime(Math.floor(Date.now() / 1000)).then(
+							function(t) {
+								ev.target.parentNode.parentNode.querySelector('#localtime').value =
+									time.localtimeToString(t);
+							}
+						);
+					})
+				}, _('Sync with browser')),
+				' ',
+				this.ntpd_support ? E('button', {
+					'class': 'cbi-button cbi-button-apply',
+					'click': ui.createHandlerFn(this, function(ev) {
+						return callInitAction('sysntpd', 'restart').then(
+							function(t) {
+								ev.target.parentNode.parentNode.querySelector('#localtime').value =
+									time.localtimeToString(t);
+							}
+						);
+					})
+				}, _('Sync with NTP-Server')) : ''
+			])
 		]);
 	},
 });
 
-return L.view.extend({
+return view.extend({
 	load: function() {
 		return Promise.all([
 			callInitList('sysntpd'),

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-04 04:29+0000\n"
-"Last-Translator: TuxAlex0 <alex.skatingcassano@gmail.com>\n"
+"PO-Revision-Date: 2020-03-09 14:35+0000\n"
+"Last-Translator: Ansuel Smith <ansuelsmth@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationstravelmate/it/>\n"
 "Language: it\n"
@@ -270,7 +270,7 @@ msgstr ""
 
 #: applications/luci-app-travelmate/luasrc/view/travelmate/runtime.htm:62
 msgid "Loading"
-msgstr ""
+msgstr "Caricamento"
 
 #: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/overview_tab.lua:130
 msgid ""
@@ -324,7 +324,7 @@ msgstr ""
 
 #: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_add.lua:107
 msgid "Password"
-msgstr "Mot de passe"
+msgstr "Password"
 
 #: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_add.lua:122
 #: applications/luci-app-travelmate/luasrc/model/cbi/travelmate/wifi_edit.lua:109
