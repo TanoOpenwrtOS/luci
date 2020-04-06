@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2020-04-03 17:01+0300\n"
-"Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/"
-">\n"
+"PO-Revision-Date: 2020-04-05 23:47+0000\n"
+"Last-Translator: Anton Kikin <a.a.kikin@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/>"
+"\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2524,7 +2524,7 @@ msgstr "Межсетевой экран IPv4"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:29
 msgid "IPv4 Upstream"
-msgstr "Основной IPv4"
+msgstr "Подключение IPv4 (upstream)"
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:178
 msgid "IPv4 address"
@@ -2620,7 +2620,7 @@ msgstr "IPv6 ULA-префикс"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:29
 msgid "IPv6 Upstream"
-msgstr "Основной IPv6"
+msgstr "Подключение IPv6 (upstream)"
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:205
 msgid "IPv6 address"
@@ -5882,7 +5882,7 @@ msgstr "Невозможно определить внешний IP-адрес"
 #: modules/luci-base/htdocs/luci-static/resources/network.js:19
 #: modules/luci-compat/luasrc/model/network.lua:37
 msgid "Unable to determine upstream interface"
-msgstr "Невозможно определить основной интерфейс"
+msgstr "Невозможно определить основной (upstream) интерфейс"
 
 #: modules/luci-base/luasrc/view/error404.htm:10
 msgid "Unable to dispatch"
@@ -6016,7 +6016,7 @@ msgstr "Загрузка была отменена"
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2672
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3665
 msgid "Upload request failed: %s"
-msgstr "Ошибка запроса на загрузку: %d %s"
+msgstr "Ошибка запроса на загрузку: %s"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3584
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3638

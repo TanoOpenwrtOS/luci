@@ -35,6 +35,9 @@ else
 	if not ubusStatus or not ubusStatus[packageName] then
 		tmpfsStatusCode = 0
 		tmpfsStatus = translate("Stopped")
+		if not luci.sys.init.enabled(packageName) then
+			tmpfsStatus = tmpfsStatus .. " (" .. translate("disabled") .. ")"
+		end
 	else
 		tmpfsStatusCode, tmpfsStatus = 1, ""
 		for n = 1,1000 do
@@ -88,7 +91,9 @@ s3 = m:section(TypedSection, "https-dns-proxy", translate("Instances"), translat
 		.. [[ <a href="https://adguard.com/en/adguard-dns/overview.html">]]
     .. "AdGuard.com" .. [[</a>]] .. ", "
 		.. [[ <a href="https://cleanbrowsing.org/guides/dnsoverhttps">]]
-    .. "CleanBrowsing.org" .. [[</a>]] .. " " .. translate("and") .. " "
+    .. "CleanBrowsing.org" .. [[</a>]] .. " "
+                .. [[ <a href="https://libredns.gr/">]]
+    .. "Libredns.gr" .. [[</a]] .. " " .. translate("and") .. " "
 		.. [[ <a href="https://www.quad9.net/doh-quad9-dns-servers/">]]
     .. "Quad9.net" .. [[</a>]] .. ".")
 s3.template = "cbi/tblsection"
