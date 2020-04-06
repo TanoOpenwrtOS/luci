@@ -104,7 +104,8 @@ return view.extend({
 			L.resolveDefault(fs.stat('/usr/sbin/fsck.fat'), null),
 			L.resolveDefault(fs.stat('/usr/bin/btrfsck'), null),
 			L.resolveDefault(fs.stat('/usr/bin/ntfsfix'), null),
-			uci.load('fstab')
+			uci.load('fstab'),
+			uci.load('luci')
 		]);
 	},
 
@@ -198,11 +199,17 @@ return view.extend({
 
 			var rows = [];
 
+			var prohibit_umount = uci.get('luci', 'mounts', 'prohibit_umount');
+			if (prohibit_umount && !Array.isArray(prohibit_umount)) {
+				prohibit_umount = [ prohibit_umount ];
+			}
+
 			for (var i = 0; i < this.mounts.length; i++) {
 				var used = this.mounts[i].size - this.mounts[i].free,
 				    umount = true;
 
-				if (/^\/(overlay|rom|tmp(?:\/.+)?|dev(?:\/.+)?|)$/.test(this.mounts[i].mount))
+				if (/^\/(overlay|rom|tmp(?:\/.+)?|dev(?:\/.+)?|)$/.test(this.mounts[i].mount) ||
+				    (prohibit_umount && prohibit_umount.includes(this.mounts[i].mount)))
 					umount = false;
 
 				rows.push([
