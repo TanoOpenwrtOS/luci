@@ -28,7 +28,8 @@ return baseclass.extend({
 		var boardinfo   = data[0],
 		    systeminfo  = data[1];
 
-		var datestr = time.localtimeToString(systeminfo);
+		var datestr = time.localtimeToString(
+			systeminfo.localtime, systeminfo.localtime_gmtoff);
 
 		var fields = [
 			_('Hostname'),         boardinfo.hostname,

@@ -63,7 +63,7 @@ CBILocalTime = form.DummyValue.extend({
 						return callSetLocaltime(Math.floor(Date.now() / 1000)).then(
 							function(t) {
 								ev.target.parentNode.parentNode.querySelector('#localtime').value =
-									time.localtimeToString(t);
+									time.localtimeToString(t.localtime, t.localtime_gmtoff);
 							}
 						);
 					})
@@ -75,7 +75,7 @@ CBILocalTime = form.DummyValue.extend({
 						return callInitAction('sysntpd', 'restart').then(
 							function(t) {
 								ev.target.parentNode.parentNode.querySelector('#localtime').value =
-									time.localtimeToString(t);
+									time.localtimeToString(t.localtime, t.localtime_gmtoff);
 							}
 						);
 					})
@@ -195,7 +195,8 @@ return view.extend({
 		return m.render().then(function(mapEl) {
 			L.Poll.add(function() {
 				return callGetLocaltime().then(function(t) {
-					mapEl.querySelector('#localtime').value = time.localtimeToString(t);
+					mapEl.querySelector('#localtime').value = time.localtimeToString(
+						t.localtime, t.localtime_gmtoff);
 				});
 			});
 

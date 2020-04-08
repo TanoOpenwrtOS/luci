@@ -1,16 +1,16 @@
 'use strict';
 
 return L.Class.extend({
-	localtimeToString: function(t) {
-		if (t.localtime) {
-			var date = new Date(t.localtime * 1000);
+	localtimeToString: function(localtime, gmtoff) {
+		if (typeof localtime !== 'undefined') {
+			var date = new Date(localtime * 1000);
 			var timezone = '';
 
-			if (t.hasOwnProperty('localtime_gmtoff')) {
+			if (gmtoff !== 'undefined') {
 				/* Current timezone string in ISO 8601:2000 standard form (+hhmm or -hhmm) */
-				var tz = Math.abs(t.localtime_gmtoff);
+				var tz = Math.abs(gmtoff);
 				var timezone = ' %s%04d'.format(
-					(t.localtime_gmtoff < 0) ? '−' : '+',
+					(gmtoff < 0) ? '−' : '+',
 					Math.floor(tz / 3600) * 100 + (tz % 3600) * 60);
 			}
 
