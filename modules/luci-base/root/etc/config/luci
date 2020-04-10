@@ -4,6 +4,7 @@ config core main
 	option resourcebase /luci-static/resources
 	option pollinterval '5'
 	option ubuspath /ubus/
+	option rpctimeout '60'
 
 config extern flash_keep
 	option uci 		"/etc/config/"
@@ -13,16 +14,16 @@ config extern flash_keep
 	option opkg		"/etc/opkg.conf"
 	option firewall	"/etc/firewall.user"
 	option uploads	"/lib/uci/upload/"
-	
+
 config internal languages
-	
+
 config internal sauth
 	option sessionpath "/tmp/luci-sessions"
 	option sessiontime 3600
-	
+
 config internal ccache
 	option enable 1
-		
+
 config internal themes
 
 config internal apply
