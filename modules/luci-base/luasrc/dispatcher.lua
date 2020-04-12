@@ -183,7 +183,8 @@ local function target_to_json(target, module)
 	elseif target.type == "view" then
 		action = {
 			["type"] = "view",
-			["path"] = target.view
+			["path"] = target.view,
+			["version"] = target.version
 		}
 	elseif target.type == "template" then
 		action = {
@@ -857,7 +858,7 @@ function dispatch(request)
 	end
 
 	if action.type == "view" then
-		tpl.render("view", { view = action.path })
+		tpl.render("view", { view = action.path, version = action.version })
 
 	elseif action.type == "call" then
 		local ok, mod = util.copcall(require, action.module)

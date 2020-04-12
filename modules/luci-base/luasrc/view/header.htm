@@ -13,8 +13,8 @@
 	local applyconf = luci.config and luci.config.apply
 %>
 
-<script type="text/javascript" src="<%=resource%>/promis.min.js?v=git-19.292.31773-cc35194"></script>
-<script type="text/javascript" src="<%=resource%>/luci.js?v=git-19.292.31773-cc35206"></script>
+<script type="text/javascript" src="<%=resource%>/promis.min.js<%# ?v=PKG_VERSION %>"></script>
+<script type="text/javascript" src="<%=resource%>/luci.js<%# ?v=PKG_VERSION %>"></script>
 <script type="text/javascript">
 	L = new LuCI(<%= luci.http.write_json({
 		token          = token,

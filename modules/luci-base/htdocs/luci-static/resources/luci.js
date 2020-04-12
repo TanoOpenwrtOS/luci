@@ -2296,6 +2296,11 @@
 		 * base URL of LuCI.js to form an absolute URL to load the class
 		 * file from.
 		 *
+		 * @param {string} version
+		 * A custom string that will be added to the URL in the '?v='
+		 * parameter. If the parameter is not specified, the version
+		 * value passed to the luci.js URL will be used as the version.
+		 *
 		 * @throws {DependencyError}
 		 * Throws a `DependencyError` when the class to load includes
 		 * circular dependencies.
@@ -2316,7 +2321,7 @@
 		 * @returns {Promise<LuCI.baseclass>}
 		 * Returns the instantiated class.
 		 */
-		require: function(name, from) {
+		require: function(name, from, version) {
 			var L = this, url = null, from = from || [];
 
 			/* Class already loaded */
@@ -2330,7 +2335,9 @@
 				return Promise.resolve(classes[name]);
 			}
 
-			url = '%s/%s.js%s'.format(L.env.base_url, name.replace(/\./g, '/'), (L.env.resource_version ? '?v=' + L.env.resource_version : ''));
+			url = '%s/%s.js%s'.format(L.env.base_url, name.replace(/\./g, '/'),
+				version ? '?v=' + version :
+				(L.env.resource_version ? '?v=' + L.env.resource_version : ''));
 			from = [ name ].concat(from);
 
 			var compileClass = function(res) {
