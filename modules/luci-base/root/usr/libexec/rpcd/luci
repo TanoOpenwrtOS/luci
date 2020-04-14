@@ -496,7 +496,7 @@ local methods = {
 		call = function(args)
 			local util = require "luci.util"
 			return {
-				result = (os.execute("(echo %s:%s) | chpasswd >/dev/null 2>&1" %{
+				result = (os.execute("(echo %s:%s) | chpasswd >/dev/null 2>&1 && sync" %{
 					luci.util.shellquote(args.username),
 					luci.util.shellquote(args.password)
 				}) == 0)
