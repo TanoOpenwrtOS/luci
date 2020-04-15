@@ -1,0 +1,120 @@
+{
+	"admin/system/system": {
+		"title": "General Settings",
+		"order": 1,
+		"action": {
+			"type": "view",
+			"path": "system/system"
+		}
+	},
+
+	"admin/system/time": {
+		"title": "Time",
+		"order": 1,
+		"action": {
+			"type": "view",
+			"path": "system/time"
+		}
+	},
+
+	"admin/system/admin": {
+		"title": "Administration",
+		"order": 2,
+		"action": {
+			"type": "firstchild"
+		}
+	},
+
+	"admin/system/admin/password": {
+		"title": "Device Password",
+		"order": 1,
+		"action": {
+			"type": "view",
+			"path": "system/password"
+		}
+	},
+
+	"admin/system/admin/dropbear": {
+		"title": "SSH Access",
+		"order": 2,
+		"action": {
+			"type": "view",
+			"path": "system/dropbear"
+		},
+		"depends": {
+			"uci": { "dropbear": true }
+		}
+	},
+
+	"admin/system/admin/sshkeys": {
+		"title": "SSH-Keys",
+		"order": 3,
+		"action": {
+			"type": "view",
+			"path": "system/sshkeys"
+		},
+		"depends": {
+			"uci": { "dropbear": true }
+		}
+	},
+
+	"admin/system/startup": {
+		"title": "Startup",
+		"order": 45,
+		"action": {
+			"type": "view",
+			"path": "system/startup"
+		}
+	},
+
+	"admin/system/crontab": {
+		"title": "Scheduled Tasks",
+		"order": 46,
+		"action": {
+			"type": "view",
+			"path": "system/crontab"
+		}
+	},
+
+	"admin/system/mounts": {
+		"title": "Mount Points",
+		"order": 50,
+		"action": {
+			"type": "view",
+			"path": "system/mounts"
+		},
+		"depends": {
+			"fs": { "/sbin/block": "executable" }
+		}
+	},
+
+	"admin/system/leds": {
+		"title": "LED Configuration",
+		"order": 60,
+		"action": {
+			"type": "view",
+			"path": "system/leds"
+		},
+		"depends": {
+			"fs": { "/sys/class/leds": "directory" }
+		}
+	},
+
+	"admin/system/backup": {
+		"title": "Backup",
+		"order": 70,
+		"action": {
+			"type": "view",
+			"path": "system/backup"
+		}
+	},
+
+	"admin/system/reboot": {
+		"title": "Reboot",
+		"order": 90,
+		"action": {
+			"type": "view",
+			"path": "system/reboot"
+		}
+	}
+}
