@@ -6,6 +6,8 @@
 'require fs';
 'require ui';
 
+var isReadonlyView = !L.hasViewPermission();
+
 var mapdata = { actions: { dl_backup: {} }, config: { showlist: {} } };
 
 return view.extend({
@@ -160,6 +162,7 @@ return view.extend({
 
 		m = new form.JSONMap(mapdata, _('Backup'));
 		m.tabbed = true;
+		m.readonly = isReadonlyView;
 
 		s = m.section(form.NamedSection, 'actions', _('Actions'));
 		o = s.option(form.SectionValue, 'actions', form.NamedSection, 'actions', 'actions', _('Backup'), _('Click "Generate archive" to download a tar archive of the current configuration files.'));
@@ -194,7 +197,8 @@ return view.extend({
 					node.appendChild(E('div', { 'class': 'cbi-page-actions' }, [
 						E('button', {
 							'class': 'cbi-button cbi-button-save',
-							'click': ui.createHandlerFn(view, 'handleBackupSave', this.map)
+							'click': ui.createHandlerFn(view, 'handleBackupSave', this.map),
+							'disabled': isReadonlyView
 						}, [ _('Save') ])
 					]));
 

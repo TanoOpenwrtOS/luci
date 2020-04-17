@@ -66,7 +66,8 @@ CBILocalTime = form.DummyValue.extend({
 									time.localtimeToString(t.localtime, t.localtime_gmtoff);
 							}
 						);
-					})
+					}),
+					'disabled': (this.readonly != null) ? this.readonly : this.map.readonly
 				}, _('Sync with browser')),
 				' ',
 				this.ntpd_support ? E('button', {
@@ -78,7 +79,8 @@ CBILocalTime = form.DummyValue.extend({
 									time.localtimeToString(t.localtime, t.localtime_gmtoff);
 							}
 						);
-					})
+					}),
+					'disabled': (this.readonly != null) ? this.readonly : this.map.readonly
 				}, _('Sync with NTP-Server')) : ''
 			])
 		]);

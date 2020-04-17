@@ -113,8 +113,8 @@
 		}
 	},
 
-	"luci-mod-system-flash": {
-		"description": "Grant access to flash operations",
+	"luci-mod-system-backup": {
+		"description": "Grant access to backup operations",
 		"read": {
 			"cgi-io": [ "backup", "download" ],
 			"file": {
@@ -138,18 +138,11 @@
 				"/etc/sysupgrade.conf": [ "write" ],
 				"/sbin/firstboot -r -y": [ "exec" ],
 				"/sbin/reboot": [ "exec" ],
-				"/sbin/sysupgrade --force /tmp/firmware.bin": [ "exec" ],
-				"/sbin/sysupgrade -n --force /tmp/firmware.bin": [ "exec" ],
-				"/sbin/sysupgrade -n /tmp/firmware.bin": [ "exec" ],
 				"/sbin/sysupgrade --restore-backup /tmp/backup.tar.gz": [ "exec" ],
-				"/sbin/sysupgrade --test /tmp/firmware.bin": [ "exec" ],
-				"/sbin/sysupgrade /tmp/firmware.bin": [ "exec" ],
 				"/tmp/backup.tar.gz": [ "write" ],
-				"/tmp/firmware.bin": [ "write" ]
 			},
 			"ubus": {
 				"file": [ "exec", "remove", "write" ],
-				"system": [ "validate_firmware_image" ]
 			}
 		}
 	},

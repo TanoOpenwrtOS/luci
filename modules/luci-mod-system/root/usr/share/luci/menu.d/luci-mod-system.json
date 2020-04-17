@@ -5,6 +5,9 @@
 		"action": {
 			"type": "view",
 			"path": "system/system"
+		},
+		"depends": {
+			"acl": [ "luci-mod-system-config" ]
 		}
 	},
 
@@ -22,6 +25,9 @@
 		"order": 2,
 		"action": {
 			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [ "luci-mod-system-config", "luci-mod-system-ssh" ]
 		}
 	},
 
@@ -31,6 +37,9 @@
 		"action": {
 			"type": "view",
 			"path": "system/password"
+		},
+		"depends": {
+			"acl": [ "luci-mod-system-config" ]
 		}
 	},
 
@@ -42,6 +51,7 @@
 			"path": "system/dropbear"
 		},
 		"depends": {
+			"acl": [ "luci-mod-system-ssh" ],
 			"uci": { "dropbear": true }
 		}
 	},
@@ -54,6 +64,7 @@
 			"path": "system/sshkeys"
 		},
 		"depends": {
+			"acl": [ "luci-mod-system-ssh" ],
 			"uci": { "dropbear": true }
 		}
 	},
@@ -64,6 +75,9 @@
 		"action": {
 			"type": "view",
 			"path": "system/startup"
+		},
+		"depends": {
+			"acl": [ "luci-mod-system-init" ]
 		}
 	},
 
@@ -73,6 +87,9 @@
 		"action": {
 			"type": "view",
 			"path": "system/crontab"
+		},
+		"depends": {
+			"acl": [ "luci-mod-system-cron" ]
 		}
 	},
 
@@ -84,6 +101,7 @@
 			"path": "system/mounts"
 		},
 		"depends": {
+			"acl": [ "luci-mod-system-mounts" ],
 			"fs": { "/sbin/block": "executable" }
 		}
 	},
@@ -96,6 +114,7 @@
 			"path": "system/leds"
 		},
 		"depends": {
+			"acl": [ "luci-mod-system-config" ],
 			"fs": { "/sys/class/leds": "directory" }
 		}
 	},
@@ -106,6 +125,9 @@
 		"action": {
 			"type": "view",
 			"path": "system/backup"
+		},
+		"depends": {
+			"acl": [ "luci-mod-system-backup" ]
 		}
 	},
 
@@ -115,6 +137,9 @@
 		"action": {
 			"type": "view",
 			"path": "system/reboot"
+		},
+		"depends": {
+			"acl": [ "luci-mod-system-reboot" ]
 		}
 	}
 }
