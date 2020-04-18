@@ -12,7 +12,8 @@
 var modalDiv = null,
     tooltipDiv = null,
     indicatorDiv = null,
-    tooltipTimeout = null;
+    tooltipTimeout = null,
+    indicatorData = {};
 
 /**
  * @class AbstractElement
@@ -3309,12 +3310,40 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 			}, ['']), beforeElem);
 		}
 
-		if (label == indicatorElem.firstChild.data && style == indicatorElem.getAttribute('data-style'))
+		if (!L.isObject(indicatorData[id]))
+			indicatorData[id] = {};
+
+		if (label == indicatorData[id].label && style == indicatorData[id].style)
 			return false;
 
-		indicatorElem.firstChild.data = label;
-		indicatorElem.setAttribute('data-style', (style == 'inactive') ? 'inactive' : 'active');
+		indicatorData[id].label = label;
+		indicatorData[id].style = (style == 'inactive') ? 'inactive' : 'active';
+
+		if (indicatorData[id].renderFn) {
+			dom.content(indicatorElem, indicatorData[id].renderFn(
+				id, indicatorData[id].label, indicatorData[id].style));
+		} else {
+			indicatorElem.firstChild.data = indicatorData[id].label;
+		}
+
+		indicatorElem.setAttribute('data-style', indicatorData[id].style);
 		return true;
+	},
+
+	/**
+	 * Set custom render function for indicator.
+	 *
+	 * @param {string} id
+	 * The ID of the indicator to remove.
+	 *
+	 * @param {function} renderFn
+	 * Render function.
+	 */
+	setIndicatorCustomRenderFn: function(id, renderFn) {
+		if (!L.isObject(indicatorData[id]))
+			indicatorData[id] = {};
+
+		indicatorData[id].renderFn = renderFn;
 	},
 
 	/**
@@ -3335,6 +3364,11 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 
 		if (indicatorElem == null)
 			return false;
+
+		if (!L.isObject(indicatorData[id]))
+			indicatorData[id] = {};
+
+		indicatorData[id] = { renderFn: indicatorData[id].renderFn };
 
 		indicatorDiv.removeChild(indicatorElem);
 		return true;
