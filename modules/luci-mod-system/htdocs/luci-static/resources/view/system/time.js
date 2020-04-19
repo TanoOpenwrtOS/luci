@@ -93,7 +93,6 @@ return view.extend({
 			callInitList('sysntpd'),
 			callTimezone(),
 			callGetLocaltime(),
-			uci.load('luci'),
 			uci.load('system')
 		]);
 	},
@@ -109,7 +108,6 @@ return view.extend({
 			_('Time'),
 			_('Here you can configure the time settings.'));
 
-		m.chain('luci');
 		m.tabbed = false;
 
 		s = m.section(form.TypedSection, 'system', _('System Time'));
