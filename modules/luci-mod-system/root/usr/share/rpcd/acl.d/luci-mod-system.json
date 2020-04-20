@@ -139,10 +139,10 @@
 				"/sbin/firstboot -r -y": [ "exec" ],
 				"/sbin/reboot": [ "exec" ],
 				"/sbin/sysupgrade --restore-backup /tmp/backup.tar.gz": [ "exec" ],
-				"/tmp/backup.tar.gz": [ "write" ],
+				"/tmp/backup.tar.gz": [ "write" ]
 			},
 			"ubus": {
-				"file": [ "exec", "remove", "write" ],
+				"file": [ "exec", "remove", "write" ]
 			}
 		}
 	},
