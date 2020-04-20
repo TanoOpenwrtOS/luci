@@ -22,17 +22,17 @@
 
 		if display_apply then
 			local label_applybtn = flow.labelapplybtn or translate("Save & Apply")
-			%><input class="cbi-button cbi-button-apply" type="button" value="<%=label_applybtn%>" onclick="cbi_submit(this, 'cbi.apply')"<%=ifattr(not has_writeable_map, "disabled")%> /> <%
+			%><input class="cbi-button cbi-button-apply" type="button" value="<%=label_applybtn%>" onclick="cbi_submit(this, 'cbi.apply')"<%=ifattr(not writable, "disabled")%> /> <%
 		end
 
 		if display_save then
 			local label_savebtn = flow.labelsavebtn  or translate("Save")
-			%><input class="cbi-button cbi-button-save" type="submit" value="<%=label_savebtn%>"<%=ifattr(not has_writeable_map, "disabled")%> /> <%
+			%><input class="cbi-button cbi-button-save" type="submit" value="<%=label_savebtn%>"<%=ifattr(not writable, "disabled")%> /> <%
 		end
 
 		if display_reset then
 			local label_resetbtn = flow.labelresetbtn or translate("Reset")
-			%><input class="cbi-button cbi-button-reset" type="button" value="<%=label_resetbtn%>" onclick="location.href='<%=REQUEST_URI%>'"<%=ifattr(not has_writeable_map, "disabled")%> /> <%
+			%><input class="cbi-button cbi-button-reset" type="button" value="<%=label_resetbtn%>" onclick="location.href='<%=REQUEST_URI%>'"<%=ifattr(not writable, "disabled")%> /> <%
 		end
 
 		%></div><%
