@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-01 16:12+0000\n"
+"PO-Revision-Date: 2020-05-02 15:56+0000\n"
 "Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsshadowsocks-libev/pt_BR/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/instances.js:45
 msgid "-- instance type --"
@@ -175,6 +175,11 @@ msgstr ""
 msgid "General Settings"
 msgstr "Configurações Gerais"
 
+#: applications/luci-app-shadowsocks-libev/root/usr/share/rpcd/acl.d/luci-app-shadowsocks-libev.json:3
+msgid "Grant service list access to LuCI app shadowsocks-libev"
+msgstr ""
+"Conceder acesso à lista de serviços ao aplicativo LuCI shadowsocks-libev"
+
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/shadowsocks-libev.js:179
 msgid "IPv6 First"
 msgstr "Primeiro IPv6"
@@ -216,7 +221,7 @@ msgid "Key (base64)"
 msgstr "Chave (base64)"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/instances.js:26
-#: applications/luci-app-shadowsocks-libev/root/usr/share/luci/menu.d/luci-app-shadowsocks-libev.json:11
+#: applications/luci-app-shadowsocks-libev/root/usr/share/luci/menu.d/luci-app-shadowsocks-libev.json:14
 msgid "Local Instances"
 msgstr "Instâncias Locais"
 
@@ -294,12 +299,12 @@ msgid "Prefer IPv6 addresses when resolving names"
 msgstr "Prefira endereços IPv6 ao resolver os nomes"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:31
-#: applications/luci-app-shadowsocks-libev/root/usr/share/luci/menu.d/luci-app-shadowsocks-libev.json:29
+#: applications/luci-app-shadowsocks-libev/root/usr/share/luci/menu.d/luci-app-shadowsocks-libev.json:32
 msgid "Redir Rules"
 msgstr "Regras de Redirecionamento"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/servers.js:14
-#: applications/luci-app-shadowsocks-libev/root/usr/share/luci/menu.d/luci-app-shadowsocks-libev.json:20
+#: applications/luci-app-shadowsocks-libev/root/usr/share/luci/menu.d/luci-app-shadowsocks-libev.json:23
 msgid "Remote Servers"
 msgstr "Servidores Remotos"
 

@@ -105,6 +105,14 @@ msgstr "For settings primarily geared to serving more than the web UI"
 msgid "Full real path to handler for Lua scripts"
 msgstr "Full real path to handler for Lua scripts"
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:18
+msgid "General Settings"
+msgstr "General Settings"
+
+#: applications/luci-app-uhttpd/root/usr/share/rpcd/acl.d/luci-app-uhttpd.json:3
+msgid "Grant UCI access for luci-app-uhttpd"
+msgstr ""
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:22
 msgid "HTTP listeners (address:port)"
 msgstr "HTTP listeners (address:port)"

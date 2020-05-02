@@ -95,11 +95,15 @@ msgstr ""
 msgid "Full real path to handler for Lua scripts"
 msgstr ""
 
+#: applications/luci-app-uhttpd/root/usr/share/rpcd/acl.d/luci-app-uhttpd.json:3
+msgid "Grant UCI access for luci-app-uhttpd"
+msgstr ""
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:22
 msgid "HTTP listeners (address:port)"
 msgstr ""
 
-#: applications/luci-app-uhttpd/luasrc/controller/uhttpd/uhttpd.lua:13
+#: applications/luci-app-uhttpd/root/usr/share/luci/menu.d/luci-app-uhttpd.json:3
 msgid "HTTP/HTTPS"
 msgstr ""
 
@@ -247,7 +251,6 @@ msgid "Will not use HTTP authentication if not present"
 msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:6
-#: applications/luci-app-uhttpd/root/usr/share/luci/menu.d/luci-app-uhttpd.json:3
 msgid "uHTTPd"
 msgstr ""
 
