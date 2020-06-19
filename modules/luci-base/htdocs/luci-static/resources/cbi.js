@@ -392,10 +392,12 @@ function cbi_validate_field(cbid, optional, type)
 	if (validatorFn !== null) {
 		var form = findParent(field, 'form');
 
-		if (!form.cbi_validators)
-			form.cbi_validators = [ ];
+		if (form) {
+			if (!form.cbi_validators)
+				form.cbi_validators = [ ];
 
-		form.cbi_validators.push(validatorFn);
+			form.cbi_validators.push(validatorFn);
+		}
 
 		field.addEventListener("blur",  validatorFn);
 		field.addEventListener("keyup", validatorFn);
