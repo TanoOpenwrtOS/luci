@@ -64,7 +64,7 @@ return view.extend({
 			'value': '1',
 			'id': 'init-' + init.name,
 			'click': ui.createHandlerFn(this, 'handleAutostartEnableDisable', init.name, init.enabled),
-			'disabled': isReadonlyView
+			'disabled': isReadonlyView || null
 		});
 
 		if (init.enabled)
@@ -110,9 +110,9 @@ return view.extend({
 				list[i].name,
 				this.renderAutostart(list[i]),
 				E('div', {}, [
-					E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'start'), 'disabled': isReadonlyView }, _('Start')),
-					E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'restart'), 'disabled': isReadonlyView }, _('Restart')),
-					E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'stop'), 'disabled': isReadonlyView }, _('Stop'))
+					E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'start'), 'disabled': isReadonlyView || null }, _('Start')),
+					E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'restart'), 'disabled': isReadonlyView || null }, _('Restart')),
+					E('button', { 'class': 'btn cbi-button-action', 'click': ui.createHandlerFn(this, 'handleAction', list[i].name, 'stop'), 'disabled': isReadonlyView || null }, _('Stop'))
 				])
 			]);
 		}
@@ -128,12 +128,12 @@ return view.extend({
 				]),
 				E('div', { 'data-tab': 'rc', 'data-tab-title': _('Local Startup') }, [
 					E('p', {}, _('This is the content of /etc/rc.local. Insert your own commands here (in front of \'exit 0\') to execute them at the end of the boot process.')),
-					E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 20, 'disabled': isReadonlyView }, [ (rcLocal != null ? rcLocal : '') ])),
+					E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 20, 'disabled': isReadonlyView || null }, [ (rcLocal != null ? rcLocal : '') ])),
 					E('div', { 'class': 'cbi-page-actions' }, [
 						E('button', {
 							'class': 'btn cbi-button-save',
 							'click': ui.createHandlerFn(this, 'handleRcLocalSave'),
-							'disabled': isReadonlyView
+							'disabled': isReadonlyView || null
 						}, _('Save'))
 					])
 				])

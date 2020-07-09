@@ -238,12 +238,12 @@ return view.extend({
 					'type': 'text',
 					'placeholder': _('Paste or drag SSH key file…') ,
 					'keydown': function(ev) { if (ev.keyCode === 13) addKey(ev) },
-					'disabled': isReadonlyView
+					'disabled': isReadonlyView || null
 				}),
 				E('button', {
 					'class': 'cbi-button',
 					'click': ui.createHandlerFn(this, addKey),
-					'disabled': isReadonlyView
+					'disabled': isReadonlyView || null
 				}, _('Add key'))
 			])
 		]);
