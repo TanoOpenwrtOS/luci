@@ -137,7 +137,7 @@ o.optional = true
 
 o = ucs:taboption("server", Value, "realm", translate("Realm for Basic Auth"))
 o.optional = true
-o.placeholder = luci.sys.hostname() or "OpenWrt"
+o.placeholder = luci.sys.hostname() or "TanoWrt"
 
 local httpconfig = ucs:taboption("server", Value, "config", translate("Config file (e.g. for credentials for Basic Auth)"), translate("Will not use HTTP authentication if not present"))
 httpconfig.optional = true
