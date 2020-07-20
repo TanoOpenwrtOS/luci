@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-19 19:36+0200\n"
-"PO-Revision-Date: 2020-05-10 12:47+0000\n"
+"PO-Revision-Date: 2020-06-25 19:08+0000\n"
 "Last-Translator: viking76 <liaudetgael@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsolsr/fr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/mid.htm:13
 msgid "Active MID announcements"
@@ -357,7 +357,6 @@ msgstr ""
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:291
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:116
-#, fuzzy
 msgid "IPv4 source"
 msgstr "IPv4 source"
 
@@ -405,7 +404,6 @@ msgstr ""
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:278
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:122
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface6.lua:109
-#, fuzzy
 msgid "IPv6 source"
 msgstr "IPv6 source"
 
@@ -625,7 +623,6 @@ msgstr ""
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:239
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:70
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface6.lua:70
-#, fuzzy
 msgid "LinkQuality Multiplicator"
 msgstr "Multiplicateur LinkQuality"
 
@@ -764,7 +761,6 @@ msgstr "Adresse réseau"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:59
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:53
-#, fuzzy
 msgid "Nic changes poll interval"
 msgstr "Nic intervalle d'interrogation"
 
@@ -829,7 +825,7 @@ msgstr "Orange"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/overview.htm:157
 msgid "Overview"
-msgstr "Aperçu"
+msgstr "Vue d’ensemble"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/hna.htm:87
 msgid "Overview of currently active OLSR host net announcements"
@@ -983,7 +979,6 @@ msgstr "Adresse source"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:176
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:170
-#, fuzzy
 msgid ""
 "Specifies the speed of the uplink in kilobits/s. First parameter is "
 "upstream, second parameter is downstream. Default is \"128 1024\"."

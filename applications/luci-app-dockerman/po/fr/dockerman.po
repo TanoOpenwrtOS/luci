@@ -1,8 +1,14 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2020-06-25 19:08+0000\n"
+"Last-Translator: viking76 <liaudetgael@gmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsdockerman/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:380
 msgid "A list of kernel capabilities to add to the container"
@@ -42,7 +48,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:64
 msgid "Available"
-msgstr ""
+msgstr "Disponible"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:329
 msgid "Bind Mount(-v)"
@@ -100,7 +106,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/newcontainer_resolve.htm:85
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:250
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:511
@@ -174,7 +180,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:256
 msgid "DNS"
-msgstr ""
+msgstr "DNS"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:149
 msgid ""
@@ -184,7 +190,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:254
 msgid "Device"
-msgstr ""
+msgstr "Appareil"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:362
 msgid "Device(--device)"
@@ -264,7 +270,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:135
 msgid "Enable"
-msgstr ""
+msgstr "Activer"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:104
 msgid "Enable IPv6"
@@ -297,7 +303,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container.htm:6
 msgid "File"
-msgstr ""
+msgstr "Fichier"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:245
 msgid "Finish Time"
@@ -310,7 +316,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:63
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:90
 msgid "Gateway"
-msgstr ""
+msgstr "Passerelle"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:21
 msgid "Github"
@@ -383,7 +389,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:35
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container.htm:3
 msgid "Info"
-msgstr ""
+msgstr "Infos"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:59
 msgid "Ingress"
@@ -404,7 +410,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:70
 msgid "Internal"
-msgstr ""
+msgstr "Interne"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:52
 msgid "Ipvlan Mode"
@@ -413,7 +419,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:191
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:168
 msgid "Kill"
-msgstr ""
+msgstr "Forcer l'arrêt"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:253
 msgid "Links"
@@ -426,7 +432,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:220
 #: applications/luci-app-dockerman/luasrc/view/dockerman/images_load.htm:2
 msgid "Load"
-msgstr ""
+msgstr "Charge"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:143
 msgid "Log Level"
@@ -447,7 +453,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:426
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:400
 msgid "Memory"
-msgstr ""
+msgstr "Mémoire"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:575
 msgid "Memory Useage"
@@ -467,7 +473,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/volumes.lua:67
 msgid "Mount Point"
-msgstr ""
+msgstr "Point de montage"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:368
 msgid "Mount tmpfs directory"
@@ -481,13 +487,13 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:291
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/volumes.lua:64
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:273
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:385
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:99
 msgid "Network"
-msgstr ""
+msgstr "Réseau"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:59
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:23
@@ -533,7 +539,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:17
 msgid "Overview"
-msgstr ""
+msgstr "Vue d’ensemble"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:61
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:33
@@ -542,7 +548,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:8
 msgid "Path"
-msgstr ""
+msgstr "Chemin"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/images_import.htm:52
 msgid "Please input new tag"
@@ -563,7 +569,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:252
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:101
 msgid "Ports"
-msgstr ""
+msgstr "Ports"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:284
 msgid "Privileged"
@@ -604,7 +610,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:89
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/volumes.lua:84
 msgid "Remove"
-msgstr ""
+msgstr "Désinstaller"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:27
 #: applications/luci-app-dockerman/luasrc/view/dockerman/images_import.htm:72
@@ -626,7 +632,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:181
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:158
 msgid "Restart"
-msgstr ""
+msgstr "Redémarrer"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:247
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:299
@@ -640,7 +646,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/cbi/inlinevalue.htm:31
 msgid "Reveal/hide password"
-msgstr ""
+msgstr "Montrer/cacher le mot de passe"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:339
 msgid "Run command"
@@ -648,7 +654,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:174
 msgid "Save"
-msgstr ""
+msgstr "Enregistrer"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:149
 msgid "Server Host"
@@ -672,16 +678,16 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:108
 msgid "Size"
-msgstr ""
+msgstr "Taille"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:176
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:153
 msgid "Start"
-msgstr ""
+msgstr "Démarrer"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:245
 msgid "Start Time"
-msgstr ""
+msgstr "Heure de début"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:576
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:577
@@ -692,16 +698,16 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:242
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:96
 msgid "Status"
-msgstr ""
+msgstr "État"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:186
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:163
 msgid "Stop"
-msgstr ""
+msgstr "Arrêter"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/newcontainer_resolve.htm:85
 msgid "Submit"
-msgstr ""
+msgstr "Soumettre"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:62
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:85
@@ -774,7 +780,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:3
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:14
 msgid "Upload"
-msgstr ""
+msgstr "Téléverser"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:43
 msgid "Upload Error"
@@ -790,7 +796,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:248
 msgid "User"
-msgstr ""
+msgstr "Utilisateur"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:319
 msgid "User(-u)"

@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-05-20 20:35+0000\n"
-"Last-Translator: Hannu Nyman <hannu.nyman@iki.fi>\n"
+"PO-Revision-Date: 2020-06-30 13:42+0000\n"
+"Last-Translator: Petri Asikainen <uniluodossa@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssqm/fi/>\n"
 "Language: fi\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:206
 msgid ""
@@ -44,7 +44,7 @@ msgstr ""
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:40
 msgid "Enable this SQM instance."
-msgstr "Ota tämä SQM-instanssi käyttöön"
+msgstr "Ota tämä SQM-esiintymä käyttöön."
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:157
 msgid ""
@@ -70,7 +70,7 @@ msgstr ""
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:150
 msgid "Ignore DSCP on ingress:"
-msgstr ""
+msgstr "Sivuuta DSCP saapuvalta liikenteeltä:"
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:64
 msgid "Interface name"
@@ -90,7 +90,7 @@ msgstr ""
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:35
 msgid "Link Layer Adaptation"
-msgstr ""
+msgstr "Linkkikerroksen sopeuttaminen"
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:231
 msgid ""
@@ -111,7 +111,7 @@ msgstr ""
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:217
 msgid "Per Packet Overhead (byte):"
-msgstr ""
+msgstr "Lisäkuorma pakettia kohti (tavu):"
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:34
 msgid "Queue Discipline"
@@ -135,7 +135,7 @@ msgstr ""
 
 #: applications/luci-app-sqm/luasrc/controller/sqm.lua:24
 msgid "SQM QoS"
-msgstr ""
+msgstr "SQM QoS"
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:226
 msgid ""
@@ -157,7 +157,7 @@ msgstr ""
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:25
 msgid "Smart Queue Management"
-msgstr ""
+msgstr "Älykäs jononhallinta"
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:143
 msgid "Squash DSCP on inbound packets (ingress):"
@@ -175,10 +175,12 @@ msgid ""
 "Upload speed (kbit/s) (egress) set to 0 to selectively disable egress "
 "shaping:"
 msgstr ""
+"Lähetysnopeus kilobitteinä sekunnissa (kbit/s). Aseta arvoksi 0 ottaaksesi "
+"lähetysnopeuden säädön pois päältä:"
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:92
 msgid "Verbosity of SQM's output into the system log."
-msgstr ""
+msgstr "SQM tapahtumien lokiinkirjaamisen tarkkuus."
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:211
 msgid "Which link layer to account for:"
@@ -186,7 +188,7 @@ msgstr ""
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:252
 msgid "Which linklayer adaptation mechanism to use; for testing only"
-msgstr ""
+msgstr "Mitä linkkerroksen sopeutumistapaa käytetään (vain testaamiseen)"
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:26
 msgid ""

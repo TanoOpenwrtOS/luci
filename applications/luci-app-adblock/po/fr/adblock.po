@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-05-10 12:47+0000\n"
-"Last-Translator: viking76 <liaudetgael@gmail.com>\n"
+"PO-Revision-Date: 2020-07-08 12:44+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:257
 msgid "Action"
@@ -150,6 +150,8 @@ msgid ""
 "Changes on this tab needs a full adblock service restart to take effect.<br /"
 "><p>&#xa0;</p>"
 msgstr ""
+"Les modifications de cet onglet nécessitent un redémarrage complet du "
+"service adblock pour prendre effet <br /> <p> &#xa0; </p>"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:254
 msgid "Client"
@@ -290,7 +292,7 @@ msgstr "Modifier la liste blanche"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:301
 msgid "Enable SafeSearch"
-msgstr "Activé Safesearch"
+msgstr "Activer Safesearch"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:313
 msgid "Enable moderate SafeSearch filters for youtube."
@@ -298,7 +300,7 @@ msgstr "Activez les filtres SafeSearch modérés pour youtube."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:284
 msgid "Enable the adblock service."
-msgstr "Activé le service adblock."
+msgstr "Activer le service adblock."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:333
 msgid "Enable verbose debug logging in case of any processing errors."
@@ -391,11 +393,11 @@ msgstr "Dernière Requêtes DNS"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:304
 msgid "Limit SafeSearch"
-msgstr ""
+msgstr "Limiter SafeSearch"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:304
 msgid "Limit SafeSearch to certain providers."
-msgstr ""
+msgstr "Limitez SafeSearch à certains fournisseurs."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:430
 msgid "List of available network devices used by tcpdump."
@@ -475,7 +477,7 @@ msgstr "Pas encore de journaux liés à l'adblock !"
 #: applications/luci-app-adblock/luasrc/controller/adblock.lua:7
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:19
 msgid "Overview"
-msgstr "Aperçu"
+msgstr "Vue d’ensemble"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:465
 msgid "Profile used by 'msmtp' for adblock notification E-Mails."
@@ -548,7 +550,7 @@ msgstr "Rafraichi..."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:313
 msgid "Relax SafeSearch"
-msgstr ""
+msgstr "Relax SafeSearch"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:440
 msgid "Report Chunk Count"

@@ -5,6 +5,7 @@
 local fs = require "nixio.fs"
 local sys = require "luci.sys"
 local util = require "luci.util"
+local xml = require "luci.xml"
 local http = require "luci.http"
 local nixio = require "nixio", require "nixio.util"
 
@@ -321,7 +322,7 @@ local function tree_to_json(node, json)
 	if type(node.nodes) == "table" then
 		for subname, subnode in pairs(node.nodes) do
 			local spec = {
-				title = util.striptags(subnode.title),
+				title = xml.striptags(subnode.title),
 				order = subnode.order
 			}
 
@@ -789,7 +790,7 @@ local function init_template_engine(ctx)
 				(scope and type(scope[key]) ~= "function" and scope[key]) or "")
 
 			if noescape ~= true then
-				val = util.pcdata(val)
+				val = xml.pcdata(val)
 			end
 
 			return string.format(' %s="%s"', tostring(key), val)
@@ -804,8 +805,8 @@ local function init_template_engine(ctx)
 		translate   = i18n.translate;
 		translatef  = i18n.translatef;
 		export      = function(k, v) if tpl.context.viewns[k] == nil then tpl.context.viewns[k] = v end end;
-		striptags   = util.striptags;
-		pcdata      = util.pcdata;
+		striptags   = xml.striptags;
+		pcdata      = xml.pcdata;
 		media       = media;
 		theme       = fs.basename(media);
 		resource    = luci.config.main.resourcebase;
@@ -932,7 +933,12 @@ function dispatch(request)
 				http.status(403, "Forbidden")
 				http.header("X-LuCI-Login-Required", "yes")
 
-				return tpl.render("sysauth", { duser = "root", fuser = user })
+				local scope = { duser = "root", fuser = user }
+				local ok, res = util.copcall(tpl.render_string, [[<% include("themes/" .. theme .. "/sysauth") %>]], scope)
+				if ok then
+					return res
+				end
+				return tpl.render("sysauth", scope)
 			end
 
 			http.header("Set-Cookie", 'sysauth=%s; path=%s; SameSite=Strict; HttpOnly%s' %{
