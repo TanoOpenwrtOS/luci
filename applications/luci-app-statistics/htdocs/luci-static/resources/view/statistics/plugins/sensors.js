@@ -8,7 +8,8 @@ var sensorTypes = [
 	/^(?:ain|in|vccp|vdd|vid|vin|volt|voltbatt|vrm)[0-9]*$/,	'voltage',
 	/^(?:cpu_temp|remote_temp|temp)[0-9]*$/,					'temperature',
 	/^(?:fan)[0-9]*$/,											'fanspeed',
-	/^(?:power)[0-9]*$/,										'power'
+	/^(?:power)[0-9]*$/,										'power',
+	/^(?:curr)[0-9]*$/,											'current'
 ];
 
 return baseclass.extend({
@@ -31,9 +32,20 @@ return baseclass.extend({
 						if (!L.isObject(output[bus][sensor]))
 							continue;
 
+						var sensorType = sensor;
+
+						/* Maybe user specified custom label in sensors.conf */
+						for (var property in output[bus][sensor]) {
+							var found = property.match(/(\w+\d+?)\_input$/);
+							if (found) {
+								sensorType = found[1];
+								break;
+							}
+						}
+
 						for (var j = 0; j < sensorTypes.length; j += 2) {
-							if (sensor.match(sensorTypes[j])) {
-								this.value('%s/%s-%s'.format(bus, sensorTypes[j + 1], sensor));
+							if (sensorType.match(sensorTypes[j])) {
+								this.value('%s/%s-%s'.format(bus, sensorTypes[j + 1], sensorType));
 								break;
 							}
 						}
