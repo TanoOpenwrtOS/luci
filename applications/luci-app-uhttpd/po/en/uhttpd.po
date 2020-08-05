@@ -122,12 +122,12 @@ msgid "HTTP/HTTPS"
 msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:94
-msgid "HTTPS Certificate (DER Encoded)"
-msgstr "HTTPS Certificate (DER Encoded)"
+msgid "HTTPS Certificate (DER or PEM format)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:96
-msgid "HTTPS Private Key (DER Encoded)"
-msgstr "HTTPS Private Key (DER Encoded)"
+msgid "HTTPS Private Key (DER or PEM format)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:50
 msgid "HTTPS listener (address:port)"
@@ -291,33 +291,3 @@ msgstr ""
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:163
 msgid "ubus integration is disabled if not present"
 msgstr "ubus integration is disabled if not present"
-
-#~ msgid "Country"
-#~ msgstr "Country"
-
-#~ msgid "Full Web Server Settings"
-#~ msgstr "Full Web Server Settings"
-
-#~ msgid "General Settings"
-#~ msgstr "General Settings"
-
-#~ msgid "Length of key in bits"
-#~ msgstr "Length of key in bits"
-
-#~ msgid "Location"
-#~ msgstr "Location"
-
-#~ msgid "Server Hostname"
-#~ msgstr "Server Hostname"
-
-#~ msgid "State"
-#~ msgstr "State"
-
-#~ msgid "Valid for # of Days"
-#~ msgstr "Valid for # of Days"
-
-#~ msgid "a.k.a CommonName"
-#~ msgstr "a.k.a CommonName"
-
-#~ msgid "uHTTPd Self-signed Certificate Parameters"
-#~ msgstr "uHTTPd Self-signed Certificate Parameters"

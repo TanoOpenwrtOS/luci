@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-05-02 10:21+0000\n"
+"PO-Revision-Date: 2020-08-04 18:32+0000\n"
 "Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsuhttpd/pt_BR/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:135
 msgid ""
@@ -127,12 +127,12 @@ msgid "HTTP/HTTPS"
 msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:94
-msgid "HTTPS Certificate (DER Encoded)"
-msgstr "Certificado do HTTPS (codificado em formato PEM)"
+msgid "HTTPS Certificate (DER or PEM format)"
+msgstr "Certificado HTTPS (em formato DER ou PEM)"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:96
-msgid "HTTPS Private Key (DER Encoded)"
-msgstr "Chave Privada do HTTPS (codificado como DER)"
+msgid "HTTPS Private Key (DER or PEM format)"
+msgstr "Chave Privada do HTTPS (em formato DER ou PEM)"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:50
 msgid "HTTPS listener (address:port)"
@@ -297,33 +297,3 @@ msgstr ""
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:163
 msgid "ubus integration is disabled if not present"
 msgstr "A integração com o ubus será desativada se não presente"
-
-#~ msgid "Country"
-#~ msgstr "País"
-
-#~ msgid "Full Web Server Settings"
-#~ msgstr "Configurações Completas do Servidor Web"
-
-#~ msgid "General Settings"
-#~ msgstr "Configurações Gerais"
-
-#~ msgid "Length of key in bits"
-#~ msgstr "Comprimento da chave em bits"
-
-#~ msgid "Location"
-#~ msgstr "Localização"
-
-#~ msgid "Server Hostname"
-#~ msgstr "Nome do Servidor"
-
-#~ msgid "State"
-#~ msgstr "Estado"
-
-#~ msgid "Valid for # of Days"
-#~ msgstr "Valido por # dias"
-
-#~ msgid "a.k.a CommonName"
-#~ msgstr "também conhecido como Nome Comum"
-
-#~ msgid "uHTTPd Self-signed Certificate Parameters"
-#~ msgstr "Parâmetros do Certificado Auto-assinado do uHTTPd"

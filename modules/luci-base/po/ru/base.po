@@ -3757,7 +3757,8 @@ msgstr ""
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/gretap.js:50
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6tap.js:55
 msgid "Logical network to which the tunnel will be added (bridged) (optional)."
-msgstr "Логическая сеть, к которой будет добавлен туннель (мост) (опционально)."
+msgstr ""
+"Логическая сеть, к которой будет добавлен туннель (мост) (опционально)."
 
 #: modules/luci-base/luasrc/view/sysauth.htm:38
 msgid "Login"
@@ -6127,8 +6128,8 @@ msgid ""
 "Specify an MTU (Maximum Transmission Unit) other than the default (1280 "
 "bytes) (optional)."
 msgstr ""
-"Укажите MTU (Maximum Transmission Unit), отличный от стандартного (1280 байт)"
-" (опционально)."
+"Укажите MTU (Maximum Transmission Unit), отличный от стандартного (1280 "
+"байт) (опционально)."
 
 #: protocols/luci-proto-ipip/htdocs/luci-static/resources/protocol/ipip.js:53
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:62
