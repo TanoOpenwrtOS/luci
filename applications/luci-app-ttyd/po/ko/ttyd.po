@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-07-28 17:55+0000\n"
-"Last-Translator: TheNoFace <fprhqkrtk303@naver.com>\n"
+"PO-Revision-Date: 2020-08-08 06:14+0000\n"
+"Last-Translator: Youngbin Han <sukso96100@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsttyd/ko/>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:15
 msgid "Add instance"
-msgstr ""
+msgstr "인스턴스 추가"
 
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:40
 msgid "Allow URL args"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Client option"
 msgstr ""
 
-#: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:76
+#: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:80
 msgid "Command"
 msgstr ""
 
@@ -80,6 +80,10 @@ msgstr ""
 msgid "Enable SSL"
 msgstr ""
 
+#: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:74
+msgid "Error"
+msgstr ""
+
 #: applications/luci-app-ttyd/root/usr/share/rpcd/acl.d/luci-app-ttyd.json:3
 msgid "Grant UCI access for luci-app-ttyd"
 msgstr ""
@@ -100,6 +104,10 @@ msgstr ""
 msgid "Index"
 msgstr ""
 
+#: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:77
+msgid "Info"
+msgstr ""
+
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:24
 msgid "Interface"
 msgstr "인터페이스"
@@ -116,6 +124,10 @@ msgstr ""
 msgid ""
 "Network interface to bind (eg: eth0), or UNIX domain socket path (eg: /var/"
 "run/ttyd.sock)"
+msgstr ""
+
+#: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:76
+msgid "Notice"
 msgstr ""
 
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:56
@@ -202,6 +214,10 @@ msgstr ""
 
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:31
 msgid "User id to run with"
+msgstr ""
+
+#: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:75
+msgid "Warning"
 msgstr ""
 
 #: applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json:3
