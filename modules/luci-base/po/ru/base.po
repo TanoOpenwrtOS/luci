@@ -549,7 +549,7 @@ msgstr ""
 msgid "Add new interface..."
 msgstr "Добавить новый интерфейс..."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:105
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:125
 msgid "Add peer"
 msgstr "Добавить узел (peer)"
 
@@ -715,7 +715,7 @@ msgstr ""
 "Разрешить ответы внешней сети в диапазоне 127.0.0.0/8, например, для RBL-"
 "сервисов"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:128
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:148
 msgid "Allowed IPs"
 msgstr "Разрешенные IP-адреса"
 
@@ -1696,7 +1696,7 @@ msgid "Delivery Traffic Indication Message Interval"
 msgstr "Интервал сообщений, регламентирующий доставку трафика"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:340
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:114
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:134
 msgid "Description"
 msgstr "Описание"
 
@@ -2200,11 +2200,11 @@ msgstr "Режим инкапсуляции"
 msgid "Encryption"
 msgstr "Шифрование"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:141
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:161
 msgid "Endpoint Host"
 msgstr "Конечный узел"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:145
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:165
 msgid "Endpoint Port"
 msgstr "Порт конечного узла"
 
@@ -2421,7 +2421,7 @@ msgstr "Завершить"
 msgid "Firewall"
 msgstr "Межсетевой экран"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:82
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:102
 msgid "Firewall Mark"
 msgstr "Метка межсетевого экрана"
 
@@ -2505,7 +2505,7 @@ msgstr "Режим перенаправления"
 msgid "Fragmentation Threshold"
 msgstr "Порог фрагментации"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:95
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:115
 msgid ""
 "Further information about WireGuard interfaces and peers at <a href='http://"
 "wireguard.com'>wireguard.com</a>."
@@ -2580,6 +2580,10 @@ msgstr "Общие настройки"
 msgid "Generate Config"
 msgstr "Создать конфигурационный файл"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:66
+msgid "Generate Key"
+msgstr "Сгененрировать ключ"
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1460
 msgid "Generate PMK locally"
 msgstr "Создать PMK локально"
@@ -2638,6 +2642,10 @@ msgstr "Предоставить доступ к просмотру состоя
 #: protocols/luci-proto-openconnect/root/usr/share/rpcd/acl.d/luci-openconnect.json:3
 msgid "Grant access to LuCI OpenConnect procedures"
 msgstr "Предоставить доступ к LuCI процедурам OpenConnect"
+
+#: protocols/luci-proto-wireguard/root/usr/share/rpcd/acl.d/luci-wireguard.json:3
+msgid "Grant access to LuCI Wireguard procedures"
+msgstr "Предоставить доступ к LuCI WireGuard процедурам"
 
 #: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:19
 msgid "Grant access to SSH configuration"
@@ -2824,7 +2832,7 @@ msgstr "Динамическая агрегация каналов IEEE 802.3ad 
 msgid "IKE DH Group"
 msgstr "IKE DH Group"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:63
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:83
 msgid "IP Addresses"
 msgstr "IP-адреса"
 
@@ -3318,8 +3326,8 @@ msgstr "Интервал отправки обучающих (learning) паке
 msgid "Invalid"
 msgstr "Неверно"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:11
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:14
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:19
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:22
 msgid "Invalid Base64 key string"
 msgstr "Неверная строка Base64 ключа"
 
@@ -3349,7 +3357,7 @@ msgstr ""
 msgid "Invalid command"
 msgstr "Неверная команда"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:86
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:106
 msgid "Invalid hexadecimal value"
 msgstr "Неверное шестнадцатеричное значение"
 
@@ -3620,7 +3628,7 @@ msgstr "Список хостов, поставляющих поддельные
 msgid "Listen Interfaces"
 msgstr "Интерфейс для входящих соединений"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:58
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:78
 msgid "Listen Port"
 msgstr "Порт для входящих соединений"
 
@@ -3846,7 +3854,7 @@ msgstr "MII интервал"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:54
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:53
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:77
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:97
 msgid "MTU"
 msgstr "MTU"
 
@@ -3957,7 +3965,7 @@ msgstr "Метод определения состояния соединени�
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:46
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:165
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:183
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:72
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:92
 msgid "Metric"
 msgstr "Метрика"
 
@@ -4227,7 +4235,7 @@ msgstr "DHCP-сервер не настроен для этого интерфе
 msgid "No Encryption"
 msgstr "Без шифрования"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:67
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:87
 msgid "No Host Routes"
 msgstr "Не создавать маршруты"
 
@@ -4295,7 +4303,7 @@ msgstr "Отключить кэш отрицательных ответов"
 msgid "No password set!"
 msgstr "Пароль не установлен!"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:110
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:130
 msgid "No peers defined yet"
 msgstr "Узлы ещё не определены"
 
@@ -4506,11 +4514,11 @@ msgid "Option removed"
 msgstr "Опция удалена"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1609
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:72
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:92
 msgid "Optional"
 msgstr "Необязательно"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:82
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:102
 msgid ""
 "Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
 "starting with <code>0x</code>."
@@ -4530,7 +4538,7 @@ msgstr ""
 "d::», используйте суффикс подобный «::1» для этого IPv6 адреса или «a:b:c:"
 "d::1» для этого интерфейса."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:123
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:143
 msgid ""
 "Optional. Base64-encoded preshared key. Adds in an additional layer of "
 "symmetric-key cryptography for post-quantum resistance."
@@ -4538,35 +4546,35 @@ msgstr ""
 "Необязательно. Base64-шифрованный общий ключ. Добавляет дополнительный слой "
 "криптографии с симметричным ключом для постквантовой устойчивости."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:139
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:159
 msgid "Optional. Create routes for Allowed IPs for this peer."
 msgstr ""
 "Необязательно. Создавать маршруты для разрешенных IP-адресов для этого узла."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:114
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:134
 msgid "Optional. Description of peer."
 msgstr "Необязательно. Описание узла."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:67
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:87
 msgid "Optional. Do not create host routes to peers."
 msgstr "Необязательно. Не создавать маршруты к пирам."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:141
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:161
 msgid ""
 "Optional. Host of peer. Names are resolved prior to bringing up the "
 "interface."
 msgstr ""
 "Необязательно. Имя хоста пира. Имена разрешаются до появления интерфейса."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:77
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:97
 msgid "Optional. Maximum Transmission Unit of tunnel interface."
 msgstr "Необязательно. MTU туннельного интерфейса."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:145
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:165
 msgid "Optional. Port of peer."
 msgstr "Необязательно. Порт узла."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:149
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:169
 msgid ""
 "Optional. Seconds between keep alive messages. Default is 0 (disabled). "
 "Recommended value if this device is behind a NAT is 25."
@@ -4575,7 +4583,7 @@ msgstr ""
 "«0» (отключено). Рекомендуемое значение, если это устройство находится за "
 "NAT — «25»."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:58
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:78
 msgid "Optional. UDP port used for outgoing and incoming packets."
 msgstr ""
 "Необязательно. UDP-порт, используемый для исходящих и входящих пакетов."
@@ -4910,7 +4918,7 @@ msgstr "Запрос IP-адреса назначения"
 msgid "Peer address is missing"
 msgstr "Отсутствует адрес пира"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:95
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:115
 msgid "Peers"
 msgstr "Пиры"
 
@@ -4937,7 +4945,7 @@ msgstr "Выполнить сброс"
 msgid "Permission denied"
 msgstr "Доступ запрещён"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:149
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:169
 msgid "Persistent Keep Alive"
 msgstr "Постоянно держать включенным"
 
@@ -5021,7 +5029,7 @@ msgstr "Предпочитать UMTS"
 msgid "Prefix Delegated"
 msgstr "Делегированный префикс"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:123
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:143
 msgid "Preshared Key"
 msgstr "Предварительный ключ"
 
@@ -5064,7 +5072,7 @@ msgstr ""
 "Первичный становится активным ведомым всякий раз, когда он восстанавливается "
 "(always, 0)"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:53
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:61
 msgid "Private Key"
 msgstr "Приватный ключ"
 
@@ -5101,7 +5109,7 @@ msgstr "Предоставлять новую сеть"
 msgid "Pseudo Ad-Hoc (ahdemo)"
 msgstr "Псевдо Ad-Hoc (ahdemo)"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:119
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:139
 msgid "Public Key"
 msgstr "Публичный ключ"
 
@@ -5249,7 +5257,7 @@ msgstr ""
 msgid "Receive"
 msgstr "Приём"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:63
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:83
 msgid "Recommended. IP addresses of the WireGuard interface."
 msgstr "Рекомендуемый. IP-адреса интерфейса WireGuard."
 
@@ -5348,15 +5356,15 @@ msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr ""
 "Требуется для некоторых Интернет провайдеров, например использующих DOCSIS 3"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:53
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:61
 msgid "Required. Base64-encoded private key for this interface."
 msgstr "Обязательно. Приватный ключ в кодировке Base64 для этого интерфейса."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:119
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:139
 msgid "Required. Base64-encoded public key of peer."
 msgstr "Обязательно. Публичный ключ узла в кодировке Base64."
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:128
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:148
 msgid ""
 "Required. IP addresses and prefixes that this peer is allowed to use inside "
 "the tunnel. Usually the peer's tunnel IP addresses and the networks the peer "
@@ -5532,7 +5540,7 @@ msgstr "Подготовка корневой директории"
 msgid "Round-Robin policy (balance-rr, 0)"
 msgstr "Политика round-robin (balance-rr, 0)"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:139
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:159
 msgid "Route Allowed IPs"
 msgstr "Маршрутизировать разрешенные IP-адреса"
 
@@ -7291,7 +7299,7 @@ msgstr "Проверка только для активного ведомого
 msgid "Validation only for backup slaves"
 msgstr "Проверка только для резервных ведомых"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:134
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:154
 msgid "Value must not be empty"
 msgstr "Значение не должно быть пустым"
 
@@ -7378,7 +7386,7 @@ msgid "Width"
 msgstr "Ширина"
 
 #: modules/luci-compat/luasrc/model/network/proto_wireguard.lua:9
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:21
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:29
 msgid "WireGuard VPN"
 msgstr "WireGuard VPN"
 
@@ -7747,7 +7755,7 @@ msgstr "положительное десятичное число"
 msgid "positive integer value"
 msgstr "положительное целое число"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:60
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:80
 msgid "random"
 msgstr "случайно"
 
@@ -7830,113 +7838,113 @@ msgstr "не определено"
 
 #: modules/luci-compat/luasrc/view/cbi/network_netlist.htm:71
 msgid "unspecified -or- create:"
-msgstr ""
+msgstr "не определено -или- создать:"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:350
 msgid "untagged"
-msgstr ""
+msgstr "не тегирован"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:246
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:121
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:132
 msgid "valid IP address"
-msgstr ""
+msgstr "верный IP-адрес"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:246
 msgid "valid IP address or prefix"
-msgstr ""
+msgstr "верный IP-адрес или префикс"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:281
 msgid "valid IPv4 CIDR"
-msgstr ""
+msgstr "верный IPv4-адрес в нотации CIDR"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:254
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:125
 msgid "valid IPv4 address"
-msgstr ""
+msgstr "верный IPv4-адрес"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:254
 msgid "valid IPv4 address or network"
-msgstr ""
+msgstr "верный IPv4-адрес или сеть"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:374
 msgid "valid IPv4 address:port"
-msgstr ""
+msgstr "верный IPv4-адрес:порт"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:314
 msgid "valid IPv4 network"
-msgstr ""
+msgstr "верная IPv4 сеть"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:276
 msgid "valid IPv4 or IPv6 CIDR"
-msgstr ""
+msgstr "верный IPv4 или IPv6-адрес в нотации CIDR"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:267
 msgid "valid IPv4 prefix value (0-32)"
-msgstr ""
+msgstr "верное значение IPv4 префикса (0–32)"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:286
 msgid "valid IPv6 CIDR"
-msgstr ""
+msgstr "верный IPv6-адрес в нотации CIDR"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:262
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:129
 msgid "valid IPv6 address"
-msgstr ""
+msgstr "верный IPv6-адрес"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:262
 msgid "valid IPv6 address or prefix"
-msgstr ""
+msgstr "верный IPv6-адрес или префикс"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:304
 msgid "valid IPv6 host id"
-msgstr ""
+msgstr "верный IPv6 идентификатор хоста"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:319
 msgid "valid IPv6 network"
-msgstr ""
+msgstr "верная IPv6 сеть"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:272
 msgid "valid IPv6 prefix value (0-128)"
-msgstr ""
+msgstr "верное значение IPv6 префикса (0–128)"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:340
 msgid "valid MAC address"
-msgstr ""
+msgstr "верный MAC-адрес"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:411
 msgid "valid UCI identifier"
-msgstr ""
+msgstr "верный идентификатор UCI"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:362
 msgid "valid UCI identifier, hostname or IP address"
-msgstr ""
+msgstr "верный идентификатор UCI, имя хоста или IP-адрес"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:383
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:386
 msgid "valid address:port"
-msgstr ""
+msgstr "верное значение адреса:порта"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:533
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:537
 msgid "valid date (YYYY-MM-DD)"
-msgstr ""
+msgstr "верное значение даты (ГГГГ-ММ-ЧЧ)"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:237
 msgid "valid decimal value"
-msgstr ""
+msgstr "верное десятичное число"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:405
 msgid "valid hexadecimal WEP key"
-msgstr ""
+msgstr "верный шестнадцатеричный WEB-ключ"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:393
 msgid "valid hexadecimal WPA key"
-msgstr ""
+msgstr "верный шестнадцатеричный WPA-ключ"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:368
 msgid "valid host:port"
-msgstr ""
+msgstr "верный хост:порт"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:355
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:357
@@ -7944,74 +7952,74 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:79
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:107
 msgid "valid hostname"
-msgstr ""
+msgstr "верное имя хоста"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:345
 msgid "valid hostname or IP address"
-msgstr ""
+msgstr "верное имя хоста или IP-адрес"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:229
 msgid "valid integer value"
-msgstr ""
+msgstr "верное целое число"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:309
 msgid "valid network in address/netmask notation"
-msgstr ""
+msgstr "верная значение сети в нотации адрес/маска"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:508
 msgid "valid phone digit (0-9, \"*\", \"#\", \"!\" or \".\")"
-msgstr ""
+msgstr "верное значение номера телефона (0–9, «*», «#», «!» или «.»)"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:332
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:335
 msgid "valid port or port range (port1-port2)"
-msgstr ""
+msgstr "верное значение порта или диапазон портов (порт1–порт2)"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:324
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:136
 msgid "valid port value"
-msgstr ""
+msgstr "верное значение порта"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:513
 msgid "valid time (HH:MM:SS)"
-msgstr ""
+msgstr "верное значение времени (ЧЧ:ММ:СС)"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:435
 msgid "value between %d and %d characters"
-msgstr ""
+msgstr "значение длиной от %d до %d символов"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:416
 msgid "value between %f and %f"
-msgstr ""
+msgstr "значение в диапазоне от %f до %f"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:420
 msgid "value greater or equal to %f"
-msgstr ""
+msgstr "значение больше или равное %f"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:424
 msgid "value smaller or equal to %f"
-msgstr ""
+msgstr "значение меньше или равное %f"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:429
 msgid "value with %d characters"
-msgstr ""
+msgstr "значение длиной %d символов"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:440
 msgid "value with at least %d characters"
-msgstr ""
+msgstr "значение длиной не менее %d символов"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:445
 msgid "value with at most %d characters"
-msgstr ""
+msgstr "значение длиной не более %d символов"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1317
 msgid "weak security"
-msgstr ""
+msgstr "слабая безопасность"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:46
 msgid "yes"
-msgstr ""
+msgstr "да"
 
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
-msgstr ""
+msgstr "« Назад"
