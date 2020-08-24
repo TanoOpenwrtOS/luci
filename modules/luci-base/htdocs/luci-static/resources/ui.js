@@ -2844,7 +2844,7 @@ var UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */ {
 			    selected = (entrypath == this.node.lastElementChild.value),
 			    mtime = new Date(list[i].mtime * 1000);
 
-			rows.appendChild(E('li', [
+			rows.appendChild(E('li', { 'class': selected ? 'cbi-filebrowser-selected' : null }, [
 				E('div', { 'class': 'name' }, [
 					this.iconForType(list[i].type),
 					' ',
