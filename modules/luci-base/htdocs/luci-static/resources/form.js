@@ -4205,6 +4205,7 @@ var CBIFileUpload = CBIValue.extend(/** @lends LuCI.form.FileUpload.prototype */
 			enable_upload: this.enable_upload,
 			enable_remove: this.enable_remove,
 			root_directory: this.root_directory,
+			validate: L.bind(this.validate, this, section_id),
 			disabled: (this.readonly != null) ? this.readonly : this.map.readonly
 		});
 

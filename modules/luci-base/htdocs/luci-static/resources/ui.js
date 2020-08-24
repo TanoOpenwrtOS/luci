@@ -2598,6 +2598,7 @@ var UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */ {
 	/** @private */
 	bind: function(browserEl) {
 		this.node = browserEl;
+		this.node.value = this.value;
 
 		this.setUpdateEvents(browserEl, 'cbi-fileupload-select', 'cbi-fileupload-cancel');
 		this.setChangeEvents(browserEl, 'cbi-fileupload-select', 'cbi-fileupload-cancel');
@@ -2762,6 +2763,7 @@ var UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */ {
 			if (path == hidden.value) {
 				dom.content(button, _('Select file…'));
 				hidden.value = '';
+				this.node.value = hidden.value;
 			}
 
 			return fs.remove(path).then(L.bind(function(parent, ev) {
@@ -2925,6 +2927,7 @@ var UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */ {
 		    hidden = this.node.lastElementChild;
 
 		hidden.value = '';
+		this.node.value = hidden.value;
 		dom.content(button, _('Select file…'));
 
 		this.handleCancel(ev);
@@ -2953,6 +2956,7 @@ var UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */ {
 			browser.classList.remove('open');
 			button.style.display = '';
 			hidden.value = path;
+			this.node.value = hidden.value;
 
 			this.stat = Object.assign({ path: path }, fileStat);
 			this.node.dispatchEvent(new CustomEvent('cbi-fileupload-select', { detail: this.stat }));
@@ -2990,6 +2994,7 @@ var UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */ {
 	/** @override */
 	setValue: function(value) {
 		this.node.lastElementChild.value = value;
+		this.node.value = value;
 	}
 });
 
