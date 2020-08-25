@@ -2584,6 +2584,14 @@ var UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */ {
 	 * prevented by the widget. Note that this is not a security feature.
 	 * Whether remote directories are browseable or not solely depends on the
 	 * ACL setup for the current session.
+	 *
+	 * @property {string} [accept_files=null]
+	 * This property defines limit for accepted file types. Often you won't
+	 * want the user to be able to pick any arbitrary type of file; instead,
+	 * you often want them to select files of a specific type or types. For
+	 * example, if your file input lets users upload a profile picture, you
+	 * probably want them to select web-compatible image formats, such as
+	 * JPEG or PNG.
 	 */
 	__init__: function(value, options) {
 		this.value = value;
@@ -2591,7 +2599,8 @@ var UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */ {
 			show_hidden: false,
 			enable_upload: true,
 			enable_remove: true,
-			root_directory: '/etc/luci-uploads'
+			root_directory: '/etc/luci-uploads',
+			accept_files: null,
 		}, options);
 	},
 
@@ -2796,6 +2805,7 @@ var UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */ {
 				E('input', {
 					'type': 'file',
 					'style': 'display:none',
+					'accept': this.options.accept_files,
 					'change': function(ev) {
 						var nameinput = ev.target.parentNode.querySelector('input[type="text"]'),
 						    uploadbtn = ev.target.parentNode.querySelector('button.cbi-button-save');

@@ -4134,6 +4134,7 @@ var CBIFileUpload = CBIValue.extend(/** @lends LuCI.form.FileUpload.prototype */
 		this.enable_upload = true;
 		this.enable_remove = true;
 		this.root_directory = '/etc/luci-uploads';
+		this.accept_files = null;
 	},
 
 	/**
@@ -4196,6 +4197,31 @@ var CBIFileUpload = CBIValue.extend(/** @lends LuCI.form.FileUpload.prototype */
 	 * @default /etc/luci-uploads
 	 */
 
+	/**
+	 * Specify limit for accepted file types
+	 *
+	 * This property defines limit for accepted file types. Often you won't
+	 * want the user to be able to pick any arbitrary type of file; instead,
+	 * you often want them to select files of a specific type or types. For
+	 * example, if your file input lets users upload a profile picture, you
+	 * probably want them to select web-compatible image formats, such as
+	 * JPEG or PNG.
+	 *
+	 * Acceptable file types can be specified with this property, which takes
+	 * a comma-separated list of allowed file extensions or MIME types.
+	 *
+	 * Some examples:
+	 * - "image/png" or ".png" - Accepts PNG files.
+	 * - "image/png, image/jpeg" or ".png, .jpg, .jpeg" - Accept PNG or JPEG files.
+	 * - "image/*" - Accept any file with an image/* MIME type.
+	 *
+	 * The default is null (no limit).
+	 *
+	 * @name LuCI.form.FileUpload.prototype#accept_files
+	 * @type string
+	 * @default null
+	 */
+
 	/** @private */
 	renderWidget: function(section_id, option_index, cfgvalue) {
 		var browserEl = new ui.FileUpload((cfgvalue != null) ? cfgvalue : this.default, {
@@ -4205,6 +4231,7 @@ var CBIFileUpload = CBIValue.extend(/** @lends LuCI.form.FileUpload.prototype */
 			enable_upload: this.enable_upload,
 			enable_remove: this.enable_remove,
 			root_directory: this.root_directory,
+			accept_files: this.accept_files,
 			validate: L.bind(this.validate, this, section_id),
 			disabled: (this.readonly != null) ? this.readonly : this.map.readonly
 		});
