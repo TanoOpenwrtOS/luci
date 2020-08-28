@@ -11,7 +11,6 @@ i18ndir = util.libpath() .. "/i18n/"
 context = util.threadlocal()
 default = "en"
 
-
 function setlanguage(lang)
 	local code, subcode = lang:match("^([A-Za-z][A-Za-z])[%-_]([A-Za-z][A-Za-z])$")
 	if not (code and subcode) then
@@ -38,6 +37,10 @@ function setlanguage(lang)
 	end
 
 	return nil
+end
+
+function getlanguage()
+	return context.lang
 end
 
 function translate(key)

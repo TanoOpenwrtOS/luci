@@ -30,6 +30,7 @@
 		rpctimeout     = luci.config.main.rpctimeout or 20,
 		sessionid      = luci.dispatcher.context.authsession,
 		nodespec       = luci.dispatcher.context.dispatched,
+		lang           = luci.i18n.getlanguage(),
 		apply_rollback = math.max(applyconf and applyconf.rollback or 30, 30),
 		apply_holdoff  = math.max(applyconf and applyconf.holdoff or 4, 1),
 		apply_timeout  = math.max(applyconf and applyconf.timeout or 5, 1),
