@@ -3393,6 +3393,7 @@ var CBIValue = CBIAbstractValue.extend(/** @lends LuCI.form.Value.prototype */ {
 				password: this.password,
 				optional: this.optional || this.rmempty,
 				datatype: this.datatype,
+				autocomplete: this.autocomplete,
 				placeholder: this.placeholder,
 				validate: L.bind(this.validate, this, section_id),
 				disabled: (this.readonly != null) ? this.readonly : this.map.readonly
