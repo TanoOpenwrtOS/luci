@@ -2859,7 +2859,7 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 
 		return Promise.resolve(this.addModalOptions(s, section_id, ev)).then(L.bind(m.render, m)).then(L.bind(function(nodes) {
 			ui.showModal(title, [
-				nodes,
+				E('form', {}, nodes),
 				E('div', { 'class': 'right' }, [
 					E('button', {
 						'class': 'btn',
