@@ -3196,7 +3196,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 		for (var i = 2; i < arguments.length; i++)
 			dlg.classList.add(arguments[i]);
 
-		dom.content(dlg, dom.create('h4', {}, title));
+		dom.content(dlg, title ? dom.create('h4', {}, title) : null);
 		dom.append(dlg, children);
 
 		document.body.classList.add('modal-overlay-active');
