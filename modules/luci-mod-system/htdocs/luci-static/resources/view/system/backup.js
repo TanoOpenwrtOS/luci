@@ -33,6 +33,7 @@ return view.extend({
 
 		form.submit();
 		form.parentNode.removeChild(form);
+
 	},
 
 	handleFirstboot: function(ev) {
@@ -168,7 +169,7 @@ return view.extend({
 		o = s.option(form.SectionValue, 'actions', form.NamedSection, 'actions', 'actions', _('Backup'), _('Click "Generate archive" to download a tar archive of the current configuration files.'));
 		ss = o.subsection;
 
-		o = ss.option(form.Button, 'dl_backup', _('Download backup'));
+		o = ss.option(form.Button, 'Dl_backup', _('Download backup'));
 		o.inputstyle = 'action important';
 		o.inputtitle = _('Generate archive');
 		o.onclick = this.handleBackup;
@@ -178,13 +179,13 @@ return view.extend({
 		ss = o.subsection;
 
 		if (has_rootfs_data) {
-			o = ss.option(form.Button, 'reset', _('Reset to defaults'));
+			o = ss.option(form.Button, 'Reset', _('Reset to defaults'));
 			o.inputstyle = 'negative important';
 			o.inputtitle = _('Perform reset');
 			o.onclick = this.handleFirstboot;
 		}
 
-		o = ss.option(form.Button, 'restore', _('Restore backup'), _('Custom files (certificates, scripts) may remain on the system. To prevent this, perform a factory-reset first.'));
+		o = ss.option(form.Button, 'Restore', _('Restore backup'), _('Custom files (certificates, scripts) may remain on the system. To prevent this, perform a factory-reset first.'));
 		o.inputstyle = 'action important';
 		o.inputtitle = _('Upload archive...');
 		o.onclick = L.bind(this.handleRestore, this);
@@ -206,7 +207,7 @@ return view.extend({
 				}, this));
 		}, s, this);
 
-		o = s.option(form.Button, 'showlist');
+		o = s.option(form.Button, 'Showlist');
 		o.inputstyle = 'action';
 		o.inputtitle = _('Show the current list...');
 		o.onclick = L.bind(this.handleBackupList, this);
