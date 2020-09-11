@@ -19,6 +19,13 @@ NextUpdateStrings = {
 	'Stopped' : _("Stopped")
 }
 
+/* IE is not supported String.startsWith() */
+if (!String.prototype.startsWith) {
+	String.prototype.startsWith = function(searchString, position) {
+		return this.substr(position || 0, searchString.length) === searchString;
+	};
+}
+
 var time_res = {};
 time_res['seconds'] = 1;
 time_res['minutes'] = 60;
@@ -149,7 +156,7 @@ return view.extend({
 
 		m = new form.Map('ddns', _('Dynamic DNS'));
 
-		s = m.section(form.NamedSection, 'global', 'ddns',);
+		s = m.section(form.NamedSection, 'global', 'ddns');
 
 		s.tab('info', _('Information'));
 		s.tab('global', _('Global Configuration'));
