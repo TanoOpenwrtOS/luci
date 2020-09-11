@@ -37,7 +37,7 @@ return view.extend({
 		]);
 	},
 
-	getNetworkByDevice(networks, dev, addr, mask, v6) {
+	getNetworkByDevice: function(networks, dev, addr, mask, v6) {
 		var addr_arrays = [ 'ipv4-address', 'ipv6-address', 'ipv6-prefix', 'ipv6-prefix-assignment', 'route' ],
 		    matching_iface = null,
 		    matching_prefix = -1;
