@@ -745,8 +745,14 @@ var UISelect = UIElement.extend(/** @lends LuCI.ui.Select.prototype */ {
 
 	/** @override */
 	render: function() {
-		var frameEl = E('div', { 'id': this.options.id }),
-		    keys = Object.keys(this.choices);
+		var frameEl = E('div', {
+			'id': this.options.id,
+			'class': 'ui-select',
+			'data-widget': this.options.widget,
+			'data-orientation': (this.options.widget === 'radio' || this.options.widget === 'checkbox')
+				? this.options.orientation : null
+		});
+		var keys = Object.keys(this.choices);
 
 		if (this.options.sort === true)
 			keys.sort();
@@ -780,8 +786,6 @@ var UISelect = UIElement.extend(/** @lends LuCI.ui.Select.prototype */ {
 			}
 		}
 		else {
-			var brEl = (this.options.orientation === 'horizontal') ? document.createTextNode(' \xa0 ') : E('br');
-
 			for (var i = 0; i < keys.length; i++) {
 				frameEl.appendChild(E('span', {
 					'class': 'cbi-%s'.format(this.options.multiple ? 'checkbox' : 'radio')
@@ -802,8 +806,6 @@ var UISelect = UIElement.extend(/** @lends LuCI.ui.Select.prototype */ {
 						}
 					}, [ this.choices[keys[i]] || keys[i] ])
 				]));
-
-				frameEl.appendChild(brEl.cloneNode());
 			}
 		}
 
