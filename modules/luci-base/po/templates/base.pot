@@ -12,7 +12,7 @@ msgstr ""
 msgid "%.2mB (%d %s)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3838
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3840
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:13
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:14
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:9
@@ -44,7 +44,7 @@ msgstr ""
 msgid "%d Bit"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3741
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3743
 msgid "%d invalid field(s)"
 msgstr ""
 
@@ -56,8 +56,8 @@ msgstr ""
 msgid "%dh %dm %ds"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2631
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2965
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2633
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2967
 msgid "%s (%1000mB)"
 msgstr ""
 
@@ -97,19 +97,19 @@ msgid "-- Additional Field --"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:275
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3378
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3711
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:770
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1008
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1977
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3382
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3715
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:776
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1010
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1979
 #: modules/luci-compat/luasrc/view/cbi/header.htm:8
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:88
 msgid "-- Please choose --"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:276
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1009
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:1978
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1011
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:1980
 #: modules/luci-compat/luasrc/view/cbi/header.htm:9
 msgid "-- custom --"
 msgstr ""
@@ -301,7 +301,7 @@ msgid ""
 "was empty before editing."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2733
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2735
 msgid "A directory with the same name already exists."
 msgstr ""
 
@@ -456,11 +456,11 @@ msgstr ""
 msgid "Adaptive transmit load balancing (balance-tlb, 5)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2167
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2170
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2184
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2185
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3176
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2171
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2174
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2188
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2189
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3180
 #: modules/luci-compat/luasrc/view/cbi/nsection.htm:25
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:191
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:199
@@ -788,16 +788,16 @@ msgstr ""
 msgid "Apply backup?"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4328
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4330
 msgid "Apply request failed with status <code>%h</code>"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2205
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4194
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4196
 msgid "Apply unchecked"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4267
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4269
 msgid "Applying configuration changes… %ds"
 msgstr ""
 
@@ -1042,8 +1042,8 @@ msgstr ""
 msgid "Broadcast policy (broadcast, 3)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2825
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3851
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2827
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3853
 msgid "Browse…"
 msgstr ""
 
@@ -1073,8 +1073,8 @@ msgstr ""
 msgid "Call failed"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2918
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3860
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2920
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3862
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:14
 #: modules/luci-compat/luasrc/view/cbi/simpleform.htm:52
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:187
@@ -1139,11 +1139,11 @@ msgstr ""
 msgid "Chain"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4080
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4082
 msgid "Changes"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4363
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4365
 msgid "Changes have been reverted."
 msgstr ""
 
@@ -1207,7 +1207,7 @@ msgstr ""
 msgid "Client"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:49
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:52
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:47
 msgid "Client ID to send when requesting DHCP"
 msgstr ""
@@ -1278,16 +1278,16 @@ msgstr ""
 msgid "Compute outgoing checksum (optional)."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4080
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4082
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:193
 msgid "Configuration"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4242
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4244
 msgid "Configuration changes applied."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4180
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4182
 msgid "Configuration changes have been rolled back!"
 msgstr ""
 
@@ -1345,7 +1345,7 @@ msgstr ""
 msgid "Continue"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4216
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4218
 msgid ""
 "Could not regain access to the device after applying the configuration "
 "changes. You might need to reconnect if you modified network related "
@@ -1558,11 +1558,11 @@ msgid ""
 "servers to clients."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2237
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2668
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2241
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2672
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3160
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2887
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2676
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3164
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2889
 #: modules/luci-compat/luasrc/view/cbi/nsection.htm:11
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:163
 #: modules/luci-compat/luasrc/view/cbi/tsection.htm:16
@@ -1574,7 +1574,7 @@ msgstr ""
 msgid "Delete key"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2783
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2785
 msgid "Delete request failed: %s"
 msgstr ""
 
@@ -1591,7 +1591,7 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2883
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2885
 msgid "Deselect"
 msgstr ""
 
@@ -1653,7 +1653,7 @@ msgstr ""
 msgid "Device not managed by ModemManager."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4215
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4217
 msgid "Device unreachable!"
 msgstr ""
 
@@ -1670,7 +1670,7 @@ msgstr ""
 msgid "Dial number"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2678
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2680
 msgid "Directory"
 msgstr ""
 
@@ -1742,10 +1742,10 @@ msgid "Disconnection attempt failed."
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:606
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2867
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3327
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4097
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4186
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2871
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3329
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4099
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4188
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1688
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:135
 msgid "Dismiss"
@@ -1786,7 +1786,7 @@ msgstr ""
 msgid "Do not forward reverse lookups for local networks"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2768
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2770
 msgid "Do you really want to delete \"%s\" ?"
 msgstr ""
 
@@ -1798,7 +1798,7 @@ msgstr ""
 msgid "Do you really want to erase all settings?"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2766
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2768
 msgid "Do you really want to recursively delete the directory \"%s\" ?"
 msgstr ""
 
@@ -1838,7 +1838,7 @@ msgstr ""
 msgid "Downstream SNR offset"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2626
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2630
 msgid "Drag to reorder"
 msgstr ""
 
@@ -1887,9 +1887,9 @@ msgstr ""
 msgid "EAP-Method"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2646
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2649
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3023
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2650
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2653
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3027
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:155
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:161
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:339
@@ -2211,7 +2211,7 @@ msgstr ""
 msgid "Failed to change the system password."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4174
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4176
 msgid "Failed to confirm apply within %ds, waiting for rollback…"
 msgstr ""
 
@@ -2219,15 +2219,15 @@ msgstr ""
 msgid "Failed to execute \"/etc/init.d/%s %s\" action: %s"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2686
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2688
 msgid "File"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2633
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2635
 msgid "File not accessible"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2826
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2828
 msgid "Filename"
 msgstr ""
 
@@ -2480,8 +2480,8 @@ msgstr ""
 msgid "Go to password configuration..."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2568
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3342
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2572
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3346
 #: modules/luci-compat/luasrc/view/cbi/full_valueheader.htm:4
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:58
 msgid "Go to relevant configuration page"
@@ -2935,7 +2935,7 @@ msgid ""
 "device node"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:34
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:37
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:116
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/464xlat.js:48
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/6in4.js:85
@@ -2957,7 +2957,7 @@ msgstr ""
 msgid "If unchecked, no default route is configured"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:37
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:40
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:124
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:39
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:116
@@ -3372,7 +3372,7 @@ msgstr ""
 msgid "Leave empty to use the current WAN address"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4082
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4084
 msgid "Legend:"
 msgstr ""
 
@@ -3481,7 +3481,7 @@ msgstr ""
 msgid "Load Average"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2954
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2956
 msgid "Loading directory contents…"
 msgstr ""
 
@@ -3887,7 +3887,7 @@ msgstr ""
 msgid "More Characters"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2509
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2513
 msgid "More…"
 msgstr ""
 
@@ -3976,8 +3976,8 @@ msgstr ""
 msgid "NTP server candidates"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2548
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3837
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2552
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3839
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:27
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:710
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:67
@@ -4038,7 +4038,7 @@ msgstr ""
 msgid "Next »"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3650
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3654
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:296
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:345
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:108
@@ -4073,7 +4073,7 @@ msgstr ""
 msgid "No data received"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2893
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2895
 msgid "No entries in this directory"
 msgstr ""
 
@@ -4315,7 +4315,7 @@ msgid "Operating frequency"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:1971
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3660
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3664
 msgid "Option \"%s\" contains an invalid input value."
 msgstr ""
 
@@ -4323,11 +4323,11 @@ msgstr ""
 msgid "Option \"%s\" must not be empty."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4089
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4091
 msgid "Option changed"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4091
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4093
 msgid "Option removed"
 msgstr ""
 
@@ -4438,7 +4438,7 @@ msgstr ""
 msgid "Output zone"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:54
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:57
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:222
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:40
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:50
@@ -4447,7 +4447,7 @@ msgstr ""
 msgid "Override MAC address"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:58
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:61
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:226
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/gre.js:57
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/gretap.js:62
@@ -4510,7 +4510,7 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2734
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2736
 msgid "Overwrite existing file \"%s\" ?"
 msgstr ""
 
@@ -4784,7 +4784,7 @@ msgstr ""
 msgid "Please enter your username and password."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3820
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3822
 msgid "Please select the file to upload."
 msgstr ""
 
@@ -5134,7 +5134,7 @@ msgstr ""
 msgid "Required"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:31
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:34
 msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr ""
 
@@ -5288,19 +5288,19 @@ msgstr ""
 msgid "Reveal/hide password"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4105
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4107
 msgid "Revert"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4190
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4192
 msgid "Revert changes"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4372
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4374
 msgid "Revert request failed with status <code>%h</code>"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4352
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4354
 msgid "Reverting configuration…"
 msgstr ""
 
@@ -5406,7 +5406,7 @@ msgstr ""
 msgid "SWAP"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2872
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2876
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2222
 #: modules/luci-compat/luasrc/view/cbi/error.htm:17
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:29
@@ -5417,7 +5417,7 @@ msgid "Save"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2204
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4101
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4103
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:24
 msgid "Save & Apply"
 msgstr ""
@@ -5435,11 +5435,11 @@ msgstr ""
 msgid "Scheduled Tasks"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4085
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4087
 msgid "Section added"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4087
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4089
 msgid "Section removed"
 msgstr ""
 
@@ -5447,9 +5447,9 @@ msgstr ""
 msgid "See \"mount\" manpage for details"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2635
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2775
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2943
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2637
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2777
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2945
 msgid "Select file…"
 msgstr ""
 
@@ -5583,7 +5583,7 @@ msgstr ""
 msgid "Signal:"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3838
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3840
 msgid "Size"
 msgstr ""
 
@@ -5870,7 +5870,7 @@ msgstr ""
 msgid "Start refresh"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4305
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4307
 msgid "Starting configuration apply…"
 msgstr ""
 
@@ -5987,7 +5987,7 @@ msgstr ""
 msgid "Switch to CIDR list notation"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2670
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2672
 msgid "Symbolic link"
 msgstr ""
 
@@ -6111,7 +6111,7 @@ msgstr ""
 msgid "The configuration file could not be loaded due to the following error:"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4181
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4183
 msgid ""
 "The device could not be reached within %d seconds after applying the pending "
 "changes, which caused the configuration to be rolled back for safety "
@@ -6263,7 +6263,7 @@ msgstr ""
 msgid "There are no active leases"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4320
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4322
 msgid "There are no changes to apply"
 msgstr ""
 
@@ -6358,8 +6358,8 @@ msgid ""
 "This option cannot be used because the ca-bundle package is not installed."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2205
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2516
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2209
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2520
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:173
 #: modules/luci-compat/luasrc/view/cbi/tsection.htm:32
 msgid "This section contains no values yet"
@@ -6591,7 +6591,7 @@ msgstr ""
 msgid "Unnamed key"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4025
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4027
 msgid "Unsaved Changes"
 msgstr ""
 
@@ -6621,7 +6621,7 @@ msgstr ""
 msgid "Up Delay"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3912
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3914
 msgid "Upload"
 msgstr ""
 
@@ -6631,25 +6631,25 @@ msgstr ""
 msgid "Upload archive..."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2831
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2833
 msgid "Upload file"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2805
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2807
 msgid "Upload file…"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3858
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3860
 msgid "Upload has been cancelled"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:2751
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3900
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:2753
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3902
 msgid "Upload request failed: %s"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3819
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3873
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3821
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3875
 msgid "Uploading file…"
 msgstr ""
 
@@ -6677,7 +6677,7 @@ msgstr ""
 msgid "Use DHCP gateway"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:37
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:40
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:124
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:39
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:116
@@ -6734,7 +6734,7 @@ msgstr ""
 msgid "Use as root filesystem (/)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:31
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:34
 msgid "Use broadcast flag"
 msgstr ""
 
@@ -6742,7 +6742,7 @@ msgstr ""
 msgid "Use builtin IPv6-management"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:40
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:43
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:182
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:127
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:42
@@ -6757,7 +6757,7 @@ msgstr ""
 msgid "Use custom DNS servers"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:34
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:37
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:116
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:33
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:64
@@ -6771,7 +6771,7 @@ msgstr ""
 msgid "Use default gateway"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:45
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:48
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:230
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:119
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/464xlat.js:51
@@ -6953,7 +6953,7 @@ msgstr ""
 msgid "Vendor"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:52
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:55
 msgid "Vendor Class to send when requesting DHCP"
 msgstr ""
 
@@ -7090,7 +7090,7 @@ msgstr ""
 msgid "XOR policy (balance-xor, 2)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3650
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3654
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:295
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:344
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:109
@@ -7339,7 +7339,7 @@ msgstr ""
 msgid "non-empty value"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3013
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3017
 msgid "none"
 msgstr ""
 
@@ -7447,7 +7447,7 @@ msgstr ""
 msgid "unlimited"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3378
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3382
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:76
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:138
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:369
