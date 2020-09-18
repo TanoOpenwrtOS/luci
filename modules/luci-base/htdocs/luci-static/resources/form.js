@@ -2137,16 +2137,20 @@ var CBITypedSection = CBIAbstractSection.extend(/** @lends LuCI.form.TypedSectio
 	handleAdd: function(ev, name) {
 		var config_name = this.uciconfig || this.map.config;
 
-		this.map.data.add(config_name, this.sectiontype, name);
-		return this.map.save(null, true);
+		return this.map.save(null, true).then(function() {
+			this.map.data.add(config_name, this.sectiontype, name);
+			return this.map.renderContents();
+		}.bind(this));
 	},
 
 	/** @private */
 	handleRemove: function(section_id, ev) {
 		var config_name = this.uciconfig || this.map.config;
 
-		this.map.data.remove(config_name, section_id);
-		return this.map.save(null, true);
+		return this.map.save(null, true).then(function() {
+			this.map.data.remove(config_name, section_id);
+			return this.map.renderContents();
+		}.bind(this));
 	},
 
 	/** @private */
