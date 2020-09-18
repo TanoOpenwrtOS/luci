@@ -124,7 +124,7 @@ config collectd_iptables_match
 	option target 'MASQUERADE'
 	option source '192.168.1.0/24'
 	option outputif 'br-ff'
-	option name 'LAN-Clients traffic'
+	option name 'LAN-Clients-traffic'
 
 config collectd_iptables_match
 	option chain 'luci_fw_postrouting'
@@ -132,7 +132,7 @@ config collectd_iptables_match
 	option target 'MASQUERADE'
 	option source '10.61.230.0/24'
 	option outputif 'br-ff'
-	option name 'WLAN-Clients traffic'
+	option name 'WLAN-Clients-traffic'
 
 config statistics 'collectd_irq'
 	option enable '0'
