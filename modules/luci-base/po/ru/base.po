@@ -1909,6 +1909,10 @@ msgstr ""
 msgid "Do not forward reverse lookups for local networks"
 msgstr "Не перенаправлять обратные DNS-запросы для локальных сетей"
 
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:25
+msgid "Do not send a hostname"
+msgstr "Не отправлять имя хоста"
+
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2770
 msgid "Do you really want to delete \"%s\" ?"
 msgstr "Вы действительно хотите удалить «%s»?"
@@ -5718,6 +5722,10 @@ msgid ""
 msgstr ""
 "Отправлять эхо-пакеты LCP с указанным интервалом (секунды), эффективно "
 "только в сочетании с порогом ошибок"
+
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:24
+msgid "Send the hostname of this device"
+msgstr "Отправлять имя хоста этого устройства"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:157
 msgid "Server Settings"

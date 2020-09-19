@@ -1786,6 +1786,10 @@ msgstr ""
 msgid "Do not forward reverse lookups for local networks"
 msgstr ""
 
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:25
+msgid "Do not send a hostname"
+msgstr ""
+
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2770
 msgid "Do you really want to delete \"%s\" ?"
 msgstr ""
@@ -5466,6 +5470,10 @@ msgstr ""
 msgid ""
 "Send LCP echo requests at the given interval in seconds, only effective in "
 "conjunction with failure threshold"
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:24
+msgid "Send the hostname of this device"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:157
