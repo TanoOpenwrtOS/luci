@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: adblock\n"
 "POT-Creation-Date: 2017-10-22 13:00+0300\n"
-"PO-Revision-Date: 2020-07-23 06:01+0000\n"
-"Last-Translator: sergio <sergio+it@outerface.net>\n"
+"PO-Revision-Date: 2020-10-09 00:10+0000\n"
+"Last-Translator: Artem <KovalevArtem.ru@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/ru/>\n"
 "Language: ru\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
@@ -312,8 +312,6 @@ msgstr "Включить сервис AdBlock."
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:333
 msgid "Enable verbose debug logging in case of any processing errors."
 msgstr ""
-"Включите подробное ведение журнала отладки в случае каких-либо ошибок "
-"обработки."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:284
 msgid "Enabled"
@@ -412,6 +410,8 @@ msgid ""
 "List of available network interfaces to trigger the adblock start. Choose "
 "'unspecified' to use a classic startup timeout instead of a network trigger."
 msgstr ""
+"Список сетевых интерфейсов для запуска adblock по их доступности. Выберите "
+"'не определено' для запуска по таймауту."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:381
 msgid ""
@@ -497,6 +497,8 @@ msgid ""
 "Redirect all DNS queries from 'lan' zone to the local DNS resolver, applies "
 "to UDP and TCP protocol."
 msgstr ""
+"Перенаправить все DNS запросы из 'lan' зоны на локальный DNS резолвер. "
+"Применимо к  UDP и TCP протоколам."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:336
 msgid ""
@@ -596,6 +598,8 @@ msgid ""
 "Send adblock related notification e-mails. Please note: this needs "
 "additional 'msmtp' package installation."
 msgstr ""
+"Отправлять на e-mail уведомления касающиеся adblock. Замечание: требуется "
+"установка дополнительного пакета \"msmtp\"."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:457
 msgid "Sender address for adblock notification E-Mails."
@@ -631,7 +635,7 @@ msgstr "Разделенный пробелами список портов ис
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:375
 msgid "Special config options for the selected download utility."
-msgstr ""
+msgstr "Специальные конфигурационные опции для выбранной утилиты загрузки."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:300
 msgid "Start Date"
@@ -654,12 +658,16 @@ msgid ""
 "Target directory for DNS related report files. Default is '/tmp', please use "
 "preferably an usb stick or another local disk."
 msgstr ""
+"Каталог для отчетов связанных с DNS. '/tmp' по умолчанию, предпочтительно "
+"использовать USB или другой локальный диск."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:362
 msgid ""
 "Target directory for blocklist backups. Default is '/tmp', please use "
 "preferably an usb stick or another local disk."
 msgstr ""
+"Каталог для бэкапов блок-списков . '/tmp' по умолчанию, предпочтительно "
+"использовать USB или другой локальный диск."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:390
 msgid "Target directory for the generated blocklist 'adb_list.overall'."
@@ -728,6 +736,7 @@ msgid ""
 "To keep your adblock lists up-to-date, you should setup an automatic update "
 "job for these lists."
 msgstr ""
+"Чтобы списки были актуальными, следует настроить автоматическое обновление."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:329
 msgid "Top 10 Statistics"
@@ -735,7 +744,7 @@ msgstr "Топ-10 статистики"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:461
 msgid "Topic for adblock notification E-Mails."
-msgstr ""
+msgstr "Тема электронных писем уведомлений adblock."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:341
 msgid "Trigger Delay"
