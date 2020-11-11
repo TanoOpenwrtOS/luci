@@ -53,7 +53,7 @@ msgstr "Тип адреса"
 msgid "Aggregate number of connected users"
 msgstr "Общее число подключенных пользователей"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:223
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:226
 msgid "Apply interval »"
 msgstr "Применить интервал »"
 
@@ -96,7 +96,7 @@ msgstr "Настройка плагина частоты CPU"
 msgid "CPU Plugin Configuration"
 msgstr "Настройка плагина «CPU»"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:32
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:40
 msgid "CPU monitoring is enabled"
 msgstr "Мониторинг CPU включен"
 
@@ -231,11 +231,11 @@ msgstr "Использовано места на диске"
 msgid "Disk Usage"
 msgstr "Использование диска"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:211
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:212
 msgid "Display Host »"
 msgstr "Показать хост »"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:217
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:219
 msgid "Display timespan »"
 msgstr "Показать за промежуток »"
 
@@ -290,7 +290,7 @@ msgstr "Включить статистику"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ping.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:12
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:21
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:22
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/syslog.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/tcpconns.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/thermal.js:13
@@ -558,7 +558,7 @@ msgstr "Мониторинг памяти включён"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:45
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:25
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:41
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:47
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:59
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/thermal.js:34
 msgid "Monitor all except specified"
 msgstr "Собирать статистику со всех кроме указанных"
@@ -670,7 +670,7 @@ msgstr[0] "Мониторинг всех прерываний, кроме одн
 msgstr[1] "Мониторинг всех прерываний, кроме %d"
 msgstr[2] "Мониторинг всех прерываний, кроме %d"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:56
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:68
 msgid "Monitoring all but one sensor"
 msgid_plural "Monitoring all but %d sensors"
 msgstr[0] "Мониторинг всех сенсоров, кроме одного"
@@ -699,7 +699,7 @@ msgstr "Мониторинг всех прерываний"
 msgid "Monitoring all partitions"
 msgstr "Мониторинг всех разделов"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:60
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:72
 msgid "Monitoring all sensors"
 msgstr "Мониторинг всех сенсоров"
 
@@ -766,7 +766,7 @@ msgstr[0] "Мониторинг одного процесса"
 msgstr[1] "Мониторинг %d процессов"
 msgstr[2] "Мониторинг %d процессов"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:58
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:70
 msgid "Monitoring one sensor"
 msgid_plural "Monitoring %d sensors"
 msgstr[0] "Мониторинг одного сенсора"
@@ -934,6 +934,10 @@ msgstr "RRDTool"
 msgid "RRDTool Plugin Configuration"
 msgstr "Настройка плагина «RRDTool»"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:27
+msgid "Report also the value for the idle metric"
+msgstr "Отображать значения состояние простоя (idle)"
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:14
 msgid "Report by CPU"
 msgstr "Отдельно для каждого процессора"
@@ -942,7 +946,7 @@ msgstr "Отдельно для каждого процессора"
 msgid "Report by state"
 msgstr "Отдельно для каждого состояния"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:26
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:32
 msgid "Report in percent"
 msgstr "Отображать в процентах"
 
@@ -976,7 +980,7 @@ msgstr "Скрипт"
 msgid "Seconds"
 msgstr "Секунд(ы)"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:23
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:24
 msgid "Sensor list"
 msgstr "Список сенсоров"
 
@@ -985,7 +989,7 @@ msgstr "Список сенсоров"
 msgid "Sensors"
 msgstr "Сенсоры"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:15
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:16
 msgid "Sensors Plugin Configuration"
 msgstr "Настройка плагина «Сенсоры»"
 
@@ -1020,6 +1024,10 @@ msgstr "Настройка collectd"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:31
 msgid "Shaping class monitoring"
 msgstr "Мониторинг классов Shaping"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:26
+msgid "Show Idle state"
+msgstr "Показывать состояние простоя (idle)"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:34
 msgid "Show max values instead of averages"
@@ -1332,7 +1340,7 @@ msgstr ""
 "параметров может привести к высокому потреблению памяти устройства. Это "
 "может привести к зависанию устройства!</strong>"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:16
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:17
 msgid ""
 "The sensors plugin uses the Linux Sensors framework to gather environmental "
 "statistics."
@@ -1489,7 +1497,7 @@ msgstr ""
 msgid "When set to true, we request absolute values"
 msgstr "При включении, отображаются абсолютные значения"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:27
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpu.js:33
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/memory.js:18
 msgid "When set to true, we request percentage values"
 msgstr "При включении, отображаются значения в процентах"
