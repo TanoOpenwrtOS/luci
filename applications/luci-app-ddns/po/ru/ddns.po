@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: ddns\n"
 "POT-Creation-Date: 2017-10-17 21:00+0300\n"
-"PO-Revision-Date: 2020-11-13 17:36+0300\n"
+"PO-Revision-Date: 2020-11-13 18:03+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/ru/>\n"
@@ -637,7 +637,7 @@ msgstr "Пожалуйста, нажмите кнопку «Читать/пер�
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1051
 msgid "Read / Reread log file"
-msgstr "Читать / Перечитывать системный журнал"
+msgstr "Читать / Перечитать файл журнала"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1117
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:30
