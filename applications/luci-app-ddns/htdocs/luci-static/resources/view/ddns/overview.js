@@ -190,7 +190,7 @@ return view.extend({
 			next_update, service_status, reload, cfg_enabled, stop,
 			ddns_enabled = map.querySelector('[data-name="_enabled"]').querySelector('.cbi-value-field'),
 			ddns_toggle = map.querySelector('[data-name="_toggle"]').querySelector('button'),
-			services_list = map.querySelector('[data-name="_services_list"]').querySelector('.cbi-value-field');
+			services_list = map.querySelector('[data-name="_services_list"]').querySelector('.cbi-value-field > div');
 
 		ddns_toggle.innerHTML = status['_enabled'] ? _('Stop DDNS') : _('Start DDNS')
 		services_list.innerHTML = status['_services_list'];
@@ -200,7 +200,9 @@ return view.extend({
 				E('div', {}, status['_enabled'] ? _('DDNS autostart enabled') : [
 					_('DDNS autostart disabled'),
 					E('div', { 'class' : 'cbi-value-description' },
-					_("Currently DDNS updates are not started at boot or on interface events. This is the default if you run DDNS scripts by yourself (i.e. via cron with force_interval set to '0')"))
+					_("Currently DDNS updates are not started at boot or on interface events. " +
+					  "This is the default if you run DDNS scripts by yourself (i.e. via cron " +
+					  "with force_interval set to '0')"))
 				]),]);
 		});
 
@@ -277,7 +279,9 @@ return view.extend({
 		o.cfgvalue = function() {
 			var res = status[this.option];
 			if (!res) {
-				this.description = _("Currently DDNS updates are not started at boot or on interface events. This is the default if you run DDNS scripts by yourself (i.e. via cron with force_interval set to '0')")
+				this.description = _("Currently DDNS updates are not started at boot or on " +
+				                     "interface events. This is the default if you run DDNS scripts " +
+				                     "by yourself (i.e. via cron with force_interval set to '0')")
 			}
 			return res ? _('DDNS autostart enabled') : _('DDNS autostart disabled')
 		};
@@ -311,7 +315,10 @@ return view.extend({
 			o = s.taboption('info', form.DummyValue, '_no_ipv6');
 			o.rawhtml  = true;
 			o.title = '<b>' + _("IPv6 not supported") + '</b>';
-			o.cfgvalue = function() { return _("IPv6 is currently not (fully) supported by this system. Please follow the instructions on OpenWrt's homepage to enable IPv6 support or update your system to the latest OpenWrt Release")};
+			o.cfgvalue = function() { return _("IPv6 is currently not (fully) supported by this system. " +
+			                                   "Please follow the instructions on TanoWrt's homepage to " +
+			                                   "enable IPv6 support or update your system to the latest " +
+			                                   "TanoWrt Release")};
 		}
 
 		if (!env['has_ssl']) {
@@ -319,9 +326,11 @@ return view.extend({
 			o.titleref = L.url("admin", "system", "opkg")
 			o.rawhtml  = true;
 			o.title = '<b>' + _("HTTPS not supported") + '</b>';
-			o.cfgvalue = function() { return _("Neither GNU Wget with SSL nor cURL installed to support secure updates via HTTPS protocol.") +
+			o.cfgvalue = function() { return _("Neither GNU Wget with SSL nor cURL installed to support " +
+			                                   "secure updates via HTTPS protocol.") +
 			' ' +
-			_("You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-*ssl' package. Some versions of cURL/libcurl is compiled without proxy support.")};
+			_("You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-*ssl' " +
+			  "package. Some versions of cURL/libcurl is compiled without proxy support.")};
 		}
 
 		if (!env['has_bindnet']) {
@@ -399,7 +408,7 @@ return view.extend({
 		+ '<ul><li><strong>IPv4: </strong>'
 		+ '0/8, 10/8, 100.64/10, 127/8, 169.254/16, 172.16/12, 192.168/16'
 		+ '</li><li><strong>IPv6: </strong>'
-		+ '::/32, f000::/4</li></ul>"';
+		+ '::/32, f000::/4</li></ul>';
 		o.default = "0";
 		o.optional = true;
 
@@ -407,7 +416,7 @@ return view.extend({
 		o.description = '<a href="http://www.cplusplus.com/reference/ctime/strftime/" target="_blank">'
 			+ _("For supported codes look here")
 			+ '</a>. ' +
-			_('Current setting: ') + '<b>' + status['_curr_dateformat'] + '</b>';
+			_('Current setting:') + ' <b>' + status['_curr_dateformat'] + '</b>';
 		o.default = "%F %R"
 		o.optional = true;
 		o.rmempty = true;
@@ -438,7 +447,7 @@ return view.extend({
 		if (env['has_wget'] && env['has_curl']) {
 
 			o = s.taboption('global', form.Flag, 'use_curl', _('Use cURL'));
-			o.description = _('If wget and cURL package are installed, wget is used for communication by default.');
+			o.description = _('If wget and cURL package are installed, wget is used for communication by default');
 			o.default = "0";
 			o.optional = true;
 			o.rmempty = true;
@@ -450,8 +459,8 @@ return view.extend({
 		o.placeholder = 'IGNORE';
 
 		o = s.taboption('global', form.Value, 'services_url', _('Services URL Download'));
-		o.description = _('URL used to download services file. By default is the master OpenWrt DDNS package repo.');
-		o.placeholder = 'https://raw.githubusercontent.com/openwrt/packages/master/net/ddns-scripts/files';
+		o.description = _('URL used to download services file. By default is the master TanoWrt core layer repo.');
+		o.placeholder = 'https://raw.githubusercontent.com/tano-systems/meta-tanowrt/master/meta-tanowrt/recipes-networking/ddns-scripts/ddns-scripts/files';
 
 		// DDns services
 		s = m.section(form.GridSection, 'service', _('Services'));
@@ -493,7 +502,7 @@ return view.extend({
 			name = s2.option(form.Value, 'name', _('Name'));
 			name.rmempty = false;
 			name.datatype = 'uciname';
-			name.placeholder = _('New DDNS Service…');
+			name.placeholder = _('New DDNS Service...');
 			name.validate = function(section_id, value) {
 				if (uci.get('ddns', value) != null)
 					return _('The service name is already used');
@@ -583,7 +592,7 @@ return view.extend({
 		s.addModalOptions = function(s, section_id) {
 
 			var service = uci.get('ddns', section_id, 'service_name') || '-',
-				ipv6 = uci.get('ddns', section_id, 'use_ipv6'), service_name, use_ipv6;
+				ipv6 = uci.get('ddns', section_id, 'use_ipv6') || "0", service_name, use_ipv6;
 
 			return _this.handleGetServiceData(service).then(L.bind(function (service_data) {
 				s.service_available = true;
@@ -678,7 +687,7 @@ return view.extend({
 
 				var service_switch = s.taboption('basic', form.Button, '_switch_proto');
 				service_switch.modalonly  = true;
-				service_switch.title      = _('Really switch service?');
+				service_switch.title      = '&nbsp;';
 				service_switch.inputtitle = _('Switch service');
 				service_switch.inputstyle = 'apply';
 				service_switch.onclick = L.bind(function(ev) {
@@ -1053,9 +1062,9 @@ return view.extend({
 						return document.getElementById('log_area').textContent = log_data.result;
 					}, o, this);
 
-					log_box.render = L.bind(function() {
+					log_box.renderWidget = L.bind(function() {
 						return E([
-							E('p', {}, _('This is the current content of the log file in ') + logdir + ' for this service.'),
+							E('p', {}, _('This is the current content of the log file in %s for this service.').format(logdir)),
 							E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 20, 'readonly' : 'readonly', 'id' : 'log_area' }, _('Please press "Read/reread log file" button') ))
 						]);
 					}, o, this);
