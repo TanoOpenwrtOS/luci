@@ -640,7 +640,7 @@ msgid "Aggregator: Slave added/removed or state changes (bandwidth, 1)"
 msgstr ""
 "Агрегатор: Добавление/удаление ведомых или изменение состояния (bandwidth, 1)"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:91
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:95
 msgid "Alert"
 msgstr "Тревога"
 
@@ -1451,6 +1451,10 @@ msgstr ""
 "Считать ведомый включенным, когда любой из IP-адресов ARP мониторинга "
 "достижим (any, 0)"
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:85
+msgid "Console logging level"
+msgstr "Уровень журналирования консоли"
+
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:145
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/crontab.js:18
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:55
@@ -1494,11 +1498,11 @@ msgstr "Создать интерфейс"
 msgid "Creates a bridge over specified interface(s)"
 msgstr "Создаёт мост для выбранных сетевых интерфейсов"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:90
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:94
 msgid "Critical"
 msgstr "Критическая ситуация"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:94
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:98
 msgid "Cron Log Level"
 msgstr "Запись событий cron"
 
@@ -1641,8 +1645,8 @@ msgstr "DUID"
 msgid "Data Rate"
 msgstr "Скорость передачи данных"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:85
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:96
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:89
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:100
 msgid "Debug"
 msgstr "Отладка"
 
@@ -1722,7 +1726,7 @@ msgstr "Описание"
 msgid "Deselect"
 msgstr "Отменить выбор"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:140
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:144
 msgid "Design"
 msgstr "Тема оформления"
 
@@ -2066,7 +2070,7 @@ msgstr "Редактировать беспроводную сеть"
 msgid "Ei"
 msgstr "Эи"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:92
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:96
 msgid "Emergency"
 msgstr "Чрезвычайная ситуация"
 
@@ -2256,7 +2260,7 @@ msgstr "Стирание..."
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:104
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:105
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:106
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:89
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:93
 msgid "Error"
 msgstr "Ошибка"
 
@@ -2341,11 +2345,11 @@ msgstr "Внешний R0 Key Holder List"
 msgid "External system log server"
 msgstr "Внешний сервер системного журнала"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:71
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:72
 msgid "External system log server port"
 msgstr "Порт внешнего сервера системного журнала"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:76
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:77
 msgid "External system log server protocol"
 msgstr "Внешний протокол лог-сервера"
 
@@ -3226,7 +3230,7 @@ msgstr "Входящий ключ"
 msgid "Incoming serialization"
 msgstr "Входящая сериализация"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:86
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:90
 msgid "Info"
 msgstr "Информация"
 
@@ -3440,6 +3444,10 @@ msgstr "Подключение к сети: %q"
 msgid "K"
 msgstr "К"
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:67
+msgid "Keep empty to disable"
+msgstr "Оставьте пустым для отключения"
+
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:39
 msgid "Kernel Version"
 msgstr "Версия ядра"
@@ -3528,7 +3536,7 @@ msgstr "LLC"
 msgid "Label"
 msgstr "Метка"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:129
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:133
 msgid "Language"
 msgstr "Язык"
 
@@ -3789,10 +3797,6 @@ msgstr "Локализовывать запросы"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1948
 msgid "Lock to BSSID"
 msgstr "Подключаться к BSSID"
-
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:84
-msgid "Log output level"
-msgstr "Запись событий"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:274
 msgid "Log queries"
@@ -4419,7 +4423,7 @@ msgstr "Не использовать wildcard"
 msgid "None"
 msgstr "Ничего"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:97
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:101
 msgid "Normal"
 msgstr "Нормально"
 
@@ -4451,7 +4455,7 @@ msgstr "Не запускается при загрузке"
 msgid "Not supported"
 msgstr "Не поддерживается"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:87
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:91
 msgid "Notice"
 msgstr "Сообщение"
 
@@ -4470,7 +4474,7 @@ msgstr ""
 "Количество кэшированных DNS записей (максимум — 10000, 0 — отключить "
 "кэширование)"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:119
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:123
 msgid "Number of parallel threads used for compression"
 msgstr "Количество параллельных потоков используемых для компрессии"
 
@@ -4546,6 +4550,16 @@ msgid ""
 msgstr ""
 "Только в том случае, если текущий активный ведомый выходит из строя и "
 "первичный ведомый работает (failure, 2)"
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:86
+msgid ""
+"Only the kernel messages with a level equal or less than the selected one "
+"will be displayed on the console. The lowest level is \"Emergency\", the "
+"highest is \"Debug\"."
+msgstr ""
+"На консоли будут отображаться только сообщения ядра с уровнем равным или "
+"ниже выбранного. Самый низкий уровень — «Чрезвычайная ситуация», самый "
+"высокий — «Отладка»."
 
 #: modules/luci-mod-system/luasrc/model/cbi/admin_system/backupfiles.lua:19
 msgid "Open list..."
@@ -5062,11 +5076,11 @@ msgstr "Пожалуйста, выберите файл для загрузки.
 msgid "Policy"
 msgstr "Политика"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:154
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:158
 msgid "Polling interval"
 msgstr "Интервал автообновления"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:154
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:158
 msgid "Polling interval for status queries in seconds"
 msgstr "Интервал автообновления данных страниц в секундах"
 
@@ -5910,7 +5924,7 @@ msgstr "Размер"
 msgid "Size of DNS query cache"
 msgstr "Размер кэша DNS запроса"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:107
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:111
 msgid "Size of the ZRam device in megabytes"
 msgstr "Размер ZRam в мегабайтах"
 
@@ -7500,8 +7514,8 @@ msgstr "Состояние WPS"
 msgid "Waiting for device..."
 msgstr "Ожидание подключения устройства..."
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:88
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:98
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:92
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:102
 msgid "Warning"
 msgstr "Внимание"
 
@@ -7589,7 +7603,7 @@ msgstr "Беспроводная сеть включена"
 msgid "Write received DNS requests to syslog"
 msgstr "Записывать полученные DNS-запросы в системный журнал"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:80
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:81
 msgid "Write system log to file"
 msgstr "Записывать системные события в файл"
 
@@ -7652,19 +7666,19 @@ msgstr ""
 "При указании IP-адресов ARP мониторинга необходимо выбрать по крайней мере "
 "один IP-адрес!"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:112
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:116
 msgid "ZRam Compression Algorithm"
 msgstr "Алгоритм компрессии ZRam"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:119
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:123
 msgid "ZRam Compression Streams"
 msgstr "Потоки компрессии ZRam"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:105
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:109
 msgid "ZRam Settings"
 msgstr "Настройки ZRam"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:107
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:111
 msgid "ZRam Size"
 msgstr "Размер ZRam"
 
@@ -8168,3 +8182,6 @@ msgstr "да"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« Назад"
+
+#~ msgid "Log output level"
+#~ msgstr "Запись событий"
