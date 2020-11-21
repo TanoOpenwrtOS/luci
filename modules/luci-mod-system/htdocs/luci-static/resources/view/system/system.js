@@ -63,7 +63,8 @@ return view.extend({
 		o.placeholder = 16
 		o.datatype    = 'uinteger'
 
-		o = s.taboption('logging', form.Value, 'log_ip', _('External system log server'))
+		o = s.taboption('logging', form.Value, 'log_ip', _('External system log server'),
+			_('Keep empty to disable'));
 		o.optional    = true
 		o.placeholder = '0.0.0.0'
 		o.datatype    = 'host'
@@ -81,7 +82,10 @@ return view.extend({
 		o.optional    = true
 		o.placeholder = '/tmp/system.log'
 
-		o = s.taboption('logging', form.ListValue, 'conloglevel', _('Log output level'))
+		o = s.taboption('logging', form.ListValue, 'conloglevel', _('Console logging level'),
+			_('Only the kernel messages with a level equal or less than ' +
+			  'the selected one will be displayed on the console. The lowest ' +
+			  'level is "Emergency", the highest is "Debug".'));
 		o.value(8, _('Debug'))
 		o.value(7, _('Info'))
 		o.value(6, _('Notice'))
