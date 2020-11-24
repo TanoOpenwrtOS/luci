@@ -2,7 +2,11 @@
 	"luci-mod-system-config": {
 		"description": "Grant access to system configuration",
 		"read": {
+			"file": {
+				"/etc/init.d/cron": [ "list" ]
+			},
 			"ubus": {
+				"file": [ "read", "stat" ],
 				"luci": [ "getInitList", "getLEDs", "getLocaltime", "getTimezones", "getUSBDevices" ]
 			},
 			"uci": [ "luci", "system" ]

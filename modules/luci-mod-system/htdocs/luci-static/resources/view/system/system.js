@@ -5,6 +5,7 @@
 'require uci';
 'require rpc';
 'require form';
+'require fs';
 
 var callInitList;
 
@@ -24,13 +25,16 @@ return view.extend({
 	load: function() {
 		return Promise.all([
 			uci.load('luci'),
-			uci.load('system')
+			uci.load('system'),
+			L.resolveDefault(fs.stat('/etc/init.d/cron'), null) /* cronie uses /etc/init.d/crond */
 		]);
 	},
 
 	render: function(rpc_replies) {
 		var zram_support = rpc_replies[0],
 		    ntp_setup, ntp_enabled, m, s, o;
+
+		var is_busybox_cron = rpc_replies[2];
 
 		m = new form.Map('system',
 			_('System'),
@@ -80,7 +84,7 @@ return view.extend({
 
 		o = s.taboption('logging', form.Value, 'log_file', _('Write system log to file'))
 		o.optional    = true
-		o.placeholder = '/tmp/system.log'
+		o.placeholder = '/var/log/messages'
 
 		o = s.taboption('logging', form.ListValue, 'conloglevel', _('Console logging level'),
 			_('Only the kernel messages with a level equal or less than ' +
@@ -95,11 +99,14 @@ return view.extend({
 		o.value(2, _('Alert'))
 		o.value(1, _('Emergency'))
 
-		o = s.taboption('logging', form.ListValue, 'cronloglevel', _('Cron Log Level'))
-		o.default = 8
-		o.value(5, _('Debug'))
-		o.value(8, _('Normal'))
-		o.value(9, _('Warning'))
+		if (is_busybox_cron) {
+			/* This option avaialble only for busybox's crond */
+			o = s.taboption('logging', form.ListValue, 'cronloglevel', _('Cron Log Level'))
+			o.default = 8
+			o.value(5, _('Debug'))
+			o.value(8, _('Normal'))
+			o.value(9, _('Warning'))
+		}
 
 		/*
 		 * Zram Properties
