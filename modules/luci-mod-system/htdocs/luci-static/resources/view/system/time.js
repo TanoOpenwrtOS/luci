@@ -101,7 +101,6 @@ return view.extend({
 		var ntpd_enabled = rpc_replies[0],
 		    timezones = rpc_replies[1],
 		    localtime = rpc_replies[2],
-		    ntp_setup, ntp_enabled,
 		    m, s, o;
 
 		m = new form.Map('system',

@@ -31,8 +31,7 @@ return view.extend({
 	},
 
 	render: function(rpc_replies) {
-		var zram_support = rpc_replies[0],
-		    ntp_setup, ntp_enabled, m, s, o;
+		var m, s, o;
 
 		var is_busybox_cron = rpc_replies[2];
 
