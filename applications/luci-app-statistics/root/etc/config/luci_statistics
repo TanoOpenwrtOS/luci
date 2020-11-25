@@ -17,9 +17,6 @@ config statistics 'rrdtool'
 
 # output plugins
 
-config statistics 'collectd_syslog'
-	option enable '1'
-
 config statistics 'collectd_rrdtool'
 	option enable '1'
 	option DataDir '/tmp/rrd'
@@ -47,9 +44,9 @@ config statistics 'collectd_network'
 	option enable '0'
 
 config statistics 'collectd_syslog'
-   option enable '0'
-   option LogLevel 'warning'
-   option NotifyLevel 'WARNING'
+	option enable '1'
+	option LogLevel 'info'
+	option NotifyLevel 'OKAY'
 
 config statistics 'collectd_unixsock'
 	option enable '0'
