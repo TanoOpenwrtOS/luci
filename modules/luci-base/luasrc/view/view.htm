@@ -3,8 +3,10 @@
 <div id="view">
 	<div class="spinning"><%:Loading view…%></div>
 	<script type="text/javascript">
-		L.require('ui').then(function(ui) {
-			ui.instantiateView('<%=view%>'<% if version then %>, '<%=version%>'<% end %>);
+		document.addEventListener('luci-loaded', function() {
+			L.require('ui').then(function(ui) {
+				ui.instantiateView('<%=view%>'<% if version then %>, '<%=version%>'<% end %>);
+			});
 		});
 	</script>
 </div>
