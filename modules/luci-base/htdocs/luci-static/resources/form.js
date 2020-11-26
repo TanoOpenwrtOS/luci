@@ -2222,10 +2222,10 @@ var CBITypedSection = CBIAbstractSection.extend(/** @lends LuCI.form.TypedSectio
 				'data-tab-title': (this.map.tabbed && !this.parentoption) ? this.title || this.sectiontype : null
 			});
 
-		if (this.title != null && this.title != '')
+		if (this.map.tabbed_no_titles != true && this.title != null && this.title != '')
 			sectionEl.appendChild(E('h3', {}, this.title));
 
-		if (this.description != null && this.description != '')
+		if (this.map.tabbed_no_titles != true && this.description != null && this.description != '')
 			sectionEl.appendChild(E('div', { 'class': 'cbi-section-descr' }, this.description));
 
 		for (var i = 0; i < nodes.length; i++) {
@@ -2473,10 +2473,10 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 				'class': 'table cbi-section-table'
 			});
 
-		if (this.title != null && this.title != '')
+		if (this.map.tabbed_no_titles != true && this.title != null && this.title != '')
 			sectionEl.appendChild(E('legend', {}, this.title));
 
-		if (this.description != null && this.description != '')
+		if (this.map.tabbed_no_titles != true && this.description != null && this.description != '')
 			sectionEl.appendChild(E('div', { 'class': 'cbi-section-descr' }, this.description));
 
 		tableEl.appendChild(this.renderHeaderRows(max_cols));
@@ -3147,10 +3147,10 @@ var CBINamedSection = CBIAbstractSection.extend(/** @lends LuCI.form.NamedSectio
 				'data-tab-title': (this.map.tabbed && !this.parentoption) ? this.title || this.sectiontype : null
 			});
 
-		if (typeof(this.title) === 'string' && this.title !== '')
+		if (this.map.tabbed_no_titles != true && typeof(this.title) === 'string' && this.title !== '')
 			sectionEl.appendChild(E('h3', {}, this.title));
 
-		if (typeof(this.description) === 'string' && this.description !== '')
+		if (this.map.tabbed_no_titles != true && typeof(this.description) === 'string' && this.description !== '')
 			sectionEl.appendChild(E('div', { 'class': 'cbi-section-descr' }, this.description));
 
 		if (ucidata) {
