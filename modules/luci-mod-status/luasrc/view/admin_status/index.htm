@@ -70,8 +70,10 @@ function renderBadge(icon, title) {
 </div>
 
 <script type="text/javascript">
-	L.require('ui').then(function(ui) {
-		ui.instantiateView('status/index');
+	document.addEventListener('luci-loaded', function() {
+		L.require('ui').then(function(ui) {
+			ui.instantiateView('status/index');
+		});
 	});
 </script>
 
