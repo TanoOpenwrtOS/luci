@@ -312,7 +312,7 @@ function cbi_init() {
 
 	for (var i = 0, node; (node = nodes[i]) !== undefined; i++) {
 		cbi_validate_field(node, node.getAttribute('data-optional') === 'true',
-		                   node.getAttribute('data-type'));
+		                   node.getAttribute('data-type') || 'string');
 	}
 
 	document.querySelectorAll('.cbi-tooltip:not(:empty)').forEach(function(s) {
