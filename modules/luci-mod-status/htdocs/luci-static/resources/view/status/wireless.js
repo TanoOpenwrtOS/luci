@@ -255,50 +255,46 @@ return view.extend({
 				E('div', { 'class': 'right' }, E('small', { 'id': 'scale' }, '-')),
 				E('br'),
 
-				E('div', { 'class': 'table-wrapper' }, [
-					E('div', { 'class': 'table', 'style': 'width:100%;table-layout:fixed' }, [
-						E('div', { 'class': 'tr' }, [
-							E('div', { 'class': 'td right top' }, E('strong', { 'style': 'border-bottom:2px solid blue' }, [ _('Signal:') ])),
-							E('div', { 'class': 'td', 'id': 'rssi_bw_cur' }, [ '0 ' + _('dBm') ]),
+				E('div', { 'class': 'table-wrapper' }, [ E('table', { 'class': 'table', 'style': 'width:100%;table-layout:fixed' }, [
+					E('tr', { 'class': 'tr' }, [
+						E('td', { 'class': 'td right top' }, E('strong', { 'style': 'border-bottom:2px solid blue' }, [ _('Signal:') ])),
+						E('td', { 'class': 'td', 'id': 'rssi_bw_cur' }, [ '0 ' + _('dBm') ]),
 
-							E('div', { 'class': 'td right top' }, E('strong', {}, [ _('Average:') ])),
-							E('div', { 'class': 'td', 'id': 'rssi_bw_avg' }, [ '0 ' + _('dBm') ]),
+						E('td', { 'class': 'td right top' }, E('strong', {}, [ _('Average:') ])),
+						E('td', { 'class': 'td', 'id': 'rssi_bw_avg' }, [ '0 ' + _('dBm') ]),
 
-							E('div', { 'class': 'td right top' }, E('strong', {}, [ _('Peak:') ])),
-							E('div', { 'class': 'td', 'id': 'rssi_bw_peak' }, [ '0 ' + _('dBm') ])
-						]),
-						E('div', { 'class': 'tr' }, [
-							E('div', { 'class': 'td right top' }, E('strong', { 'style': 'border-bottom:2px solid red' }, [ _('Noise:') ])),
-							E('div', { 'class': 'td', 'id': 'noise_bw_cur' }, [ '0 ' + _('dBm') ]),
+						E('td', { 'class': 'td right top' }, E('strong', {}, [ _('Peak:') ])),
+						E('td', { 'class': 'td', 'id': 'rssi_bw_peak' }, [ '0 ' + _('dBm') ])
+					]),
+					E('tr', { 'class': 'tr' }, [
+						E('td', { 'class': 'td right top' }, E('strong', { 'style': 'border-bottom:2px solid red' }, [ _('Noise:') ])),
+						E('td', { 'class': 'td', 'id': 'noise_bw_cur' }, [ '0 ' + _('dBm') ]),
 
-							E('div', { 'class': 'td right top' }, E('strong', {}, [ _('Average:') ])),
-							E('div', { 'class': 'td', 'id': 'noise_bw_avg' }, [ '0 ' + _('dBm') ]),
+						E('td', { 'class': 'td right top' }, E('strong', {}, [ _('Average:') ])),
+						E('td', { 'class': 'td', 'id': 'noise_bw_avg' }, [ '0 ' + _('dBm') ]),
 
-							E('div', { 'class': 'td right top' }, E('strong', {}, [ _('Peak:') ])),
-							E('div', { 'class': 'td', 'id': 'noise_bw_peak' }, [ '0 ' + _('dBm') ])
-						])
+						E('td', { 'class': 'td right top' }, E('strong', {}, [ _('Peak:') ])),
+						E('td', { 'class': 'td', 'id': 'noise_bw_peak' }, [ '0 ' + _('dBm') ])
 					])
-				]),
+				])]),
 				E('br'),
 
 				csvg2,
 				E('div', { 'class': 'right' }, E('small', { 'id': 'scale2' }, '-')),
 				E('br'),
 
-				E('div', { 'class': 'table-wrapper' }, [
-					E('div', { 'class': 'table', 'style': 'width:100%;table-layout:fixed' }, [
-						E('div', { 'class': 'tr' }, [
-							E('div', { 'class': 'td right top' }, E('strong', { 'style': 'border-bottom:2px solid green' }, [ _('Phy Rate:') ])),
-							E('div', { 'class': 'td', 'id': 'rate_bw_cur' }, [ _('0 MBit/s') ]),
+				E('div', { 'class': 'table-wrapper' }, [ E('table', { 'class': 'table', 'style': 'width:100%;table-layout:fixed' }, [
+					E('tr', { 'class': 'tr' }, [
+						E('td', { 'class': 'td right top' }, E('strong', { 'style': 'border-bottom:2px solid green' }, [ _('Phy Rate:') ])),
+						E('td', { 'class': 'td', 'id': 'rate_bw_cur' }, [ '0 MBit/s' ]),
 
-							E('div', { 'class': 'td right top' }, E('strong', {}, [ _('Average:') ])),
-							E('div', { 'class': 'td', 'id': 'rate_bw_avg' }, [ _('0 MBit/s') ]),
+						E('td', { 'class': 'td right top' }, E('strong', {}, [ _('Average:') ])),
+						E('td', { 'class': 'td', 'id': 'rate_bw_avg' }, [ '0 MBit/s' ]),
 
-							E('div', { 'class': 'td right top' }, E('strong', {}, [ _('Peak:') ])),
-							E('div', { 'class': 'td', 'id': 'rate_bw_peak' }, [ _('0 MBit/s') ])
-						])
+						E('td', { 'class': 'td right top' }, E('strong', {}, [ _('Peak:') ])),
+						E('td', { 'class': 'td', 'id': 'rate_bw_peak' }, [ '0 MBit/s' ])
 					])
-				])
+				])])
 			]));
 
 			this.updateGraph(ifname, csvg1, [ null, { line: 'rssi', offset: 155 }, { line: 'noise', offset: 155 } ], function(svg, info) {

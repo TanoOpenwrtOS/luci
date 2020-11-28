@@ -84,11 +84,11 @@ msgstr "%s не тегирован в множестве VLAN!"
 msgid "(%1024.2mB/s)"
 msgstr "(%1024.2mБ/с)"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:296
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:407
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:272
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:311
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:329
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:294
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:403
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:270
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:307
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:325
 msgid "(%d minute window, %d second interval)"
 msgstr "(%d минутное окно, %d секундный интервал)"
 
@@ -156,22 +156,16 @@ msgstr ""
 "0 = не использовать порог RSSI, 1 = не изменять значение по умолчанию "
 "драйвера"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:292
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:295
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:298
-msgid "0 MBit/s"
-msgstr "0 Мбит/с"
-
 #: protocols/luci-proto-sstp/htdocs/luci-static/resources/protocol/sstp.js:55
 msgctxt "sstp log level value"
 msgid "1"
 msgstr "1"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:232
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:231
 msgid "1 Minute Load:"
 msgstr "Загрузка за 1 минуту:"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:252
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:251
 msgid "15 Minute Load:"
 msgstr "Загрузка за 15 минут:"
 
@@ -199,7 +193,7 @@ msgstr "4-х значный шестнадцатеричный ID"
 msgid "464XLAT (CLAT)"
 msgstr "464XLAT (CLAT)"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:242
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:241
 msgid "5 Minute Load:"
 msgstr "Загрузка за 5 минут:"
 
@@ -444,7 +438,6 @@ msgstr "Концентратор доступа"
 msgid "Access Point"
 msgstr "Точка доступа"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:74
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:168
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:92
 msgid "Actions"
@@ -599,7 +592,7 @@ msgstr "Адреса"
 msgid "Administration"
 msgstr "Управление"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:48
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:51
 msgid "Advanced"
 msgstr "Дополнительные"
 
@@ -640,7 +633,7 @@ msgid "Aggregator: Slave added/removed or state changes (bandwidth, 1)"
 msgstr ""
 "Агрегатор: Добавление/удаление ведомых или изменение состояния (bandwidth, 1)"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:95
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:98
 msgid "Alert"
 msgstr "Тревога"
 
@@ -701,7 +694,7 @@ msgstr "Разрешить только перечисленные"
 msgid "Allow localhost"
 msgstr "Разрешить локальный хост"
 
-#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:151
+#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:155
 msgid "Allow rebooting the device"
 msgstr "Разрешить перезагрузку устройства"
 
@@ -904,7 +897,7 @@ msgstr ""
 "Пытаться включить сконфигурированные точки монтирования для подключенных "
 "устройств"
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:104
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:110
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:64
 msgid "Auth Group"
 msgstr "Группа аутентификации"
@@ -984,17 +977,17 @@ msgstr "Автозагрузка"
 msgid "Available"
 msgstr "Доступно"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:269
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:279
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:330
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:340
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:350
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:235
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:245
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:255
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:264
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:274
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:294
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:268
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:278
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:329
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:339
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:349
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:234
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:244
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:254
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:263
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:273
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:291
 msgid "Average:"
 msgstr "Средняя:"
 
@@ -1137,7 +1130,7 @@ msgstr "Обзор…"
 msgid "Buffered"
 msgstr "Буферизировано"
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:138
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:144
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
 "CA сертификат; если отсутствует, будет сохранен после первого соединения."
@@ -1231,7 +1224,7 @@ msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:53
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:56
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:202
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:200
 msgid "Chain"
 msgstr "Цепочка"
 
@@ -1344,9 +1337,9 @@ msgstr "Закрыть список..."
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:42
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:61
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2086
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:392
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:319
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:322
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:389
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:317
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:320
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:204
 msgid "Collecting data..."
 msgstr "Сбор данных..."
@@ -1368,7 +1361,7 @@ msgstr "Ошибка команды"
 msgid "Command failed with error code %d"
 msgstr "Команда завершилась с кодом ошибки %d"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:73
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:72
 msgid "Comment"
 msgstr "Комментарий"
 
@@ -1451,7 +1444,7 @@ msgstr ""
 "Считать ведомый включенным, когда любой из IP-адресов ARP мониторинга "
 "достижим (any, 0)"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:85
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:88
 msgid "Console logging level"
 msgstr "Уровень журналирования консоли"
 
@@ -1498,11 +1491,11 @@ msgstr "Создать интерфейс"
 msgid "Creates a bridge over specified interface(s)"
 msgstr "Создаёт мост для выбранных сетевых интерфейсов"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:94
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:97
 msgid "Critical"
 msgstr "Критическая ситуация"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:98
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:103
 msgid "Cron Log Level"
 msgstr "Запись событий cron"
 
@@ -1645,8 +1638,8 @@ msgstr "DUID"
 msgid "Data Rate"
 msgstr "Скорость передачи данных"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:89
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:100
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:92
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:105
 msgid "Debug"
 msgstr "Отладка"
 
@@ -1667,7 +1660,7 @@ msgstr "Маршрут по умолчанию"
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dslite.js:67
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/map.js:80
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:108
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:150
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:156
 msgid "Default gateway"
 msgstr "Шлюз по умолчанию"
 
@@ -1726,12 +1719,12 @@ msgstr "Описание"
 msgid "Deselect"
 msgstr "Отменить выбор"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:144
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:150
 msgid "Design"
 msgstr "Тема оформления"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:387
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:71
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:384
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:70
 msgid "Destination"
 msgstr "Направление"
 
@@ -1819,7 +1812,7 @@ msgstr ""
 "abbr> для этого интерфейса."
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:174
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:375
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:373
 msgid "Disable DNS lookups"
 msgstr "Отключить разрешение имён"
 
@@ -2070,7 +2063,7 @@ msgstr "Редактировать беспроводную сеть"
 msgid "Ei"
 msgstr "Эи"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:96
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:99
 msgid "Emergency"
 msgstr "Чрезвычайная ситуация"
 
@@ -2092,8 +2085,8 @@ msgid "Enable <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgstr "Включить <abbr title=\"англ. Spanning Tree Protocol\">STP</abbr>"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:174
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:369
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:375
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:367
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:373
 msgid "Enable DNS lookups"
 msgstr "Включить разрешение имён"
 
@@ -2122,7 +2115,7 @@ msgstr "Включить IPv6-согласование на PPP-соединен
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Пропускать Jumbo-кадры"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:152
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:151
 msgid "Enable NTP client"
 msgstr "Включить NTP-клиент"
 
@@ -2260,7 +2253,7 @@ msgstr "Стирание..."
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:104
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:105
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:106
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:93
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:96
 msgid "Error"
 msgstr "Ошибка"
 
@@ -2341,15 +2334,15 @@ msgstr "Внешний R0 Key Holder List"
 msgid "External R1 Key Holder List"
 msgstr "Внешний R0 Key Holder List"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:66
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:69
 msgid "External system log server"
 msgstr "Внешний сервер системного журнала"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:72
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:75
 msgid "External system log server port"
 msgstr "Порт внешнего сервера системного журнала"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:77
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:80
 msgid "External system log server protocol"
 msgstr "Внешний протокол лог-сервера"
 
@@ -2464,7 +2457,7 @@ msgstr "Метка межсетевого экрана"
 msgid "Firewall Settings"
 msgstr "Настройки межсетевого экрана"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:299
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:297
 msgid "Firewall Status"
 msgstr "Состояние межсетевого экрана"
 
@@ -2682,11 +2675,11 @@ msgstr "Предоставить доступ к LuCI процедурам OpenC
 msgid "Grant access to LuCI Wireguard procedures"
 msgstr "Предоставить доступ к LuCI WireGuard процедурам"
 
-#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:19
+#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:23
 msgid "Grant access to SSH configuration"
 msgstr "Предоставить доступ к конфигурации SSH"
 
-#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:117
+#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:121
 msgid "Grant access to backup operations"
 msgstr "Предоставить доступ к резервному копированию"
 
@@ -2694,7 +2687,7 @@ msgstr "Предоставить доступ к резервному копир
 msgid "Grant access to basic LuCI procedures"
 msgstr "Предоставить доступ к основным процедурам LuCI"
 
-#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:64
+#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:68
 msgid "Grant access to crontab configuration"
 msgstr "Предоставить доступ к конфигурации crontab"
 
@@ -2710,7 +2703,7 @@ msgstr "Предоставить доступ к отображению осно
 msgid "Grant access to mmcli"
 msgstr "Предоставить доступ к mmcli"
 
-#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:84
+#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:88
 msgid "Grant access to mount configuration"
 msgstr "Предоставить доступ к конфигурации точек монтирования"
 
@@ -2734,7 +2727,7 @@ msgstr "Предоставить доступ к состоянию процес
 msgid "Grant access to realtime statistics"
 msgstr "Предоставить доступ к статистике в реальном времени"
 
-#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:42
+#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:46
 msgid "Grant access to startup configuration"
 msgstr "Предоставить доступ к конфигурации запуска"
 
@@ -2783,7 +2776,7 @@ msgstr "Ошибки контроля ошибок заголовка (HEC)"
 msgid "Heartbeat interval (kernel: heartbeat)"
 msgstr "Интервал сердцебиения (kernel: heartbeat)"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:37
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:40
 msgid ""
 "Here you can configure the basic aspects of your device like its hostname or "
 "the logging."
@@ -2791,7 +2784,7 @@ msgstr ""
 "Здесь вы можете настроить основные параметры вашего устройства, такие как "
 "имя хоста или настройки журналирования."
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:109
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:108
 msgid "Here you can configure the time settings."
 msgstr "Здесь вы можете настроить основные параметры времени."
 
@@ -2800,8 +2793,8 @@ msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr ""
 "Скрыть <abbr title=\"англ. Extended Service Set Identification\">ESSID</abbr>"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:266
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:305
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:264
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:303
 msgid "Hide empty chains"
 msgstr "Скрыть пустые цепочки"
 
@@ -2809,7 +2802,7 @@ msgstr "Скрыть пустые цепочки"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2080
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:127
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:230
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:45
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:48
 msgid "Host"
 msgstr "Хост"
 
@@ -2837,7 +2830,7 @@ msgstr "Содержимое Host-Uniq тега"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/hosts.js:27
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:35
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:86
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:54
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:57
 msgid "Hostname"
 msgstr "Имя хоста"
 
@@ -2904,7 +2897,7 @@ msgstr "IP-адрес не указан"
 msgid "IPv4"
 msgstr "IPv4"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:318
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:316
 msgid "IPv4 Firewall"
 msgstr "Межсетевой экран IPv4"
 
@@ -2990,7 +2983,7 @@ msgstr "IPv4/IPv6 (оба, по умолчанию IPv4)"
 msgid "IPv6"
 msgstr "IPv6"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:321
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:319
 msgid "IPv6 Firewall"
 msgstr "Межсетевой экран IPv6"
 
@@ -3127,7 +3120,7 @@ msgstr ""
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dslite.js:67
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/map.js:80
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:108
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:150
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:156
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:64
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/l2tp.js:56
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/ppp.js:100
@@ -3183,7 +3176,7 @@ msgstr "Игнорировать интерфейс"
 msgid "Ignore resolve file"
 msgstr "Игнорировать файл resolv"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:68
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:67
 msgid "In"
 msgstr "В"
 
@@ -3205,7 +3198,7 @@ msgstr ""
 msgid "Inactivity timeout"
 msgstr "Промежуток времени бездействия"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:266
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:265
 msgid "Inbound:"
 msgstr "Входящий:"
 
@@ -3230,7 +3223,7 @@ msgstr "Входящий ключ"
 msgid "Incoming serialization"
 msgstr "Входящая сериализация"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:90
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:93
 msgid "Info"
 msgstr "Информация"
 
@@ -3444,7 +3437,7 @@ msgstr "Подключение к сети: %q"
 msgid "K"
 msgstr "К"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:67
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:70
 msgid "Keep empty to disable"
 msgstr "Оставьте пустым для отключения"
 
@@ -3483,7 +3476,7 @@ msgid "Ki"
 msgstr "Ки"
 
 #: modules/luci-compat/luasrc/tools/webadmin.lua:15
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:61
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:64
 msgid "KiB"
 msgstr "КиБ"
 
@@ -3536,11 +3529,11 @@ msgstr "LLC"
 msgid "Label"
 msgstr "Метка"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:133
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:139
 msgid "Language"
 msgstr "Язык"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:47
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:50
 msgid "Language and Style"
 msgstr "Язык и тема"
 
@@ -3755,7 +3748,7 @@ msgid "Local Startup"
 msgstr "Запуск пакетов и служб пользователя, при включении устройства"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:40
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:121
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:120
 msgid "Local Time"
 msgstr "Дата и время"
 
@@ -3802,7 +3795,7 @@ msgstr "Подключаться к BSSID"
 msgid "Log queries"
 msgstr "Запись запросов"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:46
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:49
 msgid "Logging"
 msgstr "Журналирование"
 
@@ -3882,9 +3875,9 @@ msgstr "MAP / LW4over6"
 msgid "MAP rule is invalid"
 msgstr "Неверное MAP правило"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:325
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:326
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:327
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:321
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:322
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:323
 msgid "MBit/s"
 msgstr "Мбит/с"
 
@@ -3973,9 +3966,9 @@ msgstr "Максимальная мощность передачи"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:199
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:28
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:165
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:331
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:332
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:333
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:327
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:328
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:329
 msgid "Mbit/s"
 msgstr "Мбит/с"
 
@@ -4214,7 +4207,7 @@ msgstr "NDP-прокси"
 msgid "NT Domain"
 msgstr "NT домен"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:186
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:185
 msgid "NTP server candidates"
 msgstr "Список NTP-серверов"
 
@@ -4238,7 +4231,7 @@ msgstr "Навигация"
 #: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:45
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:959
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2078
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:384
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:381
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:63
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:228
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:163
@@ -4380,7 +4373,7 @@ msgstr "Узлы ещё не определены"
 msgid "No public keys present yet."
 msgstr "Нет публичных ключей."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:92
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:90
 msgid "No rules in this chain."
 msgstr "Нет правил в данной цепочке."
 
@@ -4405,7 +4398,7 @@ msgstr "Шум"
 msgid "Noise Margin (SNR)"
 msgstr "Соотношение сигнал/шум (SNR)"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:271
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:270
 msgid "Noise:"
 msgstr "Шум:"
 
@@ -4423,7 +4416,7 @@ msgstr "Не использовать wildcard"
 msgid "None"
 msgstr "Ничего"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:101
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:106
 msgid "Normal"
 msgstr "Нормально"
 
@@ -4455,7 +4448,7 @@ msgstr "Не запускается при загрузке"
 msgid "Not supported"
 msgstr "Не поддерживается"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:91
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:94
 msgid "Notice"
 msgstr "Сообщение"
 
@@ -4474,7 +4467,7 @@ msgstr ""
 "Количество кэшированных DNS записей (максимум — 10000, 0 — отключить "
 "кэширование)"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:123
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:129
 msgid "Number of parallel threads used for compression"
 msgstr "Количество параллельных потоков используемых для компрессии"
 
@@ -4551,7 +4544,7 @@ msgstr ""
 "Только в том случае, если текущий активный ведомый выходит из строя и "
 "первичный ведомый работает (failure, 2)"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:86
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:89
 msgid ""
 "Only the kernel messages with a level equal or less than the selected one "
 "will be displayed on the console. The lowest level is \"Emergency\", the "
@@ -4670,19 +4663,19 @@ msgid "Optional. UDP port used for outgoing and incoming packets."
 msgstr ""
 "Необязательно. UDP-порт, используемый для исходящих и входящих пакетов."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:72
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:71
 msgid "Options"
 msgstr "Опции"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:347
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:346
 msgid "Other:"
 msgstr "Другие:"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:69
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:68
 msgid "Out"
 msgstr "Вне"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:276
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:275
 msgid "Outbound:"
 msgstr "Исходящий:"
 
@@ -4739,7 +4732,7 @@ msgstr "Назначить MAC-адрес"
 #: protocols/luci-proto-ipip/htdocs/luci-static/resources/protocol/ipip.js:53
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dhcpv6.js:54
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:120
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:158
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:164
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/l2tp.js:71
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/ppp.js:145
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoa.js:132
@@ -4921,7 +4914,7 @@ msgstr "Часть зоны %q"
 #: modules/luci-base/luasrc/view/sysauth.htm:29
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1599
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:51
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:108
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:114
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:52
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:58
 msgid "Password"
@@ -4946,7 +4939,7 @@ msgstr "Пароль к внутреннему Приватному ключу"
 msgid "Password strength"
 msgstr "Сложность пароля"
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:111
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:117
 msgid "Password2"
 msgstr "Пароль2"
 
@@ -4982,17 +4975,17 @@ msgstr "Путь к внутреннему Приватному ключу"
 msgid "Paused"
 msgstr "Приостановлено"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:272
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:282
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:333
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:343
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:353
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:238
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:248
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:258
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:267
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:277
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:297
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:271
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/bandwidth.js:281
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:332
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:342
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:352
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:237
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:247
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:257
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:266
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:276
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:294
 msgid "Peak:"
 msgstr "Пиковая:"
 
@@ -5036,7 +5029,7 @@ msgstr "Доступ запрещён"
 msgid "Persistent Keep Alive"
 msgstr "Постоянно держать включенным"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:291
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:288
 msgid "Phy Rate:"
 msgstr "Скорость:"
 
@@ -5060,7 +5053,7 @@ msgstr "Пинг-запрос"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:83
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:84
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:138
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:64
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:63
 msgid "Pkts."
 msgstr "пакетов"
 
@@ -5076,11 +5069,11 @@ msgstr "Пожалуйста, выберите файл для загрузки.
 msgid "Policy"
 msgstr "Политика"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:158
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:164
 msgid "Polling interval"
 msgstr "Интервал автообновления"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:158
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:164
 msgid "Polling interval for status queries in seconds"
 msgstr "Интервал автообновления данных страниц в секундах"
 
@@ -5172,21 +5165,21 @@ msgstr "Процессы"
 msgid "Profile"
 msgstr "Профиль"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:67
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:66
 msgid "Prot."
 msgstr "Прот."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:79
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:397
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:727
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:385
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:382
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:32
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:168
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:187
 msgid "Protocol"
 msgstr "Протокол"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:177
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:176
 msgid "Provide NTP server"
 msgstr "Включить NTP-сервер"
 
@@ -5554,7 +5547,7 @@ msgstr "Политика переизбрания для первичного в
 msgid "Reset"
 msgstr "Сбросить"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:310
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:308
 msgid "Reset Counters"
 msgstr "Сбросить счётчики"
 
@@ -5580,7 +5573,7 @@ msgstr "Ресурс не найден"
 msgid "Restart"
 msgstr "Перезапустить"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:315
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:313
 msgid "Restart Firewall"
 msgstr "Перезапустить межсетевой экран"
 
@@ -5659,7 +5652,7 @@ msgstr ""
 "Маршрутизация служит для определения через, какой интерфейс и шлюз можно "
 "достичь определенного хоста или сети."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:208
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:206
 msgid "Rule"
 msgstr "Правило"
 
@@ -5881,7 +5874,7 @@ msgstr "Короткая преамбула"
 msgid "Show current backup file list"
 msgstr "Показать текущий список файлов резервной копии"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:266
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:264
 msgid "Show empty chains"
 msgstr "Показать пустые цепочки"
 
@@ -5912,7 +5905,7 @@ msgstr "Сигнал / шум"
 msgid "Signal Attenuation (SATN)"
 msgstr "Затухание сигнала (SATN)"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:261
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:260
 msgid "Signal:"
 msgstr "Сигнал:"
 
@@ -5924,7 +5917,7 @@ msgstr "Размер"
 msgid "Size of DNS query cache"
 msgstr "Размер кэша DNS запроса"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:111
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:117
 msgid "Size of the ZRam device in megabytes"
 msgstr "Размер ZRam в мегабайтах"
 
@@ -5964,8 +5957,8 @@ msgstr "Извините, запрошенный объект не был най
 msgid "Sorry, the server encountered an unexpected error."
 msgstr "Извините, сервер столкнулся с неожиданной ошибкой."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:386
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:70
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:383
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:69
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:184
 msgid "Source"
 msgstr "Источник"
@@ -6422,7 +6415,7 @@ msgstr "Синхронизировать с браузером"
 
 #: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:26
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:18
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:36
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:39
 msgid "System"
 msgstr "Система"
 
@@ -6430,11 +6423,11 @@ msgstr "Система"
 msgid "System Priority"
 msgstr "Системный приоритет"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:113
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:112
 msgid "System Time"
 msgstr "Системное время"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:61
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:64
 msgid "System log buffer size"
 msgstr "Размер системного журнала"
 
@@ -6442,7 +6435,7 @@ msgstr "Размер системного журнала"
 msgid "T"
 msgstr "Т"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:337
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:336
 msgid "TCP:"
 msgstr "TCP:"
 
@@ -6470,7 +6463,7 @@ msgid "Table"
 msgstr "Таблица"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:31
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:66
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:65
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:164
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:183
 msgid "Target"
@@ -6851,12 +6844,12 @@ msgstr "Ти"
 msgid "TiB"
 msgstr "ТиБ"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:108
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:107
 #: modules/luci-mod-system/root/usr/share/luci/menu.d/luci-mod-system.json:15
 msgid "Time"
 msgstr "Время"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:148
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:147
 msgid "Time Synchronization"
 msgstr "Синхронизация времени"
 
@@ -6868,7 +6861,7 @@ msgstr "Интервал регенерации ключей GTK"
 msgid "Timed-out"
 msgstr "Таймаут"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:125
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:124
 msgid "Timezone"
 msgstr "Часовой пояс"
 
@@ -6902,7 +6895,7 @@ msgid "Traceroute"
 msgstr "Трассировка"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:53
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:65
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:64
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:72
 msgid "Traffic"
 msgstr "Трафик"
@@ -6912,7 +6905,7 @@ msgstr "Трафик"
 msgid "Traffic Class"
 msgstr "Класс трафика (TC)"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:388
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:385
 msgid "Transfer"
 msgstr "Передача"
 
@@ -6957,7 +6950,7 @@ msgstr "Мощность передатчика"
 msgid "Type"
 msgstr "Тип"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:327
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:326
 msgid "UDP:"
 msgstr "UDP:"
 
@@ -7006,11 +6999,11 @@ msgstr "Невозможно получить идентификатор кли�
 msgid "Unable to obtain mount information"
 msgstr "Невозможно получить информацию о точках монтирования"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:280
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:278
 msgid "Unable to reset ip6tables counters: %s"
 msgstr "Невозможно сбросить счетчики ip6tables: %s"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:278
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:276
 msgid "Unable to reset iptables counters: %s"
 msgstr "Невозможно сбросить счетчики iptables: %s"
 
@@ -7024,7 +7017,7 @@ msgstr "Не удалось разрешить AFTR имя хоста"
 msgid "Unable to resolve peer host name"
 msgstr "Не удалось разрешить имя хоста пира"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:286
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:284
 msgid "Unable to restart firewall: %s"
 msgstr "Невозможно перезапустить межсетевой экран: %s"
 
@@ -7158,7 +7151,7 @@ msgstr "Время работы"
 msgid "Use <code>/etc/ethers</code>"
 msgstr "Использовать <code>/etc/ethers</code>"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:181
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:180
 msgid "Use DHCP advertised servers"
 msgstr "Использовать серверы, объявленные через DHCP"
 
@@ -7274,7 +7267,7 @@ msgstr "Использовать шлюз по умолчанию"
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/dslite.js:70
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/map.js:83
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:111
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:153
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:159
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:72
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/l2tp.js:67
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/ppp.js:111
@@ -7355,20 +7348,20 @@ msgstr ""
 "Используется для двух различных целей: RADIUS NAS ID и 802.11r R0KH-ID. Не "
 "требуется при использовании обычного WPA(2)-PSK."
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:105
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:111
 msgid "User Group"
 msgstr "Группа пользователя"
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:114
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:120
 msgid "User certificate (PEM encoded)"
 msgstr "Сертификат пользователя (PEM encoded)"
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:126
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:132
 msgid "User key (PEM encoded)"
 msgstr "Ключ пользователя (PEM encoded)"
 
 #: modules/luci-base/luasrc/view/sysauth.htm:23
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:106
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:112
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:50
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:56
 msgid "Username"
@@ -7399,18 +7392,22 @@ msgid "VPN Local port"
 msgstr "Локальный порт VPN"
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:96
+msgid "VPN Protocol"
+msgstr "VPN протокол"
+
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:102
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:42
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pptp.js:58
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:39
 msgid "VPN Server"
 msgstr "Сервер VPN"
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:99
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:105
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:45
 msgid "VPN Server port"
 msgstr "Порт VPN сервера"
 
-#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:103
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:109
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:60
 msgid "VPN Server's certificate SHA1 hash"
 msgstr "Сертификат SHA1 hash VPN сервера"
@@ -7514,8 +7511,8 @@ msgstr "Состояние WPS"
 msgid "Waiting for device..."
 msgstr "Ожидание подключения устройства..."
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:92
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:102
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:95
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:107
 msgid "Warning"
 msgstr "Внимание"
 
@@ -7603,7 +7600,7 @@ msgstr "Беспроводная сеть включена"
 msgid "Write received DNS requests to syslog"
 msgstr "Записывать полученные DNS-запросы в системный журнал"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:81
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:84
 msgid "Write system log to file"
 msgstr "Записывать системные события в файл"
 
@@ -7666,19 +7663,19 @@ msgstr ""
 "При указании IP-адресов ARP мониторинга необходимо выбрать по крайней мере "
 "один IP-адрес!"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:116
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:122
 msgid "ZRam Compression Algorithm"
 msgstr "Алгоритм компрессии ZRam"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:123
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:129
 msgid "ZRam Compression Streams"
 msgstr "Потоки компрессии ZRam"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:109
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:115
 msgid "ZRam Settings"
 msgstr "Настройки ZRam"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:111
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:117
 msgid "ZRam Size"
 msgstr "Размер ZRam"
 
@@ -7737,21 +7734,21 @@ msgstr "создать:"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:277
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:281
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:282
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:262
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:265
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:268
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:272
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:275
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:278
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:307
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:308
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:261
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:264
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:267
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:271
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:274
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:277
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:303
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:304
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:305
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:309
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:310
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:311
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:313
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:314
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:315
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:317
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:318
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:319
 msgid "dBm"
 msgstr "дБм"
 
@@ -8183,5 +8180,5 @@ msgstr "да"
 msgid "« Back"
 msgstr "« Назад"
 
-#~ msgid "Log output level"
-#~ msgstr "Запись событий"
+#~ msgid "0 MBit/s"
+#~ msgstr "0 Мбит/с"

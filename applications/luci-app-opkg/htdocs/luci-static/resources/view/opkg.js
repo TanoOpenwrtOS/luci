@@ -1065,13 +1065,13 @@ return view.extend({
 				])
 			]),
 
-			E('div', { 'class': 'table-wrapper' }, [ E('div', { 'id': 'packages', 'class': 'table' }, [
-				E('div', { 'class': 'tr cbi-section-table-titles' }, [
-					E('div', { 'class': 'th col-2 left' }, [ _('Package name') ]),
-					E('div', { 'class': 'th col-2 left version' }, [ _('Version') ]),
-					E('div', { 'class': 'th col-1 center size'}, [ _('Size (.ipk)') ]),
-					E('div', { 'class': 'th col-10 left' }, [ _('Description') ]),
-					E('div', { 'class': 'th right cbi-section-actions' }, [ '\u00a0' ])
+			E('div', { 'class': 'table-wrapper' }, [ E('table', { 'id': 'packages', 'class': 'table' }, [
+				E('tr', { 'class': 'tr cbi-section-table-titles' }, [
+					E('th', { 'class': 'th col-2 left' }, [ _('Package name') ]),
+					E('th', { 'class': 'th col-2 left version' }, [ _('Version') ]),
+					E('th', { 'class': 'th col-1 center size'}, [ _('Size (.ipk)') ]),
+					E('th', { 'class': 'th col-10 left' }, [ _('Description') ]),
+					E('th', { 'class': 'th right cbi-section-actions' }, [ '\u00a0' ])
 				])
 			])])
 		]);

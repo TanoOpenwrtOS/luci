@@ -84,12 +84,12 @@ return view.extend({
 		    initList = data[1],
 		    rows = [], list = [];
 
-		var table = E('div', { 'class': 'table' }, [
-			E('div', { 'class': 'tr table-titles' }, [
-				E('div', { 'class': 'th top' }, _('Start priority')),
-				E('div', { 'class': 'th top' }, _('Initscript')),
-				E('div', { 'class': 'th top' }, _('Autostart')),
-				E('div', { 'class': 'th top cbi-section-actions' }, _('Actions'))
+		var table = E('table', { 'class': 'table' }, [
+			E('tr', { 'class': 'tr table-titles' }, [
+				E('th', { 'class': 'th top' }, _('Start priority')),
+				E('th', { 'class': 'th top' }, _('Initscript')),
+				E('th', { 'class': 'th top' }, _('Autostart')),
+				E('th', { 'class': 'th top cbi-section-actions' }, _('Actions'))
 			])
 		]);
 
