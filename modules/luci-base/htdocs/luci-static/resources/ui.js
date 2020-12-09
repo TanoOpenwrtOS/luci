@@ -4176,6 +4176,9 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 					E('p', _('Failed to confirm apply within %ds, waiting for rollback…')
 						.format(L.env.apply_rollback)));
 
+				var rollbackRetries = 15;
+				var rollbackRetryDelay = 1000;
+
 				var call = function(r, data, duration) {
 					if (r.status === 204) {
 						UI.prototype.changes.displayStatus('warning', [
@@ -4201,14 +4204,25 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 					}
 
 					var delay = isNaN(duration) ? 0 : Math.max(1000 - duration, 0);
-					window.setTimeout(function() {
+					var rollbackTimerId = window.setTimeout(function rollbackConfirm() {
 						request.request(L.url('admin/uci/confirm'), {
 							method: 'post',
 							timeout: L.env.apply_timeout * 1000,
 							query: { sid: L.env.sessionid, token: L.env.token }
-						}).then(call);
-					}, delay);
-				};
+						}).then(call).catch(function(e) {
+							if (rollbackRetries > 0) {
+								rollbackRetries--;
+								rollbackTimerId = window.setTimeout(rollbackConfirm, rollbackRetryDelay);
+							}
+							else {
+								this.displayStatus('error', [
+									E('h4', _('Cofiguration changes rolling back failed!')),
+									E('p', _('Could not regain access to the device after rolling back configuration changes.'))
+								]);
+							}
+						}.bind(this));
+					}.bind(this), delay);
+				}.bind(this);
 
 				call({ status: 0 });
 			}
