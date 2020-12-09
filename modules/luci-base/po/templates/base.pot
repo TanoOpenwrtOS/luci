@@ -793,16 +793,16 @@ msgstr ""
 msgid "Apply backup?"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4330
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4344
 msgid "Apply request failed with status <code>%h</code>"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2205
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4196
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4199
 msgid "Apply unchecked"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4269
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4283
 msgid "Applying configuration changes… %ds"
 msgstr ""
 
@@ -1148,7 +1148,7 @@ msgstr ""
 msgid "Changes"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4365
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4379
 msgid "Changes have been reverted."
 msgstr ""
 
@@ -1237,6 +1237,10 @@ msgstr ""
 msgid "Close list..."
 msgstr ""
 
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4219
+msgid "Cofiguration changes rolling back failed!"
+msgstr ""
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:42
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:61
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2086
@@ -1288,11 +1292,11 @@ msgstr ""
 msgid "Configuration"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4244
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4258
 msgid "Configuration changes applied."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4182
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4185
 msgid "Configuration changes have been rolled back!"
 msgstr ""
 
@@ -1354,11 +1358,17 @@ msgstr ""
 msgid "Continue"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4218
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4232
 msgid ""
 "Could not regain access to the device after applying the configuration "
 "changes. You might need to reconnect if you modified network related "
 "settings such as the IP address or wireless security credentials."
+msgstr ""
+
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4220
+msgid ""
+"Could not regain access to the device after rolling back configuration "
+"changes."
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:189
@@ -1662,7 +1672,7 @@ msgstr ""
 msgid "Device not managed by ModemManager."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4217
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4231
 msgid "Device unreachable!"
 msgstr ""
 
@@ -1756,7 +1766,7 @@ msgstr ""
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2871
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3329
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:4099
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4188
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4191
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1688
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:135
 msgid "Dismiss"
@@ -5347,15 +5357,15 @@ msgstr ""
 msgid "Revert"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4192
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4195
 msgid "Revert changes"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4374
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4388
 msgid "Revert request failed with status <code>%h</code>"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4354
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4368
 msgid "Reverting configuration…"
 msgstr ""
 
@@ -5944,7 +5954,7 @@ msgstr ""
 msgid "Start refresh"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4307
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4321
 msgid "Starting configuration apply…"
 msgstr ""
 
@@ -6200,7 +6210,7 @@ msgid ""
 "network"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4183
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4186
 msgid ""
 "The device could not be reached within %d seconds after applying the pending "
 "changes, which caused the configuration to be rolled back for safety "
@@ -6352,7 +6362,7 @@ msgstr ""
 msgid "There are no active leases"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4322
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4336
 msgid "There are no changes to apply"
 msgstr ""
 

@@ -850,16 +850,16 @@ msgstr "Любая зона"
 msgid "Apply backup?"
 msgstr "Восстановить резервную копию?"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4330
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4344
 msgid "Apply request failed with status <code>%h</code>"
 msgstr "Запрос применения завершился со статусом ошибки <code>%h</code>"
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2205
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4196
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4199
 msgid "Apply unchecked"
 msgstr "Применить без проверки"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4269
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4283
 msgid "Applying configuration changes… %ds"
 msgstr "Ожидание применения конфигурации... %d сек"
 
@@ -1232,7 +1232,7 @@ msgstr "Цепочка"
 msgid "Changes"
 msgstr "Изменения"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4365
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4379
 msgid "Changes have been reverted."
 msgstr "Изменения были возвращены назад."
 
@@ -1334,6 +1334,10 @@ msgstr ""
 msgid "Close list..."
 msgstr "Закрыть список..."
 
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4219
+msgid "Cofiguration changes rolling back failed!"
+msgstr "Не удалось выполнить откат применения конфигурации!"
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:42
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:61
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2086
@@ -1389,11 +1393,11 @@ msgstr "Вычислять исходящую контрольную сумму 
 msgid "Configuration"
 msgstr "Конфигурация"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4244
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4258
 msgid "Configuration changes applied."
 msgstr "Конфигурация применена."
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4182
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4185
 msgid "Configuration changes have been rolled back!"
 msgstr "Конфигурация возвращена назад!"
 
@@ -1459,7 +1463,7 @@ msgstr "Содержимое сохранено."
 msgid "Continue"
 msgstr "Продолжить"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4218
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4232
 msgid ""
 "Could not regain access to the device after applying the configuration "
 "changes. You might need to reconnect if you modified network related "
@@ -1468,6 +1472,14 @@ msgstr ""
 "Не удалось восстановить доступ к устройству после применения конфигурации. "
 "Возможно вам придется подключиться заново, если вы изменили сетевые "
 "настройки, такие как IP-адрес или параметры доступа к беспроводной сети."
+
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4220
+msgid ""
+"Could not regain access to the device after rolling back configuration "
+"changes."
+msgstr ""
+"Не удалось восстановить доступ к устройству после отката применения "
+"конфигурации."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:189
 msgid "Country"
@@ -1777,7 +1789,7 @@ msgstr "Устройство перезапускается…"
 msgid "Device not managed by ModemManager."
 msgstr "Устройство не управляется ModemManager."
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4217
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4231
 msgid "Device unreachable!"
 msgstr "Устройство недоступно!"
 
@@ -1873,7 +1885,7 @@ msgstr "Ошибка попытки отключения."
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2871
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3329
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:4099
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4188
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4191
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1688
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:135
 msgid "Dismiss"
@@ -5598,15 +5610,15 @@ msgstr "Показать/скрыть пароль"
 msgid "Revert"
 msgstr "Вернуть"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4192
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4195
 msgid "Revert changes"
 msgstr "Вернуть изменения"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4374
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4388
 msgid "Revert request failed with status <code>%h</code>"
 msgstr "Ошибка <code>%h</code> отмены конфигурации"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4354
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4368
 msgid "Reverting configuration…"
 msgstr "Отмена конфигурации…"
 
@@ -6270,7 +6282,7 @@ msgstr "Приоритет"
 msgid "Start refresh"
 msgstr "Запустить обновление"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4307
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4321
 msgid "Starting configuration apply…"
 msgstr "Применение конфигурации…"
 
@@ -6538,7 +6550,7 @@ msgstr ""
 "При подключении к скрытой беспроводной сети необходимо вручную указать "
 "правильный SSID"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4183
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4186
 msgid ""
 "The device could not be reached within %d seconds after applying the pending "
 "changes, which caused the configuration to be rolled back for safety "
@@ -6712,7 +6724,7 @@ msgstr "Загруженный архив резервной копии не ч�
 msgid "There are no active leases"
 msgstr "Нет активных арендованных адресов"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4322
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4336
 msgid "There are no changes to apply"
 msgstr "Нет изменений для применения"
 
