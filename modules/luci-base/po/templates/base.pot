@@ -7164,6 +7164,18 @@ msgid ""
 "key options."
 msgstr ""
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1075
+msgid ""
+"Where Wi-Fi Multimedia (WMM) Mode QoS is disabled, clients may be limited to "
+"802.11a/802.11g rates."
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1071
+msgid ""
+"Where the ESSID is hidden, clients may fail to roam and airtime efficiency "
+"may be significantly reduced."
+msgstr ""
+
 #: modules/luci-compat/luasrc/view/cbi/wireless_modefreq.htm:166
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:468
 msgid "Width"

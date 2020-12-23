@@ -3,15 +3,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-05 13:59+0000\n"
-"Last-Translator: Tragic Life <huziyang2002@outlook.com>\n"
+"PO-Revision-Date: 2020-12-21 13:28+0000\n"
+"Last-Translator: akibou <jinwenxin1997@icloud.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsaria2/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:296
 msgid "<abbr title=\"Local Peer Discovery\">LPD</abbr> enabled"
@@ -83,7 +83,7 @@ msgstr "如果下載速度小於或等於這個速度 (byte/s)，關閉下載連
 #: applications/luci-app-aria2/luasrc/view/aria2/log_template.htm:49
 #: applications/luci-app-aria2/luasrc/view/aria2/settings_header.htm:29
 msgid "Collecting data..."
-msgstr "收集資料中..."
+msgstr "收集資料中……"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:73
 msgid "Config file directory"
@@ -91,7 +91,7 @@ msgstr "設置檔案的目錄"
 
 #: applications/luci-app-aria2/luasrc/controller/aria2.lua:22
 msgid "Configuration"
-msgstr "設定"
+msgstr "組態"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:230
 msgid "Connect timeout"

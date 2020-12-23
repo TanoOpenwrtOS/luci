@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2020-12-15 16:13+0300\n"
+"PO-Revision-Date: 2020-12-23 16:53+0300\n"
 "Last-Translator: Anton Kikin <a.a.kikin@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/"
 ">\n"
@@ -7591,6 +7591,22 @@ msgstr ""
 "включено, опции ключей R0/R1, расположенные ниже, не применяются. Для "
 "использования опций ключей R0/R1 отключите данную опцию."
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1075
+msgid ""
+"Where Wi-Fi Multimedia (WMM) Mode QoS is disabled, clients may be limited to "
+"802.11a/802.11g rates."
+msgstr ""
+"Там, где отключен QoS режима Wi-Fi Multimedia (WMM), клиенты могут быть "
+"ограничены скоростью 802.11a/802.11g."
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1071
+msgid ""
+"Where the ESSID is hidden, clients may fail to roam and airtime efficiency "
+"may be significantly reduced."
+msgstr ""
+"Если ESSID скрыт, клиенты не смогут перемещаться (roam), а эффективность "
+"эфирного времени может быть значительно снижена."
+
 #: modules/luci-compat/luasrc/view/cbi/wireless_modefreq.htm:166
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:468
 msgid "Width"
@@ -8234,6 +8250,3 @@ msgstr "да"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« Назад"
-
-#~ msgid "0 MBit/s"
-#~ msgstr "0 Мбит/с"
