@@ -8184,7 +8184,7 @@ msgstr "верное целое число"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:309
 msgid "valid network in address/netmask notation"
-msgstr "верная значение сети в нотации адрес/маска"
+msgstr "верное значение сети в нотации адрес/маска"
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:508
 msgid "valid phone digit (0-9, \"*\", \"#\", \"!\" or \".\")"
