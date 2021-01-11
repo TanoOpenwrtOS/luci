@@ -51,11 +51,13 @@ return baseclass.extend({
 					disk_octets__read: {
 						title: "Read",
 						color: "00ff00",
+						total: true,
 						flip : false
 					},
 					disk_octets__write: {
 						title: "Write",
 						color: "ff0000",
+						total: true,
 						flip : true
 					}
 				}
