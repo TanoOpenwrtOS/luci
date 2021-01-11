@@ -31,7 +31,7 @@ return baseclass.extend({
 			};
 		}
 		else {
-			return [
+			var graphs = [
 				{
 					title: "%H: CPU time used by %pi",
 					vlabel: "Jiffies",
@@ -126,8 +126,77 @@ return baseclass.extend({
 							file_handles: { color: "0000ff", title: "Opened files count" }
 						}
 					}
-				}
+				},
 			];
+
+			var types = graph.dataTypes(host, plugin, plugin_instance);
+
+			var io_ops = {
+				title: "%H: I/O operations by %pi",
+				vlabel: "Operations/s",
+				detail: true,
+				number_format: "%5.1lf%sOp/s",
+				data: {
+					sources: {
+						io_ops: [ "read", "write" ]
+					},
+
+					options: {
+						io_ops__read: {
+							color  : "00ff00",
+							title  : "Read",
+							total  : true,
+							flip   : false
+						},
+
+						io_ops__write: {
+							color  : "ff0000",
+							title  : "Write",
+							total  : true,
+							flip   : true
+						}
+					}
+				}
+			};
+
+			var disk_octets = {
+				title: "%H: Disk I/O bytes by %pi",
+				vlabel: "Bytes/s",
+				detail: true,
+				number_format: "%5.1lf%sB/s",
+				data: {
+					sources: {
+						disk_octets: [ "read", "write" ]
+					},
+
+					options: {
+						disk_octets__read: {
+							color  : "00ff00",
+							title  : "Read",
+							total  : true,
+							flip   : false
+						},
+
+						disk_octets__write: {
+							color  : "ff0000",
+							title  : "Write",
+							total  : true,
+							flip   : true
+						}
+					}
+				}
+			};
+
+			for (var i = 0; i < types.length; i++) {
+				switch(types[i]) {
+					case 'io_ops': graphs.push(io_ops); break;
+					case 'disk_octets': graphs.push(disk_octets); break;
+					default:
+						break;
+				}
+			}
+
+			return graphs;
 		}
 	}
 });
