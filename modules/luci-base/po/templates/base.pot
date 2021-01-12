@@ -12,7 +12,7 @@ msgstr ""
 msgid "%.2mB (%d %s)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3840
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3842
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:13
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:14
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:9
@@ -43,7 +43,7 @@ msgstr ""
 msgid "%d Bit"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3743
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3745
 msgid "%d invalid field(s)"
 msgstr ""
 
@@ -792,16 +792,16 @@ msgstr ""
 msgid "Apply backup?"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4344
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4346
 msgid "Apply request failed with status <code>%h</code>"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2205
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4199
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4201
 msgid "Apply unchecked"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4283
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4285
 msgid "Applying configuration changes… %ds"
 msgstr ""
 
@@ -939,6 +939,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:158
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:182
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1673
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:379
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:143
 msgid "BSSID"
 msgstr ""
@@ -1045,7 +1046,7 @@ msgid "Broadcast policy (broadcast, 3)"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2827
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3853
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3855
 msgid "Browse…"
 msgstr ""
 
@@ -1076,7 +1077,7 @@ msgid "Call failed"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2920
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3862
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3864
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:14
 #: modules/luci-compat/luasrc/view/cbi/simpleform.htm:52
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:187
@@ -1141,11 +1142,11 @@ msgstr ""
 msgid "Chain"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4082
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4084
 msgid "Changes"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4379
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4381
 msgid "Changes have been reverted."
 msgstr ""
 
@@ -1158,8 +1159,17 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:184
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:462
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1671
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:376
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:164
 msgid "Channel"
+msgstr ""
+
+#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:51
+msgid "Channel Analysis"
+msgstr ""
+
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:377
+msgid "Channel Width"
 msgstr ""
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:175
@@ -1234,7 +1244,7 @@ msgstr ""
 msgid "Close list..."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4219
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4221
 msgid "Cofiguration changes rolling back failed!"
 msgstr ""
 
@@ -1284,16 +1294,16 @@ msgstr ""
 msgid "Compute outgoing checksum (optional)."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4082
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4084
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:193
 msgid "Configuration"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4258
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4260
 msgid "Configuration changes applied."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4185
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4187
 msgid "Configuration changes have been rolled back!"
 msgstr ""
 
@@ -1338,7 +1348,7 @@ msgstr ""
 msgid "Connection lost"
 msgstr ""
 
-#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:93
+#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:106
 msgid "Connections"
 msgstr ""
 
@@ -1365,14 +1375,14 @@ msgstr ""
 msgid "Continue"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4232
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4234
 msgid ""
 "Could not regain access to the device after applying the configuration "
 "changes. You might need to reconnect if you modified network related "
 "settings such as the IP address or wireless security credentials."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4220
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4222
 msgid ""
 "Could not regain access to the device after rolling back configuration "
 "changes."
@@ -1683,7 +1693,7 @@ msgstr ""
 msgid "Device not managed by ModemManager."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4231
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4233
 msgid "Device unreachable!"
 msgstr ""
 
@@ -1777,8 +1787,8 @@ msgstr ""
 #: modules/luci-base/htdocs/luci-static/resources/form.js:606
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2871
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3329
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4099
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4191
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4101
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4193
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1696
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:135
 msgid "Dismiss"
@@ -2255,7 +2265,7 @@ msgstr ""
 msgid "Failed to change the system password."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4176
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4178
 msgid "Failed to confirm apply within %ds, waiting for rollback…"
 msgstr ""
 
@@ -2461,7 +2471,7 @@ msgstr ""
 msgid "Gateway address is invalid"
 msgstr ""
 
-#: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:124
+#: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:127
 msgid "Gateway metric"
 msgstr ""
 
@@ -2534,11 +2544,11 @@ msgstr ""
 msgid "Grant access to DHCP configuration"
 msgstr ""
 
-#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:102
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:111
 msgid "Grant access to DHCP status display"
 msgstr ""
 
-#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:111
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:120
 msgid "Grant access to DSL status display"
 msgstr ""
 
@@ -2566,11 +2576,11 @@ msgstr ""
 msgid "Grant access to crontab configuration"
 msgstr ""
 
-#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:60
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:69
 msgid "Grant access to firewall status"
 msgstr ""
 
-#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:86
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:95
 msgid "Grant access to main status display"
 msgstr ""
 
@@ -2615,10 +2625,11 @@ msgid "Grant access to system logs"
 msgstr ""
 
 #: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:47
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:60
 msgid "Grant access to the system route status"
 msgstr ""
 
-#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:120
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:129
 msgid "Grant access to wireless status display"
 msgstr ""
 
@@ -3052,6 +3063,10 @@ msgid ""
 "blocked. Click \"Continue »\" below to return to the previous page."
 msgstr ""
 
+#: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:124
+msgid "In seconds"
+msgstr ""
+
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:157
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/ppp.js:141
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoa.js:128
@@ -3434,7 +3449,7 @@ msgid ""
 "are used. It is recommended to not allow 802.11b rates where possible."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4084
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4086
 msgid "Legend:"
 msgstr ""
 
@@ -3534,7 +3549,7 @@ msgstr ""
 msgid "Listening port for inbound DNS queries"
 msgstr ""
 
-#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:63
+#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:76
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:54
 msgid "Load"
 msgstr ""
@@ -3883,6 +3898,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:444
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:936
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1672
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:378
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:142
 msgid "Mode"
 msgstr ""
@@ -4042,7 +4058,7 @@ msgid "NTP server candidates"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2552
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3839
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3841
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:27
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:710
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:67
@@ -4409,11 +4425,11 @@ msgstr ""
 msgid "Option \"%s\" must not be empty."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4091
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4093
 msgid "Option changed"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4093
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4095
 msgid "Option removed"
 msgstr ""
 
@@ -4878,7 +4894,7 @@ msgstr ""
 msgid "Please enter your username and password."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3822
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3824
 msgid "Please select the file to upload."
 msgstr ""
 
@@ -5104,7 +5120,7 @@ msgstr ""
 msgid "Really switch protocol?"
 msgstr ""
 
-#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:51
+#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:64
 msgid "Realtime Graphs"
 msgstr ""
 
@@ -5378,19 +5394,19 @@ msgstr ""
 msgid "Reveal/hide password"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4107
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4109
 msgid "Revert"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4195
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4197
 msgid "Revert changes"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4388
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4390
 msgid "Revert request failed with status <code>%h</code>"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4368
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4370
 msgid "Reverting configuration…"
 msgstr ""
 
@@ -5480,6 +5496,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:156
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:181
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1670
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:375
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:141
 msgid "SSID"
 msgstr ""
@@ -5507,7 +5524,7 @@ msgid "Save"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2204
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4103
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4105
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:24
 msgid "Save & Apply"
 msgstr ""
@@ -5525,11 +5542,11 @@ msgstr ""
 msgid "Scheduled Tasks"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4087
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4089
 msgid "Section added"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4089
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4091
 msgid "Section removed"
 msgstr ""
 
@@ -5663,6 +5680,8 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:63
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:186
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1669
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:42
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:374
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:140
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:231
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:276
@@ -5678,11 +5697,15 @@ msgstr ""
 msgid "Signal Attenuation (SATN)"
 msgstr ""
 
+#: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:124
+msgid "Signal Refresh Rate"
+msgstr ""
+
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:260
 msgid "Signal:"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3840
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3842
 msgid "Size"
 msgstr ""
 
@@ -5979,11 +6002,12 @@ msgstr ""
 msgid "Start refresh"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4321
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4323
 msgid "Starting configuration apply…"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1686
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:398
 msgid "Starting wireless scan..."
 msgstr ""
 
@@ -6235,7 +6259,7 @@ msgid ""
 "network"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4186
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4188
 msgid ""
 "The device could not be reached within %d seconds after applying the pending "
 "changes, which caused the configuration to be rolled back for safety "
@@ -6387,7 +6411,7 @@ msgstr ""
 msgid "There are no active leases"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4336
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4338
 msgid "There are no changes to apply"
 msgstr ""
 
@@ -6545,7 +6569,7 @@ msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:53
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:64
-#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:72
+#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:85
 msgid "Traffic"
 msgstr ""
 
@@ -6718,7 +6742,7 @@ msgstr ""
 msgid "Unnamed key"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4027
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4029
 msgid "Unsaved Changes"
 msgstr ""
 
@@ -6748,7 +6772,7 @@ msgstr ""
 msgid "Up Delay"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3914
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3916
 msgid "Upload"
 msgstr ""
 
@@ -6766,17 +6790,17 @@ msgstr ""
 msgid "Upload file…"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3860
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3862
 msgid "Upload has been cancelled"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2753
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3902
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3904
 msgid "Upload request failed: %s"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3821
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3875
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3823
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3877
 msgid "Uploading file…"
 msgstr ""
 
@@ -7184,7 +7208,7 @@ msgstr ""
 
 #: modules/luci-mod-network/root/usr/share/luci/menu.d/luci-mod-network.json:17
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:10
-#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:81
+#: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:94
 msgid "Wireless"
 msgstr ""
 
@@ -7317,6 +7341,11 @@ msgstr ""
 msgid "auto"
 msgstr ""
 
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:143
+msgctxt "Language"
+msgid "auto"
+msgstr ""
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:85
 msgid "automatic"
 msgstr ""
@@ -7352,6 +7381,8 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:185
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:186
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:187
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:41
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:42
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:274
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:276
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:277
@@ -7433,6 +7464,7 @@ msgid "hexadecimal encoded value"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1746
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:297
 msgid "hidden"
 msgstr ""
 
