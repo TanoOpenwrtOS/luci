@@ -621,7 +621,7 @@ var UICheckbox = UIElement.extend(/** @lends LuCI.ui.Checkbox.prototype */ {
 
 			frameEl.appendChild(
 				E('label', { 'class': 'cbi-tooltip-container' },[
-					icon,
+					icon ? E('span', { 'class': 'cbi-tooltip-icon' }, icon) : '',
 					E('div', { 'class': 'cbi-tooltip' },
 						this.options.tooltip
 					)
