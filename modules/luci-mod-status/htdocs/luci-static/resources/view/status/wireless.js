@@ -286,13 +286,13 @@ return view.extend({
 				E('div', { 'class': 'table-wrapper' }, [ E('table', { 'class': 'table', 'style': 'width:100%;table-layout:fixed' }, [
 					E('tr', { 'class': 'tr' }, [
 						E('td', { 'class': 'td right top' }, E('strong', { 'style': 'border-bottom:2px solid green' }, [ _('Phy Rate:') ])),
-						E('td', { 'class': 'td', 'id': 'rate_bw_cur' }, [ '0 Mbit/s' ]),
+						E('td', { 'class': 'td', 'id': 'rate_bw_cur' }, [ '0 ' + _('Mbit/s') ]),
 
 						E('td', { 'class': 'td right top' }, E('strong', {}, [ _('Average:') ])),
-						E('td', { 'class': 'td', 'id': 'rate_bw_avg' }, [ '0 Mbit/s' ]),
+						E('td', { 'class': 'td', 'id': 'rate_bw_avg' }, [ '0 ' + _('Mbit/s') ]),
 
 						E('td', { 'class': 'td right top' }, E('strong', {}, [ _('Peak:') ])),
-						E('td', { 'class': 'td', 'id': 'rate_bw_peak' }, [ '0 Mbit/s' ])
+						E('td', { 'class': 'td', 'id': 'rate_bw_peak' }, [ '0 ' + _('Mbit/s') ])
 					])
 				])])
 			]));
