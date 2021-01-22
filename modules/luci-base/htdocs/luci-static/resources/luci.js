@@ -840,8 +840,10 @@
 			if (xhr.status === 0 && xhr.statusText === '') {
 				if (duration >= this.timeout)
 					rejectFn.call(this, new Error('XHR request timed out'));
-				else
-					rejectFn.call(this, new Error('XHR request aborted by browser'));
+				else {
+					console.error(new Error('XHR request aborted by browser'));
+					return;
+				}
 			}
 			else {
 				var response = new Response(
