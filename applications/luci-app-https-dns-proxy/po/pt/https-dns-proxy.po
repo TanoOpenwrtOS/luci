@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-31 08:29+0000\n"
-"Last-Translator: Thiago Garcia <thiagosgarcia@gmail.com>\n"
+"PO-Revision-Date: 2021-02-15 09:20+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationshttps-dns-proxy/pt/>\n"
 "Language: pt\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:73
 msgid "%s is not installed or not found"
@@ -80,11 +80,11 @@ msgstr "DNS.SB"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers.disabled/ca.dnscrypt.dns1.lua:3
 msgid "DNSCrypt.ca (DNS1)"
-msgstr ""
+msgstr "DNSCrypt.ca (DNS1)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers.disabled/ca.dnscrypt.dns2.lua:3
 msgid "DNSCrypt.ca (DNS2)"
-msgstr ""
+msgstr "DNSCrypt.ca (DNS2)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/pub.doh.lua:3
 msgid "DNSPod.cn Public DNS"
@@ -92,7 +92,7 @@ msgstr "DNSPod.cn DNS público"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:189
 msgid "DSCP Codepoint"
-msgstr ""
+msgstr "Codepoint DSCP"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers.disabled/ch.digitale-gesellschaft.dns.lua:3
 msgid "Digitale Gesellschaft"
@@ -145,16 +145,20 @@ msgid "LibreDNS (No Ads)"
 msgstr "LibreDNS (Sem Anúncios)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:172
-msgid "Listen address"
+msgid "Listen Address"
 msgstr "Endereço de escuta"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:185
-msgid "Listen port"
+msgid "Listen Port"
 msgstr "Porta de escuta"
 
 #: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/js.htm:52
 msgid "Loading"
 msgstr "A carregar"
+
+#: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/io.nextdns.dns.lua:3
+msgid "NextDNS.io"
+msgstr "NextDNS.io"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/cz.nic.odvr.lua:3
 msgid "ODVR (nic.cz)"
@@ -169,8 +173,12 @@ msgid "OpenDNS (Family Shield)"
 msgstr "OpenDNS (Family Shield)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:193
-msgid "Proxy server"
+msgid "Proxy Server"
 msgstr "Servidor proxy"
+
+#: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/tw.twnic.dns.lua:3
+msgid "Quad 101 (Taiwan)"
+msgstr "Quad 101 (Taiwan)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/net.quad9.dns.lua:3
 msgid "Quad 9 (Recommended)"
@@ -247,6 +255,15 @@ msgstr "desativado"
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers.disabled/cn.rubyfish.dns.lua:3
 msgid "rubyfish.cn"
 msgstr "rubyfish.cn"
+
+#~ msgid "Listen address"
+#~ msgstr "Endereço de escuta"
+
+#~ msgid "Listen port"
+#~ msgstr "Porta de escuta"
+
+#~ msgid "Proxy server"
+#~ msgstr "Servidor proxy"
 
 #~ msgid ""
 #~ "When you add/remove any instances below, they will be used to override "

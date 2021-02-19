@@ -124,6 +124,9 @@ config statistics 'collectd_interface'
 	option Interfaces 'br-lan'
 	option IgnoreSelected '0'
 
+config statistics 'collectd_ipstatistics'
+	option enable '0'
+
 config statistics 'collectd_iptables'
 	option enable '0'
 
