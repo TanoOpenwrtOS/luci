@@ -54,7 +54,7 @@ return view.extend({
 		return ui.uploadFile('/tmp/backup.tar.gz', ev.target)
 			.then(L.bind(function(btn, res) {
 				btn.firstChild.data = _('Checking archive…');
-				return fs.exec('/bin/tar', [ '-tzf', '/tmp/backup.tar.gz' ]);
+				return fs.exec_polled('/bin/tar', [ '-tzf', '/tmp/backup.tar.gz' ], null, { timeout: 300 }); /* 5 minutes */
 			}, this, ev.target))
 			.then(L.bind(function(btn, res) {
 				if (res.code != 0) {
@@ -86,7 +86,7 @@ return view.extend({
 	},
 
 	handleRestoreConfirm: function(btn, ev) {
-		return fs.exec('/sbin/sysupgrade', [ '--restore-backup', '/tmp/backup.tar.gz' ])
+		return fs.exec_polled('/sbin/sysupgrade', [ '--restore-backup', '/tmp/backup.tar.gz' ], null, { timeout: 300 }) /* 5 minutes */
 			.then(L.bind(function(btn, res) {
 				if (res.code != 0) {
 					ui.addNotification(null, [

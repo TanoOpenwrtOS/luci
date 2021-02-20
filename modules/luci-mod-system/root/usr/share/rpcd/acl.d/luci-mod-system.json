@@ -146,7 +146,7 @@
 				"/tmp/backup.tar.gz": [ "write" ]
 			},
 			"ubus": {
-				"file": [ "exec", "remove", "write" ]
+				"file": [ "exec", "exec_poll", "remove", "write" ]
 			}
 		}
 	},
