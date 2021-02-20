@@ -29,7 +29,7 @@
  */
 
 var callFileList, callFileStat, callFileRead, callFileWrite, callFileRemove,
-    callFileExec, callFileMD5;
+    callFileExec, callFileExecPoll, callFileMD5;
 
 callFileList = rpc.declare({
 	object: 'file',
@@ -64,7 +64,13 @@ callFileRemove = rpc.declare({
 callFileExec = rpc.declare({
 	object: 'file',
 	method: 'exec',
-	params: [ 'command', 'params', 'env' ]
+	params: [ 'command', 'params', 'env', 'extraopts' ]
+});
+
+callFileExecPoll = rpc.declare({
+	object: 'file',
+	method: 'exec_poll',
+	params: [ 'exec_id' ]
 });
 
 callFileMD5 = rpc.declare({
@@ -265,7 +271,7 @@ var FileSystem = baseclass.extend(/** @lends LuCI.fs.prototype */ {
 	 * Returns a promise resolving to an object describing the execution
 	 * results or rejecting with an error stating the failure reason.
 	 */
-	exec: function(command, params, env) {
+	exec: function(command, params, env, extraopts) {
 		if (!Array.isArray(params))
 			params = null;
 
@@ -423,7 +429,96 @@ var FileSystem = baseclass.extend(/** @lends LuCI.fs.prototype */ {
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			responseType: (type == 'blob') ? 'blob' : 'text'
 		}).then(handleCgiIoReply.bind({ type: type }));
-	}
+	},
+
+	/**
+	 * Execute the specified command, optionally passing params and
+	 * environment variables and periodically poll command execute
+	 * completion by ID without keeping persistent connection.
+	 *
+	 * This allows to execute long-running commands without
+	 * uhttpd and ubus reply timeout restictions.
+	 *
+	 * Note: The `command` must be either the path to an executable,
+	 * or a basename without arguments in which case it will be searched
+	 * in $PATH. If specified, the values given in `params` will be passed
+	 * as arguments to the command.
+	 *
+	 * The key/value pairs in the optional `env` table are translated to
+	 * `setenv()` calls prior to running the command.
+	 *
+	 * @param {string} command
+	 * The command to invoke.
+	 *
+	 * @param {string[]} [params]
+	 * The arguments to pass to the command.
+	 *
+	 * @param {Object.<string, string>} [env]
+	 * Environment variables to set.
+	 *
+	 * @param {Object} [options]
+	 * Polled execute options:
+	 * - `timeout` - timeout in seconds (default 180);
+	 * - `period` - completion polling period (default 3).
+	 *
+	 * @returns {Promise<LuCI.fs.FileExecResult>}
+	 * Returns a promise resolving to an object describing the execution
+	 * results or rejecting with an error stating the failure reason.
+	 */
+	exec_polled: function(command, params, env, options) {
+		if (!Array.isArray(params))
+			params = null;
+
+		if (!L.isObject(env))
+			env = null;
+
+		options = Object.assign({
+			timeout: 300,
+			period: 3
+		}, options);
+
+		return callFileExec(command, params, env, { "mode": "polled", "timeout": options.timeout })
+			.then(handleRpcReply.bind(this, { '': {} }))
+			.then(function(data) {
+				return new Promise(function(resolveFn, rejectFn) {
+					var timeoutId;
+					var pollId;
+
+					pollId = setTimeout(function pollFn() {
+						callFileExecPoll(data.exec_id).then(handleRpcReply.bind(this, { '': {} }))
+							.then(function(pollData) {
+								if (pollData && pollData.completed) {
+									if (options.timeout)
+										clearTimeout(timeoutId);
+									resolveFn(pollData);
+								}
+								else {
+									pollId = setTimeout(pollFn, options.period * 1000);
+								}
+							}
+						);
+
+						/*
+						 * Poll the state even when the browser tab is not active.
+						 * The process completion information is not kept forever,
+						 * it will be deleted after a timeout and we will not be
+						 * able to retrieve it.
+						 */
+						if ((typeof document.hidden === 'undefined') || document.hidden)
+							flushRequestQueue();
+
+					}, options.period * 1000);
+
+					if (options.timeout) {
+						timeoutId = setTimeout(function() {
+							clearTimeout(pollId);
+							resolveFn({ 'completed': false, 'timeout': true });
+						}, options.timeout * 1000);
+					}
+				});
+			}
+		);
+	},
 });
 
 return FileSystem;
