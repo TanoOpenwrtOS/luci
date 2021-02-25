@@ -45,7 +45,7 @@ return view.extend({
 		]);
 
 		/* Currently the sysupgrade rpc call will not return, hence no promise handling */
-		fs.exec('/sbin/firstboot', [ '-r', '-y' ]);
+		fs.exec('/sbin/factory-reset');
 
 		ui.awaitReconnect(window.location.host);
 	},
