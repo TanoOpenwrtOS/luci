@@ -438,7 +438,7 @@ msgstr ""
 msgid "Active-Backup policy (active-backup, 1)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3693
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3705
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:939
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:23
 msgid "Ad-Hoc"
@@ -593,7 +593,7 @@ msgstr ""
 msgid "Alert"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2880
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2892
 #: modules/luci-compat/luasrc/model/network.lua:1434
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:61
 msgid "Alias Interface"
@@ -1023,7 +1023,7 @@ msgstr ""
 msgid "Bonding Policy"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2886
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2898
 #: modules/luci-compat/luasrc/model/network.lua:1438
 msgid "Bridge"
 msgstr ""
@@ -1213,7 +1213,7 @@ msgid ""
 "configuration files."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3692
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3704
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:938
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1043
 msgid "Client"
@@ -1476,7 +1476,7 @@ msgstr ""
 msgid "DHCP and DNS"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1991
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2003
 #: modules/luci-base/htdocs/luci-static/resources/protocol/dhcp.js:16
 #: modules/luci-compat/luasrc/model/network.lua:986
 msgid "DHCP client"
@@ -2154,12 +2154,12 @@ msgstr ""
 msgid "Errored seconds (ES)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2898
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2910
 #: modules/luci-compat/luasrc/model/network.lua:1450
 msgid "Ethernet Adapter"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2889
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2901
 #: modules/luci-compat/luasrc/model/network.lua:1440
 msgid "Ethernet Switch"
 msgstr ""
@@ -3765,7 +3765,7 @@ msgstr ""
 msgid "Manual"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3691
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3703
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:642
 msgid "Master"
 msgstr ""
@@ -3833,7 +3833,7 @@ msgstr ""
 msgid "Memory usage (%)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3694
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3706
 msgid "Mesh"
 msgstr ""
 
@@ -3952,7 +3952,7 @@ msgstr ""
 msgid "ModemManager"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3695
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3707
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1015
 msgid "Monitor"
 msgstr ""
@@ -5732,7 +5732,7 @@ msgstr ""
 msgid "Slave Interfaces"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2892
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2904
 #: modules/luci-compat/luasrc/model/network.lua:1445
 msgid "Software VLAN"
 msgstr ""
@@ -6033,7 +6033,7 @@ msgstr ""
 msgid "Static Routes"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1990
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2002
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:172
 #: modules/luci-compat/luasrc/model/network.lua:984
 msgid "Static address"
@@ -6110,7 +6110,7 @@ msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2892
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2904
 #: modules/luci-compat/luasrc/model/network.lua:1443
 msgid "Switch VLAN"
 msgstr ""
@@ -6598,7 +6598,7 @@ msgstr ""
 msgid "Tunnel ID"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2895
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2907
 #: modules/luci-compat/luasrc/model/network.lua:1448
 msgid "Tunnel Interface"
 msgstr ""
@@ -6700,11 +6700,11 @@ msgstr ""
 msgid "Unavailable Seconds (UAS)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/fs.js:102
+#: modules/luci-base/htdocs/luci-static/resources/fs.js:108
 msgid "Unexpected reply data format"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1992
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2004
 #: modules/luci-compat/luasrc/model/network.lua:988
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:17
 msgid "Unknown"
@@ -6714,7 +6714,7 @@ msgstr ""
 msgid "Unknown and unsupported connection method."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2301
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2313
 #: modules/luci-compat/luasrc/model/network.lua:1155
 msgid "Unknown error (%s)"
 msgstr ""
@@ -6723,7 +6723,7 @@ msgstr ""
 msgid "Unknown error code"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:1989
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2001
 #: modules/luci-base/htdocs/luci-static/resources/protocol/none.js:6
 #: modules/luci-compat/luasrc/model/network.lua:982
 msgid "Unmanaged"
@@ -7208,13 +7208,13 @@ msgstr ""
 msgid "Wireless"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2883
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2895
 #: modules/luci-compat/luasrc/model/network.lua:1436
 msgid "Wireless Adapter"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2862
-#: modules/luci-base/htdocs/luci-static/resources/network.js:4092
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2874
+#: modules/luci-base/htdocs/luci-static/resources/network.js:4104
 #: modules/luci-compat/luasrc/model/network.lua:1422
 #: modules/luci-compat/luasrc/model/network.lua:1885
 msgid "Wireless Network"

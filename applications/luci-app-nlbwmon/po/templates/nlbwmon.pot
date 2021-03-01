@@ -54,9 +54,6 @@ msgstr ""
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:349
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:407
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:412
-msgid "%s: %%.2mB"
-msgstr ""
-
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:640
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:645
 msgid "%s: %%1024.2mB"
@@ -359,7 +356,7 @@ msgid "IPv4 vs. IPv6"
 msgstr ""
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:536
-msgid "IPv4: %.2mB"
+msgid "IPv4: %1024.2mB"
 msgstr ""
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:514
@@ -368,7 +365,7 @@ msgid "IPv6"
 msgstr ""
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:543
-msgid "IPv6: %.2mB"
+msgid "IPv6: %1024.2mB"
 msgstr ""
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:108

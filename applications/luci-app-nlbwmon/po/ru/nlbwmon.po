@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: nlbwmon\n"
 "POT-Creation-Date: 2018-01-21 19:45+0300\n"
-"PO-Revision-Date: 2020-12-28 18:20+0000\n"
+"PO-Revision-Date: 2021-03-01 14:03+0300\n"
 "Last-Translator: Max Smolik <makcum15@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnlbwmon/ru/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Poedit 2.3\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
@@ -69,9 +69,6 @@ msgstr "%s, %s и %s"
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:349
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:407
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:412
-msgid "%s: %%.2mB"
-msgstr "%s: %%.2mБ"
-
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:640
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:645
 msgid "%s: %%1024.2mB"
@@ -389,8 +386,8 @@ msgid "IPv4 vs. IPv6"
 msgstr "IPv4 vs. IPv6"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:536
-msgid "IPv4: %.2mB"
-msgstr "IPv4: %.2mБ"
+msgid "IPv4: %1024.2mB"
+msgstr "IPv4: %1024.2mБ"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:514
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:901
@@ -398,8 +395,8 @@ msgid "IPv6"
 msgstr "IPv6"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:543
-msgid "IPv6: %.2mB"
-msgstr "IPv6: %.2mБ"
+msgid "IPv6: %1024.2mB"
+msgstr "IPv6: %1024.2mБ"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:108
 msgid "Interval"
@@ -647,18 +644,3 @@ msgstr "нет трафика"
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:645
 msgid "other"
 msgstr "другие"
-
-#~ msgid "Invalid or empty backup archive"
-#~ msgstr "Неверный или пустой архив резервной копии"
-
-#~ msgid "Down. (Bytes / Pkts.)"
-#~ msgstr "Внутр. (Bytes / Pkts.)"
-
-#~ msgid "Download (Bytes / Packets)"
-#~ msgstr "Получение (Байты / Пакеты)"
-
-#~ msgid "Up. (Bytes / Pkts.)"
-#~ msgstr "Внешн. (Bytes / Pkts.)"
-
-#~ msgid "Upload (Bytes / Packets)"
-#~ msgstr "Передача (Байты / Пакеты)"
