@@ -1220,9 +1220,9 @@ msgstr ""
 "Ограничение(я) сертификата по значениям SAN (Subject Alternate Names),<br /"
 ">например, DNS:wifi.mycompany.com (поддерживаемые атрибуты EMAIL, DNS, URI)"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:53
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:56
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:200
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:54
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:57
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:212
 msgid "Chain"
 msgstr "Цепочка"
 
@@ -1349,8 +1349,8 @@ msgstr "Не удалось выполнить откат применения �
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:61
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2094
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:389
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:317
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:320
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:351
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:354
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:204
 msgid "Collecting data..."
 msgstr "Сбор данных..."
@@ -1372,7 +1372,7 @@ msgstr "Ошибка команды"
 msgid "Command failed with error code %d"
 msgstr "Команда завершилась с кодом ошибки %d"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:72
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:73
 msgid "Comment"
 msgstr "Комментарий"
 
@@ -1765,7 +1765,7 @@ msgid "Design"
 msgstr "Тема оформления"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:384
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:70
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:71
 msgid "Destination"
 msgstr "Направление"
 
@@ -2499,7 +2499,7 @@ msgstr "Метка межсетевого экрана"
 msgid "Firewall Settings"
 msgstr "Настройки межсетевого экрана"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:297
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:326
 msgid "Firewall Status"
 msgstr "Состояние межсетевого экрана"
 
@@ -2835,8 +2835,8 @@ msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr ""
 "Скрыть <abbr title=\"англ. Extended Service Set Identification\">ESSID</abbr>"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:264
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:303
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:293
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:332
 msgid "Hide empty chains"
 msgstr "Скрыть пустые цепочки"
 
@@ -2888,6 +2888,10 @@ msgstr "Имя хоста в DHCP-запросах"
 #: modules/luci-mod-network/root/usr/share/luci/menu.d/luci-mod-network.json:63
 msgid "Hostnames"
 msgstr "Имена хостов"
+
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:276
+msgid "Human-readable counters"
+msgstr "Человекочитаемые счётчики"
 
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:24
 msgid "Hybrid"
@@ -2943,7 +2947,7 @@ msgstr "IP-адрес не указан"
 msgid "IPv4"
 msgstr "IPv4"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:316
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:350
 msgid "IPv4 Firewall"
 msgstr "Межсетевой экран IPv4"
 
@@ -2973,7 +2977,7 @@ msgstr "IPv4-адрес шлюза"
 msgid "IPv4 netmask"
 msgstr "Маска сети IPv4"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:291
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:294
 msgid "IPv4 network in address/netmask notation"
 msgstr "Сеть IPv4 в формате адрес/маска подсети"
 
@@ -3029,7 +3033,7 @@ msgstr "IPv4/IPv6 (оба, по умолчанию IPv4)"
 msgid "IPv6"
 msgstr "IPv6"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:319
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:353
 msgid "IPv6 Firewall"
 msgstr "Межсетевой экран IPv6"
 
@@ -3067,7 +3071,7 @@ msgstr "IPv6 назначение длины"
 msgid "IPv6 gateway"
 msgstr "IPv6-адрес шлюза"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:296
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:299
 msgid "IPv6 network in address/netmask notation"
 msgstr "Сеть IPv6 в формате адрес/маска подсети"
 
@@ -3222,7 +3226,7 @@ msgstr "Игнорировать интерфейс"
 msgid "Ignore resolve file"
 msgstr "Игнорировать файл resolv"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:67
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:68
 msgid "In"
 msgstr "В"
 
@@ -4433,7 +4437,7 @@ msgstr "Узлы ещё не определены"
 msgid "No public keys present yet."
 msgstr "Нет публичных ключей."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:90
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:91
 msgid "No rules in this chain."
 msgstr "Нет правил в данной цепочке."
 
@@ -4588,7 +4592,7 @@ msgstr "Задержка включенного состояния"
 msgid "One of hostname or mac address must be specified!"
 msgstr "Должен быть указан либо MAC-адрес, либо имя хоста!"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:466
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:469
 msgid "One of the following: %s"
 msgstr "Одно из: %s"
 
@@ -4732,7 +4736,7 @@ msgid "Optional. UDP port used for outgoing and incoming packets."
 msgstr ""
 "Необязательно. UDP-порт, используемый для исходящих и входящих пакетов."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:71
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:72
 msgid "Options"
 msgstr "Опции"
 
@@ -4744,7 +4748,7 @@ msgstr "Опции:"
 msgid "Other:"
 msgstr "Другие:"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:68
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:69
 msgid "Out"
 msgstr "Вне"
 
@@ -4971,7 +4975,7 @@ msgstr "PTM/EFM (Режим передачи пакетов)"
 msgid "Packet Steering"
 msgstr "Управление пакетами (packet steering)"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:53
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:54
 msgid "Packets"
 msgstr "Пакеты"
 
@@ -5126,7 +5130,7 @@ msgstr "Пинг-запрос"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:83
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:84
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:138
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:63
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:64
 msgid "Pkts."
 msgstr "пакетов"
 
@@ -5138,7 +5142,7 @@ msgstr "Введите логин и пароль."
 msgid "Please select the file to upload."
 msgstr "Пожалуйста, выберите файл для загрузки."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:53
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:54
 msgid "Policy"
 msgstr "Политика"
 
@@ -5158,7 +5162,7 @@ msgstr "Порт"
 msgid "Port status:"
 msgstr "Состояние порта:"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:492
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:495
 msgid "Potential negation of: %s"
 msgstr "Потенциальное отрицание: %s"
 
@@ -5234,7 +5238,7 @@ msgstr "Приватный ключ"
 msgid "Processes"
 msgstr "Процессы"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:66
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:67
 msgid "Prot."
 msgstr "Прот."
 
@@ -5416,7 +5420,7 @@ msgstr "Рекомендуемый. IP-адреса интерфейса WireGua
 msgid "Reconnect this interface"
 msgstr "Переподключить этот интерфейс"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:56
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:57
 msgid "References"
 msgstr "Ссылки"
 
@@ -5608,7 +5612,7 @@ msgstr "Политика переизбрания для первичного в
 msgid "Reset"
 msgstr "Сбросить"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:308
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:342
 msgid "Reset Counters"
 msgstr "Сбросить счётчики"
 
@@ -5634,7 +5638,7 @@ msgstr "Ресурс не найден"
 msgid "Restart"
 msgstr "Перезапустить"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:313
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:347
 msgid "Restart Firewall"
 msgstr "Перезапустить межсетевой экран"
 
@@ -5713,7 +5717,7 @@ msgstr ""
 "Маршрутизация служит для определения через, какой интерфейс и шлюз можно "
 "достичь определенного хоста или сети."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:206
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:218
 msgid "Rule"
 msgstr "Правило"
 
@@ -5936,9 +5940,14 @@ msgstr "Короткая преамбула"
 msgid "Show current backup file list"
 msgstr "Показать текущий список файлов резервной копии"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:264
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:293
 msgid "Show empty chains"
 msgstr "Показать пустые цепочки"
+
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:276
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:337
+msgid "Show raw counters"
+msgstr "Показать «сырые» счётчики"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:212
 msgid "Show the current list..."
@@ -6026,7 +6035,7 @@ msgid "Sorry, the server encountered an unexpected error."
 msgstr "Извините, сервер столкнулся с неожиданной ошибкой."
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:383
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:69
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:70
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:184
 msgid "Source"
 msgstr "Источник"
@@ -6525,14 +6534,14 @@ msgstr "Передача (TX)"
 msgid "TX Rate"
 msgstr "Cкорость передачи"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:17
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:18
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:167
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:186
 msgid "Table"
 msgstr "Таблица"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:31
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:65
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:66
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:164
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:183
 msgid "Target"
@@ -6962,8 +6971,8 @@ msgstr "Всего доступно"
 msgid "Traceroute"
 msgstr "Трассировка"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:53
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:64
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:54
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:65
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:85
 msgid "Traffic"
 msgstr "Трафик"
@@ -7067,11 +7076,11 @@ msgstr "Невозможно получить идентификатор кли�
 msgid "Unable to obtain mount information"
 msgstr "Невозможно получить информацию о точках монтирования"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:278
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:307
 msgid "Unable to reset ip6tables counters: %s"
 msgstr "Невозможно сбросить счетчики ip6tables: %s"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:276
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:305
 msgid "Unable to reset iptables counters: %s"
 msgstr "Невозможно сбросить счетчики iptables: %s"
 
@@ -7085,7 +7094,7 @@ msgstr "Не удалось разрешить AFTR имя хоста"
 msgid "Unable to resolve peer host name"
 msgstr "Не удалось разрешить имя хоста пира"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:284
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:313
 msgid "Unable to restart firewall: %s"
 msgstr "Невозможно перезапустить межсетевой экран: %s"
 
@@ -7900,7 +7909,7 @@ msgstr "полный дуплекс"
 msgid "half-duplex"
 msgstr "полудуплекс"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:569
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:572
 msgid "hexadecimal encoded value"
 msgstr "значение в шестнадцатеричном представлении"
 
@@ -7929,11 +7938,11 @@ msgstr "игнорировать"
 msgid "input"
 msgstr "ввод"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:395
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:398
 msgid "key between 8 and 63 characters"
 msgstr "ключ длиной от 8 до 63 символов"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:407
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:410
 msgid "key with either 5 or 13 characters"
 msgstr "ключ длиной 5 или 13 символов"
 
@@ -8055,7 +8064,7 @@ msgstr "с тегом"
 msgid "time units (TUs / 1.024 ms) [1000-65535]"
 msgstr "единицы измерения времени (TUs / 1.024 ms) [1000-65535]"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:559
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:562
 msgid "unique value"
 msgstr "уникальное значение"
 
@@ -8102,7 +8111,7 @@ msgstr "верный IP-адрес"
 msgid "valid IP address or prefix"
 msgstr "верный IP-адрес или префикс"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:281
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:283
 msgid "valid IPv4 CIDR"
 msgstr "верный IPv4-адрес в нотации CIDR"
 
@@ -8115,15 +8124,15 @@ msgstr "верный IPv4-адрес"
 msgid "valid IPv4 address or network"
 msgstr "верный IPv4-адрес или сеть"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:374
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:377
 msgid "valid IPv4 address:port"
 msgstr "верный IPv4-адрес:порт"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:314
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:317
 msgid "valid IPv4 network"
 msgstr "верная IPv4 сеть"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:276
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:277
 msgid "valid IPv4 or IPv6 CIDR"
 msgstr "верный IPv4 или IPv6-адрес в нотации CIDR"
 
@@ -8131,7 +8140,7 @@ msgstr "верный IPv4 или IPv6-адрес в нотации CIDR"
 msgid "valid IPv4 prefix value (0-32)"
 msgstr "верное значение IPv4 префикса (0–32)"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:286
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:289
 msgid "valid IPv6 CIDR"
 msgstr "верный IPv6-адрес в нотации CIDR"
 
@@ -8144,11 +8153,11 @@ msgstr "верный IPv6-адрес"
 msgid "valid IPv6 address or prefix"
 msgstr "верный IPv6-адрес или префикс"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:304
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:307
 msgid "valid IPv6 host id"
 msgstr "верный IPv6 идентификатор хоста"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:319
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:322
 msgid "valid IPv6 network"
 msgstr "верная IPv6 сеть"
 
@@ -8156,25 +8165,25 @@ msgstr "верная IPv6 сеть"
 msgid "valid IPv6 prefix value (0-128)"
 msgstr "верное значение IPv6 префикса (0–128)"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:340
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:343
 msgid "valid MAC address"
 msgstr "верный MAC-адрес"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:411
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:414
 msgid "valid UCI identifier"
 msgstr "верный идентификатор UCI"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:362
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:365
 msgid "valid UCI identifier, hostname or IP address"
 msgstr "верный идентификатор UCI, имя хоста или IP-адрес"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:383
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:386
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:389
 msgid "valid address:port"
 msgstr "верное значение адреса:порта"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:533
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:537
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:536
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:540
 msgid "valid date (YYYY-MM-DD)"
 msgstr "верное значение даты (ГГГГ-ММ-ЧЧ)"
 
@@ -8182,27 +8191,27 @@ msgstr "верное значение даты (ГГГГ-ММ-ЧЧ)"
 msgid "valid decimal value"
 msgstr "верное десятичное число"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:405
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:408
 msgid "valid hexadecimal WEP key"
 msgstr "верный шестнадцатеричный WEB-ключ"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:393
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:396
 msgid "valid hexadecimal WPA key"
 msgstr "верный шестнадцатеричный WPA-ключ"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:368
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:371
 msgid "valid host:port"
 msgstr "верный хост:порт"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:355
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:357
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:358
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:360
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:73
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:79
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:107
 msgid "valid hostname"
 msgstr "верное имя хоста"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:345
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:348
 msgid "valid hostname or IP address"
 msgstr "верное имя хоста или IP-адрес"
 
@@ -8210,53 +8219,53 @@ msgstr "верное имя хоста или IP-адрес"
 msgid "valid integer value"
 msgstr "верное целое число"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:309
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:312
 msgid "valid network in address/netmask notation"
 msgstr "верное значение сети в нотации адрес/маска"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:508
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:511
 msgid "valid phone digit (0-9, \"*\", \"#\", \"!\" or \".\")"
 msgstr "верное значение номера телефона (0–9, «*», «#», «!» или «.»)"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:332
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:335
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:338
 msgid "valid port or port range (port1-port2)"
 msgstr "верное значение порта или диапазон портов (порт1–порт2)"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:324
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:327
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:136
 msgid "valid port value"
 msgstr "верное значение порта"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:513
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:516
 msgid "valid time (HH:MM:SS)"
 msgstr "верное значение времени (ЧЧ:ММ:СС)"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:435
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:438
 msgid "value between %d and %d characters"
 msgstr "значение длиной от %d до %d символов"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:416
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:419
 msgid "value between %f and %f"
 msgstr "значение в диапазоне от %f до %f"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:420
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:423
 msgid "value greater or equal to %f"
 msgstr "значение больше или равное %f"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:424
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:427
 msgid "value smaller or equal to %f"
 msgstr "значение меньше или равное %f"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:429
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:432
 msgid "value with %d characters"
 msgstr "значение длиной %d символов"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:440
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:443
 msgid "value with at least %d characters"
 msgstr "значение длиной не менее %d символов"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:445
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:448
 msgid "value with at most %d characters"
 msgstr "значение длиной не более %d символов"
 
