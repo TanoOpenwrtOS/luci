@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-21 08:14+0000\n"
-"Last-Translator: malrubaei <mhmd.alrubaei@gmail.com>\n"
+"PO-Revision-Date: 2021-03-04 13:50+0000\n"
+"Last-Translator: Said Zakaria <said.zakaria@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/ar/>\n"
 "Language: ar\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.3.1\n"
+"X-Generator: Weblate 4.5.1-dev\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:404
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:419
@@ -362,7 +362,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:295
 msgid "General Settings"
-msgstr ""
+msgstr "الاعدادات العامة"
 
 #: applications/luci-app-adblock/root/usr/share/rpcd/acl.d/luci-app-adblock.json:3
 msgid "Grant access to LuCI app adblock"
@@ -370,7 +370,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:219
 msgid "Information"
-msgstr ""
+msgstr "معلومة"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:451
 msgid "Jail Directory"
@@ -539,7 +539,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:284
 msgid "Restart"
-msgstr ""
+msgstr "إعادة تشغيل"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:96
 msgid "Result"
@@ -565,7 +565,7 @@ msgstr ""
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:74
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:102
 msgid "Save"
-msgstr ""
+msgstr "إحفض"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:355
 msgid ""

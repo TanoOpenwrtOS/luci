@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-21 08:14+0000\n"
-"Last-Translator: malrubaei <mhmd.alrubaei@gmail.com>\n"
+"PO-Revision-Date: 2021-03-04 13:50+0000\n"
+"Last-Translator: Said Zakaria <said.zakaria@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationstravelmate/ar/>\n"
 "Language: ar\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.3.1\n"
+"X-Generator: Weblate 4.5.1-dev\n"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:73
 msgid "-- AP Selection --"
@@ -39,7 +39,7 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:360
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:787
 msgid "Authentication"
-msgstr ""
+msgstr "المصادقة"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:484
 msgid "Auto Login Script"
@@ -76,7 +76,7 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:574
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:743
 msgid "BSSID"
-msgstr ""
+msgstr "BSSID"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:346
 msgid "Buffer size in bytes to prepare nearby scan results."
@@ -97,7 +97,7 @@ msgstr ""
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:572
 msgid "Channel"
-msgstr ""
+msgstr "قناة"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:297
 msgid ""
@@ -141,7 +141,7 @@ msgstr ""
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:226
 msgid "Delete this network"
-msgstr ""
+msgstr "احذف هذه الشبكة"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:245
 msgid "Device"
@@ -156,11 +156,11 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:587
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:829
 msgid "Dismiss"
-msgstr ""
+msgstr "إلغاء"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:215
 msgid "Drag to reorder"
-msgstr ""
+msgstr "اسحب لإعادة ترتيب"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:404
 msgid "E-Mail Hook"
@@ -204,7 +204,7 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:351
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:779
 msgid "EAP-Method"
-msgstr ""
+msgstr "طريقة EAP"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:368
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:796
@@ -213,11 +213,11 @@ msgstr ""
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:223
 msgid "Edit"
-msgstr ""
+msgstr "تحرير"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:221
 msgid "Edit this network"
-msgstr ""
+msgstr "قم بتحرير هذه الشبكة"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:287
 msgid "Enable the travelmate service."
@@ -236,7 +236,7 @@ msgstr "مفعل"
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:575
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:749
 msgid "Encryption"
-msgstr ""
+msgstr "التشفير"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:244
 msgid "Ext. Hooks"
@@ -255,7 +255,7 @@ msgstr ""
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:279
 msgid "General Settings"
-msgstr ""
+msgstr "الاعدادات العامة"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:314
 msgid "Generate a random unicast MAC address for each uplink connection."
@@ -281,7 +281,7 @@ msgstr ""
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:224
 msgid "Information"
-msgstr ""
+msgstr "معلومة"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:720
 msgid "Interface Name"
@@ -371,27 +371,27 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:343
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:772
 msgid "Password"
-msgstr ""
+msgstr "كلمة المرور"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:394
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:816
 msgid "Password of Private Key"
-msgstr ""
+msgstr "كلمة مرور المفتاح الخاص"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:379
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:804
 msgid "Path to CA-Certificate"
-msgstr ""
+msgstr "المسار إلى CA-Certificate"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:384
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:808
 msgid "Path to Client-Certificate"
-msgstr ""
+msgstr "مسار شهادة العميل"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:389
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:812
 msgid "Path to Private Key"
-msgstr ""
+msgstr "المسار إلى المفتاح الخاص"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:258
 msgid "Please install the separate 'qrencode' package."
@@ -468,7 +468,7 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:573
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:729
 msgid "SSID"
-msgstr ""
+msgstr "SSID"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:725
 msgid "SSID (hidden)"
@@ -477,7 +477,7 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:61
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:834
 msgid "Save"
-msgstr ""
+msgstr "إحفض"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:346
 msgid "Scan Buffer Size"
@@ -778,7 +778,7 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:276
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:769
 msgid "none"
-msgstr ""
+msgstr "لا شيء"
 
 #~ msgid "Action"
 #~ msgstr "إجراء"

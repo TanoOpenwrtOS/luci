@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-21 08:14+0000\n"
-"Last-Translator: malrubaei <mhmd.alrubaei@gmail.com>\n"
+"PO-Revision-Date: 2021-03-03 01:50+0000\n"
+"Last-Translator: Said Zakaria <said.zakaria@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsacme/ar/>\n"
 "Language: ar\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.3.1\n"
+"X-Generator: Weblate 4.5\n"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:17
 msgid "ACME certificates"
@@ -33,7 +33,7 @@ msgstr "حساب البريد الإلكتروني"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:48
 msgid "Advanced Settings"
-msgstr ""
+msgstr "إعدادات متقدمة"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:42
 msgid "Certificate config"
@@ -57,7 +57,7 @@ msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:97
 msgid "DNS"
-msgstr ""
+msgstr "نظام أسماء النطاقات"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:107
 msgid "DNS API"
@@ -111,7 +111,7 @@ msgstr "مفعل"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:46
 msgid "General Settings"
-msgstr ""
+msgstr "الاعدادات العامة"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:54
 msgid ""
