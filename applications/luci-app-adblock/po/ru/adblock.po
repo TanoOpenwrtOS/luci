@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: adblock\n"
 "POT-Creation-Date: 2017-10-22 13:00+0300\n"
-"PO-Revision-Date: 2021-02-01 16:02+0000\n"
-"Last-Translator: sergio <sergio+it@outerface.net>\n"
+"PO-Revision-Date: 2021-03-14 05:16+0000\n"
+"Last-Translator: Nt0G <nt0gggg@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/ru/>\n"
 "Language: ru\n"
@@ -12,13 +12,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.5.2-dev\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:404
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:419
-#, fuzzy
 msgid "- unspecified -"
 msgstr "- не указано -"
 
@@ -88,7 +87,6 @@ msgid "Backup Directory"
 msgstr "Папка для резервных копий"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:389
-#, fuzzy
 msgid "Base Temp Directory"
 msgstr "Расположение временных файлов"
 
@@ -119,7 +117,7 @@ msgstr "Заблокированные DNS-запросы"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:211
 msgid "Blocked Domain"
-msgstr "Заблокированный домен"
+msgstr "Блокируемый домен"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:225
 msgid "Blocked Domains"
@@ -131,7 +129,7 @@ msgstr "Резервная копия чёрного списка"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:81
 msgid "Blocklist Query"
-msgstr "Поиск по чёрному списку"
+msgstr "Поиск по «чёрному списку»"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:322
 msgid "Blocklist Query..."
@@ -139,7 +137,7 @@ msgstr "Поиск по чёрному списку..."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:300
 msgid "Blocklist Sources"
-msgstr "Источники чёрных списков"
+msgstr "Источники черного списка"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:447
 msgid ""
@@ -163,7 +161,7 @@ msgstr "Отмена"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:551
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:566
 msgid "Categories"
-msgstr ""
+msgstr "Категории"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:255
 msgid "Client"
@@ -387,7 +385,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:295
 msgid "General Settings"
-msgstr "Основные настройки"
+msgstr "Общие настройки"
 
 #: applications/luci-app-adblock/root/usr/share/rpcd/acl.d/luci-app-adblock.json:3
 msgid "Grant access to LuCI app adblock"
@@ -421,7 +419,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:61
 msgid "Line number to remove"
-msgstr ""
+msgstr "Номер строки для удаления"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:467
 msgid "List of available network devices used by tcpdump."
@@ -544,11 +542,11 @@ msgstr "Ослабить Безопасный поиск"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:277
 msgid "Reload"
-msgstr ""
+msgstr "Перезапустить"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:57
 msgid "Remove an existing job"
-msgstr ""
+msgstr "Удалить существующее задание"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:476
 msgid "Report Chunk Count"
@@ -580,7 +578,7 @@ msgstr "Размер фрагментов отчёта, используемых
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:284
 msgid "Restart"
-msgstr ""
+msgstr "Перезапустить"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:96
 msgid "Result"
