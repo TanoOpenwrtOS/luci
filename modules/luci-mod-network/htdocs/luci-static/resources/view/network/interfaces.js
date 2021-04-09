@@ -552,7 +552,7 @@ return view.extend({
 						if (ss.children[i].option != 'ignore')
 							ss.children[i].depends('ignore', '0');
 
-					so = ss.taboption('ipv6', form.ListValue, 'ra', _('<abbr title="Router Advertisement">RA</abbr>-Service'), _('<ul style="list-style-type:none;">\
+					so = ss.taboption('ipv6', form.ListValue, 'ra', _('<abbr title="Router Advertisement">RA</abbr>-Service'), _('<ul>\
 						<li><strong>server mode</strong>: Router advertises itself as the default IPv6 gateway \
 						via <abbr title="Router Advertisement, ICMPv6 Type 134">RA</abbr> messages \
 						(to <code>ff02::1</code>) and provides <abbr title="Prefix Delegation">PD</abbr> to downstream devices.</li>\
@@ -610,7 +610,7 @@ return view.extend({
 					so.depends('ra', 'relay');
 
 					so = ss.taboption('ipv6', form.ListValue, 'ra_management', _('DHCPv6-Mode'), _('Default is stateless + stateful<br />\
-						<ul style="list-style-type:none;">\
+						<ul>\
 						<li><strong>stateless</strong>: Router advertises prefixes, host uses <abbr title="Stateless Address Auto Config">SLAAC</abbr> \
 						to self assign its own address. No DHCPv6.</li>\
 						<li><strong>stateless + stateful</strong>: SLAAC. In addition, router assigns an IPv6 address to a host via DHCPv6.</li>\
@@ -622,7 +622,7 @@ return view.extend({
 					so.depends('dhcpv6', 'hybrid');
 					so.default = '1';
 
-					so = ss.taboption('ipv6', form.ListValue, 'dhcpv6', _('DHCPv6-Service'), _('<ul style="list-style-type:none;">\
+					so = ss.taboption('ipv6', form.ListValue, 'dhcpv6', _('DHCPv6-Service'), _('<ul>\
 						<li><strong>server mode</strong>: Router assigns IPs and delegates prefixes \
 						(<abbr title="Prefix Delegation">PD</abbr>) to downstream interfaces.</li>\
 						<li><strong>relay mode</strong>:   Router relays WAN interface config downstream. Helps support upstream \
@@ -644,7 +644,7 @@ return view.extend({
 						<abbr title="Neighbour Discovery Protocol">NDP</abbr> is effectively ARP for IPv6. \
 						<abbr title="Neighbour Solicitation, Type 135">NS</abbr> and <abbr title="Neighbour Advertisement, Type 136">NA</abbr> \
 						detect reachability and duplicate addresses on a link, themselves also a prerequisite for SLAAC autoconfig.<br />\
-						<ul style="list-style-type:none;">\
+						<ul>\
 						<li><strong>disabled</strong>: No <abbr title="Neighbour Discovery Protocol">NDP</abbr> messages are proxied through to \
 						<code>ndproxy_slave</code> true interfaces.</li>	\
 						<li><strong>relay mode</strong>: Proxies <abbr title="Neighbour Discovery Protocol">NDP</abbr> messages from <code>master</code> to \
