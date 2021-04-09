@@ -57,6 +57,13 @@ return view.extend({
 		o = s.taboption('host', form.Value, 'hostname', _('Hostname'));
 		o.datatype = 'hostname';
 
+		/* could be used also as a default for LLDP, SNMP "system description" in the future */
+		o = s.taboption('host', form.Value, 'description', _('Description'), _('An optional, short description for this device'));
+		o.optional = true;
+
+		o = s.taboption('host', form.TextValue, 'notes', _('Notes'), _('Optional, free-form notes about this device'));
+		o.optional = true;
+
 		/*
 		 * Logging
 		 */
