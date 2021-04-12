@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:41+0200\n"
-"PO-Revision-Date: 2021-04-01 17:26+0000\n"
+"PO-Revision-Date: 2021-04-11 16:26+0000\n"
 "Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/luci/es/>"
 "\n"
@@ -239,23 +239,24 @@ msgstr "Dirección <abbr title=\"Media Access Control\">MAC</abbr>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:636
 msgid "<abbr title=\"Neighbour Discovery Protocol\">NDP</abbr>-Proxy"
-msgstr ""
+msgstr "Proxy <abbr title=\"Neighbour Discovery Protocol\">NDP</abbr>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:603
 msgid "<abbr title=\"Router Advertisement\">RA</abbr> Hop Limit"
-msgstr ""
+msgstr "Límite de saltos <abbr title=\"Router Advertisement\">RA</abbr>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:585
+#, fuzzy
 msgid "<abbr title=\"Router Advertisement\">RA</abbr> Lifetime"
-msgstr ""
+msgstr "Vida <abbr title=\"Router Advertisement\">RA</abbr>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:594
 msgid "<abbr title=\"Router Advertisement\">RA</abbr> MTU"
-msgstr ""
+msgstr "MTU <abbr title=\"Router Advertisement\">RA</abbr>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:555
 msgid "<abbr title=\"Router Advertisement\">RA</abbr>-Service"
-msgstr ""
+msgstr "Servicio <abbr title=\"Router Advertisement\">RA</abbr>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:514
 msgid "<abbr title=\"The DHCP Unique Identifier\">DUID</abbr>"
@@ -290,6 +291,7 @@ msgstr ""
 "estaba vacío antes de editar."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:555
+#, fuzzy
 msgid ""
 "<ul style=\"list-style-type:none;\"> <li><strong>server mode</strong>: "
 "Router advertises itself as the default IPv6 gateway via <abbr title="
@@ -303,8 +305,21 @@ msgid ""
 "downstream, and uses <abbr title=\"Prefix Delegation\">PD</abbr> locally.</"
 "li></ul>"
 msgstr ""
+"<ul style=\"list-style-type:none;\"> <li><strong>Modo servidor</strong>: El "
+"enrutador se anuncia a sí mismo como la puerta de enlace IPv6 predeterminada "
+"a través de mensajes <abbr title=\"Router Advertisement, ICMPv6 Type 134\""
+">RA</abbr> (to <code>ff02::1</code>) y proporciona <abbr title=\"Prefix "
+"Delegation\">PD</abbr> a los dispositivos descendentes.</li> "
+"<li><strong>Modo relé</strong>: El enrutador reenvía <abbr title=\"Prefix "
+"Delegation\">PD</abbr> desde el flujo ascendente y extiende la configuración "
+"de la interfaz ascendente (p. Ej., WAN) y el prefijo a las interfaces "
+"descendentes (p. e., LAN) </li> <li><strong>Mod híbrido</strong>: El "
+"enrutador hace tanto servidor + retransmisión; extiende la configuración "
+"ascendente y el prefijo descendente, y usa <abbr title=\"Prefix Delegation\""
+">PD</abbr> localmente.</li></ul>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:625
+#, fuzzy
 msgid ""
 "<ul style=\"list-style-type:none;\"> <li><strong>server mode</strong>: "
 "Router assigns IPs and delegates prefixes (<abbr title=\"Prefix Delegation"
@@ -314,6 +329,14 @@ msgid ""
 "<li><strong>hybrid mode</strong>: Router does combination of server+relay.</"
 "li></ul>"
 msgstr ""
+"<ul style=\"list-style-type:none;\"> <li><strong>Modo servidor</strong>: El "
+"enrutador asigna direcciones IP y delega prefijos (<abbr title=\"Prefix "
+"Delegation\">PD</abbr>) a interfaces descendentes.</li> <li><strong>Modo "
+"relé</strong>: El enrutador retransmite la configuración de la interfaz WAN "
+"en sentido descendente. Ayuda a soportar enlaces ascendentes que carecen "
+"<abbr title=\"Prefix Delegation\">PD</abbr>.</li> <li><strong>Modo "
+"híbrido</strong>: El enrutador hace una combinación de servidor + "
+"relé.</li></ul>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:480
 msgid "A configuration for the device \"%s\" already exists"
@@ -760,7 +783,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:673
 msgid "Always, even if no public prefix is available."
-msgstr ""
+msgstr "Siempre, incluso si no hay ningún prefijo público disponible."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:803
 msgid "Amount of Duplicate Address Detection probes to send"
@@ -772,7 +795,7 @@ msgstr "Se produjo un error al guardar el formulario:"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:125
 msgid "An optional, short description for this device"
-msgstr ""
+msgstr "Una breve descripción opcional de este dispositivo"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1232
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:20
@@ -837,7 +860,7 @@ msgstr "Anexo M G.992.5"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:673
 msgid "Announce as default router"
-msgstr ""
+msgstr "Anunciar como enrutador predeterminado"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:678
 msgid "Announced DNS domains"
@@ -1689,7 +1712,7 @@ msgstr "DNS"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:277
 msgid "DNS forwardings"
-msgstr "Reenvíos DNS"
+msgstr "Reenvíos de DNS"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:698
 msgid "DNS search domains"
@@ -1757,8 +1780,9 @@ msgid "Default %d"
 msgstr "%d por defecto"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:658
+#, fuzzy
 msgid "Default is on."
-msgstr ""
+msgstr "El valor predeterminado es activado."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:612
 msgid ""
@@ -3821,8 +3845,9 @@ msgid "Learn"
 msgstr "Aprender"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:658
+#, fuzzy
 msgid "Learn routes from NDP"
-msgstr ""
+msgstr "Aprenda rutas de NDP"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:511
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:520
@@ -4244,7 +4269,7 @@ msgstr "AP"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:568
 msgid "Max <abbr title=\"Router Advertisement\">RA</abbr> interval"
-msgstr ""
+msgstr "Intervalo máximo de <abbr title=\"Router Advertisement\">RA</abbr>"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:22
 msgid "Max. Attainable Data Rate (ATTNDR)"
@@ -4287,11 +4312,15 @@ msgid "Maximum snooping table size"
 msgstr "Tamaño máximo de la mesa de espionaje"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:568
+#, fuzzy
 msgid ""
 "Maximum time allowed between sending unsolicited <abbr title=\"Router "
 "Advertisement, ICMPv6 Type 134\">RA</abbr>. Default is 600 seconds "
 "(<code>600</code>)."
 msgstr ""
+"Tiempo máximo permitido entre el envío de <abbr title=\"Router "
+"Advertisement, ICMPv6 Type 134\">RA</abbr> no solicitado. El valor "
+"predeterminado es 600 segundos (<code>600</code>)."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:893
 msgid "Maximum transmit power"
@@ -4356,7 +4385,7 @@ msgstr "Métrica"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:577
 msgid "Min <abbr title=\"Router Advertisement\">RA</abbr> interval"
-msgstr ""
+msgstr "Intervalo mínimo de <abbr title=\"Router Advertisement\">RA</abbr>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:788
 msgid "Minimum ARP validity time"
@@ -4380,6 +4409,9 @@ msgid ""
 "Advertisement, ICMPv6 Type 134\">RA</abbr>. Default is 200 seconds "
 "(<code>200</code>)."
 msgstr ""
+"Tiempo mínimo permitido entre el envío de <abbr title=\"Router "
+"Advertisement, ICMPv6 Type 134\">RA</abbr> no solicitado. El valor "
+"predeterminado es 200 segundos (<code>200</code>)."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:202
 msgid "Mirror monitor port"
@@ -4565,7 +4597,7 @@ msgstr "NCM"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:661
 msgid "NDP-Proxy slave"
-msgstr ""
+msgstr "Esclavo de Proxy NDP"
 
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:72
 msgid "NT Domain"
@@ -4840,7 +4872,7 @@ msgstr ""
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:128
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:174
 msgid "Notice"
@@ -4981,7 +5013,7 @@ msgstr "Opcional"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:128
 msgid "Optional, free-form notes about this device"
-msgstr ""
+msgstr "Notas opcionales de forma libre sobre este dispositivo"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:97
 msgid ""
@@ -6296,8 +6328,11 @@ msgid "Set Static"
 msgstr "Establecer estática"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:661
+#, fuzzy
 msgid "Set interface as NDP-Proxy external slave. Default is off."
 msgstr ""
+"Configure la interfaz como esclavo externo de Proxy NDP. El valor "
+"predeterminado es desactivado."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1006
 msgid ""
@@ -6817,7 +6852,7 @@ msgstr "Asignaciones estáticas"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:663
 msgid "Static NDP-Proxy prefixes"
-msgstr ""
+msgstr "Prefijos de Proxy NDP estáticos"
 
 #: modules/luci-mod-network/root/usr/share/luci/menu.d/luci-mod-network.json:76
 msgid "Static Routes"
@@ -7013,11 +7048,15 @@ msgid "Terminate"
 msgstr "Terminar"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:594
+#, fuzzy
 msgid ""
 "The <abbr title=\"Maximum Transmission Unit\">MTU</abbr> to be published in "
 "<abbr title=\"Router Advertisement, ICMPv6 Type 134\">RA</abbr> messages. "
 "Default is 0 (<code>0</code>). Min 1280."
 msgstr ""
+"La <abbr title=\"Maximum Transmission Unit\">MTU</abbr> que se publicará en "
+"los mensajes <abbr title=\"Router Advertisement, ICMPv6 Type 134\">RA</"
+"abbr>. El valor predeterminado es 0 (<code>0</code>). Mínimo 1280."
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:84
 msgid "The <em>block mount</em> command failed with code %d"
@@ -7236,11 +7275,15 @@ msgstr ""
 "distribuyen en un intervalo mayor"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:603
+#, fuzzy
 msgid ""
 "The maximum hops to be published in <abbr title=\"Router Advertisement\">RA</"
 "abbr> messages.<br>Default is 0 (<code>0</code>), meaning unspecified. Max "
 "255."
 msgstr ""
+"El número máximo de saltos que se publicarán en los mensajes <abbr title="
+"\"Router Advertisement\">RA</abbr>.<br>El valor predeterminado es 0 "
+"(<code>0</code>), es decir, no especificado. Máximo 255."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1949
 msgid "The network name is already used"
