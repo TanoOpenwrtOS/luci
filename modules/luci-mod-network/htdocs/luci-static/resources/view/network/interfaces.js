@@ -568,7 +568,7 @@ return view.extend({
 					so = ss.taboption('ipv6', form.Value, 'ra_maxinterval', _('Max <abbr title="Router Advertisement">RA</abbr> interval'), _('Maximum time allowed \
 						between sending unsolicited <abbr title="Router Advertisement, ICMPv6 Type 134">RA</abbr>. Default is 600 seconds (<code>600</code>).'));
 					so.optional = true;
-					so.default = '600';
+					so.placeholder = '600';
 					so.depends('ra', 'server');
 					so.depends('ra', 'hybrid');
 					so.depends('ra', 'relay');
@@ -577,7 +577,7 @@ return view.extend({
 					so = ss.taboption('ipv6', form.Value, 'ra_mininterval', _('Min <abbr title="Router Advertisement">RA</abbr> interval'), _('Minimum time allowed \
 						between sending unsolicited <abbr title="Router Advertisement, ICMPv6 Type 134">RA</abbr>. Default is 200 seconds (<code>200</code>).'));
 					so.optional = true;
-					so.default = '200';
+					so.placeholder = '200';
 					so.depends('ra', 'server');
 					so.depends('ra', 'hybrid');
 					so.depends('ra', 'relay');
@@ -586,7 +586,6 @@ return view.extend({
 						in <abbr title="Router Advertisement, ICMPv6 Type 134">RA</abbr> messages. Default is 1800 seconds (<code>1800</code>). \
 						Max 9000 seconds.'));
 					so.optional = true;
-					so.default = '1800';
 					so.depends('ra', 'server');
 					so.depends('ra', 'hybrid');
 					so.depends('ra', 'relay');
@@ -595,16 +594,14 @@ return view.extend({
 						to be published in <abbr title="Router Advertisement, ICMPv6 Type 134">RA</abbr> messages. Default is 0 (<code>0</code>).\
 						Min 1280.'));
 					so.optional = true;
-					so.default = '0';
 					so.depends('ra', 'server');
 					so.depends('ra', 'hybrid');
 					so.depends('ra', 'relay');
 
 					so = ss.taboption('ipv6', form.Value, 'ra_hoplimit', _('<abbr title="Router Advertisement">RA</abbr> Hop Limit'), _('The maximum hops \
-						to be published in <abbr title="Router Advertisement">RA</abbr> messages.<br>Default is 0 (<code>0</code>), meaning unspecified.\
+						to be published in <abbr title="Router Advertisement">RA</abbr> messages.<br />Default is 0 (<code>0</code>), meaning unspecified.\
 						Max 255.'));
 					so.optional = true;
-					so.default = '0';
 					so.depends('ra', 'server');
 					so.depends('ra', 'hybrid');
 					so.depends('ra', 'relay');
@@ -614,7 +611,7 @@ return view.extend({
 						<li><strong>stateless</strong>: Router advertises prefixes, host uses <abbr title="Stateless Address Auto Config">SLAAC</abbr> \
 						to self assign its own address. No DHCPv6.</li>\
 						<li><strong>stateless + stateful</strong>: SLAAC. In addition, router assigns an IPv6 address to a host via DHCPv6.</li>\
-						<li><strong>stateful-only</strong>:  No SLAAC. Router assigns an IPv6 address to a host via DHCPv6.</li><ul>'));
+						<li><strong>stateful-only</strong>:  No SLAAC. Router assigns an IPv6 address to a host via DHCPv6.</li></ul>'));
 					so.value('0', _('stateless'));
 					so.value('1', _('stateless + stateful'));
 					so.value('2', _('stateful-only'));
@@ -657,6 +654,7 @@ return view.extend({
 
 					so = ss.taboption('ipv6', form.Flag, 'ndproxy_routing', _('Learn routes from NDP'), _('Default is on.'));
 					so.default = '1';
+					so.optional = true;
 
 					so = ss.taboption('ipv6', form.Flag, 'ndproxy_slave', _('NDP-Proxy slave'), _('Set interface as NDP-Proxy external slave. Default is off.'));
 

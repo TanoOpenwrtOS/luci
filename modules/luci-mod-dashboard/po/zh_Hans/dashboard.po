@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-05 07:56+0000\n"
+"PO-Revision-Date: 2021-04-23 07:02+0000\n"
 "Last-Translator: Meano Lee <meanocat@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/lucimodulesluci-mod-dashboard/zh_Hans/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:163
 msgid "Active"
@@ -56,7 +56,7 @@ msgstr "DNSv6"
 
 #: modules/luci-mod-dashboard/root/usr/share/luci/menu.d/luci-mod-dashboard.json:3
 msgid "Dashboard"
-msgstr "控制面板"
+msgstr "概览"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:134
 msgid "Devices"
@@ -68,7 +68,7 @@ msgstr "已连接设备"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
 msgid "Down."
-msgstr "下载。"
+msgstr "下行"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:129
 msgid "Download"
@@ -88,27 +88,27 @@ msgstr "GHz"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:199
 msgid "GatewayV4"
-msgstr "网关 V4"
+msgstr "IPv4 网关"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:245
 msgid "GatewayV6"
-msgstr "网关 V6"
+msgstr "IPv6 网关"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:25
 msgid "Grant access to DHCP status display"
-msgstr "授予对 DHCP 状态展示的访问权"
+msgstr "授予访问 DHCP 状态展示的权限"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:12
 msgid "Grant access to main status display"
-msgstr "授予对主状态展示的访问权"
+msgstr "授予访问主状态展示的权限"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:3
 msgid "Grant access to the system route status"
-msgstr "授予对系统路由状态的访问权"
+msgstr "授予访问系统路由状态的权限"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:34
 msgid "Grant access to wireless status display"
-msgstr "授予对无线状态展示的访问权"
+msgstr "授予访问无线状态展示的权限"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:30
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:83
@@ -127,7 +127,7 @@ msgstr "IPv4"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:172
 msgid "IPv4 Internet"
-msgstr "IPv4 互联网"
+msgstr "IPv4 网络"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:239
 msgid "IPv6"
@@ -135,7 +135,7 @@ msgstr "IPv6"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:212
 msgid "IPv6 Internet"
-msgstr "IPv6 互联网"
+msgstr "IPv6 网络"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:233
 msgid "IPv6 prefix"
