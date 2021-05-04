@@ -1861,7 +1861,7 @@ msgstr ""
 "<li><strong>без и с сохранением состояния</strong>: В дополнение к SLAAC "
 "маршрутизатор назначает IPv6-адрес хосту через DHCPv6.</li> "
 "<li><strong>только с сохранением состояния</strong>: SLAAC не используется. "
-"Маршрутизатор назначает IPv6-адрес хосту через DHCPv6.</li><ul>"
+"Маршрутизатор назначает IPv6-адрес хосту через DHCPv6.</li></ul>"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/led-trigger/default-on.js:11
 msgid "Default state"
