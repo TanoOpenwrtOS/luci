@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 19:03+0200\n"
-"PO-Revision-Date: 2021-05-02 20:06+0000\n"
+"PO-Revision-Date: 2021-05-10 09:32+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/luci/"
 "pt/>\n"
@@ -2972,7 +2972,7 @@ msgstr "Conceder acesso às operações flash"
 
 #: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:95
 msgid "Grant access to main status display"
-msgstr "Conceder acesso à exibição do estado principal"
+msgstr "Conceda acesso à exibição do estado principal"
 
 #: protocols/luci-proto-modemmanager/root/usr/share/rpcd/acl.d/luci-proto-modemmanager.json:3
 msgid "Grant access to mmcli"
@@ -6356,7 +6356,7 @@ msgstr "Define como estático"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:659
 msgid "Set interface as NDP-Proxy external slave. Default is off."
 msgstr ""
-"Define a interface como sendo um escravo NDP-Proxy externo. A predefinição é "
+"Define a interface como ser um escravo NDP-Proxy externo. A predefinição é "
 "estar desligado."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1004
@@ -7237,7 +7237,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:853
 msgid "The interface name is already used"
-msgstr "O nome da interface já está sendo usado"
+msgstr "O nome da interface já está a ser usado"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:859
 msgid "The interface name is too long"
@@ -7317,7 +7317,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1949
 msgid "The network name is already used"
-msgstr "O nome da rede já está sendo usado"
+msgstr "O nome da rede já está a ser usado"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:139
 msgid ""
@@ -7619,7 +7619,7 @@ msgid ""
 msgstr ""
 "Para restaurar os ficheiros de configuração, pode carregar aqui um arquivo "
 "de backup gerado anteriormente. Para voltar as definições originais do "
-"firmware, clique \" Fazer reset\" (só possível com imagens squashfs)."
+"firmware, clique \" Repor (só possível com imagens squashfs)."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1247
 msgid "Tone"
@@ -7914,7 +7914,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:82
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:60
 msgid "Uptime"
-msgstr "Uptime"
+msgstr "Tempo de atividade"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:177
 msgid "Use <code>/etc/ethers</code>"

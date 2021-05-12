@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2020-11-28 20:18+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"PO-Revision-Date: 2021-05-11 13:33+0000\n"
+"Last-Translator: semih <semiht@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/tr/>\n"
 "Language: tr\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
@@ -384,7 +384,7 @@ msgstr ""
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/iptables.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/iptables.json:2
 msgid "Firewall"
-msgstr ""
+msgstr "Güvenlik duvarı"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ip6tables.js:7
 msgid "Firewall (IPv6)"
@@ -799,7 +799,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/curl.js:25
 msgid "Name"
-msgstr ""
+msgstr "İsim"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/netlink.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/netlink.json:2
@@ -992,7 +992,7 @@ msgstr ""
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/exec.js:24
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/exec.js:44
 msgid "Script"
-msgstr ""
+msgstr "Betik"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:74
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/chrony.js:25
@@ -1438,7 +1438,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/curl.js:27
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/unixsock.json:2
 msgid "UnixSock"
