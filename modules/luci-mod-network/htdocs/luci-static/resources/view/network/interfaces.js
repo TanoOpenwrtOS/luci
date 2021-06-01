@@ -294,11 +294,111 @@ return view.extend({
 			network.getDSLModemType(),
 			network.getDevices(),
 			fs.lines('/etc/iproute2/rt_tables'),
+			L.resolveDefault(fs.read('/usr/lib/opkg/info/netifd.control')),
 			uci.changes()
 		]);
 	},
 
+	interfaceBridgeWithIfnameSections: function() {
+		return uci.sections('network', 'interface').filter(function(ns) {
+			return ns.type == 'bridge' && !ns.ports && ns.ifname;
+		});
+	},
+
+	deviceWithIfnameSections: function() {
+		return uci.sections('network', 'device').filter(function(ns) {
+			return ns.type == 'bridge' && !ns.ports && ns.ifname;
+		});
+	},
+
+	interfaceWithIfnameSections: function() {
+		return uci.sections('network', 'interface').filter(function(ns) {
+			return !ns.device && ns.ifname;
+		});
+	},
+
+	handleBridgeMigration: function(ev) {
+		var tasks = [];
+
+		this.interfaceBridgeWithIfnameSections().forEach(function(ns) {
+			var device_name = 'br-' + ns['.name'];
+
+			tasks.push(uci.callAdd('network', 'device', null, {
+				'name': device_name,
+				'type': 'bridge',
+				'ports': L.toArray(ns.ifname),
+				'macaddr': ns.macaddr
+			}));
+
+			tasks.push(uci.callSet('network', ns['.name'], {
+				'type': '',
+				'ifname': '',
+				'macaddr': '',
+				'device': device_name
+			}));
+		});
+
+		return Promise.all(tasks)
+			.then(L.bind(ui.changes.init, ui.changes))
+			.then(L.bind(ui.changes.apply, ui.changes));
+	},
+
+	renderBridgeMigration: function() {
+		ui.showModal(_('Network bridge configuration migration'), [
+			E('p', _('The existing network configuration needs to be changed for LuCI to function properly.')),
+			E('p', _('Upon pressing "Continue", bridges configuration will be updated and the network will be restarted to apply the updated configuration.')),
+			E('div', { 'class': 'right' },
+				E('button', {
+					'class': 'btn cbi-button-action important',
+					'click': ui.createHandlerFn(this, 'handleBridgeMigration')
+				}, _('Continue')))
+		]);
+	},
+
+	handleIfnameMigration: function(ev) {
+		var tasks = [];
+
+		this.deviceWithIfnameSections().forEach(function(ds) {
+			tasks.push(uci.add('network', ds['.name'], {
+				'ifname': '',
+				'ports': L.toArray(ds.ifname)
+			}));
+		});
+
+		this.interfaceWithIfnameSections().forEach(function(ns) {
+			tasks.push(uci.callSet('network', ns['.name'], {
+				'ifname': '',
+				'device': ns.ifname
+			}));
+		});
+
+		return Promise.all(tasks)
+			.then(L.bind(ui.changes.init, ui.changes))
+			.then(L.bind(ui.changes.apply, ui.changes));
+	},
+
+	renderIfnameMigration: function() {
+		ui.showModal(_('Network ifname configuration migration'), [
+			E('p', _('The existing network configuration needs to be changed for LuCI to function properly.')),
+			E('p', _('Upon pressing "Continue", ifname options will get renamed and the network will be restarted to apply the updated configuration.')),
+			E('div', { 'class': 'right' },
+				E('button', {
+					'class': 'btn cbi-button-action important',
+					'click': ui.createHandlerFn(this, 'handleIfnameMigration')
+				}, _('Continue')))
+		]);
+	},
+
 	render: function(data) {
+		var netifdVersion = (data[3] || '').match(/Version: ([^\n]+)/);
+
+		if (netifdVersion && netifdVersion[1] >= "2021-05-26") {
+			if (this.interfaceBridgeWithIfnameSections().length)
+				return this.renderBridgeMigration();
+			else if (this.deviceWithIfnameSections().length || this.interfaceWithIfnameSections().length)
+				return this.renderIfnameMigration();
+		}
+
 		var dslModemType = data[0],
 		    netDevs = data[1],
 		    m, s, o;
@@ -381,7 +481,7 @@ return view.extend({
 		s.addModalOptions = function(s) {
 			var protoval = uci.get('network', s.section, 'proto'),
 			    protoclass = protoval ? network.getProtocol(protoval) : null,
-			    o, ifname_single, ifname_multi, proto_select, proto_switch, type, stp, igmp, ss, so;
+			    o, proto_select, proto_switch, type, stp, igmp, ss, so;
 
 			if (!protoval)
 				return;
@@ -405,6 +505,7 @@ return view.extend({
 				}, this);
 				o.write = function() {};
 
+
 				proto_select = s.taboption('general', form.ListValue, 'proto', _('Protocol'));
 				proto_select.modalonly = true;
 
@@ -419,6 +520,12 @@ return view.extend({
 						.then(L.bind(m.render, m))
 						.then(L.bind(this.renderMoreOptionsModal, this, s.section));
 				}, this);
+
+				o = s.taboption('general', widgets.DeviceSelect, '_net_device', _('Device'));
+				o.ucioption = 'device';
+				o.nobridges = false;
+				o.optional = false;
+				o.network = ifc.getName();
 
 				o = s.taboption('general', form.Flag, 'auto', _('Bring up on boot'));
 				o.modalonly = true;
@@ -664,10 +771,6 @@ return view.extend({
 					so.depends('dhcpv6', 'relay');
 					so.depends('dhcpv6', 'hybrid');
 
-					so = ss.taboption('ipv6', form.Flag , 'master', _('Master'), _('Set this interface as master for the dhcpv6 relay.'));
-					so.depends('dhcpv6', 'relay');
-					so.depends('dhcpv6', 'hybrid');
-
 					so = ss.taboption('ipv6', form.Flag, 'ra_default', _('Announce as default router'), _('Always, even if no public prefix is available.'));
 					so.depends('ra', 'server');
 					so.depends('ra', 'hybrid');
@@ -677,7 +780,6 @@ return view.extend({
 				}
 
 				ifc.renderFormOptions(s);
-				nettools.addDeviceOptions(s, null, true);
 
 				// Common interface options
 				o = nettools.replaceOption(s, 'advanced', form.Flag, 'defaultroute', _('Use default gateway'), _('If unchecked, no default route is configured'));
@@ -784,11 +886,10 @@ return view.extend({
 					case '_ifacestat_modal':
 						continue;
 
-					case 'ifname_multi':
-					case 'ifname_single':
 					case 'igmp_snooping':
 					case 'stp':
 					case 'type':
+					case '_net_device':
 						var deps = [];
 						for (var j = 0; j < protocols.length; j++) {
 							if (!protocols[j].isVirtual()) {
@@ -817,10 +918,10 @@ return view.extend({
 
 		s.handleModalCancel = function(/* ... */) {
 			var type = uci.get('network', this.activeSection || this.addedSection, 'type'),
-			    ifname = (type == 'bridge') ? 'br-%s'.format(this.activeSection || this.addedSection) : null;
+			    device = (type == 'bridge') ? 'br-%s'.format(this.activeSection || this.addedSection) : null;
 
 			uci.sections('network', 'bridge-vlan', function(bvs) {
-				if (ifname != null && bvs.device == ifname)
+				if (device != null && bvs.device == device)
 					uci.remove('network', bvs['.name']);
 			});
 
@@ -831,7 +932,7 @@ return view.extend({
 			var m2 = new form.Map('network'),
 			    s2 = m2.section(form.NamedSection, '_new_'),
 			    protocols = network.getProtocols(),
-			    proto, name, bridge, ifname_single, ifname_multi;
+			    proto, name, device;
 
 			protocols.sort(function(a, b) {
 				return a.getProtocol() > b.getProtocol();
@@ -864,30 +965,15 @@ return view.extend({
 			proto = s2.option(form.ListValue, 'proto', _('Protocol'));
 			proto.validate = name.validate;
 
-			bridge = s2.option(form.Flag, 'type', _('Bridge interfaces'), _('Creates a bridge over specified interface(s)'));
-			bridge.modalonly = true;
-			bridge.disabled = '';
-			bridge.enabled = 'bridge';
-
-			ifname_single = s2.option(widgets.DeviceSelect, 'ifname_single', _('Interface'));
-			ifname_single.noaliases = false;
-			ifname_single.optional = false;
-
-			ifname_multi = s2.option(widgets.DeviceSelect, 'ifname_multi', _('Interface'));
-			ifname_multi.nobridges = true;
-			ifname_multi.noaliases = true;
-			ifname_multi.multiple = true;
-			ifname_multi.optional = true;
-			ifname_multi.display_size = 6;
+			device = s2.option(widgets.DeviceSelect, 'device', _('Device'));
+			device.noaliases = false;
+			device.optional = false;
 
 			for (var i = 0; i < protocols.length; i++) {
 				proto.value(protocols[i].getProtocol(), protocols[i].getI18n());
 
-				if (!protocols[i].isVirtual()) {
-					bridge.depends({ proto: protocols[i].getProtocol() });
-					ifname_single.depends({ type: '', proto: protocols[i].getProtocol() });
-					ifname_multi.depends({ type: 'bridge', proto: protocols[i].getProtocol() });
-				}
+				if (!protocols[i].isVirtual())
+					device.depends('proto', protocols[i].getProtocol());
 			}
 
 			m2.render().then(L.bind(function(nodes) {
@@ -920,16 +1006,7 @@ return view.extend({
 										var section_id = uci.add('network', 'interface', nameval);
 
 										protoclass.set('proto', protoval);
-
-										if (ifname_single.isActive('_new_')) {
-											protoclass.addDevice(ifname_single.formvalue('_new_'));
-										}
-										else if (ifname_multi.isActive('_new_')) {
-											protoclass.set('type', 'bridge');
-											L.toArray(ifname_multi.formvalue('_new_')).map(function(dev) {
-												protoclass.addDevice(dev);
-											});
-										}
+										protoclass.addDevice(device.formvalue('_new_'));
 
 										m.children[0].addedSection = section_id;
 									}).then(L.bind(m.children[0].renderMoreOptionsModal, m.children[0], nameval));
@@ -1063,6 +1140,7 @@ return view.extend({
 			    deleteBtn = trEl.querySelector('button:last-child');
 
 			deleteBtn.firstChild.data = _('Reset');
+			deleteBtn.setAttribute('title', _('Remove related device settings from the configuration'));
 			deleteBtn.disabled = section_id.match(/^dev:/) ? true : null;
 
 			return trEl;

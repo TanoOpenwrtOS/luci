@@ -75,10 +75,6 @@ msgstr ""
 msgid "Checking the service support..."
 msgstr ""
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:27
-msgid "Configuration"
-msgstr ""
-
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:220
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1121
 msgid "Configuration Error"
@@ -194,7 +190,6 @@ msgid "Domain"
 msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:266
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:7
 msgid "Dynamic DNS"
 msgstr ""
 
@@ -422,7 +417,6 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:625
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1117
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:29
 msgid "Lookup Hostname"
 msgstr ""
 
@@ -445,7 +439,6 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:793
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:827
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:31
 msgid "Network"
 msgstr ""
 
@@ -464,13 +457,11 @@ msgid "New DDNS Service..."
 msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1134
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:28
 msgid "Next Update"
 msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:221
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1122
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:40
 msgid "No Data"
 msgstr ""
 
@@ -569,7 +560,6 @@ msgid "Read / Reread log file"
 msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1117
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:30
 msgid "Registered IP"
 msgstr ""
 
@@ -581,11 +571,14 @@ msgstr ""
 msgid "Reload this service"
 msgstr ""
 
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:741
+msgid "Replaces [DOMAIN] in Update-URL (URL-encoded)"
+msgstr ""
+
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:753
 msgid "Replaces [PASSWORD] in Update-URL (URL-encoded)"
 msgstr ""
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:741
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:747
 msgid "Replaces [USERNAME] in Update-URL (URL-encoded)"
 msgstr ""
@@ -682,10 +675,6 @@ msgstr ""
 msgid "The service name is already used"
 msgstr ""
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:43
-msgid "There is no service configured."
-msgstr ""
-
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1067
 msgid "This is the current content of the log file in %s for this service."
 msgstr ""
@@ -714,7 +703,6 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:223
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1138
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:38
 msgid "Unknown"
 msgstr ""
 

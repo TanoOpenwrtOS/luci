@@ -99,10 +99,6 @@ msgstr "Размерность интервала проверки"
 msgid "Checking the service support..."
 msgstr "Проверка поддержки службы..."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:27
-msgid "Configuration"
-msgstr "Конфигурация"
-
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:220
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1121
 msgid "Configuration Error"
@@ -231,7 +227,6 @@ msgid "Domain"
 msgstr "Домен"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:266
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:7
 msgid "Dynamic DNS"
 msgstr "Динамический DNS"
 
@@ -478,7 +473,6 @@ msgstr "Запись в журнал"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:625
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1117
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:29
 msgid "Lookup Hostname"
 msgstr "Поиск имени хоста"
 
@@ -505,7 +499,6 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:793
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:827
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:31
 msgid "Network"
 msgstr "Сеть"
 
@@ -524,13 +517,11 @@ msgid "New DDNS Service..."
 msgstr "Новая DDNS служба..."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1134
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:28
 msgid "Next Update"
 msgstr "Следующее обновление"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:221
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1122
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:40
 msgid "No Data"
 msgstr "Нет данных"
 
@@ -640,7 +631,6 @@ msgid "Read / Reread log file"
 msgstr "Читать / Перечитать файл журнала"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1117
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:30
 msgid "Registered IP"
 msgstr "Зарегистрированный IP-адрес"
 
@@ -652,11 +642,14 @@ msgstr "Перезапустить"
 msgid "Reload this service"
 msgstr "Перезагрузить данную службу"
 
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:741
+msgid "Replaces [DOMAIN] in Update-URL (URL-encoded)"
+msgstr "Заменяет [DOMAIN] в Update-URL (URL-encoded)"
+
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:753
 msgid "Replaces [PASSWORD] in Update-URL (URL-encoded)"
 msgstr "Заменяет [PASSWORD] в Update-URL (URL-encoded)"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:741
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:747
 msgid "Replaces [USERNAME] in Update-URL (URL-encoded)"
 msgstr "Заменяет [USERNAME] в Update-URL (URL-encoded)"
@@ -753,10 +746,6 @@ msgstr "Переключить службу"
 msgid "The service name is already used"
 msgstr "Имя службы уже используется"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:43
-msgid "There is no service configured."
-msgstr "Служба не настроена."
-
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1067
 msgid "This is the current content of the log file in %s for this service."
 msgstr "Текущее содержимое файла журнала в «%s» для данной службы."
@@ -787,7 +776,6 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:223
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1138
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:38
 msgid "Unknown"
 msgstr "Неизвестно"
 
@@ -925,3 +913,9 @@ msgstr "минут(ы)"
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1044
 msgid "seconds"
 msgstr "секунд(ы)"
+
+#~ msgid "Configuration"
+#~ msgstr "Конфигурация"
+
+#~ msgid "There is no service configured."
+#~ msgstr "Служба не настроена."
