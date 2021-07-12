@@ -637,6 +637,8 @@
 	var Request = Class.singleton(/** @lends LuCI.request.prototype */ {
 		__name__: 'LuCI.request',
 
+		throwRequestAbortedException: false,
+
 		interceptors: [],
 
 		/**
@@ -842,6 +844,10 @@
 					rejectFn.call(this, new Error('XHR request timed out'));
 				else {
 					console.error(new Error('XHR request aborted by browser'));
+					if (Request.throwRequestAbortedException) {
+						rejectFn.call(this, new Error('XHR request aborted by browser'));
+					}
+
 					return;
 				}
 			}
