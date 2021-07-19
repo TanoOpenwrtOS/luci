@@ -76,7 +76,8 @@
 		},
 		"write": {
 			"file": {
-				"/etc/crontabs/root": [ "write" ]
+				"/etc/crontabs/root": [ "write" ],
+				"/etc/init.d/cron reload": [ "exec" ]
 			},
 			"ubus": {
 				"file": [ "write" ]
