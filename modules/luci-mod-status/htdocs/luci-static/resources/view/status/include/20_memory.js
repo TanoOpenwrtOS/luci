@@ -34,10 +34,12 @@ return baseclass.extend({
 		var fields = [
 			_('Total Available'), (mem.available) ? mem.available : (mem.total && mem.free && mem.buffered) ? mem.free + mem.buffered : null, mem.total,
 			_('Used'),            (mem.total && mem.free) ? (mem.total - mem.free) : null, mem.total,
-			_('Buffered'),        (mem.total && mem.buffered) ? mem.buffered : 0, mem.total
 		];
 
-		if (mem.cached)
+		if (mem.buffered != null)
+			fields.push(_('Buffered'), (mem.total && mem.buffered) ? mem.buffered : 0, mem.total);
+
+		if (mem.cached != null)
 			fields.push(_('Cached'), mem.cached, mem.total);
 
 		if (swap.total > 0)
