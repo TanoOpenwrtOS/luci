@@ -96,8 +96,8 @@ msgid "-- Additional Field --"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:275
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3417
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3784
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3575
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3942
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:793
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1027
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2000
@@ -442,7 +442,7 @@ msgstr ""
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2199
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2212
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2220
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3215
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3373
 #: modules/luci-compat/luasrc/view/cbi/nsection.htm:25
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:191
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:199
@@ -668,7 +668,7 @@ msgstr ""
 msgid "Allow the <em>root</em> user to login with password"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:236
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:239
 msgid "Allowed IPs"
 msgstr ""
 
@@ -1687,9 +1687,9 @@ msgid "Delegate IPv6 prefixes"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2276
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2707
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2711
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3199
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2715
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3357
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2910
 #: modules/luci-compat/luasrc/view/cbi/nsection.htm:11
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:163
@@ -1900,7 +1900,7 @@ msgid "Disconnection attempt failed."
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:606
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2906
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3064
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3350
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:4214
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1766
@@ -2021,7 +2021,7 @@ msgstr ""
 msgid "Downstream SNR offset"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2665
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2669
 msgid "Drag to reorder"
 msgstr ""
 
@@ -2070,9 +2070,9 @@ msgstr ""
 msgid "EAP-Method"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2685
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2688
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3062
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2689
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2692
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3220
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:155
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:161
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:495
@@ -2319,11 +2319,11 @@ msgstr ""
 msgid "Encryption"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:242
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:245
 msgid "Endpoint Host"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:246
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:249
 msgid "Endpoint Port"
 msgstr ""
 
@@ -2620,7 +2620,7 @@ msgstr ""
 msgid "Fixed source port for outbound DNS queries."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:198
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:201
 msgid "For QR-Code support please install the qrencode package!"
 msgstr ""
 
@@ -2801,7 +2801,7 @@ msgstr ""
 msgid "Generate Key"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:202
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:205
 msgid "Generate New QR-Code"
 msgstr ""
 
@@ -2813,7 +2813,7 @@ msgstr ""
 msgid "Generate archive"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:217
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:220
 msgid "Generate new QR-Code"
 msgstr ""
 
@@ -2837,14 +2837,21 @@ msgstr ""
 msgid "Global network options"
 msgstr ""
 
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:67
+#: themes/luci-theme-material/luasrc/view/themes/material/header.htm:89
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:72
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:92
+msgid "Go to firmware upgrade..."
+msgstr ""
+
 #: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:57
 #: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:62
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:82
 msgid "Go to password configuration..."
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2607
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3381
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2611
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3539
 #: modules/luci-compat/luasrc/view/cbi/full_valueheader.htm:4
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:58
 msgid "Go to relevant configuration page"
@@ -3002,7 +3009,7 @@ msgstr ""
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:212
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:215
 msgid "Hide QR-Code"
 msgstr ""
 
@@ -3377,7 +3384,7 @@ msgid ""
 "device node"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:177
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:178
 msgid ""
 "If there are any unsaved changes for this client, please save the "
 "configuration before generating a QR-Code"
@@ -3676,8 +3683,8 @@ msgstr ""
 msgid "Isolate Clients"
 msgstr ""
 
-#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:64
-#: themes/luci-theme-material/luasrc/view/themes/material/header.htm:86
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:74
+#: themes/luci-theme-material/luasrc/view/themes/material/header.htm:96
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:72
 msgid "JavaScript required!"
 msgstr ""
@@ -3967,7 +3974,7 @@ msgstr ""
 msgid "Load Average"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:204
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:207
 msgid "Loading QR-Code..."
 msgstr ""
 
@@ -4440,7 +4447,7 @@ msgstr ""
 msgid "More Characters"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2548
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2552
 msgid "More…"
 msgstr ""
 
@@ -4544,7 +4551,7 @@ msgstr ""
 msgid "NTP server candidates"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2587
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2591
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3862
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:27
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1087
@@ -4637,7 +4644,7 @@ msgstr ""
 msgid "Next »"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3723
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3881
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:298
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:346
 msgid "No"
@@ -4665,6 +4672,15 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:79
 msgid "No RX signal"
+msgstr ""
+
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:65
+#: themes/luci-theme-material/luasrc/view/themes/material/header.htm:87
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:70
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:90
+msgid ""
+"No changes to settings will be stored and are lost after rebooting. This "
+"mode should only be used to install a firmware upgrade"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:69
@@ -4966,7 +4982,7 @@ msgid "Operating frequency"
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:1974
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3733
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3891
 msgid "Option \"%s\" contains an invalid input value."
 msgstr ""
 
@@ -5004,13 +5020,13 @@ msgid ""
 "for the interface."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:231
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:234
 msgid ""
 "Optional. Base64-encoded preshared key. Adds in an additional layer of "
 "symmetric-key cryptography for post-quantum resistance."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:240
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:243
 msgid "Optional. Create routes for Allowed IPs for this peer."
 msgstr ""
 
@@ -5022,13 +5038,13 @@ msgstr ""
 msgid "Optional. Do not create host routes to peers."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:242
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:245
 msgid ""
 "Optional. Host of peer. Names are resolved prior to bringing up the "
 "interface."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:236
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:239
 msgid ""
 "Optional. IP addresses and prefixes that this peer is allowed to use inside "
 "the tunnel. Usually the peer's tunnel IP addresses and the networks the peer "
@@ -5039,11 +5055,11 @@ msgstr ""
 msgid "Optional. Maximum Transmission Unit of tunnel interface."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:246
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:249
 msgid "Optional. Port of peer."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:250
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:253
 msgid ""
 "Optional. Seconds between keep alive messages. Default is 0 (disabled). "
 "Recommended value if this device is behind a NAT is 25."
@@ -5427,7 +5443,7 @@ msgstr ""
 msgid "Permission denied"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:250
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:253
 msgid "Persistent Keep Alive"
 msgstr ""
 
@@ -5519,7 +5535,7 @@ msgstr ""
 msgid "Prefix suppressor"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:231
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:234
 msgid "Preshared Key"
 msgstr ""
 
@@ -5610,7 +5626,7 @@ msgstr ""
 msgid "Pseudo Ad-Hoc (ahdemo)"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:227
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:230
 msgid "Public Key"
 msgstr ""
 
@@ -5632,7 +5648,7 @@ msgid "QMI Cellular"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:159
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:186
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:189
 msgid "QR-Code"
 msgstr ""
 
@@ -5863,7 +5879,7 @@ msgstr ""
 msgid "Required. Base64-encoded private key for this interface."
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:227
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:230
 msgid "Required. Base64-encoded public key of peer."
 msgstr ""
 
@@ -6032,7 +6048,7 @@ msgstr ""
 msgid "Round-Robin policy (balance-rr, 0)"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:240
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:243
 msgid "Route Allowed IPs"
 msgstr ""
 
@@ -6128,7 +6144,7 @@ msgstr ""
 msgid "SWAP"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2911
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3069
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2231
 #: modules/luci-compat/luasrc/view/cbi/error.htm:17
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:29
@@ -6827,6 +6843,16 @@ msgstr ""
 msgid "System log buffer size"
 msgstr ""
 
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:64
+#: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:69
+#: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:89
+msgid "System running in recovery (initramfs) mode."
+msgstr ""
+
+#: themes/luci-theme-material/luasrc/view/themes/material/header.htm:86
+msgid "Sytem running in recovery (initramfs) mode."
+msgstr ""
+
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:659
 msgid "T"
 msgstr ""
@@ -6974,7 +7000,7 @@ msgstr ""
 msgid "The MTU must not exceed the parent device MTU of %d bytes"
 msgstr ""
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:178
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:180
 msgid ""
 "The QR-Code works per wg interface, it will be refreshed with every button "
 "click and transfers the following information:"
@@ -7293,7 +7319,7 @@ msgid ""
 msgstr ""
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2244
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2555
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2559
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:173
 #: modules/luci-compat/luasrc/view/cbi/tsection.htm:32
 msgid "This section contains no values yet"
@@ -8102,7 +8128,7 @@ msgstr ""
 msgid "XOR policy (balance-xor, 2)"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3723
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3881
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:297
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:345
 msgid "Yes"
@@ -8125,8 +8151,8 @@ msgid ""
 "scripts like \"network\", your device might become inaccessible!</strong>"
 msgstr ""
 
-#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:65
-#: themes/luci-theme-material/luasrc/view/themes/material/header.htm:87
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:75
+#: themes/luci-theme-material/luasrc/view/themes/material/header.htm:97
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:73
 msgid ""
 "You must enable JavaScript in your browser or LuCI will not work properly."
@@ -8360,7 +8386,7 @@ msgstr ""
 msgid "non-empty value"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3052
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3210
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:800
 msgid "none"
 msgstr ""
@@ -8467,7 +8493,7 @@ msgstr ""
 msgid "unlimited"
 msgstr ""
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3417
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3575
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:76
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:138
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:369
