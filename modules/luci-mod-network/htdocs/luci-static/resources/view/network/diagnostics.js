@@ -4,6 +4,7 @@
 'require fs';
 'require ui';
 'require uci';
+'require network';
 
 return L.view.extend({
 	handleCommand: function(ev, exec, args) {
@@ -79,6 +80,12 @@ return L.view.extend({
 		return this.handleCommand(ev, '/usr/bin/curl', [ '-s', 'ifconfig.me/ip' ]);
 	},
 
+	handleArpScan: function(ev, cmd) {
+		var dev = ev.currentTarget.parentNode.parentNode.parentNode
+			.querySelector('.cbi-value-field select').value;
+		return this.handleCommand(ev, 'arp-scan', [ '-l', '-I', dev ]);
+	},
+
 	load: function() {
 		return Promise.all([
 			L.resolveDefault(fs.stat('/bin/ping6'), {}),
@@ -86,6 +93,8 @@ return L.view.extend({
 			L.resolveDefault(fs.stat('/bin/traceroute6'), {}),
 			L.resolveDefault(fs.stat('/usr/bin/traceroute6'), {}),
 			L.resolveDefault(fs.stat('/usr/bin/curl'), {}),
+			L.resolveDefault(fs.stat('/usr/bin/arp-scan'), {}),
+			network.getDevices(),
 			uci.load('luci')
 		]);
 	},
@@ -94,6 +103,8 @@ return L.view.extend({
 		var has_ping6 = res[0].path || res[1].path,
 		    has_traceroute6 = res[2].path || res[3].path,
 		    has_curl = res[4].path,
+		    has_arpscan = res[5].path,
+		    devices = res[6],
 			dns_host = uci.get('luci', 'diag', 'dns') || 'openwrt.org',
 			ping_host = uci.get('luci', 'diag', 'ping') || 'openwrt.org',
 			route_host = uci.get('luci', 'diag', 'route') || 'openwrt.org';
@@ -215,7 +226,38 @@ return L.view.extend({
 						])
 					])
 				])
-			]) : ''
+			]) : '',
+			has_arpscan ? E('div', { 'class': 'cbi-section' }, [
+				E('legend', {}, _('ARP Scanning')),
+				E('div', { 'class': 'cbi-section-node' }, [
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, _('Device')),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('select', {}, devices.map(function(device) {
+								if (!device.isUp())
+									return E([]);
+
+								return E('option', { 'value': device.getName() }, [ device.getI18n() ]);
+							}))
+						])
+					]),
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('button', {
+								'class': 'cbi-button cbi-button-action',
+								'click': ui.createHandlerFn(this, 'handleArpScan')
+							}, [ _('Scan') ])
+						])
+					]),
+					E('div', { 'class': 'cbi-value' }, [
+						E('label', { 'class': 'cbi-value-title' }, ''),
+						E('div', { 'class': 'cbi-value-field' }, [
+							E('pre', { 'class': 'net-diag-output alert-message command-output', 'style': 'display:none' })
+						])
+					])
+				])
+			]) : '',
 		]);
 	},
 

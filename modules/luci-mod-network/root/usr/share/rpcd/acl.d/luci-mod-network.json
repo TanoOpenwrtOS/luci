@@ -59,7 +59,9 @@
 				"/usr/bin/ping6": [ "exec", "list" ],
 				"/usr/bin/traceroute": [ "exec" ],
 				"/usr/bin/traceroute6": [ "exec", "list" ],
-				"/usr/bin/curl -s ifconfig.me/ip": [ "exec" ]
+				"/usr/bin/curl": [ "list" ],
+				"/usr/bin/curl -s ifconfig.me/ip": [ "exec" ],
+				"/usr/bin/arp-scan": [ "exec", "list" ]
 			},
 			"ubus": {
 				"file": [ "exec", "stat" ]
