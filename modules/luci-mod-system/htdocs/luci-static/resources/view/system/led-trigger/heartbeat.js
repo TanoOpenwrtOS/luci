@@ -1,5 +1,6 @@
 'use strict';
 'require baseclass';
+'require form';
 
 return baseclass.extend({
 	trigger: _('Heartbeat interval (kernel: heartbeat)'),
