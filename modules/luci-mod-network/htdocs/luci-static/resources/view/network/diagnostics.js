@@ -233,7 +233,7 @@ return L.view.extend({
 					E('div', { 'class': 'cbi-value' }, [
 						E('label', { 'class': 'cbi-value-title' }, _('Device')),
 						E('div', { 'class': 'cbi-value-field' }, [
-							E('select', {}, devices.map(function(device) {
+							E('select', { 'class': 'cbi-input-select' }, devices.map(function(device) {
 								if (!device.isUp())
 									return E([]);
 
@@ -251,7 +251,6 @@ return L.view.extend({
 						])
 					]),
 					E('div', { 'class': 'cbi-value' }, [
-						E('label', { 'class': 'cbi-value-title' }, ''),
 						E('div', { 'class': 'cbi-value-field' }, [
 							E('pre', { 'class': 'net-diag-output alert-message command-output', 'style': 'display:none' })
 						])
