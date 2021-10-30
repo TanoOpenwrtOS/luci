@@ -1,5 +1,8 @@
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
+msgstr ""
+"Language: nb_NO\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: applications/luci-app-example/htdocs/luci-static/resources/view/example/form.js:22
 msgid "A boolean option"
