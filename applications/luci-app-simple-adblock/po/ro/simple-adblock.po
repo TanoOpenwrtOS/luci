@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-07 15:53+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 22:33+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssimple-adblock/ro/>\n"
 "Language: ro\n"
@@ -9,80 +9,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:221
 msgid "%s Error: %s"
-msgstr ""
+msgstr "%s Eroare: %s"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:219
 msgid "%s Error: %s %s"
-msgstr ""
+msgstr "%s Eroare: %s %s"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:133
 msgid "%s is not installed or not found"
-msgstr ""
+msgstr "%s nu este instalat sau nu este găsit"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:299
 msgid "Add IPv6 entries"
-msgstr ""
+msgstr "Adăugați intrări IPv6"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:297
 msgid "Add IPv6 entries to block-list."
-msgstr ""
+msgstr "Adăugați intrări IPv6 la block-list."
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:267
 msgid "Advanced Configuration"
-msgstr ""
+msgstr "Configurație avansată"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:339
 msgid "Allowed Domain URLs"
-msgstr ""
+msgstr "URL-uri de domeniu permise"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:334
 msgid "Allowed Domains"
-msgstr ""
+msgstr "Domenii permise"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:332
 msgid "Allowed and Blocked Lists Management"
-msgstr ""
+msgstr "Gestionarea listelor permise și blocate"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:321
 msgid ""
 "Attempt to create a compressed cache of block-list in the persistent memory."
 msgstr ""
+"Încercarea de a crea o memorie cache comprimată a listei de blocuri în "
+"memoria persistentă."
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:236
 msgid "Automatic Config Update"
-msgstr ""
+msgstr "Actualizare automată a configurației"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:234
 msgid "Basic Configuration"
-msgstr ""
+msgstr "Configurație de Bază"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:349
 msgid "Blocked Domain URLs"
-msgstr ""
+msgstr "URL-uri de domenii blocate"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:344
 msgid "Blocked Domains"
-msgstr ""
+msgstr "Domenii Blocate"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:354
 msgid "Blocked Hosts URLs"
-msgstr ""
+msgstr "Gazde blocate URL-uri"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:202
 msgid "Blocking %s domains (with %s)."
-msgstr ""
+msgstr "Blocarea domeniilor %s (cu %s)."
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:192
 msgid "Cache file containing %s domains found."
-msgstr ""
+msgstr "A fost găsit fișierul cache care conține %s domenii."
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:212
 msgid "Collected Errors"
-msgstr ""
+msgstr "Erori colectate"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:196
 msgid "Compressed cache file found."
@@ -127,7 +129,7 @@ msgstr ""
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:237
 #: applications/luci-app-simple-adblock/luasrc/view/simple-adblock/buttons.htm:68
 msgid "Disable"
-msgstr ""
+msgstr "Dezactivați"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:327
 msgid "Disable Debugging"
@@ -156,7 +158,7 @@ msgstr ""
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:238
 #: applications/luci-app-simple-adblock/luasrc/view/simple-adblock/buttons.htm:65
 msgid "Enable"
-msgstr ""
+msgstr "Activați"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:326
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:328
@@ -169,7 +171,7 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:139
 msgid "Error"
-msgstr ""
+msgstr "Eroare"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:141
 msgid "Fail"
@@ -220,7 +222,7 @@ msgstr ""
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:190
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:194
 msgid "Info"
-msgstr ""
+msgstr "Informații"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:258
 msgid "LED to indicate status"
@@ -460,4 +462,4 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:261
 msgid "none"
-msgstr ""
+msgstr "niciunul"
