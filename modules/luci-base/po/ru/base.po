@@ -9310,3 +9310,7 @@ msgstr "да"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« Назад"
+
+#: Themes
+msgid "Auto Refresh"
+msgstr "Автообновление"
