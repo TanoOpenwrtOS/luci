@@ -218,13 +218,15 @@ o.datatype = "min(1024)"
 o = s:option(Value, "commonname", translate("Common name (/CN)"), translate("The fully-qualified domain name"))
 o.default = luci.sys.hostname()
 
-o = s:option(Value, "country", translate("Country name (/C)"), translate("The two-letter country code where your company is legally located"))
-o.default = "ZZ"
+o = s:option(Value, "organization", translate("Organization"), translate("If empty, a random/unique value is used in cert generation"))
 
 o = s:option(Value, "state", translate("State or province name (/ST)"), translate("The state/province where your company is legally located"))
 o.default = ""
 
 o = s:option(Value, "location", translate("Locality name (/L)"), translate("The city where your company is legally located"))
 o.default = ""
+
+o = s:option(Value, "country", translate("Country name (/C)"), translate("The two-letter country code where your company is legally located"))
+o.default = "ZZ"
 
 return m
