@@ -1003,7 +1003,7 @@ msgid ""
 "At least <strong>%h</strong> per <strong>%h</strong>, burst of <strong>%h</"
 "strong>"
 msgstr ""
-"Не менеее <strong>%h</strong> за <strong>%h</strong>, барст <strong>%h</"
+"Не менее <strong>%h</strong> за <strong>%h</strong>, барст <strong>%h</"
 "strong>"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:114
@@ -3486,7 +3486,7 @@ msgstr "Высокая"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:565
 msgctxt "Chain hook description"
 msgid "Hook: <strong>%h</strong> (%h), Priority: <strong>%d</strong>"
-msgstr "Хук: <strong>%h</strong> (%h), Приоритет: <strong>%d</strong>"
+msgstr "Хук: <strong>%h</strong> (%h), приоритет: <strong>%d</strong>"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:57
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2164
@@ -4043,7 +4043,7 @@ msgstr "Идентификатор входящего устройства"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:10
 msgctxt "nft meta iifname"
 msgid "Ingress device name"
-msgstr "Имя  входящего устройства"
+msgstr "Имя входящего устройства"
 
 #: modules/luci-compat/luasrc/model/network/proto_ncm.lua:67
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:25
@@ -6046,7 +6046,7 @@ msgstr "Управление пакетами (packet steering)"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:26
 msgctxt "nft meta mark"
 msgid "Packet mark"
-msgstr "Пометка пакета"
+msgstr "Метка пакета"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:54
 msgid "Packets"
@@ -6593,7 +6593,7 @@ msgstr "Отклонить пакет с <strong>ICMP-типом %h</strong>"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:92
 msgctxt "nft reject with icmpv6 type"
 msgid "Reject packet with <strong>ICMPv6 type %h</strong>"
-msgstr "Отклонить IPv4 пакет с <strong>ICMPv6-типом %h</strong>"
+msgstr "Отклонить IPv6 пакет с <strong>ICMPv6-типом %h</strong>"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:90
 msgctxt "nft reject with tcp reset"
@@ -6940,7 +6940,7 @@ msgstr "Маршрутизировать разрешенные IP-адреса"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:504
 msgid "Route action chain \"%h\""
-msgstr "Цепочка действия маршрута «%h»"
+msgstr "Цепочка действий маршрута «%h»"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:45
 msgid "Route type"
@@ -6987,7 +6987,7 @@ msgstr "Комментарий правила: %s"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:512
 msgid "Rule container chain \"%h\""
-msgstr "Цепочка контейнера правил «%h»"
+msgstr "Цепочка правил контейнера «%h»"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:573
 msgid "Rule matches"
@@ -7371,7 +7371,7 @@ msgstr "IP-адрес источника"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:44
 msgctxt "nft ip6 saddr"
 msgid "Source IPv6"
-msgstr "IPv6 адрес источника"
+msgstr "IPv6-адрес источника"
 
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6.js:57
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6tap.js:57
@@ -7949,11 +7949,11 @@ msgstr "Символическая ссылка"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:84
 msgid "Sync with NTP-Server"
-msgstr "Синхрон. по NTP"
+msgstr "Синхронизировать по NTP"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:71
 msgid "Sync with browser"
-msgstr "Скопир. из браузера"
+msgstr "Синхронизировать с браузером"
 
 #: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:26
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:18
@@ -7994,7 +7994,7 @@ msgstr "TCP MSS"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:51
 msgctxt "nft tcp dport"
 msgid "TCP destination port"
-msgstr "TCP порт назначения"
+msgstr "TCP-порт назначения"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:54
 msgctxt "nft tcp flags"
@@ -8004,7 +8004,7 @@ msgstr "TCP флаги"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:50
 msgctxt "nft tcp sport"
 msgid "TCP source port"
-msgstr "TCP порт источника"
+msgstr "TCP-порт источника"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:338
 msgid "TCP:"
@@ -8768,12 +8768,12 @@ msgstr "Тип сервиса"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:53
 msgctxt "nft udp dport"
 msgid "UDP destination port"
-msgstr "UDP порт назначения"
+msgstr "UDP-порт назначения"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:52
 msgctxt "nft udp sport"
 msgid "UDP source port"
-msgstr "UDP порт источника"
+msgstr "UDP-порт источника"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:328
 msgid "UDP:"
@@ -8948,7 +8948,7 @@ msgstr "Загрузить"
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:115
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:190
 msgid "Upload archive..."
-msgstr "Выбрать архив"
+msgstr "Загрузить архив..."
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2868
 msgid "Upload file"
@@ -10120,12 +10120,5 @@ msgstr "да"
 msgid "« Back"
 msgstr "« Назад"
 
-#~ msgid ""
-#~ "When enabled, gateway is on link even if the gateway does not match any "
-#~ "interface prefix"
-#~ msgstr ""
-#~ "Если включено, шлюз будет находиться на связи, даже если шлюз не "
-#~ "соответствует какому-либо префиксу интерфейса"
-
-#~ msgid "Auto Refresh"
-#~ msgstr "Автообновление"
+msgid "Auto Refresh"
+msgstr "Автообновление"
