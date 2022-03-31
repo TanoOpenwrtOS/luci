@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2022-03-09 17:31+0000\n"
-"Last-Translator: Anton Kikin <a.a.kikin@gmail.com>\n"
+"PO-Revision-Date: 2022-03-15 23:07+0000\n"
+"Last-Translator: Alexey <agarkov.alexey.viktorovich@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/>"
 "\n"
 "Language: ru\n"
@@ -495,12 +495,12 @@ msgid "Active Connections"
 msgstr "Соединения"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:35
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:178
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:186
 msgid "Active DHCP Leases"
 msgstr "DHCP аренды"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:54
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:180
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:188
 msgid "Active DHCPv6 Leases"
 msgstr "DHCPv6 аренды"
 
@@ -1939,7 +1939,7 @@ msgstr "Интервал DTIM"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:59
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:699
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:130
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:138
 msgid "DUID"
 msgstr "DUID"
 
@@ -3490,7 +3490,7 @@ msgstr "Хук: <strong>%h</strong> (%h), приоритет: <strong>%d</strong
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:57
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2164
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:128
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:136
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:234
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:48
 msgid "Host"
@@ -3785,7 +3785,7 @@ msgstr "Подключение IPv6 (upstream)"
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:183
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:58
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:129
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:137
 msgid "IPv6 address"
 msgstr "IPv6-адрес"
 
@@ -3843,7 +3843,7 @@ msgstr "IPv6 суффикс"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:705
 msgid "IPv6 suffix (hex)"
-msgstr "<abbr title=\"Интернет протокол версии 6\">IPv6</abbr>-суффикс (hex)"
+msgstr "Суффикс IPv6 (hex)"
 
 #: protocols/luci-proto-sstp/htdocs/luci-static/resources/protocol/sstp.js:51
 msgid "IPv6 support"
@@ -4425,7 +4425,7 @@ msgstr "Срок аренды адреса"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:41
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:60
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:90
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:131
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:139
 msgid "Lease time remaining"
 msgstr "До конца аренды"
 
@@ -7164,8 +7164,8 @@ msgstr "Службы"
 msgid "Session expired"
 msgstr "Сессия истекла"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:120
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:171
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:128
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:179
 msgid "Set Static"
 msgstr "Присвоить IP"
 
@@ -7826,7 +7826,7 @@ msgid "Static IPv6 Routes"
 msgstr "Статические маршруты IPv6"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:91
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:132
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:140
 msgid "Static Lease"
 msgstr "Бессрочная аренда"
 
@@ -8493,10 +8493,10 @@ msgstr "Загруженный архив резервной копии не ч�
 msgid "The value is overridden by configuration. Original: %s"
 msgstr "Значение переопределено конфигурацией. Оригинал: %s"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:736
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:768
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:124
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:175
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:745
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:777
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:132
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:183
 msgid "There are no active leases"
 msgstr "Нет активных арендованных адресов"
 
@@ -9692,9 +9692,9 @@ msgid "e.g: dump"
 msgstr "например: dump"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:725
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:746
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:755
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:103
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:144
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:152
 msgid "expired"
 msgstr "истекло"
 
@@ -9904,9 +9904,9 @@ msgstr "неизвестный"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:455
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:723
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:744
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:753
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:101
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:142
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:150
 msgid "unlimited"
 msgstr "без ограничений"
 
@@ -10119,12 +10119,6 @@ msgstr "да"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« Назад"
-
-#~ msgid "Kernel Log"
-#~ msgstr "Журнал ядра"
-
-#~ msgid "System Log"
-#~ msgstr "Системный журнал"
 
 #~ msgid "Auto Refresh"
 #~ msgstr "Автообновление"
