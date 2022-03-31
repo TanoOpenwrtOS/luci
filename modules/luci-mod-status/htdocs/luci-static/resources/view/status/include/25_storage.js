@@ -10,8 +10,8 @@ var callSystemInfo = rpc.declare({
 function progressbar(value, max, byte) {
 	var vn = parseInt(value) || 0,
 	    mn = parseInt(max) || 100,
-	    fv = byte ? String.format('%1024.2mB', value) : value,
-	    fm = byte ? String.format('%1024.2mB', max) : max,
+	    fv = byte ? String.format(_('%1024.2mB'), value) : value,
+	    fm = byte ? String.format(_('%1024.2mB'), max) : max,
 	    pc = Math.floor((100 / mn) * vn);
 
 	return E('div', {
