@@ -2553,6 +2553,8 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 		if (this.map.tabbed_no_titles != true && this.description != null && this.description != '')
 			sectionEl.appendChild(E('div', { 'class': 'cbi-section-descr' }, this.description));
 
+		this.can_sort = (nodes.length > 1);
+
 		tableEl.appendChild(this.renderHeaderRows(max_cols));
 
 		for (var i = 0; i < nodes.length; i++) {
@@ -2626,7 +2628,7 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 			var trEl = E('tr', {
 				'class': 'tr cbi-section-table-titles ' + anon_class,
 				'data-title': (!this.anonymous || this.sectiontitle) ? _('Name') : null,
-				'click': this.sortable ? ui.createHandlerFn(this, 'handleSort') : null
+				'click': (this.sortable && this.can_sort) ? ui.createHandlerFn(this, 'handleSort') : null
 			});
 
 			for (var i = 0, opt; i < max_cols && (opt = this.children[i]) != null; i++) {
@@ -2636,7 +2638,7 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 				trEl.appendChild(E('th', {
 					'class': 'th cbi-section-table-cell',
 					'data-widget': opt.__name__,
-					'data-sortable-row': this.sortable ? '' : null
+					'data-sortable-row': (this.sortable && this.can_sort) ? '' : null
 				}));
 
 				if (opt.width != null)
@@ -3065,18 +3067,21 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 		});
 
 		ev.currentTarget.parentNode.querySelectorAll('tr.cbi-section-table-row').forEach(L.bind(function(tr, i) {
-			var sid = tr.getAttribute('data-sid'),
-			    opt = tr.childNodes[index].getAttribute('data-name'),
-			    val = this.cfgvalue(sid, opt);
+			try {
+				var sid = tr.getAttribute('data-sid'),
+				    opt = tr.childNodes[index].getAttribute('data-name'),
+				    val = this.cfgvalue(sid, opt);
 
-			tr.querySelectorAll('.flash').forEach(function(n) {
-				n.classList.remove('flash')
-			});
+				tr.querySelectorAll('.flash').forEach(function(n) {
+					n.classList.remove('flash')
+				});
 
-			list.push([
-				ui.Table.prototype.deriveSortKey((val != null) ? val.trim() : ''),
-				tr
-			]);
+				list.push([
+					ui.Table.prototype.deriveSortKey((val != null) ? val.trim() : ''),
+					tr
+				]);
+			}
+			catch(e) { }
 		}, this));
 
 		list.sort(function(a, b) {
