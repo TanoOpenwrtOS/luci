@@ -35,6 +35,8 @@
 		apply_holdoff  = math.max(applyconf and applyconf.holdoff or 4, 1),
 		apply_timeout  = math.max(applyconf and applyconf.timeout or 5, 1),
 		apply_display  = math.max(applyconf and applyconf.display or 1.5, 1),
-		rollback_token = rollback_token
+		rollback_token = rollback_token,
+		libdir_arch    = luci.config.main.libdir_arch or '/usr/lib',
+		libdir_nonarch = luci.config.main.libdir_nonarch or '/usr/lib'
 	}) %>);
 </script>

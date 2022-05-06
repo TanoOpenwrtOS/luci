@@ -6,6 +6,7 @@ local fs   = require "nixio.fs"
 local UCI = require "luci.model.uci"
 local sys  = require "luci.sys"
 local util = require "luci.util"
+local config = require "luci.config"
 
 local ddns_package_path = "/usr/share/ddns"
 local luci_helper = "/usr/lib/ddns/dynamic_dns_lucihelper.sh"
@@ -215,7 +216,7 @@ local methods = {
 			end
 
 			local function has_curlpxy()
-				return (sys.call( [[grep -i "all_proxy" /usr/lib/libcurl.so* >/dev/null 2>&1]] ) == 0)
+				return (sys.call( [[grep -i "all_proxy" ]] .. (config.main.libdir_arch or "/usr/lib") .. [[/libcurl.so* >/dev/null 2>&1]] ) == 0)
 			end
 
 			local function has_bbwget()

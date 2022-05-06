@@ -7,8 +7,10 @@ local sys = require "luci.sys"
 local fs  = require "nixio.fs"
 local nx  = require "nixio"
 
+local config = require "luci.config"
+
 local has_pptp  = fs.access("/usr/sbin/pptp")
-local has_pppoe = fs.glob("/usr/lib/pppd/*/rp-pppoe.so")()
+local has_pppoe = fs.glob((config.main.libdir_arch or "/usr/lib") .. "/pppd/*/rp-pppoe.so")()
 
 local network = luci.model.uci.cursor_state():get_all("network")
 

@@ -42,11 +42,11 @@ for _, p in ipairs({"ppp", "pptp", "pppoe", "pppoa", "l2tp"}) do
 
 	function proto.is_installed(self)
 		if p == "pppoa" then
-			return (nixio.fs.glob("/usr/lib/pppd/*/pppoatm.so")() ~= nil)
+			return (nixio.fs.glob((luci.config.main.libdir_arch or "/usr/lib") .. "/pppd/*/pppoatm.so")() ~= nil)
 		elseif p == "pppoe" then
-			return (nixio.fs.glob("/usr/lib/pppd/*/rp-pppoe.so")() ~= nil)
+			return (nixio.fs.glob((luci.config.main.libdir_arch or "/usr/lib") .. "/pppd/*/rp-pppoe.so")() ~= nil)
 		elseif p == "pptp" then
-			return (nixio.fs.glob("/usr/lib/pppd/*/pptp.so")() ~= nil)
+			return (nixio.fs.glob((luci.config.main.libdir_arch or "/usr/lib") .. "/pppd/*/pptp.so")() ~= nil)
 		elseif p == "l2tp" then
 			return nixio.fs.access("/lib/netifd/proto/l2tp.sh")
 		else

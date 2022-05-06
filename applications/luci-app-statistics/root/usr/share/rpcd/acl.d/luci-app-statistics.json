@@ -15,6 +15,8 @@
 				"/tmp/rrd": [ "list" ],
 				"/usr/bin/rrdtool graph - -a PNG -s *": [ "exec" ],
 				"/usr/lib/collectd": [ "list" ],
+				"/usr/lib32/collectd": [ "list" ],
+				"/usr/lib64/collectd": [ "list" ],
 				"/usr/sbin/iptables-save": [ "exec" ],
 				"/usr/sbin/ip6tables-save": [ "exec" ],
 				"/usr/sbin/sensors -j": [ "exec" ],

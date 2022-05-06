@@ -9,7 +9,7 @@
 return view.extend({
 	load: function() {
 		return Promise.all([
-			fs.list('/usr/lib/collectd'),
+			fs.list((L.env.libdir_arch || '/usr/lib') + '/collectd'),
 			fs.list('/usr/share/luci/statistics/plugins'),
 			uci.load('luci_statistics')
 		]).then(function(data) {
@@ -63,7 +63,7 @@ return view.extend({
 		o.default = '/etc/collectd/conf.d/*.conf';
 
 		o = s.option(form.Value, 'PluginDir', _('Directory for collectd plugins'));
-		o.default = '/usr/lib/collectd/';
+		o.default = (L.env.libdir_arch || '/usr/lib') + '/collectd/';
 
 		o = s.option(form.Value, 'PIDFile', _('Used PID file'));
 		o.default = '/var/run/collectd.pid';
