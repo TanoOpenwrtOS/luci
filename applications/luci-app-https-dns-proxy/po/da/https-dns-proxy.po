@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-03-26 23:10+0000\n"
+"PO-Revision-Date: 2022-04-30 19:07+0000\n"
 "Last-Translator: drax red <drax@outlook.dk>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationshttps-dns-proxy/da/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:92
 msgid "%s DoH at %s:%s"
@@ -226,7 +226,7 @@ msgstr "DeCloudUs DNS"
 msgid "Digitale Gesellschaft - CH"
 msgstr "Digitale Gesellschaft - CH"
 
-#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:57
+#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:56
 msgid "Disable"
 msgstr "Deaktiver"
 
@@ -234,7 +234,7 @@ msgstr "Deaktiver"
 msgid "Do not update configs"
 msgstr "Opdater ikke konfigurationer"
 
-#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:54
+#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:53
 msgid "Enable"
 msgstr "Aktiver"
 
@@ -281,8 +281,8 @@ msgstr "IIJ Offentlig DNS - JP"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:123
 msgid ""
-"If update option is selected, the 'DNS forwardings' section of %sDHCP and DNS"
-"%s will be automatically updated to use selected DoH providers (%smore "
+"If update option is selected, the 'DNS forwardings' section of %sDHCP and "
+"DNS%s will be automatically updated to use selected DoH providers (%smore "
 "information%s)."
 msgstr ""
 "Hvis opdateringsindstillingen er valgt, vil afsnittet 'DNS-videresendelser' "
@@ -377,7 +377,7 @@ msgstr "Quad 9 (sikret)"
 msgid "Quad 9 (Unsecured)"
 msgstr "Quad 9 (usikret)"
 
-#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:44
+#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:43
 msgid "Reload"
 msgstr "Genindlæs"
 
@@ -399,11 +399,11 @@ msgstr "Seby DNS - AU"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:118
 msgid "Service Control"
-msgstr "Tjeneste kontrol"
+msgstr "Kontrol af tjenesten"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:114
 msgid "Service Status"
-msgstr "Servicestatus"
+msgstr "Tjenestestatus"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:112
 msgid "Service Status [%s %s]"
@@ -413,11 +413,11 @@ msgstr "Tjenestestatus [%s %s]"
 msgid "Snopyta DNS - FI"
 msgstr "Snopyta DNS - FI"
 
-#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:41
+#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:40
 msgid "Start"
 msgstr "Start"
 
-#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:47
+#: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/buttons.htm:46
 msgid "Stop"
 msgstr "Stop"
 

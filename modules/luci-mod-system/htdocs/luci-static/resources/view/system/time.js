@@ -6,6 +6,7 @@
 'require rpc';
 'require form';
 'require tools.time as time';
+'require tools.widgets as widgets';
 
 var callInitList, callInitAction, callSetLocaltime, callGetLocaltime, callTimezone, CBILocalTime;
 
@@ -176,6 +177,15 @@ return view.extend({
 			o = s.option(form.Flag, 'enable_server', _('Provide NTP server'));
 			o.ucisection = 'ntp';
 			o.depends('enabled', '1');
+
+			o = s.taboption('timesync', widgets.NetworkSelect, 'interface',
+				_('Bind NTP server'),
+				_('Provide the NTP server to the selected interface or, if unspecified, to all interfaces'));
+			o.ucisection = 'ntp';
+			o.depends('enable_server', '1');
+			o.multiple = false;
+			o.nocreate = true;
+			o.optional = true;
 
 			o = s.option(form.Flag, 'use_dhcp', _('Use DHCP advertised servers'));
 			o.ucisection = 'ntp';

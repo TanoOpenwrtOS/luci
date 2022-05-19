@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2022-04-16 11:37+0000\n"
-"Last-Translator: Vladdrako <vladdrako007@gmail.com>\n"
+"PO-Revision-Date: 2022-05-13 13:49+0000\n"
+"Last-Translator: Darin  Avdeyeva <yulyablack@inbox.lv>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/>"
 "\n"
 "Language: ru\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.13-dev\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
@@ -33,7 +33,7 @@ msgstr "%.1f дБ"
 msgid "%.2mB (%d %s)"
 msgstr "%.2mБ (%d %s)"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4179
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4196
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:13
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:14
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/25_storage.js:13
@@ -66,7 +66,7 @@ msgstr "%1024.2mбит/с"
 msgid "%d Bit"
 msgstr "%d бит"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4082
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4099
 msgid "%d invalid field(s)"
 msgstr "%d неверных полей"
 
@@ -119,8 +119,8 @@ msgid "-- Additional Field --"
 msgstr "-- Дополнительно --"
 
 #: modules/luci-base/htdocs/luci-static/resources/cbi.js:275
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3748
-#: modules/luci-base/htdocs/luci-static/resources/form.js:4117
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3800
+#: modules/luci-base/htdocs/luci-static/resources/form.js:4169
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:807
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:1041
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2014
@@ -170,7 +170,7 @@ msgstr "1"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:233
 msgid "1 Minute Load:"
-msgstr "Загрузка за 1 минуту:"
+msgstr "Нагрузка за 1 минуту:"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:321
 msgctxt "nft amount of flags"
@@ -182,7 +182,7 @@ msgstr[2] "%d флагов"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:253
 msgid "15 Minute Load:"
-msgstr "Загрузка за 15 минут:"
+msgstr "Нагрузка за 15 минут:"
 
 #: protocols/luci-proto-sstp/htdocs/luci-static/resources/protocol/sstp.js:57
 msgctxt "sstp log level value"
@@ -210,7 +210,7 @@ msgstr "464XLAT (CLAT)"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/load.js:243
 msgid "5 Minute Load:"
-msgstr "Загрузка за 5 минут:"
+msgstr "Нагрузка за 5 минут:"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1548
 msgid "6-octet identifier as a hex string - no colons"
@@ -341,10 +341,10 @@ msgid ""
 "internet connection in the mesh) or having the gateway support turned off "
 "entirely (which is the default setting)."
 msgstr ""
-"Узел batman-adv может работать либо в режиме сервера (разделяя свое "
-"интернет-соединение с mesh), либо в режиме клиента (поиск наиболее "
-"подходящего интернет-соединения в mesh), либо с полностью отключенной "
-"поддержкой шлюза (что является настройкой по умолчанию)."
+"Узел batman-adv может работать либо в режиме сервера (разделяя свое интернет-"
+"соединение с mesh), либо в режиме клиента (поиск наиболее подходящего "
+"интернет-соединения в mesh), либо с полностью отключенной поддержкой шлюза "
+"(что является настройкой по умолчанию)."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:370
 msgid "A configuration for the device \"%s\" already exists"
@@ -480,7 +480,7 @@ msgstr "Принимать локальные данные"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:95
 msgctxt "nft accept action"
 msgid "Accept packet"
-msgstr "Принимать пакет"
+msgstr "Принять пакет"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:647
 msgid "Accept packets with local source addresses"
@@ -556,11 +556,11 @@ msgstr "Адаптивная балансировка нагрузки (balance-
 msgid "Adaptive transmit load balancing (balance-tlb, 5)"
 msgstr "Адаптивная балансировка нагрузки передачи (balance-tlb, 5)"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2233
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2236
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2249
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2257
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3546
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2237
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2240
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2253
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2261
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3598
 #: modules/luci-compat/luasrc/view/cbi/nsection.htm:25
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:191
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:199
@@ -841,7 +841,7 @@ msgstr ""
 msgid "Amount of Duplicate Address Detection probes to send"
 msgstr "Количество отправляемых проб обнаружения дубликатов адресов (DAD)"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:604
+#: modules/luci-base/htdocs/luci-static/resources/form.js:608
 msgid "An error occurred while saving the form:"
 msgstr "При сохранении формы произошла ошибка:"
 
@@ -975,20 +975,29 @@ msgstr "Любая зона"
 msgid "Apply DHCP Options to this net. (Empty = all clients)."
 msgstr "Применить опции DHCP к этой сети (пусто = все клиенты)."
 
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4729
+msgid "Apply and keep settings"
+msgstr "Применить и сохранить настройки"
+
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:65
 msgid "Apply backup?"
 msgstr "Восстановить резервную копию?"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4683
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4755
 msgid "Apply request failed with status <code>%h</code>"
 msgstr "Запрос применения завершился со статусом ошибки <code>%h</code>"
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2207
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4538
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4458
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4581
 msgid "Apply unchecked"
 msgstr "Применить без проверки"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4622
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4725
+msgid "Apply with revert after connectivity loss"
+msgstr "Применить с восстановлением при потере соединения"
+
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4665
 msgid "Applying configuration changes… %ds"
 msgstr "Применение изменений... %d сек"
 
@@ -1165,7 +1174,7 @@ msgstr "BR / DMR / AFTR"
 msgid "BSSID"
 msgstr "BSSID"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3215
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3265
 msgid "Back"
 msgstr "Назад"
 
@@ -1222,12 +1231,13 @@ msgid ""
 "packet fits but it is possible to deactivate the fragmentation entirely."
 msgstr ""
 "Batman-adv имеет встроенную фрагментацию второго уровня для одноадресных "
-"(unicast) данных, проходящих через mesh, что позволяет использовать batman-adv "
-"через интерфейсы/соединения, которые не позволяют увеличить MTU сверх "
-"стандартного размера пакета Ethernet в 1500 байт. Когда фрагментация включена, "
-"batman-adv будет автоматически фрагментировать пакеты слишком большого размера "
-"и дефрагментировать их на другом конце. По умолчанию фрагментация включена, но "
-"неактивна, если пакет подходит, но можно полностью отключить фрагментацию."
+"(unicast) данных, проходящих через mesh, что позволяет использовать batman-"
+"adv через интерфейсы/соединения, которые не позволяют увеличить MTU сверх "
+"стандартного размера пакета Ethernet в 1500 байт. Когда фрагментация "
+"включена, batman-adv будет автоматически фрагментировать пакеты слишком "
+"большого размера и дефрагментировать их на другом конце. По умолчанию "
+"фрагментация включена, но неактивна, если пакет подходит, но можно полностью "
+"отключить фрагментацию."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:974
 msgid "Beacon Interval"
@@ -1244,6 +1254,10 @@ msgstr ""
 "состоит из измененных конфигурационных файлов, отмеченных opkg, необходимых "
 "базовых файлов, а также шаблонов резервного копирования, определенных "
 "пользователем."
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:182
+msgid "Bind NTP server"
+msgstr "Привязка NTP-сервера"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:326
 msgid "Bind dynamically to interfaces rather than wildcard address."
@@ -1341,7 +1355,7 @@ msgid "Broadcast policy (broadcast, 3)"
 msgstr "Широковещательная политика (broadcast, 3)"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2862
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4192
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4209
 msgid "Browse…"
 msgstr "Обзор…"
 
@@ -1360,7 +1374,7 @@ msgstr "Ошибка конфигурации CLAT"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:72
 msgid "CPU usage (%)"
-msgstr "Загрузка ЦП (%)"
+msgstr "Использование ЦП (%)"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:43
 msgid "Cached"
@@ -1373,7 +1387,8 @@ msgid "Call failed"
 msgstr "Ошибка вызова"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2955
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4201
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4218
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4721
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:14
 #: modules/luci-compat/luasrc/view/cbi/simpleform.htm:52
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:188
@@ -1482,11 +1497,11 @@ msgctxt "Yet unknown nftables chain hook"
 msgid "Chain hook \"%h\""
 msgstr "Хук цепочки ‎«%h»"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4421
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4438
 msgid "Changes"
 msgstr "Изменения"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4718
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4791
 msgid "Changes have been reverted."
 msgstr "Изменения отменены."
 
@@ -1576,7 +1591,7 @@ msgstr "Клиент"
 msgid "Client ID to send when requesting DHCP"
 msgstr "ID клиента при DHCP-запросе"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4438
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4455
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:167
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:173
 msgid "Close"
@@ -1599,7 +1614,7 @@ msgstr ""
 msgid "Close list..."
 msgstr "Закрыть список..."
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4558
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4601
 msgid "Cofiguration changes rolling back failed!"
 msgstr "Не удалось выполнить откат применения конфигурации!"
 
@@ -1653,16 +1668,16 @@ msgstr ""
 msgid "Compute outgoing checksum (optional)."
 msgstr "Вычислять исходящую контрольную сумму (опционально)."
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4421
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4438
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:193
 msgid "Configuration"
 msgstr "Конфигурация"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4597
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4640
 msgid "Configuration changes applied."
 msgstr "Конфигурация применена."
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4524
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4567
 msgid "Configuration changes have been rolled back!"
 msgstr "Конфигурация возвращена назад!"
 
@@ -1750,6 +1765,10 @@ msgstr "Подключение потеряно"
 msgid "Connections"
 msgstr "Соединения"
 
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4714
+msgid "Connectivity change"
+msgstr "Изменение подключения"
+
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:31
 msgctxt "nft ct state"
 msgid "Conntrack state"
@@ -1803,7 +1822,7 @@ msgctxt "Chain policy: accept"
 msgid "Continue processing unmatched packets"
 msgstr "Продолжать обработку несопоставленных пакетов"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4571
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4614
 msgid ""
 "Could not regain access to the device after applying the configuration "
 "changes. You might need to reconnect if you modified network related "
@@ -1813,7 +1832,7 @@ msgstr ""
 "Возможно вам придется подключиться заново, если вы изменили сетевые "
 "настройки, такие как IP-адрес или параметры доступа к беспроводной сети."
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4559
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4602
 msgid ""
 "Could not regain access to the device after rolling back configuration "
 "changes."
@@ -1836,7 +1855,7 @@ msgstr "Плотность точек покрытия"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:580
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2036
 msgid "Create / Assign firewall-zone"
-msgstr "Создать / назначить зону сетевого экрана"
+msgstr "Создать / назначить зону межсетевого экрана"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1174
 msgid "Create interface"
@@ -2062,10 +2081,10 @@ msgstr "Определяет специальный MTU для этого мар
 msgid "Delegate IPv6 prefixes"
 msgstr "Делегировать IPv6 префиксы"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2313
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2314
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2752
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2756
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3530
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3582
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2924
 #: modules/luci-compat/luasrc/view/cbi/nsection.htm:11
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:163
@@ -2194,7 +2213,7 @@ msgstr "Устройство отсутствует"
 msgid "Device type"
 msgstr "Тип устройства"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4570
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4613
 msgid "Device unreachable!"
 msgstr "Устройство недоступно!"
 
@@ -2276,7 +2295,9 @@ msgstr "Не ассоциировать при низком подтвержде
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:302
 msgid ""
 "Discard upstream responses containing <a href=\"%s\">RFC1918</a> addresses."
-msgstr "Отбрасывать ответы восходящего потока, содержащие адреса RFC1918."
+msgstr ""
+"Отбрасывать ответы вышестоящего сервера, содержащие адреса <a href=\"%s"
+"\">RFC1918</a>."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:198
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:723
@@ -2298,11 +2319,11 @@ msgstr "Ошибка попытки отключения."
 msgid "Disk space"
 msgstr "Дисковое пространство"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:607
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3024
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3228
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3666
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4530
+#: modules/luci-base/htdocs/luci-static/resources/form.js:611
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3034
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3279
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3683
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4573
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1770
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/backup.js:135
 msgid "Dismiss"
@@ -2465,7 +2486,7 @@ msgstr "Отбросить пакет"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:540
 msgctxt "Chain policy: drop"
 msgid "Drop unmatched packets"
-msgstr "Отбрасывать несопоставленные пакетов"
+msgstr "Отбрасывать несопоставленные пакеты"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:12
 msgid "Dropbear Instance"
@@ -2528,7 +2549,7 @@ msgstr "Метод EAP"
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2730
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2733
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3393
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3445
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:155
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:161
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:495
@@ -2659,7 +2680,7 @@ msgstr "Пропускать Jumbo-кадры"
 msgid "Enable MAC address learning"
 msgstr "Включить изучение MAC адресов"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:151
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:152
 msgid "Enable NTP client"
 msgstr "Включить NTP-клиент"
 
@@ -2798,8 +2819,8 @@ msgid ""
 "Enables more efficient, group aware multicast forwarding infrastructure in "
 "batman-adv."
 msgstr ""
-"Включает в batman-adv более эффективную группо-ориентированную инфраструктуру "
-"пересылки многоадресной рассылки."
+"Включает в batman-adv более эффективную группо-ориентированную "
+"инфраструктуру пересылки многоадресной рассылки."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:518
 msgid "Enables the Spanning Tree Protocol on this bridge"
@@ -2933,7 +2954,7 @@ msgstr "Ожидается правильный IPv6-адрес"
 msgid "Expecting two priority values separated by a colon"
 msgstr "Ожидается два значение приоритета, разделённые двоеточием"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2269
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2273
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:64
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:127
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:133
@@ -2987,7 +3008,7 @@ msgstr "Порт внешнего сервера системного журна
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:87
 msgid "External system log server protocol"
-msgstr "Внешний протокол лог-сервера"
+msgstr "Протокол внешнего сервера системного журнала"
 
 #: protocols/luci-proto-pppossh/htdocs/luci-static/resources/protocol/pppossh.js:79
 msgid "Extra SSH command options"
@@ -3017,7 +3038,7 @@ msgstr "FT протокол"
 msgid "Failed to change the system password."
 msgstr "Не удалось изменить системный пароль."
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4515
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4558
 msgid "Failed to confirm apply within %ds, waiting for rollback…"
 msgstr "Не удалось подтвердить применение в течении %d сек., ожидание отката…"
 
@@ -3125,7 +3146,7 @@ msgstr "Состояние межсетевого экрана"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:176
 msgid "Firewall mark"
-msgstr "Метка Firewall"
+msgstr "Метка межсетевого экрана"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1526
 msgid "Firmware File"
@@ -3382,6 +3403,7 @@ msgstr "Основные настройки"
 msgid "Global network options"
 msgstr "Основные настройки сети"
 
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:82
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:89
 #: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:72
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:92
@@ -3395,7 +3417,7 @@ msgid "Go to password configuration..."
 msgstr "Перейти к настройке пароля..."
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2652
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3712
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3764
 #: modules/luci-compat/luasrc/view/cbi/full_valueheader.htm:4
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:58
 msgid "Go to relevant configuration page"
@@ -3547,7 +3569,7 @@ msgstr ""
 "Здесь вы можете настроить основные параметры вашего устройства, такие как "
 "имя хоста или настройки журналирования."
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:108
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:109
 msgid "Here you can configure the time settings."
 msgstr "Здесь вы можете настроить основные параметры времени."
 
@@ -3802,7 +3824,7 @@ msgstr "Длина префикса IPv4"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:619
 msgid "IPv4 traffic table \"%h\""
-msgstr "Таблица IPv4 траффика «%h»"
+msgstr "Таблица IPv4 трафика «%h»"
 
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:84
 msgid "IPv4+IPv6"
@@ -3819,7 +3841,7 @@ msgstr "IPv4/IPv6 (оба, по умолчанию IPv4)"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:627
 msgid "IPv4/IPv6 traffic table \"%h\""
-msgstr "Таблица IPv4/IPv6 траффика «%h»"
+msgstr "Таблица IPv4/IPv6 трафика «%h»"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:128
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:163
@@ -3941,7 +3963,7 @@ msgstr "Поддержка IPv6"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:623
 msgid "IPv6 traffic table \"%h\""
-msgstr "Таблица IPv6 траффика «%h»"
+msgstr "Таблица IPv6 трафика «%h»"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:101
 msgid "IPv6-PD"
@@ -4011,6 +4033,17 @@ msgstr ""
 "Если выбрано, монтировать устройство используя название его раздела, а не "
 "фиксированный файл устройства"
 
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4716
+msgid ""
+"If the IP address used to access LuCI changes, a <strong>manual reconnect to "
+"the new IP</strong> is required within %d seconds to confirm the settings, "
+"otherwise modifications will be reverted."
+msgstr ""
+"Если IP-адрес, используемый для доступа к веб-интерфейсу, изменился, в "
+"течение %d секунд необходимо выполнить <strong>ручное переподключение c "
+"использованием нового IP-адреса</strong> для подтверждения настроек, "
+"в противном случае изменения будут автоматически отменены."
+
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:218
 msgid ""
 "If there are any unsaved changes for this client, please save the "
@@ -4068,8 +4101,8 @@ msgid ""
 "order to avoid broadcast loops that can bring the entire LAN to a standstill."
 msgstr ""
 "В локальных сетях с мостами рекомендуется включить функцию предотвращения "
-"мостовых петель, чтобы избежать широковещательных петель, которые могут привести "
-"к нарушению работы всей локальной сети."
+"мостовых петель, чтобы избежать широковещательных петель, которые могут "
+"привести к нарушению работы всей локальной сети."
 
 #: modules/luci-base/luasrc/view/csrftoken.htm:13
 msgid ""
@@ -4361,7 +4394,7 @@ msgstr "Инвертировать совпадение"
 msgid "Isolate Clients"
 msgstr "Изолировать клиентов"
 
-#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:79
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:89
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:96
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:72
 msgid "JavaScript required!"
@@ -4556,7 +4589,7 @@ msgstr ""
 msgid "Legacy rules detected"
 msgstr "Обнаружены устаревшие правила"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4423
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4440
 msgid "Legend:"
 msgstr "События:"
 
@@ -4682,7 +4715,7 @@ msgstr "Порт для входящих DNS-запросов."
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:100
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:54
 msgid "Load"
-msgstr "Загрузка"
+msgstr "Нагрузка"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:43
 msgid "Load Average"
@@ -4753,7 +4786,7 @@ msgid "Local Startup"
 msgstr "Запуск пакетов и служб пользователя, при включении устройства"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:41
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:120
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:121
 msgid "Local Time"
 msgstr "Время"
 
@@ -5209,7 +5242,7 @@ msgstr "Монитор"
 msgid "More Characters"
 msgstr "Слишком мало символов"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2591
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2592
 msgid "More…"
 msgstr "Больше…"
 
@@ -5319,12 +5352,12 @@ msgstr "Ведомый NDP-Proxy"
 msgid "NT Domain"
 msgstr "NT домен"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:185
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:195
 msgid "NTP server candidates"
 msgstr "Список NTP-серверов"
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:2630
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4178
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4195
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:27
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1104
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:68
@@ -5440,7 +5473,7 @@ msgstr "Новое имя интерфейса…"
 msgid "Next »"
 msgstr "Следующий »"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:4054
+#: modules/luci-base/htdocs/luci-static/resources/form.js:4106
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:298
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:346
 msgid "No"
@@ -5470,6 +5503,7 @@ msgstr "Без NAT-T"
 msgid "No RX signal"
 msgstr "Rx сигнал отсутствует"
 
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:80
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:87
 #: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:70
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:90
@@ -5484,7 +5518,7 @@ msgstr ""
 msgid "No client associated"
 msgstr "Нет связанных клиентов"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:3214
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:3231
 msgctxt "empty table placeholder"
 msgid "No data"
 msgstr "Нет данных"
@@ -5816,20 +5850,20 @@ msgstr ""
 msgid "Operating frequency"
 msgstr "Настройка частоты"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2002
-#: modules/luci-base/htdocs/luci-static/resources/form.js:4066
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2006
+#: modules/luci-base/htdocs/luci-static/resources/form.js:4118
 msgid "Option \"%s\" contains an invalid input value."
 msgstr "Опция «%s» содержит недопустимое значение."
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2017
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2021
 msgid "Option \"%s\" must not be empty."
 msgstr "Опция «%s» не должна быть пустой"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4430
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4447
 msgid "Option changed"
 msgstr "Опция изменена"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4432
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4449
 msgid "Option removed"
 msgstr "Опция удалена"
 
@@ -6368,7 +6402,7 @@ msgstr "пакетов"
 msgid "Please enter your username and password."
 msgstr "Пожалуйста, введите имя пользователя и пароль."
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4161
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4178
 msgid "Please select the file to upload."
 msgstr "Пожалуйста, выберите файл для загрузки."
 
@@ -6455,8 +6489,8 @@ msgid ""
 "Prevents one wireless client to talk to another. This setting only affects "
 "packets without any VLAN tag (untagged packets)."
 msgstr ""
-"Запрещает одному беспроводному клиенту общаться с другим. Эта настройка влияет "
-"только на пакеты без VLAN тегов (нетегированные пакеты)."
+"Запрещает одному беспроводному клиенту общаться с другим. Эта настройка "
+"влияет только на пакеты без VLAN тегов (нетегированные пакеты)."
 
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:213
 msgid "Primary Slave"
@@ -6516,7 +6550,7 @@ msgstr "Прот."
 msgid "Protocol"
 msgstr "Протокол"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:176
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:177
 msgid "Provide NTP server"
 msgstr "Включить NTP-сервер"
 
@@ -6531,6 +6565,14 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:883
 msgid "Provide new network"
 msgstr "Предоставлять новую сеть"
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:183
+msgid ""
+"Provide the NTP server to the selected interface or, if unspecified, to all "
+"interfaces"
+msgstr ""
+"Назначить NTP-сервер на выбранный интерфейс или, если не указано, "
+"на все интерфейсы"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1077
 msgid "Pseudo Ad-Hoc (ahdemo)"
@@ -6995,19 +7037,19 @@ msgstr "Показать/скрыть пароль"
 msgid "Reverse path filter"
 msgstr "Фильтр обратного пути"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4446
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4469
 msgid "Revert"
 msgstr "Вернуть"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4534
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4577
 msgid "Revert changes"
 msgstr "Вернуть изменения"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4727
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4800
 msgid "Revert request failed with status <code>%h</code>"
 msgstr "Ошибка <code>%h</code> отмены конфигурации"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4707
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4780
 msgid "Reverting configuration…"
 msgstr "Отмена конфигурации…"
 
@@ -7129,7 +7171,7 @@ msgstr "Правило"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:596
 msgid "Rule actions"
-msgstr "Действия для правил"
+msgstr "Действия правила"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:469
 msgctxt "nft comment"
@@ -7207,7 +7249,7 @@ msgstr "Сервер SSTP"
 msgid "SWAP"
 msgstr "Разделы подкачки (swap)"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3233
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3284
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2224
 #: modules/luci-compat/luasrc/view/cbi/error.htm:17
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:29
@@ -7218,12 +7260,12 @@ msgid "Save"
 msgstr "Сохранить"
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2206
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4442
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4457
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:24
 msgid "Save & Apply"
 msgstr "Применить"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:603
+#: modules/luci-base/htdocs/luci-static/resources/form.js:607
 msgid "Save error"
 msgstr "Ошибка сохранения"
 
@@ -7237,11 +7279,11 @@ msgstr "Сканировать"
 msgid "Scheduled Tasks"
 msgstr "Планировщик"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4426
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4443
 msgid "Section added"
 msgstr "Раздел добавлен"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4428
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4445
 msgid "Section removed"
 msgstr "Раздел удалён"
 
@@ -7462,7 +7504,7 @@ msgstr "Частота обновления сигнала"
 msgid "Signal:"
 msgstr "Сигнал:"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4179
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4196
 msgid "Size"
 msgstr "Размер"
 
@@ -7958,7 +8000,7 @@ msgstr "Приоритет"
 msgid "Start refresh"
 msgstr "Запустить обновление"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4660
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4703
 msgid "Starting configuration apply…"
 msgstr "Применение конфигурации…"
 
@@ -8102,11 +8144,11 @@ msgstr "Переключить в формат CIDR"
 msgid "Symbolic link"
 msgstr "Символическая ссылка"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:84
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:85
 msgid "Sync with NTP-Server"
 msgstr "Синхронизировать по NTP"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:71
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:72
 msgid "Sync with browser"
 msgstr "Синхронизировать с браузером"
 
@@ -8120,7 +8162,7 @@ msgstr "Система"
 msgid "System Priority"
 msgstr "Системный приоритет"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:112
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:113
 msgid "System Time"
 msgstr "Системное время"
 
@@ -8128,6 +8170,7 @@ msgstr "Системное время"
 msgid "System log buffer size"
 msgstr "Размер системного журнала"
 
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:79
 #: themes/luci-theme-openwrt-2020/luasrc/view/themes/openwrt2020/header.htm:69
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:89
 msgid "System running in recovery (initramfs) mode."
@@ -8382,7 +8425,7 @@ msgstr ""
 "При подключении к скрытой беспроводной сети необходимо вручную указать "
 "правильный SSID"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4525
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4568
 msgid ""
 "The device could not be reached within %d seconds after applying the pending "
 "changes, which caused the configuration to be rolled back for safety "
@@ -8459,9 +8502,9 @@ msgid ""
 msgstr ""
 "Настройка штрафа за прыжки позволяет изменить предпочтение batman-adv в "
 "пользу многохоповых маршрутов по сравнению с короткими. Значение применяется "
-"к TQ каждого пересылаемого OGM, тем самым увеличивая стоимость дополнительного "
-"перехода (пакет должен быть получен и повторно передан, что требует затрат "
-"эфирного времени)."
+"к TQ каждого пересылаемого OGM, тем самым увеличивая стоимость "
+"дополнительного перехода (пакет должен быть получен и повторно передан, что "
+"требует затрат эфирного времени)."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:513
 msgid "The hostname of the boot server"
@@ -8551,6 +8594,14 @@ msgstr ""
 "Максимальное количество прыжков, публикуемых в <abbr title=\"Router "
 "Advertisement\">RA</abbr> сообщениях. Максимальное значение составляет 255 "
 "прыжков."
+
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4715
+msgid ""
+"The network access to this device could be interrupted by changing settings "
+"of the \"%h\" interface."
+msgstr ""
+"Сетевой доступ к этому устройству может быть нарушен при изменении настроек "
+"интерфейса «%h»."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2016
 msgid "The network name is already used"
@@ -8670,16 +8721,17 @@ msgid ""
 "The value specifies the interval (milliseconds) in which batman-adv floods "
 "the network with its protocol information."
 msgstr ""
-"Значение определяет интервал (миллисекунды), через который batman-adv передает "
-"в сеть информацию о протоколе."
+"Значение определяет интервал (миллисекунды), через который batman-adv "
+"передает в сеть информацию о протоколе."
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:672
 msgid ""
 "There are legacy iptables rules present on the system. Mixing iptables and "
 "nftables rules is discouraged and may lead to incomplete traffic filtering."
 msgstr ""
-"В системе присутствуют устаревшие правила iptables. Смешивание правил iptables "
-"и nftables не рекомендуется и может привести к неполной фильтрации трафика."
+"В системе присутствуют устаревшие правила iptables. Смешивание правил "
+"iptables и nftables не рекомендуется и может привести к неполной фильтрации "
+"трафика."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:745
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:777
@@ -8688,7 +8740,7 @@ msgstr ""
 msgid "There are no active leases"
 msgstr "Нет активных арендованных адресов"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4675
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4747
 msgid "There are no changes to apply"
 msgstr "Нет изменений для применения"
 
@@ -8748,8 +8800,8 @@ msgstr ""
 "устройство указанное выше. Если этот список пуст, то вам нужно сначала "
 "создать его. Если вы хотите направить трафик mesh через проводное сетевое "
 "устройство, выберите его в вышеуказанном списке устройств. Если вы хотите "
-"назначить интерфейс batman-adv для Wi-fi mesh, то не выбирайте устройство "
-"в списке, а перейдите в настройки беспроводной сети и выберите этот интерфейс "
+"назначить интерфейс batman-adv для Wi-fi mesh, то не выбирайте устройство в "
+"списке, а перейдите в настройки беспроводной сети и выберите этот интерфейс "
 "в качестве сети."
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:130
@@ -8809,8 +8861,7 @@ msgid ""
 msgstr ""
 "Эта опция не может быть использована, так как пакет ca-bundle не установлен."
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2281
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2598
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2284
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:173
 #: modules/luci-compat/luasrc/view/cbi/tsection.htm:32
 msgid "This section contains no values yet"
@@ -8824,12 +8875,12 @@ msgstr "Ти"
 msgid "TiB"
 msgstr "ТиБ"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:107
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:108
 #: modules/luci-mod-system/root/usr/share/luci/menu.d/luci-mod-system.json:15
 msgid "Time"
 msgstr "Время"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:147
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:148
 msgid "Time Synchronization"
 msgstr "Синхронизация времени"
 
@@ -8864,7 +8915,7 @@ msgstr ""
 msgid "Timeout in seconds until topology updates on link loss"
 msgstr "Таймаут в секундах до обновления топологии при потере связи"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:124
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:125
 msgid "Timezone"
 msgstr "Часовой пояс"
 
@@ -8888,7 +8939,7 @@ msgstr "Тон"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:35
 msgid "Total Available"
-msgstr "Всего доступно"
+msgstr "Свободно"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:150
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/diagnostics.js:162
@@ -8910,12 +8961,12 @@ msgstr "Класс трафика (TC)"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:522
 msgid "Traffic filter chain \"%h\""
-msgstr "Цепочка фильтра траффика «%h»"
+msgstr "Цепочка фильтра трафика «%h»"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:460
 msgctxt "nft counter"
 msgid "Traffic matched by rule: %.1000mPackets, %.1024mBytes"
-msgstr "Траффик, сопоставленный правилом: %.1000mпакетов, %.1024mБ"
+msgstr "Трафик, сопоставленный правилом: %.1000mпакетов, %.1024mБ"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:387
 msgid "Transfer"
@@ -9131,7 +9182,7 @@ msgstr "Отмонтировать"
 msgid "Unnamed key"
 msgstr "Ключ без имени"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4366
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4383
 msgid "Unsaved Changes"
 msgstr "Не принятые изменения"
 
@@ -9161,7 +9212,7 @@ msgstr "Вверх"
 msgid "Up Delay"
 msgstr "Задержка включения интерфейса"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4253
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4270
 msgid "Upload"
 msgstr "Загрузить"
 
@@ -9179,17 +9230,17 @@ msgstr "Загрузка файла"
 msgid "Upload file…"
 msgstr "Загрузка файла…"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4199
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4216
 msgid "Upload has been cancelled"
 msgstr "Загрузка была отменена"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2788
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4241
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4258
 msgid "Upload request failed: %s"
 msgstr "Ошибка запроса на загрузку: %s"
 
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4160
-#: modules/luci-base/htdocs/luci-static/resources/ui.js:4214
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4177
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4231
 msgid "Uploading file…"
 msgstr "Загрузка файла…"
 
@@ -9234,7 +9285,7 @@ msgstr "Время работы"
 msgid "Use <code>/etc/ethers</code>"
 msgstr "Использовать <code>/etc/ethers</code>"
 
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:180
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:190
 msgid "Use DHCP advertised servers"
 msgstr "Использовать серверы, объявленные через DHCP"
 
@@ -9376,7 +9427,7 @@ msgstr ""
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:36
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:195
 msgid "Used"
-msgstr "Использовано"
+msgstr "Занято"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1471
 msgid "Used Key Slot"
@@ -9630,9 +9681,9 @@ msgid ""
 "When enabled network coding increases the WiFi throughput by combining "
 "multiple frames into a single frame, thus reducing the needed air time."
 msgstr ""
-"При включении сетевого кодирования увеличивается пропускная способность "
-"WiFi за счет объединения нескольких кадров в один кадр, что сокращает "
-"необходимое эфирное время."
+"При включении сетевого кодирования увеличивается пропускная способность WiFi "
+"за счет объединения нескольких кадров в один кадр, что сокращает необходимое "
+"эфирное время."
 
 #: protocols/luci-proto-batman-adv/htdocs/luci-static/resources/protocol/batadv.js:76
 msgid ""
@@ -9640,9 +9691,9 @@ msgid ""
 "helps non-mesh clients to get ARP responses much more reliably and without "
 "much delay."
 msgstr ""
-"Когда эта функция включена, распределенная ARP-таблица формирует ARP-кэш всей "
-"сети, который помогает клиентам, не входящим в сеть, получать ARP-ответы гораздо "
-"надежнее и без особых задержек."
+"Когда эта функция включена, распределенная ARP-таблица формирует ARP-кэш "
+"всей сети, который помогает клиентам, не входящим в сеть, получать ARP-"
+"ответы гораздо надежнее и без особых задержек."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:109
 msgid ""
@@ -9658,7 +9709,8 @@ msgid ""
 "capable of optimizing the traffic flow to gain maximum performance."
 msgstr ""
 "При работе mesh через несколько интерфейсов WiFi, batman-adv на каждом узле "
-"способен оптимизировать поток трафика для достижения максимальной производительности."
+"способен оптимизировать поток трафика для достижения максимальной "
+"производительности."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1537
 msgid ""
@@ -9758,7 +9810,7 @@ msgstr "Записывать системные события в файл"
 msgid "XOR policy (balance-xor, 2)"
 msgstr "Политика XOR (balance-xor, 2)"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:4054
+#: modules/luci-base/htdocs/luci-static/resources/form.js:4106
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:297
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:345
 msgid "Yes"
@@ -9787,7 +9839,7 @@ msgstr ""
 "><strong>Внимание: если вы выключите один из основных скриптов инициализации "
 "(например \"network\"), ваше устройство может оказаться недоступным!</strong>"
 
-#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:80
+#: themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/header.htm:90
 #: themes/luci-theme-material/luasrc/view/themes/material/header.htm:97
 #: themes/luci-theme-openwrt/luasrc/view/themes/openwrt.org/header.htm:73
 msgid ""
@@ -10038,12 +10090,12 @@ msgstr "нет"
 msgid "no link"
 msgstr "нет соединения"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:2269
+#: modules/luci-base/htdocs/luci-static/resources/form.js:2273
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:59
 msgid "non-empty value"
 msgstr "не пустое значение"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3383
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3435
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:800
 msgid "none"
 msgstr "ничего"
@@ -10099,8 +10151,8 @@ msgid ""
 "reduces overhead by collecting and aggregating originator messages in a "
 "single packet rather than many small ones"
 msgstr ""
-"снижает накладные расходы, собирая и агрегируя сообщения отправителей в один пакет, "
-"а не во множество маленьких пакетов"
+"снижает накладные расходы, собирая и агрегируя сообщения отправителей в один "
+"пакет, а не во множество маленьких пакетов"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:769
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:884
@@ -10166,7 +10218,7 @@ msgstr "неизвестный"
 msgid "unlimited"
 msgstr "без ограничений"
 
-#: modules/luci-base/htdocs/luci-static/resources/form.js:3748
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3800
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:76
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:138
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:370
@@ -10376,18 +10428,5 @@ msgstr "да"
 msgid "« Back"
 msgstr "« Назад"
 
-#~ msgctxt "nft meta oif"
-#~ msgid "Engress device id"
-#~ msgstr "Идентификатор исходящего устройства"
-
-#~ msgid "Firewall (iptables)"
-#~ msgstr "Межсетевой экран (iptables)"
-
-#~ msgid "Firewall (nftables)"
-#~ msgstr "Межсетевой экран (nftables)"
-
-#~ msgid "No nftables ruleset load"
-#~ msgstr "Не загружен набор правил nftables"
-
-#~ msgid "Auto Refresh"
-#~ msgstr "Автообновление"
+#~ msgid "Arp-scan"
+#~ msgstr "Arp-скан"
