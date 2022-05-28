@@ -4,8 +4,8 @@ msgstr ""
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
 "PO-Revision-Date: 2022-05-13 13:49+0000\n"
 "Last-Translator: Darin  Avdeyeva <yulyablack@inbox.lv>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/>"
-"\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/"
+">\n"
 "Language: ru\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -1257,7 +1257,7 @@ msgstr ""
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/time.js:182
 msgid "Bind NTP server"
-msgstr "Привязка NTP-сервера"
+msgstr "Привязать NTP-сервер"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:326
 msgid "Bind dynamically to interfaces rather than wildcard address."
@@ -6571,8 +6571,8 @@ msgid ""
 "Provide the NTP server to the selected interface or, if unspecified, to all "
 "interfaces"
 msgstr ""
-"Назначить NTP-сервер на выбранный интерфейс или, если не указано, "
-"на все интерфейсы"
+"Включить NTP-сервер на выбранном интерфейсе, или, если не определено, на "
+"всех интерфейсах"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1077
 msgid "Pseudo Ad-Hoc (ahdemo)"
@@ -8504,7 +8504,7 @@ msgstr ""
 "пользу многохоповых маршрутов по сравнению с короткими. Значение применяется "
 "к TQ каждого пересылаемого OGM, тем самым увеличивая стоимость "
 "дополнительного перехода (пакет должен быть получен и повторно передан, что "
-"требует затрат эфирного времени)."
+"требует затрат эфирного времени)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:513
 msgid "The hostname of the boot server"
@@ -8713,8 +8713,8 @@ msgstr "Загруженный архив резервной копии не ч�
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1453
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1465
-msgid "The value is overridden by configuration. Original: %s"
-msgstr "Значение переопределено конфигурацией. Оригинал: %s"
+msgid "The value is overridden by configuration."
+msgstr "Значение переопределено конфигурацией."
 
 #: protocols/luci-proto-batman-adv/htdocs/luci-static/resources/protocol/batadv.js:56
 msgid ""
@@ -10427,9 +10427,6 @@ msgstr "да"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« Назад"
-
-#~ msgid "Arp-scan"
-#~ msgstr "Arp-скан"
 
 msgid "Auto Refresh"
 msgstr "Автообновление"
