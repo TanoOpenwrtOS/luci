@@ -10430,3 +10430,6 @@ msgstr "« Назад"
 
 #~ msgid "Arp-scan"
 #~ msgstr "Arp-скан"
+
+msgid "Auto Refresh"
+msgstr "Автообновление"
