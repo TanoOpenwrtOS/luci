@@ -419,7 +419,7 @@ return network.registerProtocol('wireguard', {
 					})
 				]),
 				E('div', {
-					'class': 'alert-message',
+					'class': 'alert-message error',
 					'style': 'display:none'
 				}, [''])
 			]);
@@ -788,7 +788,7 @@ return network.registerProtocol('wireguard', {
 					]));
 
 					if (!s.formvalue(s.section, 'listen_port')) {
-						nodes.appendChild(E('div', { 'class': 'alert-message' }, [
+						nodes.appendChild(E('div', { 'class': 'alert-message warning' }, [
 							E('p', [
 								_('No fixed interface listening port defined, peers might not be able to initiate connections to this WireGuard instance!')
 							])
