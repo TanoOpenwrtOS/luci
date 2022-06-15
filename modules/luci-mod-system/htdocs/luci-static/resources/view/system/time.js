@@ -178,7 +178,7 @@ return view.extend({
 			o.ucisection = 'ntp';
 			o.depends('enabled', '1');
 
-			o = s.taboption('timesync', widgets.NetworkSelect, 'interface',
+			o = s.option(widgets.NetworkSelect, 'interface',
 				_('Bind NTP server'),
 				_('Provide the NTP server to the selected interface or, if unspecified, to all interfaces'));
 			o.ucisection = 'ntp';
