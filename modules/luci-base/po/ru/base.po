@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "POT-Creation-Date: 2010-05-09 01:01+0300\n"
-"PO-Revision-Date: 2022-05-13 13:49+0000\n"
-"Last-Translator: Darin  Avdeyeva <yulyablack@inbox.lv>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/"
-">\n"
+"PO-Revision-Date: 2022-06-18 09:18+0000\n"
+"Last-Translator: AHOHNMYC <lqwh2h2cwa@protonmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/luci/ru/>"
+"\n"
 "Language: ru\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -539,7 +539,7 @@ msgstr "Активные IPv6-правила"
 msgid "Active-Backup policy (active-backup, 1)"
 msgstr "Политика активного резервирования (active-backup, 1)"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3883
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3902
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:993
 #: protocols/luci-proto-hnet/htdocs/luci-static/resources/protocol/hnet.js:23
 msgid "Ad-Hoc"
@@ -729,7 +729,7 @@ msgstr ""
 msgid "Alert"
 msgstr "Тревога"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3004
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3017
 #: modules/luci-compat/luasrc/model/network.lua:1434
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:62
 msgid "Alias Interface"
@@ -1310,7 +1310,7 @@ msgstr "Режим бондинга"
 msgid "Bonding Policy"
 msgstr "Политика объединения"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3010
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3023
 #: modules/luci-compat/luasrc/model/network.lua:1438
 msgid "Bridge"
 msgstr "Мост"
@@ -1593,7 +1593,7 @@ msgstr ""
 "конфигурационных файлов прошивки устройства, таким образом вы сохраните его "
 "настройки."
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3882
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3901
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:992
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1107
 #: protocols/luci-proto-batman-adv/htdocs/luci-static/resources/protocol/batadv.js:88
@@ -2937,18 +2937,18 @@ msgstr "Ошибка"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:170
 msgid "Error getting PublicKey"
-msgstr "Ошибка получения PublicKey"
+msgstr "Ошибка получения публичного ключа"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:29
 msgid "Errored seconds (ES)"
 msgstr "Ошибочные секунды (ES)"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3023
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3036
 #: modules/luci-compat/luasrc/model/network.lua:1450
 msgid "Ethernet Adapter"
 msgstr "Ethernet-адаптер"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3014
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3027
 #: modules/luci-compat/luasrc/model/network.lua:1440
 msgid "Ethernet Switch"
 msgstr "Ethernet-коммутатор"
@@ -2970,8 +2970,8 @@ msgid ""
 "Exempt <code>127.0.0.0/8</code> and <code>::1</code> from rebinding checks, "
 "e.g. for RBL services."
 msgstr ""
-"Разрешить ответы внешней сети в диапазоне 127.0.0.0/8, например, для RBL-"
-"сервисов."
+"Разрешить ответы внешней сети в диапазоне <code>127.0.0.0/8</code> и "
+"<code>::1</code>. Например, для RBL-сервисов."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:356
 msgid "Existing device"
@@ -4132,7 +4132,7 @@ msgstr "Импорт конфигурации"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:466
 msgid "Import peer configuration…"
-msgstr "Импорт конфигурации узла..."
+msgstr "Импорт конфигурации узла…"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:452
 msgid "Import settings"
@@ -5033,7 +5033,7 @@ msgstr ""
 msgid "Manual"
 msgstr "Вручную"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3881
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3900
 msgid "Master"
 msgstr "Мастер"
 
@@ -5139,7 +5139,7 @@ msgstr "Оперативная память (RAM)"
 msgid "Memory usage (%)"
 msgstr "Использование памяти (%)"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3884
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3903
 msgid "Mesh"
 msgstr "Mesh"
 
@@ -5298,7 +5298,7 @@ msgstr "Модем отключен."
 msgid "ModemManager"
 msgstr "Менеджер модема"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3885
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3904
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1078
 msgid "Monitor"
 msgstr "Монитор"
@@ -5620,7 +5620,8 @@ msgid ""
 "initiate connections to this WireGuard instance!"
 msgstr ""
 "Не определен фиксированный порт прослушивания интерфейса, поэтому узлы могут "
-"оказаться не в состоянии инициировать соединения с этим экземпляром WireGuard!"
+"оказаться не в состоянии инициировать соединения с этим экземпляром "
+"WireGuard!"
 
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/gre.js:86
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/gretap.js:91
@@ -6025,9 +6026,9 @@ msgid ""
 "code if available. It can be removed after the configuration has been "
 "exported."
 msgstr ""
-"Необязательно. Закрытый ключ узла WireGuard. Ключ не требуется для установления "
-"соединения, но позволяет сгенерировать конфигурацию узла или QR-код, если он "
-"доступен. Он может быть удален после экспорта конфигурации."
+"Необязательно. Закрытый ключ узла WireGuard. Ключ не требуется для "
+"установления соединения, но позволяет сгенерировать конфигурацию узла или QR-"
+"код, если он доступен. Он может быть удален после экспорта конфигурации."
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:645
 msgid ""
@@ -7666,7 +7667,7 @@ msgstr "Перейти к навигации"
 msgid "Slave Interfaces"
 msgstr "Ведомые интерфейсы"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3017
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3030
 #: modules/luci-compat/luasrc/model/network.lua:1445
 msgid "Software VLAN"
 msgstr "Программное обеспечение VLAN"
@@ -8252,12 +8253,12 @@ msgstr ""
 "Коммутатор %q имеет неизвестную топологию — настройки VLAN не могут быть "
 "точными."
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3017
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3030
 #: modules/luci-compat/luasrc/model/network.lua:1443
 msgid "Switch VLAN"
 msgstr "Изменить VLAN"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3014
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3027
 msgid "Switch port"
 msgstr "Порт коммутатора"
 
@@ -8431,8 +8432,8 @@ msgid ""
 "The <em>qrencode</em> package is required for generating an QR code image of "
 "the configuration."
 msgstr ""
-"Для генерации изображения QR-кода конфигурации необходим пакет <em>qrencode"
-"</em>."
+"Для генерации изображения QR-кода конфигурации необходим пакет <em>qrencode</"
+"em>."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:954
 msgid ""
@@ -8758,8 +8759,8 @@ msgid ""
 "domain."
 msgstr ""
 "Публичное имя хоста или IP-адрес этой системы, к которой должен подключаться "
-"узел. Обычно это статический публичный IP-адрес, статическое имя хоста или имя "
-"домена DDNS."
+"узел. Обычно это статический публичный IP-адрес, статическое имя хоста или "
+"имя домена DDNS."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:569
 msgid "The query response interval must be lower than the query interval value"
@@ -9063,10 +9064,10 @@ msgid ""
 "text field below. The relevant settings will be automatically extracted from "
 "the configuration."
 msgstr ""
-"Чтобы импортировать конфигурацию клиента WireGuard, например, предоставленную "
-"коммерческим поставщиком VPN, перетащите файл <em>*.conf</em> или вставьте "
-"его содержимое в текстовое поле ниже. Соответствующие настройки будут автоматически "
-"извлечены из конфигурации."
+"Чтобы импортировать конфигурацию клиента WireGuard, например, "
+"предоставленную коммерческим поставщиком VPN, перетащите файл <em>*.conf</"
+"em> или вставьте его содержимое в текстовое поле ниже. Соответствующие "
+"настройки будут автоматически извлечены из конфигурации."
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2711
 msgid "To login…"
@@ -9156,7 +9157,7 @@ msgstr "Режим работы"
 msgid "Tunnel ID"
 msgstr "Идентификатор туннеля"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3020
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3033
 #: modules/luci-compat/luasrc/model/network.lua:1448
 msgid "Tunnel Interface"
 msgstr "Туннель"
@@ -9915,13 +9916,13 @@ msgstr "Узел WireGuard отключён"
 msgid "Wireless"
 msgstr "Беспроводная сеть"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:3007
+#: modules/luci-base/htdocs/luci-static/resources/network.js:3020
 #: modules/luci-compat/luasrc/model/network.lua:1436
 msgid "Wireless Adapter"
 msgstr "Беспроводной адаптер"
 
-#: modules/luci-base/htdocs/luci-static/resources/network.js:2986
-#: modules/luci-base/htdocs/luci-static/resources/network.js:4293
+#: modules/luci-base/htdocs/luci-static/resources/network.js:2999
+#: modules/luci-base/htdocs/luci-static/resources/network.js:4312
 #: modules/luci-compat/luasrc/model/network.lua:1422
 #: modules/luci-compat/luasrc/model/network.lua:1885
 msgid "Wireless Network"
@@ -10588,5 +10589,5 @@ msgid "« Back"
 msgstr "« Назад"
 
 # THEMES
-msgid "Auto Refresh"
-msgstr "Автообновление"
+#~ msgid "Auto Refresh"
+#~ msgstr "Автообновление"

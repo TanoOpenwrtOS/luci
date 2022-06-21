@@ -1,40 +1,34 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: LuCI: aria2\n"
-"POT-Creation-Date: 2017-11-30 23:45+0300\n"
-"PO-Revision-Date: 2022-06-17 08:19+0000\n"
-"Last-Translator: AHOHNMYC <lqwh2h2cwa@protonmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
-"luciapplicationsaria2/ru/>\n"
-"Language: ru\n"
-"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2022-06-10 13:18+0000\n"
+"Last-Translator: Martin Bezemer <m.bezemer+openwrt@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsaria2/nl/>\n"
+"Language: nl\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.13-dev\n"
-"Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
-"интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:433
 msgid "<abbr title=\"Local Peer Discovery\">LPD</abbr> enabled"
-msgstr "<abbr title=\"Обнаружение локальных пиров\">LPD</abbr> включено"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:551
 msgid "Additional BT tracker"
-msgstr "Дополнительный BT трекер"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:556
 msgid "Advanced Options"
-msgstr "Расширенные параметры"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:309
 msgid "All proxy"
-msgstr "Все прокси"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:365
 msgid "Append HEADERs to HTTP request header."
-msgstr "Добавляет HEADER-ы в заголовок HTTP запроса."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:188
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:194
@@ -42,96 +36,90 @@ msgstr "Добавляет HEADER-ы в заголовок HTTP запроса."
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/log.js:58
 #: applications/luci-app-aria2/root/usr/share/luci/menu.d/luci-app-aria2.json:3
 msgid "Aria2"
-msgstr "Aria2"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:189
 msgid ""
 "Aria2 is a lightweight multi-protocol &amp; multi-source, cross platform "
 "download utility."
 msgstr ""
-"Aria это легковесная, кроссплатформенная утилита загрузки файлов с "
-"поддержкой множества протоколов и источников."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:565
 msgid "Auto save interval"
-msgstr "Интервал автосохранения"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:204
 msgid "Basic Options"
-msgstr "Основные параметры"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:413
 msgid "BitTorrent Options"
-msgstr "Параметры BitTorrent"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:472
 msgid "BitTorrent listen port"
-msgstr "Порты BitTorrent-а"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:329
 msgid "CA certificate"
-msgstr "Сертификат удостоверяющего центра"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:334
 msgid "Certificate"
-msgstr "Сертификат"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:322
 msgid "Check certificate"
-msgstr "Проверить сертификат"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:379
 msgid ""
 "Close connection if download speed is lower than or equal to this value "
 "(bytes per sec). 0 means has no lowest speed limit."
 msgstr ""
-"Закрывать соединение при скорости загрузки меньшей или равной данному "
-"значению(байт в секунду). 0 означает отсутствие минимального лимита скорости."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:29
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/log.js:51
 msgid "Collecting data..."
-msgstr "Сбор данных..."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:216
 msgid "Config file directory"
-msgstr "Каталог расположения сonfig файла"
+msgstr ""
 
 #: applications/luci-app-aria2/root/usr/share/luci/menu.d/luci-app-aria2.json:15
 msgid "Configuration"
-msgstr "Конфигурация"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:367
 msgid "Connect timeout"
-msgstr "Тайм-аут подключения"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/files.js:47
 msgid "Content of config file: <code>%s</code>"
-msgstr "Содержимое конфигурационного файла: <code>%s</code>"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/files.js:48
 msgid "Content of session file: <code>%s</code>"
-msgstr "Содержимое файла сессии: <code>%s</code>"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:478
 msgid "DHT Listen port"
-msgstr "Порт прослушивания DHT"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:230
 msgid "Debug"
-msgstr "Отладка"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:559
 msgid ""
 "Disable IPv6. This is useful if you have to use broken DNS and want to avoid "
 "terribly slow AAAA record lookup."
 msgstr ""
-"Отключить IPv6. Полезно если ваш DNS работет некорректно и хочется избежать "
-"ужастно медленного поиска AAAA записей."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:577
 msgid "Disk cache"
-msgstr "Дисковый кэш"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:396
 msgid "Don't split less than 2*SIZE byte range. Possible values: 1M-1024M."
@@ -139,11 +127,11 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:391
 msgid "Download a file using N connections."
-msgstr "Загрузка файла используя N соединений."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:212
 msgid "Download directory"
-msgstr "Каталог для загрузки"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:417
 msgid "Enable IPv4 DHT functionality. It also enables UDP tracker support."
@@ -155,7 +143,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:435
 msgid "Enable Local Peer Discovery."
-msgstr "Включить Local Peer Discovery."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:444
 msgid "Enable Peer Exchange extension."
@@ -163,31 +151,31 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:579
 msgid "Enable disk cache (in bytes), set 0 to disabled."
-msgstr "Включить дисковый кэш (в байтах), 0 для отключения."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:220
 msgid "Enable logging"
-msgstr "Включить ведение системного журнала"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:442
 msgid "Enable peer exchange"
-msgstr "Включить обмен пирами"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:306
 msgid "Enable proxy"
-msgstr "Включить прокси"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:206
 msgid "Enabled"
-msgstr "Включено"
+msgstr "Geactiveerd"
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:234
 msgid "Error"
-msgstr "Ошибка"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:619
 msgid "Extra Settings"
-msgstr "Дополнительные настройки"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:487
 msgid "False"
@@ -195,16 +183,16 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:584
 msgid "File allocation"
-msgstr "Расположение файла"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/files.js:45
 #: applications/luci-app-aria2/root/usr/share/luci/menu.d/luci-app-aria2.json:24
 msgid "Files"
-msgstr "Файлы"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:485
 msgid "Follow torrent"
-msgstr "Запустить<br />торрент-файл"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:190
 msgid "For more information, please visit: %s."
@@ -216,11 +204,11 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:271
 msgid "Generate Randomly"
-msgstr "Генерировать случайно"
+msgstr ""
 
 #: applications/luci-app-aria2/root/usr/share/rpcd/acl.d/luci-app-aria2.json:3
 msgid "Grant UCI access for luci-app-aria2"
-msgstr "Предоставить UCI доступ для luci-app-aria2"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:347
 msgid "HTTP accept gzip"
@@ -232,31 +220,27 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:304
 msgid "HTTP/FTP/SFTP Options"
-msgstr "HTTP/FTP/SFTP опции"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:364
 msgid "Header"
-msgstr "Заголовок"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/files.js:46
 msgid "Here shows the files used by aria2."
-msgstr "Здесь показаны файлы используемые aria2."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:415
 msgid "IPv4 <abbr title=\"Distributed Hash Table\">DHT</abbr> enabled"
 msgstr ""
-"IPv4 <abbr title=\"Распределённая хеш таблица (Distributed Hash "
-"Table)\">DHT</abbr> включен"
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:425
 msgid "IPv6 <abbr title=\"Distributed Hash Table\">DHT</abbr> enabled"
 msgstr ""
-"IPv6 <abbr title=\"Распределённая хеш таблица (Distributed Hash "
-"Table)\">DHT</abbr> включен"
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:558
 msgid "IPv6 disabled"
-msgstr "Протокол IPv6 отключен"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:516
 msgid ""
@@ -268,11 +252,11 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:231
 msgid "Info"
-msgstr "Информация"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:41
 msgid "Installed web interface:"
-msgstr "Установленный веб-интерфейс:"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:301
 msgid "Json-RPC URL"
@@ -280,23 +264,23 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:488
 msgid "Keep in memory"
-msgstr "Хранить в памяти"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/log.js:31
 msgid "Last 50 lines of log file:"
-msgstr "Последние 50 строк лог файла:"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/log.js:36
 msgid "Last 50 lines of syslog:"
-msgstr "Последние 50 строк syslog'а:"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:210
 msgid "Leave blank to use default user."
-msgstr "Оставьте пустым, чтобы использовать пользователя по умолчанию."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:552
 msgid "List of additional BitTorrent tracker's announce URI."
-msgstr "Список дополнительных URI анонсов BitTorrent трекера."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:625
 msgid ""
@@ -306,23 +290,23 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/log.js:49
 msgid "Loading"
-msgstr "Загрузка"
+msgstr ""
 
 #: applications/luci-app-aria2/root/usr/share/luci/menu.d/luci-app-aria2.json:33
 msgid "Log"
-msgstr "Системный журнал"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/log.js:58
 msgid "Log Data"
-msgstr "Данные журнала"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:223
 msgid "Log file"
-msgstr "Файл журнала приложения"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:228
 msgid "Log level"
-msgstr "Уровень журналирования"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:377
 msgid "Lowest speed limit"
@@ -330,19 +314,19 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:237
 msgid "Max concurrent downloads"
-msgstr "Максимальное количество одновременных загрузок"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:385
 msgid "Max connection per server"
-msgstr "Максимальное количество<br />подключений на сервер"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:612
 msgid "Max download limit"
-msgstr "Максимальная скорость скачивания"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:390
 msgid "Max number of split"
-msgstr "Максимальное<br />число разделений"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:504
 msgid "Max open files"
@@ -358,44 +342,44 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:509
 msgid "Max peers"
-msgstr "Максимум пиров"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:399
 msgid "Max tries"
-msgstr "Максимум попыток"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:497
 msgid "Max upload limit"
-msgstr "Максимальная скорость отдачи"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:395
 msgid "Min split size"
-msgstr "Минимальный размер разделений"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:258
 msgid "No Authentication"
-msgstr "Без проверки подлинности"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/log.js:33
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/log.js:38
 msgid "No log data."
-msgstr "Журнал пуст."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:591
 msgid "None"
-msgstr "Ничего"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:232
 msgid "Notice"
-msgstr "Сообщение"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:242
 msgid "Pause"
-msgstr "Пауза"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:242
 msgid "Pause download after added."
-msgstr "Поставить загрузку на паузу после добавления."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:248
 msgid "Pause downloads created as a result of metadata download."
@@ -407,47 +391,47 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:96
 msgid "Please input token length:"
-msgstr "Пожалуйста, введите длину токена:"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:530
 msgid "Prefix of peer ID"
-msgstr "Префикс ID пира"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:341
 msgid "Private key"
-msgstr "Приватный ключ"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:317
 msgid "Proxy password"
-msgstr "Пароль прокси-сервера"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:314
 msgid "Proxy user"
-msgstr "Пользователь прокси-сервера"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:240
 msgid "RPC Options"
-msgstr "Параметры RPC"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:257
 msgid "RPC authentication method"
-msgstr "Метод аутентификации для доступа к удаленному управлению (RPC)"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:283
 msgid "RPC certificate"
-msgstr "Сертификат RPC"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:265
 msgid "RPC password"
-msgstr "Пароль для доступа к удаленному управлению (RPC)"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:253
 msgid "RPC port"
-msgstr "Порт для доступа к удаленному управлению (RPC)"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:293
 msgid "RPC private key"
-msgstr "Закрытый ключ RPC"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:276
 msgid "RPC secure"
@@ -455,7 +439,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:269
 msgid "RPC token"
-msgstr "RPC токен"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:277
 msgid ""
@@ -465,7 +449,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:262
 msgid "RPC username"
-msgstr "Логин для доступа к удаленному управлению (RPC)"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/log.js:62
 msgid "Refresh every %s seconds."
@@ -473,7 +457,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:459
 msgid "Remove unselected file"
-msgstr "Удалить невыбранные файлы"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:460
 msgid ""
@@ -492,7 +476,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:209
 msgid "Run daemon as user"
-msgstr "Запуск демона от имени пользователя"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:194
 msgid "Running Status"
@@ -526,7 +510,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:452
 msgid "Save metadata"
-msgstr "Сохранить метаданные"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:571
 msgid "Save session interval"
@@ -542,7 +526,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:545
 msgid "Seed time"
-msgstr "Время раздачи"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:466
 msgid "Seed unverified"
@@ -554,10 +538,6 @@ msgid ""
 "if remote server responds with <code>Content-Encoding: gzip</code> or "
 "<code>Content-Encoding: deflate</code>."
 msgstr ""
-"Отправлять <code>Accept: deflate, gzip</code> заголовок в запросе и "
-"увеличить ответ если заголовок в ответе удалённого сервера содержит "
-"<code>Content-Encoding: gzip</code> или <code>Content-Encoding: deflate</"
-"code>."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:357
 msgid ""
@@ -566,10 +546,6 @@ msgid ""
 "you can add Cache-Control header with a directive you like using \"Header\" "
 "option."
 msgstr ""
-"Отправить <code>Cache-Control: no-cache</code> и <code>Pragma: no-cache</"
-"code> заголовки чтобы не кешировать содержимое. Если параметр отключен, то "
-"заголовки не будут отправлены. Вы можете добавить Cache-Control заголовок с "
-"любым значением используя параметр \"Заголовки\"."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:473
 msgid ""
@@ -577,9 +553,6 @@ msgid ""
 "\"6881-6999\" and \"6881-6889,6999\". Make sure that the specified ports are "
 "open for incoming TCP traffic."
 msgstr ""
-"Установить TCP порт для BitTorrent загрузок. Допустимые форматы: "
-"\"6881,6885\", \"6881-6999\" и \"6881-6889,6999\". Убедитесь что указанные "
-"порты открыты для входящего TCP трафика."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:479
 msgid ""
@@ -591,27 +564,19 @@ msgstr ""
 msgid ""
 "Set max download speed per each download in bytes/sec. 0 means unrestricted."
 msgstr ""
-"Установить максимальную скорость загрузки для каждой загрузки в байт/сек. 0 "
-"значит без ограничений."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:607
 msgid "Set max overall download speed in bytes/sec. 0 means unrestricted."
 msgstr ""
-"Установить максимальную общую скорость загрузки в байт/сек. 0 значит без "
-"ограничений."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:492
 msgid "Set max overall upload speed in bytes/sec. 0 means unrestricted."
 msgstr ""
-"Установить максимальную общую скорость отдачи в байт/сек. 0 значит без "
-"ограничений."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:499
 msgid ""
 "Set max upload speed per each torrent in bytes/sec. 0 means unrestricted."
 msgstr ""
-"Установить максимальную скорость отдачи для каждого торрента в байт/сек. 0 "
-"значит без ограничений."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:368
 msgid ""
@@ -622,7 +587,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:404
 msgid "Set the seconds to wait between retries."
-msgstr "Установить время ожидания в секундах между повторами."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:409
 msgid "Set user agent for HTTP(S) downloads."
@@ -630,7 +595,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:188
 msgid "Settings"
-msgstr "Настройки"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:620
 msgid "Settings in this section will be added to config file."
@@ -638,17 +603,17 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:624
 msgid "Settings list"
-msgstr "Список настроек"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:585
 msgid ""
 "Specify file allocation method. If you are using newer file systems such as "
-"ext4 (with extents support), btrfs, xfs or NTFS (MinGW build only), \"falloc"
-"\" is your best choice. It allocates large(few GiB) files almost instantly, "
-"but it may not be available if your system doesn't have posix_fallocate(3) "
-"function. Don't use \"falloc\" with legacy file systems such as ext3 and "
-"FAT32 because it takes almost same time as \"prealloc\" and it blocks aria2 "
-"entirely until allocation finishes."
+"ext4 (with extents support), btrfs, xfs or NTFS (MinGW build only), "
+"\"falloc\" is your best choice. It allocates large(few GiB) files almost "
+"instantly, but it may not be available if your system doesn't have "
+"posix_fallocate(3) function. Don't use \"falloc\" with legacy file systems "
+"such as ext3 and FAT32 because it takes almost same time as \"prealloc\" and "
+"it blocks aria2 entirely until allocation finishes."
 msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:505
@@ -674,8 +639,6 @@ msgstr ""
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:510
 msgid "Specify the maximum number of peers per torrent, 0 means unlimited."
 msgstr ""
-"Укажите максимальное количество пиров для каждого торрента, 0 значит "
-"неограниченно."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:531
 msgid ""
@@ -684,9 +647,6 @@ msgid ""
 "than 20 bytes are specified, random byte data are added to make its length "
 "20 bytes."
 msgstr ""
-"Укажите префикс ID пира. Длинна ID пира в BitTorrent 20 байт, если указано "
-"больше, будут использоваться только первые 20. Если меньше, будет дополнено "
-"до 20 байт случайными данными."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:525
 msgid ""
@@ -700,29 +660,29 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:36
 msgid "The Aria2 service is not running."
-msgstr "Aria2 сервис не запущен."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:35
 msgid "The Aria2 service is running."
-msgstr "Aria2 сервис запущен."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:217
 msgid "The directory to store the config file, session file and DHT file."
-msgstr "Каталог хранения конфигурационных файлов, сессий и DHT файлов."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:213
 msgid ""
 "The directory to store the downloaded file. For example <code>/mnt/sda1</"
 "code>."
-msgstr "Каталог хранения загруженных файлов. Например <code>/mnt/sda1</code>."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:224
 msgid "The file name of the log file."
-msgstr "Название лог файла."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:386
 msgid "The maximum number of connections to one server for each download."
-msgstr "Максимальное число подключений к одному серверу для каждой загрузки."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:418
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:428
@@ -730,15 +690,14 @@ msgstr "Максимальное число подключений к одном
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:445
 msgid "This option will be ignored if a private flag is set in a torrent."
 msgstr ""
-"Этот параметр будет проигнорирован, если указан приватный флаг в торренте."
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:373
 msgid "Timeout"
-msgstr "Тайм-аут"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:260
 msgid "Token"
-msgstr "Токен"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:486
 msgid "True"
@@ -746,7 +705,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:310
 msgid "Use a proxy server for all protocols."
-msgstr "Использовать прокси-сервер для всех протоколов."
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:330
 msgid ""
@@ -786,11 +745,11 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:408
 msgid "User agent"
-msgstr "User agent"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:259
 msgid "Username & Password"
-msgstr "Имя и пароль"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:323
 msgid ""
@@ -799,7 +758,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:233
 msgid "Warn"
-msgstr "Внимание"
+msgstr ""
 
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:381
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:493
@@ -822,141 +781,3 @@ msgstr ""
 #: applications/luci-app-aria2/htdocs/luci-static/resources/view/aria2/config.js:593
 msgid "trunc"
 msgstr ""
-
-#~ msgid "Empty file."
-#~ msgstr "Пустой файл."
-
-#~ msgid "Error: Can't find aria2c in PATH, please reinstall aria2."
-#~ msgstr "Ошибка: Не найден aria2c в PATH, пожалуйста переустановите aria2."
-
-#~ msgid "Failed to load log data."
-#~ msgstr "Не удалось загрузить лог."
-
-#~ msgid "File does not exist."
-#~ msgstr "Файл не существует."
-
-#~ msgid "For more information, please visit: %s"
-#~ msgstr "Для получения большей информации, пожалуйста посетите: %s"
-
-#~ msgid "Refresh every 10 seconds."
-#~ msgstr "Обновлять каждые 10 секунд."
-
-#~ msgid "Show URL"
-#~ msgstr "Показать URL-адрес"
-
-#~ msgid "Use WebSocket"
-#~ msgstr "Использовать WebSockets"
-
-#~ msgid "\"Falloc\" is not available in all cases."
-#~ msgstr "'Falloc' возможен не всегда."
-
-#~ msgid "<abbr title=\"Distributed Hash Table\">DHT</abbr> enabled"
-#~ msgstr "<abbr title=\"Распределенная Hash таблица\">DHT</abbr> включена"
-
-#~ msgid "Additional Bt tracker enabled"
-#~ msgstr "Дополнительный<br />Bt tracker включен"
-
-#~ msgid "Aria2 Settings"
-#~ msgstr "Настройка Aria2"
-
-#~ msgid "Aria2 Status"
-#~ msgstr "Состояние Aria2"
-
-#~ msgid ""
-#~ "Aria2 is a multi-protocol &amp; multi-source download utility, here you "
-#~ "can configure the settings."
-#~ msgstr ""
-#~ "Aria2 - это мульти-протокольная и мульти-платформенная утилита загрузки, "
-#~ "здесь вы сможете ее настроить."
-
-#~ msgid "Autosave session interval"
-#~ msgstr "Интервал сессии автосохранения"
-
-#~ msgid "BitTorrent Settings"
-#~ msgstr "Настройки BitTorrent-а"
-
-#~ msgid "Default download directory"
-#~ msgstr "Папка для загрузки<br />файлов по умолчанию"
-
-#~ msgid "Enable log"
-#~ msgstr "Включить ведение системного журнала"
-
-#~ msgid "Falloc"
-#~ msgstr "Falloc"
-
-#~ msgid "Files and Locations"
-#~ msgstr "Файлы и папки"
-
-#~ msgid "General Settings"
-#~ msgstr "Общие настройки"
-
-#~ msgid "List of additional Bt tracker"
-#~ msgstr "Список дополнительных BT tracker-ов"
-
-#~ msgid "List of extra settings"
-#~ msgstr "Список дополнительных настроек"
-
-#~ msgid "Max number of peers per torrent"
-#~ msgstr "Максимальное число<br />пиров на торрент-файл"
-
-#~ msgid "Off"
-#~ msgstr "Выключено"
-
-#~ msgid "Open WebUI-Aria2"
-#~ msgstr "Открыть WebUI-Aria2"
-
-#~ msgid "Open YAAW"
-#~ msgstr "Открыть YAAW"
-
-#~ msgid "Overall download limit"
-#~ msgstr "Общее ограничение<br />скорости загрузки"
-
-#~ msgid "Overall speed limit enabled"
-#~ msgstr "Общее ограничение скорости<br /> для утилиты включено"
-
-#~ msgid "Overall upload limit"
-#~ msgstr "Общее ограничение<br />скорости раздачи"
-
-#~ msgid "Per task download limit"
-#~ msgstr "Ограничить скорость загрузки"
-
-#~ msgid "Per task speed limit enabled"
-#~ msgstr "Ограничить скорость для одной задачи включено"
-
-#~ msgid "Per task upload limit"
-#~ msgstr "Ограничить скорость раздачи"
-
-#~ msgid "Prealloc"
-#~ msgstr "Предварительно"
-
-#~ msgid "Preallocation"
-#~ msgstr "Предварительное<br />распределение<br />места под файл"
-
-#~ msgid "RPC Token"
-#~ msgstr "Токен для доступа к удаленному управлению (RPC)"
-
-#~ msgid "Sec"
-#~ msgstr "Секунды"
-
-#~ msgid "Task Settings"
-#~ msgstr "Настройки задач"
-
-#~ msgid "Trunc"
-#~ msgstr "Сокращать"
-
-#~ msgid "User agent value"
-#~ msgstr "Агент пользователя"
-
-#~ msgid "View Json-RPC URL"
-#~ msgstr "Показать URL Json-RPC"
-
-#~ msgid "in bytes, You can append K or M."
-#~ msgstr ""
-#~ "Дисковый кэш в байтах. Вы можете добавить суффикс K (кило) или М (мега)."
-
-#~ msgid "in bytes/sec, You can append K or M."
-#~ msgstr ""
-#~ "в байтах/секундах. Вы можете добавить суффикс K (кило) или М (мега)."
-
-#~ msgid "Log file is in the config file dir."
-#~ msgstr "Файл системного журнала находится в папке с config файлом."

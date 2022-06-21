@@ -2861,6 +2861,15 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 		this.device  = this.device || device;
 		this.dev     = Object.assign({}, _state.netdevs[this.device]);
 		this.network = network;
+
+		var conf;
+
+		uci.sections('network', 'device', function(s) {
+			if (s.name == device)
+				conf = s;
+		});
+
+		this.config  = Object.assign({}, conf);
 	},
 
 	_devstate: function(/* ... */) {
@@ -2955,6 +2964,10 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 			return 'vlan';
 		else if (this.dev.devtype == 'dsa' || _state.isSwitch[this.device])
 			return 'switch';
+		else if (this.config.type == '8021q' || this.config.type == '8021ad')
+			return 'vlan';
+		else if (this.config.type == 'bridge')
+			return 'bridge';
 		else
 			return 'ethernet';
 	},
@@ -3254,7 +3267,13 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 	 * ordinary ethernet interfaces.
 	 */
 	getParent: function() {
-		return this.dev.parent ? Network.prototype.instantiateDevice(this.dev.parent) : null;
+		if (this.dev.parent)
+			return Network.prototype.instantiateDevice(this.dev.parent);
+
+		if ((this.config.type == '8021q' || this.config.type == '802ad') && typeof(this.config.ifname) == 'string')
+			return Network.prototype.instantiateDevice(this.config.ifname);
+
+		return null;
 	}
 });
 
