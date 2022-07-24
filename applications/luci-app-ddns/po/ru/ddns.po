@@ -623,8 +623,8 @@ msgid "Path to CA-Certificate"
 msgstr "Путь к CA-сертификату"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1068
-msgid "Please press \"Read/reread log file\" button"
-msgstr "Пожалуйста, нажмите кнопку «Читать/перечитать файл журнала»"
+msgid "Please press [Read] button"
+msgstr "Пожалуйста, нажмите кнопку «Читать»"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1051
 msgid "Read / Reread log file"
@@ -747,8 +747,8 @@ msgid "The service name is already used"
 msgstr "Имя службы уже используется"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1067
-msgid "This is the current content of the log file in %s for this service."
-msgstr "Текущее содержимое файла журнала в «%s» для данной службы."
+msgid "This is the current content of the log file in %h for this service."
+msgstr "Текущее содержимое файла журнала в «%h» для данной службы."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:876
 msgid "This will be autoset to the selected interface"
@@ -913,9 +913,3 @@ msgstr "минут(ы)"
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1044
 msgid "seconds"
 msgstr "секунд(ы)"
-
-#~ msgid "Configuration"
-#~ msgstr "Конфигурация"
-
-#~ msgid "There is no service configured."
-#~ msgstr "Служба не настроена."

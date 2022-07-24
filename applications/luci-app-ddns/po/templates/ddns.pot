@@ -552,7 +552,7 @@ msgid "Path to CA-Certificate"
 msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1068
-msgid "Please press \"Read/reread log file\" button"
+msgid "Please press [Read] button"
 msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1051
@@ -676,7 +676,7 @@ msgid "The service name is already used"
 msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1067
-msgid "This is the current content of the log file in %s for this service."
+msgid "This is the current content of the log file in %h for this service."
 msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:876
